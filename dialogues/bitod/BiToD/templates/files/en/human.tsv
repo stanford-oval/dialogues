@@ -1,0 +1,102 @@
+HKMTR!!goodbye!!null	Have a good day. Bye!
+HKMTR!!inform!!estimated_time!!@	It will take @ mins.
+HKMTR!!inform!!price!!@	It will cost @.
+HKMTR!!offer!!estimated_time!!@	It takes @.
+HKMTR!!offer!!price!!@	It will cost you around @.
+HKMTR!!offer!!shortest_path!!@	You can @
+HKMTR!!request!!departure	Where are you leaving from?
+HKMTR!!request!!destination	Where is your destination?
+HKMTR!!request_more!!null	Anything else?
+attractions!!affirm!!null	Yeah.
+attractions!!confirm!!null	Do you have any other requirements?
+attractions!!goodbye!!null	Have a good day, bye!
+attractions!!inform!!address!!@	The address is @.
+attractions!!inform!!phone_number!!@	The phone number is @.
+attractions!!notify_fail!!null	Sorry, there aren't any attractions that meet your requirements.
+attractions!!offer!!address!!@	The address is @.
+attractions!!offer!!available_options!!@	There are @ available_options.
+attractions!!offer!!name!!@	The name is @.
+attractions!!offer!!phone_number!!@	The phone number is @.
+attractions!!offer!!rating!!@	The rating is @.
+attractions!!request!!location	What are your preferences for attraction rating?
+attractions!!request!!rating	What are your preferences for attraction rating?
+attractions!!request!!type	What about the type of the attraction?
+attractions!!request_more!!null	Anything else ?
+attractions!!request_update!!location	Shall I search for other locations?
+attractions!!request_update!!rating	Do you need some other spots with different rating?
+attractions!!request_update!!type	Shall I search for other places?
+chat!!greeting!!null	Hello, how may I help you?
+hotels!!affirm!!null	Yeah.
+hotels!!confirm!!name!!@	Please confirm the hotel name is @.
+hotels!!confirm!!null	Any other preferences?
+hotels!!confirm!!number_of_nights!!@	Booking is made for @ nights.
+hotels!!confirm!!number_of_rooms!!@	Booking is confirmed for @ rooms.
+hotels!!confirm!!start_date!!@	Can you please confirm that you want to book from @.
+hotels!!goodbye!!null	Happy to help , Bye.
+hotels!!inform!!price_per_night!!@	The hotel costs @ per night.
+hotels!!inform!!ref_number!!@	Booking is completed and the reference number is @.
+hotels!!notify_fail!!null	I couldn't get the booking done unfortunately.
+hotels!!notify_success!!null	Ok, booking was successful.
+hotels!!offer!!available_options!!@	I found @ hotels.
+hotels!!offer!!name!!@	Hotel name is @.
+hotels!!offer!!price_per_night!!@	Hotel charges @ per night.
+hotels!!offer!!rating!!@	Hotel rating is @.
+hotels!!request!!location	Any preferences on location?
+hotels!!request!!name	What is the name of hotel that you want to book?
+hotels!!request!!number_of_nights	How many nights do you want to book for?
+hotels!!request!!number_of_rooms	How many rooms do you want to book?
+hotels!!request!!price_level	What sort of price level would you like?
+hotels!!request!!rating	How many rating does the hotel should have?
+hotels!!request!!stars	How many stars does the hotel should have?
+hotels!!request!!start_date	How many days do you plan to stay?
+hotels!!request!!user_name	Can you tell me your name?
+hotels!!request_more!!null	May I assist you with anything else?
+hotels!!request_update!!location	Do you need some hotel with different locations?
+hotels!!request_update!!number_of_rooms	Shall I try with other number of rooms?
+hotels!!request_update!!price_level	How about another price level?
+hotels!!request_update!!rating	Shall I try a different rating?
+hotels!!request_update!!stars	Shall I try a different number of stars?
+restaurants!!affirm!!null	Sure.
+restaurants!!confirm!!date!!@	Can you please confirm that you want to book on @?
+restaurants!!confirm!!name!!@	Restaurant name is @.
+restaurants!!confirm!!null	Well, are there any other requirements?
+restaurants!!confirm!!number_of_people!!@	Booking is made for @ people.
+restaurants!!confirm!!time!!@	The booking is done at @.
+restaurants!!goodbye!!null	Good Bye!
+restaurants!!inform!!address!!@	The address is @.
+restaurants!!inform!!phone_number!!@	The phone number is @.
+restaurants!!inform!!ref_number!!@	The reference number is @.
+restaurants!!notify_fail!!null	I couldn't book this place.
+restaurants!!notify_success!!null	I was able to book the place.
+restaurants!!offer!!address!!@	I found a restaurant that matches your criteria. It's called @.
+restaurants!!offer!!available_options!!@	I've found you @ restaurants.
+restaurants!!offer!!cuisine!!@	They are a @ restaurant.
+restaurants!!offer!!name!!@	Perhaps you'd be interested in @.
+restaurants!!offer!!phone_number!!@	You can call them at @.
+restaurants!!offer!!rating!!@	Its rating is @.
+restaurants!!request!!cuisine	Do you have any preference for the type of food?
+restaurants!!request!!dietary_restrictions	Any dietary restrictions?
+restaurants!!request!!location	Any preferred location?
+restaurants!!request!!name	Do you have any restaurant preference?
+restaurants!!request!!number_of_people	How many people do you have?
+restaurants!!request!!price_level	Any preferred price range?
+restaurants!!request!!rating	Any preferred rating?
+restaurants!!request!!time	Any preferences for reservation time?
+restaurants!!request!!user_name	Can I get your name?
+restaurants!!request_more!!null	Any thing else i can help you with today?
+restaurants!!request_update!!cuisine	Shall I try other food types?
+restaurants!!request_update!!location	Shall I try a different location?
+restaurants!!request_update!!price_level	Should I try for another price range?
+restaurants!!request_update!!rating	Shall I try a different rating?
+restaurants!!request_update!!time	Should I try for another time?
+weathers!!goodbye!!null	Enjoy your day! bye!
+weathers!!inform!!max_temp!!@	The maximum temperature will be @.
+weathers!!inform!!min_temp!!@	The minimum temperature will be @.
+weathers!!offer!!city!!@	The weather in @ is
+weathers!!offer!!day!!@	The weather on @ is
+weathers!!offer!!max_temp!!@	The maximum temperature will be @.
+weathers!!offer!!min_temp!!@	The minimum temperature will be @.
+weathers!!offer!!weather!!@	the weather is @.
+weathers!!request!!city	Which city are you looking for?
+weathers!!request!!day	For which day?
+weathers!!request_more!!null	What else can I do to assist you?

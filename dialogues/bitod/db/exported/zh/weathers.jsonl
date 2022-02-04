@@ -1,0 +1,288 @@
+{"_id":"Abu Dhabi_friday","max_temp":26,"min_temp":24,"day":"星期五","city":"阿布扎比","weather":"下雨"}
+{"_id":"Abu Dhabi_monday","max_temp":31,"min_temp":18,"day":"星期一","city":"阿布扎比","weather":"下雨"}
+{"_id":"Abu Dhabi_saturday","max_temp":20,"min_temp":13,"day":"星期六","city":"阿布扎比","weather":"多云"}
+{"_id":"Abu Dhabi_sunday","max_temp":30,"min_temp":14,"day":"星期日","city":"阿布扎比","weather":"多云"}
+{"_id":"Abu Dhabi_thursday","max_temp":36,"min_temp":24,"day":"星期四","city":"阿布扎比","weather":"多云"}
+{"_id":"Abu Dhabi_today","max_temp":25,"min_temp":3,"day":"今天","city":"阿布扎比","weather":"下雨"}
+{"_id":"Abu Dhabi_tomorrow","max_temp":29,"min_temp":8,"day":"明天","city":"阿布扎比","weather":"下雨"}
+{"_id":"Abu Dhabi_tuesday","max_temp":30,"min_temp":18,"day":"星期二","city":"阿布扎比","weather":"多云"}
+{"_id":"Abu Dhabi_wednesday","max_temp":36,"min_temp":19,"day":"星期三","city":"阿布扎比","weather":"下雨"}
+{"_id":"Amsterdam_friday","max_temp":25,"min_temp":13,"day":"星期五","city":"阿姆斯特丹","weather":"下雨"}
+{"_id":"Amsterdam_monday","max_temp":30,"min_temp":-11,"day":"星期一","city":"阿姆斯特丹","weather":"多云"}
+{"_id":"Amsterdam_saturday","max_temp":20,"min_temp":14,"day":"星期六","city":"阿姆斯特丹","weather":"下雨"}
+{"_id":"Amsterdam_sunday","max_temp":30,"min_temp":-6,"day":"星期日","city":"阿姆斯特丹","weather":"晴天"}
+{"_id":"Amsterdam_thursday","max_temp":36,"min_temp":14,"day":"星期四","city":"阿姆斯特丹","weather":"多云"}
+{"_id":"Amsterdam_today","max_temp":26,"min_temp":-10,"day":"今天","city":"阿姆斯特丹","weather":"多云"}
+{"_id":"Amsterdam_tomorrow","max_temp":29,"min_temp":-11,"day":"明天","city":"阿姆斯特丹","weather":"晴天"}
+{"_id":"Amsterdam_tuesday","max_temp":31,"min_temp":4,"day":"星期二","city":"阿姆斯特丹","weather":"下雨"}
+{"_id":"Amsterdam_wednesday","max_temp":35,"min_temp":9,"day":"星期三","city":"阿姆斯特丹","weather":"多云"}
+{"_id":"Barcelona_friday","max_temp":25,"min_temp":13,"day":"星期五","city":"巴塞罗那","weather":"下雨"}
+{"_id":"Barcelona_monday","max_temp":30,"min_temp":-11,"day":"星期一","city":"巴塞罗那","weather":"下雨"}
+{"_id":"Barcelona_saturday","max_temp":20,"min_temp":14,"day":"星期六","city":"巴塞罗那","weather":"下雨"}
+{"_id":"Barcelona_sunday","max_temp":31,"min_temp":-5,"day":"星期日","city":"巴塞罗那","weather":"下雪"}
+{"_id":"Barcelona_thursday","max_temp":35,"min_temp":14,"day":"星期四","city":"巴塞罗那","weather":"多云"}
+{"_id":"Barcelona_today","max_temp":25,"min_temp":-11,"day":"今天","city":"巴塞罗那","weather":"多云"}
+{"_id":"Barcelona_tomorrow","max_temp":29,"min_temp":-11,"day":"明天","city":"巴塞罗那","weather":"晴天"}
+{"_id":"Barcelona_tuesday","max_temp":30,"min_temp":3,"day":"星期二","city":"巴塞罗那","weather":"多云"}
+{"_id":"Barcelona_wednesday","max_temp":36,"min_temp":9,"day":"星期三","city":"巴塞罗那","weather":"下雨"}
+{"_id":"Beijing_friday","max_temp":25,"min_temp":24,"day":"星期五","city":"北京","weather":"多云"}
+{"_id":"Beijing_monday","max_temp":31,"min_temp":19,"day":"星期一","city":"北京","weather":"晴天"}
+{"_id":"Beijing_saturday","max_temp":20,"min_temp":13,"day":"星期六","city":"北京","weather":"下雨"}
+{"_id":"Beijing_sunday","max_temp":31,"min_temp":14,"day":"星期日","city":"北京","weather":"下雨"}
+{"_id":"Beijing_thursday","max_temp":36,"min_temp":24,"day":"星期四","city":"北京","weather":"晴天"}
+{"_id":"Beijing_today","max_temp":26,"min_temp":3,"day":"今天","city":"北京","weather":"晴天"}
+{"_id":"Beijing_tomorrow","max_temp":29,"min_temp":9,"day":"明天","city":"北京","weather":"多云"}
+{"_id":"Beijing_tuesday","max_temp":31,"min_temp":19,"day":"星期二","city":"北京","weather":"下雨"}
+{"_id":"Beijing_wednesday","max_temp":35,"min_temp":18,"day":"星期三","city":"北京","weather":"多云"}
+{"_id":"Berlin_friday","max_temp":26,"min_temp":13,"day":"星期五","city":"柏林","weather":"晴天"}
+{"_id":"Berlin_monday","max_temp":30,"min_temp":-11,"day":"星期一","city":"柏林","weather":"晴天"}
+{"_id":"Berlin_saturday","max_temp":20,"min_temp":13,"day":"星期六","city":"柏林","weather":"下雨"}
+{"_id":"Berlin_sunday","max_temp":31,"min_temp":-6,"day":"星期日","city":"柏林","weather":"晴天"}
+{"_id":"Berlin_thursday","max_temp":36,"min_temp":14,"day":"星期四","city":"柏林","weather":"晴天"}
+{"_id":"Berlin_today","max_temp":26,"min_temp":-10,"day":"今天","city":"柏林","weather":"下雪"}
+{"_id":"Berlin_tomorrow","max_temp":28,"min_temp":-10,"day":"明天","city":"柏林","weather":"晴天"}
+{"_id":"Berlin_tuesday","max_temp":30,"min_temp":4,"day":"星期二","city":"柏林","weather":"下雨"}
+{"_id":"Berlin_wednesday","max_temp":35,"min_temp":9,"day":"星期三","city":"柏林","weather":"下雨"}
+{"_id":"Canberra_friday","max_temp":15,"min_temp":-5,"day":"星期五","city":"堪培拉","weather":"多云"}
+{"_id":"Canberra_monday","max_temp":20,"min_temp":14,"day":"星期一","city":"堪培拉","weather":"下雨"}
+{"_id":"Canberra_saturday","max_temp":11,"min_temp":-5,"day":"星期六","city":"堪培拉","weather":"下雨"}
+{"_id":"Canberra_sunday","max_temp":31,"min_temp":13,"day":"星期日","city":"堪培拉","weather":"多云"}
+{"_id":"Canberra_thursday","max_temp":5,"min_temp":-11,"day":"星期四","city":"堪培拉","weather":"多云"}
+{"_id":"Canberra_today","max_temp":26,"min_temp":19,"day":"今天","city":"堪培拉","weather":"多云"}
+{"_id":"Canberra_tomorrow","max_temp":39,"min_temp":19,"day":"明天","city":"堪培拉","weather":"晴天"}
+{"_id":"Canberra_tuesday","max_temp":15,"min_temp":8,"day":"星期二","city":"堪培拉","weather":"晴天"}
+{"_id":"Canberra_wednesday","max_temp":5,"min_temp":-5,"day":"星期三","city":"堪培拉","weather":"晴天"}
+{"_id":"Chicago_friday","max_temp":25,"min_temp":14,"day":"星期五","city":"芝加哥","weather":"晴天"}
+{"_id":"Chicago_monday","max_temp":31,"min_temp":-11,"day":"星期一","city":"芝加哥","weather":"下雪"}
+{"_id":"Chicago_saturday","max_temp":20,"min_temp":14,"day":"星期六","city":"芝加哥","weather":"晴天"}
+{"_id":"Chicago_sunday","max_temp":31,"min_temp":-5,"day":"星期日","city":"芝加哥","weather":"下雨"}
+{"_id":"Chicago_thursday","max_temp":36,"min_temp":14,"day":"星期四","city":"芝加哥","weather":"晴天"}
+{"_id":"Chicago_today","max_temp":26,"min_temp":-16,"day":"今天","city":"芝加哥","weather":"下雪"}
+{"_id":"Chicago_tomorrow","max_temp":28,"min_temp":-11,"day":"明天","city":"芝加哥","weather":"下雪"}
+{"_id":"Chicago_tuesday","max_temp":31,"min_temp":3,"day":"星期二","city":"芝加哥","weather":"多云"}
+{"_id":"Chicago_wednesday","max_temp":36,"min_temp":8,"day":"星期三","city":"芝加哥","weather":"多云"}
+{"_id":"Denpasar_friday","max_temp":26,"min_temp":24,"day":"星期五","city":"登巴萨","weather":"多云"}
+{"_id":"Denpasar_monday","max_temp":30,"min_temp":18,"day":"星期一","city":"登巴萨","weather":"晴天"}
+{"_id":"Denpasar_saturday","max_temp":20,"min_temp":14,"day":"星期六","city":"登巴萨","weather":"多云"}
+{"_id":"Denpasar_sunday","max_temp":31,"min_temp":14,"day":"星期日","city":"登巴萨","weather":"多云"}
+{"_id":"Denpasar_thursday","max_temp":35,"min_temp":23,"day":"星期四","city":"登巴萨","weather":"下雨"}
+{"_id":"Denpasar_today","max_temp":26,"min_temp":4,"day":"今天","city":"登巴萨","weather":"多云"}
+{"_id":"Denpasar_tomorrow","max_temp":29,"min_temp":8,"day":"明天","city":"登巴萨","weather":"下雨"}
+{"_id":"Denpasar_tuesday","max_temp":30,"min_temp":18,"day":"星期二","city":"登巴萨","weather":"多云"}
+{"_id":"Denpasar_wednesday","max_temp":35,"min_temp":18,"day":"星期三","city":"登巴萨","weather":"晴天"}
+{"_id":"Dubai_friday","max_temp":25,"min_temp":24,"day":"星期五","city":"迪拜","weather":"多云"}
+{"_id":"Dubai_monday","max_temp":30,"min_temp":19,"day":"星期一","city":"迪拜","weather":"下雨"}
+{"_id":"Dubai_saturday","max_temp":21,"min_temp":14,"day":"星期六","city":"迪拜","weather":"晴天"}
+{"_id":"Dubai_sunday","max_temp":30,"min_temp":14,"day":"星期日","city":"迪拜","weather":"晴天"}
+{"_id":"Dubai_thursday","max_temp":35,"min_temp":24,"day":"星期四","city":"迪拜","weather":"多云"}
+{"_id":"Dubai_today","max_temp":26,"min_temp":3,"day":"今天","city":"迪拜","weather":"晴天"}
+{"_id":"Dubai_tomorrow","max_temp":29,"min_temp":9,"day":"明天","city":"迪拜","weather":"晴天"}
+{"_id":"Dubai_tuesday","max_temp":30,"min_temp":19,"day":"星期二","city":"迪拜","weather":"晴天"}
+{"_id":"Dubai_wednesday","max_temp":35,"min_temp":19,"day":"星期三","city":"迪拜","weather":"下雨"}
+{"_id":"Florence_friday","max_temp":26,"min_temp":13,"day":"星期五","city":"佛罗伦萨","weather":"晴天"}
+{"_id":"Florence_monday","max_temp":30,"min_temp":-10,"day":"星期一","city":"佛罗伦萨","weather":"下雨"}
+{"_id":"Florence_saturday","max_temp":20,"min_temp":13,"day":"星期六","city":"佛罗伦萨","weather":"多云"}
+{"_id":"Florence_sunday","max_temp":30,"min_temp":-6,"day":"星期日","city":"佛罗伦萨","weather":"晴天"}
+{"_id":"Florence_thursday","max_temp":36,"min_temp":14,"day":"星期四","city":"佛罗伦萨","weather":"晴天"}
+{"_id":"Florence_today","max_temp":26,"min_temp":-10,"day":"今天","city":"佛罗伦萨","weather":"晴天"}
+{"_id":"Florence_tomorrow","max_temp":28,"min_temp":-11,"day":"明天","city":"佛罗伦萨","weather":"下雨"}
+{"_id":"Florence_tuesday","max_temp":31,"min_temp":4,"day":"星期二","city":"佛罗伦萨","weather":"下雨"}
+{"_id":"Florence_wednesday","max_temp":35,"min_temp":9,"day":"星期三","city":"佛罗伦萨","weather":"多云"}
+{"_id":"Hong Kong_friday","max_temp":25,"min_temp":24,"day":"星期五","city":"香港","weather":"多云"}
+{"_id":"Hong Kong_monday","max_temp":30,"min_temp":19,"day":"星期一","city":"香港","weather":"多云"}
+{"_id":"Hong Kong_saturday","max_temp":21,"min_temp":13,"day":"星期六","city":"香港","weather":"下雨"}
+{"_id":"Hong Kong_sunday","max_temp":30,"min_temp":14,"day":"星期日","city":"香港","weather":"下雨"}
+{"_id":"Hong Kong_thursday","max_temp":35,"min_temp":23,"day":"星期四","city":"香港","weather":"多云"}
+{"_id":"Hong Kong_today","max_temp":26,"min_temp":3,"day":"今天","city":"香港","weather":"下雨"}
+{"_id":"Hong Kong_tomorrow","max_temp":29,"min_temp":8,"day":"明天","city":"香港","weather":"多云"}
+{"_id":"Hong Kong_tuesday","max_temp":30,"min_temp":18,"day":"星期二","city":"香港","weather":"下雨"}
+{"_id":"Hong Kong_wednesday","max_temp":35,"min_temp":19,"day":"星期三","city":"香港","weather":"晴天"}
+{"_id":"Jakarta_friday","max_temp":26,"min_temp":24,"day":"星期五","city":"雅加达","weather":"晴天"}
+{"_id":"Jakarta_monday","max_temp":31,"min_temp":18,"day":"星期一","city":"雅加达","weather":"下雨"}
+{"_id":"Jakarta_saturday","max_temp":21,"min_temp":13,"day":"星期六","city":"雅加达","weather":"多云"}
+{"_id":"Jakarta_sunday","max_temp":31,"min_temp":14,"day":"星期日","city":"雅加达","weather":"多云"}
+{"_id":"Jakarta_thursday","max_temp":35,"min_temp":24,"day":"星期四","city":"雅加达","weather":"下雨"}
+{"_id":"Jakarta_today","max_temp":26,"min_temp":3,"day":"今天","city":"雅加达","weather":"多云"}
+{"_id":"Jakarta_tomorrow","max_temp":28,"min_temp":9,"day":"明天","city":"雅加达","weather":"下雨"}
+{"_id":"Jakarta_tuesday","max_temp":31,"min_temp":19,"day":"星期二","city":"雅加达","weather":"晴天"}
+{"_id":"Jakarta_wednesday","max_temp":36,"min_temp":19,"day":"星期三","city":"雅加达","weather":"晴天"}
+{"_id":"Kyoto_friday","max_temp":26,"min_temp":23,"day":"星期五","city":"京都","weather":"下雨"}
+{"_id":"Kyoto_monday","max_temp":30,"min_temp":19,"day":"星期一","city":"京都","weather":"多云"}
+{"_id":"Kyoto_saturday","max_temp":21,"min_temp":13,"day":"星期六","city":"京都","weather":"晴天"}
+{"_id":"Kyoto_sunday","max_temp":30,"min_temp":13,"day":"星期日","city":"京都","weather":"多云"}
+{"_id":"Kyoto_thursday","max_temp":36,"min_temp":23,"day":"星期四","city":"京都","weather":"下雨"}
+{"_id":"Kyoto_today","max_temp":26,"min_temp":3,"day":"今天","city":"京都","weather":"晴天"}
+{"_id":"Kyoto_tomorrow","max_temp":28,"min_temp":9,"day":"明天","city":"京都","weather":"晴天"}
+{"_id":"Kyoto_tuesday","max_temp":31,"min_temp":19,"day":"星期二","city":"京都","weather":"下雨"}
+{"_id":"Kyoto_wednesday","max_temp":35,"min_temp":19,"day":"星期三","city":"京都","weather":"多云"}
+{"_id":"Las Vegas_friday","max_temp":25,"min_temp":13,"day":"星期五","city":"拉斯维加斯","weather":"晴天"}
+{"_id":"Las Vegas_monday","max_temp":30,"min_temp":-10,"day":"星期一","city":"拉斯维加斯","weather":"晴天"}
+{"_id":"Las Vegas_saturday","max_temp":20,"min_temp":13,"day":"星期六","city":"拉斯维加斯","weather":"下雨"}
+{"_id":"Las Vegas_sunday","max_temp":30,"min_temp":-6,"day":"星期日","city":"拉斯维加斯","weather":"下雨"}
+{"_id":"Las Vegas_thursday","max_temp":35,"min_temp":13,"day":"星期四","city":"拉斯维加斯","weather":"晴天"}
+{"_id":"Las Vegas_today","max_temp":26,"min_temp":-16,"day":"今天","city":"拉斯维加斯","weather":"多云"}
+{"_id":"Las Vegas_tomorrow","max_temp":29,"min_temp":-10,"day":"明天","city":"拉斯维加斯","weather":"晴天"}
+{"_id":"Las Vegas_tuesday","max_temp":30,"min_temp":4,"day":"星期二","city":"拉斯维加斯","weather":"多云"}
+{"_id":"Las Vegas_wednesday","max_temp":35,"min_temp":8,"day":"星期三","city":"拉斯维加斯","weather":"下雨"}
+{"_id":"Los Angeles_friday","max_temp":25,"min_temp":14,"day":"星期五","city":"洛杉矶","weather":"下雨"}
+{"_id":"Los Angeles_monday","max_temp":30,"min_temp":-10,"day":"星期一","city":"洛杉矶","weather":"晴天"}
+{"_id":"Los Angeles_saturday","max_temp":20,"min_temp":13,"day":"星期六","city":"洛杉矶","weather":"下雨"}
+{"_id":"Los Angeles_sunday","max_temp":31,"min_temp":-6,"day":"星期日","city":"洛杉矶","weather":"晴天"}
+{"_id":"Los Angeles_thursday","max_temp":36,"min_temp":13,"day":"星期四","city":"洛杉矶","weather":"下雨"}
+{"_id":"Los Angeles_today","max_temp":25,"min_temp":-15,"day":"今天","city":"洛杉矶","weather":"下雨"}
+{"_id":"Los Angeles_tomorrow","max_temp":29,"min_temp":-11,"day":"明天","city":"洛杉矶","weather":"晴天"}
+{"_id":"Los Angeles_tuesday","max_temp":31,"min_temp":4,"day":"星期二","city":"洛杉矶","weather":"晴天"}
+{"_id":"Los Angeles_wednesday","max_temp":36,"min_temp":9,"day":"星期三","city":"洛杉矶","weather":"下雨"}
+{"_id":"Madrid_friday","max_temp":26,"min_temp":13,"day":"星期五","city":"马德里","weather":"多云"}
+{"_id":"Madrid_monday","max_temp":31,"min_temp":-11,"day":"星期一","city":"马德里","weather":"多云"}
+{"_id":"Madrid_saturday","max_temp":20,"min_temp":13,"day":"星期六","city":"马德里","weather":"晴天"}
+{"_id":"Madrid_sunday","max_temp":30,"min_temp":-5,"day":"星期日","city":"马德里","weather":"下雨"}
+{"_id":"Madrid_thursday","max_temp":35,"min_temp":13,"day":"星期四","city":"马德里","weather":"晴天"}
+{"_id":"Madrid_today","max_temp":25,"min_temp":-10,"day":"今天","city":"马德里","weather":"多云"}
+{"_id":"Madrid_tomorrow","max_temp":29,"min_temp":-10,"day":"明天","city":"马德里","weather":"下雨"}
+{"_id":"Madrid_tuesday","max_temp":30,"min_temp":4,"day":"星期二","city":"马德里","weather":"多云"}
+{"_id":"Madrid_wednesday","max_temp":35,"min_temp":9,"day":"星期三","city":"马德里","weather":"晴天"}
+{"_id":"Melbourne_friday","max_temp":16,"min_temp":-5,"day":"星期五","city":"墨尔本","weather":"晴天"}
+{"_id":"Melbourne_monday","max_temp":21,"min_temp":13,"day":"星期一","city":"墨尔本","weather":"下雨"}
+{"_id":"Melbourne_saturday","max_temp":11,"min_temp":-6,"day":"星期六","city":"墨尔本","weather":"多云"}
+{"_id":"Melbourne_sunday","max_temp":31,"min_temp":14,"day":"星期日","city":"墨尔本","weather":"晴天"}
+{"_id":"Melbourne_thursday","max_temp":6,"min_temp":-10,"day":"星期四","city":"墨尔本","weather":"晴天"}
+{"_id":"Melbourne_today","max_temp":25,"min_temp":18,"day":"今天","city":"墨尔本","weather":"多云"}
+{"_id":"Melbourne_tomorrow","max_temp":39,"min_temp":18,"day":"明天","city":"墨尔本","weather":"晴天"}
+{"_id":"Melbourne_tuesday","max_temp":15,"min_temp":9,"day":"星期二","city":"墨尔本","weather":"下雨"}
+{"_id":"Melbourne_wednesday","max_temp":6,"min_temp":-5,"day":"星期三","city":"墨尔本","weather":"下雨"}
+{"_id":"Moscow_friday","max_temp":25,"min_temp":13,"day":"星期五","city":"莫斯科","weather":"下雨"}
+{"_id":"Moscow_monday","max_temp":30,"min_temp":-10,"day":"星期一","city":"莫斯科","weather":"多云"}
+{"_id":"Moscow_saturday","max_temp":20,"min_temp":14,"day":"星期六","city":"莫斯科","weather":"晴天"}
+{"_id":"Moscow_sunday","max_temp":31,"min_temp":-6,"day":"星期日","city":"莫斯科","weather":"晴天"}
+{"_id":"Moscow_thursday","max_temp":36,"min_temp":14,"day":"星期四","city":"莫斯科","weather":"晴天"}
+{"_id":"Moscow_today","max_temp":25,"min_temp":-11,"day":"今天","city":"莫斯科","weather":"下雨"}
+{"_id":"Moscow_tomorrow","max_temp":29,"min_temp":-11,"day":"明天","city":"莫斯科","weather":"下雨"}
+{"_id":"Moscow_tuesday","max_temp":31,"min_temp":4,"day":"星期二","city":"莫斯科","weather":"多云"}
+{"_id":"Moscow_wednesday","max_temp":36,"min_temp":8,"day":"星期三","city":"莫斯科","weather":"多云"}
+{"_id":"Muchen_friday","max_temp":25,"min_temp":14,"day":"星期五","city":"穆琴","weather":"晴天"}
+{"_id":"Muchen_monday","max_temp":30,"min_temp":-11,"day":"星期一","city":"穆琴","weather":"晴天"}
+{"_id":"Muchen_saturday","max_temp":21,"min_temp":13,"day":"星期六","city":"穆琴","weather":"多云"}
+{"_id":"Muchen_sunday","max_temp":30,"min_temp":-6,"day":"星期日","city":"穆琴","weather":"多云"}
+{"_id":"Muchen_thursday","max_temp":36,"min_temp":14,"day":"星期四","city":"穆琴","weather":"多云"}
+{"_id":"Muchen_today","max_temp":25,"min_temp":-11,"day":"今天","city":"穆琴","weather":"多云"}
+{"_id":"Muchen_tomorrow","max_temp":29,"min_temp":-10,"day":"明天","city":"穆琴","weather":"晴天"}
+{"_id":"Muchen_tuesday","max_temp":30,"min_temp":3,"day":"星期二","city":"穆琴","weather":"多云"}
+{"_id":"Muchen_wednesday","max_temp":36,"min_temp":8,"day":"星期三","city":"穆琴","weather":"晴天"}
+{"_id":"New York_friday","max_temp":26,"min_temp":14,"day":"星期五","city":"纽约","weather":"晴天"}
+{"_id":"New York_monday","max_temp":30,"min_temp":-11,"day":"星期一","city":"纽约","weather":"晴天"}
+{"_id":"New York_saturday","max_temp":20,"min_temp":13,"day":"星期六","city":"纽约","weather":"下雨"}
+{"_id":"New York_sunday","max_temp":30,"min_temp":-6,"day":"星期日","city":"纽约","weather":"多云"}
+{"_id":"New York_thursday","max_temp":35,"min_temp":14,"day":"星期四","city":"纽约","weather":"多云"}
+{"_id":"New York_today","max_temp":25,"min_temp":-15,"day":"今天","city":"纽约","weather":"多云"}
+{"_id":"New York_tomorrow","max_temp":29,"min_temp":-10,"day":"明天","city":"纽约","weather":"晴天"}
+{"_id":"New York_tuesday","max_temp":31,"min_temp":3,"day":"星期二","city":"纽约","weather":"多云"}
+{"_id":"New York_wednesday","max_temp":35,"min_temp":8,"day":"星期三","city":"纽约","weather":"下雨"}
+{"_id":"Osaka_friday","max_temp":25,"min_temp":23,"day":"星期五","city":"大阪","weather":"晴天"}
+{"_id":"Osaka_monday","max_temp":30,"min_temp":19,"day":"星期一","city":"大阪","weather":"多云"}
+{"_id":"Osaka_saturday","max_temp":21,"min_temp":13,"day":"星期六","city":"大阪","weather":"多云"}
+{"_id":"Osaka_sunday","max_temp":31,"min_temp":14,"day":"星期日","city":"大阪","weather":"多云"}
+{"_id":"Osaka_thursday","max_temp":36,"min_temp":24,"day":"星期四","city":"大阪","weather":"多云"}
+{"_id":"Osaka_today","max_temp":25,"min_temp":4,"day":"今天","city":"大阪","weather":"晴天"}
+{"_id":"Osaka_tomorrow","max_temp":28,"min_temp":9,"day":"明天","city":"大阪","weather":"晴天"}
+{"_id":"Osaka_tuesday","max_temp":30,"min_temp":19,"day":"星期二","city":"大阪","weather":"多云"}
+{"_id":"Osaka_wednesday","max_temp":36,"min_temp":19,"day":"星期三","city":"大阪","weather":"下雨"}
+{"_id":"Paris_friday","max_temp":26,"min_temp":13,"day":"星期五","city":"巴黎","weather":"下雨"}
+{"_id":"Paris_monday","max_temp":30,"min_temp":-11,"day":"星期一","city":"巴黎","weather":"多云"}
+{"_id":"Paris_saturday","max_temp":21,"min_temp":14,"day":"星期六","city":"巴黎","weather":"晴天"}
+{"_id":"Paris_sunday","max_temp":30,"min_temp":-5,"day":"星期日","city":"巴黎","weather":"下雪"}
+{"_id":"Paris_thursday","max_temp":36,"min_temp":14,"day":"星期四","city":"巴黎","weather":"多云"}
+{"_id":"Paris_today","max_temp":25,"min_temp":-11,"day":"今天","city":"巴黎","weather":"多云"}
+{"_id":"Paris_tomorrow","max_temp":29,"min_temp":-10,"day":"明天","city":"巴黎","weather":"晴天"}
+{"_id":"Paris_tuesday","max_temp":31,"min_temp":4,"day":"星期二","city":"巴黎","weather":"下雨"}
+{"_id":"Paris_wednesday","max_temp":36,"min_temp":8,"day":"星期三","city":"巴黎","weather":"多云"}
+{"_id":"Prague_friday","max_temp":25,"min_temp":13,"day":"星期五","city":"布拉格","weather":"多云"}
+{"_id":"Prague_monday","max_temp":31,"min_temp":-11,"day":"星期一","city":"布拉格","weather":"多云"}
+{"_id":"Prague_saturday","max_temp":21,"min_temp":13,"day":"星期六","city":"布拉格","weather":"多云"}
+{"_id":"Prague_sunday","max_temp":31,"min_temp":-5,"day":"星期日","city":"布拉格","weather":"晴天"}
+{"_id":"Prague_thursday","max_temp":36,"min_temp":13,"day":"星期四","city":"布拉格","weather":"多云"}
+{"_id":"Prague_today","max_temp":26,"min_temp":-10,"day":"今天","city":"布拉格","weather":"多云"}
+{"_id":"Prague_tomorrow","max_temp":29,"min_temp":-11,"day":"明天","city":"布拉格","weather":"晴天"}
+{"_id":"Prague_tuesday","max_temp":31,"min_temp":3,"day":"星期二","city":"布拉格","weather":"多云"}
+{"_id":"Prague_wednesday","max_temp":35,"min_temp":9,"day":"星期三","city":"布拉格","weather":"多云"}
+{"_id":"Rome_friday","max_temp":25,"min_temp":13,"day":"星期五","city":"罗马","weather":"多云"}
+{"_id":"Rome_monday","max_temp":30,"min_temp":-11,"day":"星期一","city":"罗马","weather":"晴天"}
+{"_id":"Rome_saturday","max_temp":21,"min_temp":14,"day":"星期六","city":"罗马","weather":"多云"}
+{"_id":"Rome_sunday","max_temp":30,"min_temp":-6,"day":"星期日","city":"罗马","weather":"多云"}
+{"_id":"Rome_thursday","max_temp":36,"min_temp":14,"day":"星期四","city":"罗马","weather":"多云"}
+{"_id":"Rome_today","max_temp":26,"min_temp":-11,"day":"今天","city":"罗马","weather":"晴天"}
+{"_id":"Rome_tomorrow","max_temp":28,"min_temp":-11,"day":"明天","city":"罗马","weather":"多云"}
+{"_id":"Rome_tuesday","max_temp":31,"min_temp":3,"day":"星期二","city":"罗马","weather":"下雨"}
+{"_id":"Rome_wednesday","max_temp":36,"min_temp":8,"day":"星期三","city":"罗马","weather":"多云"}
+{"_id":"San Francisco_friday","max_temp":25,"min_temp":14,"day":"星期五","city":"旧金山","weather":"晴天"}
+{"_id":"San Francisco_monday","max_temp":31,"min_temp":-11,"day":"星期一","city":"旧金山","weather":"晴天"}
+{"_id":"San Francisco_saturday","max_temp":21,"min_temp":13,"day":"星期六","city":"旧金山","weather":"下雨"}
+{"_id":"San Francisco_sunday","max_temp":31,"min_temp":-6,"day":"星期日","city":"旧金山","weather":"晴天"}
+{"_id":"San Francisco_thursday","max_temp":35,"min_temp":14,"day":"星期四","city":"旧金山","weather":"晴天"}
+{"_id":"San Francisco_today","max_temp":25,"min_temp":-15,"day":"今天","city":"旧金山","weather":"晴天"}
+{"_id":"San Francisco_tomorrow","max_temp":29,"min_temp":-10,"day":"明天","city":"旧金山","weather":"下雪"}
+{"_id":"San Francisco_tuesday","max_temp":31,"min_temp":3,"day":"星期二","city":"旧金山","weather":"下雨"}
+{"_id":"San Francisco_wednesday","max_temp":35,"min_temp":9,"day":"星期三","city":"旧金山","weather":"多云"}
+{"_id":"Seattle_friday","max_temp":25,"min_temp":13,"day":"星期五","city":"西雅图","weather":"多云"}
+{"_id":"Seattle_monday","max_temp":31,"min_temp":-11,"day":"星期一","city":"西雅图","weather":"多云"}
+{"_id":"Seattle_saturday","max_temp":21,"min_temp":13,"day":"星期六","city":"西雅图","weather":"晴天"}
+{"_id":"Seattle_sunday","max_temp":31,"min_temp":-5,"day":"星期日","city":"西雅图","weather":"下雨"}
+{"_id":"Seattle_thursday","max_temp":35,"min_temp":14,"day":"星期四","city":"西雅图","weather":"多云"}
+{"_id":"Seattle_today","max_temp":26,"min_temp":-15,"day":"今天","city":"西雅图","weather":"晴天"}
+{"_id":"Seattle_tomorrow","max_temp":28,"min_temp":-11,"day":"明天","city":"西雅图","weather":"多云"}
+{"_id":"Seattle_tuesday","max_temp":30,"min_temp":4,"day":"星期二","city":"西雅图","weather":"多云"}
+{"_id":"Seattle_wednesday","max_temp":36,"min_temp":9,"day":"星期三","city":"西雅图","weather":"多云"}
+{"_id":"Seoul_friday","max_temp":26,"min_temp":24,"day":"星期五","city":"首尔","weather":"多云"}
+{"_id":"Seoul_monday","max_temp":30,"min_temp":18,"day":"星期一","city":"首尔","weather":"下雨"}
+{"_id":"Seoul_saturday","max_temp":20,"min_temp":13,"day":"星期六","city":"首尔","weather":"下雨"}
+{"_id":"Seoul_sunday","max_temp":31,"min_temp":14,"day":"星期日","city":"首尔","weather":"晴天"}
+{"_id":"Seoul_thursday","max_temp":36,"min_temp":23,"day":"星期四","city":"首尔","weather":"多云"}
+{"_id":"Seoul_today","max_temp":26,"min_temp":4,"day":"今天","city":"首尔","weather":"多云"}
+{"_id":"Seoul_tomorrow","max_temp":28,"min_temp":8,"day":"明天","city":"首尔","weather":"下雨"}
+{"_id":"Seoul_tuesday","max_temp":30,"min_temp":19,"day":"星期二","city":"首尔","weather":"下雨"}
+{"_id":"Seoul_wednesday","max_temp":36,"min_temp":18,"day":"星期三","city":"首尔","weather":"下雨"}
+{"_id":"Singapore_friday","max_temp":26,"min_temp":24,"day":"星期五","city":"新加坡","weather":"下雨"}
+{"_id":"Singapore_monday","max_temp":31,"min_temp":18,"day":"星期一","city":"新加坡","weather":"晴天"}
+{"_id":"Singapore_saturday","max_temp":20,"min_temp":14,"day":"星期六","city":"新加坡","weather":"下雨"}
+{"_id":"Singapore_sunday","max_temp":31,"min_temp":13,"day":"星期日","city":"新加坡","weather":"晴天"}
+{"_id":"Singapore_thursday","max_temp":36,"min_temp":24,"day":"星期四","city":"新加坡","weather":"下雨"}
+{"_id":"Singapore_today","max_temp":26,"min_temp":3,"day":"今天","city":"新加坡","weather":"多云"}
+{"_id":"Singapore_tomorrow","max_temp":29,"min_temp":9,"day":"明天","city":"新加坡","weather":"多云"}
+{"_id":"Singapore_tuesday","max_temp":30,"min_temp":19,"day":"星期二","city":"新加坡","weather":"下雨"}
+{"_id":"Singapore_wednesday","max_temp":35,"min_temp":18,"day":"星期三","city":"新加坡","weather":"下雨"}
+{"_id":"Tokyo_friday","max_temp":25,"min_temp":23,"day":"星期五","city":"东京","weather":"晴天"}
+{"_id":"Tokyo_monday","max_temp":31,"min_temp":18,"day":"星期一","city":"东京","weather":"晴天"}
+{"_id":"Tokyo_saturday","max_temp":20,"min_temp":14,"day":"星期六","city":"东京","weather":"多云"}
+{"_id":"Tokyo_sunday","max_temp":31,"min_temp":13,"day":"星期日","city":"东京","weather":"下雨"}
+{"_id":"Tokyo_thursday","max_temp":36,"min_temp":23,"day":"星期四","city":"东京","weather":"下雨"}
+{"_id":"Tokyo_today","max_temp":25,"min_temp":4,"day":"今天","city":"东京","weather":"多云"}
+{"_id":"Tokyo_tomorrow","max_temp":29,"min_temp":8,"day":"明天","city":"东京","weather":"多云"}
+{"_id":"Tokyo_tuesday","max_temp":30,"min_temp":18,"day":"星期二","city":"东京","weather":"晴天"}
+{"_id":"Tokyo_wednesday","max_temp":36,"min_temp":19,"day":"星期三","city":"东京","weather":"下雨"}
+{"_id":"Toronto_friday","max_temp":25,"min_temp":13,"day":"星期五","city":"多伦多","weather":"晴天"}
+{"_id":"Toronto_monday","max_temp":30,"min_temp":-11,"day":"星期一","city":"多伦多","weather":"多云"}
+{"_id":"Toronto_saturday","max_temp":21,"min_temp":14,"day":"星期六","city":"多伦多","weather":"下雨"}
+{"_id":"Toronto_sunday","max_temp":31,"min_temp":-6,"day":"星期日","city":"多伦多","weather":"下雪"}
+{"_id":"Toronto_thursday","max_temp":35,"min_temp":13,"day":"星期四","city":"多伦多","weather":"下雨"}
+{"_id":"Toronto_today","max_temp":25,"min_temp":-16,"day":"今天","city":"多伦多","weather":"多云"}
+{"_id":"Toronto_tomorrow","max_temp":28,"min_temp":-11,"day":"明天","city":"多伦多","weather":"多云"}
+{"_id":"Toronto_tuesday","max_temp":30,"min_temp":3,"day":"星期二","city":"多伦多","weather":"晴天"}
+{"_id":"Toronto_wednesday","max_temp":36,"min_temp":8,"day":"星期三","city":"多伦多","weather":"晴天"}
+{"_id":"Washington_friday","max_temp":26,"min_temp":14,"day":"星期五","city":"华盛顿","weather":"多云"}
+{"_id":"Washington_monday","max_temp":30,"min_temp":-11,"day":"星期一","city":"华盛顿","weather":"下雨"}
+{"_id":"Washington_saturday","max_temp":21,"min_temp":14,"day":"星期六","city":"华盛顿","weather":"下雨"}
+{"_id":"Washington_sunday","max_temp":30,"min_temp":-6,"day":"星期日","city":"华盛顿","weather":"多云"}
+{"_id":"Washington_thursday","max_temp":36,"min_temp":13,"day":"星期四","city":"华盛顿","weather":"晴天"}
+{"_id":"Washington_today","max_temp":26,"min_temp":-16,"day":"今天","city":"华盛顿","weather":"多云"}
+{"_id":"Washington_tomorrow","max_temp":29,"min_temp":-11,"day":"明天","city":"华盛顿","weather":"晴天"}
+{"_id":"Washington_tuesday","max_temp":31,"min_temp":4,"day":"星期二","city":"华盛顿","weather":"多云"}
+{"_id":"Washington_wednesday","max_temp":36,"min_temp":8,"day":"星期三","city":"华盛顿","weather":"多云"}
+{"_id":"Waterloo_friday","max_temp":26,"min_temp":14,"day":"星期五","city":"滑铁卢","weather":"晴天"}
+{"_id":"Waterloo_monday","max_temp":30,"min_temp":-10,"day":"星期一","city":"滑铁卢","weather":"下雨"}
+{"_id":"Waterloo_saturday","max_temp":21,"min_temp":13,"day":"星期六","city":"滑铁卢","weather":"多云"}
+{"_id":"Waterloo_sunday","max_temp":31,"min_temp":-6,"day":"星期日","city":"滑铁卢","weather":"下雪"}
+{"_id":"Waterloo_thursday","max_temp":35,"min_temp":14,"day":"星期四","city":"滑铁卢","weather":"晴天"}
+{"_id":"Waterloo_today","max_temp":25,"min_temp":-16,"day":"今天","city":"滑铁卢","weather":"下雨"}
+{"_id":"Waterloo_tomorrow","max_temp":28,"min_temp":-11,"day":"明天","city":"滑铁卢","weather":"多云"}
+{"_id":"Waterloo_tuesday","max_temp":30,"min_temp":4,"day":"星期二","city":"滑铁卢","weather":"下雨"}
+{"_id":"Waterloo_wednesday","max_temp":36,"min_temp":9,"day":"星期三","city":"滑铁卢","weather":"晴天"}

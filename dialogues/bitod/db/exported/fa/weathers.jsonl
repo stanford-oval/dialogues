@@ -1,0 +1,287 @@
+{"_id": "Abu Dhabi_friday", "day": "جمعه", "city": "ابوظبی", "weather": "باران", "max_temp": 31, "min_temp": 18}
+{"_id": "Abu Dhabi_monday", "day": "دوشنبه", "city": "ابوظبی", "weather": "باران", "max_temp": 20, "min_temp": 13}
+{"_id": "Abu Dhabi_saturday", "day": "شنبه", "city": "ابوظبی", "weather": "ابرها", "max_temp": 30, "min_temp": 14}
+{"_id": "Abu Dhabi_sunday", "day": "روز یکشنبه", "city": "ابوظبی", "weather": "ابرها", "max_temp": 36, "min_temp": 24}
+{"_id": "Abu Dhabi_thursday", "day": "سه شنبه", "city": "ابوظبی", "weather": "ابرها", "max_temp": 25, "min_temp": 3}
+{"_id": "Abu Dhabi_today", "day": "امروز", "city": "ابوظبی", "weather": "باران", "max_temp": 29, "min_temp": 8}
+{"_id": "Abu Dhabi_tomorrow", "day": "فردا", "city": "ابوظبی", "weather": "باران", "max_temp": 30, "min_temp": 18}
+{"_id": "Abu Dhabi_tuesday", "day": "شنبه", "city": "ابوظبی", "weather": "ابرها", "max_temp": 36, "min_temp": 19}
+{"_id": "Abu Dhabi_wednesday", "day": "چهارشنبه", "city": "ابوظبی", "weather": "باران", "max_temp": 25, "min_temp": 13}
+{"_id": "Amsterdam_friday", "day": "جمعه", "city": "آمستردام", "weather": "باران", "max_temp": 30, "min_temp": -11}
+{"_id": "Amsterdam_monday", "day": "دوشنبه", "city": "آمستردام", "weather": "ابرها", "max_temp": 20, "min_temp": 14}
+{"_id": "Amsterdam_saturday", "day": "شنبه", "city": "آمستردام", "weather": "باران", "max_temp": 30, "min_temp": -6}
+{"_id": "Amsterdam_sunday", "day": "روز یکشنبه", "city": "آمستردام", "weather": "آفتابی", "max_temp": 36, "min_temp": 14}
+{"_id": "Amsterdam_thursday", "day": "سه شنبه", "city": "آمستردام", "weather": "ابرها", "max_temp": 26, "min_temp": -10}
+{"_id": "Amsterdam_today", "day": "امروز", "city": "آمستردام", "weather": "ابرها", "max_temp": 29, "min_temp": -11}
+{"_id": "Amsterdam_tomorrow", "day": "فردا", "city": "آمستردام", "weather": "آفتابی", "max_temp": 31, "min_temp": 4}
+{"_id": "Amsterdam_tuesday", "day": "شنبه", "city": "آمستردام", "weather": "باران", "max_temp": 35, "min_temp": 9}
+{"_id": "Amsterdam_wednesday", "day": "چهارشنبه", "city": "آمستردام", "weather": "ابرها", "max_temp": 25, "min_temp": 13}
+{"_id": "Barcelona_friday", "day": "جمعه", "city": "بارسلونا", "weather": "باران", "max_temp": 30, "min_temp": -11}
+{"_id": "Barcelona_monday", "day": "دوشنبه", "city": "بارسلونا", "weather": "باران", "max_temp": 20, "min_temp": 14}
+{"_id": "Barcelona_saturday", "day": "شنبه", "city": "بارسلونا", "weather": "باران", "max_temp": 31, "min_temp": -5}
+{"_id": "Barcelona_sunday", "day": "روز یکشنبه", "city": "بارسلونا", "weather": "برف", "max_temp": 35, "min_temp": 14}
+{"_id": "Barcelona_thursday", "day": "سه شنبه", "city": "بارسلونا", "weather": "ابرها", "max_temp": 25, "min_temp": -11}
+{"_id": "Barcelona_today", "day": "امروز", "city": "بارسلونا", "weather": "ابرها", "max_temp": 29, "min_temp": -11}
+{"_id": "Barcelona_tomorrow", "day": "فردا", "city": "بارسلونا", "weather": "آفتابی", "max_temp": 30, "min_temp": 3}
+{"_id": "Barcelona_tuesday", "day": "شنبه", "city": "بارسلونا", "weather": "ابرها", "max_temp": 36, "min_temp": 9}
+{"_id": "Barcelona_wednesday", "day": "چهارشنبه", "city": "بارسلونا", "weather": "باران", "max_temp": 25, "min_temp": 24}
+{"_id": "Beijing_friday", "day": "جمعه", "city": "پکن", "weather": "ابرها", "max_temp": 31, "min_temp": 19}
+{"_id": "Beijing_monday", "day": "دوشنبه", "city": "پکن", "weather": "آفتابی", "max_temp": 20, "min_temp": 13}
+{"_id": "Beijing_saturday", "day": "شنبه", "city": "پکن", "weather": "باران", "max_temp": 31, "min_temp": 14}
+{"_id": "Beijing_sunday", "day": "روز یکشنبه", "city": "پکن", "weather": "باران", "max_temp": 36, "min_temp": 24}
+{"_id": "Beijing_thursday", "day": "سه شنبه", "city": "پکن", "weather": "آفتابی", "max_temp": 26, "min_temp": 3}
+{"_id": "Beijing_today", "day": "امروز", "city": "پکن", "weather": "آفتابی", "max_temp": 29, "min_temp": 9}
+{"_id": "Beijing_tomorrow", "day": "فردا", "city": "پکن", "weather": "ابرها", "max_temp": 31, "min_temp": 19}
+{"_id": "Beijing_tuesday", "day": "شنبه", "city": "پکن", "weather": "باران", "max_temp": 35, "min_temp": 18}
+{"_id": "Beijing_wednesday", "day": "چهارشنبه", "city": "پکن", "weather": "ابرها", "max_temp": 26, "min_temp": 13}
+{"_id": "Berlin_friday", "day": "جمعه", "city": "برلین", "weather": "آفتابی", "max_temp": 30, "min_temp": -11}
+{"_id": "Berlin_monday", "day": "دوشنبه", "city": "برلین", "weather": "آفتابی", "max_temp": 20, "min_temp": 13}
+{"_id": "Berlin_saturday", "day": "شنبه", "city": "برلین", "weather": "باران", "max_temp": 31, "min_temp": -6}
+{"_id": "Berlin_sunday", "day": "روز یکشنبه", "city": "برلین", "weather": "آفتابی", "max_temp": 36, "min_temp": 14}
+{"_id": "Berlin_thursday", "day": "سه شنبه", "city": "برلین", "weather": "آفتابی", "max_temp": 26, "min_temp": -10}
+{"_id": "Berlin_today", "day": "امروز", "city": "برلین", "weather": "برف", "max_temp": 28, "min_temp": -10}
+{"_id": "Berlin_tomorrow", "day": "فردا", "city": "برلین", "weather": "آفتابی", "max_temp": 30, "min_temp": 4}
+{"_id": "Berlin_tuesday", "day": "شنبه", "city": "برلین", "weather": "باران", "max_temp": 35, "min_temp": 9}
+{"_id": "Berlin_wednesday", "day": "چهارشنبه", "city": "برلین", "weather": "باران", "max_temp": 15, "min_temp": -5}
+{"_id": "Canberra_friday", "day": "جمعه", "city": "کامبرا", "weather": "ابرها", "max_temp": 20, "min_temp": 14}
+{"_id": "Canberra_monday", "day": "دوشنبه", "city": "کامبرا", "weather": "باران", "max_temp": 11, "min_temp": -5}
+{"_id": "Canberra_saturday", "day": "شنبه", "city": "کامبرا", "weather": "باران", "max_temp": 31, "min_temp": 13}
+{"_id": "Canberra_sunday", "day": "روز یکشنبه", "city": "کامبرا", "weather": "ابرها", "max_temp": 5, "min_temp": -11}
+{"_id": "Canberra_thursday", "day": "سه شنبه", "city": "کامبرا", "weather": "ابرها", "max_temp": 26, "min_temp": 19}
+{"_id": "Canberra_today", "day": "امروز", "city": "کامبرا", "weather": "ابرها", "max_temp": 39, "min_temp": 19}
+{"_id": "Canberra_tomorrow", "day": "فردا", "city": "کامبرا", "weather": "آفتابی", "max_temp": 15, "min_temp": 8}
+{"_id": "Canberra_tuesday", "day": "شنبه", "city": "کامبرا", "weather": "آفتابی", "max_temp": 5, "min_temp": -5}
+{"_id": "Canberra_wednesday", "day": "چهارشنبه", "city": "کامبرا", "weather": "آفتابی", "max_temp": 25, "min_temp": 14}
+{"_id": "Chicago_friday", "day": "جمعه", "city": "شیکاگو", "weather": "آفتابی", "max_temp": 31, "min_temp": -11}
+{"_id": "Chicago_monday", "day": "دوشنبه", "city": "شیکاگو", "weather": "برف", "max_temp": 20, "min_temp": 14}
+{"_id": "Chicago_saturday", "day": "شنبه", "city": "شیکاگو", "weather": "آفتابی", "max_temp": 31, "min_temp": -5}
+{"_id": "Chicago_sunday", "day": "روز یکشنبه", "city": "شیکاگو", "weather": "باران", "max_temp": 36, "min_temp": 14}
+{"_id": "Chicago_thursday", "day": "سه شنبه", "city": "شیکاگو", "weather": "آفتابی", "max_temp": 26, "min_temp": -16}
+{"_id": "Chicago_today", "day": "امروز", "city": "شیکاگو", "weather": "برف", "max_temp": 28, "min_temp": -11}
+{"_id": "Chicago_tomorrow", "day": "فردا", "city": "شیکاگو", "weather": "برف", "max_temp": 31, "min_temp": 3}
+{"_id": "Chicago_tuesday", "day": "شنبه", "city": "شیکاگو", "weather": "ابرها", "max_temp": 36, "min_temp": 8}
+{"_id": "Chicago_wednesday", "day": "چهارشنبه", "city": "شیکاگو", "weather": "ابرها", "max_temp": 26, "min_temp": 24}
+{"_id": "Denpasar_friday", "day": "جمعه", "city": "دنپاسار", "weather": "ابرها", "max_temp": 30, "min_temp": 18}
+{"_id": "Denpasar_monday", "day": "دوشنبه", "city": "دنپاسار", "weather": "آفتابی", "max_temp": 20, "min_temp": 14}
+{"_id": "Denpasar_saturday", "day": "شنبه", "city": "دنپاسار", "weather": "ابرها", "max_temp": 31, "min_temp": 14}
+{"_id": "Denpasar_sunday", "day": "روز یکشنبه", "city": "دنپاسار", "weather": "ابرها", "max_temp": 35, "min_temp": 23}
+{"_id": "Denpasar_thursday", "day": "سه شنبه", "city": "دنپاسار", "weather": "باران", "max_temp": 26, "min_temp": 4}
+{"_id": "Denpasar_today", "day": "امروز", "city": "دنپاسار", "weather": "ابرها", "max_temp": 29, "min_temp": 8}
+{"_id": "Denpasar_tomorrow", "day": "فردا", "city": "دنپاسار", "weather": "باران", "max_temp": 30, "min_temp": 18}
+{"_id": "Denpasar_tuesday", "day": "شنبه", "city": "دنپاسار", "weather": "ابرها", "max_temp": 35, "min_temp": 18}
+{"_id": "Denpasar_wednesday", "day": "چهارشنبه", "city": "دنپاسار", "weather": "آفتابی", "max_temp": 25, "min_temp": 24}
+{"_id": "Dubai_friday", "day": "جمعه", "city": "دوبی", "weather": "ابرها", "max_temp": 30, "min_temp": 19}
+{"_id": "Dubai_monday", "day": "دوشنبه", "city": "دوبی", "weather": "باران", "max_temp": 21, "min_temp": 14}
+{"_id": "Dubai_saturday", "day": "شنبه", "city": "دوبی", "weather": "آفتابی", "max_temp": 30, "min_temp": 14}
+{"_id": "Dubai_sunday", "day": "روز یکشنبه", "city": "دوبی", "weather": "آفتابی", "max_temp": 35, "min_temp": 24}
+{"_id": "Dubai_thursday", "day": "سه شنبه", "city": "دوبی", "weather": "ابرها", "max_temp": 26, "min_temp": 3}
+{"_id": "Dubai_today", "day": "امروز", "city": "دوبی", "weather": "آفتابی", "max_temp": 29, "min_temp": 9}
+{"_id": "Dubai_tomorrow", "day": "فردا", "city": "دوبی", "weather": "آفتابی", "max_temp": 30, "min_temp": 19}
+{"_id": "Dubai_tuesday", "day": "شنبه", "city": "دوبی", "weather": "آفتابی", "max_temp": 35, "min_temp": 19}
+{"_id": "Dubai_wednesday", "day": "چهارشنبه", "city": "دوبی", "weather": "باران", "max_temp": 26, "min_temp": 13}
+{"_id": "Florence_friday", "day": "جمعه", "city": "فلورانس", "weather": "آفتابی", "max_temp": 30, "min_temp": -10}
+{"_id": "Florence_monday", "day": "دوشنبه", "city": "فلورانس", "weather": "باران", "max_temp": 20, "min_temp": 13}
+{"_id": "Florence_saturday", "day": "شنبه", "city": "فلورانس", "weather": "ابرها", "max_temp": 30, "min_temp": -6}
+{"_id": "Florence_sunday", "day": "روز یکشنبه", "city": "فلورانس", "weather": "آفتابی", "max_temp": 36, "min_temp": 14}
+{"_id": "Florence_thursday", "day": "سه شنبه", "city": "فلورانس", "weather": "آفتابی", "max_temp": 26, "min_temp": -10}
+{"_id": "Florence_today", "day": "امروز", "city": "فلورانس", "weather": "آفتابی", "max_temp": 28, "min_temp": -11}
+{"_id": "Florence_tomorrow", "day": "فردا", "city": "فلورانس", "weather": "باران", "max_temp": 31, "min_temp": 4}
+{"_id": "Florence_tuesday", "day": "شنبه", "city": "فلورانس", "weather": "باران", "max_temp": 35, "min_temp": 9}
+{"_id": "Florence_wednesday", "day": "چهارشنبه", "city": "فلورانس", "weather": "ابرها", "max_temp": 25, "min_temp": 24}
+{"_id": "Hong Kong_friday", "day": "جمعه", "city": "هنگ کنگ", "weather": "ابرها", "max_temp": 30, "min_temp": 19}
+{"_id": "Hong Kong_monday", "day": "دوشنبه", "city": "هنگ کنگ", "weather": "ابرها", "max_temp": 21, "min_temp": 13}
+{"_id": "Hong Kong_saturday", "day": "شنبه", "city": "هنگ کنگ", "weather": "باران", "max_temp": 30, "min_temp": 14}
+{"_id": "Hong Kong_sunday", "day": "روز یکشنبه", "city": "هنگ کنگ", "weather": "باران", "max_temp": 35, "min_temp": 23}
+{"_id": "Hong Kong_thursday", "day": "سه شنبه", "city": "هنگ کنگ", "weather": "ابرها", "max_temp": 26, "min_temp": 3}
+{"_id": "Hong Kong_today", "day": "امروز", "city": "هنگ کنگ", "weather": "باران", "max_temp": 29, "min_temp": 8}
+{"_id": "Hong Kong_tomorrow", "day": "فردا", "city": "هنگ کنگ", "weather": "ابرها", "max_temp": 30, "min_temp": 18}
+{"_id": "Hong Kong_tuesday", "day": "شنبه", "city": "هنگ کنگ", "weather": "باران", "max_temp": 35, "min_temp": 19}
+{"_id": "Hong Kong_wednesday", "day": "چهارشنبه", "city": "هنگ کنگ", "weather": "آفتابی", "max_temp": 26, "min_temp": 24}
+{"_id": "Jakarta_friday", "day": "جمعه", "city": "جاکارتا", "weather": "آفتابی", "max_temp": 31, "min_temp": 18}
+{"_id": "Jakarta_monday", "day": "دوشنبه", "city": "جاکارتا", "weather": "باران", "max_temp": 21, "min_temp": 13}
+{"_id": "Jakarta_saturday", "day": "شنبه", "city": "جاکارتا", "weather": "ابرها", "max_temp": 31, "min_temp": 14}
+{"_id": "Jakarta_sunday", "day": "روز یکشنبه", "city": "جاکارتا", "weather": "ابرها", "max_temp": 35, "min_temp": 24}
+{"_id": "Jakarta_thursday", "day": "سه شنبه", "city": "جاکارتا", "weather": "باران", "max_temp": 26, "min_temp": 3}
+{"_id": "Jakarta_today", "day": "امروز", "city": "جاکارتا", "weather": "ابرها", "max_temp": 28, "min_temp": 9}
+{"_id": "Jakarta_tomorrow", "day": "فردا", "city": "جاکارتا", "weather": "باران", "max_temp": 31, "min_temp": 19}
+{"_id": "Jakarta_tuesday", "day": "شنبه", "city": "جاکارتا", "weather": "آفتابی", "max_temp": 36, "min_temp": 19}
+{"_id": "Jakarta_wednesday", "day": "چهارشنبه", "city": "جاکارتا", "weather": "آفتابی", "max_temp": 26, "min_temp": 23}
+{"_id": "Kyoto_friday", "day": "جمعه", "city": "کیوتو", "weather": "باران", "max_temp": 30, "min_temp": 19}
+{"_id": "Kyoto_monday", "day": "دوشنبه", "city": "کیوتو", "weather": "ابرها", "max_temp": 21, "min_temp": 13}
+{"_id": "Kyoto_saturday", "day": "شنبه", "city": "کیوتو", "weather": "آفتابی", "max_temp": 30, "min_temp": 13}
+{"_id": "Kyoto_sunday", "day": "روز یکشنبه", "city": "کیوتو", "weather": "ابرها", "max_temp": 36, "min_temp": 23}
+{"_id": "Kyoto_thursday", "day": "سه شنبه", "city": "کیوتو", "weather": "باران", "max_temp": 26, "min_temp": 3}
+{"_id": "Kyoto_today", "day": "امروز", "city": "کیوتو", "weather": "آفتابی", "max_temp": 28, "min_temp": 9}
+{"_id": "Kyoto_tomorrow", "day": "فردا", "city": "کیوتو", "weather": "آفتابی", "max_temp": 31, "min_temp": 19}
+{"_id": "Kyoto_tuesday", "day": "شنبه", "city": "کیوتو", "weather": "باران", "max_temp": 35, "min_temp": 19}
+{"_id": "Kyoto_wednesday", "day": "چهارشنبه", "city": "کیوتو", "weather": "ابرها", "max_temp": 25, "min_temp": 13}
+{"_id": "Las Vegas_friday", "day": "جمعه", "city": "لاس وگاس", "weather": "آفتابی", "max_temp": 30, "min_temp": -10}
+{"_id": "Las Vegas_monday", "day": "دوشنبه", "city": "لاس وگاس", "weather": "آفتابی", "max_temp": 20, "min_temp": 13}
+{"_id": "Las Vegas_saturday", "day": "شنبه", "city": "لاس وگاس", "weather": "باران", "max_temp": 30, "min_temp": -6}
+{"_id": "Las Vegas_sunday", "day": "روز یکشنبه", "city": "لاس وگاس", "weather": "باران", "max_temp": 35, "min_temp": 13}
+{"_id": "Las Vegas_thursday", "day": "سه شنبه", "city": "لاس وگاس", "weather": "آفتابی", "max_temp": 26, "min_temp": -16}
+{"_id": "Las Vegas_today", "day": "امروز", "city": "لاس وگاس", "weather": "ابرها", "max_temp": 29, "min_temp": -10}
+{"_id": "Las Vegas_tomorrow", "day": "فردا", "city": "لاس وگاس", "weather": "آفتابی", "max_temp": 30, "min_temp": 4}
+{"_id": "Las Vegas_tuesday", "day": "شنبه", "city": "لاس وگاس", "weather": "ابرها", "max_temp": 35, "min_temp": 8}
+{"_id": "Las Vegas_wednesday", "day": "چهارشنبه", "city": "لاس وگاس", "weather": "باران", "max_temp": 25, "min_temp": 14}
+{"_id": "Los Angeles_friday", "day": "جمعه", "city": "لس آنجلس", "weather": "باران", "max_temp": 30, "min_temp": -10}
+{"_id": "Los Angeles_monday", "day": "دوشنبه", "city": "لس آنجلس", "weather": "آفتابی", "max_temp": 20, "min_temp": 13}
+{"_id": "Los Angeles_saturday", "day": "شنبه", "city": "لس آنجلس", "weather": "باران", "max_temp": 31, "min_temp": -6}
+{"_id": "Los Angeles_sunday", "day": "روز یکشنبه", "city": "لس آنجلس", "weather": "آفتابی", "max_temp": 36, "min_temp": 13}
+{"_id": "Los Angeles_thursday", "day": "سه شنبه", "city": "لس آنجلس", "weather": "باران", "max_temp": 25, "min_temp": -15}
+{"_id": "Los Angeles_today", "day": "امروز", "city": "لس آنجلس", "weather": "باران", "max_temp": 29, "min_temp": -11}
+{"_id": "Los Angeles_tomorrow", "day": "فردا", "city": "لس آنجلس", "weather": "آفتابی", "max_temp": 31, "min_temp": 4}
+{"_id": "Los Angeles_tuesday", "day": "شنبه", "city": "لس آنجلس", "weather": "آفتابی", "max_temp": 36, "min_temp": 9}
+{"_id": "Los Angeles_wednesday", "day": "چهارشنبه", "city": "لس آنجلس", "weather": "باران", "max_temp": 26, "min_temp": 13}
+{"_id": "Madrid_friday", "day": "جمعه", "city": "مایدریس", "weather": "ابرها", "max_temp": 31, "min_temp": -11}
+{"_id": "Madrid_monday", "day": "دوشنبه", "city": "مایدریس", "weather": "ابرها", "max_temp": 20, "min_temp": 13}
+{"_id": "Madrid_saturday", "day": "شنبه", "city": "مایدریس", "weather": "آفتابی", "max_temp": 30, "min_temp": -5}
+{"_id": "Madrid_sunday", "day": "روز یکشنبه", "city": "مایدریس", "weather": "باران", "max_temp": 35, "min_temp": 13}
+{"_id": "Madrid_thursday", "day": "سه شنبه", "city": "مایدریس", "weather": "آفتابی", "max_temp": 25, "min_temp": -10}
+{"_id": "Madrid_today", "day": "امروز", "city": "مایدریس", "weather": "ابرها", "max_temp": 29, "min_temp": -10}
+{"_id": "Madrid_tomorrow", "day": "فردا", "city": "مایدریس", "weather": "باران", "max_temp": 30, "min_temp": 4}
+{"_id": "Madrid_tuesday", "day": "شنبه", "city": "مایدریس", "weather": "ابرها", "max_temp": 35, "min_temp": 9}
+{"_id": "Madrid_wednesday", "day": "چهارشنبه", "city": "مایدریس", "weather": "آفتابی", "max_temp": 16, "min_temp": -5}
+{"_id": "Melbourne_friday", "day": "جمعه", "city": "ملبورن", "weather": "آفتابی", "max_temp": 21, "min_temp": 13}
+{"_id": "Melbourne_monday", "day": "دوشنبه", "city": "ملبورن", "weather": "باران", "max_temp": 11, "min_temp": -6}
+{"_id": "Melbourne_saturday", "day": "شنبه", "city": "ملبورن", "weather": "ابرها", "max_temp": 31, "min_temp": 14}
+{"_id": "Melbourne_sunday", "day": "روز یکشنبه", "city": "ملبورن", "weather": "آفتابی", "max_temp": 6, "min_temp": -10}
+{"_id": "Melbourne_thursday", "day": "سه شنبه", "city": "ملبورن", "weather": "آفتابی", "max_temp": 25, "min_temp": 18}
+{"_id": "Melbourne_today", "day": "امروز", "city": "ملبورن", "weather": "ابرها", "max_temp": 39, "min_temp": 18}
+{"_id": "Melbourne_tomorrow", "day": "فردا", "city": "ملبورن", "weather": "آفتابی", "max_temp": 15, "min_temp": 9}
+{"_id": "Melbourne_tuesday", "day": "شنبه", "city": "ملبورن", "weather": "باران", "max_temp": 6, "min_temp": -5}
+{"_id": "Melbourne_wednesday", "day": "چهارشنبه", "city": "ملبورن", "weather": "باران", "max_temp": 25, "min_temp": 13}
+{"_id": "Moscow_friday", "day": "جمعه", "city": "مسکو", "weather": "باران", "max_temp": 30, "min_temp": -10}
+{"_id": "Moscow_monday", "day": "دوشنبه", "city": "مسکو", "weather": "ابرها", "max_temp": 20, "min_temp": 14}
+{"_id": "Moscow_saturday", "day": "شنبه", "city": "مسکو", "weather": "آفتابی", "max_temp": 31, "min_temp": -6}
+{"_id": "Moscow_sunday", "day": "روز یکشنبه", "city": "مسکو", "weather": "آفتابی", "max_temp": 36, "min_temp": 14}
+{"_id": "Moscow_thursday", "day": "سه شنبه", "city": "مسکو", "weather": "آفتابی", "max_temp": 25, "min_temp": -11}
+{"_id": "Moscow_today", "day": "امروز", "city": "مسکو", "weather": "باران", "max_temp": 29, "min_temp": -11}
+{"_id": "Moscow_tomorrow", "day": "فردا", "city": "مسکو", "weather": "باران", "max_temp": 31, "min_temp": 4}
+{"_id": "Moscow_tuesday", "day": "شنبه", "city": "مسکو", "weather": "ابرها", "max_temp": 36, "min_temp": 8}
+{"_id": "Moscow_wednesday", "day": "چهارشنبه", "city": "مسکو", "weather": "ابرها", "max_temp": 25, "min_temp": 14}
+{"_id": "Muchen_friday", "day": "جمعه", "city": "موهان", "weather": "آفتابی", "max_temp": 30, "min_temp": -11}
+{"_id": "Muchen_monday", "day": "دوشنبه", "city": "موهان", "weather": "آفتابی", "max_temp": 21, "min_temp": 13}
+{"_id": "Muchen_saturday", "day": "شنبه", "city": "موهان", "weather": "ابرها", "max_temp": 30, "min_temp": -6}
+{"_id": "Muchen_sunday", "day": "روز یکشنبه", "city": "موهان", "weather": "ابرها", "max_temp": 36, "min_temp": 14}
+{"_id": "Muchen_thursday", "day": "سه شنبه", "city": "موهان", "weather": "ابرها", "max_temp": 25, "min_temp": -11}
+{"_id": "Muchen_today", "day": "امروز", "city": "موهان", "weather": "ابرها", "max_temp": 29, "min_temp": -10}
+{"_id": "Muchen_tomorrow", "day": "فردا", "city": "موهان", "weather": "آفتابی", "max_temp": 30, "min_temp": 3}
+{"_id": "Muchen_tuesday", "day": "شنبه", "city": "موهان", "weather": "ابرها", "max_temp": 36, "min_temp": 8}
+{"_id": "Muchen_wednesday", "day": "چهارشنبه", "city": "موهان", "weather": "آفتابی", "max_temp": 26, "min_temp": 14}
+{"_id": "New York_friday", "day": "جمعه", "city": "نیویورک", "weather": "آفتابی", "max_temp": 30, "min_temp": -11}
+{"_id": "New York_monday", "day": "دوشنبه", "city": "نیویورک", "weather": "آفتابی", "max_temp": 20, "min_temp": 13}
+{"_id": "New York_saturday", "day": "شنبه", "city": "نیویورک", "weather": "باران", "max_temp": 30, "min_temp": -6}
+{"_id": "New York_sunday", "day": "روز یکشنبه", "city": "نیویورک", "weather": "ابرها", "max_temp": 35, "min_temp": 14}
+{"_id": "New York_thursday", "day": "سه شنبه", "city": "نیویورک", "weather": "ابرها", "max_temp": 25, "min_temp": -15}
+{"_id": "New York_today", "day": "امروز", "city": "نیویورک", "weather": "ابرها", "max_temp": 29, "min_temp": -10}
+{"_id": "New York_tomorrow", "day": "فردا", "city": "نیویورک", "weather": "آفتابی", "max_temp": 31, "min_temp": 3}
+{"_id": "New York_tuesday", "day": "شنبه", "city": "نیویورک", "weather": "ابرها", "max_temp": 35, "min_temp": 8}
+{"_id": "New York_wednesday", "day": "چهارشنبه", "city": "نیویورک", "weather": "باران", "max_temp": 25, "min_temp": 23}
+{"_id": "Osaka_friday", "day": "جمعه", "city": "اوساکا", "weather": "آفتابی", "max_temp": 30, "min_temp": 19}
+{"_id": "Osaka_monday", "day": "دوشنبه", "city": "اوساکا", "weather": "ابرها", "max_temp": 21, "min_temp": 13}
+{"_id": "Osaka_saturday", "day": "شنبه", "city": "اوساکا", "weather": "ابرها", "max_temp": 31, "min_temp": 14}
+{"_id": "Osaka_sunday", "day": "روز یکشنبه", "city": "اوساکا", "weather": "ابرها", "max_temp": 36, "min_temp": 24}
+{"_id": "Osaka_thursday", "day": "سه شنبه", "city": "اوساکا", "weather": "ابرها", "max_temp": 25, "min_temp": 4}
+{"_id": "Osaka_today", "day": "امروز", "city": "اوساکا", "weather": "آفتابی", "max_temp": 28, "min_temp": 9}
+{"_id": "Osaka_tomorrow", "day": "فردا", "city": "اوساکا", "weather": "آفتابی", "max_temp": 30, "min_temp": 19}
+{"_id": "Osaka_tuesday", "day": "شنبه", "city": "اوساکا", "weather": "ابرها", "max_temp": 36, "min_temp": 19}
+{"_id": "Osaka_wednesday", "day": "چهارشنبه", "city": "اوساکا", "weather": "باران", "max_temp": 26, "min_temp": 13}
+{"_id": "Paris_friday", "day": "جمعه", "city": "پاریس", "weather": "باران", "max_temp": 30, "min_temp": -11}
+{"_id": "Paris_monday", "day": "دوشنبه", "city": "پاریس", "weather": "ابرها", "max_temp": 21, "min_temp": 14}
+{"_id": "Paris_saturday", "day": "شنبه", "city": "پاریس", "weather": "آفتابی", "max_temp": 30, "min_temp": -5}
+{"_id": "Paris_sunday", "day": "روز یکشنبه", "city": "پاریس", "weather": "برف", "max_temp": 36, "min_temp": 14}
+{"_id": "Paris_thursday", "day": "سه شنبه", "city": "پاریس", "weather": "ابرها", "max_temp": 25, "min_temp": -11}
+{"_id": "Paris_today", "day": "امروز", "city": "پاریس", "weather": "ابرها", "max_temp": 29, "min_temp": -10}
+{"_id": "Paris_tomorrow", "day": "فردا", "city": "پاریس", "weather": "آفتابی", "max_temp": 31, "min_temp": 4}
+{"_id": "Paris_tuesday", "day": "شنبه", "city": "پاریس", "weather": "باران", "max_temp": 36, "min_temp": 8}
+{"_id": "Paris_wednesday", "day": "چهارشنبه", "city": "پاریس", "weather": "ابرها", "max_temp": 25, "min_temp": 13}
+{"_id": "Prague_friday", "day": "جمعه", "city": "پراگ", "weather": "ابرها", "max_temp": 31, "min_temp": -11}
+{"_id": "Prague_monday", "day": "دوشنبه", "city": "پراگ", "weather": "ابرها", "max_temp": 21, "min_temp": 13}
+{"_id": "Prague_saturday", "day": "شنبه", "city": "پراگ", "weather": "ابرها", "max_temp": 31, "min_temp": -5}
+{"_id": "Prague_sunday", "day": "روز یکشنبه", "city": "پراگ", "weather": "آفتابی", "max_temp": 36, "min_temp": 13}
+{"_id": "Prague_thursday", "day": "سه شنبه", "city": "پراگ", "weather": "ابرها", "max_temp": 26, "min_temp": -10}
+{"_id": "Prague_today", "day": "امروز", "city": "پراگ", "weather": "ابرها", "max_temp": 29, "min_temp": -11}
+{"_id": "Prague_tomorrow", "day": "فردا", "city": "پراگ", "weather": "آفتابی", "max_temp": 31, "min_temp": 3}
+{"_id": "Prague_tuesday", "day": "شنبه", "city": "پراگ", "weather": "ابرها", "max_temp": 35, "min_temp": 9}
+{"_id": "Prague_wednesday", "day": "چهارشنبه", "city": "پراگ", "weather": "ابرها", "max_temp": 25, "min_temp": 13}
+{"_id": "Rome_friday", "day": "جمعه", "city": "رم", "weather": "ابرها", "max_temp": 30, "min_temp": -11}
+{"_id": "Rome_monday", "day": "دوشنبه", "city": "رم", "weather": "آفتابی", "max_temp": 21, "min_temp": 14}
+{"_id": "Rome_saturday", "day": "شنبه", "city": "رم", "weather": "ابرها", "max_temp": 30, "min_temp": -6}
+{"_id": "Rome_sunday", "day": "روز یکشنبه", "city": "رم", "weather": "ابرها", "max_temp": 36, "min_temp": 14}
+{"_id": "Rome_thursday", "day": "سه شنبه", "city": "رم", "weather": "ابرها", "max_temp": 26, "min_temp": -11}
+{"_id": "Rome_today", "day": "امروز", "city": "رم", "weather": "آفتابی", "max_temp": 28, "min_temp": -11}
+{"_id": "Rome_tomorrow", "day": "فردا", "city": "رم", "weather": "ابرها", "max_temp": 31, "min_temp": 3}
+{"_id": "Rome_tuesday", "day": "شنبه", "city": "رم", "weather": "باران", "max_temp": 36, "min_temp": 8}
+{"_id": "Rome_wednesday", "day": "چهارشنبه", "city": "رم", "weather": "ابرها", "max_temp": 25, "min_temp": 14}
+{"_id": "San Francisco_friday", "day": "جمعه", "city": "سان فرانسیسکو", "weather": "آفتابی", "max_temp": 31, "min_temp": -11}
+{"_id": "San Francisco_monday", "day": "دوشنبه", "city": "سان فرانسیسکو", "weather": "آفتابی", "max_temp": 21, "min_temp": 13}
+{"_id": "San Francisco_saturday", "day": "شنبه", "city": "سان فرانسیسکو", "weather": "باران", "max_temp": 31, "min_temp": -6}
+{"_id": "San Francisco_sunday", "day": "روز یکشنبه", "city": "سان فرانسیسکو", "weather": "آفتابی", "max_temp": 35, "min_temp": 14}
+{"_id": "San Francisco_thursday", "day": "سه شنبه", "city": "سان فرانسیسکو", "weather": "آفتابی", "max_temp": 25, "min_temp": -15}
+{"_id": "San Francisco_today", "day": "امروز", "city": "سان فرانسیسکو", "weather": "آفتابی", "max_temp": 29, "min_temp": -10}
+{"_id": "San Francisco_tomorrow", "day": "فردا", "city": "سان فرانسیسکو", "weather": "برف", "max_temp": 31, "min_temp": 3}
+{"_id": "San Francisco_tuesday", "day": "شنبه", "city": "سان فرانسیسکو", "weather": "باران", "max_temp": 35, "min_temp": 9}
+{"_id": "San Francisco_wednesday", "day": "چهارشنبه", "city": "سان فرانسیسکو", "weather": "ابرها", "max_temp": 25, "min_temp": 13}
+{"_id": "Seattle_friday", "day": "جمعه", "city": "سیاتل", "weather": "ابرها", "max_temp": 31, "min_temp": -11}
+{"_id": "Seattle_monday", "day": "دوشنبه", "city": "سیاتل", "weather": "ابرها", "max_temp": 21, "min_temp": 13}
+{"_id": "Seattle_saturday", "day": "شنبه", "city": "سیاتل", "weather": "آفتابی", "max_temp": 31, "min_temp": -5}
+{"_id": "Seattle_sunday", "day": "روز یکشنبه", "city": "سیاتل", "weather": "باران", "max_temp": 35, "min_temp": 14}
+{"_id": "Seattle_thursday", "day": "سه شنبه", "city": "سیاتل", "weather": "ابرها", "max_temp": 26, "min_temp": -15}
+{"_id": "Seattle_today", "day": "امروز", "city": "سیاتل", "weather": "آفتابی", "max_temp": 28, "min_temp": -11}
+{"_id": "Seattle_tomorrow", "day": "فردا", "city": "سیاتل", "weather": "ابرها", "max_temp": 30, "min_temp": 4}
+{"_id": "Seattle_tuesday", "day": "شنبه", "city": "سیاتل", "weather": "ابرها", "max_temp": 36, "min_temp": 9}
+{"_id": "Seattle_wednesday", "day": "چهارشنبه", "city": "سیاتل", "weather": "ابرها", "max_temp": 26, "min_temp": 24}
+{"_id": "Seoul_friday", "day": "جمعه", "city": "سیول", "weather": "ابرها", "max_temp": 30, "min_temp": 18}
+{"_id": "Seoul_monday", "day": "دوشنبه", "city": "سیول", "weather": "باران", "max_temp": 20, "min_temp": 13}
+{"_id": "Seoul_saturday", "day": "شنبه", "city": "سیول", "weather": "باران", "max_temp": 31, "min_temp": 14}
+{"_id": "Seoul_sunday", "day": "روز یکشنبه", "city": "سیول", "weather": "آفتابی", "max_temp": 36, "min_temp": 23}
+{"_id": "Seoul_thursday", "day": "سه شنبه", "city": "سیول", "weather": "ابرها", "max_temp": 26, "min_temp": 4}
+{"_id": "Seoul_today", "day": "امروز", "city": "سیول", "weather": "ابرها", "max_temp": 28, "min_temp": 8}
+{"_id": "Seoul_tomorrow", "day": "فردا", "city": "سیول", "weather": "باران", "max_temp": 30, "min_temp": 19}
+{"_id": "Seoul_tuesday", "day": "شنبه", "city": "سیول", "weather": "باران", "max_temp": 36, "min_temp": 18}
+{"_id": "Seoul_wednesday", "day": "چهارشنبه", "city": "سیول", "weather": "باران", "max_temp": 26, "min_temp": 24}
+{"_id": "Singapore_friday", "day": "جمعه", "city": "سنگاپور", "weather": "باران", "max_temp": 31, "min_temp": 18}
+{"_id": "Singapore_monday", "day": "دوشنبه", "city": "سنگاپور", "weather": "آفتابی", "max_temp": 20, "min_temp": 14}
+{"_id": "Singapore_saturday", "day": "شنبه", "city": "سنگاپور", "weather": "باران", "max_temp": 31, "min_temp": 13}
+{"_id": "Singapore_sunday", "day": "روز یکشنبه", "city": "سنگاپور", "weather": "آفتابی", "max_temp": 36, "min_temp": 24}
+{"_id": "Singapore_thursday", "day": "سه شنبه", "city": "سنگاپور", "weather": "باران", "max_temp": 26, "min_temp": 3}
+{"_id": "Singapore_today", "day": "امروز", "city": "سنگاپور", "weather": "ابرها", "max_temp": 29, "min_temp": 9}
+{"_id": "Singapore_tomorrow", "day": "فردا", "city": "سنگاپور", "weather": "ابرها", "max_temp": 30, "min_temp": 19}
+{"_id": "Singapore_tuesday", "day": "شنبه", "city": "سنگاپور", "weather": "باران", "max_temp": 35, "min_temp": 18}
+{"_id": "Singapore_wednesday", "day": "چهارشنبه", "city": "سنگاپور", "weather": "باران", "max_temp": 25, "min_temp": 23}
+{"_id": "Tokyo_friday", "day": "جمعه", "city": "توکیو", "weather": "آفتابی", "max_temp": 31, "min_temp": 18}
+{"_id": "Tokyo_monday", "day": "دوشنبه", "city": "توکیو", "weather": "آفتابی", "max_temp": 20, "min_temp": 14}
+{"_id": "Tokyo_saturday", "day": "شنبه", "city": "توکیو", "weather": "ابرها", "max_temp": 31, "min_temp": 13}
+{"_id": "Tokyo_sunday", "day": "روز یکشنبه", "city": "توکیو", "weather": "باران", "max_temp": 36, "min_temp": 23}
+{"_id": "Tokyo_thursday", "day": "سه شنبه", "city": "توکیو", "weather": "باران", "max_temp": 25, "min_temp": 4}
+{"_id": "Tokyo_today", "day": "امروز", "city": "توکیو", "weather": "ابرها", "max_temp": 29, "min_temp": 8}
+{"_id": "Tokyo_tomorrow", "day": "فردا", "city": "توکیو", "weather": "ابرها", "max_temp": 30, "min_temp": 18}
+{"_id": "Tokyo_tuesday", "day": "شنبه", "city": "توکیو", "weather": "آفتابی", "max_temp": 36, "min_temp": 19}
+{"_id": "Tokyo_wednesday", "day": "چهارشنبه", "city": "توکیو", "weather": "باران", "max_temp": 25, "min_temp": 13}
+{"_id": "Toronto_friday", "day": "جمعه", "city": "تورنتو", "weather": "آفتابی", "max_temp": 30, "min_temp": -11}
+{"_id": "Toronto_monday", "day": "دوشنبه", "city": "تورنتو", "weather": "ابرها", "max_temp": 21, "min_temp": 14}
+{"_id": "Toronto_saturday", "day": "شنبه", "city": "تورنتو", "weather": "باران", "max_temp": 31, "min_temp": -6}
+{"_id": "Toronto_sunday", "day": "روز یکشنبه", "city": "تورنتو", "weather": "برف", "max_temp": 35, "min_temp": 13}
+{"_id": "Toronto_thursday", "day": "سه شنبه", "city": "تورنتو", "weather": "باران", "max_temp": 25, "min_temp": -16}
+{"_id": "Toronto_today", "day": "امروز", "city": "تورنتو", "weather": "ابرها", "max_temp": 28, "min_temp": -11}
+{"_id": "Toronto_tomorrow", "day": "فردا", "city": "تورنتو", "weather": "ابرها", "max_temp": 30, "min_temp": 3}
+{"_id": "Toronto_tuesday", "day": "شنبه", "city": "تورنتو", "weather": "آفتابی", "max_temp": 36, "min_temp": 8}
+{"_id": "Toronto_wednesday", "day": "چهارشنبه", "city": "تورنتو", "weather": "آفتابی", "max_temp": 26, "min_temp": 14}
+{"_id": "Washington_friday", "day": "جمعه", "city": "واشنگتن", "weather": "ابرها", "max_temp": 30, "min_temp": -11}
+{"_id": "Washington_monday", "day": "دوشنبه", "city": "واشنگتن", "weather": "باران", "max_temp": 21, "min_temp": 14}
+{"_id": "Washington_saturday", "day": "شنبه", "city": "واشنگتن", "weather": "باران", "max_temp": 30, "min_temp": -6}
+{"_id": "Washington_sunday", "day": "روز یکشنبه", "city": "واشنگتن", "weather": "ابرها", "max_temp": 36, "min_temp": 13}
+{"_id": "Washington_thursday", "day": "سه شنبه", "city": "واشنگتن", "weather": "آفتابی", "max_temp": 26, "min_temp": -16}
+{"_id": "Washington_today", "day": "امروز", "city": "واشنگتن", "weather": "ابرها", "max_temp": 29, "min_temp": -11}
+{"_id": "Washington_tomorrow", "day": "فردا", "city": "واشنگتن", "weather": "آفتابی", "max_temp": 31, "min_temp": 4}
+{"_id": "Washington_tuesday", "day": "شنبه", "city": "واشنگتن", "weather": "ابرها", "max_temp": 36, "min_temp": 8}
+{"_id": "Washington_wednesday", "day": "چهارشنبه", "city": "واشنگتن", "weather": "ابرها", "max_temp": 26, "min_temp": 14}
+{"_id": "Waterloo_friday", "day": "جمعه", "city": "واتلو", "weather": "آفتابی", "max_temp": 30, "min_temp": -10}
+{"_id": "Waterloo_monday", "day": "دوشنبه", "city": "واتلو", "weather": "باران", "max_temp": 21, "min_temp": 13}
+{"_id": "Waterloo_saturday", "day": "شنبه", "city": "واتلو", "weather": "ابرها", "max_temp": 31, "min_temp": -6}
+{"_id": "Waterloo_sunday", "day": "روز یکشنبه", "city": "واتلو", "weather": "برف", "max_temp": 35, "min_temp": 14}
+{"_id": "Waterloo_thursday", "day": "سه شنبه", "city": "واتلو", "weather": "آفتابی", "max_temp": 25, "min_temp": -16}
+{"_id": "Waterloo_today", "day": "امروز", "city": "واتلو", "weather": "باران", "max_temp": 28, "min_temp": -11}
+{"_id": "Waterloo_tomorrow", "day": "فردا", "city": "واتلو", "weather": "ابرها", "max_temp": 30, "min_temp": 4}
+{"_id": "Waterloo_tuesday", "day": "شنبه", "city": "واتلو", "weather": "باران", "max_temp": 36, "min_temp": 9}

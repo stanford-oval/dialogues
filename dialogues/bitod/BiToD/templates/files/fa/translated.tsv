@@ -1,0 +1,103 @@
+HKMTR!!goodbye!!null	روز خوبی داشته باشید. خدا حافظ!
+HKMTR!!inform!!estimated_time!!@	@ mins طول خواهد کشید.
+HKMTR!!inform!!price!!@	هزینه آن @ خواهد بود.
+HKMTR!!offer!!estimated_time!!@	@ طول می کشد.
+HKMTR!!offer!!price!!@	برای شما حدود @ هزینه خواهد داشت.
+HKMTR!!offer!!shortest_path!!@	تو می توانی @
+HKMTR!!request!!departure	شما از کجا سفر کرده اید؟
+HKMTR!!request!!destination	مقصد شما کجاست؟
+HKMTR!!request_more!!null	چیز دیگری مد نظر دارید؟
+attractions!!affirm!!null	آره
+attractions!!confirm!!null	آیا شرایط دیگری دارید؟
+attractions!!goodbye!!null	روز خوبی داشته باشی ، خداحافظ!
+attractions!!inform!!address!!@	آدرس @ است.
+attractions!!inform!!phone_number!!@	شماره تلفن @ است.
+attractions!!notify_fail!!null	متأسفانه هیچ جاذبه ای وجود ندارد که شرایط شما را برآورده کند.
+attractions!!offer!!address!!@	آدرس @ است.
+attractions!!offer!!available_options!!@	گزینه های موجود @ وجود دارد.
+attractions!!offer!!name!!@	نام @ است.
+attractions!!offer!!phone_number!!@	شماره تلفن @ است.
+attractions!!offer!!rating!!@	رتبه @ است.
+attractions!!request!!location	ترجیحات شما برای رتبه بندی جاذبه چیست؟
+attractions!!request!!rating	ترجیحات شما برای رتبه بندی جاذبه چیست؟
+attractions!!request!!type	در مورد نوع جاذبه چطور؟
+attractions!!request_more!!null	چیز دیگری مد نظر دارید ؟
+attractions!!request_update!!location	آیا باید مکانهای دیگر را جستجو کنم؟
+attractions!!request_update!!rating	آیا به نقاط دیگر با رتبه بندی متفاوت نیاز دارید؟
+attractions!!request_update!!type	آیا مکانهای دیگر را جستجو کنم؟
+chat!!greeting!!null	سلام، چگونه میتوانم کمکتان بکنم؟
+hotels!!affirm!!null	آره
+hotels!!confirm!!name!!@	لطفاً نام هتل @ را تأیید کنید.
+hotels!!confirm!!null	ترجیحات دیگر؟
+hotels!!confirm!!number_of_nights!!@	رزرو برای @ شب انجام می شود.
+hotels!!confirm!!number_of_rooms!!@	رزرو برای اتاق @ تأیید می شود.
+hotels!!confirm!!start_date!!@	آیا می توانید لطفاً تأیید کنید که می خواهید از @ رزرو کنید.
+hotels!!goodbye!!null	خوشحال میشم کمک کنید ، خداحافظ
+hotels!!inform!!address!!@	آدرس هتل @ است.
+hotels!!inform!!price_per_night!!@	هزینه هتل شبی @ می باشد.
+hotels!!inform!!ref_number!!@	رزرو به پایان رسیده و شماره مرجع @ است.
+hotels!!notify_fail!!null	متاسفانه نتونستم رزرو کنم
+hotels!!notify_success!!null	خوب ، رزرو با موفقیت انجام شد.
+hotels!!offer!!available_options!!@	@ هتل را پیدا کردم.
+hotels!!offer!!name!!@	نام هتل @ است.
+hotels!!offer!!price_per_night!!@	هزینه هتل @ به ازای هر شب.
+hotels!!offer!!rating!!@	رتبه هتل @ است.
+hotels!!request!!location	ترجیحاتی در مورد مکان دارید؟
+hotels!!request!!name	نام هتلی که می خواهید رزرو کنید چیست؟
+hotels!!request!!number_of_nights	برای چند شب می خواهید رزرو کنید؟
+hotels!!request!!number_of_rooms	چند اتاق می خواهید رزرو کنید؟
+hotels!!request!!price_level	چه نوع سطح قیمتی را دوست دارید؟
+hotels!!request!!rating	هتل باید چند رتبه داشته باشد؟
+hotels!!request!!stars	هتل باید چند ستاره داشته باشد؟
+hotels!!request!!start_date	چند روز قصد اقامت دارید؟
+hotels!!request!!user_name	میشه اسمتو بهم بگی؟
+hotels!!request_more!!null	آیا می توانم در مورد دیگری به شما کمک کنم؟
+hotels!!request_update!!location	آیا به هتل با مکان های مختلف نیاز دارید؟
+hotels!!request_update!!number_of_rooms	آیا با تعداد دیگری از اتاق ها امتحان کنم؟
+hotels!!request_update!!price_level	سطح قیمت دیگر چطور؟
+hotels!!request_update!!rating	آیا رتبه دیگری را امتحان کنم؟
+hotels!!request_update!!stars	آیا تعداد دیگری از ستاره ها را امتحان کنم؟
+restaurants!!affirm!!null	مطمئن.
+restaurants!!confirm!!date!!@	آیا می توانید لطفاً تأیید کنید که می خواهید در @ رزرو کنید؟
+restaurants!!confirm!!name!!@	نام رستوران @ است.
+restaurants!!confirm!!null	خوب ، آیا شرایط دیگری نیز وجود دارد؟
+restaurants!!confirm!!number_of_people!!@	رزرو برای افراد @ انجام می شود.
+restaurants!!confirm!!time!!@	رزرو در @ انجام می شود.
+restaurants!!goodbye!!null	خداحافظ!
+restaurants!!inform!!address!!@	آدرس @ است.
+restaurants!!inform!!phone_number!!@	شماره تلفن @ است.
+restaurants!!inform!!ref_number!!@	شماره مرجع @ است.
+restaurants!!notify_fail!!null	من نتوانستم این مکان را رزرو کنم.
+restaurants!!notify_success!!null	من توانستم مکان را رزرو کنم.
+restaurants!!offer!!address!!@	من یک رستوران پیدا کردم که با معیارهای شما مطابقت دارد. @ نامیده می شود .
+restaurants!!offer!!available_options!!@	من شما را پیدا کردم @ رستوران.
+restaurants!!offer!!cuisine!!@	آنها یک رستوران @ هستند.
+restaurants!!offer!!name!!@	شاید به @ علاقه داشته باشید.
+restaurants!!offer!!phone_number!!@	می توانید با آنها در @ تماس بگیرید.
+restaurants!!offer!!rating!!@	رتبه آن @ است.
+restaurants!!request!!cuisine	آیا شما نوع غذایی را ترجیح می دهید؟
+restaurants!!request!!dietary_restrictions	آیا محدودیت غذایی وجود دارد؟
+restaurants!!request!!location	مکان مورد نظر؟
+restaurants!!request!!name	آیا ترجیح رستوران دارید؟
+restaurants!!request!!number_of_people	چند نفر دارید؟
+restaurants!!request!!price_level	آیا محدوده قیمت ترجیحی دارید؟
+restaurants!!request!!rating	رتبه بندی دلخواه دارید؟
+restaurants!!request!!time	آیا ترجیحی برای زمان رزرو دارید؟
+restaurants!!request!!user_name	آیا می توانم نام شما را دریافت کنم؟
+restaurants!!request_more!!null	آیا امروز می توانم به شما کمک کنم؟
+restaurants!!request_update!!cuisine	آیا انواع دیگر غذاها را امتحان کنم؟
+restaurants!!request_update!!location	آیا مکان دیگری را امتحان کنم؟
+restaurants!!request_update!!price_level	آیا باید محدوده قیمت دیگری را امتحان کنم؟
+restaurants!!request_update!!rating	آیا رتبه دیگری را امتحان کنم؟
+restaurants!!request_update!!time	آیا باید برای زمان دیگری تلاش کنم؟
+weathers!!goodbye!!null	از روز خود لذت ببرید! خدا حافظ!
+weathers!!inform!!max_temp!!@	حداکثر دما @ خواهد بود.
+weathers!!inform!!min_temp!!@	حداقل دما @ خواهد بود.
+weathers!!offer!!city!!@	آب و هوا در @ است
+weathers!!offer!!day!!@	هوا در @ است
+weathers!!offer!!max_temp!!@	حداکثر دما @ خواهد بود.
+weathers!!offer!!min_temp!!@	حداقل دما @ خواهد بود.
+weathers!!offer!!weather!!@	هوا هست @ .
+weathers!!request!!city	به دنبال کدام شهر هستید؟
+weathers!!request!!day	برای کدام روز؟
+weathers!!request_more!!null	چه کار دیگری می توانم بکنم تا به شما کمک کنم؟
