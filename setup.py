@@ -55,5 +55,6 @@ setuptools.setup(
         'pymongo==3.11.2',
         'dnspython==2.1.0',
         'word2number==1.1',
+		'dictdiffer~=0.9'
     ],
 )
