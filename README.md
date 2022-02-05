@@ -1,2 +1,6 @@
-# dialogues
-This codebase provides an interface to several dialogue benchmarks
+# Dialogues
+This codebase provides a unified interface to several dialogue benchmarks.
+
+# Available datasets:
+- BiToD
+- RiSAWOZ
