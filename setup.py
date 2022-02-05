@@ -36,17 +36,22 @@ setuptools.setup(
     name='dialogues',
     version='0.0.1',
     packages=setuptools.find_packages(),
+	entry_points={
+		'console_scripts': ['dialogues=dialogues.__main__:main'],
+	},
     package_data={
         'dialogues': [
-            'bitod/knowledgebase/apis/*.json',
-            'bitod/knowledgebase/dbs/*.json',
-            'bitod/knowledgebase/mappings/*.json',
-            'bitod/knowledgebase/mappings/*.dot',
-            'bitod/templates/files/*/*',
+            'bitod/BiToD/knowledgebase/apis/*.json',
+            'bitod/BiToD/knowledgebase/dbs/*.json',
+            'bitod/BiToD/knowledgebase/mappings/*.json',
+            'bitod/BiToD/knowledgebase/mappings/*.dot',
+            'bitod/BiToD/templates/files/*/*',
         ]
     },
     license='BSD-3-Clause',
     author="Mehrad Moradshahi",
+	author_email="mehrad@cs.stanford.edu",
+	description="This package provides a unified interface to several dialogue benchmarks",
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/Mehrad0711/dialogues",
