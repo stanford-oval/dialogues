@@ -44,15 +44,15 @@ def convert_to_int(val, strict=False, word2number=False):
             return val
 
 
-def span2state(api_span, api_names):
-    # reverse direction of state2span fuction
+def span2state(state_span, api_names):
+    # reverse direction of state2span function
     # converts text span to state dict
 
     state = defaultdict(dict)
     re_intent_spans = re.compile('\( (.*?) \)\s?(.*?)(?=$|\( )')
     re_srvs = re.compile('(\S*? \S*? " .*? "|\S*? #unknown)')
 
-    matches = re_intent_spans.findall(api_span)
+    matches = re_intent_spans.findall(state_span)
 
     for match in matches:
         intent, srv_span = match
