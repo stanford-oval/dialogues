@@ -20,17 +20,15 @@ class Bitod(Dataset):
 		self.state_re = re.compile('<state> (.*?)(?:$|<)')
 		self.knowledge_re = re.compile('<knowledge> (.*?)(?:$|<)')
 		self.actions_re = re.compile('<actions> (.*?)(?:$|<)')
-		self.api_names = api_names
-		self.required_slots = required_slots
 	
 	def domain2api_name(self, domain):
 		return r_en_API_MAP.get(domain, domain)
 	
 	def state2span(self, dialogue_state):
-		return state2span(dialogue_state, self.required_slots)
+		return state2span(dialogue_state, required_slots)
 	
 	def span2state(self, lev):
-		return span2state(lev, self.api_names)
+		return span2state(lev, api_names)
 	
 	def process_data(self, args, root):
 		if args.setting in ["en", "zh2en"]:
@@ -85,12 +83,11 @@ class Bitod(Dataset):
 		return results
 	
 	def postprocess_prediction(self, prediction, knowledge, lang):
-		
 		if (
 			re.search(rf'\( HKMTR {lang} \)', prediction)
 			and 'offer shortest_path equal_to' in prediction
 		):
-			action_dict = span2action(prediction, self.api_names)
+			action_dict = span2action(prediction, api_names)
 			domain = f'HKMTR {lang}'
 			metro_slots = set(item['slot'] for item in action_dict[domain])
 			for slot in ['estimated_time', 'price']:
@@ -105,7 +102,7 @@ class Bitod(Dataset):
 			re.search(r'\( weathers search \)', prediction)
 			and 'offer weather equal_to' in prediction
 		):
-			action_dict = span2action(prediction, self.api_names)
+			action_dict = span2action(prediction, api_names)
 			domain = 'weathers search'
 			weather_slots = set(item['slot'] for item in action_dict[domain])
 			for slot in ['max_temp', 'min_temp']:
