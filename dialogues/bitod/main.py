@@ -82,7 +82,7 @@ class Bitod(Dataset):
 		results = eval_file(args, prediction_path, reference_path)
 		return results
 	
-	def postprocess_prediction(self, prediction, knowledge, lang):
+	def postprocess_prediction(self, prediction, knowledge=None, lang='en'):
 		if (
 			re.search(rf'\( HKMTR {lang} \)', prediction)
 			and 'offer shortest_path equal_to' in prediction

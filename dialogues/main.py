@@ -73,3 +73,11 @@ class Dataset(object):
 		"""
 		raise NotImplemented()
 	
+	def postprocess_prediction(self, prediction, **kwargs):
+		"""
+		rule-based postprocessings done on model predictions
+		:param prediction: str
+		:param kwargs: additional args used for postprocessing
+		:return: modified prediction
+		"""
+		pass
