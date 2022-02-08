@@ -36,30 +36,24 @@ setuptools.setup(
     name='dialogues',
     version='0.0.1',
     packages=setuptools.find_packages(),
-	entry_points={
-		'console_scripts': ['dialogues=dialogues.__main__:main'],
-	},
+    entry_points={
+        'console_scripts': ['dialogues=dialogues.__main__:main'],
+    },
     package_data={
         'dialogues': [
-            'bitod/BiToD/knowledgebase/apis/*.json',
-            'bitod/BiToD/knowledgebase/dbs/*.json',
-            'bitod/BiToD/knowledgebase/mappings/*.json',
-            'bitod/BiToD/knowledgebase/mappings/*.dot',
-            'bitod/BiToD/templates/files/*/*',
+            'bitod/src/knowledgebase/apis/*.json',
+            'bitod/src/knowledgebase/dbs/*.json',
+            'bitod/src/knowledgebase/mappings/*.json',
+            'bitod/src/knowledgebase/mappings/*.dot',
+            'bitod/src/templates/files/*/*',
         ]
     },
     license='BSD-3-Clause',
     author="Mehrad Moradshahi",
-	author_email="mehrad@cs.stanford.edu",
-	description="This package provides a unified interface to several dialogue benchmarks",
+    author_email="mehrad@cs.stanford.edu",
+    description="This package provides a unified interface to several dialogue benchmarks",
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/Mehrad0711/dialogues",
-    install_requires=[
-        'pydot==1.4.2',
-        'pymongo==3.11.2',
-        'dnspython==2.1.0',
-        'word2number==1.1',
-		'dictdiffer~=0.9'
-    ],
+    install_requires=['pydot==1.4.2', 'pymongo==3.11.2', 'word2number==1.1', 'dictdiffer~=0.9'],
 )

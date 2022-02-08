@@ -5,8 +5,21 @@ import random
 from collections import OrderedDict, defaultdict
 
 # Mapping between intents, slots, and relations in English and Chinese
-from ..src.knowledgebase.en_zh_mappings import *  # noqa
-from ..src.utils import action2span, clean_text, compute_lev_span, create_mixed_lang_text, knowledge2span, state2span
+from dialogues.bitod.src.knowledgebase.en_zh_mappings import (
+    API_MAP,
+    required_slots,
+    translation_dict,
+    zh2en_CARDINAL_MAP,
+    zh_API_MAP,
+)
+from dialogues.bitod.src.utils import (
+    action2span,
+    clean_text,
+    compute_lev_span,
+    create_mixed_lang_text,
+    knowledge2span,
+    state2span,
+)
 
 
 def translate_slots_to_english(text):
@@ -451,7 +464,7 @@ def prepare_data(args, path_train, path_dev, path_test):
     if 'train' in args.splits:
         data_train = read_data(args, path_train, args.setting, args.max_history)
     if 'test' in args.splits:
-        data_test = read_data(args, path_test, args.setting,args. max_history)
+        data_test = read_data(args, path_test, args.setting, args.max_history)
 
     if args.setting == "en_zh":
         if data_train:
@@ -463,6 +476,7 @@ def prepare_data(args, path_train, path_dev, path_test):
 
     return data_train, data_dev, data_test
 
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument(
@@ -471,8 +485,7 @@ def main():
     parser.add_argument("--setting", type=str, default="en", help="en, zh, en_zh, en2zh, zh2en")
     parser.add_argument("--nlg", action='store_true', help="only keep agent side (for nlg)")
     parser.add_argument(
-        "--pretraining_prefix", type=str, default="",
-        help="for cross lingual pretrainings: [en2zh_trainsfer, zh2en_trainsfer]"
+        "--pretraining_prefix", type=str, default="", help="for cross lingual pretrainings: [en2zh_trainsfer, zh2en_trainsfer]"
     )
     parser.add_argument("--max_history", type=int, default=2)
     parser.add_argument("--splits", nargs='+', default=['train', 'eval', 'test'])
@@ -490,11 +503,11 @@ def main():
     parser.add_argument("--simpletod", action='store_true')
     parser.add_argument("--only_gen_natural_response", action='store_true')
     parser.add_argument("--four_steps", action='store_true')
-    
+
     args = parser.parse_args()
-    
+
     if not args.english_slots:
-        translation_dict = {}
+        translation_dict = {}  # noqa
 
     if args.setting in ["en", "zh2en"]:
         path_train = ["data/en_train.json"]
@@ -509,42 +522,38 @@ def main():
         path_dev = ["data/zh_valid.json", "data/en_valid.json"]
         path_test = ["data/zh_test.json", "data/en_test.json"]
 
-
     data_train, data_dev, data_test = prepare_data(args, path_train, path_dev, path_test)
-    
+
     if not os.path.exists(args.save_dir):
         os.makedirs(args.save_dir)
-    
+
     with open(
-            os.path.join(
-                args.save_dir,
-                f"{args.pretraining_prefix}{args.setting}_train" + (
-                "_nlg" if args.nlg else "") + f"_v{args.version}.json",
-            ),
-            "w",
+        os.path.join(
+            args.save_dir,
+            f"{args.pretraining_prefix}{args.setting}_train" + ("_nlg" if args.nlg else "") + f"_v{args.version}.json",
+        ),
+        "w",
     ) as f:
         json.dump({"version": args.version, "data": data_train}, f, indent=True, ensure_ascii=False)
-    
+
     with open(
-            os.path.join(
-                args.save_dir,
-                f"{args.pretraining_prefix}{args.setting}_valid" + (
-                "_nlg" if args.nlg else "") + f"_v{args.version}.json",
-            ),
-            "w",
+        os.path.join(
+            args.save_dir,
+            f"{args.pretraining_prefix}{args.setting}_valid" + ("_nlg" if args.nlg else "") + f"_v{args.version}.json",
+        ),
+        "w",
     ) as f:
         json.dump({"version": args.version, "data": data_dev}, f, indent=True, ensure_ascii=False)
-    
+
     with open(
-            os.path.join(
-                args.save_dir,
-                f"{args.pretraining_prefix}{args.setting}_test" + (
-                "_nlg" if args.nlg else "") + f"_v{args.version}.json",
-            ),
-            "w",
+        os.path.join(
+            args.save_dir,
+            f"{args.pretraining_prefix}{args.setting}_test" + ("_nlg" if args.nlg else "") + f"_v{args.version}.json",
+        ),
+        "w",
     ) as f:
         json.dump({"version": args.version, "data": data_test}, f, indent=True, ensure_ascii=False)
-        
+
         with open(os.path.join(f"./data_samples/v{args.version}.json"), "w") as f:
             json.dump({"data": data_test[:30]}, f, indent=True, ensure_ascii=False)
 

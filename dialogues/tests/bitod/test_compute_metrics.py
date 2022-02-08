@@ -1,5 +1,6 @@
 import argparse
 import os
+
 from dialogues import Bitod
 
 parser = argparse.ArgumentParser()
@@ -16,14 +17,14 @@ args = parser.parse_args()
 args.nlg = False
 
 if not os.path.exists(args.result_path):
-	os.makedirs(args.result_path)
+    os.makedirs(args.result_path)
 
 if not args.setting:
-	file = os.path.basename(args.reference_file_path)
-	if 'zh' in file:
-		args.setting = 'zh'
-	else:
-		args.setting = 'en'
+    file = os.path.basename(args.reference_file_path)
+    if 'zh' in file:
+        args.setting = 'zh'
+    else:
+        args.setting = 'en'
 
 dataset = Bitod()
 results = dataset.compute_metrics(args, args.prediction_file_path, args.reference_file_path)

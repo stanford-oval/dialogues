@@ -6,15 +6,14 @@ from collections import OrderedDict, defaultdict
 
 from word2number import w2n
 
-from ..src.knowledgebase import api
-from ..src.knowledgebase.en_zh_mappings import (
+from dialogues.bitod.src.knowledgebase import api
+from dialogues.bitod.src.knowledgebase.en_zh_mappings import (
     API_MAP,
     en2zh_ACT_MAP,
     en2zh_RELATION_MAP,
     en2zh_SLOT_MAP,
     en2zh_VALUE_MAP,
     en_API_MAP,
-	r_en_API_MAP,
     entity_map,
     reverse_entity_map,
     zh2en_SLOT_MAP,
