@@ -3,9 +3,9 @@ from pprint import pprint
 
 from datasets import load_metric
 
-from ..BiToD.knowledgebase.en_zh_mappings import api_names, required_slots, translation_dict
-from ..BiToD.preprocess import translate_slots_to_english
-from ..BiToD.utils import *
+from ..src.knowledgebase.en_zh_mappings import api_names, required_slots, translation_dict
+from ..src.preprocess import translate_slots_to_english
+from ..src.utils import *
 
 metric = load_metric("sacrebleu")
 

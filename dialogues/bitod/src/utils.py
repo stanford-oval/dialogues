@@ -6,8 +6,8 @@ from collections import OrderedDict, defaultdict
 
 from word2number import w2n
 
-from ..BiToD.knowledgebase import api
-from ..BiToD.knowledgebase.en_zh_mappings import (
+from ..src.knowledgebase import api
+from ..src.knowledgebase.en_zh_mappings import (
     API_MAP,
     en2zh_ACT_MAP,
     en2zh_RELATION_MAP,

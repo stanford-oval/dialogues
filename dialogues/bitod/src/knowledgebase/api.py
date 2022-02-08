@@ -6,7 +6,7 @@ from typing import Any, Dict, List, Text, Tuple
 import pymongo
 from pymongo import MongoClient
 
-from ...BiToD.knowledgebase.en_zh_mappings import en2zh_SLOT_MAP, en_zh_API_MAP, entity_map, zh2en_API_MAP, zh2en_SLOT_MAP
+from ...src.knowledgebase.en_zh_mappings import en2zh_SLOT_MAP, en_zh_API_MAP, entity_map, zh2en_API_MAP, zh2en_SLOT_MAP
 
 from .hk_mtr import MTR
 

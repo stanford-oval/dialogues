@@ -2,7 +2,7 @@ import json
 import os
 from collections import OrderedDict
 
-from ...BiToD.knowledgebase.hk_mtr import name_to_zh
+from ...src.knowledgebase.hk_mtr import name_to_zh
 
 
 def read_require_slots():

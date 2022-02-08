@@ -5,8 +5,8 @@ import random
 from collections import OrderedDict, defaultdict
 
 # Mapping between intents, slots, and relations in English and Chinese
-from ..BiToD.knowledgebase.en_zh_mappings import *  # noqa
-from ..BiToD.utils import action2span, clean_text, compute_lev_span, create_mixed_lang_text, knowledge2span, state2span
+from ..src.knowledgebase.en_zh_mappings import *  # noqa
+from ..src.utils import action2span, clean_text, compute_lev_span, create_mixed_lang_text, knowledge2span, state2span
 
 
 def translate_slots_to_english(text):

@@ -4,11 +4,11 @@ import re
 from collections import defaultdict
 
 from ..main import Dataset
-from .BiToD.knowledgebase import api
-from .BiToD.knowledgebase.en_zh_mappings import r_en_API_MAP, api_names, required_slots
-from .BiToD.preprocess import prepare_data
-from .BiToD.evaluate import eval_file
-from .BiToD.utils import state2constraints, state2span, action2span, knowledge2span, span2state, span2action, span2knowledge
+from .src.knowledgebase import api
+from .src.knowledgebase.en_zh_mappings import r_en_API_MAP, api_names, required_slots
+from .src.preprocess import prepare_data
+from .src.evaluate import eval_file
+from .src.utils import state2constraints, state2span, action2span, knowledge2span, span2state, span2action, span2knowledge
 
 
 logger = logging.getLogger(__name__)
