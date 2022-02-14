@@ -2,6 +2,7 @@ import argparse
 import json
 import os
 import random
+import subprocess
 from collections import OrderedDict, defaultdict
 
 # Mapping between intents, slots, and relations in English and Chinese
@@ -23,7 +24,7 @@ from dialogues.bitod.src.utils import (
 
 
 def translate_slots_to_english(text):
-    for key, val in translation_dict.items():
+    for key, val in slot_translation_dict.items():
         text = text.replace(key, val)
     for key, val in zh_API_MAP.items():
         text = text.replace(key, val)
@@ -455,6 +456,16 @@ def read_data(args, path_names, setting, max_history=3):
     return data
 
 
+def get_commit():
+    directory = os.path.dirname(__file__)
+    return (
+        subprocess.Popen("cd {} && git log | head -n 1".format(directory), shell=True, stdout=subprocess.PIPE)
+        .stdout.read()
+        .split()[1]
+        .decode()
+    )
+
+
 def prepare_data(args, path_train, path_dev, path_test):
     # "en, zh, en&zh, en2zh, zh2en"
     data_train, data_dev, data_test = None, None, None
@@ -479,6 +490,7 @@ def prepare_data(args, path_train, path_dev, path_test):
 
 def main():
     parser = argparse.ArgumentParser()
+    parser.add_argument("--root", type=str, default='dialogues/bitod/', help='data root directory')
     parser.add_argument(
         "--save_dir", type=str, default="data/preprocessed", help="path to save prerpocessed data for training"
     )
@@ -506,8 +518,10 @@ def main():
 
     args = parser.parse_args()
 
-    if not args.english_slots:
-        translation_dict = {}  # noqa
+    global slot_translation_dict
+    slot_translation_dict = {}
+    if args.english_slots:
+        slot_translation_dict = translation_dict
 
     if args.setting in ["en", "zh2en"]:
         path_train = ["data/en_train.json"]
@@ -522,40 +536,29 @@ def main():
         path_dev = ["data/zh_valid.json", "data/en_valid.json"]
         path_test = ["data/zh_test.json", "data/en_test.json"]
 
+    path_train = [os.path.join(args.root, p) for p in path_train]
+    path_dev = [os.path.join(args.root, p) for p in path_dev]
+    path_test = [os.path.join(args.root, p) for p in path_test]
+
     data_train, data_dev, data_test = prepare_data(args, path_train, path_dev, path_test)
 
     if not os.path.exists(args.save_dir):
         os.makedirs(args.save_dir)
 
-    with open(
-        os.path.join(
-            args.save_dir,
-            f"{args.pretraining_prefix}{args.setting}_train" + ("_nlg" if args.nlg else "") + f"_v{args.version}.json",
-        ),
-        "w",
-    ) as f:
-        json.dump({"version": args.version, "data": data_train}, f, indent=True, ensure_ascii=False)
+    args.commit = get_commit()
 
-    with open(
-        os.path.join(
-            args.save_dir,
-            f"{args.pretraining_prefix}{args.setting}_valid" + ("_nlg" if args.nlg else "") + f"_v{args.version}.json",
-        ),
-        "w",
-    ) as f:
-        json.dump({"version": args.version, "data": data_dev}, f, indent=True, ensure_ascii=False)
+    for (set, file) in zip(['train', 'valid', 'test'], [data_train, data_dev, data_test]):
+        with open(
+            os.path.join(
+                args.save_dir,
+                f"{args.pretraining_prefix}{args.setting}_{set}" + ("_nlg" if args.nlg else "") + f"_v{args.version}.json",
+            ),
+            "w",
+        ) as f:
+            json.dump({"version": args.version, "args": vars(args), "data": file}, f, indent=True, ensure_ascii=False)
 
-    with open(
-        os.path.join(
-            args.save_dir,
-            f"{args.pretraining_prefix}{args.setting}_test" + ("_nlg" if args.nlg else "") + f"_v{args.version}.json",
-        ),
-        "w",
-    ) as f:
-        json.dump({"version": args.version, "data": data_test}, f, indent=True, ensure_ascii=False)
-
-        with open(os.path.join(f"./data_samples/v{args.version}.json"), "w") as f:
-            json.dump({"data": data_test[:30]}, f, indent=True, ensure_ascii=False)
+    # with open(os.path.join(f"./data_samples/v{args.version}.json"), "w") as f:
+    #     json.dump({"data": data_test[:30]}, f, indent=True, ensure_ascii=False)
 
 
 if __name__ == "__main__":
