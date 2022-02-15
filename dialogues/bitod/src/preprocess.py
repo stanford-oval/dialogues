@@ -67,12 +67,7 @@ def read_data(args, path_names, setting, max_history=3):
 
                         for turn in dialogue_turns:
                             if turn["Agent"] == "User":
-                                if args.gen_full_state or args.simpletod:
-                                    if API_MAP[turn["active_intent"]] not in intents:
-                                        intents.append(API_MAP[turn["active_intent"]])
-                                else:
-                                    intents = [API_MAP[turn["active_intent"]]]
-                                active_intent = intents[-1]
+                                active_intent = API_MAP[turn["active_intent"]]
 
                                 turn_domains[translate_slots_to_english(active_intent)] += 1
                                 domain_turn_counts[translate_slots_to_english(active_intent)] += 1
@@ -99,12 +94,7 @@ def read_data(args, path_names, setting, max_history=3):
                             for dial_id in fewshot_dials:
                                 for turn in dials[dial_id]["Events"]:
                                     if turn["Agent"] == "User":
-                                        if args.gen_full_state or args.simpletod:
-                                            if API_MAP[turn["active_intent"]] not in intents:
-                                                intents.append(API_MAP[turn["active_intent"]])
-                                        else:
-                                            intents = [API_MAP[turn["active_intent"]]]
-                                        active_intent = intents[-1]
+                                        active_intent = API_MAP[turn["active_intent"]]
                                         res_turn_counts[translate_slots_to_english(active_intent)] += 1
                             total = sum(list(res_turn_counts.values()))
                             for (domain, count) in res_turn_counts.items():
