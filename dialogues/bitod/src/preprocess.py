@@ -606,7 +606,7 @@ def main():
             ),
             "w",
         ) as f:
-            json.dump({"version": args.version, "args": vars(args), "data": file}, f, indent=True, ensure_ascii=False)
+            json.dump({"args": vars(args), "data": file}, f, indent=True, ensure_ascii=False)
 
     # with open(os.path.join(f"./data_samples/v{args.version}.json"), "w") as f:
     #     json.dump({"data": data_test[:30]}, f, indent=True, ensure_ascii=False)
