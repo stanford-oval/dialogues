@@ -30,6 +30,13 @@ class Bitod(Dataset):
     def span2state(self, lev):
         return span2state(lev, api_names)
 
+    def update_state(self, lev, cur_state):
+        for api_name in lev:
+            if api_name not in cur_state:
+                cur_state[api_name] = lev[api_name]
+            else:
+                cur_state[api_name].update(lev[api_name])
+
     def process_data(self, args, root):
         if args.setting in ["en", "zh2en"]:
             path_train = ["data/en_train.json"]

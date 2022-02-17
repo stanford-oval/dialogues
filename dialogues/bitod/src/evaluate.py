@@ -325,11 +325,11 @@ def compute_ser(preds, act_values):
 def eval_file(args, prediction_file_path, reference_file_path):
 
     reference_data = {}
-    for reference_file_path in args.reference_file_path.split("__"):
+    for reference_file_path in reference_file_path.split("__"):
         with open(reference_file_path) as f:
             reference_data.update(json.load(f))
 
-    with open(args.prediction_file_path) as f:
+    with open(prediction_file_path) as f:
         predictions = json.load(f)
 
     bleu, ser, success_rate, api_acc, da_acc, jga, task_info = compute_result(args, predictions, reference_data)

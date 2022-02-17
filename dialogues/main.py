@@ -40,6 +40,15 @@ class Dataset(object):
         """
         raise NotImplementedError
 
+    def update_state(self, lev, cur_state):
+        """
+        Updates cur_state according to the levenshtein state
+        :param lev: dict
+        :param cur_state: dict
+        :return: dict
+        """
+        raise NotImplementedError
+
     def process_data(self, args, root):
         """
         converts raw dataset to the format accepted by genienlp
