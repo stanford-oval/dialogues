@@ -23,10 +23,10 @@ from dialogues.bitod.src.utils import (
 )
 
 
-def translate_slots_to_english(text, dicti=None):
-    # if dicti:
-    #     slot_translation_dict = dicti
-    for key, val in slot_translation_dict.items():
+def translate_slots_to_english(text, do_translate=True):
+    if not do_translate:
+        return text
+    for key, val in translation_dict.items():
         text = text.replace(key, val)
     for key, val in zh_API_MAP.items():
         text = text.replace(key, val)
@@ -71,8 +71,8 @@ def read_data(args, path_names, setting, max_history=3):
                             if turn["Agent"] == "User":
                                 active_intent = API_MAP[turn["active_intent"]]
 
-                                turn_domains[translate_slots_to_english(active_intent)] += 1
-                                domain_turn_counts[translate_slots_to_english(active_intent)] += 1
+                                turn_domains[translate_slots_to_english(active_intent, args.english_slots)] += 1
+                                domain_turn_counts[translate_slots_to_english(active_intent, args.english_slots)] += 1
 
                         max_domain = max(turn_domains, key=turn_domains.get)
                         dialogue_dominant_domains[max_domain].append(dial_id)
@@ -96,7 +96,7 @@ def read_data(args, path_names, setting, max_history=3):
                             for turn in dials[dial_id]["Events"]:
                                 if turn["Agent"] == "User":
                                     active_intent = API_MAP[turn["active_intent"]]
-                                    res_turn_counts[translate_slots_to_english(active_intent)] += 1
+                                    res_turn_counts[translate_slots_to_english(active_intent, args.english_slots)] += 1
                         total = sum(list(res_turn_counts.values()))
                         for (domain, count) in res_turn_counts.items():
                             print(domain, "comprises of", count, "or", int(100 * count / total + 0.5), "percent")
@@ -140,7 +140,7 @@ def read_data(args, path_names, setting, max_history=3):
                             if args.use_user_acts:
                                 action_text = action2span(turn["Actions"], active_intent, setting)
                                 action_text = clean_text(action_text, is_formal=True)
-                                action_text = translate_slots_to_english(action_text)
+                                action_text = translate_slots_to_english(action_text, args.english_slots)
                                 dialog_history.append("USER_ACTS: " + action_text)
                             else:
                                 dialog_history.append("USER: " + clean_text(turn["Text"]))
@@ -194,10 +194,10 @@ def read_data(args, path_names, setting, max_history=3):
                                         [
                                             "DST:",
                                             # "<knowledge>",
-                                            # translate_slots_to_english(last_knowledge_text),
+                                            # translate_slots_to_english(last_knowledge_text, args.english_slots),
                                             # "<endofknowledge>",
                                             "<state>",
-                                            translate_slots_to_english(state_text),
+                                            translate_slots_to_english(state_text, args.english_slots),
                                             "<endofstate>",
                                             "<history>",
                                             dialog_history_text,
@@ -209,7 +209,7 @@ def read_data(args, path_names, setting, max_history=3):
                                         [
                                             "DST:",
                                             # "<knowledge>",
-                                            # translate_slots_to_english(last_knowledge_text),
+                                            # translate_slots_to_english(last_knowledge_text, args.english_slots),
                                             # "<endofknowledge>",
                                             "<history>",
                                             dialog_history_text,
@@ -223,9 +223,9 @@ def read_data(args, path_names, setting, max_history=3):
                                         [
                                             "DST:",
                                             # "<knowledge>",
-                                            # translate_slots_to_english(last_knowledge_text),
+                                            # translate_slots_to_english(last_knowledge_text, args.english_slots),
                                             "<state>",
-                                            translate_slots_to_english(state_text),
+                                            translate_slots_to_english(state_text, args.english_slots),
                                             "<history>",
                                             dialog_history_text,
                                         ]
@@ -235,7 +235,7 @@ def read_data(args, path_names, setting, max_history=3):
                                         [
                                             "DST:",
                                             # "<knowledge>",
-                                            # translate_slots_to_english(last_knowledge_text),
+                                            # translate_slots_to_english(last_knowledge_text, args.english_slots),
                                             "<history>",
                                             dialog_history_text,
                                         ]
@@ -246,11 +246,11 @@ def read_data(args, path_names, setting, max_history=3):
 
                             dst_data_detail = {
                                 "dial_id": dial_id,
-                                "task": translate_slots_to_english(active_intent),
+                                "task": translate_slots_to_english(active_intent, args.english_slots),
                                 "turn_id": count,
                                 "dialog_history": dialog_history_text,
                                 "input_text": input_text,
-                                "output_text": translate_slots_to_english(target),
+                                "output_text": translate_slots_to_english(target, args.english_slots),
                                 "train_target": "dst",
                             }
 
@@ -268,7 +268,7 @@ def read_data(args, path_names, setting, max_history=3):
                                         [
                                             "API:",
                                             "<state>",
-                                            translate_slots_to_english(state_text),
+                                            translate_slots_to_english(state_text, args.english_slots),
                                             "<endofstate>",
                                             "<history>",
                                             dialog_history_text,
@@ -280,10 +280,10 @@ def read_data(args, path_names, setting, max_history=3):
                                         [
                                             "API:",
                                             "<knowledge>",
-                                            translate_slots_to_english(last_knowledge_text),
+                                            translate_slots_to_english(last_knowledge_text, args.english_slots),
                                             "<endofknowledge>",
                                             "<state>",
-                                            translate_slots_to_english(state_text),
+                                            translate_slots_to_english(state_text, args.english_slots),
                                             "<endofstate>",
                                             "<history>",
                                             dialog_history_text,
@@ -295,7 +295,7 @@ def read_data(args, path_names, setting, max_history=3):
                                         [
                                             "API:",
                                             "<knowledge>",
-                                            translate_slots_to_english(last_knowledge_text),
+                                            translate_slots_to_english(last_knowledge_text, args.english_slots),
                                             "<endofknowledge>",
                                             "<history>",
                                             dialog_history_text,
@@ -309,10 +309,10 @@ def read_data(args, path_names, setting, max_history=3):
                                         [
                                             "API:",
                                             "<knowledge>",
-                                            translate_slots_to_english(last_knowledge_text),
+                                            translate_slots_to_english(last_knowledge_text, args.english_slots),
                                             "<endofknowledge>",
                                             "<state>",
-                                            translate_slots_to_english(state_text),
+                                            translate_slots_to_english(state_text, args.english_slots),
                                             "<history>",
                                             dialog_history_text,
                                         ]
@@ -322,7 +322,7 @@ def read_data(args, path_names, setting, max_history=3):
                                         [
                                             "API:",
                                             "<knowledge>",
-                                            translate_slots_to_english(last_knowledge_text),
+                                            translate_slots_to_english(last_knowledge_text, args.english_slots),
                                             "<history>",
                                             dialog_history_text,
                                         ]
@@ -344,7 +344,7 @@ def read_data(args, path_names, setting, max_history=3):
 
                                 api_data_detail = {
                                     "dial_id": dial_id,
-                                    "task": translate_slots_to_english(active_intent),
+                                    "task": translate_slots_to_english(active_intent, args.english_slots),
                                     "turn_id": count,
                                     "dialog_history": dialog_history_text,
                                     "input_text": input_text,
@@ -363,7 +363,7 @@ def read_data(args, path_names, setting, max_history=3):
                                 # no api call
                                 api_data_detail = {
                                     "dial_id": dial_id,
-                                    "task": translate_slots_to_english(active_intent),
+                                    "task": translate_slots_to_english(active_intent, args.english_slots),
                                     "turn_id": count,
                                     "dialog_history": dialog_history_text,
                                     "input_text": input_text,
@@ -381,10 +381,10 @@ def read_data(args, path_names, setting, max_history=3):
                                         [
                                             "ACTS:",
                                             "<knowledge>",
-                                            translate_slots_to_english(last_knowledge_text),
+                                            translate_slots_to_english(last_knowledge_text, args.english_slots),
                                             "<endofknowledge>",
                                             "<state>",
-                                            translate_slots_to_english(state_text),
+                                            translate_slots_to_english(state_text, args.english_slots),
                                             "<endofstate>",
                                             "<history>",
                                             dialog_history_text,
@@ -396,7 +396,7 @@ def read_data(args, path_names, setting, max_history=3):
                                         [
                                             "ACTS:",
                                             "<knowledge>",
-                                            translate_slots_to_english(last_knowledge_text),
+                                            translate_slots_to_english(last_knowledge_text, args.english_slots),
                                             "<endofknowledge>",
                                             "<history>",
                                             dialog_history_text,
@@ -409,9 +409,9 @@ def read_data(args, path_names, setting, max_history=3):
                                         [
                                             "ACTS:",
                                             "<knowledge>",
-                                            translate_slots_to_english(last_knowledge_text),
+                                            translate_slots_to_english(last_knowledge_text, args.english_slots),
                                             "<state>",
-                                            translate_slots_to_english(state_text),
+                                            translate_slots_to_english(state_text, args.english_slots),
                                             "<history>",
                                             dialog_history_text,
                                         ]
@@ -421,7 +421,7 @@ def read_data(args, path_names, setting, max_history=3):
                                         [
                                             "ACTS:",
                                             "<knowledge>",
-                                            translate_slots_to_english(last_knowledge_text),
+                                            translate_slots_to_english(last_knowledge_text, args.english_slots),
                                             "<history>",
                                             dialog_history_text,
                                         ]
@@ -440,7 +440,7 @@ def read_data(args, path_names, setting, max_history=3):
 
                             action_text = action2span(turn["Actions"], active_intent, setting)
                             action_text = clean_text(action_text, is_formal=True)
-                            action_text = translate_slots_to_english(action_text)
+                            action_text = translate_slots_to_english(action_text, args.english_slots)
 
                             if args.use_natural_response or args.only_gen_natural_response:
                                 output_text = target
@@ -451,7 +451,7 @@ def read_data(args, path_names, setting, max_history=3):
                                 input_text = input_text.replace('ACTS:', 'DA:')
                                 acts_data_detail = {
                                     "dial_id": dial_id,
-                                    "task": translate_slots_to_english(active_intent),
+                                    "task": translate_slots_to_english(active_intent, args.english_slots),
                                     "turn_id": count,
                                     "dialog_history": dialog_history_text,
                                     "input_text": input_text,
@@ -475,7 +475,7 @@ def read_data(args, path_names, setting, max_history=3):
                                 # input_text_rg = " ".join(['RG:', "<actions>", action_text, "<endofactions>", input_text.replace('ACTS: ', '')])
                                 response_data_detail = {
                                     "dial_id": dial_id,
-                                    "task": translate_slots_to_english(active_intent),
+                                    "task": translate_slots_to_english(active_intent, args.english_slots),
                                     "turn_id": count,
                                     "dialog_history": dialog_history_text,
                                     "input_text": input_text,
@@ -486,7 +486,7 @@ def read_data(args, path_names, setting, max_history=3):
                             else:
                                 response_data_detail = {
                                     "dial_id": dial_id,
-                                    "task": translate_slots_to_english(active_intent),
+                                    "task": translate_slots_to_english(active_intent, args.english_slots),
                                     "turn_id": count,
                                     "dialog_history": dialog_history_text,
                                     "input_text": input_text,
@@ -559,7 +559,7 @@ def main():
     )
     parser.add_argument("--max_history", type=int, default=2)
     parser.add_argument("--splits", nargs='+', default=['train', 'eval', 'test'])
-    parser.add_argument("--version", type=int)
+    parser.add_argument("--version", type=int, default=11)
     parser.add_argument("--fewshot_percent", type=int, default=0)
     parser.add_argument("--sampling", choices=["random", "balanced"], default="random")
     parser.add_argument("--use_user_acts", action='store_true')
@@ -578,11 +578,6 @@ def main():
     parser.add_argument("--exclude_fewshot", action='store_true')
 
     args = parser.parse_args()
-
-    global slot_translation_dict
-    slot_translation_dict = {}
-    if args.english_slots:
-        slot_translation_dict = translation_dict
 
     if args.setting in ["en"]:
         path_train = ["data/en_train.json"]
