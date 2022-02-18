@@ -362,8 +362,6 @@ def main():
 
     args = parser.parse_args()
 
-    args.nlg = False
-
     if not os.path.exists(args.result_path):
         os.makedirs(args.result_path)
 

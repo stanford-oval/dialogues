@@ -254,8 +254,7 @@ def read_data(args, path_names, setting, max_history=3):
                                 "train_target": "dst",
                             }
 
-                            if not args.nlg:
-                                data.append(dst_data_detail)
+                            data.append(dst_data_detail)
 
                             turn_id += 1
 
@@ -353,8 +352,7 @@ def read_data(args, path_names, setting, max_history=3):
                                     "train_target": "api",
                                 }
 
-                                if not args.nlg:
-                                    data.append(api_data_detail)
+                                data.append(api_data_detail)
 
                                 # skip knowledge turn since we already processed it
                                 turn_id += 2
@@ -373,8 +371,7 @@ def read_data(args, path_names, setting, max_history=3):
                                     "train_target": "api",
                                 }
 
-                                if not args.nlg:
-                                    data.append(api_data_detail)
+                                data.append(api_data_detail)
 
                             # once last_knowledge_text is used reset it
                             # input_text = " ".join(["Response:", "<knowledge>", last_knowledge_text, "<state>", state_text, "<history>", dialog_history_text])
@@ -615,7 +612,7 @@ def main():
         with open(
             os.path.join(
                 args.save_dir,
-                f"{args.pretraining_prefix}{args.setting}_{set}" + ("_nlg" if args.nlg else "") + f"_v{args.version}.json",
+                f"{args.pretraining_prefix}{args.setting}_{set}" + f"_v{args.version}.json",
             ),
             "w",
         ) as f:
