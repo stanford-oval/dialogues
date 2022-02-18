@@ -24,8 +24,8 @@ from dialogues.bitod.src.utils import (
 
 
 def translate_slots_to_english(text, dicti=None):
-    if dicti:
-        slot_translation_dict = dicti
+    # if dicti:
+    #     slot_translation_dict = dicti
     for key, val in slot_translation_dict.items():
         text = text.replace(key, val)
     for key, val in zh_API_MAP.items():
@@ -193,9 +193,9 @@ def read_data(args, path_names, setting, max_history=3):
                                     input_text = " ".join(
                                         [
                                             "DST:",
-                                            "<knowledge>",
-                                            translate_slots_to_english(last_knowledge_text),
-                                            "<endofknowledge>",
+                                            # "<knowledge>",
+                                            # translate_slots_to_english(last_knowledge_text),
+                                            # "<endofknowledge>",
                                             "<state>",
                                             translate_slots_to_english(state_text),
                                             "<endofstate>",
@@ -208,9 +208,9 @@ def read_data(args, path_names, setting, max_history=3):
                                     input_text = " ".join(
                                         [
                                             "DST:",
-                                            "<knowledge>",
-                                            translate_slots_to_english(last_knowledge_text),
-                                            "<endofknowledge>",
+                                            # "<knowledge>",
+                                            # translate_slots_to_english(last_knowledge_text),
+                                            # "<endofknowledge>",
                                             "<history>",
                                             dialog_history_text,
                                             "<endofhistory>",
@@ -222,8 +222,8 @@ def read_data(args, path_names, setting, max_history=3):
                                     input_text = " ".join(
                                         [
                                             "DST:",
-                                            "<knowledge>",
-                                            translate_slots_to_english(last_knowledge_text),
+                                            # "<knowledge>",
+                                            # translate_slots_to_english(last_knowledge_text),
                                             "<state>",
                                             translate_slots_to_english(state_text),
                                             "<history>",
@@ -234,8 +234,8 @@ def read_data(args, path_names, setting, max_history=3):
                                     input_text = " ".join(
                                         [
                                             "DST:",
-                                            "<knowledge>",
-                                            translate_slots_to_english(last_knowledge_text),
+                                            # "<knowledge>",
+                                            # translate_slots_to_english(last_knowledge_text),
                                             "<history>",
                                             dialog_history_text,
                                         ]
