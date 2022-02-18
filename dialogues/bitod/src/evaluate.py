@@ -143,7 +143,8 @@ def convert_lists_to_set_api(constraints):
 
 
 def compute_result(args, predictions, reference_data):
-    bleu, ser, success_rate, api_acc, da_acc, JGA, task_info = 0, 0, 0, 0, 0, 0, 0
+    task_info = {}
+    bleu, ser, success_rate, api_acc, da_acc, JGA = 0, 0, 0, 0, 0, 0
 
     # out_dst = open('out_dst.tsv', 'w')
 
