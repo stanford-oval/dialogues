@@ -2,8 +2,7 @@ import argparse
 import json
 import os
 import re
-from collections import defaultdict
-from pprint import pprint
+from collections import OrderedDict, defaultdict
 
 from datasets import load_metric
 
@@ -192,7 +191,6 @@ def compute_result(args, predictions, reference_data):
                     # )
 
         JGA = hit / total_dst_turns
-        print(f"JGA: {JGA}")
 
     if args.eval_task in ["end2end", "response"]:
         reference_task_success = defaultdict(dict)
@@ -276,11 +274,19 @@ def compute_result(args, predictions, reference_data):
 
         success_rate, api_acc, task_info = compute_success_rate(predictions, reference_task_success)
 
-        pprint(
-            f"BLEU: {bleu}, SER: {ser}, DIAL_SUCCESS_RATE: {success_rate}, API_ACC: {api_acc}, DA_ACC: {da_acc}, task_info: {task_info}"
-        )
-
-    return bleu, ser, success_rate, api_acc, da_acc, JGA, task_info
+    if 'Averaged_task_success' in task_info:
+        task_info['Averaged_task_success'] *= 100
+    return OrderedDict(
+        {
+            "bleu": bleu * 100,
+            "ser": ser * 100,
+            "success_rate": success_rate * 100,
+            "api_acc": api_acc * 100,
+            "da_acc": da_acc * 100,
+            "jga": JGA * 100,
+            "task_info": task_info,
+        }
+    )
 
 
 quoted_pattern = re.compile(r'" (.*?) "')
@@ -333,19 +339,14 @@ def eval_file(args, prediction_file_path, reference_file_path):
     with open(prediction_file_path) as f:
         predictions = json.load(f)
 
-    bleu, ser, success_rate, api_acc, da_acc, jga, task_info = compute_result(args, predictions, reference_data)
+    if not args.setting:
+        file = os.path.basename(reference_file_path)
+        if 'zh' in file:
+            args.setting = 'zh'
+        else:
+            args.setting = 'en'
 
-    results = (
-        {
-            "bleu": bleu,
-            "ser": ser,
-            "success_rate": success_rate,
-            "api_acc": api_acc,
-            "da_acc": da_acc,
-            "jga": jga,
-            "task_info": task_info,
-        },
-    )
+    results = compute_result(args, predictions, reference_data)
 
     return results
 
