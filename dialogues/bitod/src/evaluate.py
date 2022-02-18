@@ -162,7 +162,7 @@ def compute_result(args, predictions, reference_data):
 
                     if args.setting == 'zh':
                         gold = state2span(gold, required_slots)
-                        gold = translate_slots_to_english(gold)
+                        gold = translate_slots_to_english(gold, translation_dict)
                         gold = span2state(gold, api_names)
                         gold = {r_en_API_MAP.get(k, k): v for k, v in gold.items()}
 

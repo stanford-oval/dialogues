@@ -23,7 +23,9 @@ from dialogues.bitod.src.utils import (
 )
 
 
-def translate_slots_to_english(text):
+def translate_slots_to_english(text, dicti=None):
+    if dicti:
+        slot_translation_dict = dicti
     for key, val in slot_translation_dict.items():
         text = text.replace(key, val)
     for key, val in zh_API_MAP.items():
