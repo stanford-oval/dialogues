@@ -55,8 +55,8 @@ class Bitod(Dataset):
         path_dev = [os.path.join(root, p) for p in path_dev]
         path_test = [os.path.join(root, p) for p in path_test]
 
-        train, dev, test = prepare_data(args, path_train, path_dev, path_test)
-        return train, dev, test
+        train, fewshot, dev, test = prepare_data(args, path_train, path_dev, path_test)
+        return train, fewshot, dev, test
 
     def make_api_call(self, dialogue_state, api_name, src_lang='en', dial_id=None, turn_id=None):
         knowledge = defaultdict(dict)

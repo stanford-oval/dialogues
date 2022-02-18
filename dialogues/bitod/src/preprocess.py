@@ -35,35 +35,35 @@ def translate_slots_to_english(text):
 
 def read_data(args, path_names, setting, max_history=3):
     print(("Reading all files from {}".format(path_names)))
-    data = []
+    result = {'few': [], 'data': []}
 
     # read files
     for path_name in path_names:
         with open(path_name) as f:
             dials = json.load(f)
+            few_dials = {}
             # cross lingual adaptation setting
             # use only 10% data from target lang
-            if args.setting in ['en2zh', 'zh2en']:
+            if args.fewshot_percent != 0 and '_train' in path_name:
                 if args.sampling == "random":
-                    _, target_lang = args.setting.split("2")
-                    if f"{target_lang}_train" in path_name:
-                        if not os.path.exists(f"data/{target_lang}_fewshot_dials_{args.fewshot_percent}.json"):
-                            dial_ids = list(dials.keys())
-                            dial_ids = dial_ids[: int(len(dial_ids) * args.fewshot_percent // 100)]
-                            print(f"few shot for {target_lang}, dialogue number: {len(dial_ids)}")
-                            with open(f"data/{target_lang}_fewshot_dials_{args.fewshot_percent}.json", "w") as f:
-                                json.dump({"fewshot_dials": dial_ids}, f, indent=True)
-                        else:
-                            with open(f"data/{target_lang}_fewshot_dials_{args.fewshot_percent}.json") as f:
-                                dial_ids = json.load(f)["fewshot_dials"]
-                        dials = {dial_id: dials[dial_id] for dial_id in dial_ids}
+                    target_lang = args.setting
+                    if not os.path.exists(f"data/{target_lang}_fewshot_dials_{args.fewshot_percent}.json"):
+                        all_dial_ids = list(dials.keys())
+                        dial_ids = all_dial_ids[: int(len(all_dial_ids) * args.fewshot_percent // 100)]
+                        print(f"few shot for {target_lang}, dialogue number: {len(dial_ids)}")
+                        with open(f"data/{target_lang}_fewshot_dials_{args.fewshot_percent}.json", "w") as f:
+                            json.dump({"fewshot_dials": dial_ids}, f, indent=True)
+                    else:
+                        with open(f"data/{target_lang}_fewshot_dials_{args.fewshot_percent}.json") as f:
+                            dial_ids = json.load(f)["fewshot_dials"]
+                    few_dials = {dial_id: dials[dial_id] for dial_id in dial_ids}
+                    dials = {dial_id: dials[dial_id] for dial_id in all_dial_ids if dial_id not in dial_ids}
                 else:
                     dialogue_dominant_domains = defaultdict(list)
                     domain_turn_counts = defaultdict(int)
                     for dial_id, dial in dials.items():
                         turn_domains = defaultdict(int)
                         dialogue_turns = dial["Events"]
-                        intents = []
 
                         for turn in dialogue_turns:
                             if turn["Agent"] == "User":
@@ -77,433 +77,440 @@ def read_data(args, path_names, setting, max_history=3):
 
                     total = sum(list(domain_turn_counts.values()))
                     fewshot_dials = []
-                    dial_ids = list(dials.keys())
+                    all_dial_ids = list(dials.keys())
                     for (domain, count) in domain_turn_counts.items():
-                        num_fewshot = int(len(dial_ids) * (count / total) * (args.fewshot_percent / 100))
+                        num_fewshot = int(len(all_dial_ids) * (count / total) * (args.fewshot_percent / 100))
                         fewshot_dials += dialogue_dominant_domains[domain][:num_fewshot]
 
-                    _, target_lang = args.setting.split("2")
-                    if f"{target_lang}_train" in path_name:
-                        if not os.path.exists(f"data/{target_lang}_fewshot_dials_{args.fewshot_percent}_balanced.json"):
-                            print(f"balanced few shot for {target_lang}, dialogue number: {len(fewshot_dials)}")
-                            print("turn statistics:")
-                            for (domain, count) in domain_turn_counts.items():
-                                print(domain, "comprises of", count, "or", int(100 * count / total + 0.5), "percent")
-                            print("few-shot turn statistics:")
-                            res_turn_counts = defaultdict(int)
-                            for dial_id in fewshot_dials:
-                                for turn in dials[dial_id]["Events"]:
-                                    if turn["Agent"] == "User":
-                                        active_intent = API_MAP[turn["active_intent"]]
-                                        res_turn_counts[translate_slots_to_english(active_intent)] += 1
-                            total = sum(list(res_turn_counts.values()))
-                            for (domain, count) in res_turn_counts.items():
-                                print(domain, "comprises of", count, "or", int(100 * count / total + 0.5), "percent")
+                    target_lang = args.setting
+                    if not os.path.exists(f"data/{target_lang}_fewshot_dials_{args.fewshot_percent}_balanced.json"):
+                        print(f"balanced few shot for {target_lang}, dialogue number: {len(fewshot_dials)}")
+                        print("turn statistics:")
+                        for (domain, count) in domain_turn_counts.items():
+                            print(domain, "comprises of", count, "or", int(100 * count / total + 0.5), "percent")
+                        print("few-shot turn statistics:")
+                        res_turn_counts = defaultdict(int)
+                        for dial_id in fewshot_dials:
+                            for turn in dials[dial_id]["Events"]:
+                                if turn["Agent"] == "User":
+                                    active_intent = API_MAP[turn["active_intent"]]
+                                    res_turn_counts[translate_slots_to_english(active_intent)] += 1
+                        total = sum(list(res_turn_counts.values()))
+                        for (domain, count) in res_turn_counts.items():
+                            print(domain, "comprises of", count, "or", int(100 * count / total + 0.5), "percent")
 
-                            with open(f"data/{target_lang}_fewshot_dials_{args.fewshot_percent}_balanced.json", "w") as f:
-                                json.dump({"fewshot_dials": fewshot_dials}, f, indent=True)
-                        else:
-                            with open(f"data/{target_lang}_fewshot_dials_{args.fewshot_percent}_balanced.json") as f:
-                                dial_ids = json.load(f)["fewshot_dials"]
-                        dials = {dial_id: dials[dial_id] for dial_id in dial_ids}
+                        with open(f"data/{target_lang}_fewshot_dials_{args.fewshot_percent}_balanced.json", "w") as f:
+                            json.dump({"fewshot_dials": fewshot_dials}, f, indent=True)
+                            dial_ids = fewshot_dials
+                    else:
+                        with open(f"data/{target_lang}_fewshot_dials_{args.fewshot_percent}_balanced.json") as f:
+                            dial_ids = json.load(f)["fewshot_dials"]
+                    few_dials = {dial_id: dials[dial_id] for dial_id in dial_ids}
+                    dials = {dial_id: dials[dial_id] for dial_id in all_dial_ids if dial_id not in dial_ids}
 
-            for dial_id, dial in dials.items():
-                dialogue_turns = dial["Events"]
+            for name, dialogues in zip(['few', 'data'], [few_dials, dials]):
+                data = []
+                for dial_id, dial in dialogues.items():
+                    dialogue_turns = dial["Events"]
 
-                dialog_history = []
-                knowledge = defaultdict(dict)
-                last_knowledge_text = "null"
-                last_dialogue_state = {}
-                count = 1
+                    dialog_history = []
+                    knowledge = defaultdict(dict)
+                    last_knowledge_text = "null"
+                    last_dialogue_state = {}
+                    count = 1
 
-                intents = []
+                    intents = []
 
-                turn_id = 0
-                while turn_id < len(dialogue_turns):
-                    turn = dialogue_turns[turn_id]
+                    turn_id = 0
+                    while turn_id < len(dialogue_turns):
+                        turn = dialogue_turns[turn_id]
 
-                    if turn["Agent"] == "User":
-                        if args.gen_full_state or args.simpletod:
-                            if API_MAP[turn["active_intent"]] not in intents:
-                                intents.append(API_MAP[turn["active_intent"]])
-                        else:
-                            intents = [API_MAP[turn["active_intent"]]]
+                        if turn["Agent"] == "User":
+                            if args.gen_full_state or args.simpletod:
+                                if API_MAP[turn["active_intent"]] not in intents:
+                                    intents.append(API_MAP[turn["active_intent"]])
+                            else:
+                                intents = [API_MAP[turn["active_intent"]]]
 
-                        active_intent = intents[-1]
+                            active_intent = intents[-1]
 
-                        # accumulate dialogue utterances
-                        if args.use_user_acts:
+                            # accumulate dialogue utterances
+                            if args.use_user_acts:
+                                action_text = action2span(turn["Actions"], active_intent, setting)
+                                action_text = clean_text(action_text, is_formal=True)
+                                action_text = translate_slots_to_english(action_text)
+                                dialog_history.append("USER_ACTS: " + action_text)
+                            else:
+                                dialog_history.append("USER: " + clean_text(turn["Text"]))
+
+                            if args.last_two_agent_turns and len(dialog_history) >= 4:
+                                dial_hist = [dialog_history[-4].replace('AGENT_ACTS:', 'AGENT_ACTS_PREV:')] + dialog_history[
+                                    -2:
+                                ]
+                            else:
+                                dial_hist = dialog_history[-max_history:]
+
+                            dialog_history_text = " ".join(dial_hist)
+
+                            # convert dict of slot-values into text
+                            state_text = state2span(last_dialogue_state, required_slots)
+
+                            current_state = {API_MAP[k]: v for k, v in turn["state"].items()}
+                            current_state = OrderedDict(sorted(current_state.items(), key=lambda s: s[0]))
+                            current_state = {
+                                k: OrderedDict(sorted(v.items(), key=lambda s: s[0])) for k, v in current_state.items()
+                            }
+
+                            if args.gen_lev_span:
+                                # compute the diff between old state and new state
+                                intent = intents[0]
+                                target = compute_lev_span(last_dialogue_state, current_state, intent)
+                            elif args.gen_full_state or args.simpletod:
+                                targets = []
+                                for intent in intents:
+                                    targets.append(compute_lev_span({}, current_state, intent))
+                                target = ' '.join(targets)
+                            else:
+                                intent = intents[0]
+                                target = compute_lev_span({}, current_state, intent)
+
+                            # update last dialogue state
+                            last_dialogue_state = current_state
+
+                            if args.add_end_tokens or args.simpletod:
+                                if args.simpletod:
+                                    input_text = " ".join(
+                                        [
+                                            "DST:",
+                                            "<history>",
+                                            dialog_history_text,
+                                            "<endofhistory>",
+                                        ]
+                                    )
+                                elif not args.no_state:
+                                    input_text = " ".join(
+                                        [
+                                            "DST:",
+                                            "<knowledge>",
+                                            translate_slots_to_english(last_knowledge_text),
+                                            "<endofknowledge>",
+                                            "<state>",
+                                            translate_slots_to_english(state_text),
+                                            "<endofstate>",
+                                            "<history>",
+                                            dialog_history_text,
+                                            "<endofhistory>",
+                                        ]
+                                    )
+                                else:
+                                    input_text = " ".join(
+                                        [
+                                            "DST:",
+                                            "<knowledge>",
+                                            translate_slots_to_english(last_knowledge_text),
+                                            "<endofknowledge>",
+                                            "<history>",
+                                            dialog_history_text,
+                                            "<endofhistory>",
+                                        ]
+                                    )
+
+                            else:
+                                if not args.no_state:
+                                    input_text = " ".join(
+                                        [
+                                            "DST:",
+                                            "<knowledge>",
+                                            translate_slots_to_english(last_knowledge_text),
+                                            "<state>",
+                                            translate_slots_to_english(state_text),
+                                            "<history>",
+                                            dialog_history_text,
+                                        ]
+                                    )
+                                else:
+                                    input_text = " ".join(
+                                        [
+                                            "DST:",
+                                            "<knowledge>",
+                                            translate_slots_to_english(last_knowledge_text),
+                                            "<history>",
+                                            dialog_history_text,
+                                        ]
+                                    )
+
+                            # for cross lingual transfer task; not important ;)
+                            input_text, target = create_mixed_lang_text(input_text, target, args.pretraining_prefix)
+
+                            dst_data_detail = {
+                                "dial_id": dial_id,
+                                "task": translate_slots_to_english(active_intent),
+                                "turn_id": count,
+                                "dialog_history": dialog_history_text,
+                                "input_text": input_text,
+                                "output_text": translate_slots_to_english(target),
+                                "train_target": "dst",
+                            }
+
+                            if not args.nlg:
+                                data.append(dst_data_detail)
+
+                            turn_id += 1
+
+                        elif turn["Agent"] == "Wizard":
+                            # convert dict of slot-values into text
+                            state_text = state2span(last_dialogue_state, required_slots)
+
+                            if args.add_end_tokens or args.simpletod:
+                                if args.simpletod:
+                                    input_text = " ".join(
+                                        [
+                                            "API:",
+                                            "<state>",
+                                            translate_slots_to_english(state_text),
+                                            "<endofstate>",
+                                            "<history>",
+                                            dialog_history_text,
+                                            "<endofhistory>",
+                                        ]
+                                    )
+                                elif not args.no_state:
+                                    input_text = " ".join(
+                                        [
+                                            "API:",
+                                            "<knowledge>",
+                                            translate_slots_to_english(last_knowledge_text),
+                                            "<endofknowledge>",
+                                            "<state>",
+                                            translate_slots_to_english(state_text),
+                                            "<endofstate>",
+                                            "<history>",
+                                            dialog_history_text,
+                                            "<endofhistory>",
+                                        ]
+                                    )
+                                else:
+                                    input_text = " ".join(
+                                        [
+                                            "API:",
+                                            "<knowledge>",
+                                            translate_slots_to_english(last_knowledge_text),
+                                            "<endofknowledge>",
+                                            "<history>",
+                                            dialog_history_text,
+                                            "<endofhistory>",
+                                        ]
+                                    )
+
+                            else:
+                                if not args.no_state:
+                                    input_text = " ".join(
+                                        [
+                                            "API:",
+                                            "<knowledge>",
+                                            translate_slots_to_english(last_knowledge_text),
+                                            "<endofknowledge>",
+                                            "<state>",
+                                            translate_slots_to_english(state_text),
+                                            "<history>",
+                                            dialog_history_text,
+                                        ]
+                                    )
+                                else:
+                                    input_text = " ".join(
+                                        [
+                                            "API:",
+                                            "<knowledge>",
+                                            translate_slots_to_english(last_knowledge_text),
+                                            "<history>",
+                                            dialog_history_text,
+                                        ]
+                                    )
+
+                            if turn["Actions"] == "query":
+                                # do api call
+                                # next turn is KnowledgeBase
+                                assert dialogue_turns[turn_id + 1]["Agent"] == 'KnowledgeBase'
+                                next_turn = dialogue_turns[turn_id + 1]
+                                # domain = next_turn["Topic"].split("_")[0]
+
+                                if int(next_turn["TotalItems"]) == 0:
+                                    last_knowledge_text = f"( {active_intent} ) Message = No item available."
+                                else:
+                                    # they only return 1 item
+                                    knowledge[active_intent].update(next_turn["Item"])
+                                    last_knowledge_text = knowledge2span(knowledge)
+
+                                api_data_detail = {
+                                    "dial_id": dial_id,
+                                    "task": translate_slots_to_english(active_intent),
+                                    "turn_id": count,
+                                    "dialog_history": dialog_history_text,
+                                    "input_text": input_text,
+                                    "output_text": "yes",
+                                    "train_target": "api",
+                                }
+
+                                if not args.nlg:
+                                    data.append(api_data_detail)
+
+                                # skip knowledge turn since we already processed it
+                                turn_id += 2
+                                turn = dialogue_turns[turn_id]
+
+                            else:
+
+                                # no api call
+                                api_data_detail = {
+                                    "dial_id": dial_id,
+                                    "task": translate_slots_to_english(active_intent),
+                                    "turn_id": count,
+                                    "dialog_history": dialog_history_text,
+                                    "input_text": input_text,
+                                    "output_text": "no",
+                                    "train_target": "api",
+                                }
+
+                                if not args.nlg:
+                                    data.append(api_data_detail)
+
+                            # once last_knowledge_text is used reset it
+                            # input_text = " ".join(["Response:", "<knowledge>", last_knowledge_text, "<state>", state_text, "<history>", dialog_history_text])
+                            if args.add_end_tokens or args.simpletod:
+                                if not args.no_state or args.simpletod:
+                                    input_text = " ".join(
+                                        [
+                                            "ACTS:",
+                                            "<knowledge>",
+                                            translate_slots_to_english(last_knowledge_text),
+                                            "<endofknowledge>",
+                                            "<state>",
+                                            translate_slots_to_english(state_text),
+                                            "<endofstate>",
+                                            "<history>",
+                                            dialog_history_text,
+                                            "<endofhistory>",
+                                        ]
+                                    )
+                                else:
+                                    input_text = " ".join(
+                                        [
+                                            "ACTS:",
+                                            "<knowledge>",
+                                            translate_slots_to_english(last_knowledge_text),
+                                            "<endofknowledge>",
+                                            "<history>",
+                                            dialog_history_text,
+                                            "<endofhistory>",
+                                        ]
+                                    )
+                            else:
+                                if not args.no_state:
+                                    input_text = " ".join(
+                                        [
+                                            "ACTS:",
+                                            "<knowledge>",
+                                            translate_slots_to_english(last_knowledge_text),
+                                            "<state>",
+                                            translate_slots_to_english(state_text),
+                                            "<history>",
+                                            dialog_history_text,
+                                        ]
+                                    )
+                                else:
+                                    input_text = " ".join(
+                                        [
+                                            "ACTS:",
+                                            "<knowledge>",
+                                            translate_slots_to_english(last_knowledge_text),
+                                            "<history>",
+                                            dialog_history_text,
+                                        ]
+                                    )
+
+                            # for Metro domain we need to carry over api results
+                            # it often happens that in first response agent only provides the shortest_path
+                            # then user asks about price and journey duration, and agent reuses old api results to respond
+                            if not ('HKMTR' in active_intent or args.add_api_results or args.simpletod):
+                                last_knowledge_text = "null"
+                                knowledge = defaultdict(dict)
+
+                            target = clean_text(turn["Text"])
+                            # for cross lingual transfer task; not important ;)
+                            input_text, target = create_mixed_lang_text(input_text, target, args.pretraining_prefix)
+
                             action_text = action2span(turn["Actions"], active_intent, setting)
                             action_text = clean_text(action_text, is_formal=True)
                             action_text = translate_slots_to_english(action_text)
-                            dialog_history.append("USER_ACTS: " + action_text)
-                        else:
-                            dialog_history.append("USER: " + clean_text(turn["Text"]))
 
-                        if args.last_two_agent_turns and len(dialog_history) >= 4:
-                            dial_hist = [dialog_history[-4].replace('AGENT_ACTS:', 'AGENT_ACTS_PREV:')] + dialog_history[-2:]
-                        else:
-                            dial_hist = dialog_history[-max_history:]
+                            if args.use_natural_response or args.only_gen_natural_response:
+                                output_text = target
+                            else:
+                                output_text = action_text
 
-                        dialog_history_text = " ".join(dial_hist)
+                            if args.four_steps:
+                                input_text = input_text.replace('ACTS:', 'DA:')
+                                acts_data_detail = {
+                                    "dial_id": dial_id,
+                                    "task": translate_slots_to_english(active_intent),
+                                    "turn_id": count,
+                                    "dialog_history": dialog_history_text,
+                                    "input_text": input_text,
+                                    "output_text": action_text,
+                                    "train_target": "da",
+                                }
+                                data.append(acts_data_detail)
 
-                        # convert dict of slot-values into text
-                        state_text = state2span(last_dialogue_state, required_slots)
+                                input_text = " ".join(
+                                    [
+                                        "RG:",
+                                        "<actions>",
+                                        action_text,
+                                        "<endofactions>",
+                                        "<history>",
+                                        dialog_history_text,
+                                        "<endofhistory>",
+                                    ]
+                                )
 
-                        current_state = {API_MAP[k]: v for k, v in turn["state"].items()}
-                        current_state = OrderedDict(sorted(current_state.items(), key=lambda s: s[0]))
-                        current_state = {
-                            k: OrderedDict(sorted(v.items(), key=lambda s: s[0])) for k, v in current_state.items()
-                        }
+                                # input_text_rg = " ".join(['RG:', "<actions>", action_text, "<endofactions>", input_text.replace('ACTS: ', '')])
+                                response_data_detail = {
+                                    "dial_id": dial_id,
+                                    "task": translate_slots_to_english(active_intent),
+                                    "turn_id": count,
+                                    "dialog_history": dialog_history_text,
+                                    "input_text": input_text,
+                                    "output_text": target,
+                                    "train_target": "rg",
+                                }
+                                data.append(response_data_detail)
+                            else:
+                                response_data_detail = {
+                                    "dial_id": dial_id,
+                                    "task": translate_slots_to_english(active_intent),
+                                    "turn_id": count,
+                                    "dialog_history": dialog_history_text,
+                                    "input_text": input_text,
+                                    "output_text": output_text,
+                                    "train_target": "response",
+                                    "response": target,
+                                }
+                                data.append(response_data_detail)
 
-                        if args.gen_lev_span:
-                            # compute the diff between old state and new state
-                            intent = intents[0]
-                            target = compute_lev_span(last_dialogue_state, current_state, intent)
-                        elif args.gen_full_state or args.simpletod:
-                            targets = []
-                            for intent in intents:
-                                targets.append(compute_lev_span({}, current_state, intent))
-                            target = ' '.join(targets)
-                        else:
-                            intent = intents[0]
-                            target = compute_lev_span({}, current_state, intent)
-
-                        # update last dialogue state
-                        last_dialogue_state = current_state
-
-                        if args.add_end_tokens or args.simpletod:
+                            # update dialogue history
                             if args.simpletod:
-                                input_text = " ".join(
-                                    [
-                                        "DST:",
-                                        "<history>",
-                                        dialog_history_text,
-                                        "<endofhistory>",
-                                    ]
-                                )
-                            elif not args.no_state:
-                                input_text = " ".join(
-                                    [
-                                        "DST:",
-                                        "<knowledge>",
-                                        translate_slots_to_english(last_knowledge_text),
-                                        "<endofknowledge>",
-                                        "<state>",
-                                        translate_slots_to_english(state_text),
-                                        "<endofstate>",
-                                        "<history>",
-                                        dialog_history_text,
-                                        "<endofhistory>",
-                                    ]
-                                )
+                                dialog_history.append("AGENT_ACTS: " + target)
+                            elif args.only_gen_natural_response:
+                                dialog_history.append("AGENT_ACTS: " + action_text)
                             else:
-                                input_text = " ".join(
-                                    [
-                                        "DST:",
-                                        "<knowledge>",
-                                        translate_slots_to_english(last_knowledge_text),
-                                        "<endofknowledge>",
-                                        "<history>",
-                                        dialog_history_text,
-                                        "<endofhistory>",
-                                    ]
-                                )
+                                dialog_history.append("AGENT_ACTS: " + output_text)
 
-                        else:
-                            if not args.no_state:
-                                input_text = " ".join(
-                                    [
-                                        "DST:",
-                                        "<knowledge>",
-                                        translate_slots_to_english(last_knowledge_text),
-                                        "<state>",
-                                        translate_slots_to_english(state_text),
-                                        "<history>",
-                                        dialog_history_text,
-                                    ]
-                                )
-                            else:
-                                input_text = " ".join(
-                                    [
-                                        "DST:",
-                                        "<knowledge>",
-                                        translate_slots_to_english(last_knowledge_text),
-                                        "<history>",
-                                        dialog_history_text,
-                                    ]
-                                )
+                            turn_id += 1
+                            count += 1
 
-                        # for cross lingual transfer task; not important ;)
-                        input_text, target = create_mixed_lang_text(input_text, target, args.pretraining_prefix)
+                result[name] = data
 
-                        dst_data_detail = {
-                            "dial_id": dial_id,
-                            "task": translate_slots_to_english(active_intent),
-                            "turn_id": count,
-                            "dialog_history": dialog_history_text,
-                            "input_text": input_text,
-                            "output_text": translate_slots_to_english(target),
-                            "train_target": "dst",
-                        }
-
-                        if not args.nlg:
-                            data.append(dst_data_detail)
-
-                        turn_id += 1
-
-                    elif turn["Agent"] == "Wizard":
-                        # convert dict of slot-values into text
-                        state_text = state2span(last_dialogue_state, required_slots)
-
-                        if args.add_end_tokens or args.simpletod:
-                            if args.simpletod:
-                                input_text = " ".join(
-                                    [
-                                        "API:",
-                                        "<state>",
-                                        translate_slots_to_english(state_text),
-                                        "<endofstate>",
-                                        "<history>",
-                                        dialog_history_text,
-                                        "<endofhistory>",
-                                    ]
-                                )
-                            elif not args.no_state:
-                                input_text = " ".join(
-                                    [
-                                        "API:",
-                                        "<knowledge>",
-                                        translate_slots_to_english(last_knowledge_text),
-                                        "<endofknowledge>",
-                                        "<state>",
-                                        translate_slots_to_english(state_text),
-                                        "<endofstate>",
-                                        "<history>",
-                                        dialog_history_text,
-                                        "<endofhistory>",
-                                    ]
-                                )
-                            else:
-                                input_text = " ".join(
-                                    [
-                                        "API:",
-                                        "<knowledge>",
-                                        translate_slots_to_english(last_knowledge_text),
-                                        "<endofknowledge>",
-                                        "<history>",
-                                        dialog_history_text,
-                                        "<endofhistory>",
-                                    ]
-                                )
-
-                        else:
-                            if not args.no_state:
-                                input_text = " ".join(
-                                    [
-                                        "API:",
-                                        "<knowledge>",
-                                        translate_slots_to_english(last_knowledge_text),
-                                        "<endofknowledge>",
-                                        "<state>",
-                                        translate_slots_to_english(state_text),
-                                        "<history>",
-                                        dialog_history_text,
-                                    ]
-                                )
-                            else:
-                                input_text = " ".join(
-                                    [
-                                        "API:",
-                                        "<knowledge>",
-                                        translate_slots_to_english(last_knowledge_text),
-                                        "<history>",
-                                        dialog_history_text,
-                                    ]
-                                )
-
-                        if turn["Actions"] == "query":
-                            # do api call
-                            # next turn is KnowledgeBase
-                            assert dialogue_turns[turn_id + 1]["Agent"] == 'KnowledgeBase'
-                            next_turn = dialogue_turns[turn_id + 1]
-                            # domain = next_turn["Topic"].split("_")[0]
-
-                            if int(next_turn["TotalItems"]) == 0:
-                                last_knowledge_text = f"( {active_intent} ) Message = No item available."
-                            else:
-                                # they only return 1 item
-                                knowledge[active_intent].update(next_turn["Item"])
-                                last_knowledge_text = knowledge2span(knowledge)
-
-                            api_data_detail = {
-                                "dial_id": dial_id,
-                                "task": translate_slots_to_english(active_intent),
-                                "turn_id": count,
-                                "dialog_history": dialog_history_text,
-                                "input_text": input_text,
-                                "output_text": "yes",
-                                "train_target": "api",
-                            }
-
-                            if not args.nlg:
-                                data.append(api_data_detail)
-
-                            # skip knowledge turn since we already processed it
-                            turn_id += 2
-                            turn = dialogue_turns[turn_id]
-
-                        else:
-
-                            # no api call
-                            api_data_detail = {
-                                "dial_id": dial_id,
-                                "task": translate_slots_to_english(active_intent),
-                                "turn_id": count,
-                                "dialog_history": dialog_history_text,
-                                "input_text": input_text,
-                                "output_text": "no",
-                                "train_target": "api",
-                            }
-
-                            if not args.nlg:
-                                data.append(api_data_detail)
-
-                        # once last_knowledge_text is used reset it
-                        # input_text = " ".join(["Response:", "<knowledge>", last_knowledge_text, "<state>", state_text, "<history>", dialog_history_text])
-                        if args.add_end_tokens or args.simpletod:
-                            if not args.no_state or args.simpletod:
-                                input_text = " ".join(
-                                    [
-                                        "ACTS:",
-                                        "<knowledge>",
-                                        translate_slots_to_english(last_knowledge_text),
-                                        "<endofknowledge>",
-                                        "<state>",
-                                        translate_slots_to_english(state_text),
-                                        "<endofstate>",
-                                        "<history>",
-                                        dialog_history_text,
-                                        "<endofhistory>",
-                                    ]
-                                )
-                            else:
-                                input_text = " ".join(
-                                    [
-                                        "ACTS:",
-                                        "<knowledge>",
-                                        translate_slots_to_english(last_knowledge_text),
-                                        "<endofknowledge>",
-                                        "<history>",
-                                        dialog_history_text,
-                                        "<endofhistory>",
-                                    ]
-                                )
-                        else:
-                            if not args.no_state:
-                                input_text = " ".join(
-                                    [
-                                        "ACTS:",
-                                        "<knowledge>",
-                                        translate_slots_to_english(last_knowledge_text),
-                                        "<state>",
-                                        translate_slots_to_english(state_text),
-                                        "<history>",
-                                        dialog_history_text,
-                                    ]
-                                )
-                            else:
-                                input_text = " ".join(
-                                    [
-                                        "ACTS:",
-                                        "<knowledge>",
-                                        translate_slots_to_english(last_knowledge_text),
-                                        "<history>",
-                                        dialog_history_text,
-                                    ]
-                                )
-
-                        # for Metro domain we need to carry over api results
-                        # it often happens that in first response agent only provides the shortest_path
-                        # then user asks about price and journey duration, and agent reuses old api results to respond
-                        if not ('HKMTR' in active_intent or args.add_api_results or args.simpletod):
-                            last_knowledge_text = "null"
-                            knowledge = defaultdict(dict)
-
-                        target = clean_text(turn["Text"])
-                        # for cross lingual transfer task; not important ;)
-                        input_text, target = create_mixed_lang_text(input_text, target, args.pretraining_prefix)
-
-                        action_text = action2span(turn["Actions"], active_intent, setting)
-                        action_text = clean_text(action_text, is_formal=True)
-                        action_text = translate_slots_to_english(action_text)
-
-                        if args.use_natural_response or args.only_gen_natural_response:
-                            output_text = target
-                        else:
-                            output_text = action_text
-
-                        if args.four_steps:
-                            input_text = input_text.replace('ACTS:', 'DA:')
-                            acts_data_detail = {
-                                "dial_id": dial_id,
-                                "task": active_intent,
-                                "turn_id": count,
-                                "dialog_history": dialog_history_text,
-                                "input_text": input_text,
-                                "output_text": action_text,
-                                "train_target": "da",
-                            }
-                            data.append(acts_data_detail)
-
-                            input_text = " ".join(
-                                [
-                                    "RG:",
-                                    "<actions>",
-                                    action_text,
-                                    "<endofactions>",
-                                    "<history>",
-                                    dialog_history_text,
-                                    "<endofhistory>",
-                                ]
-                            )
-
-                            # input_text_rg = " ".join(['RG:', "<actions>", action_text, "<endofactions>", input_text.replace('ACTS: ', '')])
-                            response_data_detail = {
-                                "dial_id": dial_id,
-                                "task": active_intent,
-                                "turn_id": count,
-                                "dialog_history": dialog_history_text,
-                                "input_text": input_text,
-                                "output_text": target,
-                                "train_target": "rg",
-                            }
-                            data.append(response_data_detail)
-                        else:
-                            response_data_detail = {
-                                "dial_id": dial_id,
-                                "task": active_intent,
-                                "turn_id": count,
-                                "dialog_history": dialog_history_text,
-                                "input_text": input_text,
-                                "output_text": output_text,
-                                "train_target": "response",
-                                "response": target,
-                            }
-                            data.append(response_data_detail)
-
-                        # update dialogue history
-                        if args.simpletod:
-                            dialog_history.append("AGENT_ACTS: " + target)
-                        elif args.only_gen_natural_response:
-                            dialog_history.append("AGENT_ACTS: " + action_text)
-                        else:
-                            dialog_history.append("AGENT_ACTS: " + output_text)
-
-                        turn_id += 1
-                        count += 1
-
-    return data
+    return result
 
 
 def get_commit():
@@ -518,14 +525,16 @@ def get_commit():
 
 def prepare_data(args, path_train, path_dev, path_test):
     # "en, zh, en&zh, en2zh, zh2en"
-    data_train, data_dev, data_test = None, None, None
+    data_train, data_fewshot, data_dev, data_test = None, None, None, None
 
     if 'eval' in args.splits:
-        data_dev = read_data(args, path_dev, args.setting, args.max_history)
-    if 'train' in args.splits:
-        data_train = read_data(args, path_train, args.setting, args.max_history)
+        data_dev = read_data(args, path_dev, args.setting, args.max_history)['data']
     if 'test' in args.splits:
-        data_test = read_data(args, path_test, args.setting, args.max_history)
+        data_test = read_data(args, path_test, args.setting, args.max_history)['data']
+    if 'train' in args.splits:
+        train_data = read_data(args, path_train, args.setting, args.max_history)
+        data_train = train_data['data']
+        data_fewshot = train_data['few']
 
     if args.setting == "en_zh":
         if data_train:
@@ -535,7 +544,7 @@ def prepare_data(args, path_train, path_dev, path_test):
         if data_test:
             random.shuffle(data_test)
 
-    return data_train, data_dev, data_test
+    return data_train, data_fewshot, data_dev, data_test
 
 
 def main():
@@ -544,7 +553,7 @@ def main():
     parser.add_argument(
         "--save_dir", type=str, default="data/preprocessed", help="path to save prerpocessed data for training"
     )
-    parser.add_argument("--setting", type=str, default="en", help="en, zh, en_zh, en2zh, zh2en")
+    parser.add_argument("--setting", type=str, default="en", help="en, zh, en_zh")
     parser.add_argument("--nlg", action='store_true', help="only keep agent side (for nlg)")
     parser.add_argument(
         "--pretraining_prefix", type=str, default="", help="for cross lingual pretrainings: [en2zh_trainsfer, zh2en_trainsfer]"
@@ -552,7 +561,7 @@ def main():
     parser.add_argument("--max_history", type=int, default=2)
     parser.add_argument("--splits", nargs='+', default=['train', 'eval', 'test'])
     parser.add_argument("--version", type=int)
-    parser.add_argument("--fewshot_percent", type=int, default="10")
+    parser.add_argument("--fewshot_percent", type=int, default=0)
     parser.add_argument("--sampling", choices=["random", "balanced"], default="random")
     parser.add_argument("--use_user_acts", action='store_true')
     parser.add_argument("--gen_lev_span", action='store_true')
@@ -567,6 +576,8 @@ def main():
     parser.add_argument("--only_gen_natural_response", action='store_true')
     parser.add_argument("--four_steps", action='store_true')
 
+    parser.add_argument("--exclude_fewshot", action='store_true')
+
     args = parser.parse_args()
 
     global slot_translation_dict
@@ -574,11 +585,11 @@ def main():
     if args.english_slots:
         slot_translation_dict = translation_dict
 
-    if args.setting in ["en", "zh2en"]:
+    if args.setting in ["en"]:
         path_train = ["data/en_train.json"]
         path_dev = ["data/en_valid.json"]
         path_test = ["data/en_test.json"]
-    elif args.setting in ["zh", "en2zh"]:
+    elif args.setting in ["zh"]:
         path_train = ["data/zh_train.json"]
         path_dev = ["data/zh_valid.json"]
         path_test = ["data/zh_test.json"]
@@ -591,14 +602,14 @@ def main():
     path_dev = [os.path.join(args.root, p) for p in path_dev]
     path_test = [os.path.join(args.root, p) for p in path_test]
 
-    data_train, data_dev, data_test = prepare_data(args, path_train, path_dev, path_test)
+    data_train, data_fewshot, data_dev, data_test = prepare_data(args, path_train, path_dev, path_test)
 
     if not os.path.exists(args.save_dir):
         os.makedirs(args.save_dir)
 
     args.commit = get_commit()
 
-    for (set, file) in zip(['train', 'valid', 'test'], [data_train, data_dev, data_test]):
+    for (set, data) in zip(['train', 'fewshot', 'valid', 'test'], [data_train, data_fewshot, data_dev, data_test]):
         with open(
             os.path.join(
                 args.save_dir,
@@ -606,7 +617,8 @@ def main():
             ),
             "w",
         ) as f:
-            json.dump({"args": vars(args), "data": file}, f, indent=True, ensure_ascii=False)
+            json.dump({"args": vars(args), "data": data}, f, indent=True, ensure_ascii=False)
+            print(set, len(data))
 
     # with open(os.path.join(f"./data_samples/v{args.version}.json"), "w") as f:
     #     json.dump({"data": data_test[:30]}, f, indent=True, ensure_ascii=False)

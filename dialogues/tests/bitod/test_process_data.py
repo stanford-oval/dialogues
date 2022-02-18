@@ -19,5 +19,5 @@ parser.add_argument("--fewshot_percent", type=int, default="10")
 args = parser.parse_args()
 
 dataset = Bitod()
-train, dev, test = dataset.process_data(args, args.root)
+train, fewshot, dev, test = dataset.process_data(args, args.root)
 print(len(dev))
