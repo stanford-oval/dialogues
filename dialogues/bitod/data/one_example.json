@@ -1,0 +1,2050 @@
+{
+    "d4da198a-a529-4d26-8554-9672333f6d5f": {
+     "Dialogue_id": "d4da198a-a529-4d26-8554-9672333f6d5f",
+     "Scenario": {
+      "UserTask": "Hi, I am looking for a restaurant.<br>The restaurant should provide <b>Vegan Options</b> for dietary restrictions.<br>This restaurant should be near <b>Victoria Park</b>. <br>I <b>don't</b> want to eat <b>Steakhouse</b> food, others are okay.<br>I would like to book this restaurant.<br>I want to book the restaurant at <b>4:50 pm</b>.<br>My name is <b>Paul</b>.<br>On <b>April 2</b><br>Please help me book for <b>5</b> people.<br>Do you know any interesting attractions we can visit?<br>The attraction type should be <b>Nature & Parks</b> or <b>Zoos & Aquariums</b>.<br>This attraction should be near <b>Wan Chai / Causeway Bay</b><br>By the way, how can I take MTR to from the restaurant to attraction?<br>",
+      "WizardTask": null,
+      "WizardCapabilities": [
+       {
+        "Task": "restaurants_en_US_search",
+        "SchemaURL": "https://i.imgur.com/TXtLDcg.png"
+       },
+       {
+        "Task": "restaurants_en_US_booking",
+        "SchemaURL": "https://i.imgur.com/VbyjVH6.png"
+       },
+       {
+        "Task": "attractions_en_US_search",
+        "SchemaURL": "https://i.imgur.com/sY3uN56.png"
+       },
+       {
+        "Task": "HKMTR_en",
+        "SchemaURL": "https://i.imgur.com/y2YGuTB.png"
+       }
+      ],
+      "User_Goal": {
+       "HKMTR_en": {
+        "destination": {
+         "relation": "equal_to",
+         "value": [
+          "Wan Chai / Causeway Bay"
+         ]
+        },
+        "departure": {
+         "relation": "equal_to",
+         "value": [
+          "Victoria Park"
+         ]
+        }
+       },
+       "attractions_en_US_search": {
+        "location": {
+         "relation": "equal_to",
+         "value": [
+          "Wan Chai / Causeway Bay"
+         ]
+        },
+        "type": {
+         "relation": "one_of",
+         "value": [
+          "Nature & Parks",
+          "Zoos & Aquariums"
+         ]
+        }
+       },
+       "restaurants_en_US_booking": {
+        "name": {
+         "relation": "equal_to",
+         "value": [
+          "Little Bao Diner"
+         ]
+        },
+        "user_name": {
+         "relation": "equal_to",
+         "value": [
+          "Paul"
+         ]
+        },
+        "time": {
+         "relation": "equal_to",
+         "value": [
+          "4:50 pm"
+         ]
+        },
+        "date": {
+         "relation": "equal_to",
+         "value": [
+          "April 2"
+         ]
+        },
+        "number_of_people": {
+         "relation": "equal_to",
+         "value": [
+          5
+         ]
+        }
+       },
+       "restaurants_en_US_search": {
+        "dietary_restrictions": {
+         "relation": "equal_to",
+         "value": [
+          "Vegan Options"
+         ]
+        },
+        "cuisine": {
+         "relation": "not",
+         "value": [
+          "Steakhouse"
+         ]
+        },
+        "location": {
+         "relation": "equal_to",
+         "value": [
+          "Victoria Park"
+         ]
+        }
+       }
+      }
+     },
+     "Events": [
+      {
+       "Agent": "User",
+       "Actions": [
+        {
+         "act": "inform_intent",
+         "slot": "intent",
+         "relation": "equal_to",
+         "value": [
+          "restaurants_en_US_search"
+         ]
+        },
+        {
+         "act": "inform",
+         "slot": "dietary_restrictions",
+         "relation": "equal_to",
+         "value": [
+          "Vegan Options"
+         ]
+        }
+       ],
+       "active_intent": "restaurants_en_US_search",
+       "state": {
+        "restaurants_en_US_search": {
+         "dietary_restrictions": {
+          "relation": "equal_to",
+          "value": [
+           "Vegan Options"
+          ]
+         }
+        }
+       },
+       "Text": "Hello, I am looking for a restaurant with Vegan Options.",
+       "sanity_check": []
+      },
+      {
+       "Agent": "Wizard",
+       "Actions": [
+        {
+         "act": "request",
+         "slot": "rating",
+         "relation": "",
+         "value": []
+        }
+       ],
+       "Text": "Would you like a high-rated restaurant?",
+       "PrimaryItem": null,
+       "SecondaryItem": null,
+       "sanity_check": []
+      },
+      {
+       "Agent": "User",
+       "Actions": [
+        {
+         "act": "inform",
+         "slot": "rating",
+         "relation": "equal_to",
+         "value": [
+          "don't care"
+         ]
+        },
+        {
+         "act": "inform",
+         "slot": "cuisine",
+         "relation": "not",
+         "value": [
+          "Steakhouse"
+         ]
+        }
+       ],
+       "active_intent": "restaurants_en_US_search",
+       "state": {
+        "restaurants_en_US_search": {
+         "dietary_restrictions": {
+          "relation": "equal_to",
+          "value": [
+           "Vegan Options"
+          ]
+         },
+         "rating": {
+          "relation": "equal_to",
+          "value": [
+           "don't care"
+          ]
+         },
+         "cuisine": {
+          "relation": "not",
+          "value": [
+           "Steakhouse"
+          ]
+         }
+        }
+       },
+       "Text": "I do not care about the rating. I don't want a place with Steakhouse food, but anything else is good.",
+       "sanity_check": []
+      },
+      {
+       "Agent": "Wizard",
+       "Actions": "query",
+       "Constraints": [
+        {
+         "dietary_restrictions": "api.equal_to(Vegan Options)"
+        },
+        {
+         "cuisine": "api.not(Steakhouse)"
+        }
+       ],
+       "API": "restaurants_en_US_search",
+       "PrimaryItem": null,
+       "SecondaryItem": null
+      },
+      {
+       "Agent": "KnowledgeBase",
+       "Item": {
+        "name": "ChocoDuck Bistro",
+        "location": [
+         "New Territories",
+         "Islands District",
+         "Cheung Chau"
+        ],
+        "cuisine": [
+         "Italian",
+         "International",
+         "European",
+         "Healthy"
+        ],
+        "price_level": "moderate",
+        "rating": 10,
+        "dietary_restrictions": [
+         "Vegetarian Friendly",
+         "Vegan Options"
+        ],
+        "address": "3 Kin San Lane, Cheung Chau",
+        "phone_number": "+852 9735 0049",
+        "available_options": 292
+       },
+       "TotalItems": 292,
+       "Topic": "restaurants_en_US_search"
+      },
+      {
+       "Agent": "Wizard",
+       "Actions": [
+        {
+         "act": "offer",
+         "slot": "name",
+         "relation": "equal_to",
+         "value": [
+          "ChocoDuck Bistro"
+         ]
+        },
+        {
+         "act": "offer",
+         "slot": "cuisine",
+         "relation": "equal_to",
+         "value": [
+          "Italian"
+         ]
+        },
+        {
+         "act": "offer",
+         "slot": "rating",
+         "relation": "equal_to",
+         "value": [
+          "10"
+         ]
+        },
+        {
+         "act": "offer",
+         "slot": "available_options",
+         "relation": "equal_to",
+         "value": [
+          "292"
+         ]
+        }
+       ],
+       "Text": "I have found 292 restaurant options. I recommend the Italian restaurant ChocoDuck Bistro, which has a rating of 10.",
+       "PrimaryItem": {
+        "name": "ChocoDuck Bistro",
+        "location": [
+         "New Territories",
+         "Islands District",
+         "Cheung Chau"
+        ],
+        "cuisine": [
+         "Italian",
+         "International",
+         "European",
+         "Healthy"
+        ],
+        "price_level": "moderate",
+        "rating": 10,
+        "dietary_restrictions": [
+         "Vegetarian Friendly",
+         "Vegan Options"
+        ],
+        "address": "3 Kin San Lane, Cheung Chau",
+        "phone_number": "+852 9735 0049",
+        "available_options": 292
+       },
+       "SecondaryItem": null,
+       "sanity_check": [
+        "292",
+        "ChocoDuck Bistro",
+        "Italian",
+        "10"
+       ]
+      },
+      {
+       "Agent": "User",
+       "Actions": [
+        {
+         "act": "inform",
+         "slot": "location",
+         "relation": "equal_to",
+         "value": [
+          "Victoria Park"
+         ]
+        }
+       ],
+       "active_intent": "restaurants_en_US_search",
+       "state": {
+        "restaurants_en_US_search": {
+         "dietary_restrictions": {
+          "relation": "equal_to",
+          "value": [
+           "Vegan Options"
+          ]
+         },
+         "rating": {
+          "relation": "equal_to",
+          "value": [
+           "don't care"
+          ]
+         },
+         "cuisine": {
+          "relation": "not",
+          "value": [
+           "Steakhouse"
+          ]
+         },
+         "location": {
+          "relation": "equal_to",
+          "value": [
+           "Victoria Park"
+          ]
+         }
+        }
+       },
+       "Text": "Can you find a restaurant close to Victoria Park?",
+       "sanity_check": []
+      },
+      {
+       "Agent": "Wizard",
+       "Actions": "query",
+       "Constraints": [
+        {
+         "dietary_restrictions": "api.equal_to(Vegan Options)"
+        },
+        {
+         "cuisine": "api.not(Steakhouse)"
+        },
+        {
+         "location": "api.equal_to(Victoria Park)"
+        }
+       ],
+       "API": "restaurants_en_US_search",
+       "PrimaryItem": null,
+       "SecondaryItem": null
+      },
+      {
+       "Agent": "KnowledgeBase",
+       "Item": {
+        "name": "Little Bao Diner",
+        "location": [
+         "Wan Chai / Causeway Bay",
+         "Victoria Park",
+         "Hong Kong Island"
+        ],
+        "cuisine": [
+         "Diner"
+        ],
+        "price_level": "moderate",
+        "rating": 9,
+        "dietary_restrictions": [
+         "Vegan Options"
+        ],
+        "address": "9 Kingston Street, Causeway Bay Shop H1, Fashion Walk",
+        "phone_number": "+852 2555 0600",
+        "available_options": 1
+       },
+       "TotalItems": 1,
+       "Topic": "restaurants_en_US_search"
+      },
+      {
+       "Agent": "Wizard",
+       "Actions": [
+        {
+         "act": "offer",
+         "slot": "name",
+         "relation": "equal_to",
+         "value": [
+          "Little Bao Diner"
+         ]
+        },
+        {
+         "act": "offer",
+         "slot": "cuisine",
+         "relation": "equal_to",
+         "value": [
+          "Diner"
+         ]
+        },
+        {
+         "act": "offer",
+         "slot": "rating",
+         "relation": "equal_to",
+         "value": [
+          "9"
+         ]
+        },
+        {
+         "act": "offer",
+         "slot": "available_options",
+         "relation": "equal_to",
+         "value": [
+          "1"
+         ]
+        }
+       ],
+       "Text": "I have found 1 option near Victoria Park. Little Bao Diner serves Diner food, and it has a rating of 9.",
+       "PrimaryItem": {
+        "name": "Little Bao Diner",
+        "location": [
+         "Wan Chai / Causeway Bay",
+         "Victoria Park",
+         "Hong Kong Island"
+        ],
+        "cuisine": [
+         "Diner"
+        ],
+        "price_level": "moderate",
+        "rating": 9,
+        "dietary_restrictions": [
+         "Vegan Options"
+        ],
+        "address": "9 Kingston Street, Causeway Bay Shop H1, Fashion Walk",
+        "phone_number": "+852 2555 0600",
+        "available_options": 1
+       },
+       "SecondaryItem": null,
+       "sanity_check": [
+        "1",
+        "Little Bao Diner",
+        "Diner",
+        "9"
+       ]
+      },
+      {
+       "Agent": "User",
+       "Actions": [
+        {
+         "act": "request",
+         "slot": "address",
+         "relation": "",
+         "value": []
+        },
+        {
+         "act": "request",
+         "slot": "phone_number",
+         "relation": "",
+         "value": []
+        }
+       ],
+       "active_intent": "restaurants_en_US_search",
+       "state": {
+        "restaurants_en_US_search": {
+         "dietary_restrictions": {
+          "relation": "equal_to",
+          "value": [
+           "Vegan Options"
+          ]
+         },
+         "rating": {
+          "relation": "equal_to",
+          "value": [
+           "don't care"
+          ]
+         },
+         "cuisine": {
+          "relation": "not",
+          "value": [
+           "Steakhouse"
+          ]
+         },
+         "location": {
+          "relation": "equal_to",
+          "value": [
+           "Victoria Park"
+          ]
+         }
+        }
+       },
+       "Text": "Can I have the address and phone number of the restaurant?",
+       "sanity_check": []
+      },
+      {
+       "Agent": "Wizard",
+       "Actions": [
+        {
+         "act": "inform",
+         "slot": "address",
+         "relation": "equal_to",
+         "value": [
+          "9 Kingston Street, Causeway Bay Shop H1, Fashion Walk"
+         ]
+        },
+        {
+         "act": "inform",
+         "slot": "phone_number",
+         "relation": "equal_to",
+         "value": [
+          "+852 2555 0600"
+         ]
+        }
+       ],
+       "Text": "Little Bao Diner is located at 9 Kingston Street, Causeway Bay Shop H1, Fashion Walk. You can call them at +852 2555 0600.",
+       "PrimaryItem": {
+        "name": "Little Bao Diner",
+        "location": [
+         "Wan Chai / Causeway Bay",
+         "Victoria Park",
+         "Hong Kong Island"
+        ],
+        "cuisine": [
+         "Diner"
+        ],
+        "price_level": "moderate",
+        "rating": 9,
+        "dietary_restrictions": [
+         "Vegan Options"
+        ],
+        "address": "9 Kingston Street, Causeway Bay Shop H1, Fashion Walk",
+        "phone_number": "+852 2555 0600",
+        "available_options": 1
+       },
+       "SecondaryItem": null,
+       "sanity_check": [
+        "9 Kingston Street, Causeway Bay Shop H1, Fashion Walk",
+        "+852 2555 0600"
+       ]
+      },
+      {
+       "Agent": "User",
+       "Actions": [
+        {
+         "act": "inform_intent",
+         "slot": "intent",
+         "relation": "equal_to",
+         "value": [
+          "restaurants_en_US_booking"
+         ]
+        },
+        {
+         "act": "inform",
+         "slot": "name",
+         "relation": "equal_to",
+         "value": [
+          "Little Bao Diner"
+         ]
+        }
+       ],
+       "active_intent": "restaurants_en_US_booking",
+       "state": {
+        "restaurants_en_US_booking": {
+         "name": {
+          "relation": "equal_to",
+          "value": [
+           "Little Bao Diner"
+          ]
+         }
+        },
+        "restaurants_en_US_search": {
+         "dietary_restrictions": {
+          "relation": "equal_to",
+          "value": [
+           "Vegan Options"
+          ]
+         },
+         "rating": {
+          "relation": "equal_to",
+          "value": [
+           "don't care"
+          ]
+         },
+         "cuisine": {
+          "relation": "not",
+          "value": [
+           "Steakhouse"
+          ]
+         },
+         "location": {
+          "relation": "equal_to",
+          "value": [
+           "Victoria Park"
+          ]
+         }
+        }
+       },
+       "Text": "Please book a table at Little Bao Diner.",
+       "sanity_check": []
+      },
+      {
+       "Agent": "Wizard",
+       "Actions": [
+        {
+         "act": "request",
+         "slot": "user_name",
+         "relation": "",
+         "value": []
+        },
+        {
+         "act": "request",
+         "slot": "time",
+         "relation": "",
+         "value": []
+        }
+       ],
+       "Text": "What name would you like the reservation under? And what time would you like it for?",
+       "PrimaryItem": null,
+       "SecondaryItem": null,
+       "sanity_check": []
+      },
+      {
+       "Agent": "User",
+       "Actions": [
+        {
+         "act": "inform",
+         "slot": "user_name",
+         "relation": "equal_to",
+         "value": [
+          "Paul"
+         ]
+        },
+        {
+         "act": "inform",
+         "slot": "time",
+         "relation": "equal_to",
+         "value": [
+          "4:50 pm"
+         ]
+        },
+        {
+         "act": "inform",
+         "slot": "date",
+         "relation": "equal_to",
+         "value": [
+          "April 2"
+         ]
+        }
+       ],
+       "active_intent": "restaurants_en_US_booking",
+       "state": {
+        "restaurants_en_US_booking": {
+         "name": {
+          "relation": "equal_to",
+          "value": [
+           "Little Bao Diner"
+          ]
+         },
+         "user_name": {
+          "relation": "equal_to",
+          "value": [
+           "Paul"
+          ]
+         },
+         "time": {
+          "relation": "equal_to",
+          "value": [
+           "4:50 pm"
+          ]
+         },
+         "date": {
+          "relation": "equal_to",
+          "value": [
+           "April 2"
+          ]
+         }
+        },
+        "restaurants_en_US_search": {
+         "dietary_restrictions": {
+          "relation": "equal_to",
+          "value": [
+           "Vegan Options"
+          ]
+         },
+         "rating": {
+          "relation": "equal_to",
+          "value": [
+           "don't care"
+          ]
+         },
+         "cuisine": {
+          "relation": "not",
+          "value": [
+           "Steakhouse"
+          ]
+         },
+         "location": {
+          "relation": "equal_to",
+          "value": [
+           "Victoria Park"
+          ]
+         }
+        }
+       },
+       "Text": "Reserve it under Paul, for 4:50 pm on April 2.",
+       "sanity_check": []
+      },
+      {
+       "Agent": "Wizard",
+       "Actions": [
+        {
+         "act": "request",
+         "slot": "number_of_people",
+         "relation": "",
+         "value": []
+        }
+       ],
+       "Text": "How many people will be attending?",
+       "PrimaryItem": null,
+       "SecondaryItem": null,
+       "sanity_check": []
+      },
+      {
+       "Agent": "User",
+       "Actions": [
+        {
+         "act": "inform",
+         "slot": "number_of_people",
+         "relation": "equal_to",
+         "value": [
+          5
+         ]
+        }
+       ],
+       "active_intent": "restaurants_en_US_booking",
+       "state": {
+        "restaurants_en_US_booking": {
+         "name": {
+          "relation": "equal_to",
+          "value": [
+           "Little Bao Diner"
+          ]
+         },
+         "user_name": {
+          "relation": "equal_to",
+          "value": [
+           "Paul"
+          ]
+         },
+         "time": {
+          "relation": "equal_to",
+          "value": [
+           "4:50 pm"
+          ]
+         },
+         "date": {
+          "relation": "equal_to",
+          "value": [
+           "April 2"
+          ]
+         },
+         "number_of_people": {
+          "relation": "equal_to",
+          "value": [
+           5
+          ]
+         }
+        },
+        "restaurants_en_US_search": {
+         "dietary_restrictions": {
+          "relation": "equal_to",
+          "value": [
+           "Vegan Options"
+          ]
+         },
+         "rating": {
+          "relation": "equal_to",
+          "value": [
+           "don't care"
+          ]
+         },
+         "cuisine": {
+          "relation": "not",
+          "value": [
+           "Steakhouse"
+          ]
+         },
+         "location": {
+          "relation": "equal_to",
+          "value": [
+           "Victoria Park"
+          ]
+         }
+        }
+       },
+       "Text": "We need a table for 5.",
+       "sanity_check": [
+        "5"
+       ]
+      },
+      {
+       "Agent": "Wizard",
+       "Actions": [
+        {
+         "act": "confirm",
+         "slot": "name",
+         "relation": "equal_to",
+         "value": [
+          "Little Bao Diner"
+         ]
+        },
+        {
+         "act": "confirm",
+         "slot": "time",
+         "relation": "equal_to",
+         "value": [
+          "4:50 pm"
+         ]
+        },
+        {
+         "act": "confirm",
+         "slot": "number_of_people",
+         "relation": "equal_to",
+         "value": [
+          5
+         ]
+        },
+        {
+         "act": "confirm",
+         "slot": "date",
+         "relation": "equal_to",
+         "value": [
+          "April 2"
+         ]
+        }
+       ],
+       "Text": "Alright, please confirm that you want to book a table for 5 at Little Bao Diner at 4:50 pm on April 2.",
+       "PrimaryItem": null,
+       "SecondaryItem": null,
+       "sanity_check": [
+        "Little Bao Diner",
+        "5",
+        "4:50 pm",
+        "April 2"
+       ]
+      },
+      {
+       "Agent": "User",
+       "Actions": [
+        {
+         "act": "affirm",
+         "slot": "",
+         "relation": "",
+         "value": []
+        }
+       ],
+       "active_intent": "restaurants_en_US_booking",
+       "state": {
+        "restaurants_en_US_booking": {
+         "name": {
+          "relation": "equal_to",
+          "value": [
+           "Little Bao Diner"
+          ]
+         },
+         "user_name": {
+          "relation": "equal_to",
+          "value": [
+           "Paul"
+          ]
+         },
+         "time": {
+          "relation": "equal_to",
+          "value": [
+           "4:50 pm"
+          ]
+         },
+         "date": {
+          "relation": "equal_to",
+          "value": [
+           "April 2"
+          ]
+         },
+         "number_of_people": {
+          "relation": "equal_to",
+          "value": [
+           5
+          ]
+         }
+        },
+        "restaurants_en_US_search": {
+         "dietary_restrictions": {
+          "relation": "equal_to",
+          "value": [
+           "Vegan Options"
+          ]
+         },
+         "rating": {
+          "relation": "equal_to",
+          "value": [
+           "don't care"
+          ]
+         },
+         "cuisine": {
+          "relation": "not",
+          "value": [
+           "Steakhouse"
+          ]
+         },
+         "location": {
+          "relation": "equal_to",
+          "value": [
+           "Victoria Park"
+          ]
+         }
+        }
+       },
+       "Text": "Yes, please.",
+       "sanity_check": []
+      },
+      {
+       "Agent": "Wizard",
+       "Actions": "query",
+       "Constraints": [
+        {
+         "time": "api.equal_to(4:50 pm)"
+        },
+        {
+         "user_name": "api.equal_to(Paul)"
+        },
+        {
+         "date": "api.equal_to(April 2)"
+        },
+        {
+         "number_of_people": "api.equal_to(5)"
+        },
+        {
+         "name": "api.equal_to(Little Bao Diner)"
+        }
+       ],
+       "API": "restaurants_en_US_booking",
+       "PrimaryItem": null,
+       "SecondaryItem": null
+      },
+      {
+       "Agent": "KnowledgeBase",
+       "Item": {
+        "name": "Little Bao Diner",
+        "ref_number": "94R27Y1D",
+        "user_name": "Paul",
+        "number_of_people": 5,
+        "time": "4:50 pm",
+        "date": "April 2"
+       },
+       "TotalItems": 1,
+       "Topic": "restaurants_en_US_booking"
+      },
+      {
+       "Agent": "Wizard",
+       "Actions": [
+        {
+         "act": "notify_success",
+         "slot": "",
+         "relation": "",
+         "value": []
+        },
+        {
+         "act": "inform",
+         "slot": "ref_number",
+         "relation": "equal_to",
+         "value": [
+          "94R27Y1D"
+         ]
+        }
+       ],
+       "Text": "Your reservation is booked under reference number 94R27Y1D.",
+       "PrimaryItem": {
+        "name": "Little Bao Diner",
+        "ref_number": "94R27Y1D",
+        "user_name": "Paul",
+        "number_of_people": 5,
+        "time": "4:50 pm",
+        "date": "April 2"
+       },
+       "SecondaryItem": null,
+       "sanity_check": [
+        "94R27Y1D"
+       ]
+      },
+      {
+       "Agent": "User",
+       "Actions": [
+        {
+         "act": "inform_intent",
+         "slot": "intent",
+         "relation": "equal_to",
+         "value": [
+          "attractions_en_US_search"
+         ]
+        }
+       ],
+       "active_intent": "attractions_en_US_search",
+       "state": {
+        "attractions_en_US_search": {},
+        "restaurants_en_US_booking": {
+         "name": {
+          "relation": "equal_to",
+          "value": [
+           "Little Bao Diner"
+          ]
+         },
+         "user_name": {
+          "relation": "equal_to",
+          "value": [
+           "Paul"
+          ]
+         },
+         "time": {
+          "relation": "equal_to",
+          "value": [
+           "4:50 pm"
+          ]
+         },
+         "date": {
+          "relation": "equal_to",
+          "value": [
+           "April 2"
+          ]
+         },
+         "number_of_people": {
+          "relation": "equal_to",
+          "value": [
+           5
+          ]
+         }
+        },
+        "restaurants_en_US_search": {
+         "dietary_restrictions": {
+          "relation": "equal_to",
+          "value": [
+           "Vegan Options"
+          ]
+         },
+         "rating": {
+          "relation": "equal_to",
+          "value": [
+           "don't care"
+          ]
+         },
+         "cuisine": {
+          "relation": "not",
+          "value": [
+           "Steakhouse"
+          ]
+         },
+         "location": {
+          "relation": "equal_to",
+          "value": [
+           "Victoria Park"
+          ]
+         }
+        }
+       },
+       "Text": "Are there any interesting attractions nearby that we can visit?",
+       "sanity_check": []
+      },
+      {
+       "Agent": "Wizard",
+       "Actions": [
+        {
+         "act": "request",
+         "slot": "rating",
+         "relation": "",
+         "value": []
+        }
+       ],
+       "Text": "Would you like a high-rated attraction?",
+       "PrimaryItem": null,
+       "SecondaryItem": null,
+       "sanity_check": []
+      },
+      {
+       "Agent": "User",
+       "Actions": [
+        {
+         "act": "inform",
+         "slot": "rating",
+         "relation": "equal_to",
+         "value": [
+          "don't care"
+         ]
+        },
+        {
+         "act": "inform",
+         "slot": "location",
+         "relation": "equal_to",
+         "value": [
+          "Wan Chai / Causeway Bay"
+         ]
+        }
+       ],
+       "active_intent": "attractions_en_US_search",
+       "state": {
+        "attractions_en_US_search": {
+         "rating": {
+          "relation": "equal_to",
+          "value": [
+           "don't care"
+          ]
+         },
+         "location": {
+          "relation": "equal_to",
+          "value": [
+           "Wan Chai / Causeway Bay"
+          ]
+         }
+        },
+        "restaurants_en_US_booking": {
+         "name": {
+          "relation": "equal_to",
+          "value": [
+           "Little Bao Diner"
+          ]
+         },
+         "user_name": {
+          "relation": "equal_to",
+          "value": [
+           "Paul"
+          ]
+         },
+         "time": {
+          "relation": "equal_to",
+          "value": [
+           "4:50 pm"
+          ]
+         },
+         "date": {
+          "relation": "equal_to",
+          "value": [
+           "April 2"
+          ]
+         },
+         "number_of_people": {
+          "relation": "equal_to",
+          "value": [
+           5
+          ]
+         }
+        },
+        "restaurants_en_US_search": {
+         "dietary_restrictions": {
+          "relation": "equal_to",
+          "value": [
+           "Vegan Options"
+          ]
+         },
+         "rating": {
+          "relation": "equal_to",
+          "value": [
+           "don't care"
+          ]
+         },
+         "cuisine": {
+          "relation": "not",
+          "value": [
+           "Steakhouse"
+          ]
+         },
+         "location": {
+          "relation": "equal_to",
+          "value": [
+           "Victoria Park"
+          ]
+         }
+        }
+       },
+       "Text": "Any rating is fine, but I want something near Wan Chai / Causeway Bay.",
+       "sanity_check": []
+      },
+      {
+       "Agent": "Wizard",
+       "Actions": "query",
+       "Constraints": [
+        {
+         "location": "api.equal_to(Wan Chai / Causeway Bay)"
+        }
+       ],
+       "API": "attractions_en_US_search",
+       "PrimaryItem": null,
+       "SecondaryItem": null
+      },
+      {
+       "Agent": "KnowledgeBase",
+       "Item": {
+        "name": "DON DON DONKI Pearl City",
+        "location": [
+         "Wan Chai / Causeway Bay",
+         "Hong Kong Island"
+        ],
+        "rating": 10,
+        "type": [
+         "Shopping"
+        ],
+        "address": "22-36 Paterson St, Causeway Bay Jade Pearl Plaza",
+        "phone_number": "+852 2617 7011",
+        "description": null,
+        "available_options": 22
+       },
+       "TotalItems": 22,
+       "Topic": "attractions_en_US_search"
+      },
+      {
+       "Agent": "Wizard",
+       "Actions": [
+        {
+         "act": "offer",
+         "slot": "name",
+         "relation": "equal_to",
+         "value": [
+          "DON DON DONKI Pearl City"
+         ]
+        },
+        {
+         "act": "offer",
+         "slot": "rating",
+         "relation": "equal_to",
+         "value": [
+          "10"
+         ]
+        },
+        {
+         "act": "offer",
+         "slot": "available_options",
+         "relation": "equal_to",
+         "value": [
+          "22"
+         ]
+        }
+       ],
+       "Text": "I have found 22 attractions in that area. I recommend DON DON DONKI Pearl City, which has a rating of 10.",
+       "PrimaryItem": {
+        "name": "DON DON DONKI Pearl City",
+        "location": [
+         "Wan Chai / Causeway Bay",
+         "Hong Kong Island"
+        ],
+        "rating": 10,
+        "type": [
+         "Shopping"
+        ],
+        "address": "22-36 Paterson St, Causeway Bay Jade Pearl Plaza",
+        "phone_number": "+852 2617 7011",
+        "description": null,
+        "available_options": 22
+       },
+       "SecondaryItem": null,
+       "sanity_check": [
+        "22",
+        "DON DON DONKI Pearl City",
+        "10"
+       ]
+      },
+      {
+       "Agent": "User",
+       "Actions": [
+        {
+         "act": "inform",
+         "slot": "type",
+         "relation": "one_of",
+         "value": [
+          "Nature & Parks",
+          "Zoos & Aquariums"
+         ]
+        }
+       ],
+       "active_intent": "attractions_en_US_search",
+       "state": {
+        "attractions_en_US_search": {
+         "rating": {
+          "relation": "equal_to",
+          "value": [
+           "don't care"
+          ]
+         },
+         "location": {
+          "relation": "equal_to",
+          "value": [
+           "Wan Chai / Causeway Bay"
+          ]
+         },
+         "type": {
+          "relation": "one_of",
+          "value": [
+           "Nature & Parks",
+           "Zoos & Aquariums"
+          ]
+         }
+        },
+        "restaurants_en_US_booking": {
+         "name": {
+          "relation": "equal_to",
+          "value": [
+           "Little Bao Diner"
+          ]
+         },
+         "user_name": {
+          "relation": "equal_to",
+          "value": [
+           "Paul"
+          ]
+         },
+         "time": {
+          "relation": "equal_to",
+          "value": [
+           "4:50 pm"
+          ]
+         },
+         "date": {
+          "relation": "equal_to",
+          "value": [
+           "April 2"
+          ]
+         },
+         "number_of_people": {
+          "relation": "equal_to",
+          "value": [
+           5
+          ]
+         }
+        },
+        "restaurants_en_US_search": {
+         "dietary_restrictions": {
+          "relation": "equal_to",
+          "value": [
+           "Vegan Options"
+          ]
+         },
+         "rating": {
+          "relation": "equal_to",
+          "value": [
+           "don't care"
+          ]
+         },
+         "cuisine": {
+          "relation": "not",
+          "value": [
+           "Steakhouse"
+          ]
+         },
+         "location": {
+          "relation": "equal_to",
+          "value": [
+           "Victoria Park"
+          ]
+         }
+        }
+       },
+       "Text": "Can you find a Nature & Parks or Zoos & Aquariums attraction?",
+       "sanity_check": []
+      },
+      {
+       "Agent": "Wizard",
+       "Actions": "query",
+       "Constraints": [
+        {
+         "location": "api.equal_to(Wan Chai / Causeway Bay)"
+        },
+        {
+         "type": "api.one_of(Nature & Parks , Zoos & Aquariums)"
+        }
+       ],
+       "API": "attractions_en_US_search",
+       "PrimaryItem": null,
+       "SecondaryItem": null
+      },
+      {
+       "Agent": "KnowledgeBase",
+       "Item": {
+        "name": "Victoria Park",
+        "location": [
+         "Wan Chai / Causeway Bay",
+         "Victoria Park",
+         "Hong Kong Island"
+        ],
+        "rating": 8,
+        "type": [
+         "Nature & Parks"
+        ],
+        "address": "No.1 Hing Fat Street, Causeway Bay",
+        "phone_number": "+852 2570 6186",
+        "description": "Popular park in Hong Kong",
+        "available_options": 1
+       },
+       "TotalItems": 1,
+       "Topic": "attractions_en_US_search"
+      },
+      {
+       "Agent": "Wizard",
+       "Actions": [
+        {
+         "act": "offer",
+         "slot": "name",
+         "relation": "equal_to",
+         "value": [
+          "Victoria Park"
+         ]
+        },
+        {
+         "act": "offer",
+         "slot": "rating",
+         "relation": "equal_to",
+         "value": [
+          "8"
+         ]
+        },
+        {
+         "act": "offer",
+         "slot": "available_options",
+         "relation": "equal_to",
+         "value": [
+          "1"
+         ]
+        }
+       ],
+       "Text": "I have found 1 attraction of that type. I recommend Victoria Park, which has a rating of 8.",
+       "PrimaryItem": {
+        "name": "Victoria Park",
+        "location": [
+         "Wan Chai / Causeway Bay",
+         "Victoria Park",
+         "Hong Kong Island"
+        ],
+        "rating": 8,
+        "type": [
+         "Nature & Parks"
+        ],
+        "address": "No.1 Hing Fat Street, Causeway Bay",
+        "phone_number": "+852 2570 6186",
+        "description": "Popular park in Hong Kong",
+        "available_options": 1
+       },
+       "SecondaryItem": null,
+       "sanity_check": [
+        "1",
+        "Victoria Park",
+        "8"
+       ]
+      },
+      {
+       "Agent": "User",
+       "Actions": [
+        {
+         "act": "request",
+         "slot": "address",
+         "relation": "",
+         "value": []
+        },
+        {
+         "act": "request",
+         "slot": "phone_number",
+         "relation": "",
+         "value": []
+        }
+       ],
+       "active_intent": "attractions_en_US_search",
+       "state": {
+        "attractions_en_US_search": {
+         "rating": {
+          "relation": "equal_to",
+          "value": [
+           "don't care"
+          ]
+         },
+         "location": {
+          "relation": "equal_to",
+          "value": [
+           "Wan Chai / Causeway Bay"
+          ]
+         },
+         "type": {
+          "relation": "one_of",
+          "value": [
+           "Nature & Parks",
+           "Zoos & Aquariums"
+          ]
+         }
+        },
+        "restaurants_en_US_booking": {
+         "name": {
+          "relation": "equal_to",
+          "value": [
+           "Little Bao Diner"
+          ]
+         },
+         "user_name": {
+          "relation": "equal_to",
+          "value": [
+           "Paul"
+          ]
+         },
+         "time": {
+          "relation": "equal_to",
+          "value": [
+           "4:50 pm"
+          ]
+         },
+         "date": {
+          "relation": "equal_to",
+          "value": [
+           "April 2"
+          ]
+         },
+         "number_of_people": {
+          "relation": "equal_to",
+          "value": [
+           5
+          ]
+         }
+        },
+        "restaurants_en_US_search": {
+         "dietary_restrictions": {
+          "relation": "equal_to",
+          "value": [
+           "Vegan Options"
+          ]
+         },
+         "rating": {
+          "relation": "equal_to",
+          "value": [
+           "don't care"
+          ]
+         },
+         "cuisine": {
+          "relation": "not",
+          "value": [
+           "Steakhouse"
+          ]
+         },
+         "location": {
+          "relation": "equal_to",
+          "value": [
+           "Victoria Park"
+          ]
+         }
+        }
+       },
+       "Text": "What is the address and phone number of Victoria Park?",
+       "sanity_check": []
+      },
+      {
+       "Agent": "Wizard",
+       "Actions": [
+        {
+         "act": "inform",
+         "slot": "address",
+         "relation": "equal_to",
+         "value": [
+          "No.1 Hing Fat Street, Causeway Bay"
+         ]
+        },
+        {
+         "act": "inform",
+         "slot": "phone_number",
+         "relation": "equal_to",
+         "value": [
+          "+852 2570 6186"
+         ]
+        }
+       ],
+       "Text": "The park is located at No.1 Hing Fat Street, Causeway Bay and its phone number is +852 2570 6186.",
+       "PrimaryItem": {
+        "name": "Victoria Park",
+        "location": [
+         "Wan Chai / Causeway Bay",
+         "Victoria Park",
+         "Hong Kong Island"
+        ],
+        "rating": 8,
+        "type": [
+         "Nature & Parks"
+        ],
+        "address": "No.1 Hing Fat Street, Causeway Bay",
+        "phone_number": "+852 2570 6186",
+        "description": "Popular park in Hong Kong",
+        "available_options": 1
+       },
+       "SecondaryItem": null,
+       "sanity_check": [
+        "No.1 Hing Fat Street, Causeway Bay",
+        "+852 2570 6186"
+       ]
+      },
+      {
+       "Agent": "User",
+       "Actions": [
+        {
+         "act": "inform_intent",
+         "slot": "intent",
+         "relation": "equal_to",
+         "value": [
+          "HKMTR_en"
+         ]
+        },
+        {
+         "act": "inform",
+         "slot": "destination",
+         "relation": "equal_to",
+         "value": [
+          "Wan Chai / Causeway Bay"
+         ]
+        },
+        {
+         "act": "inform",
+         "slot": "departure",
+         "relation": "equal_to",
+         "value": [
+          "Victoria Park"
+         ]
+        }
+       ],
+       "active_intent": "HKMTR_en",
+       "state": {
+        "HKMTR_en": {
+         "destination": {
+          "relation": "equal_to",
+          "value": [
+           "Wan Chai / Causeway Bay"
+          ]
+         },
+         "departure": {
+          "relation": "equal_to",
+          "value": [
+           "Victoria Park"
+          ]
+         }
+        },
+        "attractions_en_US_search": {
+         "rating": {
+          "relation": "equal_to",
+          "value": [
+           "don't care"
+          ]
+         },
+         "location": {
+          "relation": "equal_to",
+          "value": [
+           "Wan Chai / Causeway Bay"
+          ]
+         },
+         "type": {
+          "relation": "one_of",
+          "value": [
+           "Nature & Parks",
+           "Zoos & Aquariums"
+          ]
+         }
+        },
+        "restaurants_en_US_booking": {
+         "name": {
+          "relation": "equal_to",
+          "value": [
+           "Little Bao Diner"
+          ]
+         },
+         "user_name": {
+          "relation": "equal_to",
+          "value": [
+           "Paul"
+          ]
+         },
+         "time": {
+          "relation": "equal_to",
+          "value": [
+           "4:50 pm"
+          ]
+         },
+         "date": {
+          "relation": "equal_to",
+          "value": [
+           "April 2"
+          ]
+         },
+         "number_of_people": {
+          "relation": "equal_to",
+          "value": [
+           5
+          ]
+         }
+        },
+        "restaurants_en_US_search": {
+         "dietary_restrictions": {
+          "relation": "equal_to",
+          "value": [
+           "Vegan Options"
+          ]
+         },
+         "rating": {
+          "relation": "equal_to",
+          "value": [
+           "don't care"
+          ]
+         },
+         "cuisine": {
+          "relation": "not",
+          "value": [
+           "Steakhouse"
+          ]
+         },
+         "location": {
+          "relation": "equal_to",
+          "value": [
+           "Victoria Park"
+          ]
+         }
+        }
+       },
+       "Text": "How can I take MTR from the diner to the park?",
+       "sanity_check": []
+      },
+      {
+       "Agent": "Wizard",
+       "Actions": "query",
+       "Constraints": [
+        {
+         "destination": "api.equal_to(Wan Chai / Causeway Bay)"
+        },
+        {
+         "departure": "api.equal_to(Victoria Park)"
+        }
+       ],
+       "API": "HKMTR_en",
+       "PrimaryItem": null,
+       "SecondaryItem": null
+      },
+      {
+       "Agent": "KnowledgeBase",
+       "Item": {
+        "shortest_path": "Take the purple line of the Victoria Park station.Then change at Exhibition station from purple line to cyan line.Then change at Admirality station from cyan line to blue line.Get off the train at Wan Chai station.",
+        "price": "8.68 HKD",
+        "estimated_time": "18 mins"
+       },
+       "TotalItems": 1,
+       "Topic": "HKMTR_en"
+      },
+      {
+       "Agent": "Wizard",
+       "Actions": [
+        {
+         "act": "offer",
+         "slot": "shortest_path",
+         "relation": "equal_to",
+         "value": [
+          "Take the purple line of the Victoria Park station.Then change at Exhibition station from purple line to cyan line.Then change at Admirality station from cyan line to blue line.Get off the train at Wan Chai station."
+         ]
+        }
+       ],
+       "Text": "You will need to Take the purple line of the Victoria Park station.Then change at Exhibition station from purple line to cyan line.Then change at Admirality station from cyan line to blue line.Get off the train at Wan Chai station.",
+       "PrimaryItem": {
+        "shortest_path": "Take the purple line of the Victoria Park station.Then change at Exhibition station from purple line to cyan line.Then change at Admirality station from cyan line to blue line.Get off the train at Wan Chai station.",
+        "price": "8.68 HKD",
+        "estimated_time": "18 mins"
+       },
+       "SecondaryItem": null,
+       "sanity_check": [
+        "Take the purple line of the Victoria Park station.Then change at Exhibition station from purple line to cyan line.Then change at Admirality station from cyan line to blue line.Get off the train at Wan Chai station."
+       ]
+      },
+      {
+       "Agent": "User",
+       "Actions": [
+        {
+         "act": "thank_you",
+         "slot": "",
+         "relation": "",
+         "value": []
+        }
+       ],
+       "active_intent": "HKMTR_en",
+       "state": {
+        "HKMTR_en": {
+         "destination": {
+          "relation": "equal_to",
+          "value": [
+           "Wan Chai / Causeway Bay"
+          ]
+         },
+         "departure": {
+          "relation": "equal_to",
+          "value": [
+           "Victoria Park"
+          ]
+         }
+        },
+        "attractions_en_US_search": {
+         "rating": {
+          "relation": "equal_to",
+          "value": [
+           "don't care"
+          ]
+         },
+         "location": {
+          "relation": "equal_to",
+          "value": [
+           "Wan Chai / Causeway Bay"
+          ]
+         },
+         "type": {
+          "relation": "one_of",
+          "value": [
+           "Nature & Parks",
+           "Zoos & Aquariums"
+          ]
+         }
+        },
+        "restaurants_en_US_booking": {
+         "name": {
+          "relation": "equal_to",
+          "value": [
+           "Little Bao Diner"
+          ]
+         },
+         "user_name": {
+          "relation": "equal_to",
+          "value": [
+           "Paul"
+          ]
+         },
+         "time": {
+          "relation": "equal_to",
+          "value": [
+           "4:50 pm"
+          ]
+         },
+         "date": {
+          "relation": "equal_to",
+          "value": [
+           "April 2"
+          ]
+         },
+         "number_of_people": {
+          "relation": "equal_to",
+          "value": [
+           5
+          ]
+         }
+        },
+        "restaurants_en_US_search": {
+         "dietary_restrictions": {
+          "relation": "equal_to",
+          "value": [
+           "Vegan Options"
+          ]
+         },
+         "rating": {
+          "relation": "equal_to",
+          "value": [
+           "don't care"
+          ]
+         },
+         "cuisine": {
+          "relation": "not",
+          "value": [
+           "Steakhouse"
+          ]
+         },
+         "location": {
+          "relation": "equal_to",
+          "value": [
+           "Victoria Park"
+          ]
+         }
+        }
+       },
+       "Text": "Awesome, thank you!",
+       "sanity_check": []
+      },
+      {
+       "Agent": "Wizard",
+       "Actions": [
+        {
+         "act": "request_more",
+         "slot": "",
+         "relation": "",
+         "value": []
+        }
+       ],
+       "Text": "Is there anything else I can help you with?",
+       "PrimaryItem": {
+        "shortest_path": "Take the purple line of the Victoria Park station.Then change at Exhibition station from purple line to cyan line.Then change at Admirality station from cyan line to blue line.Get off the train at Wan Chai station.",
+        "price": "8.68 HKD",
+        "estimated_time": "18 mins"
+       },
+       "SecondaryItem": null,
+       "sanity_check": []
+      },
+      {
+       "Agent": "User",
+       "Actions": [
+        {
+         "act": "negate",
+         "slot": "",
+         "relation": "",
+         "value": []
+        },
+        {
+         "act": "goodbye",
+         "slot": "",
+         "relation": "",
+         "value": []
+        }
+       ],
+       "active_intent": "HKMTR_en",
+       "state": {
+        "HKMTR_en": {
+         "destination": {
+          "relation": "equal_to",
+          "value": [
+           "Wan Chai / Causeway Bay"
+          ]
+         },
+         "departure": {
+          "relation": "equal_to",
+          "value": [
+           "Victoria Park"
+          ]
+         }
+        },
+        "attractions_en_US_search": {
+         "rating": {
+          "relation": "equal_to",
+          "value": [
+           "don't care"
+          ]
+         },
+         "location": {
+          "relation": "equal_to",
+          "value": [
+           "Wan Chai / Causeway Bay"
+          ]
+         },
+         "type": {
+          "relation": "one_of",
+          "value": [
+           "Nature & Parks",
+           "Zoos & Aquariums"
+          ]
+         }
+        },
+        "restaurants_en_US_booking": {
+         "name": {
+          "relation": "equal_to",
+          "value": [
+           "Little Bao Diner"
+          ]
+         },
+         "user_name": {
+          "relation": "equal_to",
+          "value": [
+           "Paul"
+          ]
+         },
+         "time": {
+          "relation": "equal_to",
+          "value": [
+           "4:50 pm"
+          ]
+         },
+         "date": {
+          "relation": "equal_to",
+          "value": [
+           "April 2"
+          ]
+         },
+         "number_of_people": {
+          "relation": "equal_to",
+          "value": [
+           5
+          ]
+         }
+        },
+        "restaurants_en_US_search": {
+         "dietary_restrictions": {
+          "relation": "equal_to",
+          "value": [
+           "Vegan Options"
+          ]
+         },
+         "rating": {
+          "relation": "equal_to",
+          "value": [
+           "don't care"
+          ]
+         },
+         "cuisine": {
+          "relation": "not",
+          "value": [
+           "Steakhouse"
+          ]
+         },
+         "location": {
+          "relation": "equal_to",
+          "value": [
+           "Victoria Park"
+          ]
+         }
+        }
+       },
+       "Text": "No, thank you. Bye!",
+       "sanity_check": []
+      },
+      {
+       "Agent": "Wizard",
+       "Actions": [
+        {
+         "act": "goodbye",
+         "slot": "",
+         "relation": "",
+         "value": []
+        }
+       ],
+       "Text": "Happy to help!",
+       "PrimaryItem": {
+        "shortest_path": "Take the purple line of the Victoria Park station.Then change at Exhibition station from purple line to cyan line.Then change at Admirality station from cyan line to blue line.Get off the train at Wan Chai station.",
+        "price": "8.68 HKD",
+        "estimated_time": "18 mins"
+       },
+       "SecondaryItem": null,
+       "sanity_check": []
+      }
+     ]
+    }}
