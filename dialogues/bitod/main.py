@@ -1,7 +1,6 @@
 import logging
 import os.path
 import re
-from collections import defaultdict
 
 from ..main import Dataset
 from .src.evaluate import eval_file
@@ -58,8 +57,7 @@ class Bitod(Dataset):
         train, fewshot, dev, test = prepare_data(args, path_train, path_dev, path_test)
         return train, fewshot, dev, test
 
-    def make_api_call(self, dialogue_state, api_name, src_lang='en', dial_id=None, turn_id=None):
-        knowledge = defaultdict(dict)
+    def make_api_call(self, dialogue_state, knowledge, api_name, src_lang='en', dial_id=None, turn_id=None):
         result = [0, 0, 0]
 
         constraints = state2constraints(dialogue_state[api_name])

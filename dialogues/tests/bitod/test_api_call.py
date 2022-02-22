@@ -1,3 +1,5 @@
+from collections import defaultdict
+
 import dictdiffer
 
 from dialogues import Bitod
@@ -13,6 +15,7 @@ dialogue_state = {
     }
 }
 src_lang = 'en'
+knowledge = defaultdict(dict)
 
 
 dataset = Bitod()
