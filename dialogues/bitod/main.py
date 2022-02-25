@@ -87,6 +87,12 @@ class Bitod(Dataset):
         results = eval_file(args, prediction_path, reference_path)
         return results
 
+    def do_knowledge_reset(self, api_name):
+        do_reset = False
+        if api_name and 'HKMTR' not in api_name:
+            do_reset = True
+        return do_reset
+
     def postprocess_prediction(self, prediction, knowledge=None, lang='en'):
         if re.search(rf'\( HKMTR {lang} \)', prediction) and 'offer shortest_path equal_to' in prediction:
             action_dict = span2action(prediction, api_names)
