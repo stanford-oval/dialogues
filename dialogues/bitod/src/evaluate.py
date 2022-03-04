@@ -35,11 +35,10 @@ def compute_bleu(preds, labels):
     # Some simple post-processing
     preds, labels = postprocess_text(preds, labels)
 
-    result = metric.compute(predictions=preds, references=labels)
-    result = {"bleu": result["score"]}
+    bleu = metric.compute(predictions=preds, references=labels)["score"]
+    bleu = round(bleu, 4) / 100.0
 
-    result = {k: round(v, 4) for k, v in result.items()}
-    return result['bleu']
+    return bleu
 
 
 def compute_success_rate(predictions, references):
