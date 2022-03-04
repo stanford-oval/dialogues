@@ -430,9 +430,10 @@ def read_data(args, path_names, setting, max_history=3):
                             # for Metro domain we need to carry over api results
                             # it often happens that in first response agent only provides the shortest_path
                             # then user asks about price and journey duration, and agent reuses old api results to respond
-                            if not ('HKMTR' in active_intent or args.add_api_results or args.simpletod):
-                                last_knowledge_text = "null"
-                                knowledge = defaultdict(dict)
+                            if not args.no_reset_api:
+                                if not ('HKMTR' in active_intent or args.add_api_results or args.simpletod):
+                                    last_knowledge_text = "null"
+                                    knowledge = defaultdict(dict)
 
                             target = clean_text(turn["Text"])
                             # for cross lingual transfer task; not important ;)
@@ -574,6 +575,7 @@ def main():
     parser.add_argument("--simpletod", action='store_true')
     parser.add_argument("--only_gen_natural_response", action='store_true')
     parser.add_argument("--four_steps", action='store_true')
+    parser.add_argument("--no_reset_api", action='store_true')
 
     parser.add_argument("--exclude_fewshot", action='store_true')
 
