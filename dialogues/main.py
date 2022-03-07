@@ -60,14 +60,15 @@ class Dataset(object):
         """
         raise NotImplementedError
 
-    def make_api_call(self, dialogue_state, api_name, **kwargs):
+    def make_api_call(self, dialogue_state, knowledge, api_name, **kwargs):
         """
         given dialogue state and api_name, compute the constraints for api call, make the call, and return the results in text form
         :param dialogue_state: dict
+        :param knowledge: dict, keeping track returned api results
         :param api_name: str
         :param kwargs: additional args to pass to api call function
         :return: a dictionary of constraints used as input to api caller
-        :return: results of api call in text form
+        :return: text version of updated knowledge
         """
         raise NotImplementedError
 

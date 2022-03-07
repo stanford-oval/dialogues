@@ -23,7 +23,7 @@ class Risawoz(Dataset):
     def process_data(self, args, root):
         raise NotImplementedError
 
-    def make_api_call(self, dialogue_state, api_name, **kwargs):
+    def make_api_call(self, dialogue_state, knowledge, api_name, **kwargs):
         raise NotImplementedError
 
     def compute_metrics(self, args, prediction_path, reference_path):
