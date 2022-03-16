@@ -15,7 +15,7 @@ from dialogues.bitod.src.knowledgebase.en_zh_mappings import (
     zh_en_API_MAP,
 )
 from dialogues.bitod.src.preprocess import translate_slots_to_english
-from dialogues.bitod.src.utils import action2span, canonicalize_constraints, span2state, state2span
+from dialogues.bitod.src.utils import action2span, canonicalize_constraints, convert_to_int, span2state, state2span
 
 metric = load_metric("sacrebleu")
 
@@ -128,7 +128,11 @@ def convert_lists_to_set(state):
         for j in state[i]:
             for m, n in state[i][j].items():
                 if isinstance(n, list):
+                    n = [convert_to_int(val, word2number=True) for val in n]
                     state[i][j][m] = set(n)
+                else:
+                    n = convert_to_int(n, word2number=True)
+                    state[i][j][m] = n
 
 
 def convert_lists_to_set_api(constraints):
