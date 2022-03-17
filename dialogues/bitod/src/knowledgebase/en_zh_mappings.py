@@ -178,9 +178,13 @@ API_MAP.update({'HKMTR zh': 'HKMTR zh'})
 # mapping between slot values, not comprehensive, don't rely on it
 cur_dir = os.path.dirname(os.path.abspath(__file__))
 with open(os.path.join(cur_dir, "mappings/dict_en_zh.json")) as f:
-    en2zh_VALUE_MAP = name_to_zh
-    en2zh_VALUE_MAP.update(json.load(f))
-zh2en_VALUE_MAP = {v: k for k, v in en2zh_VALUE_MAP.items()}
+    map_dict = json.load(f)
+
+en2zh_VALUE_MAP = name_to_zh
+en2zh_VALUE_MAP.update(map_dict)
+
+zh2en_VALUE_MAP = {v: k for k, v in name_to_zh.items()}
+zh2en_VALUE_MAP.update({v: k for k, v in map_dict.items()})
 
 
 # maps entities to their canonicalized version; api expects canonicalized version
