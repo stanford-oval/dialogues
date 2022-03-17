@@ -221,7 +221,7 @@ def compute_result(args, predictions, reference_data):
                     if turn["Actions"] == "query":
                         constraints = canonicalize_constraints(turn["Constraints"])
                         turn_api = zh_en_API_MAP.get(turn["API"], turn["API"])
-                        if args.setting == 'zh':
+                        if args.setting == 'zh' and constraints:
                             constraints = {translation_dict[k]: v for k, v in constraints.items()}
                         reference_task_success[dial_id]["API"][turn_api] = constraints
                     else:
