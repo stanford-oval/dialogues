@@ -250,6 +250,9 @@ def action2span(agent_actions, intent, setting):
 
         orig_act = act
         if setting == 'zh':
+            if act not in en2zh_ACT_MAP:
+                print(f'Encountered illegal act: {act}')
+                continue
             act = en2zh_ACT_MAP[act]
 
         values = [val for val in values if val != ""]
