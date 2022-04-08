@@ -587,7 +587,7 @@ def main():
     )
     parser.add_argument("--max_history", type=int, default=2)
     parser.add_argument("--splits", nargs='+', default=['train', 'eval', 'test'])
-    parser.add_argument("--version", type=int, default=11)
+    parser.add_argument("--version", type=str, default='11')
     parser.add_argument("--fewshot_percent", type=int, default=0)
     parser.add_argument("--sampling", choices=["random", "balanced"], default="random")
     parser.add_argument("--use_user_acts", action='store_true')
