@@ -239,7 +239,7 @@ def span2action(api_span, api_names):
     return action
 
 
-def action2span(agent_actions, intent, setting):
+def action2span_for_single_intent(agent_actions, intent, setting):
     action_text = f'( {intent} ) '
 
     # sort based on act, then slot
@@ -247,7 +247,11 @@ def action2span(agent_actions, intent, setting):
 
     for action in agent_actions:
         act, slot, relation, values = action['act'], action['slot'], action['relation'], action['value']
-
+        if not act:
+            # TODO: there are few annotation errors for act in RiSAWOZ, which makes "act" field empty
+            #       this may cause unknown problems
+            #       I'll fix it later. Current solution is just a workaround.
+            continue
         orig_act = act
         if setting == 'zh':
             if act not in en2zh_ACT_MAP:
@@ -270,6 +274,12 @@ def action2span(agent_actions, intent, setting):
             'greeting',
             'thank_you',
             'negate',
+            # for RiSAWOZ
+            'inform',
+            'general',
+            'bye',
+            'recommend',
+            'no-offer',
         ]:
             action_text += f'{act} , '
         elif orig_act in ['request', 'request_update']:
@@ -291,6 +301,19 @@ def action2span(agent_actions, intent, setting):
     return action_text
 
 
+def action2span(agent_actions, intents, setting):
+    # compatible action2span for both BiToD and RiSAWOZ
+    action_text = ''
+    if isinstance(intents, list):
+        assert setting == "zh"  # temporary setting since translation is not ready yet
+    else:
+        intents = [intents]
+    for intent in intents:
+        intent_action_text = action2span_for_single_intent(agent_actions, intent, setting) + ' '
+        action_text += intent_action_text
+    return action_text.strip()  # retain the original output for BiToD
+
+
 def state2span(state, required_slots):
     if not state:
         return "null"
@@ -310,7 +333,11 @@ def state2span(state, required_slots):
             for slot in required_slots[intent]:
                 if slot in state[intent]:
                     relation = state[intent][slot]["relation"]
-                    values = [str(value) for value in state[intent][slot]["value"]]
+                    if isinstance(state[intent][slot]["value"], list):
+                        values = [str(value) for value in state[intent][slot]["value"]]
+                    else:
+                        # for RiSAWOZ
+                        values = [str(state[intent][slot]["value"])]
                     values = sorted(values)
                     values = " | ".join(values)
                     span += f"{slot} {relation} \" {values} \" , "
@@ -328,15 +355,25 @@ def state2span(state, required_slots):
 
 def compute_lev_span(previous_state, new_state, intent):
     Lev = f"( {intent} ) "
-    if intent == "chat":
+    if intent == "chat" or intent == "通用":
         return "null"
     old_state = copy.deepcopy(previous_state)
     if intent not in old_state:
         old_state[intent] = {}
+    # TODO: annotation error of states in RiSAWOZ
+    #       some states (not at begin of dialog) are empty
+    #       I'll fix it later. Current solution is just a workaround.
+    if intent not in new_state.keys():
+        new_state[intent] = old_state[intent]
+
     for slot in new_state[intent]:
         if old_state[intent].get(slot) != new_state[intent].get(slot):
             relation = new_state[intent][slot]["relation"]
-            values = [str(value) for value in new_state[intent][slot]["value"]]
+            if isinstance(new_state[intent][slot]["value"], list):
+                values = [str(value) for value in new_state[intent][slot]["value"]]
+            else:
+                # for RiSAWOZ
+                values = [str(new_state[intent][slot]["value"])]
             values = " | ".join(values)
             Lev += f"{slot} {relation} \" {values} \" , "
     for slot in old_state[intent]:
@@ -387,7 +424,7 @@ def knowledge2span(knowledge):
     for intent, item in knowledge.items():
         knowledge_text += f"( {intent} ) "
         for slot, values in item.items():
-            if slot not in ["type", "description", "类别", "描述"]:
+            if slot not in ["type", "description", "类别", "描述", "类型"]:  # add "类型" for RiSAWOZ
                 if isinstance(values, list):
                     values_text = " | ".join(values)
                 else:

@@ -47,68 +47,79 @@ def read_data(args, path_names, setting, max_history=3):
             # cross lingual adaptation setting
             # use only 10% data from target lang
             if args.fewshot_percent != 0 and '_train' in path_name:
-                if args.sampling == "random":
+                if args.dataset.lower() == "risawoz":
+                    # RiSAWOZ alreay has few-shot train set, so the sampling process will be skipped
                     target_lang = args.setting
-                    if not os.path.exists(f"data/{target_lang}_fewshot_dials_{args.fewshot_percent}.json"):
-                        all_dial_ids = list(dials.keys())
-                        dial_ids = all_dial_ids[: int(len(all_dial_ids) * args.fewshot_percent // 100)]
-                        print(f"few shot for {target_lang}, dialogue number: {len(dial_ids)}")
-                        with open(f"data/{target_lang}_fewshot_dials_{args.fewshot_percent}.json", "w") as f:
-                            json.dump({"fewshot_dials": dial_ids}, f, indent=True)
-                    else:
-                        with open(f"data/{target_lang}_fewshot_dials_{args.fewshot_percent}.json") as f:
-                            dial_ids = json.load(f)["fewshot_dials"]
+                    all_dial_ids = list(dials.keys())
+                    fewshot_path = os.path.dirname(os.path.abspath(path_name)) + f"/{target_lang}_fewshot_dials_{args.fewshot_percent}.json"
+                    with open(fewshot_path) as f:
+                    # with open(f"data/{target_lang}_fewshot_dials_{args.fewshot_percent}.json") as f:
+                        dial_ids = json.load(f)["fewshot_dials"]
                     few_dials = {dial_id: dials[dial_id] for dial_id in dial_ids}
                     dials = {dial_id: dials[dial_id] for dial_id in all_dial_ids if dial_id not in dial_ids}
                 else:
-                    dialogue_dominant_domains = defaultdict(list)
-                    domain_turn_counts = defaultdict(int)
-                    for dial_id, dial in dials.items():
-                        turn_domains = defaultdict(int)
-                        dialogue_turns = dial["Events"]
+                    if args.sampling == "random":
+                        target_lang = args.setting
+                        all_dial_ids = list(dials.keys())
+                        if not os.path.exists(f"data/{target_lang}_fewshot_dials_{args.fewshot_percent}.json"):
+                            dial_ids = all_dial_ids[: int(len(all_dial_ids) * args.fewshot_percent // 100)]
+                            print(f"few shot for {target_lang}, dialogue number: {len(dial_ids)}")
+                            with open(f"data/{target_lang}_fewshot_dials_{args.fewshot_percent}.json", "w") as f:
+                                json.dump({"fewshot_dials": dial_ids}, f, indent=True)
+                        else:
+                            with open(f"data/{target_lang}_fewshot_dials_{args.fewshot_percent}.json") as f:
+                                dial_ids = json.load(f)["fewshot_dials"]
+                        few_dials = {dial_id: dials[dial_id] for dial_id in dial_ids}
+                        dials = {dial_id: dials[dial_id] for dial_id in all_dial_ids if dial_id not in dial_ids}
+                    else:
+                        dialogue_dominant_domains = defaultdict(list)
+                        domain_turn_counts = defaultdict(int)
+                        for dial_id, dial in dials.items():
+                            turn_domains = defaultdict(int)
+                            dialogue_turns = dial["Events"]
 
-                        for turn in dialogue_turns:
-                            if turn["Agent"] == "User":
-                                active_intent = API_MAP[turn["active_intent"]]
-
-                                turn_domains[translate_slots_to_english(active_intent, args.english_slots)] += 1
-                                domain_turn_counts[translate_slots_to_english(active_intent, args.english_slots)] += 1
-
-                        max_domain = max(turn_domains, key=turn_domains.get)
-                        dialogue_dominant_domains[max_domain].append(dial_id)
-
-                    total = sum(list(domain_turn_counts.values()))
-                    fewshot_dials = []
-                    all_dial_ids = list(dials.keys())
-                    for (domain, count) in domain_turn_counts.items():
-                        num_fewshot = int(len(all_dial_ids) * (count / total) * (args.fewshot_percent / 100))
-                        fewshot_dials += dialogue_dominant_domains[domain][:num_fewshot]
-
-                    target_lang = args.setting
-                    if not os.path.exists(f"data/{target_lang}_fewshot_dials_{args.fewshot_percent}_balanced.json"):
-                        print(f"balanced few shot for {target_lang}, dialogue number: {len(fewshot_dials)}")
-                        print("turn statistics:")
-                        for (domain, count) in domain_turn_counts.items():
-                            print(domain, "comprises of", count, "or", int(100 * count / total + 0.5), "percent")
-                        print("few-shot turn statistics:")
-                        res_turn_counts = defaultdict(int)
-                        for dial_id in fewshot_dials:
-                            for turn in dials[dial_id]["Events"]:
+                            for turn in dialogue_turns:
                                 if turn["Agent"] == "User":
                                     active_intent = API_MAP[turn["active_intent"]]
-                                    res_turn_counts[translate_slots_to_english(active_intent, args.english_slots)] += 1
-                        total = sum(list(res_turn_counts.values()))
-                        for (domain, count) in res_turn_counts.items():
-                            print(domain, "comprises of", count, "or", int(100 * count / total + 0.5), "percent")
 
-                        with open(f"data/{target_lang}_fewshot_dials_{args.fewshot_percent}_balanced.json", "w") as f:
-                            json.dump({"fewshot_dials": fewshot_dials}, f, indent=True)
-                            dial_ids = fewshot_dials
-                    else:
-                        with open(f"data/{target_lang}_fewshot_dials_{args.fewshot_percent}_balanced.json") as f:
-                            dial_ids = json.load(f)["fewshot_dials"]
-                    few_dials = {dial_id: dials[dial_id] for dial_id in dial_ids}
-                    dials = {dial_id: dials[dial_id] for dial_id in all_dial_ids if dial_id not in dial_ids}
+                                    turn_domains[translate_slots_to_english(active_intent, args.english_slots)] += 1
+                                    domain_turn_counts[translate_slots_to_english(active_intent, args.english_slots)] += 1
+
+                            max_domain = max(turn_domains, key=turn_domains.get)
+                            dialogue_dominant_domains[max_domain].append(dial_id)
+
+                        total = sum(list(domain_turn_counts.values()))
+                        fewshot_dials = []
+                        all_dial_ids = list(dials.keys())
+                        for (domain, count) in domain_turn_counts.items():
+                            num_fewshot = int(len(all_dial_ids) * (count / total) * (args.fewshot_percent / 100))
+                            fewshot_dials += dialogue_dominant_domains[domain][:num_fewshot]
+
+                        target_lang = args.setting
+                        if not os.path.exists(f"data/{target_lang}_fewshot_dials_{args.fewshot_percent}_balanced.json"):
+                            print(f"balanced few shot for {target_lang}, dialogue number: {len(fewshot_dials)}")
+                            print("turn statistics:")
+                            for (domain, count) in domain_turn_counts.items():
+                                print(domain, "comprises of", count, "or", int(100 * count / total + 0.5), "percent")
+                            print("few-shot turn statistics:")
+                            res_turn_counts = defaultdict(int)
+                            for dial_id in fewshot_dials:
+                                for turn in dials[dial_id]["Events"]:
+                                    if turn["Agent"] == "User":
+                                        active_intent = API_MAP[turn["active_intent"]]
+                                        res_turn_counts[translate_slots_to_english(active_intent, args.english_slots)] += 1
+                            total = sum(list(res_turn_counts.values()))
+                            for (domain, count) in res_turn_counts.items():
+                                print(domain, "comprises of", count, "or", int(100 * count / total + 0.5), "percent")
+
+                            with open(f"data/{target_lang}_fewshot_dials_{args.fewshot_percent}_balanced.json", "w") as f:
+                                json.dump({"fewshot_dials": fewshot_dials}, f, indent=True)
+                                dial_ids = fewshot_dials
+                        else:
+                            with open(f"data/{target_lang}_fewshot_dials_{args.fewshot_percent}_balanced.json") as f:
+                                dial_ids = json.load(f)["fewshot_dials"]
+                        few_dials = {dial_id: dials[dial_id] for dial_id in dial_ids}
+                        dials = {dial_id: dials[dial_id] for dial_id in all_dial_ids if dial_id not in dial_ids}
 
             for name, dialogues in zip(['few', 'data'], [few_dials, dials]):
                 data = []
@@ -128,11 +139,15 @@ def read_data(args, path_names, setting, max_history=3):
                         turn = dialogue_turns[turn_id]
 
                         if turn["Agent"] == "User":
-                            if args.gen_full_state or args.simpletod:
-                                if API_MAP[turn["active_intent"]] not in intents:
-                                    intents.append(API_MAP[turn["active_intent"]])
-                            else:
-                                intents = [API_MAP[turn["active_intent"]]]
+                            if not isinstance(turn["active_intent"], list):
+                                # for compatibility of both BiTOD and RiSAWOZ
+                                turn["active_intent"] = [turn["active_intent"]]
+                            for intent in turn["active_intent"]:
+                                if args.gen_full_state or args.simpletod:
+                                    if intent not in intents:
+                                        intents.append(API_MAP[intent])
+                                else:
+                                    intents = [API_MAP[intent]]
 
                             active_intent = intents[-1]
 
@@ -361,8 +376,13 @@ def read_data(args, path_names, setting, max_history=3):
                                 if int(next_turn["TotalItems"]) == 0:
                                     last_knowledge_text = f"( {active_intent} ) Message = No item available."
                                 else:
-                                    # they only return 1 item
-                                    knowledge[active_intent].update(next_turn["Item"])
+                                    if not isinstance(active_intent, list):
+                                        # for compatibility of both BiTOD and RiSAWOZ
+                                        knowledge[active_intent].update(next_turn["Item"])
+                                        active_intent = [active_intent]
+                                    else:
+                                        for intent in active_intent:
+                                            knowledge[intent].update(next_turn["Item"][intent])
                                     last_knowledge_text = knowledge2span(knowledge)
 
                                 api_data_detail = {
@@ -587,7 +607,7 @@ def main():
     )
     parser.add_argument("--max_history", type=int, default=2)
     parser.add_argument("--splits", nargs='+', default=['train', 'eval', 'test'])
-    parser.add_argument("--version", type=int, default=11)
+    parser.add_argument("--version", type=str, default='11')
     parser.add_argument("--fewshot_percent", type=int, default=0)
     parser.add_argument("--sampling", choices=["random", "balanced"], default="random")
     parser.add_argument("--use_user_acts", action='store_true')
