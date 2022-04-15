@@ -49,8 +49,8 @@ def read_data(args, path_names, setting, max_history=3):
             if args.fewshot_percent != 0 and '_train' in path_name:
                 if args.sampling == "random":
                     target_lang = args.setting
+                    all_dial_ids = list(dials.keys())
                     if not os.path.exists(f"data/{target_lang}_fewshot_dials_{args.fewshot_percent}.json"):
-                        all_dial_ids = list(dials.keys())
                         dial_ids = all_dial_ids[: int(len(all_dial_ids) * args.fewshot_percent // 100)]
                         print(f"few shot for {target_lang}, dialogue number: {len(dial_ids)}")
                         with open(f"data/{target_lang}_fewshot_dials_{args.fewshot_percent}.json", "w") as f:
@@ -362,6 +362,21 @@ def read_data(args, path_names, setting, max_history=3):
                                     last_knowledge_text = f"( {active_intent} ) Message = No item available."
                                 else:
                                     # they only return 1 item
+                                    kb_results = next_turn["Item"]
+                                    if 'shortest_path' in kb_results:
+                                        departure, destination = (
+                                            last_dialogue_state['HKMTR en']['departure']['value'][0],
+                                            last_dialogue_state['HKMTR en']['destination']['value'][0],
+                                        )
+                                        kb_results[
+                                            'shortest_path'
+                                        ] = f"You will depart from {departure} and arrive at {destination}."
+                                    elif '最短路线' in kb_results:
+                                        departure, destination = (
+                                            last_dialogue_state['香港地铁']['出发地']['value'][0],
+                                            last_dialogue_state['香港地铁']['目的地']['value'][0],
+                                        )
+                                        kb_results['最短路线'] = f"你将从{departure}出发，抵达{destination}。"
                                     knowledge[active_intent].update(next_turn["Item"])
                                     last_knowledge_text = knowledge2span(knowledge)
 
@@ -459,6 +474,13 @@ def read_data(args, path_names, setting, max_history=3):
                             target = clean_text(turn["Text"])
                             # for cross lingual transfer task; not important ;)
                             input_text, target = create_mixed_lang_text(input_text, target, args.pretraining_prefix)
+
+                            actions = turn["Actions"]
+                            for asrv in actions:
+                                if asrv['slot'] == 'shortest_path':
+                                    asrv['value'] = [kb_results['shortest_path']]
+                                elif asrv['slot'] == '最短路线':
+                                    asrv['value'] = [kb_results['最短路线']]
 
                             action_text = action2span(turn["Actions"], active_intent, setting)
                             action_text = clean_text(action_text, is_formal=True)
@@ -643,8 +665,9 @@ def main():
             ),
             "w",
         ) as f:
-            json.dump({"args": vars(args), "data": data}, f, indent=True, ensure_ascii=False)
-            print(set, len(data))
+            if data:
+                json.dump({"args": vars(args), "data": data}, f, indent=True, ensure_ascii=False)
+                print(set, len(data))
 
     # with open(os.path.join(f"./data_samples/v{args.version}.json"), "w") as f:
     #     json.dump({"data": data_test[:30]}, f, indent=True, ensure_ascii=False)
