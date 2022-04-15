@@ -253,6 +253,7 @@ name_to_zh = {
     "Olympic": "奧運",
     "Ngong Ping": "昂坪",
 }
+rev_name_to_zh = {v: k for k, v in name_to_zh.items()}
 
 color = {
     "AE": "turquoise",
@@ -425,33 +426,40 @@ def MTR(source, target, lang="en"):
     shortest = nx.shortest_path(G, source=source, target=target)
     price = round((len(shortest) - 2) * 0.88 + 3.4, 2)
     time = (len(shortest) - 2) * 3
-    if lang == "en":
-        str_ret = ""
-        str_ret += f"Take the {shortest[1].split('_')[1]} line of the {shortest[0]} station."
-        for i in range(2, len(shortest) - 1):
-            name, color = shortest[i].split("_")
-            name_prev, color_prev = shortest[i - 1].split("_")
-            if color != color_prev and name == name_prev:
-                str_ret += f"Then change at {name} station from {color_prev} line to {color} line."
-        str_ret += f"Get off the train at {shortest[-1]} station."
+
+    if lang == 'en':
+        str_ret = f"You will depart from {source} and arrive at {target}."
         return {"shortest_path": str_ret, "price": f"{price} HKD", "estimated_time": f"{time} mins"}
     elif lang == 'zh':
-        str_ret = ""
-        str_ret += f"请在{shortest[0]}站乘坐{shortest[1].split('_')[1]}线，"
-        for i in range(2, len(shortest) - 1):
-            name, color = shortest[i].split("_")
-            name_prev, color_prev = shortest[i - 1].split("_")
-            if color != color_prev and name == name_prev:
-                str_ret += f"然后在{name}站换乘{color}线，"
-        str_ret += f"最后在{shortest[-1]}站下车"
+        str_ret = f"你将从{source}出发，抵达{target}。"
         return {"最短路线": str_ret, "价格": f"{price}港币", "预估时间": f"{time}分钟"}
-    elif lang == 'fa':
-        str_ret = ""
-        str_ret += f"از خط {shortest[1].split('_')[1]} ایستگاه {shortest[0]} استفاده کنید."
-        for i in range(2, len(shortest) - 1):
-            name, color = shortest[i].split("_")
-            name_prev, color_prev = shortest[i - 1].split("_")
-            if color != color_prev and name == name_prev:
-                str_ret += f"سپس در ایستگاه {name} از خط {color_prev} به خط {color} تغییر دهید."
-        str_ret += f"در ایستگاه {shortest [-1]} از قطار پیاده شوید."
-        return {"کوتاهترین_راه": str_ret, "قیمت": f"{price} HKD", "زمان_تخمین_زده_شده": f"{time}دقیقه "}
+    # if lang == "en":
+    #     str_ret = ""
+    #     str_ret += f"Take the {shortest[1].split('_')[1]} line of the {shortest[0]} station."
+    #     for i in range(2, len(shortest) - 1):
+    #         name, color = shortest[i].split("_")
+    #         name_prev, color_prev = shortest[i - 1].split("_")
+    #         if color != color_prev and name == name_prev:
+    #             str_ret += f"Then change at {name} station from {color_prev} line to {color} line."
+    #     str_ret += f"Get off the train at {shortest[-1]} station."
+    #     return {"shortest_path": str_ret, "price": f"{price} HKD", "estimated_time": f"{time} mins"}
+    # elif lang == 'zh':
+    #     str_ret = ""
+    #     str_ret += f"请在{shortest[0]}站乘坐{shortest[1].split('_')[1]}线，"
+    #     for i in range(2, len(shortest) - 1):
+    #         name, color = shortest[i].split("_")
+    #         name_prev, color_prev = shortest[i - 1].split("_")
+    #         if color != color_prev and name == name_prev:
+    #             str_ret += f"然后在{name}站换乘{color}线，"
+    #     str_ret += f"最后在{shortest[-1]}站下车"
+    #     return {"最短路线": str_ret, "价格": f"{price}港币", "预估时间": f"{time}分钟"}
+    # elif lang == 'fa':
+    #     str_ret = ""
+    #     str_ret += f"از خط {shortest[1].split('_')[1]} ایستگاه {shortest[0]} استفاده کنید."
+    #     for i in range(2, len(shortest) - 1):
+    #         name, color = shortest[i].split("_")
+    #         name_prev, color_prev = shortest[i - 1].split("_")
+    #         if color != color_prev and name == name_prev:
+    #             str_ret += f"سپس در ایستگاه {name} از خط {color_prev} به خط {color} تغییر دهید."
+    #     str_ret += f"در ایستگاه {shortest [-1]} از قطار پیاده شوید."
+    #     return {"کوتاهترین_راه": str_ret, "قیمت": f"{price} HKD", "زمان_تخمین_زده_شده": f"{time}دقیقه "}
