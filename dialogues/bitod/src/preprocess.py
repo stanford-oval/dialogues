@@ -2,6 +2,7 @@ import argparse
 import json
 import os
 import random
+import re
 import subprocess
 from collections import OrderedDict, defaultdict
 
@@ -110,6 +111,7 @@ def read_data(args, path_names, setting, max_history=3):
                     few_dials = {dial_id: dials[dial_id] for dial_id in dial_ids}
                     dials = {dial_id: dials[dial_id] for dial_id in all_dial_ids if dial_id not in dial_ids}
 
+            new_shortest_path, old_shortest_path = None, None
             for name, dialogues in zip(['few', 'data'], [few_dials, dials]):
                 data = []
                 for dial_id, dial in dialogues.items():
@@ -363,21 +365,26 @@ def read_data(args, path_names, setting, max_history=3):
                                 else:
                                     # they only return 1 item
                                     kb_results = next_turn["Item"]
-                                    if 'shortest_path' in kb_results:
-                                        departure, destination = (
-                                            last_dialogue_state['HKMTR en']['departure']['value'][0],
-                                            last_dialogue_state['HKMTR en']['destination']['value'][0],
-                                        )
-                                        kb_results[
-                                            'shortest_path'
-                                        ] = f"You will depart from {departure} and arrive at {destination}."
-                                    elif '最短路线' in kb_results:
-                                        departure, destination = (
-                                            last_dialogue_state['香港地铁']['出发地']['value'][0],
-                                            last_dialogue_state['香港地铁']['目的地']['value'][0],
-                                        )
-                                        kb_results['最短路线'] = f"你将从{departure}出发，抵达{destination}。"
-                                    knowledge[active_intent].update(next_turn["Item"])
+                                    if args.shorten_path:
+                                        if 'shortest_path' in kb_results:
+                                            old_shortest_path = kb_results['shortest_path']
+                                            departure, destination = (
+                                                last_dialogue_state['HKMTR en']['departure']['value'][0],
+                                                last_dialogue_state['HKMTR en']['destination']['value'][0],
+                                            )
+                                            new_shortest_path = (
+                                                f"You will depart from {departure} and arrive at {destination}."
+                                            )
+                                            kb_results['shortest_path'] = new_shortest_path
+                                        elif '最短路线' in kb_results:
+                                            old_shortest_path = kb_results['最短路线']
+                                            departure, destination = (
+                                                last_dialogue_state['香港地铁']['出发地']['value'][0],
+                                                last_dialogue_state['香港地铁']['目的地']['value'][0],
+                                            )
+                                            new_shortest_path = f"你将从{departure}出发，抵达{destination}。"
+                                            kb_results['最短路线'] = new_shortest_path
+                                    knowledge[active_intent].update(kb_results)
                                     last_knowledge_text = knowledge2span(knowledge)
 
                                 api_data_detail = {
@@ -472,15 +479,39 @@ def read_data(args, path_names, setting, max_history=3):
                                     knowledge = defaultdict(dict)
 
                             target = clean_text(turn["Text"])
+
+                            if args.shorten_path:
+                                if 'HKMTR en' in active_intent:
+                                    pattern = '[^\.]*?\d+\.\d+[^\.]*\.'
+                                    if old_shortest_path and old_shortest_path in target:
+                                        last_sentence = re.search(pattern, target)
+                                        if last_sentence:
+                                            last_sentence = last_sentence.group().strip('. ')
+                                            target = new_shortest_path + ' ' + last_sentence + '.'
+                                        else:
+                                            target = new_shortest_path
+                                if '香港地铁' in active_intent:
+                                    pattern = '[^。]*?\d+\.\d+[^。]*。'
+                                    if old_shortest_path and old_shortest_path in target:
+                                        last_sentence = re.search(pattern, target)
+                                        if last_sentence:
+                                            last_sentence = last_sentence.group().strip('。 ')
+                                            target = new_shortest_path + ' ' + last_sentence + '。'
+                                        else:
+                                            target = new_shortest_path
+
+                            target = target.replace('  ', ' ')
                             # for cross lingual transfer task; not important ;)
                             input_text, target = create_mixed_lang_text(input_text, target, args.pretraining_prefix)
 
                             actions = turn["Actions"]
-                            for asrv in actions:
-                                if asrv['slot'] == 'shortest_path':
-                                    asrv['value'] = [kb_results['shortest_path']]
-                                elif asrv['slot'] == '最短路线':
-                                    asrv['value'] = [kb_results['最短路线']]
+
+                            if args.shorten_path:
+                                for asrv in actions:
+                                    if asrv['slot'] == 'shortest_path':
+                                        asrv['value'] = [kb_results['shortest_path']]
+                                    elif asrv['slot'] == '最短路线':
+                                        asrv['value'] = [kb_results['最短路线']]
 
                             action_text = action2span(turn["Actions"], active_intent, setting)
                             action_text = clean_text(action_text, is_formal=True)
@@ -630,6 +661,7 @@ def main():
     parser.add_argument("--better_history_boundary", action='store_true')
 
     parser.add_argument("--exclude_fewshot", action='store_true')
+    parser.add_argument("--shorten_path", action='store_true')
 
     args = parser.parse_args()
 
