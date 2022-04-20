@@ -291,6 +291,58 @@ def action2span(agent_actions, intent, setting):
     return action_text
 
 
+def action2template(agent_actions, intent, setting):
+    action_text = f'For {intent}, '
+
+    # sort based on act, then slot
+    agent_actions = list(sorted(agent_actions, key=lambda s: (s['act'], s['slot'])))
+
+    for action in agent_actions:
+        act, slot, relation, values = action['act'], action['slot'], action['relation'], action['value']
+
+        orig_act = act
+        if setting == 'zh':
+            if act not in en2zh_ACT_MAP:
+                print(f'Encountered illegal act: {act}')
+                continue
+            act = en2zh_ACT_MAP[act]
+
+        values = [val for val in values if val != ""]
+        if len(values):
+            values = ' | '.join(map(str, values))
+        else:
+            values = 'null'
+
+        if orig_act in [
+            'notify_success',
+            'notify_fail',
+            'affirm',
+            'request_more',
+            'goodbye',
+            'greeting',
+            'thank_you',
+            'negate',
+        ]:
+            action_text += f'agent action is {act}, '
+        elif orig_act in ['request', 'request_update']:
+            action_text += f'agent has a {act} for {slot}, '
+        else:
+            if orig_act in ['confirm']:
+                if not slot:
+                    slot = 'null'
+                if not relation:
+                    relation = 'null'
+            else:
+                assert slot, action
+                assert relation, action
+
+            action_text += f'agent {act} that {slot} slot is {relation} " {values} ", '
+
+    action_text = action_text.strip(', ')
+
+    return action_text
+
+
 def state2span(state, required_slots):
     if not state:
         return "null"
@@ -313,7 +365,7 @@ def state2span(state, required_slots):
                     values = [str(value) for value in state[intent][slot]["value"]]
                     values = sorted(values)
                     values = " | ".join(values)
-                    span += f"{slot} {relation} \" {values} \" , "
+                    span += f'{slot} {relation} " {values} " , '
                 else:
                     span += f"{slot} #unknown , "
         else:
@@ -322,8 +374,44 @@ def state2span(state, required_slots):
                 values = [str(value) for value in state[intent][slot]["value"]]
                 values = sorted(values)
                 values = " | ".join(values)
-                span += f"{slot} {relation} \" {values} \" , "
+                span += f'{slot} {relation} " {values} " , '
     return span.strip(', ')
+
+
+def state2template(state, required_slots):
+    if not state:
+        return "null"
+
+    # sort based on intent and then sort slots for each intent
+    state = OrderedDict(sorted(state.items(), key=lambda s: s[0]))
+    state = {k: OrderedDict(sorted(v.items(), key=lambda s: s[0])) for k, v in state.items()}
+
+    spans = []
+    for intent in state:
+        # check the required slots
+        if intent not in required_slots:
+            print(f'{intent} not in required slots!')
+            continue
+        span = f"For {intent}, "
+        if len(required_slots[intent]) > 0:
+            for slot in required_slots[intent]:
+                if slot in state[intent]:
+                    relation = state[intent][slot]["relation"]
+                    values = [str(value) for value in state[intent][slot]["value"]]
+                    values = sorted(values)
+                    values = " | ".join(values)
+                    span += f'{slot} slot is {relation.replace("_", " ")} " {values} " , '
+                else:
+                    span += f"{slot} slot is #unknown, "
+        else:
+            for slot in state[intent]:
+                relation = state[intent][slot]["relation"]
+                values = [str(value) for value in state[intent][slot]["value"]]
+                values = sorted(values)
+                values = " | ".join(values)
+                span += f'{slot} slot is {relation.replace("_", " ")} " {values} " , '
+        spans.append(span.strip(', ') + '.')
+    return ' '.join(spans)
 
 
 def compute_lev_span(previous_state, new_state, intent):
