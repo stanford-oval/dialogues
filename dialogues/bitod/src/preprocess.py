@@ -51,9 +51,12 @@ def read_data(args, path_names, setting, max_history=3):
                     # RiSAWOZ alreay has few-shot train set, so the sampling process will be skipped
                     target_lang = args.setting
                     all_dial_ids = list(dials.keys())
-                    fewshot_path = os.path.dirname(os.path.abspath(path_name)) + f"/{target_lang}_fewshot_dials_{args.fewshot_percent}.json"
+                    fewshot_path = (
+                        os.path.dirname(os.path.abspath(path_name))
+                        + f"/{target_lang}_fewshot_dials_{args.fewshot_percent}.json"
+                    )
                     with open(fewshot_path) as f:
-                    # with open(f"data/{target_lang}_fewshot_dials_{args.fewshot_percent}.json") as f:
+                        # with open(f"data/{target_lang}_fewshot_dials_{args.fewshot_percent}.json") as f:
                         dial_ids = json.load(f)["fewshot_dials"]
                     few_dials = {dial_id: dials[dial_id] for dial_id in dial_ids}
                     dials = {dial_id: dials[dial_id] for dial_id in all_dial_ids if dial_id not in dial_ids}

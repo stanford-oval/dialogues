@@ -2,8 +2,8 @@ import json
 import os
 from collections import OrderedDict
 
-from ...src.knowledgebase.hk_mtr import name_to_zh
 from ....risawoz.src.knowledgebase.en_zh_mapping import RisaWOZMapping
+from ...src.knowledgebase.hk_mtr import name_to_zh
 
 
 def read_require_slots():
@@ -27,7 +27,9 @@ def read_require_slots():
 risawoz_mapping = RisaWOZMapping()
 # TODO: this is a draft toggle for inserting risawoz mappings, which will be further moved to its own file.
 enable_risawoz_mapping = True
-risawoz_domain_slot_MAP, risawoz_domain_MAP, risawoz_slot_MAP, risawoz_API_MAP, risawoz_ACT_MAP = risawoz_mapping.get_mapping(enable=enable_risawoz_mapping)
+risawoz_domain_slot_MAP, risawoz_domain_MAP, risawoz_slot_MAP, risawoz_API_MAP, risawoz_ACT_MAP = risawoz_mapping.get_mapping(
+    enable=enable_risawoz_mapping
+)
 
 zh2en_CARDINAL_MAP = {
     "一": 1,

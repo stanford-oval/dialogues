@@ -1,19 +1,18 @@
+import collections
+import itertools
 import json
 import os
 from contextlib import ExitStack
 from pathlib import Path
 
-import bson.errors
-import requests
 import pymongo
-import collections
-import itertools
-from tqdm.autonotebook import tqdm
+import requests
 from knowledgebase.api import call_api
+from tqdm.autonotebook import tqdm
 
 
 def read_json_files_in_folder(path):
-    json_filename = [path+'/'+filename for filename in os.listdir(path) if '.json' in filename]
+    json_filename = [path + '/' + filename for filename in os.listdir(path) if '.json' in filename]
     with ExitStack() as stack:
         files = [stack.enter_context(open(fname)) for fname in json_filename]
         data = {}
@@ -50,7 +49,7 @@ def build_db(db_json_path, api_map=None, mongodb_host=""):
 def group_slot_values(actions):
     # group slot values in user/system actions with same act-domain-slot prefix
     for i in range(len(actions)):
-        actions[i][0] = actions[i][0].strip() # strip spaces of ' inform '
+        actions[i][0] = actions[i][0].strip()  # strip spaces of ' inform '
     processed_actions = []
     grouped_actions = [list(v) for _, v in itertools.groupby(sorted(actions), lambda x: x[:3])]
     for group in grouped_actions:
@@ -141,9 +140,10 @@ def build_dataset(original_data_path, mongodb_host, api_map=None):
     for key in tqdm(data.keys()):
         for dialogue in tqdm(data[key]):
             dialogue_id = dialogue["dialogue_id"]
-            dialogue_session = {}
-            scenario = {"UserTask": dialogue["goal"],
-                        "WizardCapabilities": [{"Task": domain} for domain in dialogue["domains"]]}
+            scenario = {
+                "UserTask": dialogue["goal"],
+                "WizardCapabilities": [{"Task": domain} for domain in dialogue["domains"]],
+            }
             events = []
             for turn in dialogue["dialogue"]:
                 user_turn_event = build_user_event(turn)
@@ -168,7 +168,7 @@ def build_mock_pred_data(test_data_path):
         fake_pred_dialog = {"turns": {}}
         final_dialog_state = {}
         for turn in dialog["dialogue"]:
-            fake_pred_dialog["turns"][str(turn["turn_id"]+1)] = {"response": [turn["system_utterance"]]}
+            fake_pred_dialog["turns"][str(turn["turn_id"] + 1)] = {"response": [turn["system_utterance"]]}
             # build dialog state
             dialog_state = {}
             for ds, v in turn["belief_state"]["inform slot-values"].items():
@@ -186,7 +186,7 @@ def build_mock_pred_data(test_data_path):
                     dialog_state[d][s] = {}
                     dialog_state[d][s]["relation"] = "equal_to"
                     dialog_state[d][s]["value"] = [v]
-            fake_pred_dialog["turns"][str(turn["turn_id"]+1)]["state"] = dialog_state
+            fake_pred_dialog["turns"][str(turn["turn_id"] + 1)]["state"] = dialog_state
             # update final dialog state in each turn and build turn API text
             turn_api_text = []
             for d, sv in dialog_state.items():
@@ -197,15 +197,14 @@ def build_mock_pred_data(test_data_path):
                 # build turn API text
                 try:
                     if len(turn["db_results"]) > 1:
-                        first_result = eval(turn["db_results"][1].replace("true", "True")
-                                                                 .replace("false", "False"))
+                        first_result = eval(turn["db_results"][1].replace("true", "True").replace("false", "False"))
                         turn_domain_api_text = f"( {d} ) "
                         for s, v in first_result.items():
                             turn_domain_api_text += f"{s} \" {v} \" , "
                         turn_api_text.append(turn_domain_api_text[:-3])
                 except:
                     print(turn["db_results"])
-            fake_pred_dialog["turns"][str(turn["turn_id"]+1)]["api"] = [' '.join(turn_api_text)]
+            fake_pred_dialog["turns"][str(turn["turn_id"] + 1)]["api"] = [' '.join(turn_api_text)]
             # build actions
             turn_action_domain_list = [action[1] for action in turn["system_actions"]]
             turn_action_text = [f"( {d} ) " for d in turn_action_domain_list]
@@ -213,13 +212,17 @@ def build_mock_pred_data(test_data_path):
                 for i in range(len(turn_action_domain_list)):
                     if action[1] == turn_action_domain_list[i]:
                         if action[0].strip() == "Inform":
-                            turn_action_text[i] += f"{action[0].strip().lower()} {action[2]} equal_to \" {''.join(action[3].split())} \" , "
+                            turn_action_text[
+                                i
+                            ] += f"{action[0].strip().lower()} {action[2]} equal_to \" {''.join(action[3].split())} \" , "
                         elif action[3]:
-                            turn_action_text[i] += f"{action[0].strip().lower()} {action[2]} \" {''.join(action[3].split())} \" , "
+                            turn_action_text[
+                                i
+                            ] += f"{action[0].strip().lower()} {action[2]} \" {''.join(action[3].split())} \" , "
                         else:
                             turn_action_text[i] += f"{action[0].strip().lower()} {action[2]} , "
             turn_action_text = [text[:-3] for text in turn_action_text]
-            fake_pred_dialog["turns"][str(turn["turn_id"]+1)]["actions"] = [' '.join(turn_action_text)]
+            fake_pred_dialog["turns"][str(turn["turn_id"] + 1)]["actions"] = [' '.join(turn_action_text)]
         fake_pred_dialog["API"] = final_dialog_state
         fake_pred_data[dialog["dialogue_id"]] = fake_pred_dialog
     return fake_pred_data
@@ -239,7 +242,7 @@ if __name__ == "__main__":
         "火车": "train",
         "汽车": "car",
         "医院": "hospital",
-        "旅游景点": "attraction"
+        "旅游景点": "attraction",
     }
     en_zh_API_MAP = {v: k for k, v in zh_en_API_MAP.items()}
     risawoz_db = build_db(db_json_path='../db/zh', api_map=en_zh_API_MAP, mongodb_host="mongodb://localhost:27017/")
@@ -248,9 +251,10 @@ if __name__ == "__main__":
     original_split = ['train', 'test', 'valid']
     for split in original_split:
         if not os.path.exists(f"{original_data_path}/{split}.json"):
+            os.makedirs(original_data_path, exist_ok=True)
             print(f"{split} set is not found, downloading...")
             if split == "valid":
-                data_url = f"https://huggingface.co/datasets/GEM/RiSAWOZ/resolve/main/dev.json"
+                data_url = "https://huggingface.co/datasets/GEM/RiSAWOZ/resolve/main/dev.json"
             else:
                 data_url = f"https://huggingface.co/datasets/GEM/RiSAWOZ/resolve/main/{split}.json"
             with open(f"{original_data_path}/{split}.json", 'wb') as f:
@@ -271,4 +275,3 @@ if __name__ == "__main__":
     mock_pred_data = build_mock_pred_data("./risawoz_original/test.json")
     with open("../results/test/risawoz_mock_preds.json", "w") as f:
         json.dump(mock_pred_data, f, ensure_ascii=False, indent=4)
-        

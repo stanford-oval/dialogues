@@ -252,8 +252,11 @@ def compute_result(args, predictions, reference_data):
                         reference_act_values.append(act_values)
                         for i in range(len(intent)):
                             # for RiSAWOZ: filter turn actions with current intent
-                            turn_actions = [action for action in turn["Actions"]
-                                            if action["domain"] == intent[i]] if len(intent) > 1 else turn["Actions"]
+                            turn_actions = (
+                                [action for action in turn["Actions"] if action["domain"] == intent[i]]
+                                if len(intent) > 1
+                                else turn["Actions"]
+                            )
                             reference_actions.append(action2span(turn_actions, en_API_MAP.get(intent[i], intent[i]), 'en'))
 
                         # TODO  fix puncutations mt5 cannot generate chinese comma

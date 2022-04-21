@@ -2,11 +2,11 @@ import logging
 import os.path
 import re
 
-from ..main import Dataset
 from ..bitod.src.evaluate import eval_file
 from ..bitod.src.knowledgebase.en_zh_mappings import api_names, r_en_API_MAP, required_slots
 from ..bitod.src.preprocess import prepare_data
 from ..bitod.src.utils import action2span, knowledge2span, span2action, span2state, state2span
+from ..main import Dataset
 from .src.knowledgebase import api
 
 logger = logging.getLogger(__name__)
@@ -122,4 +122,3 @@ class Risawoz(Dataset):
             prediction = action2span(action_dict[domain], domain, lang)
 
         return prediction
-
