@@ -12,13 +12,8 @@ from dialogues.bitod.src.knowledgebase.en_zh_mappings import (
     en2zh_ACT_MAP,
     en2zh_RELATION_MAP,
     en2zh_SLOT_MAP,
-    en2zh_VALUE_MAP,
-    en_API_MAP,
     entity_map,
     reverse_entity_map,
-    zh2en_SLOT_MAP,
-    zh2en_VALUE_MAP,
-    zh_en_API_MAP,
 )
 
 
@@ -484,43 +479,6 @@ def knowledge2span(knowledge):
                     values_text = "null"
                 knowledge_text += f"{slot} \" {values_text} \" , "
     return knowledge_text.strip(', ')
-
-
-def create_mixed_lang_text(input, output, pretraining_prefix):
-    if pretraining_prefix == "en2zh_trainsfer":
-        for k, v in en_API_MAP.items():
-            input = input.replace(f" {v}", f" {k}")
-            output = output.replace(f" {v}", f" {k}")
-        for k, v in zh_en_API_MAP.items():
-            input = input.replace(f" {v}", f" {k}")
-            output = output.replace(f" {v}", f" {k}")
-        for k, v in zh2en_SLOT_MAP.items():
-            input = input.replace(f" {v}", f" {k}")
-            output = output.replace(f" {v}", f" {k}")
-        for k, v in en2zh_RELATION_MAP.items():
-            input = input.replace(f" {k}", f" {v}")
-            output = output.replace(f" {k}", f" {v}")
-        for k, v in en2zh_VALUE_MAP.items():
-            input = input.replace(f" {k}", f" {v}")
-            output = output.replace(f" {k}", f" {v}")
-    elif pretraining_prefix == "zh2en_trainsfer":
-        for k, v in en_API_MAP.items():
-            input = input.replace(f" {k}", f" {v}")
-            output = output.replace(f" {k}", f" {v}")
-        for k, v in zh_en_API_MAP.items():
-            input = input.replace(f" {k}", f" {v}")
-            output = output.replace(f" {k}", f" {v}")
-        for k, v in zh2en_SLOT_MAP.items():
-            input = input.replace(f" {k}", f" {v}")
-            output = output.replace(f" {k}", f" {v}")
-        for k, v in en2zh_RELATION_MAP.items():
-            input = input.replace(f" {v}", f" {k}")
-            output = output.replace(f" {v}", f" {k}")
-        for k, v in zh2en_VALUE_MAP.items():
-            input = input.replace(f" {k}", f" {v}")
-            output = output.replace(f" {k}", f" {v}")
-
-    return input, output
 
 
 def clean_text(text, is_formal=False):

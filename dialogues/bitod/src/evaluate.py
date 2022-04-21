@@ -57,8 +57,6 @@ def compute_success_rate(predictions, references):
     correct_api_call = 0
     task_info = {}
 
-    # out_api = open('out_api.tsv', 'w')
-
     for dial_id in references:
         responses = ""
         total_dial += 1
@@ -70,12 +68,6 @@ def compute_success_rate(predictions, references):
             convert_lists_to_set_api(constraints)
             if predictions[dial_id]["API"].get(api_name) == constraints:
                 correct_api_call += 1
-            # else:
-            # 	out_api.write(
-            # 		dial_id + '\t' + str(predictions[dial_id]["API"].get(api_name)) + '\t' + str(dict(constraints)) + '\n'
-            # 	)
-            # print('constraints_diff: ', list(dictdiffer.diff(constraints, predictions[dial_id]["API"].get(api_name))))
-
         # success
         dial_success_flag = True
         for response in predictions[dial_id]["turns"].values():
@@ -89,16 +81,12 @@ def compute_success_rate(predictions, references):
 
             for entity in references[dial_id]["tasks"][intent]["inform+offer"]:
                 if str(entity) not in responses:
-                    # print('entity: ', entity)
-                    # mt5 cannot generate chinese comma
                     if str(entity).replace("，", ",") in responses:
                         continue
                     task_success_flag = False
                     break
             for entity in references[dial_id]["tasks"][intent]["confirmation"]:
                 if str(entity) not in responses:
-                    # print('entity: ', entity)
-                    # mt5 cannot generate chinese comma
                     if str(entity).replace("，", ",") in responses:
                         continue
                     task_success_flag = False
@@ -148,8 +136,6 @@ def compute_result(args, predictions, reference_data):
     task_info = {}
     bleu, ser, success_rate, api_acc, da_acc, JGA = 0, 0, 0, 0, 0, 0
 
-    # out_dst = open('out_dst.tsv', 'w')
-
     if args.eval_task in ["dst", "end2end"]:
         hit = 0
         total_dst_turns = 0
@@ -174,24 +160,6 @@ def compute_result(args, predictions, reference_data):
 
                     if pred == gold:
                         hit += 1
-                    # else:
-                    # print(
-                    #     'diff: ',
-                    #     list(dictdiffer.diff(gold, pred)),
-                    # )
-
-                    # out_dst.write(
-                    #     dial_id
-                    #     + '/'
-                    #     + str(pred_turn_id)
-                    #     + '\t'
-                    #     + str(pred)
-                    #     + '\t'
-                    #     + str(gold)
-                    #     + '\t'
-                    #     + str(bool(pred == gold))
-                    #     + '\n'
-                    # )
 
         JGA = hit / total_dst_turns
 
@@ -234,15 +202,7 @@ def compute_result(args, predictions, reference_data):
 
                         reference_actions.append(action2span(turn["Actions"], en_API_MAP[intent], 'en'))
 
-                        # TODO  fix puncutations mt5 cannot generate chinese comma
-                        # if intent in zh2en_API_MAP.keys():
-                        # predictions[dial_id]["turns"][str(turn_id)]["response"] = \
-                        #     predictions[dial_id]["turns"][str(turn_id)]["response"].replace(",", "，")
-
                         predicted_response.append(predictions[dial_id]["turns"][str(pred_turn_id)]["response"][0])
-                        # predicted_actions.append(
-                        #     list(span2action(predictions[dial_id]["turns"][str(pred_turn_id)]["actions"], api_names).values())
-                        # )
                         predicted_actions.append(predictions[dial_id]["turns"][str(pred_turn_id)]["actions"])
                         pred_turn_id += 1
 
@@ -304,17 +264,12 @@ def null_to_empty(pred):
                 dicti[k] = []
 
 
-# out_da = open('out_da.tsv', 'w')
-
-
 def compute_da(refs, preds):
     da = 0.0
     for ref, pred in zip(refs, preds):
         if pred:
             if ref == pred:
                 da += 1
-            # else:
-            # 	out_da.write(str(pred) + '\t' + str(ref) + '\n')
     return da / len(preds)
 
 
