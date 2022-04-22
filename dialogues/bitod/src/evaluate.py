@@ -4,6 +4,7 @@ import os
 import re
 from collections import OrderedDict, defaultdict
 
+import dictdiffer
 from datasets import load_metric
 
 from dialogues.bitod.src.knowledgebase.en_zh_mappings import (
@@ -15,7 +16,7 @@ from dialogues.bitod.src.knowledgebase.en_zh_mappings import (
     zh_en_API_MAP,
 )
 from dialogues.bitod.src.preprocess import translate_slots_to_english
-from dialogues.bitod.src.utils import action2span, canonicalize_constraints, convert_to_int, span2state, state2span
+from dialogues.bitod.src.utils import action2span, canonicalize_constraints, convert_to_int, entity_map, span2state, state2span
 
 metric = load_metric("sacrebleu")
 
@@ -57,6 +58,9 @@ def compute_success_rate(predictions, references):
     correct_api_call = 0
     task_info = {}
 
+    out_api = open('out_api.tsv', 'w')
+    out_success = open('out_success.tsv', 'w')
+
     for dial_id in references:
         responses = ""
         total_dial += 1
@@ -64,14 +68,32 @@ def compute_success_rate(predictions, references):
         # api accuracy
         for api_name, constraints in references[dial_id]["API"].items():
             total_api_call += 1
-            convert_lists_to_set_api(predictions[dial_id]["API"].get(api_name))
+            pred = predictions[dial_id]["API"].get(api_name)
+
+            convert_lists_to_set_api(pred)
             convert_lists_to_set_api(constraints)
-            if predictions[dial_id]["API"].get(api_name) == constraints:
+
+            if pred == constraints:
                 correct_api_call += 1
+            else:
+                out_api.write(
+                    dial_id
+                    + '\t'
+                    + str(pred)
+                    + '\t'
+                    + str(dict(constraints))
+                    + '\t'
+                    + str(list(dictdiffer.diff(constraints, pred)))
+                    + '\n'
+                )
+
         # success
+        out = ''
         dial_success_flag = True
         for response in predictions[dial_id]["turns"].values():
             responses += response["response"][0] + " "
+        responses = clean_value(responses)
+        out += responses + '\t'
 
         for intent in references[dial_id]["tasks"]:
             if intent not in task_info:
@@ -80,15 +102,15 @@ def compute_success_rate(predictions, references):
             task_info[intent]["total"] += 1
 
             for entity in references[dial_id]["tasks"][intent]["inform+offer"]:
+                entity = clean_value(entity)
                 if str(entity) not in responses:
-                    if str(entity).replace("，", ",") in responses:
-                        continue
+                    out += str(entity) + ' ; '
                     task_success_flag = False
                     break
             for entity in references[dial_id]["tasks"][intent]["confirmation"]:
+                entity = clean_value(entity)
                 if str(entity) not in responses:
-                    if str(entity).replace("，", ",") in responses:
-                        continue
+                    out += str(entity) + ' ; '
                     task_success_flag = False
                     break
             if task_success_flag:
@@ -98,6 +120,8 @@ def compute_success_rate(predictions, references):
 
         if dial_success_flag:
             success_dial += 1
+
+        out_success.write(out + '\n')
 
     total_tasks = 0
     success_tasks = 0
@@ -111,16 +135,50 @@ def compute_success_rate(predictions, references):
     return success_rate, api_acc, task_info
 
 
+def clean_value(v, do_int=False):
+    # return v
+    v = str(v)
+    v = v.lower()
+
+    v = v.replace("，", ",")
+    v = v.replace('..', '.')
+
+    if re.search('(\d+)[\.:](\d+)\s?(afternoon|in the afternoon)', v):
+        v = re.sub('(\d+)[\.:](\d+)\s?(?:pm )?(afternoon|in the afternoon)', r'\1:\2 pm', v)
+    if re.search('(\d+)[\.:](\d+)\s?(?:am )?(morning|in the morning)', v):
+        v = re.sub('(\d+)[\.:](\d+)\s?(morning|in the morning)', r'\1:\2 am', v)
+    if re.search('(\d+)[\.:](\d+)\s?(am|pm)', v):
+        v = re.sub('(\d+)[\.:](\d+)\s?(am|pm)', r'\1:\2 \3', v)
+    if re.search(' [\&\/] ', v):
+        v = re.sub(' [\&\/] ', ' and ', v)
+        v = re.sub('\s+', ' ', v)
+    if re.search(' ([\w\d]+)\.(?:\s|$)', v):
+        v = re.sub(' ([\w\d]+)\.(?:\s|$)', r' \1 ', v)
+
+    # time consuming but needed step
+    for key, val in entity_map.items():
+        key, val = str(key), str(val)
+        if key in v:
+            v = v.replace(key, val)
+    # v = entity_map.get(v, v)
+
+    if do_int:
+        v = convert_to_int(v, word2number=True)
+
+    v = str(v)
+    return v
+
+
 def convert_lists_to_set(state):
     for i in state:
         for j in state[i]:
-            for m, n in state[i][j].items():
-                if isinstance(n, list):
-                    n = [convert_to_int(val, word2number=True) for val in n]
-                    state[i][j][m] = set(n)
+            for m, v in state[i][j].items():
+                if isinstance(v, list):
+                    v = [clean_value(val, do_int=True) for val in v]
+                    state[i][j][m] = set(v)
                 else:
-                    n = convert_to_int(n, word2number=True)
-                    state[i][j][m] = n
+                    v = clean_value(v, do_int=True)
+                    state[i][j][m] = v
 
 
 def convert_lists_to_set_api(constraints):
@@ -129,7 +187,14 @@ def convert_lists_to_set_api(constraints):
             if isinstance(v, dict):
                 for i, j in v.items():
                     if isinstance(j, list):
+                        j = [clean_value(val, do_int=True) for val in j]
                         constraints[k][i] = set(j)
+            elif isinstance(v, str):
+                v = clean_value(v, do_int=True)
+                constraints[k] = v
+
+
+out_dst = open('out_dst.tsv', 'w')
 
 
 def compute_result(args, predictions, reference_data):
@@ -160,6 +225,19 @@ def compute_result(args, predictions, reference_data):
 
                     if pred == gold:
                         hit += 1
+                    else:
+                        out_dst.write(
+                            dial_id
+                            + '/'
+                            + str(pred_turn_id)
+                            + '\t'
+                            + str(pred)
+                            + '\t'
+                            + str(gold)
+                            + '\t'
+                            + str(list(dictdiffer.diff(gold, pred)))
+                            + '\n'
+                        )
 
         JGA = hit / total_dst_turns
 
@@ -177,7 +255,6 @@ def compute_result(args, predictions, reference_data):
                     for task in reference_data[dial_id]["Scenario"]["WizardCapabilities"]
                 }
                 reference_task_success[dial_id]["API"] = {}
-                reference_task_success[dial_id]["DA"] = {}
             pred_turn_id = 1
             user_requested_info = defaultdict(dict)
             confirm_info = defaultdict(dict)
@@ -193,17 +270,19 @@ def compute_result(args, predictions, reference_data):
                             constraints = {translation_dict[k]: v for k, v in constraints.items()}
                         reference_task_success[dial_id]["API"][turn_api] = constraints
                     else:
-                        reference_response.append(turn["Text"])
+                        reference_response.append(clean_value(turn["Text"]))
                         act_values = set()
                         for item in turn["Actions"]:
                             if len(item["value"]):
                                 act_values.update(item["value"])
+                            act_values = set([clean_value(val) for val in act_values])
                         reference_act_values.append(act_values)
 
-                        reference_actions.append(action2span(turn["Actions"], en_API_MAP[intent], 'en'))
+                        reference_actions.append(clean_value(action2span(turn["Actions"], en_API_MAP[intent], 'en')))
 
-                        predicted_response.append(predictions[dial_id]["turns"][str(pred_turn_id)]["response"][0])
-                        predicted_actions.append(predictions[dial_id]["turns"][str(pred_turn_id)]["actions"])
+                        predicted_response.append(clean_value(predictions[dial_id]["turns"][str(pred_turn_id)]["response"][0]))
+                        predicted_actions.append(clean_value(predictions[dial_id]["turns"][str(pred_turn_id)]["actions"]))
+
                         pred_turn_id += 1
 
                         # For each task, the last value for each slot are considered as final requested information from user
@@ -232,8 +311,7 @@ def compute_result(args, predictions, reference_data):
 
         bleu = compute_bleu(predicted_response, reference_response)
         ser = compute_ser(predicted_response, reference_act_values)
-
-        da_acc = compute_da(reference_actions, predicted_actions)
+        da_acc = compute_da(predicted_actions, reference_actions)
 
         success_rate, api_acc, task_info = compute_success_rate(predictions, reference_task_success)
 
@@ -252,21 +330,9 @@ def compute_result(args, predictions, reference_data):
     )
 
 
-quoted_pattern = re.compile(r'" (.*?) "')
-
-
-def null_to_empty(pred):
-    for dicti in pred:
-        for k, v in dicti.items():
-            if v == 'null':
-                dicti[k] = ''
-            elif v == ['null']:
-                dicti[k] = []
-
-
-def compute_da(refs, preds):
+def compute_da(preds, refs):
     da = 0.0
-    for ref, pred in zip(refs, preds):
+    for pred, ref in zip(preds, refs):
         if pred:
             if ref == pred:
                 da += 1
@@ -312,7 +378,7 @@ def eval_file(args, prediction_file_path, reference_file_path):
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--reference_file_path", type=str, default="data/test.json", help="path of reference")
-    parser.add_argument("--prediction_file_path", type=str, default="data/test.json", help="path of prediction")
+    parser.add_argument("--prediction_file_path", type=str, help="path of prediction")
     parser.add_argument("--eval_task", type=str, default="end2end", help="end2end, dst, response")
     parser.add_argument("--setting", type=str, default="en", help="en, zh, en&zh, en2zh, zh2en")
     parser.add_argument("--result_path", type=str, default="./", help="eval_model or eval_file?")
