@@ -1,4 +1,5 @@
 import argparse
+import copy
 import json
 import os
 import re
@@ -58,7 +59,7 @@ def compute_success_rate(predictions, references):
     correct_api_call = 0
     task_info = {}
 
-    out_api = open('out_api.tsv', 'w')
+    # out_api = open('out_api.tsv', 'w')
     out_success = open('out_success.tsv', 'w')
 
     for dial_id in references:
@@ -75,17 +76,17 @@ def compute_success_rate(predictions, references):
 
             if pred == constraints:
                 correct_api_call += 1
-            else:
-                out_api.write(
-                    dial_id
-                    + '\t'
-                    + str(pred)
-                    + '\t'
-                    + str(dict(constraints))
-                    + '\t'
-                    + str(list(dictdiffer.diff(constraints, pred)))
-                    + '\n'
-                )
+            # else:
+            #     out_api.write(
+            #         dial_id
+            #         + '\t'
+            #         + str(pred)
+            #         + '\t'
+            #         + str(dict(constraints))
+            #         + '\t'
+            #         + str(list(dictdiffer.diff(constraints, pred)))
+            #         + '\n'
+            #     )
 
         # success
         out = ''
@@ -169,7 +170,7 @@ def clean_value(v, do_int=False):
     return v
 
 
-def convert_lists_to_set(state):
+def convert_lists_to_set_in_place(state):
     for i in state:
         for j in state[i]:
             for m, v in state[i][j].items():
@@ -179,6 +180,20 @@ def convert_lists_to_set(state):
                 else:
                     v = clean_value(v, do_int=True)
                     state[i][j][m] = v
+
+
+def convert_lists_to_set(state):
+    new_state = copy.deepcopy(state)
+    for i in new_state:
+        for j in new_state[i]:
+            for m, n in new_state[i][j].items():
+                if isinstance(n, list):
+                    n = [convert_to_int(val, word2number=True) for val in n]
+                    new_state[i][j][m] = set(n)
+                else:
+                    n = convert_to_int(n, word2number=True)
+                    new_state[i][j][m] = n
+    return new_state
 
 
 def convert_lists_to_set_api(constraints):
@@ -220,8 +235,8 @@ def compute_result(args, predictions, reference_data):
                         gold = span2state(gold, api_names)
                         gold = {r_en_API_MAP.get(k, k): v for k, v in gold.items()}
 
-                    convert_lists_to_set(pred)
-                    convert_lists_to_set(gold)
+                    convert_lists_to_set_in_place(pred)
+                    convert_lists_to_set_in_place(gold)
 
                     if pred == gold:
                         hit += 1
