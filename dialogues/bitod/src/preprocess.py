@@ -29,7 +29,7 @@ def translate_slots_to_english(text, do_translate=True):
     return text
 
 
-def get_dials_random(args, dials):
+def get_dials_sequential(args, dials):
     target_lang = args.setting
     all_dial_ids = list(dials.keys())
     if not os.path.exists(f"data/{target_lang}_fewshot_dials_{args.fewshot_percent}.json"):
@@ -454,8 +454,8 @@ def prepare_data(args, path_train, path_dev, path_test):
         train_data = read_data(args, path_train, args.setting, args.max_history)
         with open(path_train[0]) as file:
             dials = json.load(file)
-        if args.sampling == "random":
-            train_dials, few_dials = get_dials_random(args, dials)
+        if args.sampling == "sequential":
+            train_dials, few_dials = get_dials_sequential(args, dials)
         else:
             train_dials, few_dials = get_dials_balanced(args, dials)
         data_train, data_fewshot = [], []
@@ -488,7 +488,7 @@ def main():
     parser.add_argument("--splits", nargs='+', default=['train', 'eval', 'test'])
     parser.add_argument("--version", type=str, default='11')
     parser.add_argument("--fewshot_percent", type=int, default=0)
-    parser.add_argument("--sampling", choices=["random", "balanced"], default="random")
+    parser.add_argument("--sampling", choices=["sequential", "balanced"], default="sequential")
     parser.add_argument("--use_user_acts", action='store_true')
     parser.add_argument("--gen_lev_span", action='store_true')
     parser.add_argument("--gen_full_state", action='store_true')

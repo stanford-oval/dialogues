@@ -16,9 +16,10 @@ class Bitod(Dataset):
     def __init__(self, name='bitod'):
         super().__init__(name)
 
-        self.state_re = re.compile('<state> (.*?)(?:$|<)')
-        self.knowledge_re = re.compile('<knowledge> (.*?)(?:$|<)')
-        self.actions_re = re.compile('<actions> (.*?)(?:$|<)')
+        self.state_re = re.compile('<state> (.*?) <endofstate>')
+        self.knowledge_re = re.compile('<knowledge> (.*?) <endofknowledge>')
+        self.hisotry_re = re.compile('<history> (.*?) <endofhistory>')
+        self.actions_re = re.compile('<actions> (.*?) <endofactions>')
 
     def domain2api_name(self, domain):
         return r_en_API_MAP.get(domain, domain)
