@@ -100,6 +100,7 @@ def get_dials_balanced(args, dials):
 
 
 def shorten_path_for_kb(last_dialogue_state, kb_results):
+    old_shortest_path, new_shortest_path = '', ''
     if 'shortest_path' in kb_results:
         old_shortest_path = kb_results['shortest_path']
         departure, destination = (
@@ -312,7 +313,7 @@ def read_data(args, path_names, setting, max_history=3):
                                 # they only return 1 item
                                 kb_results = next_turn["Item"]
                                 if args.shorten_path:
-                                    old_shortest_path, new_shortest_path = shorten_path_for_kb(kb_results)
+                                    old_shortest_path, new_shortest_path = shorten_path_for_kb(last_dialogue_state, kb_results)
 
                                 knowledge[active_intent].update(kb_results)
                                 last_knowledge_text = knowledge2span(knowledge)
