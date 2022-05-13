@@ -59,7 +59,7 @@ def compute_success_rate(predictions, references):
     correct_api_call = 0
     task_info = {}
 
-    # out_api = open('out_api.tsv', 'w')
+    out_api = open('out_api.tsv', 'w')
     out_success = open('out_success.tsv', 'w')
 
     for dial_id in references:
@@ -76,17 +76,17 @@ def compute_success_rate(predictions, references):
 
             if pred_sets == constraints_sets:
                 correct_api_call += 1
-            # else:
-            #     out_api.write(
-            #         dial_id
-            #         + '\t'
-            #         + str(pred)
-            #         + '\t'
-            #         + str(dict(constraints))
-            #         + '\t'
-            #         + str(list(dictdiffer.diff(constraints, pred)))
-            #         + '\n'
-            #     )
+            else:
+                out_api.write(
+                    dial_id
+                    + '\t'
+                    + str(pred_sets)
+                    + '\t'
+                    + str(constraints_sets)
+                    + '\t'
+                    + str(list(dictdiffer.diff(pred_sets, constraints_sets)))
+                    + '\n'
+                )
 
         # success
         out = ''
@@ -137,31 +137,34 @@ def compute_success_rate(predictions, references):
 
 
 def clean_value(v, do_int=False):
-    # return v
     v = str(v)
     v = v.lower()
+    v = v.strip()
 
     v = v.replace("，", ",")
     v = v.replace('..', '.')
 
-    if re.search('(\d+)[\.:](\d+)\s?(afternoon|in the afternoon)', v):
-        v = re.sub('(\d+)[\.:](\d+)\s?(?:pm )?(afternoon|in the afternoon)', r'\1:\2 pm', v)
-    if re.search('(\d+)[\.:](\d+)\s?(?:am )?(morning|in the morning)', v):
-        v = re.sub('(\d+)[\.:](\d+)\s?(morning|in the morning)', r'\1:\2 am', v)
-    if re.search('(\d+)[\.:](\d+)\s?(am|pm)', v):
-        v = re.sub('(\d+)[\.:](\d+)\s?(am|pm)', r'\1:\2 \3', v)
-    if re.search(' [\&\/] ', v):
-        v = re.sub(' [\&\/] ', ' and ', v)
-        v = re.sub('\s+', ' ', v)
-    if re.search(' ([\w\d]+)\.(?:\s|$)', v):
-        v = re.sub(' ([\w\d]+)\.(?:\s|$)', r' \1 ', v)
+    # am, pm
+    v = re.sub('(\d+)(?:[\.:](\d+))?\s?(?:pm )?(afternoon|in the afternoon|pm in the afternoon)', r'\1:\2 pm', v)
+    v = re.sub('(\d+)(?:[\.:](\d+))?\s?(morning|in the morning|am in the morning)', r'\1:\2 am', v)
+    v = re.sub('(\d+)(?:[\.:](\d+))?\s?(am|pm)', r'\1:\2 \3', v)
+
+    # & --> and
+    v = re.sub(' [\&\/] ', ' and ', v)
+    v = re.sub('\s+', ' ', v)
+
+    # remove extra dot in the end
+    v = re.sub('(\d+)\.$', r'\1', v)
+    v = re.sub('(\w+)\.$', r'\1', v)
+
+    # 3rd of january --> januray 3
+    v = re.sub('(\d+)(?:th|rd|st|nd) of (\w+)', r'\2 \1', v)
 
     # time consuming but needed step
     for key, val in entity_map.items():
         key, val = str(key), str(val)
         if key in v:
             v = v.replace(key, val)
-    # v = entity_map.get(v, v)
 
     if do_int:
         v = convert_to_int(v, word2number=True)
@@ -179,8 +182,7 @@ def convert_lists_to_set(state):
                     v = [clean_value(val, do_int=True) for val in v]
                     new_state[i][j][m] = set(v)
                 else:
-                    v = clean_value(v, do_int=True)
-                    new_state[i][j][m] = v
+                    new_state[i][j][m] = clean_value(v, do_int=True)
     return new_state
 
 
@@ -193,9 +195,10 @@ def convert_lists_to_set_api(constraints):
                     if isinstance(j, list):
                         j = [clean_value(val, do_int=True) for val in j]
                         new_constraints[k][i] = set(j)
-            elif isinstance(v, str):
-                v = clean_value(v, do_int=True)
-                new_constraints[k] = v
+                    else:
+                        new_constraints[k][i] = clean_value(j, do_int=True)
+            else:
+                new_constraints[k] = clean_value(v, do_int=True)
     return new_constraints
 
 
@@ -236,11 +239,11 @@ def compute_result(args, predictions, reference_data):
                             + '/'
                             + str(pred_turn_id)
                             + '\t'
-                            + str(pred)
+                            + str(pred_sets)
                             + '\t'
-                            + str(gold)
+                            + str(gold_sets)
                             + '\t'
-                            + str(list(dictdiffer.diff(gold, pred)))
+                            + str(list(dictdiffer.diff(pred_sets, gold_sets)))
                             + '\n'
                         )
 
