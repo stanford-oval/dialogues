@@ -71,10 +71,10 @@ def compute_success_rate(predictions, references):
             total_api_call += 1
             pred = predictions[dial_id]["API"].get(api_name)
 
-            convert_lists_to_set_api(pred)
-            convert_lists_to_set_api(constraints)
+            pred_sets = convert_lists_to_set_api(pred)
+            constraints_sets = convert_lists_to_set_api(constraints)
 
-            if pred == constraints:
+            if pred_sets == constraints_sets:
                 correct_api_call += 1
             # else:
             #     out_api.write(
@@ -185,16 +185,18 @@ def convert_lists_to_set(state):
 
 
 def convert_lists_to_set_api(constraints):
+    new_constraints = copy.deepcopy(constraints)
     if constraints:
         for k, v in constraints.items():
             if isinstance(v, dict):
                 for i, j in v.items():
                     if isinstance(j, list):
                         j = [clean_value(val, do_int=True) for val in j]
-                        constraints[k][i] = set(j)
+                        new_constraints[k][i] = set(j)
             elif isinstance(v, str):
                 v = clean_value(v, do_int=True)
-                constraints[k] = v
+                new_constraints[k] = v
+    return new_constraints
 
 
 out_dst = open('out_dst.tsv', 'w')
