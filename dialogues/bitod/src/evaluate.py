@@ -170,29 +170,17 @@ def clean_value(v, do_int=False):
     return v
 
 
-def convert_lists_to_set_in_place(state):
+def convert_lists_to_set(state):
+    new_state = copy.deepcopy(state)
     for i in state:
         for j in state[i]:
             for m, v in state[i][j].items():
                 if isinstance(v, list):
                     v = [clean_value(val, do_int=True) for val in v]
-                    state[i][j][m] = set(v)
+                    new_state[i][j][m] = set(v)
                 else:
                     v = clean_value(v, do_int=True)
-                    state[i][j][m] = v
-
-
-def convert_lists_to_set(state):
-    new_state = copy.deepcopy(state)
-    for i in new_state:
-        for j in new_state[i]:
-            for m, n in new_state[i][j].items():
-                if isinstance(n, list):
-                    n = [convert_to_int(val, word2number=True) for val in n]
-                    new_state[i][j][m] = set(n)
-                else:
-                    n = convert_to_int(n, word2number=True)
-                    new_state[i][j][m] = n
+                    new_state[i][j][m] = v
     return new_state
 
 
@@ -235,10 +223,10 @@ def compute_result(args, predictions, reference_data):
                         gold = span2state(gold, api_names)
                         gold = {r_en_API_MAP.get(k, k): v for k, v in gold.items()}
 
-                    convert_lists_to_set_in_place(pred)
-                    convert_lists_to_set_in_place(gold)
+                    pred_sets = convert_lists_to_set(pred)
+                    gold_sets = convert_lists_to_set(gold)
 
-                    if pred == gold:
+                    if pred_sets == gold_sets:
                         hit += 1
                     else:
                         out_dst.write(
