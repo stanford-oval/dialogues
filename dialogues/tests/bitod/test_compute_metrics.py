@@ -11,6 +11,7 @@ parser.add_argument("--eval_task", type=str, default="end2end", help="end2end, d
 parser.add_argument("--setting", type=str, help="en, zh, en&zh, en2zh, zh2en")
 parser.add_argument("--result_path", type=str, default="./", help="eval_model or eval_file?")
 parser.add_argument("--save_prefix", type=str, default="", help="prefix of save file name")
+parser.add_argument("--fast_eval", action='store_true', help="skip time consuming normalization step")
 
 args = parser.parse_args()
 

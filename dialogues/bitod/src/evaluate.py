@@ -56,6 +56,9 @@ def compute_da(preds, refs):
     return da / len(preds) * 100
 
 
+out_ser = open('out_ser.tsv', 'w')
+
+
 def compute_ser(preds, act_values):
     ser = 0.0
     for pred, values in zip(preds, act_values):
@@ -63,10 +66,13 @@ def compute_ser(preds, act_values):
         missing = False
         if len(values):
             for val in values:
+                if val == 'null':
+                    continue
                 if str(val) not in pred:
                     missing = True
         if missing:
             ser += 1.0
+            out_ser.write('\t'.join([pred, *values]) + '\n')
     return ser / len(preds) * 100
 
 
@@ -182,6 +188,9 @@ def compute_success_rate(predictions, references):
     return success_rate, api_acc, task_info
 
 
+FAST_EVAL = False
+
+
 def clean_value(v, do_int=False):
     v = str(v)
     v = v.lower()
@@ -207,10 +216,11 @@ def clean_value(v, do_int=False):
     v = re.sub('(\d+)(?:th|rd|st|nd) of (\w+)', r'\2 \1', v)
 
     # time consuming but needed step
-    for key, val in entity_map.items():
-        key, val = str(key), str(val)
-        if key in v:
-            v = v.replace(key, val)
+    if not FAST_EVAL:
+        for key, val in entity_map.items():
+            key, val = str(key), str(val)
+            if key in v:
+                v = v.replace(key, val)
 
     if do_int:
         v = convert_to_int(v, word2number=True)
@@ -346,6 +356,8 @@ def compute_result(predictions, reference_data):
 
 
 def eval_file(args, prediction_file_path, reference_file_path):
+    global FAST_EVAL
+    FAST_EVAL = args.fast_eval
 
     reference_data = {}
     for reference_file_path in reference_file_path.split("__"):
@@ -374,6 +386,7 @@ def main():
     parser.add_argument("--setting", type=str, default="en", help="en, zh, en&zh, en2zh, zh2en")
     parser.add_argument("--result_path", type=str, default="./", help="eval_model or eval_file?")
     parser.add_argument("--save_prefix", type=str, default="", help="prefix of save file name")
+    parser.add_argument("--fast_eval", action='store_true', help="skip time consuming normalization step")
 
     args = parser.parse_args()
 
