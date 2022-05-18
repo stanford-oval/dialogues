@@ -420,10 +420,10 @@ for s, t in nx_graph.edges():
 
 
 def MTR(source, target, lang="en"):
-    source = MTR_map.get(source, source)
-    target = MTR_map.get(target, target)
+    new_source = MTR_map.get(source, source)
+    new_target = MTR_map.get(target, target)
     G = G_MAPS[lang]
-    shortest = nx.shortest_path(G, source=source, target=target)
+    shortest = nx.shortest_path(G, source=new_source, target=new_target)
     price = round((len(shortest) - 2) * 0.88 + 3.4, 2)
     time = (len(shortest) - 2) * 3
 
