@@ -180,27 +180,17 @@ def read_data(args, path_names, setting, max_history=3):
                         # update last dialogue state
                         last_dialogue_state = current_state
 
-                        if not args.no_state:
-                            input_text = " ".join(
-                                [
-                                    "DST:",
-                                    "<state>",
-                                    translate_slots_to_english(state_text, args.english_slots),
-                                    "<endofstate>",
-                                    "<history>",
-                                    dialog_history_text,
-                                    "<endofhistory>",
-                                ]
-                            )
-                        else:
-                            input_text = " ".join(
-                                [
-                                    "DST:",
-                                    "<history>",
-                                    dialog_history_text,
-                                    "<endofhistory>",
-                                ]
-                            )
+                        input_text = " ".join(
+                            [
+                                "DST:",
+                                "<state>",
+                                translate_slots_to_english(state_text, args.english_slots),
+                                "<endofstate>",
+                                "<history>",
+                                dialog_history_text,
+                                "<endofhistory>",
+                            ]
+                        )
 
                         dst_data_detail = {
                             "dial_id": dial_id,
@@ -219,33 +209,20 @@ def read_data(args, path_names, setting, max_history=3):
                         # convert dict of slot-values into text
                         state_text = state2span(last_dialogue_state, required_slots)
 
-                        if not args.no_state:
-                            input_text = " ".join(
-                                [
-                                    "API:",
-                                    "<knowledge>",
-                                    translate_slots_to_english(last_knowledge_text, args.english_slots),
-                                    "<endofknowledge>",
-                                    "<state>",
-                                    translate_slots_to_english(state_text, args.english_slots),
-                                    "<endofstate>",
-                                    "<history>",
-                                    dialog_history_text_for_api_da,
-                                    "<endofhistory>",
-                                ]
-                            )
-                        else:
-                            input_text = " ".join(
-                                [
-                                    "API:",
-                                    "<knowledge>",
-                                    translate_slots_to_english(last_knowledge_text, args.english_slots),
-                                    "<endofknowledge>",
-                                    "<history>",
-                                    dialog_history_text_for_api_da,
-                                    "<endofhistory>",
-                                ]
-                            )
+                        input_text = " ".join(
+                            [
+                                "API:",
+                                "<knowledge>",
+                                translate_slots_to_english(last_knowledge_text, args.english_slots),
+                                "<endofknowledge>",
+                                "<state>",
+                                translate_slots_to_english(state_text, args.english_slots),
+                                "<endofstate>",
+                                "<history>",
+                                dialog_history_text_for_api_da,
+                                "<endofhistory>",
+                            ]
+                        )
 
                         if turn["Actions"] == "query":
                             # do api call
@@ -291,33 +268,20 @@ def read_data(args, path_names, setting, max_history=3):
 
                             data.append(api_data_detail)
 
-                        if not args.no_state:
-                            input_text = " ".join(
-                                [
-                                    "ACTS:",
-                                    "<knowledge>",
-                                    translate_slots_to_english(last_knowledge_text, args.english_slots),
-                                    "<endofknowledge>",
-                                    "<state>",
-                                    translate_slots_to_english(state_text, args.english_slots),
-                                    "<endofstate>",
-                                    "<history>",
-                                    dialog_history_text_for_api_da,
-                                    "<endofhistory>",
-                                ]
-                            )
-                        else:
-                            input_text = " ".join(
-                                [
-                                    "ACTS:",
-                                    "<knowledge>",
-                                    translate_slots_to_english(last_knowledge_text, args.english_slots),
-                                    "<endofknowledge>",
-                                    "<history>",
-                                    dialog_history_text_for_api_da,
-                                    "<endofhistory>",
-                                ]
-                            )
+                        input_text = " ".join(
+                            [
+                                "DA:",
+                                "<knowledge>",
+                                translate_slots_to_english(last_knowledge_text, args.english_slots),
+                                "<endofknowledge>",
+                                "<state>",
+                                translate_slots_to_english(state_text, args.english_slots),
+                                "<endofstate>",
+                                "<history>",
+                                dialog_history_text_for_api_da,
+                                "<endofhistory>",
+                            ]
+                        )
 
                         target = clean_text(turn["Text"])
 
@@ -325,7 +289,6 @@ def read_data(args, path_names, setting, max_history=3):
                         action_text = clean_text(action_text, is_formal=True)
                         action_text = translate_slots_to_english(action_text, args.english_slots)
 
-                        input_text = input_text.replace('ACTS:', 'DA:')
                         acts_data_detail = {
                             "dial_id": dial_id,
                             "task": translate_slots_to_english(active_intent, args.english_slots),
@@ -425,7 +388,6 @@ def main():
     parser.add_argument("--last_two_agent_turns", action='store_true')
     parser.add_argument("--english_slots", action='store_true')
     parser.add_argument("--use_natural_response", action='store_true')
-    parser.add_argument("--no_state", action='store_true')
     parser.add_argument("--only_user_rg", action='store_true')
 
     args = parser.parse_args()

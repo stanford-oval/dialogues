@@ -110,14 +110,6 @@ def state2constraints(dict_data):
     return constraints
 
 
-def is_int(val):
-    try:
-        _ = int(val)
-    except ValueError:
-        return False
-    return True
-
-
 def canonicalize_constraints(dict_data):
     # converts the constraints dictionary in the original data to canonical form
     constraints = {}
@@ -125,15 +117,11 @@ def canonicalize_constraints(dict_data):
         for slot, values in const.items():
             relation = values[values.find(".") + 1 : values.find("(")]
             values = values[values.find("(") + 1 : -1]
-            values = values.replace('in the afternoon', 'pm')
-            values = values.replace(' and ', ' & ')
             values = entity_map.get(values, values)
 
             if relation == "one_of" or relation == en2zh_RELATION_MAP["one_of"]:
                 values = values.split(" , ")
-                # values.sort()
             else:
-                # values = int(values) if is_int(values) else values
                 values = convert_to_int(values, word2number=True)
             if relation == "one_of" or relation == en2zh_RELATION_MAP["one_of"]:
                 constraints[slot] = api.is_one_of(values)
