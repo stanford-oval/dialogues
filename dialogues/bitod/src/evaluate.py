@@ -1,21 +1,15 @@
 import argparse
+import copy
 import json
 import os
 import re
 from collections import OrderedDict, defaultdict
 
+import dictdiffer
 from datasets import load_metric
 
-from dialogues.bitod.src.knowledgebase.en_zh_mappings import (
-    api_names,
-    en_API_MAP,
-    r_en_API_MAP,
-    required_slots,
-    translation_dict,
-    zh_en_API_MAP,
-)
-from dialogues.bitod.src.preprocess import translate_slots_to_english
-from dialogues.bitod.src.utils import action2span, canonicalize_constraints, convert_to_int, span2state, state2span
+from dialogues.bitod.src.knowledgebase.en_zh_mappings import api_names, en_API_MAP, zh_en_API_MAP
+from dialogues.bitod.src.utils import action2span, canonicalize_constraints, convert_to_int, entity_map, span2action
 
 metric = load_metric("sacrebleu")
 
@@ -36,9 +30,69 @@ def compute_bleu(preds, labels):
     preds, labels = postprocess_text(preds, labels)
 
     bleu = metric.compute(predictions=preds, references=labels)["score"]
-    bleu = round(bleu, 4) / 100.0
+    bleu = round(bleu, 4)
 
     return bleu
+
+
+out_da = open('out_da.tsv', 'w')
+
+
+def compute_da(preds, refs):
+    da = 0.0
+    for pred, ref in zip(preds, refs):
+        if pred:
+            pred = clean_value(pred)
+            pred_dict = span2action(pred, api_names)
+
+            ref = clean_value(ref)
+            ref_dict = span2action(ref, api_names)
+
+            if pred_dict == ref_dict:
+                da += 1
+            else:
+                out_da.write(str(pred) + '\t' + str(ref) + '\t' + str(list(dictdiffer.diff(pred, ref))) + '\n')
+
+    return da / len(preds) * 100
+
+
+out_ser = open('out_ser.tsv', 'w')
+
+
+def compute_ser(preds, act_values):
+    ser = 0.0
+    for pred, values in zip(preds, act_values):
+        # remove emtpy slot values
+        missing = False
+        if len(values):
+            for val in values:
+                if val == 'null':
+                    continue
+                if str(val) not in pred:
+                    missing = True
+        if missing:
+            ser += 1.0
+            out_ser.write('\t'.join([pred, *values]) + '\n')
+    return ser / len(preds) * 100
+
+
+out_dst = open('out_dst.tsv', 'w')
+
+
+def compute_dst_em(preds, golds):
+    hit = 0
+    for pred, gold in zip(preds, golds):
+        pred_sets = convert_lists_to_set(pred)
+        gold_sets = convert_lists_to_set(gold)
+
+        if pred_sets == gold_sets:
+            hit += 1
+        else:
+            out_dst.write(
+                str(pred_sets) + '\t' + str(gold_sets) + '\t' + str(list(dictdiffer.diff(pred_sets, gold_sets))) + '\n'
+            )
+
+    return hit / len(preds) * 100
 
 
 def compute_success_rate(predictions, references):
@@ -57,7 +111,8 @@ def compute_success_rate(predictions, references):
     correct_api_call = 0
     task_info = {}
 
-    # out_api = open('out_api.tsv', 'w')
+    out_api = open('out_api.tsv', 'w')
+    out_success = open('out_success.tsv', 'w')
 
     for dial_id in references:
         responses = ""
@@ -66,20 +121,33 @@ def compute_success_rate(predictions, references):
         # api accuracy
         for api_name, constraints in references[dial_id]["API"].items():
             total_api_call += 1
-            convert_lists_to_set_api(predictions[dial_id]["API"].get(api_name))
-            convert_lists_to_set_api(constraints)
-            if predictions[dial_id]["API"].get(api_name) == constraints:
+            pred = predictions[dial_id]["API"].get(api_name)
+
+            pred_sets = convert_lists_to_set_api(pred)
+            constraints_sets = convert_lists_to_set_api(constraints)
+
+            if pred_sets == constraints_sets:
                 correct_api_call += 1
-            # else:
-            # 	out_api.write(
-            # 		dial_id + '\t' + str(predictions[dial_id]["API"].get(api_name)) + '\t' + str(dict(constraints)) + '\n'
-            # 	)
-            # print('constraints_diff: ', list(dictdiffer.diff(constraints, predictions[dial_id]["API"].get(api_name))))
+            else:
+                out_api.write(
+                    dial_id
+                    + '\t'
+                    + str(pred_sets)
+                    + '\t'
+                    + str(constraints_sets)
+                    + '\t'
+                    + str(list(dictdiffer.diff(pred_sets, constraints_sets)))
+                    + '\n'
+                )
+        api_acc = correct_api_call / total_api_call * 100
 
         # success
+        out = ''
         dial_success_flag = True
         for response in predictions[dial_id]["turns"].values():
             responses += response["response"][0] + " "
+        responses = clean_value(responses)
+        out += responses + '\t'
 
         for intent in references[dial_id]["tasks"]:
             if intent not in task_info:
@@ -88,19 +156,15 @@ def compute_success_rate(predictions, references):
             task_info[intent]["total"] += 1
 
             for entity in references[dial_id]["tasks"][intent]["inform+offer"]:
+                entity = clean_value(entity)
                 if str(entity) not in responses:
-                    # print('entity: ', entity)
-                    # mt5 cannot generate chinese comma
-                    if str(entity).replace("，", ",") in responses:
-                        continue
+                    out += str(entity) + ' ; '
                     task_success_flag = False
                     break
             for entity in references[dial_id]["tasks"][intent]["confirmation"]:
+                entity = clean_value(entity)
                 if str(entity) not in responses:
-                    # print('entity: ', entity)
-                    # mt5 cannot generate chinese comma
-                    if str(entity).replace("，", ",") in responses:
-                        continue
+                    out += str(entity) + ' ; '
                     task_success_flag = False
                     break
             if task_success_flag:
@@ -111,263 +175,226 @@ def compute_success_rate(predictions, references):
         if dial_success_flag:
             success_dial += 1
 
+        out_success.write(out + '\n')
+
     total_tasks = 0
     success_tasks = 0
     for task in task_info:
         task_info[task]["success_rate"] = task_info[task]["hit"] / task_info[task]["total"]
         total_tasks += task_info[task]["total"]
         success_tasks += task_info[task]["hit"]
-    task_info["Averaged_task_success"] = success_tasks / total_tasks
-    success_rate = success_dial / total_dial
-    api_acc = correct_api_call / total_api_call
+    task_info["Averaged_task_success"] = success_tasks / total_tasks * 100
+    success_rate = success_dial / total_dial * 100
     return success_rate, api_acc, task_info
 
 
+FAST_EVAL = False
+
+
+def clean_value(v, do_int=False):
+    v = str(v)
+    v = v.lower()
+    v = v.strip()
+
+    v = v.replace("，", ",")
+    v = v.replace('..', '.')
+
+    # am, pm
+    v = re.sub('(\d+)(?:[\.:](\d+))?\s?(?:pm )?(afternoon|in the afternoon|pm in the afternoon)', r'\1:\2 pm', v)
+    v = re.sub('(\d+)(?:[\.:](\d+))?\s?(morning|in the morning|am in the morning)', r'\1:\2 am', v)
+    v = re.sub('(\d+)(?:[\.:](\d+))?\s?(am|pm)', r'\1:\2 \3', v)
+
+    # & --> and
+    v = re.sub(' [\&\/] ', ' and ', v)
+    v = re.sub('\s+', ' ', v)
+
+    # remove extra dot in the end
+    v = re.sub('(\d+)\.$', r'\1', v)
+    v = re.sub('(\w+)\.$', r'\1', v)
+
+    # 3rd of january --> januray 3
+    v = re.sub('(\d+)(?:th|rd|st|nd) of (\w+)', r'\2 \1', v)
+
+    # time consuming but needed step
+    if not FAST_EVAL:
+        for key, val in entity_map.items():
+            key, val = str(key), str(val)
+            if key in v:
+                v = v.replace(key, val)
+
+    if do_int:
+        v = convert_to_int(v, word2number=True)
+
+    v = str(v)
+    return v
+
+
 def convert_lists_to_set(state):
+    new_state = copy.deepcopy(state)
     for i in state:
         for j in state[i]:
-            for m, n in state[i][j].items():
-                if isinstance(n, list):
-                    n = [convert_to_int(val, word2number=True) for val in n]
-                    state[i][j][m] = set(n)
+            for m, v in state[i][j].items():
+                if isinstance(v, list):
+                    v = [clean_value(val, do_int=True) for val in v]
+                    new_state[i][j][m] = set(v)
                 else:
-                    n = convert_to_int(n, word2number=True)
-                    state[i][j][m] = n
+                    new_state[i][j][m] = clean_value(v, do_int=True)
+    return new_state
 
 
 def convert_lists_to_set_api(constraints):
+    new_constraints = copy.deepcopy(constraints)
     if constraints:
         for k, v in constraints.items():
             if isinstance(v, dict):
                 for i, j in v.items():
                     if isinstance(j, list):
-                        constraints[k][i] = set(j)
+                        j = [clean_value(val, do_int=True) for val in j]
+                        new_constraints[k][i] = set(j)
+                    else:
+                        new_constraints[k][i] = clean_value(j, do_int=True)
+            else:
+                new_constraints[k] = clean_value(v, do_int=True)
+    return new_constraints
 
 
-def compute_result(args, predictions, reference_data):
-    task_info = {}
-    bleu, ser, success_rate, api_acc, da_acc, JGA = 0, 0, 0, 0, 0, 0
+def compute_result(predictions, reference_data):
 
-    # out_dst = open('out_dst.tsv', 'w')
+    preds = []
+    golds = []
+    for dial_id in reference_data:
+        pred_turn_id = 0
+        for turn in reference_data[dial_id]["Events"]:
+            if turn["Agent"] == "User":
+                pred_turn_id += 1
 
-    if args.eval_task in ["dst", "end2end"]:
-        hit = 0
-        total_dst_turns = 0
-        for dial_id in reference_data:
-            pred_turn_id = 0
-            for turn in reference_data[dial_id]["Events"]:
-                if turn["Agent"] == "User":
-                    pred_turn_id += 1
-                    total_dst_turns += 1
+                pred = predictions[dial_id]["turns"][str(pred_turn_id)]["state"]
+                gold = turn["state"]
 
-                    pred = predictions[dial_id]["turns"][str(pred_turn_id)]["state"]
-                    gold = turn["state"]
+                preds.append(pred)
+                golds.append(gold)
 
-                    if args.setting == 'zh':
-                        gold = state2span(gold, required_slots)
-                        gold = translate_slots_to_english(gold)
-                        gold = span2state(gold, api_names)
-                        gold = {r_en_API_MAP.get(k, k): v for k, v in gold.items()}
+    jga = compute_dst_em(preds, golds)
 
-                    convert_lists_to_set(pred)
-                    convert_lists_to_set(gold)
-
-                    if pred == gold:
-                        hit += 1
-                    # else:
-                    # print(
-                    #     'diff: ',
-                    #     list(dictdiffer.diff(gold, pred)),
-                    # )
-
-                    # out_dst.write(
-                    #     dial_id
-                    #     + '/'
-                    #     + str(pred_turn_id)
-                    #     + '\t'
-                    #     + str(pred)
-                    #     + '\t'
-                    #     + str(gold)
-                    #     + '\t'
-                    #     + str(bool(pred == gold))
-                    #     + '\n'
-                    # )
-
-        JGA = hit / total_dst_turns
-
-    if args.eval_task in ["end2end", "response"]:
-        reference_task_success = defaultdict(dict)
-        reference_act_values = []
-        reference_actions = []
-        reference_response = []
-        predicted_response = []
-        predicted_actions = []
-        for dial_id in reference_data:
-            if dial_id not in reference_task_success:
-                reference_task_success[dial_id]["tasks"] = {
-                    zh_en_API_MAP.get(task["Task"], task["Task"]): {"inform+offer": [], "confirmation": []}
-                    for task in reference_data[dial_id]["Scenario"]["WizardCapabilities"]
-                }
-                reference_task_success[dial_id]["API"] = {}
-                reference_task_success[dial_id]["DA"] = {}
-            pred_turn_id = 1
-            user_requested_info = defaultdict(dict)
-            confirm_info = defaultdict(dict)
-            for turn in reference_data[dial_id]["Events"]:
-                if turn["Agent"] == "User":
-                    if not isinstance(turn["active_intent"], list):
+    reference_task_success = defaultdict(dict)
+    reference_act_values = []
+    reference_actions = []
+    reference_response = []
+    predicted_response = []
+    predicted_actions = []
+    for dial_id in reference_data:
+        if dial_id not in reference_task_success:
+            reference_task_success[dial_id]["tasks"] = {
+                zh_en_API_MAP.get(task["Task"], task["Task"]): {"inform+offer": [], "confirmation": []}
+                for task in reference_data[dial_id]["Scenario"]["WizardCapabilities"]
+            }
+            reference_task_success[dial_id]["API"] = {}
+        pred_turn_id = 1
+        user_requested_info = defaultdict(dict)
+        confirm_info = defaultdict(dict)
+        for turn in reference_data[dial_id]["Events"]:
+            if turn["Agent"] == "User":
+                if not isinstance(turn["active_intent"], list):
+                    # for compatibility of both BiTOD and RiSAWOZ
+                    intent = [zh_en_API_MAP.get(turn["active_intent"], turn["active_intent"])]
+                else:
+                    intent = turn["active_intent"]
+            if turn["Agent"] == "Wizard":
+                if turn["Actions"] == "query":
+                    if not isinstance(turn["API"], list):
                         # for compatibility of both BiTOD and RiSAWOZ
-                        intent = [zh_en_API_MAP.get(turn["active_intent"], turn["active_intent"])]
+                        turn["API"] = [turn["API"]]
+                        constraints = canonicalize_constraints(turn["Constraints"])
                     else:
-                        intent = turn["active_intent"]
-                if turn["Agent"] == "Wizard":
-                    if turn["Actions"] == "query":
-                        if not isinstance(turn["API"], list):
-                            # for compatibility of both BiTOD and RiSAWOZ
-                            turn["API"] = [turn["API"]]
-                            constraints = canonicalize_constraints(turn["Constraints"])
-                        else:
-                            # TODO: canonicalization for RiSAWOZ
-                            constraints = turn["Constraints"]
-                        for turn_api in turn["API"]:
-                            turn_api = zh_en_API_MAP.get(turn_api, turn_api)
-                            if args.setting == 'zh' and constraints:
-                                if turn_api in constraints.keys():
-                                    # for RiSAWOZ: filter constraints with current API
-                                    constraints = {translation_dict[k]: v for k, v in constraints[turn_api].items()}
-                                else:
-                                    constraints = {translation_dict[k]: v for k, v in constraints.items()}
-                            reference_task_success[dial_id]["API"][turn_api] = constraints
-                    else:
-                        reference_response.append(turn["Text"])
-                        act_values = set()
-                        for item in turn["Actions"]:
-                            if len(item["value"]):
-                                if not isinstance(item["value"], list):
-                                    item["value"] = [item["value"]]
-                                for value in item["value"]:
-                                    if not isinstance(value, list):
-                                        value = [value]
-                                    act_values.update(value)
-                        reference_act_values.append(act_values)
-                        for i in range(len(intent)):
-                            # for RiSAWOZ: filter turn actions with current intent
-                            turn_actions = (
-                                [action for action in turn["Actions"] if action["domain"] == intent[i]]
-                                if len(intent) > 1
-                                else turn["Actions"]
-                            )
-                            reference_actions.append(action2span(turn_actions, en_API_MAP.get(intent[i], intent[i]), 'en'))
+                        # TODO: canonicalization for RiSAWOZ
+                        constraints = turn["Constraints"]
+                    for turn_api in turn["API"]:
+                        turn_api = zh_en_API_MAP.get(turn_api, turn_api)
+                        if constraints:
+                            if turn_api in constraints.keys():
+                                # for RiSAWOZ: filter constraints with current API
+                                constraints = {k: v for k, v in constraints[turn_api].items()}
+                            else:
+                                constraints = {k: v for k, v in constraints.items()}
+                        reference_task_success[dial_id]["API"][turn_api] = constraints
+                else:
+                    reference_response.append(clean_value(turn["Text"]))
+                    act_values = set()
+                    for item in turn["Actions"]:
+                        if len(item["value"]):
+                            if not isinstance(item["value"], list):
+                                item["value"] = [item["value"]]
+                            for value in item["value"]:
+                                if not isinstance(value, list):
+                                    value = [value]
+                                act_values.update(value)
+                        act_values = set([clean_value(val) for val in act_values])
+                    reference_act_values.append(act_values)
 
-                        # TODO  fix puncutations mt5 cannot generate chinese comma
-                        # if intent in zh2en_API_MAP.keys():
-                        # predictions[dial_id]["turns"][str(turn_id)]["response"] = \
-                        #     predictions[dial_id]["turns"][str(turn_id)]["response"].replace(",", "，")
+                    for i in range(len(intent)):
+                        # for RiSAWOZ: filter turn actions with current intent
+                        turn_actions = (
+                            [action for action in turn["Actions"] if action["domain"] == intent[i]]
+                            if len(intent) > 1
+                            else turn["Actions"]
+                        )
+                        reference_actions.append(
+                            clean_value(action2span(turn_actions, en_API_MAP.get(intent[i], intent[i]), 'en'))
+                        )
 
-                        predicted_response.append(predictions[dial_id]["turns"][str(pred_turn_id)]["response"][0])
-                        # predicted_actions.append(
-                        #     list(span2action(predictions[dial_id]["turns"][str(pred_turn_id)]["actions"], api_names).values())
-                        # )
-                        predicted_actions.append(predictions[dial_id]["turns"][str(pred_turn_id)]["actions"])
-                        pred_turn_id += 1
+                    predicted_response.append(clean_value(predictions[dial_id]["turns"][str(pred_turn_id)]["response"][0]))
+                    predicted_actions.append(clean_value(predictions[dial_id]["turns"][str(pred_turn_id)]["actions"]))
 
-                        # For each task, the last value for each slot are considered as final requested information from user
-                        for action in turn["Actions"]:
-                            trans_slot = action["slot"]
-                            if args.setting == 'zh' and action["slot"]:
-                                if action["slot"] == 'start_date':
-                                    trans_slot = 'start_date'
-                                else:
-                                    trans_slot = translation_dict[action["slot"]]
-                            if (
-                                (action["act"] in ["inform", "offer"])
-                                and (len(action["value"]) > 0)
-                                and action["slot"] != "available_options"
-                                and action["slot"] != "可用选项"
-                            ):
-                                for i in range(len(intent)):
-                                    # for RiSAWOZ: filter turn actions with current intent
-                                    if len(intent) <= 1 or action["domain"] == intent[i]:
-                                        user_requested_info[intent[i]][trans_slot] = action["value"]
-                            elif (action["act"] == "confirm") and (len(action["value"]) > 0):
-                                for i in range(len(intent)):
-                                    # for RiSAWOZ: filter turn actions with current intent
-                                    if len(intent) <= 1 or action["domain"] == intent[i]:
-                                        confirm_info[intent[i]][trans_slot] = action["value"]
-            for intent, slot_values in user_requested_info.items():
-                if intent in ["通用"]:  # for RiSAWOZ
-                    continue
-                for values in slot_values.values():
-                    reference_task_success[dial_id]["tasks"][intent]["inform+offer"] += values
-            for intent, slot_values in confirm_info.items():
-                if intent in ["通用"]:  # for RISAWOZ
-                    continue
-                for values in slot_values.values():
-                    reference_task_success[dial_id]["tasks"][intent]["confirmation"] += values
+                    pred_turn_id += 1
 
-        bleu = compute_bleu(predicted_response, reference_response)
-        ser = compute_ser(predicted_response, reference_act_values)
+                    # For each task, the last value for each slot are considered as final requested information from user
+                    for action in turn["Actions"]:
+                        trans_slot = action["slot"]
+                        if (
+                            (action["act"] in ["inform", "offer"])
+                            and (len(action["value"]) > 0)
+                            and action["slot"] != "available_options"
+                            and action["slot"] != "可用选项"
+                        ):
+                            for i in range(len(intent)):
+                                # for RiSAWOZ: filter turn actions with current intent
+                                if len(intent) <= 1 or action["domain"] == intent[i]:
+                                    user_requested_info[intent[i]][trans_slot] = action["value"]
+                        elif (action["act"] == "confirm") and (len(action["value"]) > 0):
+                            confirm_info[intent][trans_slot] = action["value"]
+        for intent, slot_values in user_requested_info.items():
+            if intent in ["通用"]:  # for RiSAWOZ
+                continue
+            for values in slot_values.values():
+                reference_task_success[dial_id]["tasks"][intent]["inform+offer"] += values
+        for intent, slot_values in confirm_info.items():
+            if intent in ["通用"]:  # for RiSAWOZ
+                continue
+            for values in slot_values.values():
+                reference_task_success[dial_id]["tasks"][intent]["confirmation"] += values
 
-        da_acc = compute_da(reference_actions, predicted_actions)
+    bleu = compute_bleu(predicted_response, reference_response)
+    ser = compute_ser(predicted_response, reference_act_values)
+    da_acc = compute_da(predicted_actions, reference_actions)
 
-        success_rate, api_acc, task_info = compute_success_rate(predictions, reference_task_success)
+    success_rate, api_acc, task_info = compute_success_rate(predictions, reference_task_success)
 
-    if 'Averaged_task_success' in task_info:
-        task_info['Averaged_task_success'] *= 100
     return OrderedDict(
         {
-            "bleu": bleu * 100,
-            "ser": ser * 100,
-            "success_rate": success_rate * 100,
-            "api_acc": api_acc * 100,
-            "da_acc": da_acc * 100,
-            "jga": JGA * 100,
+            "bleu": bleu,
+            "ser": ser,
+            "success_rate": success_rate,
+            "api_acc": api_acc,
+            "da_acc": da_acc,
+            "jga": jga,
             "task_info": task_info,
         }
     )
 
 
-quoted_pattern = re.compile(r'" (.*?) "')
-
-
-def null_to_empty(pred):
-    for dicti in pred:
-        for k, v in dicti.items():
-            if v == 'null':
-                dicti[k] = ''
-            elif v == ['null']:
-                dicti[k] = []
-
-
-# out_da = open('out_da.tsv', 'w')
-
-
-def compute_da(refs, preds):
-    da = 0.0
-    for ref, pred in zip(refs, preds):
-        if pred:
-            if ref == pred:
-                da += 1
-            # else:
-            # 	out_da.write(str(pred) + '\t' + str(ref) + '\n')
-    return da / len(preds)
-
-
-def compute_ser(preds, act_values):
-    ser = 0.0
-    for pred, values in zip(preds, act_values):
-        # remove emtpy slot values
-        missing = False
-        if len(values):
-            for val in values:
-                if str(val) not in pred:
-                    missing = True
-        if missing:
-            ser += 1.0
-    return ser / len(preds)
-
-
 def eval_file(args, prediction_file_path, reference_file_path):
+    global FAST_EVAL
+    FAST_EVAL = args.fast_eval
 
     reference_data = {}
     for reference_file_path in reference_file_path.split("__"):
@@ -384,7 +411,7 @@ def eval_file(args, prediction_file_path, reference_file_path):
         else:
             args.setting = 'en'
 
-    results = compute_result(args, predictions, reference_data)
+    results = compute_result(predictions, reference_data)
 
     return results
 
@@ -392,11 +419,11 @@ def eval_file(args, prediction_file_path, reference_file_path):
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--reference_file_path", type=str, default="data/test.json", help="path of reference")
-    parser.add_argument("--prediction_file_path", type=str, default="data/test.json", help="path of prediction")
-    parser.add_argument("--eval_task", type=str, default="end2end", help="end2end, dst, response")
+    parser.add_argument("--prediction_file_path", type=str, help="path of prediction")
     parser.add_argument("--setting", type=str, default="en", help="en, zh, en&zh, en2zh, zh2en")
     parser.add_argument("--result_path", type=str, default="./", help="eval_model or eval_file?")
     parser.add_argument("--save_prefix", type=str, default="", help="prefix of save file name")
+    parser.add_argument("--fast_eval", action='store_true', help="skip time consuming normalization step")
 
     args = parser.parse_args()
 
@@ -405,7 +432,7 @@ def main():
 
     results = eval_file(args, args.prediction_file_path, args.reference_file_path)
 
-    with open(os.path.join(args.result_path, f"{args.save_prefix}{args.setting}_{args.eval_task}_result.json"), "w") as f:
+    with open(os.path.join(args.result_path, f"{args.save_prefix}{args.setting}_result.json"), "w") as f:
         json.dump(
             results,
             f,

@@ -2,6 +2,7 @@ import copy
 import json
 import os
 import re
+import subprocess
 from collections import OrderedDict, defaultdict
 
 from word2number import w2n
@@ -12,13 +13,8 @@ from dialogues.bitod.src.knowledgebase.en_zh_mappings import (
     en2zh_ACT_MAP,
     en2zh_RELATION_MAP,
     en2zh_SLOT_MAP,
-    en2zh_VALUE_MAP,
-    en_API_MAP,
     entity_map,
     reverse_entity_map,
-    zh2en_SLOT_MAP,
-    zh2en_VALUE_MAP,
-    zh_en_API_MAP,
 )
 
 
@@ -114,14 +110,6 @@ def state2constraints(dict_data):
     return constraints
 
 
-def is_int(val):
-    try:
-        _ = int(val)
-    except ValueError:
-        return False
-    return True
-
-
 def canonicalize_constraints(dict_data):
     # converts the constraints dictionary in the original data to canonical form
     constraints = {}
@@ -129,15 +117,11 @@ def canonicalize_constraints(dict_data):
         for slot, values in const.items():
             relation = values[values.find(".") + 1 : values.find("(")]
             values = values[values.find("(") + 1 : -1]
-            values = values.replace('in the afternoon', 'pm')
-            values = values.replace(' and ', ' & ')
             values = entity_map.get(values, values)
 
             if relation == "one_of" or relation == en2zh_RELATION_MAP["one_of"]:
                 values = values.split(" , ")
-                # values.sort()
             else:
-                # values = int(values) if is_int(values) else values
                 values = convert_to_int(values, word2number=True)
             if relation == "one_of" or relation == en2zh_RELATION_MAP["one_of"]:
                 constraints[slot] = api.is_one_of(values)
@@ -247,6 +231,8 @@ def action2span_for_single_intent(agent_actions, intent, setting):
 
     for action in agent_actions:
         act, slot, relation, values = action['act'], action['slot'], action['relation'], action['value']
+        act = act.lower()
+
         if not act:
             # TODO: there are few annotation errors for act in RiSAWOZ, which makes "act" field empty
             #       this may cause unknown problems
@@ -274,13 +260,14 @@ def action2span_for_single_intent(agent_actions, intent, setting):
             'greeting',
             'thank_you',
             'negate',
-            # for RiSAWOZ
-            'inform',
-            'general',
-            'bye',
-            'recommend',
-            'no-offer',
         ]:
+            # TODO: can't include here. it overlaps with bitod acts
+            #             # for RiSAWOZ
+            #             'inform',
+            #             'general',
+            #             'bye',
+            #             'recommend',
+            #             'no-offer',
             action_text += f'{act} , '
         elif orig_act in ['request', 'request_update']:
             action_text += f'{act} {slot} , '
@@ -291,8 +278,10 @@ def action2span_for_single_intent(agent_actions, intent, setting):
                 if not relation:
                     relation = 'null'
             else:
-                assert slot, action
-                assert relation, action
+                # for RiSAWOZ
+                if orig_act not in ['inform', 'general', 'bye', 'recommend', 'no-offer']:
+                    assert slot, action
+                    assert relation, action
 
             action_text += f'{act} {slot} {relation} " {values} " , '
 
@@ -305,13 +294,67 @@ def action2span(agent_actions, intents, setting):
     # compatible action2span for both BiToD and RiSAWOZ
     action_text = ''
     if isinstance(intents, list):
-        assert setting == "zh"  # temporary setting since translation is not ready yet
+        pass
+        # assert setting == "zh"  # temporary setting since translation is not ready yet
     else:
         intents = [intents]
     for intent in intents:
         intent_action_text = action2span_for_single_intent(agent_actions, intent, setting) + ' '
         action_text += intent_action_text
     return action_text.strip()  # retain the original output for BiToD
+
+
+def action2template(agent_actions, intent, setting):
+    action_text = f'For {intent}, '
+
+    # sort based on act, then slot
+    agent_actions = list(sorted(agent_actions, key=lambda s: (s['act'], s['slot'])))
+
+    for action in agent_actions:
+        act, slot, relation, values = action['act'], action['slot'], action['relation'], action['value']
+        act = act.lower()
+
+        orig_act = act
+        if setting == 'zh':
+            if act not in en2zh_ACT_MAP:
+                print(f'Encountered illegal act: {act}')
+                continue
+            act = en2zh_ACT_MAP[act]
+
+        values = [val for val in values if val != ""]
+        if len(values):
+            values = ' | '.join(map(str, values))
+        else:
+            values = 'null'
+
+        if orig_act in [
+            'notify_success',
+            'notify_fail',
+            'affirm',
+            'request_more',
+            'goodbye',
+            'greeting',
+            'thank_you',
+            'negate',
+        ]:
+            action_text += f'agent action is {act}, '
+        elif orig_act in ['request', 'request_update']:
+            action_text += f'agent has a {act} for {slot}, '
+        else:
+            if orig_act in ['confirm']:
+                if not slot:
+                    slot = 'null'
+                if not relation:
+                    relation = 'null'
+            else:
+                assert slot, action
+                assert relation, action
+
+            action_text += f'agent {act} that {slot} slot is {relation} " {values} ", '
+
+    action_text = action_text.strip(', ')
+
+    return action_text
 
 
 def state2span(state, required_slots):
@@ -340,7 +383,7 @@ def state2span(state, required_slots):
                         values = [str(state[intent][slot]["value"])]
                     values = sorted(values)
                     values = " | ".join(values)
-                    span += f"{slot} {relation} \" {values} \" , "
+                    span += f'{slot} {relation} " {values} " , '
                 else:
                     span += f"{slot} #unknown , "
         else:
@@ -349,8 +392,44 @@ def state2span(state, required_slots):
                 values = [str(value) for value in state[intent][slot]["value"]]
                 values = sorted(values)
                 values = " | ".join(values)
-                span += f"{slot} {relation} \" {values} \" , "
+                span += f'{slot} {relation} " {values} " , '
     return span.strip(', ')
+
+
+def state2template(state, required_slots):
+    if not state:
+        return "null"
+
+    # sort based on intent and then sort slots for each intent
+    state = OrderedDict(sorted(state.items(), key=lambda s: s[0]))
+    state = {k: OrderedDict(sorted(v.items(), key=lambda s: s[0])) for k, v in state.items()}
+
+    spans = []
+    for intent in state:
+        # check the required slots
+        if intent not in required_slots:
+            print(f'{intent} not in required slots!')
+            continue
+        span = f"For {intent}, "
+        if len(required_slots[intent]) > 0:
+            for slot in required_slots[intent]:
+                if slot in state[intent]:
+                    relation = state[intent][slot]["relation"]
+                    values = [str(value) for value in state[intent][slot]["value"]]
+                    values = sorted(values)
+                    values = " | ".join(values)
+                    span += f'{slot} slot is {relation.replace("_", " ")} " {values} " , '
+                else:
+                    span += f"{slot} slot is #unknown, "
+        else:
+            for slot in state[intent]:
+                relation = state[intent][slot]["relation"]
+                values = [str(value) for value in state[intent][slot]["value"]]
+                values = sorted(values)
+                values = " | ".join(values)
+                span += f'{slot} slot is {relation.replace("_", " ")} " {values} " , '
+        spans.append(span.strip(', ') + '.')
+    return ' '.join(spans)
 
 
 def compute_lev_span(previous_state, new_state, intent):
@@ -378,8 +457,8 @@ def compute_lev_span(previous_state, new_state, intent):
             Lev += f"{slot} {relation} \" {values} \" , "
     for slot in old_state[intent]:
         if slot not in new_state[intent]:
-            print(intent, old_state[intent][slot])
-            Lev += f"{slot} #unkown , "
+            print(f'slot: {old_state[intent][slot]} for intent: {intent} is missing in the new state')
+            Lev += f"{slot} #unknown , "
     return Lev.strip(' ,')
 
 
@@ -435,43 +514,6 @@ def knowledge2span(knowledge):
     return knowledge_text.strip(', ')
 
 
-def create_mixed_lang_text(input, output, pretraining_prefix):
-    if pretraining_prefix == "en2zh_trainsfer":
-        for k, v in en_API_MAP.items():
-            input = input.replace(f" {v}", f" {k}")
-            output = output.replace(f" {v}", f" {k}")
-        for k, v in zh_en_API_MAP.items():
-            input = input.replace(f" {v}", f" {k}")
-            output = output.replace(f" {v}", f" {k}")
-        for k, v in zh2en_SLOT_MAP.items():
-            input = input.replace(f" {v}", f" {k}")
-            output = output.replace(f" {v}", f" {k}")
-        for k, v in en2zh_RELATION_MAP.items():
-            input = input.replace(f" {k}", f" {v}")
-            output = output.replace(f" {k}", f" {v}")
-        for k, v in en2zh_VALUE_MAP.items():
-            input = input.replace(f" {k}", f" {v}")
-            output = output.replace(f" {k}", f" {v}")
-    elif pretraining_prefix == "zh2en_trainsfer":
-        for k, v in en_API_MAP.items():
-            input = input.replace(f" {k}", f" {v}")
-            output = output.replace(f" {k}", f" {v}")
-        for k, v in zh_en_API_MAP.items():
-            input = input.replace(f" {k}", f" {v}")
-            output = output.replace(f" {k}", f" {v}")
-        for k, v in zh2en_SLOT_MAP.items():
-            input = input.replace(f" {k}", f" {v}")
-            output = output.replace(f" {k}", f" {v}")
-        for k, v in en2zh_RELATION_MAP.items():
-            input = input.replace(f" {v}", f" {k}")
-            output = output.replace(f" {v}", f" {k}")
-        for k, v in zh2en_VALUE_MAP.items():
-            input = input.replace(f" {k}", f" {v}")
-            output = output.replace(f" {k}", f" {v}")
-
-    return input, output
-
-
 def clean_text(text, is_formal=False):
     text = text.strip()
     text = re.sub(' +', ' ', text)
@@ -481,3 +523,13 @@ def clean_text(text, is_formal=False):
         text = text.replace('"', '')
 
     return text
+
+
+def get_commit():
+    directory = os.path.dirname(__file__)
+    return (
+        subprocess.Popen("cd {} && git log | head -n 1".format(directory), shell=True, stdout=subprocess.PIPE)
+        .stdout.read()
+        .split()[1]
+        .decode()
+    )

@@ -5,7 +5,7 @@ import re
 from ..bitod.src.evaluate import eval_file
 from ..bitod.src.knowledgebase.en_zh_mappings import api_names, r_en_API_MAP, required_slots
 from ..bitod.src.preprocess import prepare_data
-from ..bitod.src.utils import action2span, knowledge2span, span2action, span2state, state2span
+from ..bitod.src.utils import knowledge2span, span2state, state2span
 from ..main import Dataset
 from .src.knowledgebase import api
 
@@ -90,35 +90,5 @@ class Risawoz(Dataset):
         results = eval_file(args, prediction_path, reference_path)
         return results
 
-    def do_knowledge_reset(self, api_name):
-        do_reset = False
-        if api_name and 'HKMTR' not in api_name:
-            do_reset = True
-        return do_reset
-
     def postprocess_prediction(self, prediction, knowledge=None, lang='en'):
-        if re.search(rf'\( HKMTR {lang} \)', prediction) and 'offer shortest_path equal_to' in prediction:
-            action_dict = span2action(prediction, api_names)
-            domain = f'HKMTR {lang}'
-            metro_slots = set(item['slot'] for item in action_dict[domain])
-            for slot in ['estimated_time', 'price']:
-                if knowledge and slot in knowledge[domain] and slot not in metro_slots:
-                    action_dict[domain].append(
-                        {'act': 'offer', 'slot': slot, 'relation': 'equal_to', 'value': [knowledge[domain][slot]]}
-                    )
-
-            prediction = action2span(action_dict[domain], domain, lang)
-
-        if re.search(r'\( weathers search \)', prediction) and 'offer weather equal_to' in prediction:
-            action_dict = span2action(prediction, api_names)
-            domain = 'weathers search'
-            weather_slots = set(item['slot'] for item in action_dict[domain])
-            for slot in ['max_temp', 'min_temp']:
-                if knowledge and slot in knowledge[domain] and slot not in weather_slots:
-                    action_dict[domain].append(
-                        {'act': 'offer', 'slot': slot, 'relation': 'equal_to', 'value': [knowledge[domain][slot]]}
-                    )
-
-            prediction = action2span(action_dict[domain], domain, lang)
-
         return prediction

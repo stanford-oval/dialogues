@@ -10,7 +10,7 @@ from ...src.knowledgebase.en_zh_mappings import en2zh_SLOT_MAP, en_zh_API_MAP, e
 from .hk_mtr import MTR
 
 # mongodb_host = os.getenv('BITOD_MONGODB_HOST')
-mongodb_host = 'mongodb+srv://bitod:plGYPp44hASzGbmm@cluster0.vo7pq.mongodb.net/bilingual_tod?retryWrites=true&w=majority'
+mongodb_host = 'mongodb+srv://bitod:plGYPp44hASzGbmm@cluster0.vo7pq.mongodb.net/bilingual_tod?retryWrites=true&w=majority&ssl=true&ssl_cert_reqs=CERT_NONE'
 
 if mongodb_host:
     client = MongoClient(mongodb_host, authSource='admin')

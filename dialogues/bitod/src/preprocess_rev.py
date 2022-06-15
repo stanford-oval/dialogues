@@ -1,7 +1,10 @@
 import argparse
+import copy
 import json
 import os
 import random
+import re
+import subprocess
 from collections import OrderedDict, defaultdict
 
 # Mapping between intents, slots, and relations in English and Chinese
@@ -12,7 +15,7 @@ from dialogues.bitod.src.knowledgebase.en_zh_mappings import (
     zh2en_CARDINAL_MAP,
     zh_API_MAP,
 )
-from dialogues.bitod.src.utils import action2span, clean_text, compute_lev_span, get_commit, knowledge2span, state2span
+from dialogues.bitod.src.utils import action2span, clean_text, compute_lev_span, knowledge2span, state2span
 
 
 def translate_slots_to_english(text, do_translate=True):
@@ -28,16 +31,15 @@ def translate_slots_to_english(text, do_translate=True):
 
 
 def get_dials_sequential(args, dials):
+    target_lang = args.setting
     all_dial_ids = list(dials.keys())
-    few_dials_file = os.path.join(args.root, f"data/{args.setting}_fewshot_dials_{args.fewshot_percent}.json")
-
-    if not os.path.exists(few_dials_file):
+    if not os.path.exists(f"data/{target_lang}_fewshot_dials_{args.fewshot_percent}.json"):
         dial_ids = all_dial_ids[: int(len(all_dial_ids) * args.fewshot_percent // 100)]
-        print(f"few shot for {args.setting}, dialogue number: {len(dial_ids)}")
-        with open(few_dials_file, "w") as f:
+        print(f"few shot for {target_lang}, dialogue number: {len(dial_ids)}")
+        with open(f"data/{target_lang}_fewshot_dials_{args.fewshot_percent}.json", "w") as f:
             json.dump({"fewshot_dials": dial_ids}, f, indent=True)
     else:
-        with open(few_dials_file) as f:
+        with open(f"data/{target_lang}_fewshot_dials_{args.fewshot_percent}.json") as f:
             dial_ids = json.load(f)["fewshot_dials"]
     few_dials = {dial_id: dials[dial_id] for dial_id in dial_ids}
     dials = {dial_id: dials[dial_id] for dial_id in all_dial_ids if dial_id not in dial_ids}
@@ -46,32 +48,32 @@ def get_dials_sequential(args, dials):
 
 
 def get_dials_balanced(args, dials):
+    dialogue_dominant_domains = defaultdict(list)
+    domain_turn_counts = defaultdict(int)
+    for dial_id, dial in dials.items():
+        turn_domains = defaultdict(int)
+        dialogue_turns = dial["Events"]
+
+        for turn in dialogue_turns:
+            if turn["Agent"] == "User":
+                active_intent = API_MAP[turn["active_intent"]]
+
+                turn_domains[translate_slots_to_english(active_intent, args.english_slots)] += 1
+                domain_turn_counts[translate_slots_to_english(active_intent, args.english_slots)] += 1
+
+        max_domain = max(turn_domains, key=turn_domains.get)
+        dialogue_dominant_domains[max_domain].append(dial_id)
+
+    total = sum(list(domain_turn_counts.values()))
+    fewshot_dials = []
     all_dial_ids = list(dials.keys())
-    few_dials_file = os.path.join(args.root, f"data/{args.setting}_fewshot_dials_{args.fewshot_percent}_balanced.json")
+    for (domain, count) in domain_turn_counts.items():
+        num_fewshot = int(len(all_dial_ids) * (count / total) * (args.fewshot_percent / 100))
+        fewshot_dials += dialogue_dominant_domains[domain][:num_fewshot]
 
-    if not os.path.exists(few_dials_file):
-        dialogue_dominant_domains = defaultdict(list)
-        domain_turn_counts = defaultdict(int)
-        for dial_id, dial in dials.items():
-            turn_domains = defaultdict(int)
-            dialogue_turns = dial["Events"]
-
-            for turn in dialogue_turns:
-                if turn["Agent"] == "User":
-                    active_intent = API_MAP[turn["active_intent"]]
-
-                    turn_domains[translate_slots_to_english(active_intent, args.english_slots)] += 1
-                    domain_turn_counts[translate_slots_to_english(active_intent, args.english_slots)] += 1
-
-            max_domain = max(turn_domains, key=turn_domains.get)
-            dialogue_dominant_domains[max_domain].append(dial_id)
-
-        total = sum(list(domain_turn_counts.values()))
-        fewshot_dials = []
-        for (domain, count) in domain_turn_counts.items():
-            num_fewshot = int(len(all_dial_ids) * (count / total) * (args.fewshot_percent / 100))
-            fewshot_dials += dialogue_dominant_domains[domain][:num_fewshot]
-        print(f"balanced few shot for {args.setting}, dialogue number: {len(fewshot_dials)}")
+    target_lang = args.setting
+    if not os.path.exists(f"data/{target_lang}_fewshot_dials_{args.fewshot_percent}_balanced.json"):
+        print(f"balanced few shot for {target_lang}, dialogue number: {len(fewshot_dials)}")
         print("turn statistics:")
         for (domain, count) in domain_turn_counts.items():
             print(domain, "comprises of", count, "or", int(100 * count / total + 0.5), "percent")
@@ -86,16 +88,69 @@ def get_dials_balanced(args, dials):
         for (domain, count) in res_turn_counts.items():
             print(domain, "comprises of", count, "or", int(100 * count / total + 0.5), "percent")
 
-        with open(few_dials_file, "w") as f:
+        with open(f"data/{target_lang}_fewshot_dials_{args.fewshot_percent}_balanced.json", "w") as f:
             json.dump({"fewshot_dials": fewshot_dials}, f, indent=True)
             few_dial_ids = fewshot_dials
     else:
-        with open(few_dials_file) as f:
+        with open(f"data/{target_lang}_fewshot_dials_{args.fewshot_percent}_balanced.json") as f:
             few_dial_ids = json.load(f)["fewshot_dials"]
     few_dials = {dial_id: dials[dial_id] for dial_id in few_dial_ids}
     dials = {dial_id: dials[dial_id] for dial_id in all_dial_ids if dial_id not in few_dial_ids}
 
     return dials, few_dials
+
+
+def shorten_path_for_kb(last_dialogue_state, kb_results):
+    if 'shortest_path' in kb_results:
+        old_shortest_path = kb_results['shortest_path']
+        departure, destination = (
+            last_dialogue_state['HKMTR en']['departure']['value'][0],
+            last_dialogue_state['HKMTR en']['destination']['value'][0],
+        )
+        new_shortest_path = f"You will depart from {departure} and arrive at {destination}."
+        kb_results['shortest_path'] = new_shortest_path
+    elif '最短路线' in kb_results:
+        old_shortest_path = kb_results['最短路线']
+        departure, destination = (
+            last_dialogue_state['香港地铁']['出发地']['value'][0],
+            last_dialogue_state['香港地铁']['目的地']['value'][0],
+        )
+        new_shortest_path = f"你将从{departure}出发，抵达{destination}。"
+        kb_results['最短路线'] = new_shortest_path
+
+    return old_shortest_path, new_shortest_path
+
+
+def shorten_path_for_response(target, active_intent, old_shortest_path, new_shortest_path):
+    if 'HKMTR en' in active_intent:
+        pattern = '[^\.]*?\d+\.\d+[^\.]*\.'
+        if old_shortest_path and old_shortest_path in target:
+            last_sentence = re.search(pattern, target)
+            if last_sentence:
+                last_sentence = last_sentence.group().strip('. ')
+                target = new_shortest_path + ' ' + last_sentence + '.'
+            else:
+                target = new_shortest_path
+    if '香港地铁' in active_intent:
+        pattern = '[^。]*?\d+\.\d+[^。]*。'
+        if old_shortest_path and old_shortest_path in target:
+            last_sentence = re.search(pattern, target)
+            if last_sentence:
+                last_sentence = last_sentence.group().strip('。 ')
+                target = new_shortest_path + ' ' + last_sentence + '。'
+            else:
+                target = new_shortest_path
+
+    target = re.sub(' +', ' ', target)
+    return target
+
+
+def shorten_path_for_actions(actions, new_shortest_path):
+    for asrv in actions:
+        if asrv['slot'] == 'shortest_path':
+            asrv['value'] = [new_shortest_path]
+        elif asrv['slot'] == '最短路线':
+            asrv['value'] = [new_shortest_path]
 
 
 def read_data(args, path_names, setting, max_history=3):
@@ -106,33 +161,35 @@ def read_data(args, path_names, setting, max_history=3):
         with open(path_name) as file:
             dials = json.load(file)
 
+            new_shortest_path, old_shortest_path = None, None
             data = []
             for dial_id, dial in dials.items():
                 dialogue_turns = dial["Events"]
 
                 dialog_history = []
                 knowledge = defaultdict(dict)
-                prev_knowledge = "null"
-                prev_state = {}
+                last_knowledge_text = "null"
+                last_dialogue_state = {}
                 count = 1
-                turn_id = 0
 
+                intents = []
+
+                turn_id = 0
                 while turn_id < len(dialogue_turns):
                     turn = dialogue_turns[turn_id]
 
                     if turn["Agent"] == "User":
-                        if not isinstance(turn["active_intent"], list):
-                            # for compatibility of both BiTOD and RiSAWOZ
-                            turn["active_intent"] = [turn["active_intent"]]
+                        if args.gen_full_state:
+                            if API_MAP[turn["active_intent"]] not in intents:
+                                intents.append(API_MAP[turn["active_intent"]])
+                        else:
+                            intents = [API_MAP[turn["active_intent"]]]
 
-                        intents = [API_MAP[intent] for intent in turn["active_intent"]]
-                        task = ' / '.join([translate_slots_to_english(intent, args.english_slots) for intent in intents])
+                        active_intent = intents[-1]
 
                         # accumulate dialogue utterances
                         if args.use_user_acts:
-                            # TODO: risawoz has multiple
-                            assert len(intents) == 1
-                            action_text = action2span(turn["Actions"], intents[0], setting)
+                            action_text = action2span(turn["Actions"], active_intent, setting)
                             action_text = clean_text(action_text, is_formal=True)
                             action_text = translate_slots_to_english(action_text, args.english_slots)
                             dialog_history.append("USER_ACTS: " + action_text)
@@ -152,30 +209,30 @@ def read_data(args, path_names, setting, max_history=3):
                         else:
                             dialog_history_text_for_rg = dialog_history_text
 
-                        # convert dict of slot-values into text
-                        state_text = state2span(prev_state, required_slots)
-
                         current_state = {API_MAP[k]: v for k, v in turn["state"].items()}
                         current_state = OrderedDict(sorted(current_state.items(), key=lambda s: s[0]))
                         current_state = {
                             k: OrderedDict(sorted(v.items(), key=lambda s: s[0])) for k, v in current_state.items()
                         }
 
-                        if args.gen_full_state:
+                        # convert dict of slot-values into text
+                        state_text = state2span(current_state, required_slots)
+
+                        if args.gen_lev_span:
+                            # compute the diff between old state and new state
+                            intent = intents[0]
+                            target = compute_lev_span(last_dialogue_state, current_state, intent)
+                        elif args.gen_full_state:
                             targets = []
-                            for intent in current_state.keys():
+                            for intent in intents:
                                 targets.append(compute_lev_span({}, current_state, intent))
                             target = ' '.join(targets)
-                        elif args.gen_lev_span:
-                            # compute the diff between old state and new state
-                            assert len(intents) == 1
-                            target = compute_lev_span(prev_state, current_state, intents[0])
                         else:
-                            assert len(intents) == 1
-                            target = compute_lev_span({}, current_state, intents[0])
+                            intent = intents[0]
+                            target = compute_lev_span({}, current_state, intent)
 
                         # update last dialogue state
-                        prev_state = current_state
+                        last_dialogue_state = current_state
 
                         input_text = " ".join(
                             [
@@ -191,7 +248,7 @@ def read_data(args, path_names, setting, max_history=3):
 
                         dst_data_detail = {
                             "dial_id": dial_id,
-                            "task": task,
+                            "task": translate_slots_to_english(active_intent, args.english_slots),
                             "turn_id": count,
                             "input_text": input_text,
                             "output_text": translate_slots_to_english(target, args.english_slots),
@@ -203,23 +260,34 @@ def read_data(args, path_names, setting, max_history=3):
                         turn_id += 1
 
                     elif turn["Agent"] == "Wizard":
-                        # convert dict of slot-values into text
-                        state_text = state2span(prev_state, required_slots)
 
-                        input_text = " ".join(
-                            [
-                                "API:",
-                                "<knowledge>",
-                                translate_slots_to_english(prev_knowledge, args.english_slots),
-                                "<endofknowledge>",
-                                "<state>",
-                                translate_slots_to_english(state_text, args.english_slots),
-                                "<endofstate>",
-                                "<history>",
-                                dialog_history_text_for_api_da,
-                                "<endofhistory>",
-                            ]
-                        )
+                        # if not args.no_state:
+                        #     input_text = " ".join(
+                        #         [
+                        #             "API:",
+                        #             "<knowledge>",
+                        #             translate_slots_to_english(last_knowledge_text, args.english_slots),
+                        #             "<endofknowledge>",
+                        #             "<state>",
+                        #             translate_slots_to_english(state_text, args.english_slots),
+                        #             "<endofstate>",
+                        #             "<history>",
+                        #             dialog_history_text_for_api_da,
+                        #             "<endofhistory>",
+                        #         ]
+                        #     )
+                        # else:
+                        #     input_text = " ".join(
+                        #         [
+                        #             "API:",
+                        #             "<knowledge>",
+                        #             translate_slots_to_english(last_knowledge_text, args.english_slots),
+                        #             "<endofknowledge>",
+                        #             "<history>",
+                        #             dialog_history_text_for_api_da,
+                        #             "<endofhistory>",
+                        #         ]
+                        #     )
 
                         if turn["Actions"] == "query":
                             # do api call
@@ -228,73 +296,94 @@ def read_data(args, path_names, setting, max_history=3):
                             next_turn = dialogue_turns[turn_id + 1]
 
                             if int(next_turn["TotalItems"]) == 0:
-                                # TODO: risawoz has multiple intents
-                                prev_knowledge = f"( {intents[0]} ) Message = No item available."
+                                last_knowledge_text = f"( {active_intent} ) Message = No item available."
                             else:
-                                for intent in intents:
-                                    if intent in next_turn["Item"]:
-                                        knowledge[intent].update(next_turn["Item"][intent])
-                                    else:
-                                        knowledge[intent].update(next_turn["Item"])
+                                # they only return 1 item
+                                kb_results = next_turn["Item"]
+                                if args.shorten_path:
+                                    old_shortest_path, new_shortest_path = shorten_path_for_kb(kb_results)
 
-                                prev_knowledge = knowledge2span(knowledge)
+                                knowledge[active_intent].update(kb_results)
+                                last_knowledge_text = knowledge2span(knowledge)
 
-                            api_data_detail = {
-                                "dial_id": dial_id,
-                                "task": task,
-                                "turn_id": count,
-                                "input_text": input_text,
-                                "output_text": "yes",
-                                "train_target": "api",
-                            }
-
-                            data.append(api_data_detail)
+                            # api_data_detail = {
+                            #     "dial_id": dial_id,
+                            #     "task": translate_slots_to_english(active_intent, args.english_slots),
+                            #     "turn_id": count,
+                            #     "input_text": input_text,
+                            #     "output_text": "yes",
+                            #     "train_target": "api",
+                            # }
+                            #
+                            # data.append(api_data_detail)
 
                             # skip knowledge turn since we already processed it
                             turn_id += 2
                             turn = dialogue_turns[turn_id]
 
                         else:
+                            pass
 
                             # no api call
-                            api_data_detail = {
-                                "dial_id": dial_id,
-                                "task": task,
-                                "turn_id": count,
-                                "input_text": input_text,
-                                "output_text": "no",
-                                "train_target": "api",
-                            }
+                            # api_data_detail = {
+                            #     "dial_id": dial_id,
+                            #     "task": translate_slots_to_english(active_intent, args.english_slots),
+                            #     "turn_id": count,
+                            #     "input_text": input_text,
+                            #     "output_text": "no",
+                            #     "train_target": "api",
+                            # }
+                            #
+                            # data.append(api_data_detail)
 
-                            data.append(api_data_detail)
+                        target = clean_text(turn["Text"])
+                        actions = turn["Actions"]
+
+                        if args.shorten_path:
+                            target = shorten_path_for_response(target, active_intent, old_shortest_path, new_shortest_path)
+                            shorten_path_for_actions(actions, new_shortest_path)
+
+                        action_text = action2span(turn["Actions"], active_intent, setting)
+                        action_text = clean_text(action_text, is_formal=True)
+                        action_text = translate_slots_to_english(action_text, args.english_slots)
 
                         input_text = " ".join(
                             [
                                 "DA:",
                                 "<knowledge>",
-                                translate_slots_to_english(prev_knowledge, args.english_slots),
+                                translate_slots_to_english(last_knowledge_text, args.english_slots),
                                 "<endofknowledge>",
-                                "<state>",
-                                translate_slots_to_english(state_text, args.english_slots),
-                                "<endofstate>",
+                                "<actions>",
+                                action_text,
+                                "<endofactions>",
                                 "<history>",
                                 dialog_history_text_for_api_da,
                                 "<endofhistory>",
                             ]
                         )
 
-                        target = clean_text(turn["Text"])
+                        new_last_dialouge_state = copy.deepcopy(last_dialogue_state)
+                        user_re = re.compile('(?:USER|USER_ACTS): (.*?)(?:$| <)')
+                        user_text = user_re.search(dialog_history_text_for_api_da).group(1)
+                        for intent in last_dialogue_state:
+                            for slot in last_dialogue_state[intent]:
+                                values = [str(value) for value in last_dialogue_state[intent][slot]["value"]]
+                                for val in values:
+                                    if val in ["don't care", "不在乎"] and slot in user_text:
+                                        continue
+                                    elif val == '#unknown':
+                                        continue
+                                    elif val not in input_text and slot in new_last_dialouge_state[intent]:
+                                        new_last_dialouge_state[intent].pop(slot)
 
-                        action_text = action2span(turn["Actions"], intents, setting)
-                        action_text = clean_text(action_text, is_formal=True)
-                        action_text = translate_slots_to_english(action_text, args.english_slots)
+                        state_text = state2span(new_last_dialouge_state, required_slots)
 
                         acts_data_detail = {
                             "dial_id": dial_id,
-                            "task": task,
+                            "task": translate_slots_to_english(active_intent, args.english_slots),
                             "turn_id": count,
                             "input_text": input_text,
-                            "output_text": action_text,
+                            "output_text": translate_slots_to_english(state_text, args.english_slots),
                             "train_target": "da",
                         }
                         data.append(acts_data_detail)
@@ -302,9 +391,9 @@ def read_data(args, path_names, setting, max_history=3):
                         input_text = " ".join(
                             [
                                 "RG:",
-                                "<actions>",
-                                action_text,
-                                "<endofactions>",
+                                "<response>",
+                                target,
+                                "<endofresponse>",
                                 "<history>",
                                 dialog_history_text_for_rg,
                                 "<endofhistory>",
@@ -313,10 +402,10 @@ def read_data(args, path_names, setting, max_history=3):
 
                         response_data_detail = {
                             "dial_id": dial_id,
-                            "task": task,
+                            "task": translate_slots_to_english(active_intent, args.english_slots),
                             "turn_id": count,
                             "input_text": input_text,
-                            "output_text": target,
+                            "output_text": action_text,
                             "train_target": "rg",
                         }
                         data.append(response_data_detail)
@@ -335,6 +424,16 @@ def read_data(args, path_names, setting, max_history=3):
     return data
 
 
+def get_commit():
+    directory = os.path.dirname(__file__)
+    return (
+        subprocess.Popen("cd {} && git log | head -n 1".format(directory), shell=True, stdout=subprocess.PIPE)
+        .stdout.read()
+        .split()[1]
+        .decode()
+    )
+
+
 def prepare_data(args, path_train, path_dev, path_test):
     # "en, zh, en&zh, en2zh, zh2en"
     data_train, data_fewshot, data_dev, data_test = None, None, None, None
@@ -347,7 +446,6 @@ def prepare_data(args, path_train, path_dev, path_test):
         train_data = read_data(args, path_train, args.setting, args.max_history)
         with open(path_train[0]) as file:
             dials = json.load(file)
-
         if args.sampling == "sequential":
             train_dials, few_dials = get_dials_sequential(args, dials)
         else:
@@ -372,10 +470,9 @@ def prepare_data(args, path_train, path_dev, path_test):
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--root", type=str, default='../', help='code root directory')
-    parser.add_argument("--data_dir", type=str, default="data", help="path to save original data, relative to root dir")
+    parser.add_argument("--root", type=str, default='dialogues/bitod/', help='data root directory')
     parser.add_argument(
-        "--save_dir", type=str, default="data/preprocessed", help="path to save preprocessed data, relative to root dir"
+        "--save_dir", type=str, default="data/preprocessed_rev/", help="path to save prerpocessed data for training"
     )
     parser.add_argument("--setting", type=str, default="en", help="en, zh, en_zh")
 
@@ -390,7 +487,10 @@ def main():
     parser.add_argument("--last_two_agent_turns", action='store_true')
     parser.add_argument("--english_slots", action='store_true')
     parser.add_argument("--use_natural_response", action='store_true')
+    parser.add_argument("--no_state", action='store_true')
     parser.add_argument("--only_user_rg", action='store_true')
+
+    parser.add_argument("--shorten_path", action='store_true')
 
     args = parser.parse_args()
 

@@ -16,9 +16,10 @@ class Bitod(Dataset):
     def __init__(self, name='bitod'):
         super().__init__(name)
 
-        self.state_re = re.compile('<state> (.*?)(?:$|<)')
-        self.knowledge_re = re.compile('<knowledge> (.*?)(?:$|<)')
-        self.actions_re = re.compile('<actions> (.*?)(?:$|<)')
+        self.state_re = re.compile('<state> (.*?) <endofstate>')
+        self.knowledge_re = re.compile('<knowledge> (.*?) <endofknowledge>')
+        self.hisotry_re = re.compile('<history> (.*?) <endofhistory>')
+        self.actions_re = re.compile('<actions> (.*?) <endofactions>')
 
     def domain2api_name(self, domain):
         return r_en_API_MAP.get(domain, domain)
@@ -94,7 +95,7 @@ class Bitod(Dataset):
         return do_reset
 
     def postprocess_prediction(self, prediction, knowledge=None, lang='en'):
-        if re.search(rf'\( HKMTR {lang} \)', prediction) and 'offer shortest_path equal_to' in prediction:
+        if re.search(rf'\( HKMTR {lang} \)', prediction):
             action_dict = span2action(prediction, api_names)
             domain = f'HKMTR {lang}'
             metro_slots = set(item['slot'] for item in action_dict[domain])
@@ -106,11 +107,11 @@ class Bitod(Dataset):
 
             prediction = action2span(action_dict[domain], domain, lang)
 
-        if re.search(r'\( weathers search \)', prediction) and 'offer weather equal_to' in prediction:
+        if re.search(r'\( weathers search \)', prediction):
             action_dict = span2action(prediction, api_names)
             domain = 'weathers search'
             weather_slots = set(item['slot'] for item in action_dict[domain])
-            for slot in ['max_temp', 'min_temp']:
+            for slot in ['max_temp', 'min_temp', 'weather', 'city']:
                 if knowledge and slot in knowledge[domain] and slot not in weather_slots:
                     action_dict[domain].append(
                         {'act': 'offer', 'slot': slot, 'relation': 'equal_to', 'value': [knowledge[domain][slot]]}
