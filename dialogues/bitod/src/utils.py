@@ -2,6 +2,7 @@ import copy
 import json
 import os
 import re
+import subprocess
 from collections import OrderedDict, defaultdict
 
 from word2number import w2n
@@ -424,8 +425,8 @@ def compute_lev_span(previous_state, new_state, intent):
             Lev += f"{slot} {relation} \" {values} \" , "
     for slot in old_state[intent]:
         if slot not in new_state[intent]:
-            print(intent, old_state[intent][slot])
-            Lev += f"{slot} #unkown , "
+            print(f'slot: {old_state[intent][slot]} for intent: {intent} is missing in the new state')
+            Lev += f"{slot} #unknown , "
     return Lev.strip(' ,')
 
 
@@ -490,3 +491,13 @@ def clean_text(text, is_formal=False):
         text = text.replace('"', '')
 
     return text
+
+
+def get_commit():
+    directory = os.path.dirname(__file__)
+    return (
+        subprocess.Popen("cd {} && git log | head -n 1".format(directory), shell=True, stdout=subprocess.PIPE)
+        .stdout.read()
+        .split()[1]
+        .decode()
+    )

@@ -19,7 +19,9 @@ def read_require_slots():
                 required = tuple(sorted(ontology["required"]))
 
             require_slots[api_name] = required
+
     require_slots['HKMTR zh'] = require_slots['HKMTR_en']
+
     return require_slots
 
 

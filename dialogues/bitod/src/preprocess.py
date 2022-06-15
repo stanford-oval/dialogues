@@ -2,10 +2,11 @@ import argparse
 import json
 import os
 import random
-import subprocess
 from collections import OrderedDict, defaultdict
 
 # Mapping between intents, slots, and relations in English and Chinese
+from bitod.src.utils import get_commit
+
 from dialogues.bitod.src.knowledgebase.en_zh_mappings import (
     API_MAP,
     required_slots,
@@ -115,15 +116,16 @@ def read_data(args, path_names, setting, max_history=3):
                 last_knowledge_text = "null"
                 last_dialogue_state = {}
                 count = 1
+                turn_id = 0
 
                 intents = []
 
-                turn_id = 0
                 while turn_id < len(dialogue_turns):
                     turn = dialogue_turns[turn_id]
 
                     if turn["Agent"] == "User":
                         if args.gen_full_state:
+                            # accumulate intents across turns for each dialogue
                             if API_MAP[turn["active_intent"]] not in intents:
                                 intents.append(API_MAP[turn["active_intent"]])
                         else:
@@ -162,18 +164,18 @@ def read_data(args, path_names, setting, max_history=3):
                             k: OrderedDict(sorted(v.items(), key=lambda s: s[0])) for k, v in current_state.items()
                         }
 
-                        if args.gen_lev_span:
-                            # compute the diff between old state and new state
-                            intent = intents[0]
-                            target = compute_lev_span(last_dialogue_state, current_state, intent)
-                        elif args.gen_full_state:
+                        if args.gen_full_state:
                             targets = []
                             for intent in intents:
                                 targets.append(compute_lev_span({}, current_state, intent))
                             target = ' '.join(targets)
+                        elif args.gen_lev_span:
+                            # compute the diff between old state and new state
+                            assert len(intents) == 1
+                            target = compute_lev_span(last_dialogue_state, current_state, intents[0])
                         else:
-                            intent = intents[0]
-                            target = compute_lev_span({}, current_state, intent)
+                            assert len(intents) == 1
+                            target = compute_lev_span({}, current_state, intents[0])
 
                         # update last dialogue state
                         last_dialogue_state = current_state
@@ -368,16 +370,6 @@ def read_data(args, path_names, setting, max_history=3):
                         count += 1
 
     return data
-
-
-def get_commit():
-    directory = os.path.dirname(__file__)
-    return (
-        subprocess.Popen("cd {} && git log | head -n 1".format(directory), shell=True, stdout=subprocess.PIPE)
-        .stdout.read()
-        .split()[1]
-        .decode()
-    )
 
 
 def prepare_data(args, path_train, path_dev, path_test):
