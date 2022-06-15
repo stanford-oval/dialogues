@@ -1,9 +1,7 @@
 import argparse
-import copy
 import json
 import os
 import random
-import re
 import subprocess
 from collections import OrderedDict, defaultdict
 
@@ -100,139 +98,6 @@ def get_dials_balanced(args, dials):
     return dials, few_dials
 
 
-def shorten_path_for_kb_raw(last_dialogue_state, kb_results):
-    old_shortest_path, new_shortest_path = '', ''
-    if 'shortest_path' in kb_results:
-        old_shortest_path = kb_results['shortest_path']
-        departure, destination = (
-            last_dialogue_state['HKMTR_en']['departure']['value'][0],
-            last_dialogue_state['HKMTR_en']['destination']['value'][0],
-        )
-        new_shortest_path = f"You will depart from {departure} and arrive at {destination}."
-        kb_results['shortest_path'] = new_shortest_path
-    elif '最短路线' in kb_results:
-        old_shortest_path = kb_results['最短路线']
-        departure, destination = (
-            last_dialogue_state['香港地铁']['出发地']['value'][0],
-            last_dialogue_state['香港地铁']['目的地']['value'][0],
-        )
-        new_shortest_path = f"你将从{departure}出发，抵达{destination}。"
-        kb_results['最短路线'] = new_shortest_path
-
-    return old_shortest_path, new_shortest_path
-
-
-def shorten_path_for_kb(last_dialogue_state, kb_results):
-    old_shortest_path, new_shortest_path = '', ''
-    if 'shortest_path' in kb_results:
-        old_shortest_path = kb_results['shortest_path']
-        departure, destination = (
-            last_dialogue_state['HKMTR en']['departure']['value'][0],
-            last_dialogue_state['HKMTR en']['destination']['value'][0],
-        )
-        new_shortest_path = f"You will depart from {departure} and arrive at {destination}."
-        kb_results['shortest_path'] = new_shortest_path
-    elif '最短路线' in kb_results:
-        old_shortest_path = kb_results['最短路线']
-        departure, destination = (
-            last_dialogue_state['香港地铁']['出发地']['value'][0],
-            last_dialogue_state['香港地铁']['目的地']['value'][0],
-        )
-        new_shortest_path = f"你将从{departure}出发，抵达{destination}。"
-        kb_results['最短路线'] = new_shortest_path
-
-    return old_shortest_path, new_shortest_path
-
-
-def shorten_path_for_response(target, active_intent, old_shortest_path, new_shortest_path):
-    if 'HKMTR en' in active_intent:
-        pattern = '[^\.]*?\d+\.\d+[^\.]*\.'
-        if old_shortest_path and old_shortest_path in target:
-            last_sentence = re.search(pattern, target)
-            if last_sentence:
-                last_sentence = last_sentence.group().strip('. ')
-                target = new_shortest_path + ' ' + last_sentence + '.'
-            else:
-                target = new_shortest_path
-    if '香港地铁' in active_intent:
-        pattern = '[^。]*?\d+\.\d+[^。]*。'
-        if old_shortest_path and old_shortest_path in target:
-            last_sentence = re.search(pattern, target)
-            if last_sentence:
-                last_sentence = last_sentence.group().strip('。 ')
-                target = new_shortest_path + ' ' + last_sentence + '。'
-            else:
-                target = new_shortest_path
-
-    target = re.sub(' +', ' ', target)
-    return target
-
-
-def shorten_path_for_actions(actions, new_shortest_path):
-    for asrv in actions:
-        if asrv['slot'] == 'shortest_path':
-            asrv['value'] = [new_shortest_path]
-        elif asrv['slot'] == '最短路线':
-            asrv['value'] = [new_shortest_path]
-
-
-def create_and_save_shorten_path(args, path_name, dials):
-    new_dials = copy.deepcopy(dials)
-    old_shortest_path, new_shortest_path = '', ''
-    for dial_id, dial in dials.items():
-        dialogue_turns = dial["Events"]
-        turn_id = 0
-        intents = []
-        while turn_id < len(dialogue_turns):
-            turn = dialogue_turns[turn_id]
-            if turn["Agent"] == "User":
-                if args.gen_full_state:
-                    if API_MAP[turn["active_intent"]] not in intents:
-                        intents.append(API_MAP[turn["active_intent"]])
-                else:
-                    intents = [API_MAP[turn["active_intent"]]]
-
-                active_intent = intents[-1]
-                current_state = turn["state"]
-                turn_id += 1
-
-            elif turn["Agent"] == "Wizard":
-                if turn["Actions"] == "query":
-                    assert dialogue_turns[turn_id + 1]["Agent"] == 'KnowledgeBase'
-                    next_turn = dialogue_turns[turn_id + 1]
-                    if int(next_turn["TotalItems"]) != 0:
-                        # they only return 1 item
-                        kb_results = next_turn["Item"]
-                        old_shortest_path, new_shortest_path = shorten_path_for_kb_raw(current_state, kb_results)
-                        new_dials[dial_id]["Events"][turn_id + 1]["Item"] = kb_results
-
-                    turn_id += 2
-
-                else:
-                    target = clean_text(turn["Text"])
-                    actions = copy.deepcopy(turn["Actions"])
-
-                    target = shorten_path_for_response(target, active_intent, old_shortest_path, new_shortest_path)
-                    shorten_path_for_actions(actions, new_shortest_path)
-
-                    new_dials[dial_id]["Events"][turn_id]["Text"] = target
-                    new_dials[dial_id]["Events"][turn_id]["Actions"] = actions
-
-                    turn_id += 1
-
-    os.makedirs(args.save_dir + f'/raw_modified/{args.version}/')
-    with open(
-        os.path.join(
-            args.save_dir + f'/raw_modified/{args.version}/',
-            f"{path_name.rsplit('/', 1)[1]}",
-        ),
-        "w",
-    ) as f:
-        if new_dials:
-            json.dump(new_dials, f, indent=True, ensure_ascii=False)
-    del new_dials
-
-
 def read_data(args, path_names, setting, max_history=3):
     print(("Reading all files from {}".format(path_names)))
 
@@ -240,8 +105,6 @@ def read_data(args, path_names, setting, max_history=3):
     for path_name in path_names:
         with open(path_name) as file:
             dials = json.load(file)
-            if args.shorten_path:
-                create_and_save_shorten_path(args, path_name, dials)
 
             data = []
             for dial_id, dial in dials.items():
@@ -393,8 +256,6 @@ def read_data(args, path_names, setting, max_history=3):
                             else:
                                 # they only return 1 item
                                 kb_results = next_turn["Item"]
-                                # if args.shorten_path:
-                                #     old_shortest_path, new_shortest_path = shorten_path_for_kb(last_dialogue_state, kb_results)
 
                                 knowledge[active_intent].update(kb_results)
                                 last_knowledge_text = knowledge2span(knowledge)
@@ -457,11 +318,6 @@ def read_data(args, path_names, setting, max_history=3):
                             )
 
                         target = clean_text(turn["Text"])
-
-                        # actions = turn["Actions"]
-                        # if args.shorten_path:
-                        #     target = shorten_path_for_response(target, active_intent, old_shortest_path, new_shortest_path)
-                        #     shorten_path_for_actions(actions, new_shortest_path)
 
                         action_text = action2span(turn["Actions"], active_intent, setting)
                         action_text = clean_text(action_text, is_formal=True)
@@ -579,8 +435,6 @@ def main():
     parser.add_argument("--use_natural_response", action='store_true')
     parser.add_argument("--no_state", action='store_true')
     parser.add_argument("--only_user_rg", action='store_true')
-
-    parser.add_argument("--shorten_path", action='store_true')
 
     args = parser.parse_args()
 
