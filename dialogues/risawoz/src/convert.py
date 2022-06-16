@@ -1,3 +1,4 @@
+import argparse
 import collections
 import itertools
 import json
@@ -67,7 +68,7 @@ def group_slot_values(actions):
     return processed_actions
 
 
-def build_user_event(turn):
+def build_user_event(turn, args):
     event = {"Agent": "User"}
     # actions
     # TODO: handle domain information
@@ -78,7 +79,13 @@ def build_user_event(turn):
         event_action = {}
         for i in range(len(action)):
             event_action[action_seq[i]] = action[i]
-        event_action["relation"] = "等于" if event_action["slot"] and event_action["value"] else ""
+        if event_action["slot"] and event_action["value"]:
+            if args.setting == 'zh':
+                event_action["relation"] = "等于"
+            else:
+                event_action["relation"] = "equal_to"
+        else:
+            event_action["relation"] = ""
         event_action["active_intent"] = event_action["domain"]
         actions.append(event_action)
     event["Actions"] = actions
@@ -134,20 +141,20 @@ def build_kb_event(wizard_query_event, mongodb_host, api_map=None):
     return event
 
 
-def build_dataset(original_data_path, mongodb_host, api_map=None):
+def build_dataset(original_data_path, mongodb_host, args, api_map=None):
     data = read_json_files_in_folder(original_data_path)
     processed_data = collections.defaultdict(dict)
     for key in tqdm(data.keys()):
         for dialogue in tqdm(data[key]):
             dialogue_id = dialogue["dialogue_id"]
             scenario = {
-                "UserTask": dialogue["goal"],
+                "UserTask": dialogue.get("goal", ""),
                 "WizardCapabilities": [{"Task": domain} for domain in dialogue["domains"]],
             }
             events = []
             for turn in dialogue["dialogue"]:
                 user_turn_event = build_user_event(turn)
-                if turn["db_results"]:
+                if "db_results" in turn and turn["db_results"]:
                     wizard_query_event = build_wizard_event(turn, mode="query")
                     kb_event = build_kb_event(wizard_query_event, mongodb_host, api_map)
                     wizard_normal_event = build_wizard_event(turn, mode="normal")
@@ -229,6 +236,20 @@ def build_mock_pred_data(test_data_path):
 
 
 if __name__ == "__main__":
+    parser = argparse.ArgumentParser()
+
+    parser.add_argument("--root", type=str, default='dialogues/risawoz/', help='code root directory')
+    parser.add_argument(
+        "--data_dir", type=str, default="data/original", help="path to save original data, relative to root dir"
+    )
+    parser.add_argument(
+        "--save_dir", type=str, default="data/preprocessed", help="path to save preprocessed data, relative to root dir"
+    )
+    parser.add_argument("--setting", type=str, default="en", help="en, zh, en_zh")
+    parser.add_argument("--splits", nargs='+', default=['train', 'valid', 'test'])
+
+    args = parser.parse_args()
+
     # convert original RiSAWOZ dataset into BiToD format
     zh_en_API_MAP = {
         "电视剧": "tv",
@@ -245,12 +266,12 @@ if __name__ == "__main__":
         "旅游景点": "attraction",
     }
     en_zh_API_MAP = {v: k for k, v in zh_en_API_MAP.items()}
-    risawoz_db = build_db(db_json_path='../db/zh', api_map=en_zh_API_MAP, mongodb_host="mongodb://localhost:27017/")
+    # risawoz_db = build_db(db_json_path=os.path.join(*[args.root, 'db', args.setting]), api_map=en_zh_API_MAP, mongodb_host="mongodb://localhost:27017/")
     # download original RiSAWOZ dataset
-    original_data_path = 'risawoz_original'
-    original_split = ['train', 'test', 'valid']
+    original_data_path = os.path.join(*[args.root, args.data_dir])
+    original_split = args.splits
     for split in original_split:
-        if not os.path.exists(f"{original_data_path}/{split}.json"):
+        if not os.path.exists(f"{original_data_path}/{args.setting}_{split}.json"):
             os.makedirs(original_data_path, exist_ok=True)
             print(f"{split} set is not found, downloading...")
             if split == "valid":
@@ -260,18 +281,20 @@ if __name__ == "__main__":
             with open(f"{original_data_path}/{split}.json", 'wb') as f:
                 f.write(requests.get(data_url).content)
 
-    processed_data_path = '../data'
-    if not set([f'zh_{split}.json' for split in original_split]).issubset(os.listdir(processed_data_path)):
+    processed_data_path = os.path.join(*[args.root, args.save_dir])
+    if not set([f'{args.setting}_{split}.json' for split in original_split]).issubset(os.listdir(processed_data_path)):
         print("processing data...")
-        processed_data = build_dataset(original_data_path=original_data_path, mongodb_host="mongodb://localhost:27017/")
+        processed_data = build_dataset(
+            original_data_path=original_data_path, mongodb_host="mongodb://localhost:27017/", args=args
+        )
         # save converted files in JSON format
         for k, v in processed_data.items():
-            with open(f"{processed_data_path}/zh_{k}.json", 'w') as f:
+            with open(f"{processed_data_path}/{k}.json", 'w') as f:
                 print("generating {}".format(k))
                 json.dump(v, f, ensure_ascii=False, indent=4)
 
-    # generating mock prediction data
-    print("generating mock prediction data...")
-    mock_pred_data = build_mock_pred_data("./risawoz_original/test.json")
-    with open("../results/test/risawoz_mock_preds.json", "w") as f:
-        json.dump(mock_pred_data, f, ensure_ascii=False, indent=4)
+    # # generating mock prediction data
+    # print("generating mock prediction data...")
+    # mock_pred_data = build_mock_pred_data("./risawoz_original/test.json")
+    # with open("../results/test/risawoz_mock_preds.json", "w") as f:
+    #     json.dump(mock_pred_data, f, ensure_ascii=False, indent=4)

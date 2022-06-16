@@ -1,6 +1,7 @@
 class RisaWOZMapping(object):
     def __init__(self):
         # currently untranslated
+        # TODO: this mapping should only include slots that are required to make an api call for the domain. It should not include all the slots.
         self._risawoz_domain_slot_MAP = {
             '医院': ['区域', '名称', '门诊时间', '挂号时间', 'DSA', '3.0T MRI', '重点科室', '电话', '公交线路', '地铁可达', 'CT', '等级', '性质', '类别', '地址'],
             '天气': ['温度', '目的地', '日期', '城市', '风力风向', '天气', '紫外线强度'],
@@ -91,6 +92,9 @@ class RisaWOZMapping(object):
             '餐厅': ['营业时间', '电话号码', '菜系', '名称', '评分', '房费', '人均消费', '推荐菜', '开放时间', '价位', '是否地铁直达', '区域', '地址'],
             '通用': [],
         }
+
+        # TODO: remove below
+        self._risawoz_domain_slot_MAP = {k: [] for k, v in self._risawoz_domain_slot_MAP.items()}
 
         self._risawoz_domain_MAP = {k: k for k in self._risawoz_domain_slot_MAP.keys()}
         self._risawoz_slot_set = set([v[i] for v in self._risawoz_domain_slot_MAP.values() for i in range(len(v)) if v[i]])

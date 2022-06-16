@@ -174,6 +174,9 @@ def read_data(args, path_names, setting, max_history=3):
                             assert len(intents) == 1
                             target = compute_lev_span({}, current_state, intents[0])
 
+                        if not target:
+                            target = 'null'
+
                         # update last dialogue state
                         prev_state = current_state
 
@@ -339,7 +342,7 @@ def prepare_data(args, path_train, path_dev, path_test):
     # "en, zh, en&zh, en2zh, zh2en"
     data_train, data_fewshot, data_dev, data_test = None, None, None, None
 
-    if 'eval' in args.splits:
+    if 'valid' in args.splits:
         data_dev = read_data(args, path_dev, args.setting, args.max_history)
     if 'test' in args.splits:
         data_test = read_data(args, path_test, args.setting, args.max_history)
@@ -380,7 +383,7 @@ def main():
     parser.add_argument("--setting", type=str, default="en", help="en, zh, en_zh")
 
     parser.add_argument("--max_history", type=int, default=2)
-    parser.add_argument("--splits", nargs='+', default=['train', 'eval', 'test'])
+    parser.add_argument("--splits", nargs='+', default=['train', 'valid', 'test'])
     parser.add_argument("--version", type=str, default='11')
     parser.add_argument("--fewshot_percent", type=int, default=0)
     parser.add_argument("--sampling", choices=["sequential", "balanced"], default="sequential")
