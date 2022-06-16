@@ -55,5 +55,14 @@ setuptools.setup(
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/Mehrad0711/dialogues",
-    install_requires=['pydot==1.4.2', 'pymongo==3.11.2', 'dnspython==2.1.0', 'word2number==1.1', 'dictdiffer~=0.9'],
+    install_requires=[
+        'pydot==1.4.2',
+        'pymongo==3.11.2',
+        'dnspython==2.1.0',
+        'word2number==1.1',
+        'dictdiffer~=0.9',
+        'networkx==2.5',
+        'sacrebleu>=1,<3',
+        'datasets~=2.1',
+    ],
 )
