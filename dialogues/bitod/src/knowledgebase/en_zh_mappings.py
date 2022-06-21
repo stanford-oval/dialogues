@@ -2,8 +2,8 @@ import json
 import os
 from collections import OrderedDict
 
-from ....risawoz.src.knowledgebase.en_zh_mapping import RisaWOZMapping
-from ...src.knowledgebase.hk_mtr import name_to_zh
+from dialogues.bitod.src.knowledgebase.hk_mtr import name_to_zh
+from dialogues.risawoz.src.knowledgebase.en_zh_mapping import RisaWOZMapping
 
 
 def read_require_slots():
