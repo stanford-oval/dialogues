@@ -266,6 +266,7 @@ if __name__ == "__main__":
         "旅游景点": "attraction",
     }
     en_zh_API_MAP = {v: k for k, v in zh_en_API_MAP.items()}
+    # uncomment to build db
     # risawoz_db = build_db(db_json_path=os.path.join(*[args.root, 'db', args.setting]), api_map=en_zh_API_MAP, mongodb_host="mongodb://localhost:27017/")
     # download original RiSAWOZ dataset
     original_data_path = os.path.join(*[args.root, args.data_dir])

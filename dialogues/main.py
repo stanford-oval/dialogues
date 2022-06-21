@@ -8,13 +8,16 @@ class Dataset(object):
         self.name = name
 
         # regex to extract belief state span from input
-        self.state_re = re.compile('')
+        self.state_re = re.compile('<state> (.*?) <endofstate>')
 
         # regex to extract knowledge span (api results) from input
-        self.knowledge_re = re.compile('')
+        self.knowledge_re = re.compile('<knowledge> (.*?) <endofknowledge>')
+
+        # regex to extract dialogue history from input
+        self.hisotry_re = re.compile('<history> (.*?) <endofhistory>')
 
         # regex to extract agent dialogue acts from input
-        self.actions_re = re.compile('')
+        self.actions_re = re.compile('<actions> (.*?) <endofactions>')
 
     def domain2api_name(self, domain):
         """

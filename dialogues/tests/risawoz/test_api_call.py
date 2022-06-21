@@ -27,7 +27,9 @@ if __name__ == "__main__":
     mongodb_host = "mongodb://localhost:27017/"
 
     dataset = Risawoz()
-    knowledge = dataset.make_api_call(constraints, knowledge, api_list, src_lang='zh', mongodb_host=mongodb_host)
+    constraints, new_knowledge_text = dataset.make_api_call(
+        constraints, knowledge, api_list, src_lang='zh', mongodb_host=mongodb_host
+    )
     gold_knowledge = {
         '酒店': {
             '名称': '苏州黎里水岸寒舍精品酒店',
@@ -60,4 +62,4 @@ if __name__ == "__main__":
         },
     }
 
-    print('diff:', api_result_diff(knowledge[1], gold_knowledge))
+    print('diff:', api_result_diff(new_knowledge_text, gold_knowledge))

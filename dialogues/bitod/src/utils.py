@@ -526,6 +526,7 @@ def clean_text(text, is_formal=False):
     text = text.strip()
     text = re.sub(' +', ' ', text)
     text = re.sub('\\n|\\t', ' ', text)
+    text = text.replace('，', ',')
 
     if not is_formal:
         text = text.replace('"', '')

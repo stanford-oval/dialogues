@@ -16,12 +16,8 @@ class Bitod(Dataset):
     def __init__(self, name='bitod'):
         super().__init__(name)
 
-        self.state_re = re.compile('<state> (.*?) <endofstate>')
-        self.knowledge_re = re.compile('<knowledge> (.*?) <endofknowledge>')
-        self.hisotry_re = re.compile('<history> (.*?) <endofhistory>')
-        self.actions_re = re.compile('<actions> (.*?) <endofactions>')
-
     def domain2api_name(self, domain):
+        # TODO: update
         return r_en_API_MAP.get(domain, domain)
 
     def state2span(self, dialogue_state):
@@ -58,31 +54,34 @@ class Bitod(Dataset):
         train, fewshot, dev, test = prepare_data(args, path_train, path_dev, path_test)
         return train, fewshot, dev, test
 
-    def make_api_call(self, dialogue_state, knowledge, api_name, src_lang='en', dial_id=None, turn_id=None):
-        result = [0, 0, 0]
+    def make_api_call(self, dialogue_state, knowledge, api_names, src_lang='en', dial_id=None, turn_id=None):
+        # bitod only does api call for the last (active) intent
+        api_name = api_names[-1]
 
         constraints = state2constraints(dialogue_state[api_name])
 
         try:
-            result = api.call_api(r_en_API_MAP.get(api_name, api_name), constraints=[constraints], lang=src_lang)
+            result, count, processed_query = api.call_api(
+                r_en_API_MAP.get(api_name, api_name), constraints=[constraints], lang=src_lang
+            )
         except Exception as e:
             logger.error(f'Error: {e}')
             logger.error(
-                f'Failed API call with api_name: {api_name}, constraints: {constraints}, processed_query: {result[2]}, for turn: {dial_id}/{turn_id}'
+                f'Failed API call with api_name: {str(api_name)}, constraints: {constraints}, processed_query: {processed_query}, for turn: {dial_id}/{turn_id}'
             )
 
-        if int(result[1]) <= 0:
+        if int(count) <= 0:
             logger.warning(
                 f'Message = No item available for api_name: {api_name}, constraints: {constraints},'
-                f' processed_query: {result[2]}, for turn: {dial_id}/{turn_id}'
+                f' processed_query: {processed_query}, for turn: {dial_id}/{turn_id}'
             )
             new_knowledge_text = f'( {api_name} ) Message = No item available.'
         else:
             # always choose the highest ranking results (so we have deterministic api results)
-            knowledge[api_name].update(result[0])
+            knowledge[api_name].update(result)
             new_knowledge_text = knowledge2span(knowledge)
 
-        return constraints, new_knowledge_text
+        return {self.domain2api_name(api_name): constraints}, new_knowledge_text
 
     def compute_metrics(self, args, prediction_path, reference_path):
         results = eval_file(args, prediction_path, reference_path)

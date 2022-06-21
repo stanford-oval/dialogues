@@ -1,11 +1,10 @@
 import logging
 import os.path
-import re
 
 from ..bitod.src.evaluate import eval_file
 from ..bitod.src.knowledgebase.en_zh_mappings import api_names, r_en_API_MAP, required_slots
 from ..bitod.src.preprocess import prepare_data
-from ..bitod.src.utils import knowledge2span, span2state, state2span
+from ..bitod.src.utils import knowledge2span, span2state, state2constraints, state2span
 from ..main import Dataset
 from .src.knowledgebase import api
 
@@ -15,10 +14,6 @@ logger = logging.getLogger(__name__)
 class Risawoz(Dataset):
     def __init__(self, name='RiSAWOZ'):
         super().__init__(name)
-
-        self.state_re = re.compile('<state> (.*?)(?:$|<)')
-        self.knowledge_re = re.compile('<knowledge> (.*?)(?:$|<)')
-        self.actions_re = re.compile('<actions> (.*?)(?:$|<)')
 
     def domain2api_name(self, domain):
         return r_en_API_MAP.get(domain, domain)
@@ -57,31 +52,42 @@ class Risawoz(Dataset):
         train, fewshot, dev, test = prepare_data(args, path_train, path_dev, path_test)
         return train, fewshot, dev, test
 
-    def make_api_call(self, constraints, knowledge, api_list, src_lang='zh', dial_id=None, turn_id=None, mongodb_host=''):
-        result = [0, 0]
+    def make_api_call(
+        self,
+        dialogue_state,
+        knowledge,
+        api_names,
+        src_lang='zh',
+        dial_id=None,
+        turn_id=None,
+        mongodb_host='mongodb://localhost:27017/',
+    ):
+        constraints = {}
+        for api_name in dialogue_state.keys():
+            constraints[api_name] = state2constraints(dialogue_state[api_name])
+        # constraints = state2constraints(dialogue_state)
 
         try:
-            result = api.call_api(api_list, mongodb_host, constraints, api_map=None)
+            result = api.call_api(api_names, mongodb_host, constraints, api_map=None)
             # remove _id
-            result = [result[0], {api_name: result[0][api_name]["可用选项"] for api_name in result[0].keys()}]
-            for key in result[0].keys():
-                _ = result[0][key].pop('_id', None)
+            # result = [result[0], {api_name: result[0][api_name]["可用选项"] for api_name in result[0].keys()}]
+            for api_name in result.keys():
+                result[api_name].pop('_id', None)
 
         except Exception as e:
             logger.error(f'Error: {e}')
             logger.error(
-                f'Failed API call with api_name: {api_list}, constraints: {constraints}, for turn: {dial_id}/{turn_id}'
+                f'Failed API call with api_name: {str(api_names)}, constraints: {constraints}, for turn: {dial_id}/{turn_id}'
             )
-        for api_name in result[0].keys():
-            if int(result[1][api_name]) <= 0:
+        for api_name in result.keys():
+            if int(len(result[api_name])) <= 0:
                 logger.warning(
                     f'Message = No item available for api_name: {api_name}, constraints: {constraints},'
                     f' for turn: {dial_id}/{turn_id}'
                 )
                 new_knowledge_text = f'( {api_name} ) Message = No item available.'
             else:
-                # always choose the highest ranking results (so we have deterministic api results)
-                knowledge.update(result[0])
+                knowledge.update(result)
                 new_knowledge_text = knowledge2span(knowledge)
 
         return constraints, new_knowledge_text
