@@ -1,4 +1,13 @@
+import os
+
 import pymongo
+from bitod.src.knowledgebase.en_zh_mappings import en_zh_API_MAP
+from risawoz.src.convert import build_db
+
+cur_dir = os.path.dirname(os.path.abspath(__file__))
+build_db(
+    db_json_path=os.path.join(*[cur_dir, '../db', 'zh']), api_map=en_zh_API_MAP, mongodb_host="mongodb://localhost:27017/"
+)
 
 
 def call_api(api_name, mongodb_host, constraints=None, api_map=None):
