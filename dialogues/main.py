@@ -19,6 +19,9 @@ class Dataset(object):
         # regex to extract agent dialogue acts from input
         self.actions_re = re.compile('<actions> (.*?) <endofactions>')
 
+        self.system_token = 'SYSTEM:'
+        self.user_token = 'USER:'
+
     def domain2api_name(self, domain):
         """
         map domain name to api name used to query the database. these can be the same.
@@ -94,3 +97,81 @@ class Dataset(object):
         :return: modified prediction
         """
         pass
+
+    def construct_input(
+        self,
+        train_target,
+        state=None,
+        history=None,
+        knowledge=None,
+        actions=None,
+        last_two_agent_turns=True,
+        only_user_rg=True,
+    ):
+        if last_two_agent_turns and len(history) >= 4:
+            history = [history[-4].replace('AGENT_ACTS:', 'AGENT_ACTS_PREV:')] + history[-2:]
+        else:
+            history = history[-2:]
+
+        history_text = " ".join(history)
+
+        if train_target == 'dst':
+            input_text = " ".join(
+                [
+                    "DST:",
+                    "<state>",
+                    state,
+                    "<endofstate>",
+                    "<history>",
+                    history_text,
+                    "<endofhistory>",
+                ]
+            )
+        elif train_target == 'api':
+            input_text = " ".join(
+                [
+                    "API:",
+                    "<knowledge>",
+                    knowledge,
+                    "<endofknowledge>",
+                    "<state>",
+                    state,
+                    "<endofstate>",
+                    "<history>",
+                    history_text,
+                    "<endofhistory>",
+                ]
+            )
+        elif train_target == 'da':
+            input_text = " ".join(
+                [
+                    "DA:",
+                    "<knowledge>",
+                    knowledge,
+                    "<endofknowledge>",
+                    "<state>",
+                    state,
+                    "<endofstate>",
+                    "<history>",
+                    history_text,
+                    "<endofhistory>",
+                ]
+            )
+
+        elif train_target == 'rg':
+            if only_user_rg:
+                history_text = history[-1]
+
+            input_text = " ".join(
+                [
+                    "RG:",
+                    "<actions>",
+                    actions,
+                    "<endofactions>",
+                    "<history>",
+                    history_text,
+                    "<endofhistory>",
+                ]
+            )
+
+        return input_text
