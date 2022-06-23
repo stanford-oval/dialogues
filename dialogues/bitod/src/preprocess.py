@@ -5,8 +5,6 @@ import random
 from collections import OrderedDict, defaultdict
 
 # Mapping between intents, slots, and relations in English and Chinese
-from bitod.src.utils import get_commit
-
 from dialogues.bitod.src.knowledgebase.en_zh_mappings import (
     API_MAP,
     required_slots,
@@ -14,7 +12,7 @@ from dialogues.bitod.src.knowledgebase.en_zh_mappings import (
     zh2en_CARDINAL_MAP,
     zh_API_MAP,
 )
-from dialogues.bitod.src.utils import action2span, clean_text, compute_lev_span, knowledge2span, state2span
+from dialogues.bitod.src.utils import action2span, clean_text, compute_lev_span, get_commit, knowledge2span, state2span
 
 
 def translate_slots_to_english(text, do_translate=True):
