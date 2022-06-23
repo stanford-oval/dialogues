@@ -102,16 +102,21 @@ class Dataset(object):
         self,
         train_target,
         state=None,
-        history=None,
+        user_history=None,
+        system_history=None,
         knowledge=None,
         actions=None,
         last_two_agent_turns=True,
         only_user_rg=True,
     ):
-        if last_two_agent_turns and len(history) >= 4:
-            history = [history[-4].replace('AGENT_ACTS:', 'AGENT_ACTS_PREV:')] + history[-2:]
+        if last_two_agent_turns and len(system_history) >= 2:
+            history = [system_history[-2].replace('AGENT_ACTS:', 'AGENT_ACTS_PREV:'), system_history[-1], user_history[-1]]
+        elif len(system_history) and len(user_history):
+            history = [system_history[-1], user_history[-1]]
+        elif len(user_history):
+            history = [user_history[-1]]
         else:
-            history = history[-2:]
+            history = []
 
         history_text = " ".join(history)
 
@@ -160,7 +165,7 @@ class Dataset(object):
 
         elif train_target == 'rg':
             if only_user_rg:
-                history_text = history[-1]
+                history_text = user_history[-1]
 
             input_text = " ".join(
                 [
