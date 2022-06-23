@@ -19,7 +19,7 @@ knowledge = defaultdict(dict)
 
 
 dataset = Bitod()
-constraints, knowledge = dataset.make_api_call(dialogue_state, api_name, src_lang)
+knowledge, constraints = dataset.make_api_call(dialogue_state, api_name, src_lang)
 gold_knowkedge = {
     api_name: {
         "name": "Mul Hayam",

@@ -133,7 +133,7 @@ def build_kb_event(wizard_query_event, mongodb_host, api_map=None):
     event = {"Agent": "KnowledgeBase"}
     constraints = wizard_query_event["Constraints"]
     api = wizard_query_event["API"]
-    matched_items, num_matched = call_api(api, mongodb_host, constraints, api_map)
+    matched_items, num_matched = call_api(api, mongodb_host, constraints, lang='zh_CN')
     event["TotalItems"] = num_matched
     # matched_items: {domain: list(matched_for_each_domain)}
     event["Item"] = matched_items if num_matched else {}

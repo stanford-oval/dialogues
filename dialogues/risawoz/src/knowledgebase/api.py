@@ -1,27 +1,29 @@
-import os
+from pymongo import MongoClient
 
-import pymongo
-from bitod.src.knowledgebase.en_zh_mappings import en_zh_API_MAP
-from risawoz.src.convert import build_db
+from dialogues.risawoz.src.knowledgebase.en_zh_mappings import RisaWOZMapping
 
-cur_dir = os.path.dirname(os.path.abspath(__file__))
-build_db(
-    db_json_path=os.path.join(*[cur_dir, '../db', 'zh']), api_map=en_zh_API_MAP, mongodb_host="mongodb://localhost:27017/"
-)
+mongodb_host = 'mongodb+srv://bitod:plGYPp44hASzGbmm@cluster0.vo7pq.mongodb.net/bilingual_tod?retryWrites=true&w=majority&ssl=true&ssl_cert_reqs=CERT_NONE'
+client = MongoClient(mongodb_host, authSource='admin')
+
+# risawoz db collections are under bilingual_tod; fix once we get around permission errors
+risawoz_db = client["bilingual_tod"]
+# for col in risawoz_db.list_collection_names():
+#     if '_risawoz' in col:
+#         risawoz_db.drop_collection(col)
+risawoz_mapping = RisaWOZMapping()
 
 
-def call_api(api_name, mongodb_host, constraints=None, api_map=None):
-    # api name equals to domain name
+def call_api(api_names, constraints=None, lang=None):
     knowledge = {}
-    db = pymongo.MongoClient(mongodb_host)["risawoz_database"]
-    for api in api_name:
+    for api in api_names:
         if api not in constraints:
             continue
         knowledge[api] = {}
         domain_constraints = constraints[api]
-        api = api if api_map is None else api_map[api]
+        # db_name = api if api_map is None else api_map[api]
+        db_name = f'{risawoz_mapping._risawoz_API_MAP[api]}_{lang}_risawoz'
         # cursor = db[api].find(domain_constraints).sort([("rating", pymongo.ASCENDING), ("_id", pymongo.DESCENDING)])
-        cursor = db[api].find(domain_constraints)
+        cursor = risawoz_db[db_name].find(domain_constraints)
         domain_knowledge = []
         for matched in cursor:
             matched["_id"] = str(matched["_id"])

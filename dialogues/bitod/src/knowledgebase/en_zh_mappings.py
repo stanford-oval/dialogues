@@ -3,7 +3,7 @@ import os
 from collections import OrderedDict
 
 from dialogues.bitod.src.knowledgebase.hk_mtr import name_to_zh
-from dialogues.risawoz.src.knowledgebase.en_zh_mapping import RisaWOZMapping
+from dialogues.risawoz.src.knowledgebase.en_zh_mappings import RisaWOZMapping
 
 
 def read_require_slots():

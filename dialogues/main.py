@@ -19,7 +19,7 @@ class Dataset(object):
         # regex to extract agent dialogue acts from input
         self.actions_re = re.compile('<actions> (.*?) <endofactions>')
 
-        self.system_token = 'SYSTEM:'
+        self.system_token = 'AGENT_ACTS:'
         self.user_token = 'USER:'
 
     def domain2api_name(self, domain):

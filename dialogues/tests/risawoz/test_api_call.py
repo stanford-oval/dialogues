@@ -20,16 +20,17 @@ def api_result_diff(knowledge, gold_knowledge):
 if __name__ == "__main__":
 
     api_list = ["酒店", "旅游景点"]
-    constraints = {"酒店": {'价位': '偏贵', '区域': '吴江'}, "旅游景点": {"名称": "金鸡湖景区"}}
+    dialogue_state = {
+        "酒店": {'价位': {'relation': '等于', 'value': ['偏贵']}, '区域': {'relation': '等于', 'value': ['吴江']}},
+        "旅游景点": {"名称": {'relation': '等于', 'value': ['金鸡湖景区']}},
+    }
     src_lang = 'zh'
     knowledge = defaultdict(dict)
 
-    mongodb_host = "mongodb://localhost:27017/"
+    # mongodb_host = "mongodb://localhost:27017/"
 
     dataset = Risawoz()
-    constraints, new_knowledge_text = dataset.make_api_call(
-        constraints, knowledge, api_list, src_lang='zh', mongodb_host=mongodb_host
-    )
+    new_knowledge_text, constraints = dataset.make_api_call(dialogue_state, knowledge, api_list, src_lang='zh_CN')
     gold_knowledge = {
         '酒店': {
             '名称': '苏州黎里水岸寒舍精品酒店',

@@ -81,7 +81,7 @@ class Bitod(Dataset):
             knowledge[api_name].update(result)
             new_knowledge_text = knowledge2span(knowledge)
 
-        return {self.domain2api_name(api_name): constraints}, new_knowledge_text
+        return new_knowledge_text, {self.domain2api_name(api_name): constraints}
 
     def compute_metrics(self, args, prediction_path, reference_path):
         results = eval_file(args, prediction_path, reference_path)
