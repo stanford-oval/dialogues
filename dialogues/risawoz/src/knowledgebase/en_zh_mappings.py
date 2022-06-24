@@ -100,7 +100,7 @@ class RisaWOZMapping(object):
         self._risawoz_slot_set = set([v[i] for v in self._risawoz_domain_slot_MAP.values() for i in range(len(v)) if v[i]])
         self._risawoz_slot_MAP = {k: k for k in list(self._risawoz_slot_set)}
 
-        self._risawoz_API_MAP = {
+        self.zh2en_domain_MAP = {
             # currently untranslated
             "天气": "weather",
             "火车": "train",
@@ -116,6 +116,7 @@ class RisaWOZMapping(object):
             "电视剧": "tv",
             "通用": "general",
         }
+        self.en2zh_domain_MAP = {v: k for k, v in self.zh2en_domain_MAP.items()}
 
         self._risawoz_ACT_MAP = {
             # untranslated in the original dataset
@@ -134,7 +135,7 @@ class RisaWOZMapping(object):
                 self._risawoz_domain_slot_MAP,
                 self._risawoz_domain_MAP,
                 self._risawoz_slot_MAP,
-                self._risawoz_API_MAP,
+                self.zh2en_domain_MAP,
                 self._risawoz_ACT_MAP,
             )
         else:

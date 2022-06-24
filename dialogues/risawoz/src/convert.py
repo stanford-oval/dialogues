@@ -1,5 +1,6 @@
 import argparse
 import collections
+import copy
 import itertools
 import json
 import os
@@ -22,21 +23,22 @@ def read_json_files_in_folder(path):
     return data
 
 
-def build_db(db_json_path, api_map=None, mongodb_host=""):
+def build_db(db_json_path, api_map=None, mongodb_host="", setting='zh_CN'):
+    if setting == 'zh':
+        setting = 'zh_CN'
     raw_db = read_json_files_in_folder(db_json_path)
     if mongodb_host:
         db_client = pymongo.MongoClient(mongodb_host)
     else:
         db_client = pymongo.MongoClient()
-    risawoz_db = db_client["risawoz_database"]
+    risawoz_db = db_client["risawoz"]
     for db in risawoz_db.list_collection_names():
         risawoz_db[db].drop()
     for domain in raw_db.keys():
-        print(api_map[domain.split("_db")[0]])
         if api_map is None:
-            col = risawoz_db[domain.split("_db")[0]]
+            col = risawoz_db[domain]
         else:
-            col = risawoz_db[api_map[domain.split("_db")[0]]]
+            col = risawoz_db[api_map[domain.split(f"_{setting}")[0]]]
         for i in range(len(raw_db[domain])):
             slot_list = list(raw_db[domain][i].keys())
             for s in slot_list:
@@ -80,10 +82,7 @@ def build_user_event(turn, args):
         for i in range(len(action)):
             event_action[action_seq[i]] = action[i]
         if event_action["slot"] and event_action["value"]:
-            if args.setting == 'zh':
-                event_action["relation"] = "等于"
-            else:
-                event_action["relation"] = "equal_to"
+            event_action["relation"] = "等于"
         else:
             event_action["relation"] = ""
         event_action["active_intent"] = event_action["domain"]
@@ -94,7 +93,7 @@ def build_user_event(turn, args):
     event["state"] = collections.defaultdict(dict)
     for ds, v in turn["belief_state"]["inform slot-values"].items():
         d, s = ds.split("-")[0], ds.split("-")[1]
-        event["state"][d][s] = {"relation": "等于", "value": ''.join(v.split())}
+        event["state"][d][s] = {"relation": "等于", "value": [''.join(v.split())]}
     event["state"] = dict(event["state"])
     event["Text"] = turn["user_utterance"]
     return event
@@ -129,41 +128,40 @@ def build_wizard_event(turn, mode="normal"):
     return event
 
 
-def build_kb_event(wizard_query_event, mongodb_host, api_map=None):
+def build_kb_event(wizard_query_event, mongodb_host='', api_map=None):
     event = {"Agent": "KnowledgeBase"}
     constraints = wizard_query_event["Constraints"]
-    api = wizard_query_event["API"]
-    matched_items, num_matched = call_api(api, mongodb_host, constraints, lang='zh_CN')
-    event["TotalItems"] = num_matched
+    api_names = wizard_query_event["API"]
+    knowledge = call_api(api_names, constraints, mongodb_host=mongodb_host, lang='zh_CN')
+    event["TotalItems"] = sum(item.get("可用选项", 0) for api, item in knowledge.items())
     # matched_items: {domain: list(matched_for_each_domain)}
-    event["Item"] = matched_items if num_matched else {}
-    event["Topic"] = api
+    event["Item"] = knowledge
+    event["Topic"] = api_names
     return event
 
 
-def build_dataset(original_data_path, mongodb_host, args, api_map=None):
-    data = read_json_files_in_folder(original_data_path)
-    processed_data = collections.defaultdict(dict)
-    for key in tqdm(data.keys()):
-        for dialogue in tqdm(data[key]):
-            dialogue_id = dialogue["dialogue_id"]
-            scenario = {
-                "UserTask": dialogue.get("goal", ""),
-                "WizardCapabilities": [{"Task": domain} for domain in dialogue["domains"]],
-            }
-            events = []
-            for turn in dialogue["dialogue"]:
-                user_turn_event = build_user_event(turn)
-                if "db_results" in turn and turn["db_results"]:
-                    wizard_query_event = build_wizard_event(turn, mode="query")
-                    kb_event = build_kb_event(wizard_query_event, mongodb_host, api_map)
-                    wizard_normal_event = build_wizard_event(turn, mode="normal")
-                    events += [user_turn_event, wizard_query_event, kb_event, wizard_normal_event]
-                else:
-                    wizard_event = build_wizard_event(turn)
-                    events += [user_turn_event, wizard_event]
-            processed_data[key][dialogue_id] = {"Dialogue_id": dialogue_id, "Scenario": scenario, "Events": events}
-    processed_data = dict(processed_data)
+def build_dataset(original_data_path, args, mongodb_host='', api_map=None):
+    with open(original_data_path) as fin:
+        data = json.load(fin)
+    processed_data = {}
+    for dialogue in tqdm(data):
+        dialogue_id = dialogue["dialogue_id"]
+        scenario = {
+            "UserTask": dialogue.get("goal", ""),
+            "WizardCapabilities": [{"Task": domain} for domain in dialogue["domains"]],
+        }
+        events = []
+        for turn in dialogue["dialogue"]:
+            user_turn_event = build_user_event(turn, args)
+            if "db_results" in turn and turn["db_results"]:
+                wizard_query_event = build_wizard_event(turn, mode="query")
+                kb_event = build_kb_event(wizard_query_event, mongodb_host, api_map)
+                wizard_normal_event = build_wizard_event(turn, mode="normal")
+                events += [user_turn_event, wizard_query_event, kb_event, wizard_normal_event]
+            else:
+                wizard_event = build_wizard_event(turn)
+                events += [user_turn_event, wizard_event]
+        processed_data[dialogue_id] = {"Dialogue_id": dialogue_id, "Scenario": scenario, "Events": events}
     return processed_data
 
 
@@ -186,14 +184,14 @@ def build_mock_pred_data(test_data_path):
                         dialog_state[d][s]["value"].append(v)
                     else:
                         dialog_state[d][s] = {}
-                        dialog_state[d][s]["relation"] = "equal_to"
+                        dialog_state[d][s]["relation"] = "等于"
                         dialog_state[d][s]["value"] = [v]
                 else:
                     dialog_state[d] = {}
                     dialog_state[d][s] = {}
-                    dialog_state[d][s]["relation"] = "equal_to"
+                    dialog_state[d][s]["relation"] = "等于"
                     dialog_state[d][s]["value"] = [v]
-            fake_pred_dialog["turns"][str(turn["turn_id"] + 1)]["state"] = dialog_state
+            fake_pred_dialog["turns"][str(turn["turn_id"] + 1)]["state"] = copy.deepcopy(dialog_state)
             # update final dialog state in each turn and build turn API text
             turn_api_text = []
             for d, sv in dialog_state.items():
@@ -221,7 +219,7 @@ def build_mock_pred_data(test_data_path):
                         if action[0].strip() == "Inform":
                             turn_action_text[
                                 i
-                            ] += f"{action[0].strip().lower()} {action[2]} equal_to \" {''.join(action[3].split())} \" , "
+                            ] += f"{action[0].strip().lower()} {action[2]} 等于 \" {''.join(action[3].split())} \" , "
                         elif action[3]:
                             turn_action_text[
                                 i
@@ -230,8 +228,8 @@ def build_mock_pred_data(test_data_path):
                             turn_action_text[i] += f"{action[0].strip().lower()} {action[2]} , "
             turn_action_text = [text[:-3] for text in turn_action_text]
             fake_pred_dialog["turns"][str(turn["turn_id"] + 1)]["actions"] = [' '.join(turn_action_text)]
-        fake_pred_dialog["API"] = final_dialog_state
-        fake_pred_data[dialog["dialogue_id"]] = fake_pred_dialog
+        fake_pred_dialog["API"] = copy.deepcopy(final_dialog_state)
+        fake_pred_data[dialog["dialogue_id"]] = copy.deepcopy(fake_pred_dialog)
     return fake_pred_data
 
 
@@ -239,40 +237,24 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
 
     parser.add_argument("--root", type=str, default='dialogues/risawoz/', help='code root directory')
-    parser.add_argument(
-        "--data_dir", type=str, default="data/original", help="path to save original data, relative to root dir"
-    )
-    parser.add_argument(
-        "--save_dir", type=str, default="data/preprocessed", help="path to save preprocessed data, relative to root dir"
-    )
+    parser.add_argument("--data_dir", type=str, default="data/original", help="path to original data, relative to root dir")
+    parser.add_argument("--save_dir", type=str, default="data/", help="path to save preprocessed data, relative to root dir")
     parser.add_argument("--setting", type=str, default="en", help="en, zh, en_zh")
     parser.add_argument("--splits", nargs='+', default=['train', 'valid', 'test'])
 
     args = parser.parse_args()
 
-    # convert original RiSAWOZ dataset into BiToD format
-    zh_en_API_MAP = {
-        "电视剧": "tv",
-        "天气": "weather",
-        "辅导班": "class",
-        "电影": "movie",
-        "餐厅": "restaurant",
-        "电脑": "pc",
-        "飞机": "flight",
-        "酒店": "hotel",
-        "火车": "train",
-        "汽车": "car",
-        "医院": "hospital",
-        "旅游景点": "attraction",
-    }
-    en_zh_API_MAP = {v: k for k, v in zh_en_API_MAP.items()}
+    mongodb_host = "mongodb://localhost:27017/"
+
     # uncomment to build db
-    # risawoz_db = build_db(db_json_path=os.path.join(*[args.root, 'db', args.setting]), api_map=en_zh_API_MAP, mongodb_host="mongodb://localhost:27017/")
+    risawoz_db = build_db(
+        db_json_path=os.path.join(*[args.root, 'db']), api_map=None, mongodb_host=mongodb_host, setting=args.setting
+    )
+
     # download original RiSAWOZ dataset
     original_data_path = os.path.join(*[args.root, args.data_dir])
-    original_split = args.splits
-    for split in original_split:
-        if not os.path.exists(f"{original_data_path}/{args.setting}_{split}.json"):
+    for split in args.splits:
+        if not os.path.exists(os.path.join(original_data_path, f"{args.setting}_{split}.json")):
             os.makedirs(original_data_path, exist_ok=True)
             print(f"{split} set is not found, downloading...")
             if split == "valid":
@@ -283,19 +265,16 @@ if __name__ == "__main__":
                 f.write(requests.get(data_url).content)
 
     processed_data_path = os.path.join(*[args.root, args.save_dir])
-    if not set([f'{args.setting}_{split}.json' for split in original_split]).issubset(os.listdir(processed_data_path)):
-        print("processing data...")
-        processed_data = build_dataset(
-            original_data_path=original_data_path, mongodb_host="mongodb://localhost:27017/", args=args
-        )
-        # save converted files in JSON format
-        for k, v in processed_data.items():
-            with open(f"{processed_data_path}/{k}.json", 'w') as f:
-                print("generating {}".format(k))
-                json.dump(v, f, ensure_ascii=False, indent=4)
+    # for split in args.splits:
+    #     if not os.path.exists(os.path.join(processed_data_path, f"{args.setting}_{split}.json")):
+    #         print(f"processing {split} data...")
+    #         processed_data = build_dataset(os.path.join(original_data_path, f"{args.setting}_{split}.json"), args, mongodb_host=mongodb_host)
+    #         # save converted files in JSON format
+    #         with open(f"{processed_data_path}/{args.setting}_{split}.json", 'w') as f:
+    #             json.dump(processed_data, f, ensure_ascii=False, indent=4)
 
     # # generating mock prediction data
-    # print("generating mock prediction data...")
-    # mock_pred_data = build_mock_pred_data("./risawoz_original/test.json")
-    # with open("../results/test/risawoz_mock_preds.json", "w") as f:
-    #     json.dump(mock_pred_data, f, ensure_ascii=False, indent=4)
+    print("generating mock prediction data...")
+    mock_pred_data = build_mock_pred_data(os.path.join(args.root, "./data/original/zh_test.json"))
+    with open(os.path.join(args.root, "./results/test/risawoz_mock_preds.json"), "w") as f:
+        json.dump(mock_pred_data, f, ensure_ascii=False, indent=4)

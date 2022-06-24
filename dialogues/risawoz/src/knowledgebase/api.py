@@ -9,7 +9,9 @@ risawoz_db = client["risawoz"]
 risawoz_mapping = RisaWOZMapping()
 
 
-def call_api(api_names, constraints=None, lang=None):
+def call_api(api_names, constraints=None, mongodb_host=None, lang=None):
+    client = MongoClient(mongodb_host, authSource='admin')
+    risawoz_db = client["risawoz"]
     knowledge = {}
     for api in api_names:
         if api not in constraints:
@@ -17,7 +19,7 @@ def call_api(api_names, constraints=None, lang=None):
         knowledge[api] = {}
         domain_constraints = constraints[api]
         # db_name = api if api_map is None else api_map[api]
-        db_name = f'{risawoz_mapping._risawoz_API_MAP[api]}_{lang}'
+        db_name = f'{risawoz_mapping.zh2en_domain_MAP[api]}_{lang}'
         # cursor = db[api].find(domain_constraints).sort([("rating", pymongo.ASCENDING), ("_id", pymongo.DESCENDING)])
         cursor = risawoz_db[db_name].find(domain_constraints)
         domain_knowledge = []
