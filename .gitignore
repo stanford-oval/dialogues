@@ -133,4 +133,6 @@ dmypy.json
 .idea/
 .vscode/
 
-dialogues/*/data/*train*
+dialogues/*/data/*
+out_*.tsv
+data/
