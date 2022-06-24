@@ -6,7 +6,14 @@ from typing import Any, Dict, List, Text, Tuple
 import pymongo
 from pymongo import MongoClient
 
-from ...src.knowledgebase.en_zh_mappings import en2zh_SLOT_MAP, en_zh_API_MAP, entity_map, zh2en_API_MAP, zh2en_SLOT_MAP
+from ...src.knowledgebase.en_zh_mappings import (
+    en2zh_SLOT_MAP,
+    en_zh_API_MAP,
+    entity_map,
+    r_en_API_MAP,
+    zh2en_API_MAP,
+    zh2en_SLOT_MAP,
+)
 from .hk_mtr import MTR
 
 # mongodb_host = os.getenv('BITOD_MONGODB_HOST')
@@ -329,6 +336,7 @@ def query_mongo(api_name, db, query, api_out_list=None, lang=None):
 
 def call_api(api_name, constraints: List[Dict[Text, Any]], lang=None) -> Tuple[Dict[Text, Any], int, dict]:
     global is_mongo
+    api_name = r_en_API_MAP.get(api_name, api_name)
 
     # Canonicalization
     for slot, value in constraints[0].items():

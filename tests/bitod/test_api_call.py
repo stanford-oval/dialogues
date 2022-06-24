@@ -1,10 +1,8 @@
 from collections import defaultdict
 
-import dictdiffer
-
 from dialogues import Bitod
 
-api_name = "restaurants_en_US_booking"
+api_names = ["restaurants_en_US_booking"]
 dialogue_state = {
     "restaurants_en_US_booking": {
         "name": {"relation": "equal_to", "value": ["Mul Hayam"]},
@@ -14,22 +12,17 @@ dialogue_state = {
         "number_of_people": {"relation": "equal_to", "value": [7]},
     }
 }
+
+gold_knowledge_text = (
+    '( restaurants_en_US_booking ) date " April 17 " , name " Mul Hayam " , number_of_people " 7 " ,'
+    ' ref_number " 7S9BRVOL " , time " 3:10 pm " , user_name " Aaron "'
+)
+
 src_lang = 'en'
 knowledge = defaultdict(dict)
 
-
 dataset = Bitod()
-knowledge, constraints = dataset.make_api_call(dialogue_state, api_name, src_lang)
-gold_knowkedge = {
-    api_name: {
-        "name": "Mul Hayam",
-        "ref_number": "7S9BRVOL",
-        "user_name": "Aaron",
-        "number_of_people": 7,
-        "time": "3:10 pm",
-        "date": "April 17",
-    }
-}
+knowledge_text, constraints = dataset.make_api_call(dialogue_state, knowledge, api_names, src_lang=src_lang)
 
-print(knowledge)
-print('diff:', list(dictdiffer.diff(knowledge, gold_knowkedge)))
+print(knowledge_text)
+print(gold_knowledge_text == knowledge_text)

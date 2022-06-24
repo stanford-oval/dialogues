@@ -361,7 +361,9 @@ def compute_result(predictions, reference_data):
                                 if len(intent) <= 1 or action["domain"] == intent[i]:
                                     user_requested_info[intent[i]][trans_slot] = action["value"]
                         elif (action["act"] == "confirm") and (len(action["value"]) > 0):
-                            confirm_info[intent][trans_slot] = action["value"]
+                            # risawoz has no confirm act
+                            assert len(intent) == 1
+                            confirm_info[intent[0]][trans_slot] = action["value"]
         for intent, slot_values in user_requested_info.items():
             if intent in ["通用"]:  # for RiSAWOZ
                 continue
