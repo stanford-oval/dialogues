@@ -17,10 +17,20 @@ if mongodb_host:
 else:
     client = MongoClient(authSource='admin')
 
-mydb = client["bilingual_tod"]
-list(mydb.list_collections())
-db = mydb["hotels_en_US"]
-list(db.find({}))
+database = client["bilingual_tod"]
+
+bitod_database = {"null": None}
+
+for domain in ['restaurants', 'hotels']:
+    for lang in ['en_US', 'zh_CN', 'fa_IR']:
+        bitod_database[f"{domain}_{lang}_booking"] = database[f"{domain}_{lang}"]
+        bitod_database[f"{domain}_{lang}_search"] = database[f"{domain}_{lang}"]
+
+for domain in ['attractions', 'weathers']:
+    for lang in ['en_US', 'zh_CN', 'fa_IR']:
+        bitod_database[f"{domain}_{lang}_search"] = database[f"{domain}_{lang}"]
+
+is_mongo = True
 
 
 def is_equal_to(value):
@@ -79,20 +89,6 @@ def contain_all_of(value):
 
 def contain_at_least_one_of(value):
     return lambda x: any([e in x for e in value])
-
-
-dbs = {"null": None}
-
-for domain in ['restaurants', 'hotels']:
-    for lang in ['en_US', 'zh_CN', 'fa_IR']:
-        dbs[f"{domain}_{lang}_booking"] = mydb[f"{domain}_{lang}"]
-        dbs[f"{domain}_{lang}_search"] = mydb[f"{domain}_{lang}"]
-
-for domain in ['attractions', 'weathers']:
-    for lang in ['en_US', 'zh_CN', 'fa_IR']:
-        dbs[f"{domain}_{lang}_search"] = mydb[f"{domain}_{lang}"]
-
-is_mongo = True
 
 
 def constraint_and(constraint1, constraint2):
@@ -383,12 +379,12 @@ def call_api(api_name, constraints: List[Dict[Text, Any]], lang=None) -> Tuple[D
         if lang:
             if 'en' in lang:
                 lang = 'en_US'
-            db = dbs[re.sub(re.compile('(\w+_)\w{2}_\w{2}(_\w+)'), fr'\1{lang}\2', api_name)]
+            db = bitod_database[re.sub(re.compile('(\w+_)\w{2}_\w{2}(_\w+)'), fr'\1{lang}\2', api_name)]
         else:
-            db = dbs[api_name]
+            db = bitod_database[api_name]
 
         res, count, query = query_mongo(api_name, db, constraint_list_to_dict(constraints), api_out_list, lang)
-        # res, count = query_mongo(dbs[api_name], constraints)
+        # res, count = query_mongo(bitod_database[api_name], constraints)
         return res, count, query
 
     elif api_name in ["HKMTR_en", "HKMTR_zh", "香港地铁"]:
