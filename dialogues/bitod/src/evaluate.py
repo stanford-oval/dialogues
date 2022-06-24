@@ -294,23 +294,53 @@ def compute_result(predictions, reference_data):
         confirm_info = defaultdict(dict)
         for turn in reference_data[dial_id]["Events"]:
             if turn["Agent"] == "User":
-                intent = turn["active_intent"]
-                intent = zh_en_API_MAP.get(intent, intent)
+                if not isinstance(turn["active_intent"], list):
+                    # for compatibility of both BiTOD and RiSAWOZ
+                    intent = [zh_en_API_MAP.get(turn["active_intent"], turn["active_intent"])]
+                else:
+                    intent = turn["active_intent"]
             if turn["Agent"] == "Wizard":
                 if turn["Actions"] == "query":
-                    constraints = canonicalize_constraints(turn["Constraints"])
-                    turn_api = zh_en_API_MAP.get(turn["API"], turn["API"])
-                    reference_task_success[dial_id]["API"][turn_api] = constraints
+                    if not isinstance(turn["API"], list):
+                        # for compatibility of both BiTOD and RiSAWOZ
+                        turn["API"] = [turn["API"]]
+                        constraints = canonicalize_constraints(turn["Constraints"])
+                    else:
+                        # TODO: canonicalization for RiSAWOZ
+                        constraints = turn["Constraints"]
+                    for turn_api in turn["API"]:
+                        turn_api = zh_en_API_MAP.get(turn_api, turn_api)
+                        if constraints:
+                            if turn_api in constraints.keys():
+                                # for RiSAWOZ: filter constraints with current API
+                                constraints = {k: v for k, v in constraints[turn_api].items()}
+                            else:
+                                constraints = {k: v for k, v in constraints.items()}
+                        reference_task_success[dial_id]["API"][turn_api] = constraints
                 else:
                     reference_response.append(clean_value(turn["Text"]))
                     act_values = set()
                     for item in turn["Actions"]:
                         if len(item["value"]):
-                            act_values.update(item["value"])
+                            if not isinstance(item["value"], list):
+                                item["value"] = [item["value"]]
+                            for value in item["value"]:
+                                if not isinstance(value, list):
+                                    value = [value]
+                                act_values.update(value)
                         act_values = set([clean_value(val) for val in act_values])
                     reference_act_values.append(act_values)
 
-                    reference_actions.append(clean_value(action2span(turn["Actions"], en_API_MAP[intent], 'en')))
+                    for i in range(len(intent)):
+                        # for RiSAWOZ: filter turn actions with current intent
+                        turn_actions = (
+                            [action for action in turn["Actions"] if action["domain"] == intent[i]]
+                            if len(intent) > 1
+                            else turn["Actions"]
+                        )
+                        reference_actions.append(
+                            clean_value(action2span(turn_actions, en_API_MAP.get(intent[i], intent[i]), 'en'))
+                        )
 
                     predicted_response.append(clean_value(predictions[dial_id]["turns"][str(pred_turn_id)]["response"][0]))
                     predicted_actions.append(clean_value(predictions[dial_id]["turns"][str(pred_turn_id)]["actions"]))
@@ -326,13 +356,20 @@ def compute_result(predictions, reference_data):
                             and action["slot"] != "available_options"
                             and action["slot"] != "可用选项"
                         ):
-                            user_requested_info[intent][trans_slot] = action["value"]
+                            for i in range(len(intent)):
+                                # for RiSAWOZ: filter turn actions with current intent
+                                if len(intent) <= 1 or action["domain"] == intent[i]:
+                                    user_requested_info[intent[i]][trans_slot] = action["value"]
                         elif (action["act"] == "confirm") and (len(action["value"]) > 0):
                             confirm_info[intent][trans_slot] = action["value"]
         for intent, slot_values in user_requested_info.items():
+            if intent in ["通用"]:  # for RiSAWOZ
+                continue
             for values in slot_values.values():
                 reference_task_success[dial_id]["tasks"][intent]["inform+offer"] += values
         for intent, slot_values in confirm_info.items():
+            if intent in ["通用"]:  # for RiSAWOZ
+                continue
             for values in slot_values.values():
                 reference_task_success[dial_id]["tasks"][intent]["confirmation"] += values
 

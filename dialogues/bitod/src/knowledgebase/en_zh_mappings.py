@@ -2,7 +2,8 @@ import json
 import os
 from collections import OrderedDict
 
-from ...src.knowledgebase.hk_mtr import name_to_zh
+from dialogues.bitod.src.knowledgebase.hk_mtr import name_to_zh
+from dialogues.risawoz.src.knowledgebase.en_zh_mappings import RisaWOZMapping
 
 
 def read_require_slots():
@@ -24,6 +25,13 @@ def read_require_slots():
 
     return require_slots
 
+
+risawoz_mapping = RisaWOZMapping()
+# TODO: this is a draft toggle for inserting risawoz mappings, which will be further moved to its own file.
+enable_risawoz_mapping = True
+risawoz_domain_slot_MAP, risawoz_domain_MAP, risawoz_slot_MAP, risawoz_API_MAP, risawoz_ACT_MAP = risawoz_mapping.get_mapping(
+    enable=enable_risawoz_mapping
+)
 
 zh2en_CARDINAL_MAP = {
     "一": 1,
@@ -69,8 +77,11 @@ en2zh_ACT_MAP = {
     "goodbye": "再见",
     "request_update": "请求更新",
 }
-zh2en_ACT_MAP = {v: k for k, v in en2zh_ACT_MAP.items()}
 
+if enable_risawoz_mapping:
+    en2zh_ACT_MAP.update(risawoz_ACT_MAP)
+
+zh2en_ACT_MAP = {v: k for k, v in en2zh_ACT_MAP.items()}
 
 en2zh_INTENT_MAP = {
     'inform': "通知",
@@ -167,7 +178,6 @@ zh2en_API_MAP = {
 }
 en2zh_API_MAP = {v: k for k, v in zh2en_API_MAP.items()}
 
-
 en_API_MAP = {
     'chat': 'chat',
     "restaurants_en_US_search": "restaurants search",
@@ -209,6 +219,8 @@ API_MAP.update(en_API_MAP)
 API_MAP.update(en2zh_API_MAP)
 API_MAP.update({k: k for k, v in zh2en_API_MAP.items()})
 API_MAP.update({'HKMTR zh': 'HKMTR zh'})
+if enable_risawoz_mapping:
+    API_MAP.update(risawoz_API_MAP)
 
 # for cross lingual transfer
 # mapping between slot values, not comprehensive, don't rely on it
@@ -221,7 +233,6 @@ en2zh_VALUE_MAP.update(map_dict)
 
 zh2en_VALUE_MAP = {v: k for k, v in name_to_zh.items()}
 zh2en_VALUE_MAP.update({v: k for k, v in map_dict.items()})
-
 
 # maps entities to their canonicalized version; api expects canonicalized version
 # note entities in original and preprocessed datasets are not canonicalized;
@@ -243,9 +254,18 @@ translation_dict = {
     **zh2en_SPECIAL_MAP,
 }
 translation_dict["chat"] = "chat"
+
+if enable_risawoz_mapping:
+    translation_dict.update(risawoz_domain_MAP)
+    translation_dict.update(risawoz_slot_MAP)
+
 translation_dict = OrderedDict(sorted(translation_dict.items(), key=lambda item: len(item[0]), reverse=True))
 
 required_slots = read_require_slots()
+
+if enable_risawoz_mapping:
+    required_slots.update(risawoz_domain_slot_MAP)
+
 # mapping between api name and required slots to make an api call
 required_slots = {API_MAP[k]: v for k, v in required_slots.items()}
 api_names = list(required_slots.keys())

@@ -8,13 +8,19 @@ class Dataset(object):
         self.name = name
 
         # regex to extract belief state span from input
-        self.state_re = re.compile('')
+        self.state_re = re.compile('<state> (.*?) <endofstate>')
 
         # regex to extract knowledge span (api results) from input
-        self.knowledge_re = re.compile('')
+        self.knowledge_re = re.compile('<knowledge> (.*?) <endofknowledge>')
+
+        # regex to extract dialogue history from input
+        self.hisotry_re = re.compile('<history> (.*?) <endofhistory>')
 
         # regex to extract agent dialogue acts from input
-        self.actions_re = re.compile('')
+        self.actions_re = re.compile('<actions> (.*?) <endofactions>')
+
+        self.system_token = 'AGENT_ACTS:'
+        self.user_token = 'USER:'
 
     def domain2api_name(self, domain):
         """
@@ -91,3 +97,86 @@ class Dataset(object):
         :return: modified prediction
         """
         pass
+
+    def construct_input(
+        self,
+        train_target,
+        state=None,
+        user_history=None,
+        system_history=None,
+        knowledge=None,
+        actions=None,
+        last_two_agent_turns=True,
+        only_user_rg=True,
+    ):
+        if last_two_agent_turns and len(system_history) >= 2:
+            history = [system_history[-2].replace('AGENT_ACTS:', 'AGENT_ACTS_PREV:'), system_history[-1], user_history[-1]]
+        elif len(system_history) and len(user_history):
+            history = [system_history[-1], user_history[-1]]
+        elif len(user_history):
+            history = [user_history[-1]]
+        else:
+            history = []
+
+        history_text = " ".join(history)
+
+        if train_target == 'dst':
+            input_text = " ".join(
+                [
+                    "DST:",
+                    "<state>",
+                    state,
+                    "<endofstate>",
+                    "<history>",
+                    history_text,
+                    "<endofhistory>",
+                ]
+            )
+        elif train_target == 'api':
+            input_text = " ".join(
+                [
+                    "API:",
+                    "<knowledge>",
+                    knowledge,
+                    "<endofknowledge>",
+                    "<state>",
+                    state,
+                    "<endofstate>",
+                    "<history>",
+                    history_text,
+                    "<endofhistory>",
+                ]
+            )
+        elif train_target == 'da':
+            input_text = " ".join(
+                [
+                    "DA:",
+                    "<knowledge>",
+                    knowledge,
+                    "<endofknowledge>",
+                    "<state>",
+                    state,
+                    "<endofstate>",
+                    "<history>",
+                    history_text,
+                    "<endofhistory>",
+                ]
+            )
+
+        elif train_target == 'rg':
+            if only_user_rg:
+                history_text = user_history[-1]
+
+            input_text = " ".join(
+                [
+                    "RG:",
+                    "<actions>",
+                    actions,
+                    "<endofactions>",
+                    "<history>",
+                    history_text,
+                    "<endofhistory>",
+                ]
+            )
+
+        return input_text
