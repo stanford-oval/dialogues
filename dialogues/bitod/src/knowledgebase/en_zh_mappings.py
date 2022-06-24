@@ -3,7 +3,7 @@ import os
 from collections import OrderedDict
 
 from dialogues.bitod.src.knowledgebase.hk_mtr import name_to_zh
-from dialogues.risawoz.src.knowledgebase.en_zh_mappings import RisaWOZMapping
+from dialogues.risawoz.src.knowledgebase.en_zh_mappings import RisawozMapping
 
 
 def read_require_slots():
@@ -26,11 +26,14 @@ def read_require_slots():
     return require_slots
 
 
-risawoz_mapping = RisaWOZMapping()
+risawoz_mapping = RisawozMapping()
 # TODO: this is a draft toggle for inserting risawoz mappings, which will be further moved to its own file.
 enable_risawoz_mapping = True
-risawoz_domain_slot_MAP, risawoz_domain_MAP, risawoz_slot_MAP, risawoz_API_MAP, risawoz_ACT_MAP = risawoz_mapping.get_mapping(
-    enable=enable_risawoz_mapping
+risawoz_DOMAIN_SLOT_MAP, risawoz_DOMAIN_MAP, risawoz_SLOT_MAP, risawoz_ACT_MAP = (
+    risawoz_mapping.DOMAIN_SLOT_MAP,
+    risawoz_mapping.zh2en_DOMAIN_MAP,
+    risawoz_mapping.zh2en_SLOT_MAP,
+    risawoz_mapping.zh2en_ACT_MAP,
 )
 
 zh2en_CARDINAL_MAP = {
@@ -220,7 +223,7 @@ API_MAP.update(en2zh_API_MAP)
 API_MAP.update({k: k for k, v in zh2en_API_MAP.items()})
 API_MAP.update({'HKMTR zh': 'HKMTR zh'})
 if enable_risawoz_mapping:
-    API_MAP.update(risawoz_API_MAP)
+    API_MAP.update(risawoz_DOMAIN_MAP)
 
 # for cross lingual transfer
 # mapping between slot values, not comprehensive, don't rely on it
@@ -256,15 +259,15 @@ translation_dict = {
 translation_dict["chat"] = "chat"
 
 if enable_risawoz_mapping:
-    translation_dict.update(risawoz_domain_MAP)
-    translation_dict.update(risawoz_slot_MAP)
+    translation_dict.update(risawoz_DOMAIN_MAP)
+    translation_dict.update(risawoz_SLOT_MAP)
 
 translation_dict = OrderedDict(sorted(translation_dict.items(), key=lambda item: len(item[0]), reverse=True))
 
 required_slots = read_require_slots()
 
 if enable_risawoz_mapping:
-    required_slots.update(risawoz_domain_slot_MAP)
+    required_slots.update(risawoz_DOMAIN_SLOT_MAP)
 
 # mapping between api name and required slots to make an api call
 required_slots = {API_MAP[k]: v for k, v in required_slots.items()}

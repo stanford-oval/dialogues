@@ -55,13 +55,12 @@ class Dataset(object):
         """
         raise NotImplementedError
 
-    def process_data(self, args, root):
+    def process_data(self, args):
         """
         converts raw dataset to the format accepted by genienlp
         each dialogue turn is broken down into 4 subtasks:
         Dialogue State Tracking (DST), API call decision (API) , Dialogue Act generation (DA), Response Generation (RG)
         :param args: dictionary of arguments passed to underlying data processor
-        :param root: path to folder containing data files
         :return: three lists containing dialogues for each data split
         """
         raise NotImplementedError

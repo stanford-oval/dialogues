@@ -6,23 +6,25 @@ from ..bitod.src.preprocess import prepare_data
 from ..bitod.src.utils import knowledge2span, span2state, state2constraints, state2span
 from ..main import Dataset
 from .src.knowledgebase import api
-from .src.knowledgebase.en_zh_mappings import api_names, required_slots
+from .src.knowledgebase.en_zh_mappings import RisawozMapping
 
 logger = logging.getLogger(__name__)
 
+mapping = RisawozMapping()
+
 
 class Risawoz(Dataset):
-    def __init__(self, name='RiSAWOZ'):
+    def __init__(self, name='risawoz'):
         super().__init__(name)
 
     def domain2api_name(self, domain):
         return domain
 
     def state2span(self, dialogue_state):
-        return state2span(dialogue_state, required_slots)
+        return state2span(dialogue_state, mapping.required_slots)
 
     def span2state(self, lev):
-        return span2state(lev, api_names)
+        return span2state(lev, mapping.api_names)
 
     def update_state(self, lev, cur_state):
         for api_name in lev:
@@ -31,7 +33,7 @@ class Risawoz(Dataset):
             else:
                 cur_state[api_name].update(lev[api_name])
 
-    def process_data(self, args, root):
+    def process_data(self, args):
         if args.setting in ["en", "zh2en"]:
             path_train = ["data/en_train.json"]
             path_dev = ["data/en_valid.json"]
@@ -45,9 +47,9 @@ class Risawoz(Dataset):
             path_dev = ["data/zh_valid.json", "data/en_valid.json"]
             path_test = ["data/zh_test.json", "data/en_test.json"]
 
-        path_train = [os.path.join(root, p) for p in path_train]
-        path_dev = [os.path.join(root, p) for p in path_dev]
-        path_test = [os.path.join(root, p) for p in path_test]
+        path_train = [os.path.join(args.root, p) for p in path_train]
+        path_dev = [os.path.join(args.root, p) for p in path_dev]
+        path_test = [os.path.join(args.root, p) for p in path_test]
 
         train, fewshot, dev, test = prepare_data(args, path_train, path_dev, path_test)
         return train, fewshot, dev, test
@@ -69,7 +71,6 @@ class Risawoz(Dataset):
         try:
             result = api.call_api(api_names, constraints, lang=src_lang)
             # remove _id
-            # result = [result[0], {api_name: result[0][api_name]["可用选项"] for api_name in result[0].keys()}]
             for api_name in result.keys():
                 result[api_name].pop('_id', None)
 

@@ -23,7 +23,8 @@ parser.add_argument("--only_user_rg", action='store_true')
 
 args = parser.parse_args()
 args.setting = 'zh'
+args.gen_full_state = True
 
 dataset = Risawoz()
-train, fewshot, dev, test = dataset.process_data(args, args.root)
+train, fewshot, dev, test = dataset.process_data(args)
 print(len(dev))

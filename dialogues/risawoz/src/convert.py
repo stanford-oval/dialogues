@@ -265,16 +265,17 @@ if __name__ == "__main__":
                 f.write(requests.get(data_url).content)
 
     processed_data_path = os.path.join(*[args.root, args.save_dir])
-    # for split in args.splits:
-    #     if not os.path.exists(os.path.join(processed_data_path, f"{args.setting}_{split}.json")):
-    #         print(f"processing {split} data...")
-    #         processed_data = build_dataset(os.path.join(original_data_path, f"{args.setting}_{split}.json"), args, mongodb_host=mongodb_host)
-    #         # save converted files in JSON format
-    #         with open(f"{processed_data_path}/{args.setting}_{split}.json", 'w') as f:
-    #             json.dump(processed_data, f, ensure_ascii=False, indent=4)
+    for split in args.splits:
+        print(f"processing {split} data...")
+        processed_data = build_dataset(
+            os.path.join(original_data_path, f"{args.setting}_{split}.json"), args, mongodb_host=mongodb_host
+        )
+        # save converted files in JSON format
+        with open(f"{processed_data_path}/{args.setting}_{split}.json", 'w') as f:
+            json.dump(processed_data, f, ensure_ascii=False, indent=4)
 
     # # generating mock prediction data
-    print("generating mock prediction data...")
-    mock_pred_data = build_mock_pred_data(os.path.join(args.root, "./data/original/zh_test.json"))
-    with open(os.path.join(args.root, "./results/test/risawoz_mock_preds.json"), "w") as f:
-        json.dump(mock_pred_data, f, ensure_ascii=False, indent=4)
+    # print("generating mock prediction data...")
+    # mock_pred_data = build_mock_pred_data(os.path.join(args.root, "./data/original/zh_test.json"))
+    # with open(os.path.join(args.root, "./results/test/risawoz_mock_preds.json"), "w") as f:
+    #     json.dump(mock_pred_data, f, ensure_ascii=False, indent=4)
