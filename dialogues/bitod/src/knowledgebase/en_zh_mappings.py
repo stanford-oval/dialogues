@@ -262,6 +262,7 @@ if enable_risawoz_mapping:
     translation_dict.update(risawoz_DOMAIN_MAP)
     translation_dict.update(risawoz_SLOT_MAP)
 
+# match longer keys first
 translation_dict = OrderedDict(sorted(translation_dict.items(), key=lambda item: len(item[0]), reverse=True))
 
 required_slots = read_require_slots()

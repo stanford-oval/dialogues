@@ -4,23 +4,17 @@ import os
 import random
 from collections import OrderedDict, defaultdict
 
-# Mapping between intents, slots, and relations in English and Chinese
-from dialogues.bitod.src.knowledgebase.en_zh_mappings import (
-    API_MAP,
-    required_slots,
-    translation_dict,
-    zh2en_CARDINAL_MAP,
-    zh_API_MAP,
-)
+from bitod.src.knowledgebase.en_zh_mappings import zh2en_CARDINAL_MAP
+
 from dialogues.bitod.src.utils import action2span, clean_text, compute_lev_span, get_commit, knowledge2span, state2span
 
 
-def translate_slots_to_english(text, do_translate=True):
+def translate_slots_to_english(text, mapping, do_translate=True):
     if not do_translate:
         return text
-    for key, val in translation_dict.items():
+    for key, val in mapping.translation_dict.items():
         text = text.replace(key, val)
-    for key, val in zh_API_MAP.items():
+    for key, val in mapping.zh_API_MAP.items():
         text = text.replace(key, val)
     for key, val in zh2en_CARDINAL_MAP.items():
         text = text.replace(f'" {key} "', f'" {val} "')
@@ -45,7 +39,7 @@ def get_dials_sequential(args, dials):
     return dials, few_dials
 
 
-def get_dials_balanced(args, dials):
+def get_dials_balanced(args, dials, mapping):
     all_dial_ids = list(dials.keys())
     few_dials_file = os.path.join(args.root, f"data/{args.setting}_fewshot_dials_{args.fewshot_percent}_balanced.json")
 
@@ -58,10 +52,10 @@ def get_dials_balanced(args, dials):
 
             for turn in dialogue_turns:
                 if turn["Agent"] == "User":
-                    active_intent = API_MAP[turn["active_intent"]]
+                    active_intent = mapping.API_MAP[turn["active_intent"]]
 
-                    turn_domains[translate_slots_to_english(active_intent, args.english_slots)] += 1
-                    domain_turn_counts[translate_slots_to_english(active_intent, args.english_slots)] += 1
+                    turn_domains[translate_slots_to_english(active_intent, mapping, args.english_slots)] += 1
+                    domain_turn_counts[translate_slots_to_english(active_intent, mapping, args.english_slots)] += 1
 
             max_domain = max(turn_domains, key=turn_domains.get)
             dialogue_dominant_domains[max_domain].append(dial_id)
@@ -80,8 +74,8 @@ def get_dials_balanced(args, dials):
         for dial_id in fewshot_dials:
             for turn in dials[dial_id]["Events"]:
                 if turn["Agent"] == "User":
-                    active_intent = API_MAP[turn["active_intent"]]
-                    res_turn_counts[translate_slots_to_english(active_intent, args.english_slots)] += 1
+                    active_intent = mapping.API_MAP[turn["active_intent"]]
+                    res_turn_counts[translate_slots_to_english(active_intent, mapping, args.english_slots)] += 1
         total = sum(list(res_turn_counts.values()))
         for (domain, count) in res_turn_counts.items():
             print(domain, "comprises of", count, "or", int(100 * count / total + 0.5), "percent")
@@ -98,9 +92,13 @@ def get_dials_balanced(args, dials):
     return dials, few_dials
 
 
-def read_data(args, path_names, setting, max_history=3):
+def read_data(args, path_names, mapping):
     print(("Reading all files from {}".format(path_names)))
 
+    required_slots = mapping.required_slots
+
+    max_history = args.max_history
+    setting = args.setting
     # read files
     for path_name in path_names:
         with open(path_name) as file:
@@ -125,8 +123,10 @@ def read_data(args, path_names, setting, max_history=3):
                             # for compatibility of both BiTOD and RiSAWOZ
                             turn["active_intent"] = [turn["active_intent"]]
 
-                        intents = [API_MAP[intent] for intent in turn["active_intent"]]
-                        task = ' / '.join([translate_slots_to_english(intent, args.english_slots) for intent in intents])
+                        intents = [mapping.API_MAP[intent] for intent in turn["active_intent"]]
+                        task = ' / '.join(
+                            [translate_slots_to_english(intent, mapping, args.english_slots) for intent in intents]
+                        )
 
                         # accumulate dialogue utterances
                         if args.use_user_acts:
@@ -134,7 +134,7 @@ def read_data(args, path_names, setting, max_history=3):
                             assert len(intents) == 1
                             action_text = action2span(turn["Actions"], intents[0], setting)
                             action_text = clean_text(action_text, is_formal=True)
-                            action_text = translate_slots_to_english(action_text, args.english_slots)
+                            action_text = translate_slots_to_english(action_text, mapping, args.english_slots)
                             dialog_history.append("USER_ACTS: " + action_text)
                         else:
                             dialog_history.append("USER: " + clean_text(turn["Text"]))
@@ -155,7 +155,7 @@ def read_data(args, path_names, setting, max_history=3):
                         # convert dict of slot-values into text
                         state_text = state2span(prev_state, required_slots)
 
-                        current_state = {API_MAP[k]: v for k, v in turn["state"].items()}
+                        current_state = {mapping.API_MAP[k]: v for k, v in turn["state"].items()}
                         current_state = OrderedDict(sorted(current_state.items(), key=lambda s: s[0]))
                         current_state = {
                             k: OrderedDict(sorted(v.items(), key=lambda s: s[0])) for k, v in current_state.items()
@@ -184,7 +184,7 @@ def read_data(args, path_names, setting, max_history=3):
                             [
                                 "DST:",
                                 "<state>",
-                                translate_slots_to_english(state_text, args.english_slots),
+                                translate_slots_to_english(state_text, mapping, args.english_slots),
                                 "<endofstate>",
                                 "<history>",
                                 dialog_history_text,
@@ -197,7 +197,7 @@ def read_data(args, path_names, setting, max_history=3):
                             "task": task,
                             "turn_id": count,
                             "input_text": input_text,
-                            "output_text": translate_slots_to_english(target, args.english_slots),
+                            "output_text": translate_slots_to_english(target, mapping, args.english_slots),
                             "train_target": "dst",
                         }
 
@@ -213,10 +213,10 @@ def read_data(args, path_names, setting, max_history=3):
                             [
                                 "API:",
                                 "<knowledge>",
-                                translate_slots_to_english(prev_knowledge, args.english_slots),
+                                translate_slots_to_english(prev_knowledge, mapping, args.english_slots),
                                 "<endofknowledge>",
                                 "<state>",
-                                translate_slots_to_english(state_text, args.english_slots),
+                                translate_slots_to_english(state_text, mapping, args.english_slots),
                                 "<endofstate>",
                                 "<history>",
                                 dialog_history_text_for_api_da,
@@ -275,10 +275,10 @@ def read_data(args, path_names, setting, max_history=3):
                             [
                                 "DA:",
                                 "<knowledge>",
-                                translate_slots_to_english(prev_knowledge, args.english_slots),
+                                translate_slots_to_english(prev_knowledge, mapping, args.english_slots),
                                 "<endofknowledge>",
                                 "<state>",
-                                translate_slots_to_english(state_text, args.english_slots),
+                                translate_slots_to_english(state_text, mapping, args.english_slots),
                                 "<endofstate>",
                                 "<history>",
                                 dialog_history_text_for_api_da,
@@ -290,7 +290,7 @@ def read_data(args, path_names, setting, max_history=3):
 
                         action_text = action2span(turn["Actions"], intents, setting)
                         action_text = clean_text(action_text, is_formal=True)
-                        action_text = translate_slots_to_english(action_text, args.english_slots)
+                        action_text = translate_slots_to_english(action_text, mapping, args.english_slots)
 
                         acts_data_detail = {
                             "dial_id": dial_id,
@@ -338,23 +338,23 @@ def read_data(args, path_names, setting, max_history=3):
     return data
 
 
-def prepare_data(args, path_train, path_dev, path_test):
+def prepare_data(args, path_train, path_dev, path_test, mapping):
     # "en, zh, en&zh, en2zh, zh2en"
     data_train, data_fewshot, data_dev, data_test = None, None, None, None
 
     if 'valid' in args.splits:
-        data_dev = read_data(args, path_dev, args.setting, args.max_history)
+        data_dev = read_data(args, path_dev, mapping)
     if 'test' in args.splits:
-        data_test = read_data(args, path_test, args.setting, args.max_history)
+        data_test = read_data(args, path_test, mapping)
     if 'train' in args.splits:
-        train_data = read_data(args, path_train, args.setting, args.max_history)
+        train_data = read_data(args, path_train, mapping)
         with open(path_train[0]) as file:
             dials = json.load(file)
 
         if args.sampling == "sequential":
             train_dials, few_dials = get_dials_sequential(args, dials)
         else:
-            train_dials, few_dials = get_dials_balanced(args, dials)
+            train_dials, few_dials = get_dials_balanced(args, dials, mapping)
         data_train, data_fewshot = [], []
         for data in train_data:
             if data['dial_id'] in train_dials:
@@ -414,24 +414,26 @@ def main():
     path_dev = [os.path.join(args.root, p) for p in path_dev]
     path_test = [os.path.join(args.root, p) for p in path_test]
 
-    data_train, data_fewshot, data_dev, data_test = prepare_data(args, path_train, path_dev, path_test)
+    mapping = None
+
+    data_train, data_fewshot, data_dev, data_test = prepare_data(args, path_train, path_dev, path_test, mapping=mapping)
 
     if not os.path.exists(args.save_dir):
         os.makedirs(args.save_dir)
 
     args.commit = get_commit()
 
-    for (set, data) in zip(['train', 'fewshot', 'valid', 'test'], [data_train, data_fewshot, data_dev, data_test]):
+    for (split, data) in zip(['train', 'fewshot', 'valid', 'test'], [data_train, data_fewshot, data_dev, data_test]):
         with open(
             os.path.join(
                 args.save_dir,
-                f"{args.setting}_{set}" + f"_v{args.version}.json",
+                f"{args.setting}_{split}" + f"_v{args.version}.json",
             ),
             "w",
         ) as f:
             if data:
                 json.dump({"args": vars(args), "data": data}, f, indent=True, ensure_ascii=False)
-                print(set, len(data))
+                print(split, len(data))
 
     # with open(os.path.join(f"./data_samples/v{args.version}.json"), "w") as f:
     #     json.dump({"data": data_test[:30]}, f, indent=True, ensure_ascii=False)

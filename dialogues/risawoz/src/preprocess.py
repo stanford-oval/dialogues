@@ -2,6 +2,8 @@ import argparse
 import json
 import os
 
+from risawoz.src.knowledgebase.en_zh_mappings import RisawozMapping
+
 from dialogues.bitod.src.preprocess import prepare_data
 from dialogues.bitod.src.utils import get_commit
 
@@ -47,7 +49,9 @@ def main():
     path_dev = [os.path.join(*[args.root, args.data_dir, p]) for p in path_dev]
     path_test = [os.path.join(*[args.root, args.data_dir, p]) for p in path_test]
 
-    data_train, data_fewshot, data_dev, data_test = prepare_data(args, path_train, path_dev, path_test)
+    mapping = RisawozMapping()
+
+    data_train, data_fewshot, data_dev, data_test = prepare_data(args, path_train, path_dev, path_test, mapping=mapping)
 
     args.commit = get_commit()
 

@@ -1,7 +1,28 @@
+from collections import OrderedDict, defaultdict
+
+
+class keydefaultdict(defaultdict):
+    def __missing__(self, key):
+        if self.default_factory is None:
+            raise KeyError(key)
+        else:
+            return self.default_factory(key)
+
+
 class RisawozMapping(object):
     def __init__(self):
 
         # currently untranslated
+
+        self.API_MAP = keydefaultdict(lambda k: k)
+        self.zh_API_MAP = keydefaultdict(lambda k: k)
+
+        self.en2zh_RELATION_MAP = {"equal_to": "等于", "not": "非", "less_than": "少于", "at_least": "至少", "one_of": "其中之一"}
+        self.zh2en_RELATION_MAP = {v: k for k, v in self.en2zh_RELATION_MAP.items()}
+
+        self.zh2en_SPECIAL_MAP = {"不在乎": "don't care"}
+        self.en2zh_SPECIAL_MAP = {v: k for k, v in self.zh2en_SPECIAL_MAP.items()}
+
         # TODO: this mapping should only include slots that are required to make an api call for the domain. It should not include all the slots.
         self.DOMAIN_SLOT_MAP = {
             '医院': ['区域', '名称', '门诊时间', '挂号时间', 'DSA', '3.0T MRI', '重点科室', '电话', '公交线路', '地铁可达', 'CT', '等级', '性质', '类别', '地址'],
@@ -245,6 +266,16 @@ class RisawozMapping(object):
             '班号': 'class_number',
             '地铁是否直达': 'whether_the_subway_is_direct',
         }
+
+        translation_dict = {
+            **self.DOMAIN_SLOT_MAP,
+            **self.zh2en_DOMAIN_MAP,
+            **self.zh2en_SLOT_MAP,
+            **self.zh2en_ACT_MAP,
+            **self.zh2en_RELATION_MAP,
+            **self.zh2en_SPECIAL_MAP,
+        }
+        self.translation_dict = OrderedDict(sorted(translation_dict.items(), key=lambda item: len(item[0]), reverse=True))
 
     def get_mapping(self, enable=False):
         if enable:
