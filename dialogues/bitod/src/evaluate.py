@@ -6,12 +6,15 @@ import re
 from collections import OrderedDict, defaultdict
 
 import dictdiffer
+from bitod.src.knowledgebase.en_zh_mappings import BitodMapping
 from datasets import load_metric
 
-from dialogues.bitod.src.knowledgebase.en_zh_mappings import api_names, en_API_MAP, zh_en_API_MAP
-from dialogues.bitod.src.utils import action2span, canonicalize_constraints, convert_to_int, entity_map, span2action
+from dialogues.bitod.src.utils import action2span, canonicalize_constraints, convert_to_int, span2action
 
 metric = load_metric("sacrebleu")
+
+
+value_mapping = BitodMapping()
 
 
 def postprocess_text(preds, labels):
@@ -43,10 +46,10 @@ def compute_da(preds, refs):
     for pred, ref in zip(preds, refs):
         if pred:
             pred = clean_value(pred)
-            pred_dict = span2action(pred, api_names)
+            pred_dict = span2action(pred, value_mapping.api_names)
 
             ref = clean_value(ref)
-            ref_dict = span2action(ref, api_names)
+            ref_dict = span2action(ref, value_mapping.api_names)
 
             if pred_dict == ref_dict:
                 da += 1
@@ -217,7 +220,7 @@ def clean_value(v, do_int=False):
 
     # time consuming but needed step
     if not FAST_EVAL:
-        for key, val in entity_map.items():
+        for key, val in value_mapping.entity_map.items():
             key, val = str(key), str(val)
             if key in v:
                 v = v.replace(key, val)
@@ -285,7 +288,7 @@ def compute_result(predictions, reference_data):
     for dial_id in reference_data:
         if dial_id not in reference_task_success:
             reference_task_success[dial_id]["tasks"] = {
-                zh_en_API_MAP.get(task["Task"], task["Task"]): {"inform+offer": [], "confirmation": []}
+                value_mapping.zh_en_API_MAP.get(task["Task"], task["Task"]): {"inform+offer": [], "confirmation": []}
                 for task in reference_data[dial_id]["Scenario"]["WizardCapabilities"]
             }
             reference_task_success[dial_id]["API"] = {}
@@ -296,7 +299,7 @@ def compute_result(predictions, reference_data):
             if turn["Agent"] == "User":
                 if not isinstance(turn["active_intent"], list):
                     # for compatibility of both BiTOD and RiSAWOZ
-                    intent = [zh_en_API_MAP.get(turn["active_intent"], turn["active_intent"])]
+                    intent = [value_mapping.zh_en_API_MAP.get(turn["active_intent"], turn["active_intent"])]
                 else:
                     intent = turn["active_intent"]
             if turn["Agent"] == "Wizard":
@@ -309,7 +312,7 @@ def compute_result(predictions, reference_data):
                         # TODO: canonicalization for RiSAWOZ
                         constraints = turn["Constraints"]
                     for turn_api in turn["API"]:
-                        turn_api = zh_en_API_MAP.get(turn_api, turn_api)
+                        turn_api = value_mapping.zh_en_API_MAP.get(turn_api, turn_api)
                         if constraints:
                             if turn_api in constraints.keys():
                                 # for RiSAWOZ: filter constraints with current API
@@ -339,7 +342,7 @@ def compute_result(predictions, reference_data):
                             else turn["Actions"]
                         )
                         reference_actions.append(
-                            clean_value(action2span(turn_actions, en_API_MAP.get(intent[i], intent[i]), 'en'))
+                            clean_value(action2span(turn_actions, value_mapping.en_API_MAP.get(intent[i], intent[i]), 'en'))
                         )
 
                     predicted_response.append(clean_value(predictions[dial_id]["turns"][str(pred_turn_id)]["response"][0]))

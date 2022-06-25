@@ -4,17 +4,12 @@ import re
 from typing import Any, Dict, List, Text, Tuple
 
 import pymongo
+from bitod.src.knowledgebase.en_zh_mappings import BitodMapping
 from pymongo import MongoClient
 
-from ...src.knowledgebase.en_zh_mappings import (
-    en2zh_SLOT_MAP,
-    en_zh_API_MAP,
-    entity_map,
-    r_en_API_MAP,
-    zh2en_API_MAP,
-    zh2en_SLOT_MAP,
-)
 from .hk_mtr import MTR
+
+value_mapping = BitodMapping()
 
 # mongodb_host = os.getenv('BITOD_MONGODB_HOST')
 mongodb_host = 'mongodb+srv://bitod:plGYPp44hASzGbmm@cluster0.vo7pq.mongodb.net/bilingual_tod?retryWrites=true&w=majority&ssl=true&ssl_cert_reqs=CERT_NONE'
@@ -208,7 +203,7 @@ def restaurants_zh_CN_booking(db, query, api_out_list=None):
     else:
         api_return = {k: results[-1][k] for k in api_out_list}
         api_return.update(pre_api_return)
-        api_return = {en2zh_SLOT_MAP[k]: v for k, v in api_return.items()}
+        api_return = {value_mapping.en2zh_SLOT_MAP[k]: v for k, v in api_return.items()}
         return api_return, len(results), query
 
 
@@ -277,7 +272,7 @@ def hotels_zh_CN_booking(db, query, api_out_list=None):
     else:
         api_return = {k: results[-1][k] for k in api_out_list}
         api_return.update(pre_api_return)
-        api_return = {en2zh_SLOT_MAP[k]: v for k, v in api_return.items()}
+        api_return = {value_mapping.en2zh_SLOT_MAP[k]: v for k, v in api_return.items()}
         return api_return, len(results), query
 
 
@@ -314,7 +309,7 @@ def general_search_zh_CN(db, query, api_out_list=None):
 
         if "price_per_night" in api_return:
             api_return["price_per_night"] = str(api_return["price_per_night"]) + "港币"
-        api_return = {en2zh_SLOT_MAP[k]: v for k, v in api_return.items()}
+        api_return = {value_mapping.en2zh_SLOT_MAP[k]: v for k, v in api_return.items()}
         return api_return, len(results), query
 
 
@@ -336,18 +331,20 @@ def query_mongo(api_name, db, query, api_out_list=None, lang=None):
 
 def call_api(api_name, constraints: List[Dict[Text, Any]], lang=None) -> Tuple[Dict[Text, Any], int, dict]:
     global is_mongo
-    api_name = r_en_API_MAP.get(api_name, api_name)
+    api_name = value_mapping.r_en_API_MAP.get(api_name, api_name)
 
     # Canonicalization
     for slot, value in constraints[0].items():
-        if isinstance(value, str) and (value in entity_map):
-            constraints[0][slot] = entity_map[value]
+        if isinstance(value, str) and (value in value_mapping.entity_map):
+            constraints[0][slot] = value_mapping.entity_map[value]
         elif isinstance(value, dict):
             for k, v in value.items():
-                if isinstance(v, str) and (v in entity_map):
-                    constraints[0][slot][k] = entity_map[v]
+                if isinstance(v, str) and (v in value_mapping.entity_map):
+                    constraints[0][slot][k] = value_mapping.entity_map[v]
                 if isinstance(v, list):
-                    constraints[0][slot][k] = [entity_map[v_v] if v_v in entity_map else v_v for v_v in v]
+                    constraints[0][slot][k] = [
+                        value_mapping.entity_map[v_v] if v_v in value_mapping.entity_map else v_v for v_v in v
+                    ]
 
     if api_name in [
         "restaurants_en_US_search",
@@ -365,10 +362,10 @@ def call_api(api_name, constraints: List[Dict[Text, Any]], lang=None) -> Tuple[D
     ]:
 
         if 'zh' in lang:
-            api_name = en_zh_API_MAP.get(api_name, api_name)
+            api_name = value_mapping.en_zh_API_MAP.get(api_name, api_name)
 
-        api_name = zh2en_API_MAP.get(api_name, api_name)
-        constraints = [{zh2en_SLOT_MAP.get(k, k): v for k, v in constraints[0].items()}]
+        api_name = value_mapping.zh2en_API_MAP.get(api_name, api_name)
+        constraints = [{value_mapping.zh2en_SLOT_MAP.get(k, k): v for k, v in constraints[0].items()}]
 
         with open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "apis", api_name + ".json"), "r") as file:
             api_schema = json.load(file)
@@ -400,8 +397,8 @@ def call_api(api_name, constraints: List[Dict[Text, Any]], lang=None) -> Tuple[D
         if api_name == 'HKMTR_zh':
             api_name = '香港地铁'
 
-        api_name = zh2en_API_MAP.get(api_name, api_name)
-        constraints = [{zh2en_SLOT_MAP.get(k, k): v for k, v in constraints[0].items()}]
+        api_name = value_mapping.zh2en_API_MAP.get(api_name, api_name)
+        constraints = [{value_mapping.zh2en_SLOT_MAP.get(k, k): v for k, v in constraints[0].items()}]
         # with open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "apis", api_name + ".json"), "r") as file:
         #     api_schema = json.load(file)
 

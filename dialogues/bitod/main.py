@@ -5,11 +5,13 @@ import re
 from ..main import Dataset
 from .src.evaluate import eval_file
 from .src.knowledgebase import api
-from .src.knowledgebase.en_zh_mappings import api_names, r_en_API_MAP, required_slots
+from .src.knowledgebase.en_zh_mappings import BitodMapping
 from .src.preprocess import prepare_data
 from .src.utils import action2span, knowledge2span, span2action, span2knowledge, span2state, state2constraints, state2span
 
 logger = logging.getLogger(__name__)
+
+value_mapping = BitodMapping()
 
 
 class Bitod(Dataset):
@@ -18,13 +20,13 @@ class Bitod(Dataset):
 
     def domain2api_name(self, domain):
         # TODO: update
-        return r_en_API_MAP.get(domain, domain)
+        return value_mapping.r_en_API_MAP.get(domain, domain)
 
     def state2span(self, dialogue_state):
-        return state2span(dialogue_state, required_slots)
+        return state2span(dialogue_state, value_mapping.required_slots)
 
     def span2state(self, state_text):
-        return span2state(state_text, api_names)
+        return span2state(state_text, value_mapping.api_names)
 
     def knowledge2span(self, knowledge):
         return knowledge2span(knowledge)
@@ -100,7 +102,7 @@ class Bitod(Dataset):
 
     def postprocess_prediction(self, prediction, knowledge=None, lang='en'):
         if re.search(rf'\( HKMTR {lang} \)', prediction):
-            action_dict = span2action(prediction, api_names)
+            action_dict = span2action(prediction, value_mapping.api_names)
             domain = f'HKMTR {lang}'
             metro_slots = set(item['slot'] for item in action_dict[domain])
             for slot in ['estimated_time', 'price']:
@@ -112,7 +114,7 @@ class Bitod(Dataset):
             prediction = action2span(action_dict[domain], domain, lang)
 
         if re.search(r'\( weathers search \)', prediction):
-            action_dict = span2action(prediction, api_names)
+            action_dict = span2action(prediction, value_mapping.api_names)
             domain = 'weathers search'
             weather_slots = set(item['slot'] for item in action_dict[domain])
             for slot in ['max_temp', 'min_temp', 'weather', 'city']:

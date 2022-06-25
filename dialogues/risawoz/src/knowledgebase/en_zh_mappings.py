@@ -276,14 +276,3 @@ class RisawozMapping(object):
             **self.zh2en_SPECIAL_MAP,
         }
         self.translation_dict = OrderedDict(sorted(translation_dict.items(), key=lambda item: len(item[0]), reverse=True))
-
-    def get_mapping(self, enable=False):
-        if enable:
-            return (
-                self.DOMAIN_SLOT_MAP,
-                self.zh2en_DOMAIN_MAP,
-                self.zh2en_SLOT_MAP,
-                self.zh2en_ACT_MAP,
-            )
-        else:
-            return None, None, None, None, None

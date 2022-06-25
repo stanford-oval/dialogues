@@ -5,17 +5,12 @@ import re
 import subprocess
 from collections import OrderedDict, defaultdict
 
+from bitod.src.knowledgebase.en_zh_mappings import BitodMapping
 from word2number import w2n
 
 from dialogues.bitod.src.knowledgebase import api
-from dialogues.bitod.src.knowledgebase.en_zh_mappings import (
-    API_MAP,
-    en2zh_ACT_MAP,
-    en2zh_RELATION_MAP,
-    en2zh_SLOT_MAP,
-    entity_map,
-    reverse_entity_map,
-)
+
+value_mapping = BitodMapping()
 
 
 def convert_to_int(val, strict=False, word2number=False):
@@ -81,7 +76,7 @@ def state2constraints(dict_data):
             continue
         relation = r_v["relation"]
         values = r_v["value"]
-        if relation != "one_of" and relation != en2zh_RELATION_MAP["one_of"]:
+        if relation != "one_of" and relation != value_mapping.en2zh_RELATION_MAP["one_of"]:
             values = values[0]
             if slot in [
                 'stars',
@@ -97,13 +92,13 @@ def state2constraints(dict_data):
                 'number_of_nights',
             ]:
                 values = convert_to_int(values, strict=False, word2number=True)
-        if relation == "one_of" or relation == en2zh_RELATION_MAP["one_of"]:
+        if relation == "one_of" or relation == value_mapping.en2zh_RELATION_MAP["one_of"]:
             constraints[slot] = api.is_one_of(values)
-        elif relation == "at_least" or relation == en2zh_RELATION_MAP["at_least"]:
+        elif relation == "at_least" or relation == value_mapping.en2zh_RELATION_MAP["at_least"]:
             constraints[slot] = api.is_at_least(values)
-        elif relation == "not" or relation == en2zh_RELATION_MAP["not"]:
+        elif relation == "not" or relation == value_mapping.en2zh_RELATION_MAP["not"]:
             constraints[slot] = api.is_not(values)
-        elif relation == "less_than" or relation == en2zh_RELATION_MAP["less_than"]:
+        elif relation == "less_than" or relation == value_mapping.en2zh_RELATION_MAP["less_than"]:
             constraints[slot] = api.is_less_than(values)
         else:
             constraints[slot] = api.is_equal_to(values)
@@ -117,19 +112,19 @@ def canonicalize_constraints(dict_data):
         for slot, values in const.items():
             relation = values[values.find(".") + 1 : values.find("(")]
             values = values[values.find("(") + 1 : -1]
-            values = entity_map.get(values, values)
+            values = value_mapping.entity_map.get(values, values)
 
-            if relation == "one_of" or relation == en2zh_RELATION_MAP["one_of"]:
+            if relation == "one_of" or relation == value_mapping.en2zh_RELATION_MAP["one_of"]:
                 values = values.split(" , ")
             else:
                 values = convert_to_int(values, word2number=True)
-            if relation == "one_of" or relation == en2zh_RELATION_MAP["one_of"]:
+            if relation == "one_of" or relation == value_mapping.en2zh_RELATION_MAP["one_of"]:
                 constraints[slot] = api.is_one_of(values)
-            elif relation == "at_least" or relation == en2zh_RELATION_MAP["at_least"]:
+            elif relation == "at_least" or relation == value_mapping.en2zh_RELATION_MAP["at_least"]:
                 constraints[slot] = api.is_at_least(values)
-            elif relation == "not" or relation == en2zh_RELATION_MAP["not"]:
+            elif relation == "not" or relation == value_mapping.en2zh_RELATION_MAP["not"]:
                 constraints[slot] = api.is_not(values)
-            elif relation == "less_than" or relation == en2zh_RELATION_MAP["less_than"]:
+            elif relation == "less_than" or relation == value_mapping.en2zh_RELATION_MAP["less_than"]:
                 constraints[slot] = api.is_less_than(values)
             else:
                 constraints[slot] = api.is_equal_to(values)
@@ -149,7 +144,7 @@ def read_ontology(tgt_lang):
         if lang != tgt_lang[:2]:
             continue
 
-        api_name = API_MAP[api_name]
+        api_name = value_mapping.API_MAP[api_name]
 
         with open(os.path.join(cur_dir, "knowledgebase/apis", fn)) as f:
             ontology = json.load(f)
@@ -158,17 +153,17 @@ def read_ontology(tgt_lang):
                 for item in ontology[key]:
                     slot, type = item['Name'], item['Type']
                     if lang == 'zh':
-                        slot = en2zh_SLOT_MAP[slot]
+                        slot = value_mapping.en2zh_SLOT_MAP[slot]
                     if type == 'Categorical':
                         values = item['Categories']
-                        values += [entity_map.get(val, val) for val in values]
-                        values += [reverse_entity_map.get(val, val) for val in values]
+                        values += [value_mapping.entity_map.get(val, val) for val in values]
+                        values += [value_mapping.reverse_entity_map.get(val, val) for val in values]
                         values = set(values)
                         processed_ont[slot].update(values)
                     elif type == 'Integer':
                         values = list(range(item['Min'], item['Max'] + 1))
-                        values += [entity_map.get(val, val) for val in values]
-                        values += [reverse_entity_map.get(val, val) for val in values]
+                        values += [value_mapping.entity_map.get(val, val) for val in values]
+                        values += [value_mapping.reverse_entity_map.get(val, val) for val in values]
                         values = set(values)
                         processed_ont[slot].update(values)
                     else:
@@ -240,10 +235,10 @@ def action2span_for_single_intent(agent_actions, intent, setting):
             continue
         orig_act = act
         if setting == 'zh':
-            if act not in en2zh_ACT_MAP:
+            if act not in value_mapping.en2zh_ACT_MAP:
                 print(f'Encountered illegal act: {act}')
                 continue
-            act = en2zh_ACT_MAP[act]
+            act = value_mapping.en2zh_ACT_MAP[act]
 
         values = [val for val in values if val != ""]
         if len(values):
@@ -322,10 +317,10 @@ def action2template(agent_actions, intent, setting):
 
         orig_act = act
         if setting == 'zh':
-            if act not in en2zh_ACT_MAP:
+            if act not in value_mapping.en2zh_ACT_MAP:
                 print(f'Encountered illegal act: {act}')
                 continue
-            act = en2zh_ACT_MAP[act]
+            act = value_mapping.en2zh_ACT_MAP[act]
 
         values = [val for val in values if val != ""]
         if len(values):

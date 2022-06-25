@@ -25,6 +25,8 @@ args = parser.parse_args()
 args.setting = 'zh'
 args.gen_full_state = True
 
+args.dataset_name = 'risawoz'
+
 dataset = Risawoz()
 train, fewshot, dev, test = dataset.process_data(args)
 print(len(dev))
