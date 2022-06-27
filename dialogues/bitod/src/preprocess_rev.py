@@ -7,6 +7,8 @@ import re
 import subprocess
 from collections import OrderedDict, defaultdict
 
+from main import action2span, compute_lev_span, knowledge2span, state2span
+
 # Mapping between intents, slots, and relations in English and Chinese
 from dialogues.bitod.src.knowledgebase.en_zh_mappings import (
     API_MAP,
@@ -15,7 +17,7 @@ from dialogues.bitod.src.knowledgebase.en_zh_mappings import (
     zh2en_CARDINAL_MAP,
     zh_API_MAP,
 )
-from dialogues.bitod.src.utils import action2span, clean_text, compute_lev_span, knowledge2span, state2span
+from dialogues.bitod.src.utils import clean_text
 
 
 def translate_slots_to_english(text, do_translate=True):

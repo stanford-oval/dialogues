@@ -1,30 +1,27 @@
 import logging
 import os.path
 
-from ..bitod.src.evaluate import eval_file
-from ..bitod.src.preprocess import prepare_data
-from ..bitod.src.utils import knowledge2span, span2state, state2constraints, state2span
 from ..main import Dataset
 from .src.knowledgebase import api
 from .src.knowledgebase.en_zh_mappings import RisawozMapping
 
 logger = logging.getLogger(__name__)
 
-mapping = RisawozMapping()
-
 
 class Risawoz(Dataset):
     def __init__(self, name='risawoz'):
         super().__init__(name)
 
+        self.value_mapping = RisawozMapping()
+
     def domain2api_name(self, domain):
         return domain
 
-    def state2span(self, dialogue_state):
-        return state2span(dialogue_state, mapping.required_slots)
-
-    def span2state(self, lev):
-        return span2state(lev, mapping.api_names)
+    # def state2span(self, dialogue_state):
+    #     return state2span(dialogue_state, mapping.required_slots)
+    #
+    # def span2state(self, lev):
+    #     return span2state(lev, mapping.api_names)
 
     def update_state(self, lev, cur_state):
         for api_name in lev:
@@ -51,7 +48,7 @@ class Risawoz(Dataset):
         path_dev = [os.path.join(args.root, p) for p in path_dev]
         path_test = [os.path.join(args.root, p) for p in path_test]
 
-        train, fewshot, dev, test = prepare_data(args, path_train, path_dev, path_test)
+        train, fewshot, dev, test = self.prepare_data(args, path_train, path_dev, path_test)
         return train, fewshot, dev, test
 
     def make_api_call(
@@ -65,7 +62,7 @@ class Risawoz(Dataset):
     ):
         constraints = {}
         for api_name in dialogue_state.keys():
-            constraints[api_name] = state2constraints(dialogue_state[api_name])
+            constraints[api_name] = self.state2constraints(dialogue_state[api_name])
         new_knowledge_text = 'null'
 
         try:
@@ -88,13 +85,13 @@ class Risawoz(Dataset):
                 new_knowledge_text = f'( {api_name} ) Message = No item available.'
             else:
                 knowledge.update(result)
-                new_knowledge_text = knowledge2span(knowledge)
+                new_knowledge_text = self.knowledge2span(knowledge)
 
         return new_knowledge_text, constraints
 
-    def compute_metrics(self, args, prediction_path, reference_path):
-        results = eval_file(args, prediction_path, reference_path)
-        return results
+    # def compute_metrics(self, args, prediction_path, reference_path):
+    #     results = eval_file(args, prediction_path, reference_path)
+    #     return results
 
     def postprocess_prediction(self, prediction, knowledge=None, lang='en'):
         return prediction

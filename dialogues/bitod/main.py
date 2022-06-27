@@ -3,36 +3,33 @@ import os.path
 import re
 
 from ..main import Dataset
-from .src.evaluate import eval_file
 from .src.knowledgebase import api
 from .src.knowledgebase.en_zh_mappings import BitodMapping
-from .src.preprocess import prepare_data
-from .src.utils import action2span, knowledge2span, span2action, span2knowledge, span2state, state2constraints, state2span
 
 logger = logging.getLogger(__name__)
-
-value_mapping = BitodMapping()
 
 
 class Bitod(Dataset):
     def __init__(self, name='bitod'):
         super().__init__(name)
 
+        self.value_mapping = BitodMapping()
+
     def domain2api_name(self, domain):
         # TODO: update
-        return value_mapping.r_en_API_MAP.get(domain, domain)
+        return self.value_mapping.r_en_API_MAP.get(domain, domain)
 
-    def state2span(self, dialogue_state):
-        return state2span(dialogue_state, value_mapping.required_slots)
-
-    def span2state(self, state_text):
-        return span2state(state_text, value_mapping.api_names)
-
-    def knowledge2span(self, knowledge):
-        return knowledge2span(knowledge)
-
-    def span2knowledge(self, knowledge_text):
-        return span2knowledge(knowledge_text)
+    # def state2span(self, dialogue_state):
+    #     return state2span(dialogue_state, self.value_mapping.required_slots)
+    #
+    # def span2state(self, state_text):
+    #     return span2state(state_text, self.value_mapping.api_names)
+    #
+    # def knowledge2span(self, knowledge):
+    #     return knowledge2span(knowledge)
+    #
+    # def span2knowledge(self, knowledge_text):
+    #     return span2knowledge(knowledge_text)
 
     def update_state(self, lev, cur_state):
         for api_name in lev:
@@ -59,7 +56,7 @@ class Bitod(Dataset):
         path_dev = [os.path.join(args.root, p) for p in path_dev]
         path_test = [os.path.join(args.root, p) for p in path_test]
 
-        train, fewshot, dev, test = prepare_data(args, path_train, path_dev, path_test)
+        train, fewshot, dev, test = self.prepare_data(args, path_train, path_dev, path_test)
         return train, fewshot, dev, test
 
     def make_api_call(self, dialogue_state, knowledge, api_names, src_lang='en', dial_id=None, turn_id=None):
@@ -67,7 +64,7 @@ class Bitod(Dataset):
         assert isinstance(api_names, list)
         api_name = api_names[-1]
 
-        constraints = state2constraints(dialogue_state[api_name])
+        constraints = self.state2constraints(dialogue_state[api_name])
 
         try:
             result, count, processed_query = api.call_api(api_name, constraints=[constraints], lang=src_lang)
@@ -86,13 +83,9 @@ class Bitod(Dataset):
         else:
             # always choose the highest ranking results (so we have deterministic api results)
             knowledge[api_name].update(result)
-            new_knowledge_text = knowledge2span(knowledge)
+            new_knowledge_text = self.knowledge2span(knowledge)
 
         return new_knowledge_text, {self.domain2api_name(api_name): constraints}
-
-    def compute_metrics(self, args, prediction_path, reference_path):
-        results = eval_file(args, prediction_path, reference_path)
-        return results
 
     def do_knowledge_reset(self, api_name):
         do_reset = False
@@ -102,7 +95,7 @@ class Bitod(Dataset):
 
     def postprocess_prediction(self, prediction, knowledge=None, lang='en'):
         if re.search(rf'\( HKMTR {lang} \)', prediction):
-            action_dict = span2action(prediction, value_mapping.api_names)
+            action_dict = self.span2action(prediction, self.value_mapping.api_names)
             domain = f'HKMTR {lang}'
             metro_slots = set(item['slot'] for item in action_dict[domain])
             for slot in ['estimated_time', 'price']:
@@ -111,10 +104,10 @@ class Bitod(Dataset):
                         {'act': 'offer', 'slot': slot, 'relation': 'equal_to', 'value': [knowledge[domain][slot]]}
                     )
 
-            prediction = action2span(action_dict[domain], domain, lang)
+            prediction = self.action2span(action_dict[domain], domain, lang)
 
         if re.search(r'\( weathers search \)', prediction):
-            action_dict = span2action(prediction, value_mapping.api_names)
+            action_dict = self.span2action(prediction, self.value_mapping.api_names)
             domain = 'weathers search'
             weather_slots = set(item['slot'] for item in action_dict[domain])
             for slot in ['max_temp', 'min_temp', 'weather', 'city']:
@@ -123,6 +116,6 @@ class Bitod(Dataset):
                         {'act': 'offer', 'slot': slot, 'relation': 'equal_to', 'value': [knowledge[domain][slot]]}
                     )
 
-            prediction = action2span(action_dict[domain], domain, lang)
+            prediction = self.action2span(action_dict[domain], domain, lang)
 
         return prediction

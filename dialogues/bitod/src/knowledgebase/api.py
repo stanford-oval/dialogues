@@ -4,8 +4,9 @@ import re
 from typing import Any, Dict, List, Text, Tuple
 
 import pymongo
-from bitod.src.knowledgebase.en_zh_mappings import BitodMapping
 from pymongo import MongoClient
+
+from dialogues.bitod.src.knowledgebase.en_zh_mappings import BitodMapping
 
 from .hk_mtr import MTR
 

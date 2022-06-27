@@ -13,9 +13,13 @@ class RisawozMapping(object):
     def __init__(self):
 
         # currently untranslated
-
         self.API_MAP = keydefaultdict(lambda k: k)
         self.zh_API_MAP = keydefaultdict(lambda k: k)
+        self.en_API_MAP = keydefaultdict(lambda k: k)
+        self.zh_en_API_MAP = keydefaultdict(lambda k: k)
+
+        self.entity_map = keydefaultdict(lambda k: k)
+        self.reverse_entity_map = keydefaultdict(lambda k: k)
 
         self.en2zh_RELATION_MAP = {"equal_to": "等于", "not": "非", "less_than": "少于", "at_least": "至少", "one_of": "其中之一"}
         self.zh2en_RELATION_MAP = {v: k for k, v in self.en2zh_RELATION_MAP.items()}
@@ -147,6 +151,7 @@ class RisawozMapping(object):
             'recommend': 'recommend',
             'no-offer': 'no-offer',
         }
+        self.en2zh_ACT_MAP = {v: k for k, v in self.zh2en_ACT_MAP.items()}
 
         self.zh2en_SLOT_MAP = {
             '价格区间': 'price_range',
@@ -266,6 +271,7 @@ class RisawozMapping(object):
             '班号': 'class_number',
             '地铁是否直达': 'whether_the_subway_is_direct',
         }
+        self.en2zh_SLOT_MAP = {v: k for k, v in self.zh2en_SLOT_MAP.items()}
 
         translation_dict = {
             **self.DOMAIN_SLOT_MAP,

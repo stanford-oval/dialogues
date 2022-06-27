@@ -8,7 +8,6 @@ from contextlib import ExitStack
 from pathlib import Path
 
 import pymongo
-import requests
 from knowledgebase.api import call_api
 from tqdm.autonotebook import tqdm
 
@@ -216,14 +215,14 @@ def build_mock_pred_data(test_data_path):
             for action in turn["system_actions"]:
                 for i in range(len(turn_action_domain_list)):
                     if action[1] == turn_action_domain_list[i]:
-                        if action[0].strip() == "Inform":
+                        if action[0].strip() == "Inform" or action[3]:
                             turn_action_text[
                                 i
                             ] += f"{action[0].strip().lower()} {action[2]} 等于 \" {''.join(action[3].split())} \" , "
-                        elif action[3]:
-                            turn_action_text[
-                                i
-                            ] += f"{action[0].strip().lower()} {action[2]} \" {''.join(action[3].split())} \" , "
+                        # elif action[3]:
+                        #     turn_action_text[
+                        #         i
+                        #     ] += f"{action[0].strip().lower()} {action[2]} \" {''.join(action[3].split())} \" , "
                         else:
                             turn_action_text[i] += f"{action[0].strip().lower()} {action[2]} , "
             turn_action_text = [text[:-3] for text in turn_action_text]
@@ -247,35 +246,35 @@ if __name__ == "__main__":
     mongodb_host = "mongodb://localhost:27017/"
 
     # uncomment to build db
-    risawoz_db = build_db(
-        db_json_path=os.path.join(*[args.root, 'db']), api_map=None, mongodb_host=mongodb_host, setting=args.setting
-    )
+    # risawoz_db = build_db(
+    #     db_json_path=os.path.join(*[args.root, 'db']), api_map=None, mongodb_host=mongodb_host, setting=args.setting
+    # )
 
     # download original RiSAWOZ dataset
-    original_data_path = os.path.join(*[args.root, args.data_dir])
-    for split in args.splits:
-        if not os.path.exists(os.path.join(original_data_path, f"{args.setting}_{split}.json")):
-            os.makedirs(original_data_path, exist_ok=True)
-            print(f"{split} set is not found, downloading...")
-            if split == "valid":
-                data_url = "https://huggingface.co/datasets/GEM/RiSAWOZ/resolve/main/dev.json"
-            else:
-                data_url = f"https://huggingface.co/datasets/GEM/RiSAWOZ/resolve/main/{split}.json"
-            with open(f"{original_data_path}/{split}.json", 'wb') as f:
-                f.write(requests.get(data_url).content)
-
-    processed_data_path = os.path.join(*[args.root, args.save_dir])
-    for split in args.splits:
-        print(f"processing {split} data...")
-        processed_data = build_dataset(
-            os.path.join(original_data_path, f"{args.setting}_{split}.json"), args, mongodb_host=mongodb_host
-        )
-        # save converted files in JSON format
-        with open(f"{processed_data_path}/{args.setting}_{split}.json", 'w') as f:
-            json.dump(processed_data, f, ensure_ascii=False, indent=4)
+    # original_data_path = os.path.join(*[args.root, args.data_dir])
+    # for split in args.splits:
+    #     if not os.path.exists(os.path.join(original_data_path, f"{args.setting}_{split}.json")):
+    #         os.makedirs(original_data_path, exist_ok=True)
+    #         print(f"{split} set is not found, downloading...")
+    #         if split == "valid":
+    #             data_url = "https://huggingface.co/datasets/GEM/RiSAWOZ/resolve/main/dev.json"
+    #         else:
+    #             data_url = f"https://huggingface.co/datasets/GEM/RiSAWOZ/resolve/main/{split}.json"
+    #         with open(f"{original_data_path}/{split}.json", 'wb') as f:
+    #             f.write(requests.get(data_url).content)
+    #
+    # processed_data_path = os.path.join(*[args.root, args.save_dir])
+    # for split in args.splits:
+    #     print(f"processing {split} data...")
+    #     processed_data = build_dataset(
+    #         os.path.join(original_data_path, f"{args.setting}_{split}.json"), args, mongodb_host=mongodb_host
+    #     )
+    #     # save converted files in JSON format
+    #     with open(f"{processed_data_path}/{args.setting}_{split}.json", 'w') as f:
+    #         json.dump(processed_data, f, ensure_ascii=False, indent=4)
 
     # # generating mock prediction data
-    # print("generating mock prediction data...")
-    # mock_pred_data = build_mock_pred_data(os.path.join(args.root, "./data/original/zh_test.json"))
-    # with open(os.path.join(args.root, "./results/test/risawoz_mock_preds.json"), "w") as f:
-    #     json.dump(mock_pred_data, f, ensure_ascii=False, indent=4)
+    print("generating mock prediction data...")
+    mock_pred_data = build_mock_pred_data(os.path.join(args.root, "./data/original/zh_test.json"))
+    with open(os.path.join(args.root, "./results/test/risawoz_mock_preds.json"), "w") as f:
+        json.dump(mock_pred_data, f, ensure_ascii=False, indent=4)

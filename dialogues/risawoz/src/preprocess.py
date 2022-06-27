@@ -2,7 +2,8 @@ import argparse
 import json
 import os
 
-from dialogues.bitod.src.preprocess import prepare_data
+from main import prepare_data
+
 from dialogues.bitod.src.utils import get_commit
 
 

@@ -19,10 +19,8 @@ parser.add_argument("--eval_task", type=str, default="end2end", help="end2end, d
 parser.add_argument("--setting", type=str, help="en, zh, en&zh, en2zh, zh2en")
 parser.add_argument("--result_path", type=str, default="./", help="result_path")
 parser.add_argument("--save_prefix", type=str, default="", help="prefix of save file name")
-parser.add_argument("--fast_eval", action='store_true', help="skip time consuming normalization step")
 
 args = parser.parse_args()
-args.fast_eval = True
 
 if not os.path.exists(args.result_path):
     os.makedirs(args.result_path)
@@ -35,16 +33,17 @@ if not args.setting:
         args.setting = 'en'
 
 dataset = Risawoz()
+dataset.FAST_EVAL = True
 results = dataset.compute_metrics(args, args.prediction_file_path, args.reference_file_path)
 
-# api and ser are not correct
+# api, da, and ser are not correct
 gold_results = OrderedDict(
     [
         ('bleu', 100.0),
         ('ser', 16.347189317251775),
         ('success_rate', 100.0),
         ('api_acc', 0.0),
-        ('da_acc', 100.0),
+        ('da_acc', 46.090889511091966),
         ('jga', 100.0),
         (
             'task_info',
