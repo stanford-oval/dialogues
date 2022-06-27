@@ -2,8 +2,9 @@ import argparse
 import json
 import os
 
+from utils import get_commit
+
 from dialogues.bitod.main import Bitod
-from dialogues.bitod.src.utils import get_commit
 
 
 def main():
@@ -67,9 +68,6 @@ def main():
             if data:
                 json.dump({"args": vars(args), "data": data}, f, indent=True, ensure_ascii=False)
                 print(split, len(data))
-
-    # with open(os.path.join(f"./data_samples/v{args.version}.json"), "w") as f:
-    #     json.dump({"data": data_test[:30]}, f, indent=True, ensure_ascii=False)
 
 
 if __name__ == "__main__":

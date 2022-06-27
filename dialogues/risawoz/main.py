@@ -1,5 +1,6 @@
 import logging
-import os.path
+
+from pymongo import MongoClient
 
 from ..main import Dataset
 from .src.knowledgebase import api
@@ -12,44 +13,15 @@ class Risawoz(Dataset):
     def __init__(self, name='risawoz'):
         super().__init__(name)
 
+        mongodb_host = 'mongodb+srv://bitod:plGYPp44hASzGbmm@cluster0.vo7pq.mongodb.net/risawoz?retryWrites=true&w=majority&ssl=true&ssl_cert_reqs=CERT_NONE'
+        client = MongoClient(mongodb_host, authSource='admin')
+
+        self.db = client["risawoz"]
+
         self.value_mapping = RisawozMapping()
 
     def domain2api_name(self, domain):
         return domain
-
-    # def state2span(self, dialogue_state):
-    #     return state2span(dialogue_state, mapping.required_slots)
-    #
-    # def span2state(self, lev):
-    #     return span2state(lev, mapping.api_names)
-
-    def update_state(self, lev, cur_state):
-        for api_name in lev:
-            if api_name not in cur_state:
-                cur_state[api_name] = lev[api_name]
-            else:
-                cur_state[api_name].update(lev[api_name])
-
-    def process_data(self, args):
-        if args.setting in ["en", "zh2en"]:
-            path_train = ["data/en_train.json"]
-            path_dev = ["data/en_valid.json"]
-            path_test = ["data/en_test.json"]
-        elif args.setting in ["zh", "en2zh"]:
-            path_train = ["data/zh_train.json"]
-            path_dev = ["data/zh_valid.json"]
-            path_test = ["data/zh_test.json"]
-        else:
-            path_train = ["data/zh_train.json", "data/en_train.json"]
-            path_dev = ["data/zh_valid.json", "data/en_valid.json"]
-            path_test = ["data/zh_test.json", "data/en_test.json"]
-
-        path_train = [os.path.join(args.root, p) for p in path_train]
-        path_dev = [os.path.join(args.root, p) for p in path_dev]
-        path_test = [os.path.join(args.root, p) for p in path_test]
-
-        train, fewshot, dev, test = self.prepare_data(args, path_train, path_dev, path_test)
-        return train, fewshot, dev, test
 
     def make_api_call(
         self,
@@ -66,7 +38,7 @@ class Risawoz(Dataset):
         new_knowledge_text = 'null'
 
         try:
-            result = api.call_api(api_names, constraints, lang=src_lang)
+            result = api.call_api(self.db, api_names, constraints, src_lang, self.value_mapping)
             # remove _id
             for api_name in result.keys():
                 result[api_name].pop('_id', None)
@@ -88,10 +60,3 @@ class Risawoz(Dataset):
                 new_knowledge_text = self.knowledge2span(knowledge)
 
         return new_knowledge_text, constraints
-
-    # def compute_metrics(self, args, prediction_path, reference_path):
-    #     results = eval_file(args, prediction_path, reference_path)
-    #     return results
-
-    def postprocess_prediction(self, prediction, knowledge=None, lang='en'):
-        return prediction

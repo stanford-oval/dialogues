@@ -4,7 +4,6 @@ import re
 from typing import Any, Dict, List, Text, Tuple
 
 import pymongo
-from pymongo import MongoClient
 
 from dialogues.bitod.src.knowledgebase.en_zh_mappings import BitodMapping
 
@@ -12,26 +11,6 @@ from .hk_mtr import MTR
 
 value_mapping = BitodMapping()
 
-# mongodb_host = os.getenv('BITOD_MONGODB_HOST')
-mongodb_host = 'mongodb+srv://bitod:plGYPp44hASzGbmm@cluster0.vo7pq.mongodb.net/bilingual_tod?retryWrites=true&w=majority&ssl=true&ssl_cert_reqs=CERT_NONE'
-
-if mongodb_host:
-    client = MongoClient(mongodb_host, authSource='admin')
-else:
-    client = MongoClient(authSource='admin')
-
-database = client["bilingual_tod"]
-
-bitod_database = {"null": None}
-
-for domain in ['restaurants', 'hotels']:
-    for lang in ['en_US', 'zh_CN', 'fa_IR']:
-        bitod_database[f"{domain}_{lang}_booking"] = database[f"{domain}_{lang}"]
-        bitod_database[f"{domain}_{lang}_search"] = database[f"{domain}_{lang}"]
-
-for domain in ['attractions', 'weathers']:
-    for lang in ['en_US', 'zh_CN', 'fa_IR']:
-        bitod_database[f"{domain}_{lang}_search"] = database[f"{domain}_{lang}"]
 
 is_mongo = True
 
@@ -110,7 +89,7 @@ def constraint_list_to_dict(constraints: List[Dict[Text, Any]]) -> Dict[Text, An
     return result
 
 
-def restaurants_en_US_booking(db, query, api_out_list=None, lang=None):
+def restaurants_en_US_booking(db, query, api_out_list=None):
     pre_api_return = {"user_name": query["user_name"], "number_of_people": query["number_of_people"], "time": query["time"]}
     api_out_list.remove("number_of_people")
     api_out_list.remove("time")
@@ -314,9 +293,9 @@ def general_search_zh_CN(db, query, api_out_list=None):
         return api_return, len(results), query
 
 
-def query_mongo(api_name, db, query, api_out_list=None, lang=None):
+def query_mongo(api_name, db, query, api_out_list=None):
     if api_name == "restaurants_en_US_booking":
-        res, count, query = restaurants_en_US_booking(db, query, api_out_list, lang)
+        res, count, query = restaurants_en_US_booking(db, query, api_out_list)
     elif api_name == "hotels_en_US_booking":
         res, count, query = hotels_en_US_booking(db, query, api_out_list)
     elif api_name == "restaurants_zh_CN_booking":
@@ -330,7 +309,7 @@ def query_mongo(api_name, db, query, api_out_list=None, lang=None):
     return res, count, query
 
 
-def call_api(api_name, constraints: List[Dict[Text, Any]], lang=None) -> Tuple[Dict[Text, Any], int, dict]:
+def call_api(db, api_name, constraints: List[Dict[Text, Any]], lang=None) -> Tuple[Dict[Text, Any], int, dict]:
     global is_mongo
     api_name = value_mapping.r_en_API_MAP.get(api_name, api_name)
 
@@ -385,12 +364,11 @@ def call_api(api_name, constraints: List[Dict[Text, Any]], lang=None) -> Tuple[D
         if lang:
             if 'en' in lang:
                 lang = 'en_US'
-            db = bitod_database[re.sub(re.compile('(\w+_)\w{2}_\w{2}(_\w+)'), fr'\1{lang}\2', api_name)]
+            api_db = db[re.sub(re.compile('(\w+_)\w{2}_\w{2}(_\w+)'), fr'\1{lang}\2', api_name)]
         else:
-            db = bitod_database[api_name]
+            api_db = db[api_name]
 
-        res, count, query = query_mongo(api_name, db, constraint_list_to_dict(constraints), api_out_list, lang)
-        # res, count = query_mongo(bitod_database[api_name], constraints)
+        res, count, query = query_mongo(api_name, api_db, constraint_list_to_dict(constraints), api_out_list)
         return res, count, query
 
     elif api_name in ["HKMTR_en", "HKMTR_zh", "香港地铁"]:
@@ -400,8 +378,6 @@ def call_api(api_name, constraints: List[Dict[Text, Any]], lang=None) -> Tuple[D
 
         api_name = value_mapping.zh2en_API_MAP.get(api_name, api_name)
         constraints = [{value_mapping.zh2en_SLOT_MAP.get(k, k): v for k, v in constraints[0].items()}]
-        # with open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "apis", api_name + ".json"), "r") as file:
-        #     api_schema = json.load(file)
 
         source = constraint_list_to_dict(constraints)["departure"]
         target = constraint_list_to_dict(constraints)["destination"]

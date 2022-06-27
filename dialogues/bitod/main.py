@@ -1,6 +1,7 @@
 import logging
-import os.path
 import re
+
+from pymongo import MongoClient
 
 from ..main import Dataset
 from .src.knowledgebase import api
@@ -15,49 +16,26 @@ class Bitod(Dataset):
 
         self.value_mapping = BitodMapping()
 
+        mongodb_host = 'mongodb+srv://bitod:plGYPp44hASzGbmm@cluster0.vo7pq.mongodb.net/bilingual_tod?retryWrites=true&w=majority&ssl=true&ssl_cert_reqs=CERT_NONE'
+        client = MongoClient(mongodb_host, authSource='admin')
+        database = client["bilingual_tod"]
+
+        db = {"null": None}
+
+        for domain in ['restaurants', 'hotels']:
+            for lang in ['en_US', 'zh_CN']:
+                db[f"{domain}_{lang}_booking"] = database[f"{domain}_{lang}"]
+                db[f"{domain}_{lang}_search"] = database[f"{domain}_{lang}"]
+
+        for domain in ['attractions', 'weathers']:
+            for lang in ['en_US', 'zh_CN']:
+                db[f"{domain}_{lang}_search"] = database[f"{domain}_{lang}"]
+
+        self.db = db
+
     def domain2api_name(self, domain):
         # TODO: update
         return self.value_mapping.r_en_API_MAP.get(domain, domain)
-
-    # def state2span(self, dialogue_state):
-    #     return state2span(dialogue_state, self.value_mapping.required_slots)
-    #
-    # def span2state(self, state_text):
-    #     return span2state(state_text, self.value_mapping.api_names)
-    #
-    # def knowledge2span(self, knowledge):
-    #     return knowledge2span(knowledge)
-    #
-    # def span2knowledge(self, knowledge_text):
-    #     return span2knowledge(knowledge_text)
-
-    def update_state(self, lev, cur_state):
-        for api_name in lev:
-            if api_name not in cur_state:
-                cur_state[api_name] = lev[api_name]
-            else:
-                cur_state[api_name].update(lev[api_name])
-
-    def process_data(self, args):
-        if args.setting in ["en", "zh2en"]:
-            path_train = ["data/en_train.json"]
-            path_dev = ["data/en_valid.json"]
-            path_test = ["data/en_test.json"]
-        elif args.setting in ["zh", "en2zh"]:
-            path_train = ["data/zh_train.json"]
-            path_dev = ["data/zh_valid.json"]
-            path_test = ["data/zh_test.json"]
-        else:
-            path_train = ["data/zh_train.json", "data/en_train.json"]
-            path_dev = ["data/zh_valid.json", "data/en_valid.json"]
-            path_test = ["data/zh_test.json", "data/en_test.json"]
-
-        path_train = [os.path.join(args.root, p) for p in path_train]
-        path_dev = [os.path.join(args.root, p) for p in path_dev]
-        path_test = [os.path.join(args.root, p) for p in path_test]
-
-        train, fewshot, dev, test = self.prepare_data(args, path_train, path_dev, path_test)
-        return train, fewshot, dev, test
 
     def make_api_call(self, dialogue_state, knowledge, api_names, src_lang='en', dial_id=None, turn_id=None):
         # bitod only does api call for the last (active) intent
@@ -67,7 +45,7 @@ class Bitod(Dataset):
         constraints = self.state2constraints(dialogue_state[api_name])
 
         try:
-            result, count, processed_query = api.call_api(api_name, constraints=[constraints], lang=src_lang)
+            result, count, processed_query = api.call_api(self.db, api_name, constraints=[constraints], lang=src_lang)
         except Exception as e:
             logger.error(f'Error: {e}')
             logger.error(
@@ -86,12 +64,6 @@ class Bitod(Dataset):
             new_knowledge_text = self.knowledge2span(knowledge)
 
         return new_knowledge_text, {self.domain2api_name(api_name): constraints}
-
-    def do_knowledge_reset(self, api_name):
-        do_reset = False
-        if api_name and 'HKMTR' not in api_name:
-            do_reset = True
-        return do_reset
 
     def postprocess_prediction(self, prediction, knowledge=None, lang='en'):
         if re.search(rf'\( HKMTR {lang} \)', prediction):

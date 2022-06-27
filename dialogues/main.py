@@ -10,7 +10,7 @@ from datasets import load_metric
 
 from dialogues.bitod.src.knowledgebase import api
 from dialogues.bitod.src.knowledgebase.en_zh_mappings import zh2en_CARDINAL_MAP
-from dialogues.bitod.src.utils import clean_text, convert_to_int
+from dialogues.utils import clean_text, convert_to_int
 
 out_ser = open('out_ser.tsv', 'w')
 out_dst = open('out_dst.tsv', 'w')
@@ -27,6 +27,8 @@ class Dataset(object):
 
         # value mapping between different languages
         self.value_mapping = None
+
+        self.db = None
 
         self.FAST_EVAL = False
 
@@ -53,15 +55,6 @@ class Dataset(object):
         """
         raise NotImplementedError
 
-    def update_state(self, lev, cur_state):
-        """
-        Updates cur_state according to the levenshtein state
-        :param lev: dict
-        :param cur_state: dict
-        :return: dict
-        """
-        raise NotImplementedError
-
     def process_data(self, args):
         """
         converts raw dataset to the format accepted by genienlp
@@ -70,7 +63,25 @@ class Dataset(object):
         :param args: dictionary of arguments passed to underlying data processor
         :return: three lists containing dialogues for each data split
         """
-        raise NotImplementedError
+        if args.setting in ["en", "zh2en"]:
+            path_train = ["data/en_train.json"]
+            path_dev = ["data/en_valid.json"]
+            path_test = ["data/en_test.json"]
+        elif args.setting in ["zh", "en2zh"]:
+            path_train = ["data/zh_train.json"]
+            path_dev = ["data/zh_valid.json"]
+            path_test = ["data/zh_test.json"]
+        else:
+            path_train = ["data/zh_train.json", "data/en_train.json"]
+            path_dev = ["data/zh_valid.json", "data/en_valid.json"]
+            path_test = ["data/zh_test.json", "data/en_test.json"]
+
+        path_train = [os.path.join(args.root, p) for p in path_train]
+        path_dev = [os.path.join(args.root, p) for p in path_dev]
+        path_test = [os.path.join(args.root, p) for p in path_test]
+
+        train, fewshot, dev, test = self.prepare_data(args, path_train, path_dev, path_test)
+        return train, fewshot, dev, test
 
     def make_api_call(self, dialogue_state, knowledge, api_name, **kwargs):
         """
@@ -91,7 +102,20 @@ class Dataset(object):
         :param kwargs: additional args used for postprocessing
         :return: modified prediction
         """
-        pass
+        return prediction
+
+    def update_state(self, lev, cur_state):
+        """
+        Updates cur_state according to the levenshtein state
+        :param lev: dict
+        :param cur_state: dict
+        :return: dict
+        """
+        for api_name in lev:
+            if api_name not in cur_state:
+                cur_state[api_name] = lev[api_name]
+            else:
+                cur_state[api_name].update(lev[api_name])
 
     def compute_metrics(self, args, prediction_path, reference_path):
         """
@@ -205,7 +229,7 @@ class Dataset(object):
 
         return input_text
 
-    def span2state(self, state_span, api_names):
+    def span2state(self, state_span):
         """
         converts dialogue state text span to a dictionary
         :param state_span: str
@@ -223,7 +247,7 @@ class Dataset(object):
         for match in matches:
             intent, srv_span = match
             state[intent] = {}
-            if intent in api_names:
+            if intent in self.value_mapping.api_names:
                 srv_matches = re_srvs.findall(srv_span)
                 for srv in srv_matches:
                     if '#unknown' in srv:
@@ -307,7 +331,7 @@ class Dataset(object):
             constraints = None
         return constraints
 
-    def span2action(self, api_span, api_names):
+    def span2action(self, api_span):
         # reverse direction of state2span fuction
         # converts text span to state dict
 
@@ -319,7 +343,7 @@ class Dataset(object):
 
         for match in matches:
             intent, srv_span = match
-            if intent in api_names:
+            if intent in self.value_mapping.api_names:
                 asr_matches = re_asrs.findall(srv_span)
                 for asr in asr_matches:
                     slot, value, relation = 'null', 'null', 'null'
@@ -435,7 +459,7 @@ class Dataset(object):
             action_text += intent_action_text
         return action_text.strip()  # retain the original output for BiToD
 
-    def state2span(self, state, required_slots):
+    def state2span(self, state):
         """
         converts dictionary of dialogue state to a text span
         :param dialogue_state: dict
@@ -466,11 +490,11 @@ class Dataset(object):
         for intent in state:
             span += f"( {intent} ) "
             # check the required slots
-            if intent not in required_slots:
+            if intent not in self.value_mapping.required_slots:
                 print(f'{intent} not in required slots!')
                 continue
-            if len(required_slots[intent]) > 0:
-                for slot in required_slots[intent]:
+            if len(self.value_mapping.required_slots[intent]) > 0:
+                for slot in self.value_mapping.required_slots[intent]:
                     if slot in state[intent]:
                         span += create_span(state, intent, slot)
                     else:
@@ -564,10 +588,10 @@ class Dataset(object):
         for pred, ref in zip(preds, refs):
             if pred:
                 pred = self.clean_value(pred)
-                pred_dict = self.span2action(pred, self.value_mapping.api_names)
+                pred_dict = self.span2action(pred)
 
                 ref = self.clean_value(ref)
-                ref_dict = self.span2action(ref, self.value_mapping.api_names)
+                ref_dict = self.span2action(ref)
 
                 if pred_dict == ref_dict:
                     da += 1
@@ -1014,8 +1038,6 @@ class Dataset(object):
     def read_data(self, args, path_names):
         print(("Reading all files from {}".format(path_names)))
 
-        required_slots = self.value_mapping.required_slots
-
         max_history = args.max_history
         setting = args.setting
         # read files
@@ -1074,7 +1096,7 @@ class Dataset(object):
                                 dialog_history_text_for_rg = dialog_history_text
 
                             # convert dict of slot-values into text
-                            state_text = self.state2span(prev_state, required_slots)
+                            state_text = self.state2span(prev_state)
 
                             current_state = {self.value_mapping.API_MAP[k]: v for k, v in turn["state"].items()}
                             current_state = OrderedDict(sorted(current_state.items(), key=lambda s: s[0]))
@@ -1128,7 +1150,7 @@ class Dataset(object):
 
                         elif turn["Agent"] == "Wizard":
                             # convert dict of slot-values into text
-                            state_text = self.state2span(prev_state, required_slots)
+                            state_text = self.state2span(prev_state)
 
                             input_text = " ".join(
                                 [
