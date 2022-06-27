@@ -189,7 +189,20 @@ def compute_success_rate(predictions, references):
 
 
 FAST_EVAL = False
-
+month_abbrevs = {
+    'jan': 'january',
+    'feb': 'february',
+    'mar': 'march',
+    'apr': 'april',
+    'jun': 'june',
+    'jul': 'july',
+    'aug': 'august',
+    'sep': 'september',
+    'sept': 'september',
+    'oct': 'october',
+    'nov': 'november',
+    'dec': 'december'
+}
 
 def clean_value(v, do_int=False):
     v = str(v)
@@ -214,6 +227,13 @@ def clean_value(v, do_int=False):
 
     # 3rd of january --> januray 3
     v = re.sub('(\d+)(?:th|rd|st|nd) of (\w+)', r'\2 \1', v)
+
+    # jan --> january
+    for abbrev in month_abbrevs:
+        v = re.sub('\s' + abbrev + '\s', ' ' + month_abbrevs[abbrev] + ' ', v)
+
+    # january 7th --> january 7
+    v = re.sub('(\w+) (\d+)(?:th|rd|st|nd)', r'\1 \2', v)
 
     # time consuming but needed step
     if not FAST_EVAL:
