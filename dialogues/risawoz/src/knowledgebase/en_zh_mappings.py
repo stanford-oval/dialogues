@@ -119,10 +119,6 @@ class RisawozMapping(object):
             '通用': [],
         }
 
-        # TODO: remove below
-        self.required_slots = {k: [] for k, v in self.DOMAIN_SLOT_MAP.items()}
-        self.api_names = list(self.required_slots.keys())
-
         self.zh2en_DOMAIN_MAP = {
             # currently untranslated
             "天气": "weather",
@@ -140,6 +136,13 @@ class RisawozMapping(object):
             "通用": "general",
         }
         self.en2zh_DOMAIN_MAP = {v: k for k, v in self.zh2en_DOMAIN_MAP.items()}
+
+        # TODO: update below
+        self.required_slots = {
+            **{k: [] for k, v in self.DOMAIN_SLOT_MAP.items()},
+            **{self.zh2en_DOMAIN_MAP[k]: [] for k, v in self.DOMAIN_SLOT_MAP.items()},
+        }
+        self.api_names = list(self.required_slots.keys())
 
         self.zh2en_ACT_MAP = {
             # untranslated in the original dataset
