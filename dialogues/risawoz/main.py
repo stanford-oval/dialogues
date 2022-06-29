@@ -2,14 +2,14 @@ import logging
 
 from pymongo import MongoClient
 
-from ..main import Dataset
+from ..main import WOZDataset
 from .src.knowledgebase import api
 from .src.knowledgebase.en_zh_mappings import RisawozMapping
 
 logger = logging.getLogger(__name__)
 
 
-class Risawoz(Dataset):
+class Risawoz(WOZDataset):
     def __init__(self, name='risawoz'):
         super().__init__(name)
 

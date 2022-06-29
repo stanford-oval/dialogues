@@ -6,87 +6,13 @@ from typing import Any, Dict, List, Text, Tuple
 import pymongo
 
 from dialogues.bitod.src.knowledgebase.en_zh_mappings import BitodMapping
+from dialogues.utils import constraint_list_to_dict
 
 from .hk_mtr import MTR
 
 value_mapping = BitodMapping()
 
-
 is_mongo = True
-
-
-def is_equal_to(value):
-    if is_mongo:
-        return value  #
-    else:
-        return lambda x: x == value
-
-
-def is_not(value):
-    if is_mongo:
-        return {"$ne": value}  #
-    else:
-        # return lambda x: x == value
-        return lambda x: x != value
-
-
-def contains_none_of(value):
-    if is_mongo:
-        return {"$nin": value}  #
-    else:
-        return lambda x: not any([e in x for e in value])
-
-
-def is_one_of(value):
-    if is_mongo:
-        return {"$in": value}  #
-    else:
-        return lambda x: x in value
-
-
-def is_at_least(value):
-    if is_mongo:
-        return {"$gte": value}  #
-    else:
-        return lambda x: x >= value
-
-
-def is_less_than(value):
-    if is_mongo:
-        return {"$lt": value}  #
-    else:
-        return lambda x: x < value
-
-
-def is_at_most(value):
-    if is_mongo:
-        return {"$lte": value}  #
-    else:
-        return lambda x: x <= value
-
-
-def contain_all_of(value):
-    return lambda x: all([e in x for e in value])
-
-
-def contain_at_least_one_of(value):
-    return lambda x: any([e in x for e in value])
-
-
-def constraint_and(constraint1, constraint2):
-    return lambda x: constraint1(x) and constraint2(x)
-
-
-def constraint_list_to_dict(constraints: List[Dict[Text, Any]]) -> Dict[Text, Any]:
-    result = {}
-    for constraint in constraints:
-        for name, constraint_function in constraint.items():
-            # print(name, callable(constraint_function))
-            if name not in result:
-                result[name] = constraint_function
-            else:
-                result[name] = constraint_and(result[name], constraint_function)
-    return result
 
 
 def restaurants_en_US_booking(db, query, api_out_list=None):
@@ -310,7 +236,6 @@ def query_mongo(api_name, db, query, api_out_list=None):
 
 
 def call_api(db, api_name, constraints: List[Dict[Text, Any]], lang=None) -> Tuple[Dict[Text, Any], int, dict]:
-    global is_mongo
     api_name = value_mapping.r_en_API_MAP.get(api_name, api_name)
 
     # Canonicalization
@@ -349,7 +274,6 @@ def call_api(db, api_name, constraints: List[Dict[Text, Any]], lang=None) -> Tup
 
         with open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "apis", api_name + ".json"), "r") as file:
             api_schema = json.load(file)
-        is_mongo = True
         if constraints:
             all_provided_parameters = set.union(*[set(c) for c in constraints])
         else:

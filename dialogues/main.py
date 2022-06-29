@@ -8,9 +8,16 @@ from collections import OrderedDict, defaultdict
 import dictdiffer
 from datasets import load_metric
 
-from dialogues.bitod.src.knowledgebase import api
-from dialogues.bitod.src.knowledgebase.en_zh_mappings import zh2en_CARDINAL_MAP
-from dialogues.utils import clean_text, convert_to_int
+from dialogues.utils import (
+    clean_text,
+    convert_to_int,
+    is_at_least,
+    is_equal_to,
+    is_less_than,
+    is_not,
+    is_one_of,
+    zh2en_CARDINAL_MAP,
+)
 
 out_ser = open('out_ser.tsv', 'w')
 out_dst = open('out_dst.tsv', 'w')
@@ -21,6 +28,113 @@ metric = load_metric("sacrebleu")
 
 class Dataset(object):
     def __init__(self, name):
+
+        # name of the dataset
+        self.name = name
+
+        # value mapping between different languages
+        self.value_mapping = None
+
+        # database
+        self.db = None
+
+        self.FAST_EVAL = False
+
+        # regex to extract belief state span from input
+        self.state_re = re.compile('')
+
+        # regex to extract knowledge span (api results) from input
+        self.knowledge_re = re.compile('')
+
+        # regex to extract dialogue history from input
+        self.history_re = re.compile('')
+
+        # regex to extract agent dialogue acts from input
+        self.actions_re = re.compile('')
+
+        self.system_token = ''
+        self.user_token = ''
+
+    def domain2api_name(self, domain):
+        """
+        map domain name to api name used to query the database. these can be the same.
+        :param domain: str
+        :return: str
+        """
+        raise NotImplementedError
+
+    def state2span(self, dialogue_state):
+        """
+        converts dictionary of dialogue state to a text span
+        :param dialogue_state: dict
+        :return: str
+        """
+        raise NotImplementedError
+
+    def span2state(self, state_span):
+        """
+        converts dialogue state text span to a dictionary
+        :param state_span: str
+        :return: dict
+        """
+        raise NotImplementedError
+
+    def update_state(self, lev, cur_state):
+        """
+        Updates cur_state according to the levenshtein state
+        :param lev: dict
+        :param cur_state: dict
+        :return: dict
+        """
+        raise NotImplementedError
+
+    def process_data(self, args):
+        """
+        converts raw dataset to the format accepted by genienlp
+        each dialogue turn is broken down into 4 subtasks:
+        Dialogue State Tracking (DST), API call decision (API) , Dialogue Act generation (DA), Response Generation (RG)
+        :param args: dictionary of arguments passed to underlying data processor
+        :return: three lists containing dialogues for each data split
+        """
+        raise NotImplementedError
+
+    def make_api_call(self, dialogue_state, knowledge, api_name, **kwargs):
+        """
+        given dialogue state and api_name, compute the constraints for api call, make the call, and return the results in text form
+        :param dialogue_state: dict
+        :param knowledge: dict, keeping track returned api results
+        :param api_name: str
+        :param kwargs: additional args to pass to api call function
+        :return: a dictionary of constraints used as input to api caller
+        :return: text version of updated knowledge
+        """
+        raise NotImplementedError
+
+    def compute_metrics(self, args, prediction_path, reference_path):
+        """
+        compare predictions vs gold and compute metrics. prediction file should contain model predictions for each subtask for each turn.
+        reference file can be the original raw data file or a preprocessed version if it contains all needed info to calculate the required metrics
+        :param args: dictionary of arguments passed to underlying evaluation code
+        :param prediction_path: path to file containing model predictions
+        :param reference_path: path to file containing gold values to compare predictions against
+        :return: a dictionary with metric names as keys and their computed values (in percentage)
+        """
+        raise NotImplementedError
+
+    def postprocess_prediction(self, prediction, **kwargs):
+        """
+        rule-based postprocessings done on model predictions
+        :param prediction: str
+        :param kwargs: additional args used for postprocessing
+        :return: modified prediction
+        """
+        pass
+
+
+class WOZDataset(Dataset):
+    # Datasets annotated with slot-relation-values (does not have to be collected WOZ style)
+    def __init__(self, name='woz'):
+        super().__init__(name)
 
         # name of the dataset
         self.name = name
@@ -39,7 +153,7 @@ class Dataset(object):
         self.knowledge_re = re.compile('<knowledge> (.*?) <endofknowledge>')
 
         # regex to extract dialogue history from input
-        self.hisotry_re = re.compile('<history> (.*?) <endofhistory>')
+        self.history_re = re.compile('<history> (.*?) <endofhistory>')
 
         # regex to extract agent dialogue acts from input
         self.actions_re = re.compile('<actions> (.*?) <endofactions>')
@@ -53,7 +167,7 @@ class Dataset(object):
         :param domain: str
         :return: str
         """
-        raise NotImplementedError
+        return domain
 
     def process_data(self, args):
         """
@@ -82,18 +196,6 @@ class Dataset(object):
 
         train, fewshot, dev, test = self.prepare_data(args, path_train, path_dev, path_test)
         return train, fewshot, dev, test
-
-    def make_api_call(self, dialogue_state, knowledge, api_name, **kwargs):
-        """
-        given dialogue state and api_name, compute the constraints for api call, make the call, and return the results in text form
-        :param dialogue_state: dict
-        :param knowledge: dict, keeping track returned api results
-        :param api_name: str
-        :param kwargs: additional args to pass to api call function
-        :return: a dictionary of constraints used as input to api caller
-        :return: text version of updated knowledge
-        """
-        raise NotImplementedError
 
     def postprocess_prediction(self, prediction, **kwargs):
         """
@@ -292,15 +394,15 @@ class Dataset(object):
                 ]:
                     values = convert_to_int(values, strict=False, word2number=True)
             if relation == "one_of" or relation == self.value_mapping.en2zh_RELATION_MAP["one_of"]:
-                constraints[slot] = api.is_one_of(values)
+                constraints[slot] = is_one_of(values)
             elif relation == "at_least" or relation == self.value_mapping.en2zh_RELATION_MAP["at_least"]:
-                constraints[slot] = api.is_at_least(values)
+                constraints[slot] = is_at_least(values)
             elif relation == "not" or relation == self.value_mapping.en2zh_RELATION_MAP["not"]:
-                constraints[slot] = api.is_not(values)
+                constraints[slot] = is_not(values)
             elif relation == "less_than" or relation == self.value_mapping.en2zh_RELATION_MAP["less_than"]:
-                constraints[slot] = api.is_less_than(values)
+                constraints[slot] = is_less_than(values)
             else:
-                constraints[slot] = api.is_equal_to(values)
+                constraints[slot] = is_equal_to(values)
         return constraints
 
     def canonicalize_constraints(self, dict_data):
@@ -317,15 +419,15 @@ class Dataset(object):
                 else:
                     values = convert_to_int(values, word2number=True)
                 if relation == "one_of" or relation == self.value_mapping.en2zh_RELATION_MAP["one_of"]:
-                    constraints[slot] = api.is_one_of(values)
+                    constraints[slot] = is_one_of(values)
                 elif relation == "at_least" or relation == self.value_mapping.en2zh_RELATION_MAP["at_least"]:
-                    constraints[slot] = api.is_at_least(values)
+                    constraints[slot] = is_at_least(values)
                 elif relation == "not" or relation == self.value_mapping.en2zh_RELATION_MAP["not"]:
-                    constraints[slot] = api.is_not(values)
+                    constraints[slot] = is_not(values)
                 elif relation == "less_than" or relation == self.value_mapping.en2zh_RELATION_MAP["less_than"]:
-                    constraints[slot] = api.is_less_than(values)
+                    constraints[slot] = is_less_than(values)
                 else:
-                    constraints[slot] = api.is_equal_to(values)
+                    constraints[slot] = is_equal_to(values)
         constraints = OrderedDict(sorted(constraints.items()))
         if constraints == {}:
             constraints = None

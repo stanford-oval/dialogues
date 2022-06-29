@@ -3,14 +3,14 @@ import re
 
 from pymongo import MongoClient
 
-from ..main import Dataset
+from ..main import WOZDataset
 from .src.knowledgebase import api
 from .src.knowledgebase.en_zh_mappings import BitodMapping
 
 logger = logging.getLogger(__name__)
 
 
-class Bitod(Dataset):
+class Bitod(WOZDataset):
     def __init__(self, name='bitod'):
         super().__init__(name)
 
