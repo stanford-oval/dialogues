@@ -21,6 +21,12 @@ class RisawozMapping(object):
         self.entity_map = keydefaultdict(lambda k: k)
         self.reverse_entity_map = keydefaultdict(lambda k: k)
 
+        self.zh2en_VALUE_MAP = keydefaultdict(lambda k: k)
+        self.en2zh_VALUE_MAP = keydefaultdict(lambda k: k)
+
+        self.zh2en_missing_MAP = keydefaultdict(lambda k: k)
+        self.en2zh_missing_MAP = keydefaultdict(lambda k: k)
+
         self.en2zh_RELATION_MAP = {"equal_to": "等于", "not": "非", "less_than": "少于", "at_least": "至少", "one_of": "其中之一"}
         self.zh2en_RELATION_MAP = {v: k for k, v in self.en2zh_RELATION_MAP.items()}
 
