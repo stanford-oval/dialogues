@@ -1,0 +1,23 @@
+branches:
+  except:
+  - "/^wip/"
+  - "/^dependabot/"
+
+language: python
+
+python: 3.8
+cache: pip
+
+install:
+- pip install -e .
+
+stages:
+  - test
+
+jobs:
+  include:
+    -
+      name: "Main tests"
+      stage: test
+      script:
+        - bash ./tests/run.sh

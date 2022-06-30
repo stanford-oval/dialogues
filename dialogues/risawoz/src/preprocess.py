@@ -2,8 +2,9 @@ import argparse
 import json
 import os
 
-from dialogues.bitod.src.preprocess import prepare_data
-from dialogues.bitod.src.utils import get_commit
+from utils import get_commit
+
+from dialogues.risawoz.main import Risawoz
 
 
 def main():
@@ -30,6 +31,8 @@ def main():
 
     args = parser.parse_args()
 
+    dataset = Risawoz()
+
     if args.setting in ["en"]:
         path_train = ["en_train.json"]
         path_dev = ["en_valid.json"]
@@ -47,7 +50,7 @@ def main():
     path_dev = [os.path.join(*[args.root, args.data_dir, p]) for p in path_dev]
     path_test = [os.path.join(*[args.root, args.data_dir, p]) for p in path_test]
 
-    data_train, data_fewshot, data_dev, data_test = prepare_data(args, path_train, path_dev, path_test)
+    data_train, data_fewshot, data_dev, data_test = dataset.prepare_data(args, path_train, path_dev, path_test)
 
     args.commit = get_commit()
 

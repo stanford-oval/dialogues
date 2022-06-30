@@ -4,117 +4,18 @@ import re
 from typing import Any, Dict, List, Text, Tuple
 
 import pymongo
-from pymongo import MongoClient
 
-from ...src.knowledgebase.en_zh_mappings import (
-    en2zh_SLOT_MAP,
-    en_zh_API_MAP,
-    entity_map,
-    r_en_API_MAP,
-    zh2en_API_MAP,
-    zh2en_SLOT_MAP,
-)
+from dialogues.bitod.src.knowledgebase.en_zh_mappings import BitodMapping
+from dialogues.utils import constraint_list_to_dict
+
 from .hk_mtr import MTR
 
-# mongodb_host = os.getenv('BITOD_MONGODB_HOST')
-mongodb_host = 'mongodb+srv://bitod:plGYPp44hASzGbmm@cluster0.vo7pq.mongodb.net/bilingual_tod?retryWrites=true&w=majority&ssl=true&ssl_cert_reqs=CERT_NONE'
-
-if mongodb_host:
-    client = MongoClient(mongodb_host, authSource='admin')
-else:
-    client = MongoClient(authSource='admin')
-
-database = client["bilingual_tod"]
-
-bitod_database = {"null": None}
-
-for domain in ['restaurants', 'hotels']:
-    for lang in ['en_US', 'zh_CN', 'fa_IR']:
-        bitod_database[f"{domain}_{lang}_booking"] = database[f"{domain}_{lang}"]
-        bitod_database[f"{domain}_{lang}_search"] = database[f"{domain}_{lang}"]
-
-for domain in ['attractions', 'weathers']:
-    for lang in ['en_US', 'zh_CN', 'fa_IR']:
-        bitod_database[f"{domain}_{lang}_search"] = database[f"{domain}_{lang}"]
+value_mapping = BitodMapping()
 
 is_mongo = True
 
 
-def is_equal_to(value):
-    if is_mongo:
-        return value  #
-    else:
-        return lambda x: x == value
-
-
-def is_not(value):
-    if is_mongo:
-        return {"$ne": value}  #
-    else:
-        # return lambda x: x == value
-        return lambda x: x != value
-
-
-def contains_none_of(value):
-    if is_mongo:
-        return {"$nin": value}  #
-    else:
-        return lambda x: not any([e in x for e in value])
-
-
-def is_one_of(value):
-    if is_mongo:
-        return {"$in": value}  #
-    else:
-        return lambda x: x in value
-
-
-def is_at_least(value):
-    if is_mongo:
-        return {"$gte": value}  #
-    else:
-        return lambda x: x >= value
-
-
-def is_less_than(value):
-    if is_mongo:
-        return {"$lt": value}  #
-    else:
-        return lambda x: x < value
-
-
-def is_at_most(value):
-    if is_mongo:
-        return {"$lte": value}  #
-    else:
-        return lambda x: x <= value
-
-
-def contain_all_of(value):
-    return lambda x: all([e in x for e in value])
-
-
-def contain_at_least_one_of(value):
-    return lambda x: any([e in x for e in value])
-
-
-def constraint_and(constraint1, constraint2):
-    return lambda x: constraint1(x) and constraint2(x)
-
-
-def constraint_list_to_dict(constraints: List[Dict[Text, Any]]) -> Dict[Text, Any]:
-    result = {}
-    for constraint in constraints:
-        for name, constraint_function in constraint.items():
-            # print(name, callable(constraint_function))
-            if name not in result:
-                result[name] = constraint_function
-            else:
-                result[name] = constraint_and(result[name], constraint_function)
-    return result
-
-
-def restaurants_en_US_booking(db, query, api_out_list=None, lang=None):
+def restaurants_en_US_booking(db, query, api_out_list=None):
     pre_api_return = {"user_name": query["user_name"], "number_of_people": query["number_of_people"], "time": query["time"]}
     api_out_list.remove("number_of_people")
     api_out_list.remove("time")
@@ -208,7 +109,7 @@ def restaurants_zh_CN_booking(db, query, api_out_list=None):
     else:
         api_return = {k: results[-1][k] for k in api_out_list}
         api_return.update(pre_api_return)
-        api_return = {en2zh_SLOT_MAP[k]: v for k, v in api_return.items()}
+        api_return = {value_mapping.en2zh_SLOT_MAP[k]: v for k, v in api_return.items()}
         return api_return, len(results), query
 
 
@@ -277,7 +178,7 @@ def hotels_zh_CN_booking(db, query, api_out_list=None):
     else:
         api_return = {k: results[-1][k] for k in api_out_list}
         api_return.update(pre_api_return)
-        api_return = {en2zh_SLOT_MAP[k]: v for k, v in api_return.items()}
+        api_return = {value_mapping.en2zh_SLOT_MAP[k]: v for k, v in api_return.items()}
         return api_return, len(results), query
 
 
@@ -314,13 +215,13 @@ def general_search_zh_CN(db, query, api_out_list=None):
 
         if "price_per_night" in api_return:
             api_return["price_per_night"] = str(api_return["price_per_night"]) + "港币"
-        api_return = {en2zh_SLOT_MAP[k]: v for k, v in api_return.items()}
+        api_return = {value_mapping.en2zh_SLOT_MAP[k]: v for k, v in api_return.items()}
         return api_return, len(results), query
 
 
-def query_mongo(api_name, db, query, api_out_list=None, lang=None):
+def query_mongo(api_name, db, query, api_out_list=None):
     if api_name == "restaurants_en_US_booking":
-        res, count, query = restaurants_en_US_booking(db, query, api_out_list, lang)
+        res, count, query = restaurants_en_US_booking(db, query, api_out_list)
     elif api_name == "hotels_en_US_booking":
         res, count, query = hotels_en_US_booking(db, query, api_out_list)
     elif api_name == "restaurants_zh_CN_booking":
@@ -334,20 +235,21 @@ def query_mongo(api_name, db, query, api_out_list=None, lang=None):
     return res, count, query
 
 
-def call_api(api_name, constraints: List[Dict[Text, Any]], lang=None) -> Tuple[Dict[Text, Any], int, dict]:
-    global is_mongo
-    api_name = r_en_API_MAP.get(api_name, api_name)
+def call_api(db, api_name, constraints: List[Dict[Text, Any]], lang=None) -> Tuple[Dict[Text, Any], int, dict]:
+    api_name = value_mapping.r_en_API_MAP.get(api_name, api_name)
 
     # Canonicalization
     for slot, value in constraints[0].items():
-        if isinstance(value, str) and (value in entity_map):
-            constraints[0][slot] = entity_map[value]
+        if isinstance(value, str) and (value in value_mapping.entity_map):
+            constraints[0][slot] = value_mapping.entity_map[value]
         elif isinstance(value, dict):
             for k, v in value.items():
-                if isinstance(v, str) and (v in entity_map):
-                    constraints[0][slot][k] = entity_map[v]
+                if isinstance(v, str) and (v in value_mapping.entity_map):
+                    constraints[0][slot][k] = value_mapping.entity_map[v]
                 if isinstance(v, list):
-                    constraints[0][slot][k] = [entity_map[v_v] if v_v in entity_map else v_v for v_v in v]
+                    constraints[0][slot][k] = [
+                        value_mapping.entity_map[v_v] if v_v in value_mapping.entity_map else v_v for v_v in v
+                    ]
 
     if api_name in [
         "restaurants_en_US_search",
@@ -365,14 +267,13 @@ def call_api(api_name, constraints: List[Dict[Text, Any]], lang=None) -> Tuple[D
     ]:
 
         if 'zh' in lang:
-            api_name = en_zh_API_MAP.get(api_name, api_name)
+            api_name = value_mapping.en_zh_API_MAP.get(api_name, api_name)
 
-        api_name = zh2en_API_MAP.get(api_name, api_name)
-        constraints = [{zh2en_SLOT_MAP.get(k, k): v for k, v in constraints[0].items()}]
+        api_name = value_mapping.zh2en_API_MAP.get(api_name, api_name)
+        constraints = [{value_mapping.zh2en_SLOT_MAP.get(k, k): v for k, v in constraints[0].items()}]
 
         with open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "apis", api_name + ".json"), "r") as file:
             api_schema = json.load(file)
-        is_mongo = True
         if constraints:
             all_provided_parameters = set.union(*[set(c) for c in constraints])
         else:
@@ -387,12 +288,11 @@ def call_api(api_name, constraints: List[Dict[Text, Any]], lang=None) -> Tuple[D
         if lang:
             if 'en' in lang:
                 lang = 'en_US'
-            db = bitod_database[re.sub(re.compile('(\w+_)\w{2}_\w{2}(_\w+)'), fr'\1{lang}\2', api_name)]
+            api_db = db[re.sub(re.compile('(\w+_)\w{2}_\w{2}(_\w+)'), fr'\1{lang}\2', api_name)]
         else:
-            db = bitod_database[api_name]
+            api_db = db[api_name]
 
-        res, count, query = query_mongo(api_name, db, constraint_list_to_dict(constraints), api_out_list, lang)
-        # res, count = query_mongo(bitod_database[api_name], constraints)
+        res, count, query = query_mongo(api_name, api_db, constraint_list_to_dict(constraints), api_out_list)
         return res, count, query
 
     elif api_name in ["HKMTR_en", "HKMTR_zh", "香港地铁"]:
@@ -400,10 +300,8 @@ def call_api(api_name, constraints: List[Dict[Text, Any]], lang=None) -> Tuple[D
         if api_name == 'HKMTR_zh':
             api_name = '香港地铁'
 
-        api_name = zh2en_API_MAP.get(api_name, api_name)
-        constraints = [{zh2en_SLOT_MAP.get(k, k): v for k, v in constraints[0].items()}]
-        # with open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "apis", api_name + ".json"), "r") as file:
-        #     api_schema = json.load(file)
+        api_name = value_mapping.zh2en_API_MAP.get(api_name, api_name)
+        constraints = [{value_mapping.zh2en_SLOT_MAP.get(k, k): v for k, v in constraints[0].items()}]
 
         source = constraint_list_to_dict(constraints)["departure"]
         target = constraint_list_to_dict(constraints)["destination"]

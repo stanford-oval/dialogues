@@ -1,8 +1,7 @@
 import copy
+import json
 import re
 from collections import defaultdict
-
-import ujson
 
 from ..main import Dataset
 
@@ -108,7 +107,7 @@ class Multiwoz24(Dataset):
         data_results = defaultdict(list)
         for split in splits:
             name = split.split('_')[0]
-            data = ujson.load(open(root + split, 'r'))
+            data = json.load(open(root + split, 'r'))
             out_data = []
             for dlg in data:
                 prev_belief_dict = dict()

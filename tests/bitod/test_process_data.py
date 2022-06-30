@@ -22,6 +22,7 @@ parser.add_argument("--use_natural_response", action='store_true')
 parser.add_argument("--only_user_rg", action='store_true')
 
 args = parser.parse_args()
+args.splits = ['valid', 'test']
 
 dataset = Bitod()
 train, fewshot, dev, test = dataset.process_data(args)

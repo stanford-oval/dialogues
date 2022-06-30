@@ -3,11 +3,10 @@ from collections import defaultdict
 import dictdiffer
 
 from dialogues import Risawoz
-from dialogues.bitod.src.utils import span2knowledge
 
 
 def api_result_diff(knowledge, gold_knowledge):
-    knowledge = span2knowledge(knowledge)
+    knowledge = dataset.span2knowledge(knowledge)
     processed_knowledge = defaultdict(dict)
     for d in gold_knowledge.keys():
         gold_knowledge[d] = {s: str(v) for s, v in gold_knowledge[d].items()}

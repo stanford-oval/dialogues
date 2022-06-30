@@ -128,19 +128,18 @@ def build_wizard_event(turn, mode="normal"):
     return event
 
 
-def build_kb_event(wizard_query_event, mongodb_host='', api_map=None):
+def build_kb_event(wizard_query_event, db):
     event = {"Agent": "KnowledgeBase"}
     constraints = wizard_query_event["Constraints"]
     api_names = wizard_query_event["API"]
-    knowledge = call_api(api_names, constraints, mongodb_host=mongodb_host, lang='zh_CN')
+    knowledge = call_api(db, api_names, constraints, lang='zh_CN')
     event["TotalItems"] = sum(item.get("可用选项", 0) for api, item in knowledge.items())
-    # matched_items: {domain: list(matched_for_each_domain)}
     event["Item"] = knowledge
     event["Topic"] = api_names
     return event
 
 
-def build_dataset(original_data_path, args, mongodb_host='', api_map=None):
+def build_dataset(original_data_path, args, db):
     with open(original_data_path) as fin:
         data = json.load(fin)
     processed_data = {}
@@ -155,7 +154,7 @@ def build_dataset(original_data_path, args, mongodb_host='', api_map=None):
             user_turn_event = build_user_event(turn, args)
             if "db_results" in turn and turn["db_results"]:
                 wizard_query_event = build_wizard_event(turn, mode="query")
-                kb_event = build_kb_event(wizard_query_event, mongodb_host, api_map)
+                kb_event = build_kb_event(wizard_query_event, db)
                 wizard_normal_event = build_wizard_event(turn, mode="normal")
                 events += [user_turn_event, wizard_query_event, kb_event, wizard_normal_event]
             else:
@@ -216,14 +215,14 @@ def build_mock_pred_data(test_data_path):
             for action in turn["system_actions"]:
                 for i in range(len(turn_action_domain_list)):
                     if action[1] == turn_action_domain_list[i]:
-                        if action[0].strip() == "Inform":
+                        if action[0].strip() == "Inform" or action[3]:
                             turn_action_text[
                                 i
                             ] += f"{action[0].strip().lower()} {action[2]} 等于 \" {''.join(action[3].split())} \" , "
-                        elif action[3]:
-                            turn_action_text[
-                                i
-                            ] += f"{action[0].strip().lower()} {action[2]} \" {''.join(action[3].split())} \" , "
+                        # elif action[3]:
+                        #     turn_action_text[
+                        #         i
+                        #     ] += f"{action[0].strip().lower()} {action[2]} \" {''.join(action[3].split())} \" , "
                         else:
                             turn_action_text[i] += f"{action[0].strip().lower()} {action[2]} , "
             turn_action_text = [text[:-3] for text in turn_action_text]
@@ -267,15 +266,13 @@ if __name__ == "__main__":
     processed_data_path = os.path.join(*[args.root, args.save_dir])
     for split in args.splits:
         print(f"processing {split} data...")
-        processed_data = build_dataset(
-            os.path.join(original_data_path, f"{args.setting}_{split}.json"), args, mongodb_host=mongodb_host
-        )
+        processed_data = build_dataset(os.path.join(original_data_path, f"{args.setting}_{split}.json"), args, db=risawoz_db)
         # save converted files in JSON format
         with open(f"{processed_data_path}/{args.setting}_{split}.json", 'w') as f:
             json.dump(processed_data, f, ensure_ascii=False, indent=4)
 
     # # generating mock prediction data
-    # print("generating mock prediction data...")
-    # mock_pred_data = build_mock_pred_data(os.path.join(args.root, "./data/original/zh_test.json"))
-    # with open(os.path.join(args.root, "./results/test/risawoz_mock_preds.json"), "w") as f:
-    #     json.dump(mock_pred_data, f, ensure_ascii=False, indent=4)
+    print("generating mock prediction data...")
+    mock_pred_data = build_mock_pred_data(os.path.join(args.root, "./data/original/zh_test.json"))
+    with open(os.path.join(args.root, "./results/test/risawoz_mock_preds.json"), "w") as f:
+        json.dump(mock_pred_data, f, ensure_ascii=False, indent=4)
