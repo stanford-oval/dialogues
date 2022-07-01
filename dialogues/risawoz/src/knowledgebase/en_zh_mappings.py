@@ -178,7 +178,7 @@ class RisawozMapping(object):
             '票价': 'fare',
             '硬盘容量': 'hard_disk_capacity',
             '紫外线强度': 'uv_intensity',
-            '价位': 'cost',
+            '价位': 'price',
             '油耗水平': 'fuel_consumption_level',
             '下课时间': 'get_out_of_class_closing_time',
             '产品类别': 'product_category',
@@ -267,7 +267,7 @@ class RisawozMapping(object):
             '时段': 'time_period',
             '年级': 'grade',
             '课次': 'lessons',
-            '价格': 'price',
+            '价格': 'cost',
             '结束日期': 'end_date',
             '房费': 'room_rate',
             '公交线路': 'bus_line',
@@ -288,6 +288,8 @@ class RisawozMapping(object):
             '可用选项': 'available_options',
         }
         self.en2zh_SLOT_MAP = {v: k for k, v in self.zh2en_SLOT_MAP.items()}
+        
+        assert len(self.zh2en_SLOT_MAP) == len(self.en2zh_SLOT_MAP)
 
         translation_dict = {
             **self.zh2en_DOMAIN_MAP,
