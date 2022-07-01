@@ -15,5 +15,5 @@ def call_api(db, api_names, constraints, lang, value_mapping):
         if domain_knowledge:
             # keep only the first result
             knowledge[api] = domain_knowledge[0]
-            knowledge[api]["可用选项"] = len(domain_knowledge)
+            knowledge[api]["available_options"] = len(domain_knowledge)
     return knowledge
