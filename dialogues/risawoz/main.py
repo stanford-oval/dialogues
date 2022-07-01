@@ -54,7 +54,8 @@ class Risawoz(WOZDataset):
                     f'Message = No item available for api_name: {api_name}, constraints: {constraints},'
                     f' for turn: {dial_id}/{turn_id}'
                 )
-                new_knowledge_text = f'( {api_name} ) Message = No item available.'
+                # new_knowledge_text = f'( {api_name} ) Message = No item available.'
+                new_knowledge_text = 'null'
             else:
                 knowledge.update(result)
                 new_knowledge_text = self.knowledge2span(knowledge)
