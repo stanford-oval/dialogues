@@ -44,6 +44,9 @@ class Bitod(WOZDataset):
 
         constraints = self.state2constraints(dialogue_state[api_name])
 
+        count = 0
+        processed_query = ''
+
         try:
             result, count, processed_query = api.call_api(self.db, api_name, constraints=[constraints], lang=src_lang)
         except Exception as e:
