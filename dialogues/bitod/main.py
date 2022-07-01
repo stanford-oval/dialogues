@@ -67,7 +67,7 @@ class Bitod(WOZDataset):
 
     def postprocess_prediction(self, prediction, knowledge=None, lang='en'):
         if re.search(rf'\( HKMTR {lang} \)', prediction):
-            action_dict = self.span2action(prediction, self.value_mapping.api_names)
+            action_dict = self.span2action(prediction)
             domain = f'HKMTR {lang}'
             metro_slots = set(item['slot'] for item in action_dict[domain])
             for slot in ['estimated_time', 'price']:
@@ -79,7 +79,7 @@ class Bitod(WOZDataset):
             prediction = self.action2span(action_dict[domain], domain, lang)
 
         if re.search(r'\( weathers search \)', prediction):
-            action_dict = self.span2action(prediction, self.value_mapping.api_names)
+            action_dict = self.span2action(prediction)
             domain = 'weathers search'
             weather_slots = set(item['slot'] for item in action_dict[domain])
             for slot in ['max_temp', 'min_temp', 'weather', 'city']:
