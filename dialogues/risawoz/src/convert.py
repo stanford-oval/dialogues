@@ -12,6 +12,10 @@ import requests
 from knowledgebase.api import call_api
 from tqdm.autonotebook import tqdm
 
+from dialogues import Risawoz
+
+dataset = None
+
 
 def read_json_files_in_folder(path):
     json_filename = [path + '/' + filename for filename in os.listdir(path) if '.json' in filename]
@@ -132,7 +136,7 @@ def build_kb_event(wizard_query_event, db):
     event = {"Agent": "KnowledgeBase"}
     constraints = wizard_query_event["Constraints"]
     api_names = wizard_query_event["API"]
-    knowledge = call_api(db, api_names, constraints, lang='zh_CN')
+    knowledge = call_api(db, api_names, constraints, lang='zh_CN', value_mapping=dataset.value_mapping)
     event["TotalItems"] = sum(item.get("可用选项", 0) for api, item in knowledge.items())
     event["Item"] = knowledge
     event["Topic"] = api_names
@@ -242,6 +246,9 @@ if __name__ == "__main__":
     parser.add_argument("--splits", nargs='+', default=['train', 'valid', 'test'])
 
     args = parser.parse_args()
+
+    global dataset
+    dataset = Risawoz()
 
     mongodb_host = "mongodb://localhost:27017/"
 

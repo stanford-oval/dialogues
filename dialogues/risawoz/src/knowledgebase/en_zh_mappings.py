@@ -1,3 +1,5 @@
+import json
+import os
 from collections import OrderedDict, defaultdict
 
 
@@ -24,7 +26,10 @@ class RisawozMapping(object):
         self.zh2en_VALUE_MAP = keydefaultdict(lambda k: k)
         self.en2zh_VALUE_MAP = keydefaultdict(lambda k: k)
 
-        self.zh2en_missing_MAP = keydefaultdict(lambda k: k)
+        cur_dir = os.path.dirname(os.path.abspath(__file__))
+        with open(os.path.join(cur_dir, "mappings/zh2en_missing.json")) as f:
+            self.zh2en_missing_MAP = json.load(f)
+
         self.en2zh_missing_MAP = keydefaultdict(lambda k: k)
 
         self.en2zh_RELATION_MAP = {"equal_to": "等于", "not": "非", "less_than": "少于", "at_least": "至少", "one_of": "其中之一"}

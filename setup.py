@@ -47,6 +47,7 @@ setuptools.setup(
             'bitod/src/knowledgebase/mappings/*.dot',
             'bitod/src/templates/files/*/*',
             'risawoz/src/db/*.json',
+            'risawoz/src/knowledgebase/mappings/*.json',
         ]
     },
     license='BSD-3-Clause',

@@ -158,6 +158,12 @@ class WOZDataset(Dataset):
         # regex to extract agent dialogue acts from input
         self.actions_re = re.compile('<actions> (.*?) <endofactions>')
 
+        # regex to user input from history
+        self.user_re = re.compile('(?:USER|USER_ACTS): (.*?)(?:$|<)')
+
+        # regex to system input from history
+        self.system_re = re.compile('AGENT_ACTS: (.*?)(?:$|<)')
+
         self.system_token = 'AGENT_ACTS:'
         self.user_token = 'USER:'
 
@@ -517,17 +523,19 @@ class WOZDataset(Dataset):
                 'bye',
                 'general',
             ]:
-                # TODO: can't include here. it overlaps with bitod acts
-                #             # for RiSAWOZ
-                #             'inform',
-                #             'general',
-                #             'bye',
-                #             'recommend',
-                #             'no-offer',
-                #             'request'
-
                 action_text += f'{act} , '
+            # for RiSAWOZ
+            elif orig_act in ['inform', 'recommend']:
+                # TODO: annotation error; missing slot
+                if not slot or values == 'null':
+                    continue
+                action_text += f'{act} {slot} {relation} " {values} " , '
             elif orig_act in ['request', 'request_update']:
+                action_text += f'{act} {slot} , '
+            # for RiSAWOZ
+            elif orig_act in ['no-offer']:
+                if not slot:
+                    slot = 'null'
                 action_text += f'{act} {slot} , '
             else:
                 if orig_act in ['confirm']:
@@ -535,9 +543,6 @@ class WOZDataset(Dataset):
                         slot = 'null'
                     if not relation:
                         relation = 'null'
-                # for RiSAWOZ
-                elif orig_act in ['inform', 'recommend', 'no-offer']:
-                    pass
                 else:
                     assert slot, action
                     assert relation, action
@@ -1222,9 +1227,6 @@ class WOZDataset(Dataset):
                             if not target:
                                 target = 'null'
 
-                            # update last dialogue state
-                            prev_state = current_state
-
                             input_text = " ".join(
                                 [
                                     "DST:",
@@ -1246,7 +1248,14 @@ class WOZDataset(Dataset):
                                 "train_target": "dst",
                             }
 
+                            if args.detail:
+                                dst_data_detail["prev_state"] = prev_state
+                                dst_data_detail["current_state"] = current_state
+
                             data.append(dst_data_detail)
+
+                            # update last dialogue state
+                            prev_state = current_state
 
                             turn_id += 1
 
