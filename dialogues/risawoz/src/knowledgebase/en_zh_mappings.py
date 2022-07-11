@@ -286,8 +286,6 @@ class RisawozMapping(object):
         }
         self.en2zh_SLOT_MAP = {v: k for k, v in self.zh2en_SLOT_MAP.items()}
 
-        assert len(self.zh2en_SLOT_MAP) == len(self.en2zh_SLOT_MAP)
-
         translation_dict = {
             **self.zh2en_DOMAIN_MAP,
             **self.zh2en_SLOT_MAP,
