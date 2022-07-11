@@ -1227,9 +1227,6 @@ class WOZDataset(Dataset):
                             if not target:
                                 target = 'null'
 
-                            # update last dialogue state
-                            prev_state = current_state
-
                             input_text = " ".join(
                                 [
                                     "DST:",
@@ -1251,7 +1248,14 @@ class WOZDataset(Dataset):
                                 "train_target": "dst",
                             }
 
+                            if args.detail:
+                                dst_data_detail["prev_state"] = prev_state
+                                dst_data_detail["current_state"] = current_state
+
                             data.append(dst_data_detail)
+
+                            # update last dialogue state
+                            prev_state = current_state
 
                             turn_id += 1
 
