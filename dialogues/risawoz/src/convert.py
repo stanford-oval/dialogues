@@ -1,9 +1,9 @@
 import argparse
-import collections
 import copy
 import itertools
 import json
 import os
+from collections import defaultdict
 from contextlib import ExitStack
 from pathlib import Path
 
@@ -14,7 +14,7 @@ from tqdm.autonotebook import tqdm
 
 from dialogues import Risawoz
 
-dataset = None
+dataset = Risawoz()
 
 
 def read_json_files_in_folder(path):
@@ -74,7 +74,7 @@ def group_slot_values(actions):
     return processed_actions
 
 
-def build_user_event(turn, args):
+def build_user_event(turn):
     event = {"Agent": "User"}
     # actions
     # TODO: handle domain information
@@ -94,7 +94,7 @@ def build_user_event(turn, args):
     event["Actions"] = actions
     # TODO: handle multiple active intents
     event["active_intent"] = turn["turn_domain"]
-    event["state"] = collections.defaultdict(dict)
+    event["state"] = defaultdict(dict)
     for ds, v in turn["belief_state"]["inform slot-values"].items():
         d, s = ds.split("-")[0], ds.split("-")[1]
         event["state"][d][s] = {"relation": "等于", "value": [''.join(v.split())]}
@@ -108,12 +108,12 @@ def build_wizard_event(turn, mode="normal"):
     event = {"Agent": "Wizard"}
     if mode == "query":
         event["Actions"] = "query"
-        event["Constraints"] = {}
+        event["Constraints"] = defaultdict(dict)
         for ds, v in turn["belief_state"]["inform slot-values"].items():
             # only return matched result in the domains of current turn
             d, s = ds.split("-")
             if d in turn["turn_domain"]:
-                event["Constraints"][d] = {s: ''.join(v.split())}
+                event["Constraints"][d][s] = ''.join(v.split())
         # TODO: handle multiple APIs
         event["API"] = list(set([d for d in event["Constraints"].keys()]))
     else:
@@ -143,7 +143,7 @@ def build_kb_event(wizard_query_event, db):
     return event
 
 
-def build_dataset(original_data_path, args, db):
+def build_dataset(original_data_path, db):
     with open(original_data_path) as fin:
         data = json.load(fin)
     processed_data = {}
@@ -155,7 +155,7 @@ def build_dataset(original_data_path, args, db):
         }
         events = []
         for turn in dialogue["dialogue"]:
-            user_turn_event = build_user_event(turn, args)
+            user_turn_event = build_user_event(turn)
             if "db_results" in turn and turn["db_results"]:
                 wizard_query_event = build_wizard_event(turn, mode="query")
                 kb_event = build_kb_event(wizard_query_event, db)
@@ -247,9 +247,6 @@ if __name__ == "__main__":
 
     args = parser.parse_args()
 
-    global dataset
-    dataset = Risawoz()
-
     mongodb_host = "mongodb://localhost:27017/"
 
     # uncomment to build db
@@ -273,7 +270,7 @@ if __name__ == "__main__":
     processed_data_path = os.path.join(*[args.root, args.save_dir])
     for split in args.splits:
         print(f"processing {split} data...")
-        processed_data = build_dataset(os.path.join(original_data_path, f"{args.setting}_{split}.json"), args, db=risawoz_db)
+        processed_data = build_dataset(os.path.join(original_data_path, f"{args.setting}_{split}.json"), db=risawoz_db)
         # save converted files in JSON format
         with open(f"{processed_data_path}/{args.setting}_{split}.json", 'w') as f:
             json.dump(processed_data, f, ensure_ascii=False, indent=4)
