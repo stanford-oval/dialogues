@@ -1249,6 +1249,7 @@ class WOZDataset(Dataset):
                             }
 
                             if args.detail:
+                                dst_data_detail["active_intent"] = intents[0]
                                 dst_data_detail["prev_state"] = prev_state
                                 dst_data_detail["current_state"] = current_state
 
