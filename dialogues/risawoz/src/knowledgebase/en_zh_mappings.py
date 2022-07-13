@@ -30,8 +30,8 @@ class RisawozMapping(object):
         for domain, items in zh2en_alignment.items():
             for slot, values in items.items():
                 for zh_val, en_vals in values.items():
-                    # we choose last value as the canonical one
-                    zh2en_value[zh_val] = en_vals[-1]
+                    # we choose first value as the canonical one
+                    zh2en_value[zh_val] = en_vals[0]
 
         self.zh2en_VALUE_MAP = zh2en_value
         self.en2zh_VALUE_MAP = {v: k for k, v in self.zh2en_VALUE_MAP.items()}
