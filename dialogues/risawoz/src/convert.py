@@ -112,8 +112,8 @@ def build_wizard_event(turn, mode="normal"):
         for ds, v in turn["belief_state"]["inform slot-values"].items():
             # only return matched result in the domains of current turn
             d, s = ds.split("-")
-            if d in turn["turn_domain"]:
-                event["Constraints"][d][s] = ''.join(v.split())
+            # if d in turn["turn_domain"]:
+            event["Constraints"][d][s] = ''.join(v.split())
         # TODO: handle multiple APIs
         event["API"] = list(set([d for d in event["Constraints"].keys()]))
     else:
@@ -137,7 +137,7 @@ def build_kb_event(wizard_query_event, db):
     constraints = wizard_query_event["Constraints"]
     api_names = wizard_query_event["API"]
     knowledge = call_api(db, api_names, constraints, lang='zh_CN', value_mapping=dataset.value_mapping)
-    event["TotalItems"] = sum(item.get("可用选项", 0) for api, item in knowledge.items())
+    event["TotalItems"] = sum(item.get("available_options", 0) for api, item in knowledge.items())
     event["Item"] = knowledge
     event["Topic"] = api_names
     return event

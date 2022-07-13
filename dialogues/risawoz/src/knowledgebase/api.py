@@ -1,11 +1,13 @@
 def call_api(db, api_names, constraints, lang, value_mapping):
     knowledge = {}
+    # api_names = [value_mapping.zh2en_DOMAIN_MAP.get(api, api) for api in api_names]
+    # constraints = {value_mapping.zh2en_DOMAIN_MAP.get(k, k): v for k, v in constraints.items()}
     for api in api_names:
         if api not in constraints:
             continue
         knowledge[api] = {}
         domain_constraints = constraints[api]
-        domain_constraints = {value_mapping.en2zh_SLOT_MAP.get(k, k): v for k, v in domain_constraints.items()}
+        # domain_constraints = {value_mapping.zh2en_SLOT_MAP.get(k, k): v for k, v in domain_constraints.items()}
         db_name = f'{value_mapping.zh2en_DOMAIN_MAP.get(api, api)}_{lang}'
         cursor = db[db_name].find(domain_constraints)
         domain_knowledge = []

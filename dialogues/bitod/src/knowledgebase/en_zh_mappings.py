@@ -208,3 +208,5 @@ class BitodMapping(object):
         required_slots = read_require_slots()
         self.required_slots = {self.API_MAP[k]: v for k, v in required_slots.items()}
         self.api_names = list(self.required_slots.keys())
+
+        self.skip_slots_for_kb = ["type", "description", "类别", "描述"]

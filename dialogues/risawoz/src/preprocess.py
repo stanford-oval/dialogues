@@ -14,6 +14,9 @@ def main():
     parser.add_argument(
         "--save_dir", type=str, default="data/preprocessed", help="path to save preprocessed data, relative to root dir"
     )
+    parser.add_argument(
+        "--detail", type=bool, default=False, help="whether to return dict annotations, used for data augmentation"
+    )
     parser.add_argument("--setting", type=str, default="en", help="en, zh, en_zh")
 
     parser.add_argument("--max_history", type=int, default=2)

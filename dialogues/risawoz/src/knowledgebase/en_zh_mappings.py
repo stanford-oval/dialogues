@@ -283,6 +283,19 @@ class RisawozMapping(object):
             '起飞时间': 'departure_time',
             '营业时间': 'business_hours',
             '人均消费': 'per_capita_consumption',
+            # below are google translated
+            "车身尺寸(mm)": "body_size(mm)",
+            "发动机排量(L)": "engine_displacement(L)",
+            "发动机马力(Ps)": "engine_horsepower(Ps)",
+            "综合油耗(L/100km)": "comprehensive_fuel_consumption(L/100km)",
+            "环保标准": "environmental_standards",
+            "驾驶辅助影像": "driving_assistance_video",
+            "巡航系统": "cruise_system",
+            "价格(万元)": "price(ten_thousand_yuan)",
+            "地铁线路": "subway_line",
+            "教师": "teacher",
+            "课程网址": "course_URL",
+            "教师网址": "teacher_URL",
         }
         self.en2zh_SLOT_MAP = {v: k for k, v in self.zh2en_SLOT_MAP.items()}
 
@@ -294,3 +307,5 @@ class RisawozMapping(object):
             **self.zh2en_SPECIAL_MAP,
         }
         self.translation_dict = OrderedDict(sorted(translation_dict.items(), key=lambda item: len(item[0]), reverse=True))
+
+        self.skip_slots_for_kb = ["_id"]
