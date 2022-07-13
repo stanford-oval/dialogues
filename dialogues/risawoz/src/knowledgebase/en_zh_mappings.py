@@ -23,12 +23,24 @@ class RisawozMapping(object):
         self.entity_map = keydefaultdict(lambda k: k)
         self.reverse_entity_map = keydefaultdict(lambda k: k)
 
-        self.zh2en_VALUE_MAP = keydefaultdict(lambda k: k)
-        self.en2zh_VALUE_MAP = keydefaultdict(lambda k: k)
+        cur_dir = os.path.dirname(os.path.abspath(__file__))
+        with open(os.path.join(cur_dir, "mappings/zh2en_alignment.json")) as f:
+            zh2en_alignment = json.load(f)
+        zh2en_value = {}
+        for domain, items in zh2en_alignment.items():
+            for slot, values in items.items():
+                for zh_val, en_vals in values.items():
+                    # we choose last value as the canonical one
+                    zh2en_value[zh_val] = en_vals[-1]
+
+        self.zh2en_VALUE_MAP = zh2en_value
+        self.en2zh_VALUE_MAP = {v: k for k, v in self.zh2en_VALUE_MAP.items()}
 
         cur_dir = os.path.dirname(os.path.abspath(__file__))
         with open(os.path.join(cur_dir, "mappings/zh2en_missing.json")) as f:
             self.zh2en_missing_MAP = json.load(f)
+
+        # self.zh2en_missing_MAP = keydefaultdict(lambda k: k)
 
         self.en2zh_missing_MAP = keydefaultdict(lambda k: k)
 

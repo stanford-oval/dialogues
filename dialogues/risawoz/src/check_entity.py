@@ -34,13 +34,21 @@ def get_input_output(dic):
             output = risawoz.span2state(output)
             for domain in output:
                 for (slot, value) in output[domain].items():
+                    if slot in ['the_most_suitable_people', 'metro_station']:
+                        continue
                     for v in value['value']:
+                        if v in ['null']:
+                            continue
                         ents.append(str(v))
         else:
             output = risawoz.span2action(output)
             for domain in output:
                 for item in output[domain]:
+                    if item['slot'] in ['the_most_suitable_people', 'metro_station']:
+                        continue
                     for v in item['value']:
+                        if v in ['null']:
+                            continue
                         ents.append(str(v))
 
         entities.append(ents)
@@ -64,7 +72,5 @@ if __name__ == "__main__":
                 )
             ):
                 for ent in ents:
-                    if not ent:
-                        continue
                     if ent not in input:
                         f.write(f"{dial_id}\t{turn_id}\t{input}\t{output}\t{ent}\n")
