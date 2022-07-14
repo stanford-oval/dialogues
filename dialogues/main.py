@@ -680,7 +680,7 @@ class WOZDataset(Dataset):
         for intent, item in knowledge.items():
             knowledge_text += f"( {intent} ) "
             for slot, values in item.items():
-                if slot not in self.value_mapping.skip_slots_for_kb:  # add "类型" and "id_" for RiSAWOZ
+                if slot not in self.value_mapping.skip_slots_for_kb:
                     if isinstance(values, list):
                         values_text = " | ".join(values)
                     else:

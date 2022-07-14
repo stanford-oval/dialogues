@@ -39,7 +39,7 @@ def get_input_output(dic):
                     for v in value['value']:
                         if v in ['null']:
                             continue
-                        ents.append(str(v))
+                        ents.append((slot, str(v)))
         else:
             output = risawoz.span2action(output)
             for domain in output:
@@ -49,7 +49,7 @@ def get_input_output(dic):
                     for v in item['value']:
                         if v in ['null']:
                             continue
-                        ents.append(str(v))
+                        ents.append((item['slot'], str(v)))
 
         entities.append(ents)
 
@@ -64,6 +64,8 @@ if __name__ == "__main__":
     parser.add_argument("--version", type=int, default=5)
     args = parser.parse_args()
 
+    all_slots = list(risawoz.value_mapping.zh2en_SLOT_MAP.values())
+
     for split in args.splits:
         with open(os.path.join(args.directory, f"{split}_entity_check.tsv"), 'w+') as f:
             for (dial_id, turn_id, input, output, ents) in zip(
@@ -71,6 +73,22 @@ if __name__ == "__main__":
                     ujson.load(open(os.path.join(args.directory, f'{args.setting}_{split}_v{args.version}.json')))
                 )
             ):
-                for ent in ents:
+                for (slot, ent) in ents:
                     if ent not in input:
-                        f.write(f"{dial_id}\t{turn_id}\t{input}\t{output}\t{ent}\n")
+                        f.write('\t'.join(map(str, [dial_id, turn_id, input, output, slot, ent])) + '\n')
+
+    # for split in args.splits:
+    #     outs_merged = ''
+    #     for (dial_id, turn_id, input, output, ents) in zip(
+    #             *get_input_output(
+    #                 ujson.load(open(os.path.join(args.directory, f'{args.setting}_{split}_v{args.version}.json')))
+    #             )
+    #     ):
+    #         outs_merged += output + ' '
+    #
+    # ignore_slots = []
+    # for slot in all_slots:
+    #     if slot not in outs_merged:
+    #         print(f'slot {slot} is not present!')
+    #         ignore_slots.append(slot)
+    # print(ignore_slots)

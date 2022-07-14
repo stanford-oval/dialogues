@@ -320,4 +320,19 @@ class RisawozMapping(object):
         }
         self.translation_dict = OrderedDict(sorted(translation_dict.items(), key=lambda item: len(item[0]), reverse=True))
 
-        self.skip_slots_for_kb = ["_id"]
+        self.skip_slots_for_kb = {
+            '_id',
+            'fuel_consumption',
+            'body_size(mm)',
+            'engine_displacement(L)',
+            'engine_horsepower(Ps)',
+            'comprehensive_fuel_consumption(L/100km)',
+            'environmental_standards',
+            'driving_assistance_video',
+            'cruise_system',
+            'price(ten_thousand_yuan)',
+            'subway_line',
+            'course_URL',
+            'teacher_URL',
+        }
+        self.skip_slots_for_kb.update([self.en2zh_SLOT_MAP.get(slot) for slot in self.skip_slots_for_kb])

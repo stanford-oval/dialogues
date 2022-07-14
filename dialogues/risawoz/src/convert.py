@@ -219,6 +219,7 @@ def build_mock_pred_data(test_data_path):
             for action in turn["system_actions"]:
                 for i in range(len(turn_action_domain_list)):
                     if action[1] == turn_action_domain_list[i]:
+                        # TODO: the ''.join will cause mismatches between entities in input and output annotations
                         if action[0].strip() == "Inform" or action[3]:
                             turn_action_text[
                                 i
