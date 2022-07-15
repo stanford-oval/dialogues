@@ -680,7 +680,7 @@ class WOZDataset(Dataset):
         for intent, item in knowledge.items():
             knowledge_text += f"( {intent} ) "
             for slot, values in item.items():
-                if slot not in ["type", "description", "类别", "描述", "类型", "_id"]:  # add "类型" and "id_" for RiSAWOZ
+                if slot not in self.value_mapping.skip_slots_for_kb:
                     if isinstance(values, list):
                         values_text = " | ".join(values)
                     else:
@@ -1249,6 +1249,7 @@ class WOZDataset(Dataset):
                             }
 
                             if args.detail:
+                                dst_data_detail["active_intent"] = intents[0]
                                 dst_data_detail["prev_state"] = prev_state
                                 dst_data_detail["current_state"] = current_state
 

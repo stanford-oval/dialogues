@@ -66,4 +66,6 @@ gold_results = OrderedDict(
     ]
 )
 
-print('diff: ', list(dictdiffer.diff(results, gold_results)))
+diff = list(dictdiffer.diff(results, gold_results))
+print('diff: ', diff)
+assert len(diff) == 0

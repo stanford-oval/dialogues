@@ -34,3 +34,4 @@ args.dataset_name = 'risawoz'
 dataset = Risawoz()
 train, fewshot, dev, test = dataset.process_data(args)
 print(len(dev))
+assert len(dev) == 16232

@@ -18,44 +18,46 @@ def api_result_diff(knowledge, gold_knowledge):
 
 api_list = ["酒店", "旅游景点"]
 dialogue_state = {
-    "酒店": {'价位': {'relation': '等于', 'value': ['偏贵']}, '区域': {'relation': '等于', 'value': ['吴江']}},
-    "旅游景点": {"名称": {'relation': '等于', 'value': ['金鸡湖景区']}},
+    "hotel": {'pricerange': {'relation': 'equal_to', 'value': ['偏贵']}, 'area': {'relation': 'equal_to', 'value': ['吴江']}},
+    "attraction": {"name": {'relation': 'equal_to', 'value': ['金鸡湖景区']}},
 }
-src_lang = 'zh'
+src_lang = 'en_US'
 knowledge = defaultdict(dict)
 
 dataset = Risawoz()
-new_knowledge_text, constraints = dataset.make_api_call(dialogue_state, knowledge, api_list, src_lang='zh_CN')
+new_knowledge_text, constraints = dataset.make_api_call(dialogue_state, knowledge, api_list, src_lang=src_lang)
 gold_knowledge = {
-    '酒店': {
-        '名称': '苏州黎里水岸寒舍精品酒店',
-        '区域': '吴江',
-        '星级': '5',
-        '价位': '偏贵',
-        '酒店类型': '商务出行',
-        '房型': '大床房',
-        '停车场': '免费',
-        '房费': '629元',
-        '地址': '苏州吴江区黎里镇南新街5-9号',
-        '电话号码': '180-5181-5602',
-        '评分': 4.6,
-        '可用选项': 4,
+    'hotel': {
+        "name": "苏州黎里水岸寒舍精品酒店",
+        "area": "吴江",
+        "star": "5",
+        "pricerange": "偏贵",
+        "hotel_type": "商务出行",
+        "room_type": "大床房",
+        "parking": "免费",
+        "room_charge": "629元",
+        "address": "苏州吴江区黎里镇南新街5-9号",
+        "phone_number": "180-5181-5602",
+        "score": 4.6,
+        "available_options": 4,
     },
-    '旅游景点': {
-        '名称': '金鸡湖景区',
-        '区域': '工业园区',
-        '景点类型': '山水景区',
-        '最适合人群': '情侣约会',
-        '消费': '偏贵',
-        '是否地铁直达': '是',
-        '门票价格': '免费',
-        '电话号码': '400-7558558',
-        '地址': '苏州市工业园区星港街158号',
-        '评分': 4.5,
-        '开放时间': '全天',
-        '特点': '看东方之门等高楼，坐摩天轮，乘船夜游，感受苏州现代化的一面。',
-        '可用选项': 1,
+    'attraction': {
+        "name": "金鸡湖景区",
+        "area": "工业园区",
+        "type": "山水景区",
+        "the_most_suitable_people": "情侣约会",
+        "consumption": "偏贵",
+        "metro_station": "是",
+        "ticket_price": "免费",
+        "phone_number": "400-7558558",
+        "address": "苏州市工业园区星港街158号",
+        "score": 4.5,
+        "opening_hours": "全天",
+        "features": "看东方之门等高楼，坐摩天轮，乘船夜游，感受苏州现代化的一面。",
+        "available_options": 1,
     },
 }
 
-print('diff:', api_result_diff(new_knowledge_text, gold_knowledge))
+api_diff = api_result_diff(new_knowledge_text, gold_knowledge)
+print('diff:', api_diff)
+assert len(api_diff) == 0
