@@ -58,4 +58,6 @@ gold_knowledge = {
     },
 }
 
-print('diff:', api_result_diff(new_knowledge_text, gold_knowledge))
+api_diff = api_result_diff(new_knowledge_text, gold_knowledge)
+print('diff:', api_diff)
+assert len(api_diff) == 0

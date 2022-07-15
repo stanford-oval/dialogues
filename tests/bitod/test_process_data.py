@@ -30,3 +30,4 @@ args.splits = ['valid', 'test']
 dataset = Bitod()
 train, fewshot, dev, test = dataset.process_data(args)
 print(len(dev))
+assert len(dev) == 11456
