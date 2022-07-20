@@ -16,6 +16,7 @@ from dialogues.utils import (
     is_less_than,
     is_not,
     is_one_of,
+    replace_word,
     zh2en_CARDINAL_MAP,
 )
 
@@ -1066,9 +1067,9 @@ class WOZDataset(Dataset):
         if not do_translate:
             return text
         for key, val in self.value_mapping.translation_dict.items():
-            text = text.replace(key, val)
+            text = replace_word(text, ' ' + key + ' ', ' ' + val + ' ')
         for key, val in self.value_mapping.zh_API_MAP.items():
-            text = text.replace(key, val)
+            text = replace_word(text, ' ' + key + ' ', ' ' + val + ' ')
         for key, val in zh2en_CARDINAL_MAP.items():
             text = text.replace(f'" {key} "', f'" {val} "')
         return text
@@ -1239,6 +1240,8 @@ class WOZDataset(Dataset):
                                 ]
                             )
 
+                            input_text = clean_text(input_text, True)
+
                             dst_data_detail = {
                                 "dial_id": dial_id,
                                 "task": task,
@@ -1278,6 +1281,8 @@ class WOZDataset(Dataset):
                                     "<endofhistory>",
                                 ]
                             )
+
+                            input_text = clean_text(input_text, True)
 
                             if turn["Actions"] == "query":
                                 # do api call
@@ -1340,6 +1345,8 @@ class WOZDataset(Dataset):
                                     "<endofhistory>",
                                 ]
                             )
+
+                            input_text = clean_text(input_text, True)
 
                             target = clean_text(turn["Text"])
 

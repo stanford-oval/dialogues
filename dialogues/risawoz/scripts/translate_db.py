@@ -4,11 +4,12 @@ import os
 import re
 
 from dialogues import Risawoz
+from dialogues.risawoz.src.convert import process_string
 
 parser = argparse.ArgumentParser()
 
-parser.add_argument('--input_db_dir', default='dialogues/risawoz/db')
-parser.add_argument('--output_db_dir', default='dialogues/risawoz/db_en')
+parser.add_argument('--input_db_dir', default='dialogues/risawoz/database/db')
+parser.add_argument('--output_db_dir', default='dialogues/risawoz/database/db_zh')
 parser.add_argument('--experiment')
 
 args = parser.parse_args()
@@ -70,45 +71,55 @@ for file in os.listdir(args.input_db_dir):
 
                 return None
 
-            is_list = True
-            if not isinstance(value, list):
-                is_list = False
-                value = [value]
-            new_value = []
-            for val in value:
-                if val in [True, False]:
-                    new_value.append(val)
-                elif val in value_mapping.zh2en_VALUE_MAP:
-                    new_value.append(value_mapping.zh2en_VALUE_MAP[val])
-                elif val in value_mapping.zh2en_missing_MAP:
-                    new_value.append(value_mapping.zh2en_missing_MAP[val])
-                elif find_new(val):
-                    new_value.append(find_new(val))
-                else:
-                    if (
-                        val not in seen
-                        and not str(val).startswith('http:')
-                        and not re.fullmatch('[A-Z0-9]+', str(val))
-                        and not re.fullmatch('[\d\.:\-]+', str(val))
-                        and val not in [True, False]
-                    ):
-                        print(val)
-                        out.write(str(val) + '\n')
-                        seen.add(val)
-                    new_value.append(val)
+            # is_list = True
+            # if not isinstance(value, list):
+            #     is_list = False
+            #     value = [value]
+            # new_value = []
+            # for val in value:
+            #
+            #     if val in [True, False]:
+            #         new_value.append(val)
+            #     elif val in value_mapping.zh2en_VALUE_MAP:
+            #         new_value.append(value_mapping.zh2en_VALUE_MAP[val])
+            #     elif val in value_mapping.zh2en_missing_MAP:
+            #         new_value.append(value_mapping.zh2en_missing_MAP[val])
+            #     elif find_new(val):
+            #         new_value.append(find_new(val))
+            #     else:
+            #         if (
+            #             val not in seen
+            #             and not str(val).startswith('http:')
+            #             and not re.fullmatch('[A-Z0-9]+', str(val))
+            #             and not re.fullmatch('[\d\.:\-]+', str(val))
+            #             and val not in [True, False]
+            #         ):
+            #             print(val)
+            #             out.write(str(val) + '\n')
+            #             seen.add(val)
+            #
+            #         if isinstance(val, str) and val.endswith('。') and slot == '特点':
+            #             val = val[:-1]
+            #
+            #         new_value.append(val)
+            #
+            # value = new_value
+            #
+            # if not is_list:
+            #     if not len(value):
+            #         continue
+            #     assert len(value) == 1
+            #     value = value[0]
 
-            value = new_value
+            if isinstance(value, str) and value.endswith('。') and slot == '特点':
+                value = value[:-1]
 
-            if not is_list:
-                if not len(value):
-                    continue
-                assert len(value) == 1
-                value = value[0]
+            value = process_string(value)
 
             translated_item[value_mapping.zh2en_SLOT_MAP[slot]] = value
 
         translated_db_info.append(translated_item)
 
     json.dump(
-        translated_db_info, open(os.path.join(args.output_db_dir, domain + '_en_US.json'), 'w'), ensure_ascii=False, indent=2
+        translated_db_info, open(os.path.join(args.output_db_dir, domain + '_zh_CN.json'), 'w'), ensure_ascii=False, indent=2
     )
