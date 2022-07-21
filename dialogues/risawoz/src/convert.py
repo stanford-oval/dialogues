@@ -71,6 +71,8 @@ def tokenize_string(sentence):
 
 
 def process_string(sentence):
+    if isinstance(sentence, bool):
+        return str(sentence).lower()
     if not isinstance(sentence, str):
         return sentence
     sentence = ''.join(sentence.split())
@@ -332,7 +334,7 @@ if __name__ == "__main__":
 
     # uncomment to build db
     risawoz_db = build_db(
-        db_json_path=os.path.join(*[args.root, 'database/db']), api_map=None, mongodb_host=mongodb_host, setting=args.setting
+        db_json_path=os.path.join(*[args.root, 'database/db_2']), api_map=None, mongodb_host=mongodb_host, setting=args.setting
     )
 
     # download original RiSAWOZ dataset
