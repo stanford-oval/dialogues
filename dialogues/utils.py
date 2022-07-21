@@ -72,13 +72,15 @@ def convert_to_int(val, strict=False, word2number=False):
             return val
 
 
+# very slow
 def replace_word(input, search, replace):
+    # return input.replace(search, replace)
     def replace_method(match):
         if match.group(2) is None:
             return match.group()
         return match.group(2).replace(search, replace)
 
-    expr = re.compile("(\"[^\"]*\")|({})".format(search))
+    expr = re.compile(f"(\"[^\"]*\")|({search})")
     return re.sub(expr, replace_method, input)
 
 

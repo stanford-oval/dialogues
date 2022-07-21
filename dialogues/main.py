@@ -7,6 +7,7 @@ from collections import OrderedDict, defaultdict
 
 import dictdiffer
 from datasets import load_metric
+from tqdm import tqdm
 
 from dialogues.utils import (
     clean_text,
@@ -1154,7 +1155,7 @@ class WOZDataset(Dataset):
                 dials = json.load(file)
 
                 data = []
-                for dial_id, dial in dials.items():
+                for dial_id, dial in tqdm(dials.items()):
                     dialogue_turns = dial["Events"]
 
                     dialog_history = []

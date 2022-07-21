@@ -1,15 +1,13 @@
 import argparse
 import json
 import os
-import re
 
 from dialogues import Risawoz
-from dialogues.risawoz.src.convert import process_string
 
 parser = argparse.ArgumentParser()
 
 parser.add_argument('--input_db_dir', default='dialogues/risawoz/database/db')
-parser.add_argument('--output_db_dir', default='dialogues/risawoz/database/db_zh')
+parser.add_argument('--output_db_dir', default='dialogues/risawoz/database/db_2')
 parser.add_argument('--experiment')
 
 args = parser.parse_args()
@@ -43,6 +41,8 @@ all_replacements.update({'周一至周日 (\d{2}:\d{2}-\d{2}:\d{2}) (\d{2}:\d{2}
 all_replacements.update({'(\d{4}/\d{1,2}/\d{1,2})': r'\1'})
 
 
+os.makedirs(args.output_db_dir, exist_ok=True)
+
 for file in os.listdir(args.input_db_dir):
     domain = file.split('_', 1)[0]
     if domain.startswith('.'):
@@ -56,20 +56,20 @@ for file in os.listdir(args.input_db_dir):
     for item in db_info:
         translated_item = {}
         for slot, value in item.items():
-            if slot not in value_mapping.zh2en_SLOT_MAP:
-                if slot not in seen:
-                    print(slot)
-                    seen.add(slot)
-                continue
-
-            def find_new(value):
-                value = str(value)
-                for in_pattern, out_pattern in all_replacements.items():
-                    if re.fullmatch(in_pattern, value):
-                        new_value = re.sub(in_pattern, out_pattern, value)
-                        return new_value
-
-                return None
+            # if slot not in value_mapping.zh2en_SLOT_MAP:
+            #     if slot not in seen:
+            #         print(slot)
+            #         seen.add(slot)
+            #     continue
+            #
+            # def find_new(value):
+            #     value = str(value)
+            #     for in_pattern, out_pattern in all_replacements.items():
+            #         if re.fullmatch(in_pattern, value):
+            #             new_value = re.sub(in_pattern, out_pattern, value)
+            #             return new_value
+            #
+            #     return None
 
             # is_list = True
             # if not isinstance(value, list):
@@ -111,12 +111,17 @@ for file in os.listdir(args.input_db_dir):
             #     assert len(value) == 1
             #     value = value[0]
 
-            if isinstance(value, str) and value.endswith('。') and slot == '特点':
-                value = value[:-1]
+            # if isinstance(value, str) and value.endswith('。') and slot == '特点':
+            #     value = value[:-1]
+            #
+            # value = process_string(value)
+            #
+            # translated_item[value_mapping.zh2en_SLOT_MAP[slot]] = value
 
-            value = process_string(value)
-
-            translated_item[value_mapping.zh2en_SLOT_MAP[slot]] = value
+            if isinstance(value, str):
+                translated_item[slot] = ''.join(value.split())
+            else:
+                translated_item[slot] = value
 
         translated_db_info.append(translated_item)
 
