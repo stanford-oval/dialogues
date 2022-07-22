@@ -8,7 +8,7 @@ from dialogues.utils import get_commit
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--root", type=str, default='../', help='code root directory')
+    parser.add_argument("--root", type=str, default='dialogues/bitod/', help='code root directory')
     parser.add_argument("--data_dir", type=str, default="data", help="path to save original data, relative to root dir")
     parser.add_argument(
         "--detail", type=bool, default=False, help="whether to return dict annotations, used for data augmentation"
@@ -54,10 +54,10 @@ def main():
 
     data_train, data_fewshot, data_dev, data_test = dataset.prepare_data(args, path_train, path_dev, path_test)
 
-    if not os.path.exists(args.save_dir):
-        os.makedirs(args.save_dir)
-
     args.commit = get_commit()
+
+    save_dir = os.path.join(*[args.root, args.save_dir])
+    os.makedirs(save_dir, exist_ok=True)
 
     for (split, data) in zip(['train', 'fewshot', 'valid', 'test'], [data_train, data_fewshot, data_dev, data_test]):
         with open(
