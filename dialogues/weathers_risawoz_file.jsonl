@@ -1,0 +1,2304 @@
+{
+    "city": "阿布扎比",
+    "date": "星期五",
+    "weather_condition": "下雨",
+    "temperature": "minimum temperature: 24 and maximum temperature: 26",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "阿布扎比",
+    "date": "星期一",
+    "weather_condition": "下雨",
+    "temperature": "minimum temperature: 18 and maximum temperature: 31",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "阿布扎比",
+    "date": "星期六",
+    "weather_condition": "多云",
+    "temperature": "minimum temperature: 13 and maximum temperature: 20",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "阿布扎比",
+    "date": "星期日",
+    "weather_condition": "多云",
+    "temperature": "minimum temperature: 14 and maximum temperature: 30",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "阿布扎比",
+    "date": "星期四",
+    "weather_condition": "多云",
+    "temperature": "minimum temperature: 24 and maximum temperature: 36",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "阿布扎比",
+    "date": "今天",
+    "weather_condition": "下雨",
+    "temperature": "minimum temperature: 3 and maximum temperature: 25",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "阿布扎比",
+    "date": "明天",
+    "weather_condition": "下雨",
+    "temperature": "minimum temperature: 8 and maximum temperature: 29",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "阿布扎比",
+    "date": "星期二",
+    "weather_condition": "多云",
+    "temperature": "minimum temperature: 18 and maximum temperature: 30",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "阿布扎比",
+    "date": "星期三",
+    "weather_condition": "下雨",
+    "temperature": "minimum temperature: 19 and maximum temperature: 36",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "阿姆斯特丹",
+    "date": "星期五",
+    "weather_condition": "下雨",
+    "temperature": "minimum temperature: 13 and maximum temperature: 25",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "阿姆斯特丹",
+    "date": "星期一",
+    "weather_condition": "多云",
+    "temperature": "minimum temperature: -11 and maximum temperature: 30",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "阿姆斯特丹",
+    "date": "星期六",
+    "weather_condition": "下雨",
+    "temperature": "minimum temperature: 14 and maximum temperature: 20",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "阿姆斯特丹",
+    "date": "星期日",
+    "weather_condition": "晴天",
+    "temperature": "minimum temperature: -6 and maximum temperature: 30",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "阿姆斯特丹",
+    "date": "星期四",
+    "weather_condition": "多云",
+    "temperature": "minimum temperature: 14 and maximum temperature: 36",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "阿姆斯特丹",
+    "date": "今天",
+    "weather_condition": "多云",
+    "temperature": "minimum temperature: -10 and maximum temperature: 26",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "阿姆斯特丹",
+    "date": "明天",
+    "weather_condition": "晴天",
+    "temperature": "minimum temperature: -11 and maximum temperature: 29",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "阿姆斯特丹",
+    "date": "星期二",
+    "weather_condition": "下雨",
+    "temperature": "minimum temperature: 4 and maximum temperature: 31",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "阿姆斯特丹",
+    "date": "星期三",
+    "weather_condition": "多云",
+    "temperature": "minimum temperature: 9 and maximum temperature: 35",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "巴塞罗那",
+    "date": "星期五",
+    "weather_condition": "下雨",
+    "temperature": "minimum temperature: 13 and maximum temperature: 25",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "巴塞罗那",
+    "date": "星期一",
+    "weather_condition": "下雨",
+    "temperature": "minimum temperature: -11 and maximum temperature: 30",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "巴塞罗那",
+    "date": "星期六",
+    "weather_condition": "下雨",
+    "temperature": "minimum temperature: 14 and maximum temperature: 20",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "巴塞罗那",
+    "date": "星期日",
+    "weather_condition": "下雪",
+    "temperature": "minimum temperature: -5 and maximum temperature: 31",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "巴塞罗那",
+    "date": "星期四",
+    "weather_condition": "多云",
+    "temperature": "minimum temperature: 14 and maximum temperature: 35",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "巴塞罗那",
+    "date": "今天",
+    "weather_condition": "多云",
+    "temperature": "minimum temperature: -11 and maximum temperature: 25",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "巴塞罗那",
+    "date": "明天",
+    "weather_condition": "晴天",
+    "temperature": "minimum temperature: -11 and maximum temperature: 29",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "巴塞罗那",
+    "date": "星期二",
+    "weather_condition": "多云",
+    "temperature": "minimum temperature: 3 and maximum temperature: 30",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "巴塞罗那",
+    "date": "星期三",
+    "weather_condition": "下雨",
+    "temperature": "minimum temperature: 9 and maximum temperature: 36",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "北京",
+    "date": "星期五",
+    "weather_condition": "多云",
+    "temperature": "minimum temperature: 24 and maximum temperature: 25",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "北京",
+    "date": "星期一",
+    "weather_condition": "晴天",
+    "temperature": "minimum temperature: 19 and maximum temperature: 31",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "北京",
+    "date": "星期六",
+    "weather_condition": "下雨",
+    "temperature": "minimum temperature: 13 and maximum temperature: 20",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "北京",
+    "date": "星期日",
+    "weather_condition": "下雨",
+    "temperature": "minimum temperature: 14 and maximum temperature: 31",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "北京",
+    "date": "星期四",
+    "weather_condition": "晴天",
+    "temperature": "minimum temperature: 24 and maximum temperature: 36",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "北京",
+    "date": "今天",
+    "weather_condition": "晴天",
+    "temperature": "minimum temperature: 3 and maximum temperature: 26",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "北京",
+    "date": "明天",
+    "weather_condition": "多云",
+    "temperature": "minimum temperature: 9 and maximum temperature: 29",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "北京",
+    "date": "星期二",
+    "weather_condition": "下雨",
+    "temperature": "minimum temperature: 19 and maximum temperature: 31",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "北京",
+    "date": "星期三",
+    "weather_condition": "多云",
+    "temperature": "minimum temperature: 18 and maximum temperature: 35",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "柏林",
+    "date": "星期五",
+    "weather_condition": "晴天",
+    "temperature": "minimum temperature: 13 and maximum temperature: 26",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "柏林",
+    "date": "星期一",
+    "weather_condition": "晴天",
+    "temperature": "minimum temperature: -11 and maximum temperature: 30",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "柏林",
+    "date": "星期六",
+    "weather_condition": "下雨",
+    "temperature": "minimum temperature: 13 and maximum temperature: 20",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "柏林",
+    "date": "星期日",
+    "weather_condition": "晴天",
+    "temperature": "minimum temperature: -6 and maximum temperature: 31",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "柏林",
+    "date": "星期四",
+    "weather_condition": "晴天",
+    "temperature": "minimum temperature: 14 and maximum temperature: 36",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "柏林",
+    "date": "今天",
+    "weather_condition": "下雪",
+    "temperature": "minimum temperature: -10 and maximum temperature: 26",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "柏林",
+    "date": "明天",
+    "weather_condition": "晴天",
+    "temperature": "minimum temperature: -10 and maximum temperature: 28",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "柏林",
+    "date": "星期二",
+    "weather_condition": "下雨",
+    "temperature": "minimum temperature: 4 and maximum temperature: 30",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "柏林",
+    "date": "星期三",
+    "weather_condition": "下雨",
+    "temperature": "minimum temperature: 9 and maximum temperature: 35",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "堪培拉",
+    "date": "星期五",
+    "weather_condition": "多云",
+    "temperature": "minimum temperature: -5 and maximum temperature: 15",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "堪培拉",
+    "date": "星期一",
+    "weather_condition": "下雨",
+    "temperature": "minimum temperature: 14 and maximum temperature: 20",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "堪培拉",
+    "date": "星期六",
+    "weather_condition": "下雨",
+    "temperature": "minimum temperature: -5 and maximum temperature: 11",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "堪培拉",
+    "date": "星期日",
+    "weather_condition": "多云",
+    "temperature": "minimum temperature: 13 and maximum temperature: 31",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "堪培拉",
+    "date": "星期四",
+    "weather_condition": "多云",
+    "temperature": "minimum temperature: -11 and maximum temperature: 5",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "堪培拉",
+    "date": "今天",
+    "weather_condition": "多云",
+    "temperature": "minimum temperature: 19 and maximum temperature: 26",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "堪培拉",
+    "date": "明天",
+    "weather_condition": "晴天",
+    "temperature": "minimum temperature: 19 and maximum temperature: 39",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "堪培拉",
+    "date": "星期二",
+    "weather_condition": "晴天",
+    "temperature": "minimum temperature: 8 and maximum temperature: 15",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "堪培拉",
+    "date": "星期三",
+    "weather_condition": "晴天",
+    "temperature": "minimum temperature: -5 and maximum temperature: 5",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "芝加哥",
+    "date": "星期五",
+    "weather_condition": "晴天",
+    "temperature": "minimum temperature: 14 and maximum temperature: 25",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "芝加哥",
+    "date": "星期一",
+    "weather_condition": "下雪",
+    "temperature": "minimum temperature: -11 and maximum temperature: 31",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "芝加哥",
+    "date": "星期六",
+    "weather_condition": "晴天",
+    "temperature": "minimum temperature: 14 and maximum temperature: 20",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "芝加哥",
+    "date": "星期日",
+    "weather_condition": "下雨",
+    "temperature": "minimum temperature: -5 and maximum temperature: 31",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "芝加哥",
+    "date": "星期四",
+    "weather_condition": "晴天",
+    "temperature": "minimum temperature: 14 and maximum temperature: 36",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "芝加哥",
+    "date": "今天",
+    "weather_condition": "下雪",
+    "temperature": "minimum temperature: -16 and maximum temperature: 26",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "芝加哥",
+    "date": "明天",
+    "weather_condition": "下雪",
+    "temperature": "minimum temperature: -11 and maximum temperature: 28",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "芝加哥",
+    "date": "星期二",
+    "weather_condition": "多云",
+    "temperature": "minimum temperature: 3 and maximum temperature: 31",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "芝加哥",
+    "date": "星期三",
+    "weather_condition": "多云",
+    "temperature": "minimum temperature: 8 and maximum temperature: 36",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "登巴萨",
+    "date": "星期五",
+    "weather_condition": "多云",
+    "temperature": "minimum temperature: 24 and maximum temperature: 26",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "登巴萨",
+    "date": "星期一",
+    "weather_condition": "晴天",
+    "temperature": "minimum temperature: 18 and maximum temperature: 30",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "登巴萨",
+    "date": "星期六",
+    "weather_condition": "多云",
+    "temperature": "minimum temperature: 14 and maximum temperature: 20",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "登巴萨",
+    "date": "星期日",
+    "weather_condition": "多云",
+    "temperature": "minimum temperature: 14 and maximum temperature: 31",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "登巴萨",
+    "date": "星期四",
+    "weather_condition": "下雨",
+    "temperature": "minimum temperature: 23 and maximum temperature: 35",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "登巴萨",
+    "date": "今天",
+    "weather_condition": "多云",
+    "temperature": "minimum temperature: 4 and maximum temperature: 26",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "登巴萨",
+    "date": "明天",
+    "weather_condition": "下雨",
+    "temperature": "minimum temperature: 8 and maximum temperature: 29",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "登巴萨",
+    "date": "星期二",
+    "weather_condition": "多云",
+    "temperature": "minimum temperature: 18 and maximum temperature: 30",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "登巴萨",
+    "date": "星期三",
+    "weather_condition": "晴天",
+    "temperature": "minimum temperature: 18 and maximum temperature: 35",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "迪拜",
+    "date": "星期五",
+    "weather_condition": "多云",
+    "temperature": "minimum temperature: 24 and maximum temperature: 25",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "迪拜",
+    "date": "星期一",
+    "weather_condition": "下雨",
+    "temperature": "minimum temperature: 19 and maximum temperature: 30",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "迪拜",
+    "date": "星期六",
+    "weather_condition": "晴天",
+    "temperature": "minimum temperature: 14 and maximum temperature: 21",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "迪拜",
+    "date": "星期日",
+    "weather_condition": "晴天",
+    "temperature": "minimum temperature: 14 and maximum temperature: 30",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "迪拜",
+    "date": "星期四",
+    "weather_condition": "多云",
+    "temperature": "minimum temperature: 24 and maximum temperature: 35",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "迪拜",
+    "date": "今天",
+    "weather_condition": "晴天",
+    "temperature": "minimum temperature: 3 and maximum temperature: 26",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "迪拜",
+    "date": "明天",
+    "weather_condition": "晴天",
+    "temperature": "minimum temperature: 9 and maximum temperature: 29",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "迪拜",
+    "date": "星期二",
+    "weather_condition": "晴天",
+    "temperature": "minimum temperature: 19 and maximum temperature: 30",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "迪拜",
+    "date": "星期三",
+    "weather_condition": "下雨",
+    "temperature": "minimum temperature: 19 and maximum temperature: 35",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "佛罗伦萨",
+    "date": "星期五",
+    "weather_condition": "晴天",
+    "temperature": "minimum temperature: 13 and maximum temperature: 26",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "佛罗伦萨",
+    "date": "星期一",
+    "weather_condition": "下雨",
+    "temperature": "minimum temperature: -10 and maximum temperature: 30",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "佛罗伦萨",
+    "date": "星期六",
+    "weather_condition": "多云",
+    "temperature": "minimum temperature: 13 and maximum temperature: 20",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "佛罗伦萨",
+    "date": "星期日",
+    "weather_condition": "晴天",
+    "temperature": "minimum temperature: -6 and maximum temperature: 30",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "佛罗伦萨",
+    "date": "星期四",
+    "weather_condition": "晴天",
+    "temperature": "minimum temperature: 14 and maximum temperature: 36",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "佛罗伦萨",
+    "date": "今天",
+    "weather_condition": "晴天",
+    "temperature": "minimum temperature: -10 and maximum temperature: 26",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "佛罗伦萨",
+    "date": "明天",
+    "weather_condition": "下雨",
+    "temperature": "minimum temperature: -11 and maximum temperature: 28",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "佛罗伦萨",
+    "date": "星期二",
+    "weather_condition": "下雨",
+    "temperature": "minimum temperature: 4 and maximum temperature: 31",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "佛罗伦萨",
+    "date": "星期三",
+    "weather_condition": "多云",
+    "temperature": "minimum temperature: 9 and maximum temperature: 35",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "香港",
+    "date": "星期五",
+    "weather_condition": "多云",
+    "temperature": "minimum temperature: 24 and maximum temperature: 25",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "香港",
+    "date": "星期一",
+    "weather_condition": "多云",
+    "temperature": "minimum temperature: 19 and maximum temperature: 30",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "香港",
+    "date": "星期六",
+    "weather_condition": "下雨",
+    "temperature": "minimum temperature: 13 and maximum temperature: 21",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "香港",
+    "date": "星期日",
+    "weather_condition": "下雨",
+    "temperature": "minimum temperature: 14 and maximum temperature: 30",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "香港",
+    "date": "星期四",
+    "weather_condition": "多云",
+    "temperature": "minimum temperature: 23 and maximum temperature: 35",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "香港",
+    "date": "今天",
+    "weather_condition": "下雨",
+    "temperature": "minimum temperature: 3 and maximum temperature: 26",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "香港",
+    "date": "明天",
+    "weather_condition": "多云",
+    "temperature": "minimum temperature: 8 and maximum temperature: 29",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "香港",
+    "date": "星期二",
+    "weather_condition": "下雨",
+    "temperature": "minimum temperature: 18 and maximum temperature: 30",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "香港",
+    "date": "星期三",
+    "weather_condition": "晴天",
+    "temperature": "minimum temperature: 19 and maximum temperature: 35",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "雅加达",
+    "date": "星期五",
+    "weather_condition": "晴天",
+    "temperature": "minimum temperature: 24 and maximum temperature: 26",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "雅加达",
+    "date": "星期一",
+    "weather_condition": "下雨",
+    "temperature": "minimum temperature: 18 and maximum temperature: 31",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "雅加达",
+    "date": "星期六",
+    "weather_condition": "多云",
+    "temperature": "minimum temperature: 13 and maximum temperature: 21",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "雅加达",
+    "date": "星期日",
+    "weather_condition": "多云",
+    "temperature": "minimum temperature: 14 and maximum temperature: 31",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "雅加达",
+    "date": "星期四",
+    "weather_condition": "下雨",
+    "temperature": "minimum temperature: 24 and maximum temperature: 35",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "雅加达",
+    "date": "今天",
+    "weather_condition": "多云",
+    "temperature": "minimum temperature: 3 and maximum temperature: 26",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "雅加达",
+    "date": "明天",
+    "weather_condition": "下雨",
+    "temperature": "minimum temperature: 9 and maximum temperature: 28",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "雅加达",
+    "date": "星期二",
+    "weather_condition": "晴天",
+    "temperature": "minimum temperature: 19 and maximum temperature: 31",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "雅加达",
+    "date": "星期三",
+    "weather_condition": "晴天",
+    "temperature": "minimum temperature: 19 and maximum temperature: 36",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "京都",
+    "date": "星期五",
+    "weather_condition": "下雨",
+    "temperature": "minimum temperature: 23 and maximum temperature: 26",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "京都",
+    "date": "星期一",
+    "weather_condition": "多云",
+    "temperature": "minimum temperature: 19 and maximum temperature: 30",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "京都",
+    "date": "星期六",
+    "weather_condition": "晴天",
+    "temperature": "minimum temperature: 13 and maximum temperature: 21",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "京都",
+    "date": "星期日",
+    "weather_condition": "多云",
+    "temperature": "minimum temperature: 13 and maximum temperature: 30",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "京都",
+    "date": "星期四",
+    "weather_condition": "下雨",
+    "temperature": "minimum temperature: 23 and maximum temperature: 36",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "京都",
+    "date": "今天",
+    "weather_condition": "晴天",
+    "temperature": "minimum temperature: 3 and maximum temperature: 26",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "京都",
+    "date": "明天",
+    "weather_condition": "晴天",
+    "temperature": "minimum temperature: 9 and maximum temperature: 28",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "京都",
+    "date": "星期二",
+    "weather_condition": "下雨",
+    "temperature": "minimum temperature: 19 and maximum temperature: 31",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "京都",
+    "date": "星期三",
+    "weather_condition": "多云",
+    "temperature": "minimum temperature: 19 and maximum temperature: 35",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "拉斯维加斯",
+    "date": "星期五",
+    "weather_condition": "晴天",
+    "temperature": "minimum temperature: 13 and maximum temperature: 25",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "拉斯维加斯",
+    "date": "星期一",
+    "weather_condition": "晴天",
+    "temperature": "minimum temperature: -10 and maximum temperature: 30",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "拉斯维加斯",
+    "date": "星期六",
+    "weather_condition": "下雨",
+    "temperature": "minimum temperature: 13 and maximum temperature: 20",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "拉斯维加斯",
+    "date": "星期日",
+    "weather_condition": "下雨",
+    "temperature": "minimum temperature: -6 and maximum temperature: 30",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "拉斯维加斯",
+    "date": "星期四",
+    "weather_condition": "晴天",
+    "temperature": "minimum temperature: 13 and maximum temperature: 35",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "拉斯维加斯",
+    "date": "今天",
+    "weather_condition": "多云",
+    "temperature": "minimum temperature: -16 and maximum temperature: 26",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "拉斯维加斯",
+    "date": "明天",
+    "weather_condition": "晴天",
+    "temperature": "minimum temperature: -10 and maximum temperature: 29",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "拉斯维加斯",
+    "date": "星期二",
+    "weather_condition": "多云",
+    "temperature": "minimum temperature: 4 and maximum temperature: 30",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "拉斯维加斯",
+    "date": "星期三",
+    "weather_condition": "下雨",
+    "temperature": "minimum temperature: 8 and maximum temperature: 35",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "洛杉矶",
+    "date": "星期五",
+    "weather_condition": "下雨",
+    "temperature": "minimum temperature: 14 and maximum temperature: 25",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "洛杉矶",
+    "date": "星期一",
+    "weather_condition": "晴天",
+    "temperature": "minimum temperature: -10 and maximum temperature: 30",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "洛杉矶",
+    "date": "星期六",
+    "weather_condition": "下雨",
+    "temperature": "minimum temperature: 13 and maximum temperature: 20",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "洛杉矶",
+    "date": "星期日",
+    "weather_condition": "晴天",
+    "temperature": "minimum temperature: -6 and maximum temperature: 31",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "洛杉矶",
+    "date": "星期四",
+    "weather_condition": "下雨",
+    "temperature": "minimum temperature: 13 and maximum temperature: 36",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "洛杉矶",
+    "date": "今天",
+    "weather_condition": "下雨",
+    "temperature": "minimum temperature: -15 and maximum temperature: 25",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "洛杉矶",
+    "date": "明天",
+    "weather_condition": "晴天",
+    "temperature": "minimum temperature: -11 and maximum temperature: 29",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "洛杉矶",
+    "date": "星期二",
+    "weather_condition": "晴天",
+    "temperature": "minimum temperature: 4 and maximum temperature: 31",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "洛杉矶",
+    "date": "星期三",
+    "weather_condition": "下雨",
+    "temperature": "minimum temperature: 9 and maximum temperature: 36",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "马德里",
+    "date": "星期五",
+    "weather_condition": "多云",
+    "temperature": "minimum temperature: 13 and maximum temperature: 26",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "马德里",
+    "date": "星期一",
+    "weather_condition": "多云",
+    "temperature": "minimum temperature: -11 and maximum temperature: 31",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "马德里",
+    "date": "星期六",
+    "weather_condition": "晴天",
+    "temperature": "minimum temperature: 13 and maximum temperature: 20",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "马德里",
+    "date": "星期日",
+    "weather_condition": "下雨",
+    "temperature": "minimum temperature: -5 and maximum temperature: 30",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "马德里",
+    "date": "星期四",
+    "weather_condition": "晴天",
+    "temperature": "minimum temperature: 13 and maximum temperature: 35",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "马德里",
+    "date": "今天",
+    "weather_condition": "多云",
+    "temperature": "minimum temperature: -10 and maximum temperature: 25",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "马德里",
+    "date": "明天",
+    "weather_condition": "下雨",
+    "temperature": "minimum temperature: -10 and maximum temperature: 29",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "马德里",
+    "date": "星期二",
+    "weather_condition": "多云",
+    "temperature": "minimum temperature: 4 and maximum temperature: 30",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "马德里",
+    "date": "星期三",
+    "weather_condition": "晴天",
+    "temperature": "minimum temperature: 9 and maximum temperature: 35",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "墨尔本",
+    "date": "星期五",
+    "weather_condition": "晴天",
+    "temperature": "minimum temperature: -5 and maximum temperature: 16",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "墨尔本",
+    "date": "星期一",
+    "weather_condition": "下雨",
+    "temperature": "minimum temperature: 13 and maximum temperature: 21",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "墨尔本",
+    "date": "星期六",
+    "weather_condition": "多云",
+    "temperature": "minimum temperature: -6 and maximum temperature: 11",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "墨尔本",
+    "date": "星期日",
+    "weather_condition": "晴天",
+    "temperature": "minimum temperature: 14 and maximum temperature: 31",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "墨尔本",
+    "date": "星期四",
+    "weather_condition": "晴天",
+    "temperature": "minimum temperature: -10 and maximum temperature: 6",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "墨尔本",
+    "date": "今天",
+    "weather_condition": "多云",
+    "temperature": "minimum temperature: 18 and maximum temperature: 25",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "墨尔本",
+    "date": "明天",
+    "weather_condition": "晴天",
+    "temperature": "minimum temperature: 18 and maximum temperature: 39",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "墨尔本",
+    "date": "星期二",
+    "weather_condition": "下雨",
+    "temperature": "minimum temperature: 9 and maximum temperature: 15",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "墨尔本",
+    "date": "星期三",
+    "weather_condition": "下雨",
+    "temperature": "minimum temperature: -5 and maximum temperature: 6",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "莫斯科",
+    "date": "星期五",
+    "weather_condition": "下雨",
+    "temperature": "minimum temperature: 13 and maximum temperature: 25",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "莫斯科",
+    "date": "星期一",
+    "weather_condition": "多云",
+    "temperature": "minimum temperature: -10 and maximum temperature: 30",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "莫斯科",
+    "date": "星期六",
+    "weather_condition": "晴天",
+    "temperature": "minimum temperature: 14 and maximum temperature: 20",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "莫斯科",
+    "date": "星期日",
+    "weather_condition": "晴天",
+    "temperature": "minimum temperature: -6 and maximum temperature: 31",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "莫斯科",
+    "date": "星期四",
+    "weather_condition": "晴天",
+    "temperature": "minimum temperature: 14 and maximum temperature: 36",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "莫斯科",
+    "date": "今天",
+    "weather_condition": "下雨",
+    "temperature": "minimum temperature: -11 and maximum temperature: 25",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "莫斯科",
+    "date": "明天",
+    "weather_condition": "下雨",
+    "temperature": "minimum temperature: -11 and maximum temperature: 29",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "莫斯科",
+    "date": "星期二",
+    "weather_condition": "多云",
+    "temperature": "minimum temperature: 4 and maximum temperature: 31",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "莫斯科",
+    "date": "星期三",
+    "weather_condition": "多云",
+    "temperature": "minimum temperature: 8 and maximum temperature: 36",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "穆琴",
+    "date": "星期五",
+    "weather_condition": "晴天",
+    "temperature": "minimum temperature: 14 and maximum temperature: 25",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "穆琴",
+    "date": "星期一",
+    "weather_condition": "晴天",
+    "temperature": "minimum temperature: -11 and maximum temperature: 30",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "穆琴",
+    "date": "星期六",
+    "weather_condition": "多云",
+    "temperature": "minimum temperature: 13 and maximum temperature: 21",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "穆琴",
+    "date": "星期日",
+    "weather_condition": "多云",
+    "temperature": "minimum temperature: -6 and maximum temperature: 30",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "穆琴",
+    "date": "星期四",
+    "weather_condition": "多云",
+    "temperature": "minimum temperature: 14 and maximum temperature: 36",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "穆琴",
+    "date": "今天",
+    "weather_condition": "多云",
+    "temperature": "minimum temperature: -11 and maximum temperature: 25",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "穆琴",
+    "date": "明天",
+    "weather_condition": "晴天",
+    "temperature": "minimum temperature: -10 and maximum temperature: 29",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "穆琴",
+    "date": "星期二",
+    "weather_condition": "多云",
+    "temperature": "minimum temperature: 3 and maximum temperature: 30",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "穆琴",
+    "date": "星期三",
+    "weather_condition": "晴天",
+    "temperature": "minimum temperature: 8 and maximum temperature: 36",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "纽约",
+    "date": "星期五",
+    "weather_condition": "晴天",
+    "temperature": "minimum temperature: 14 and maximum temperature: 26",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "纽约",
+    "date": "星期一",
+    "weather_condition": "晴天",
+    "temperature": "minimum temperature: -11 and maximum temperature: 30",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "纽约",
+    "date": "星期六",
+    "weather_condition": "下雨",
+    "temperature": "minimum temperature: 13 and maximum temperature: 20",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "纽约",
+    "date": "星期日",
+    "weather_condition": "多云",
+    "temperature": "minimum temperature: -6 and maximum temperature: 30",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "纽约",
+    "date": "星期四",
+    "weather_condition": "多云",
+    "temperature": "minimum temperature: 14 and maximum temperature: 35",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "纽约",
+    "date": "今天",
+    "weather_condition": "多云",
+    "temperature": "minimum temperature: -15 and maximum temperature: 25",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "纽约",
+    "date": "明天",
+    "weather_condition": "晴天",
+    "temperature": "minimum temperature: -10 and maximum temperature: 29",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "纽约",
+    "date": "星期二",
+    "weather_condition": "多云",
+    "temperature": "minimum temperature: 3 and maximum temperature: 31",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "纽约",
+    "date": "星期三",
+    "weather_condition": "下雨",
+    "temperature": "minimum temperature: 8 and maximum temperature: 35",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "大阪",
+    "date": "星期五",
+    "weather_condition": "晴天",
+    "temperature": "minimum temperature: 23 and maximum temperature: 25",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "大阪",
+    "date": "星期一",
+    "weather_condition": "多云",
+    "temperature": "minimum temperature: 19 and maximum temperature: 30",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "大阪",
+    "date": "星期六",
+    "weather_condition": "多云",
+    "temperature": "minimum temperature: 13 and maximum temperature: 21",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "大阪",
+    "date": "星期日",
+    "weather_condition": "多云",
+    "temperature": "minimum temperature: 14 and maximum temperature: 31",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "大阪",
+    "date": "星期四",
+    "weather_condition": "多云",
+    "temperature": "minimum temperature: 24 and maximum temperature: 36",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "大阪",
+    "date": "今天",
+    "weather_condition": "晴天",
+    "temperature": "minimum temperature: 4 and maximum temperature: 25",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "大阪",
+    "date": "明天",
+    "weather_condition": "晴天",
+    "temperature": "minimum temperature: 9 and maximum temperature: 28",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "大阪",
+    "date": "星期二",
+    "weather_condition": "多云",
+    "temperature": "minimum temperature: 19 and maximum temperature: 30",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "大阪",
+    "date": "星期三",
+    "weather_condition": "下雨",
+    "temperature": "minimum temperature: 19 and maximum temperature: 36",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "巴黎",
+    "date": "星期五",
+    "weather_condition": "下雨",
+    "temperature": "minimum temperature: 13 and maximum temperature: 26",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "巴黎",
+    "date": "星期一",
+    "weather_condition": "多云",
+    "temperature": "minimum temperature: -11 and maximum temperature: 30",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "巴黎",
+    "date": "星期六",
+    "weather_condition": "晴天",
+    "temperature": "minimum temperature: 14 and maximum temperature: 21",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "巴黎",
+    "date": "星期日",
+    "weather_condition": "下雪",
+    "temperature": "minimum temperature: -5 and maximum temperature: 30",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "巴黎",
+    "date": "星期四",
+    "weather_condition": "多云",
+    "temperature": "minimum temperature: 14 and maximum temperature: 36",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "巴黎",
+    "date": "今天",
+    "weather_condition": "多云",
+    "temperature": "minimum temperature: -11 and maximum temperature: 25",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "巴黎",
+    "date": "明天",
+    "weather_condition": "晴天",
+    "temperature": "minimum temperature: -10 and maximum temperature: 29",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "巴黎",
+    "date": "星期二",
+    "weather_condition": "下雨",
+    "temperature": "minimum temperature: 4 and maximum temperature: 31",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "巴黎",
+    "date": "星期三",
+    "weather_condition": "多云",
+    "temperature": "minimum temperature: 8 and maximum temperature: 36",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "布拉格",
+    "date": "星期五",
+    "weather_condition": "多云",
+    "temperature": "minimum temperature: 13 and maximum temperature: 25",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "布拉格",
+    "date": "星期一",
+    "weather_condition": "多云",
+    "temperature": "minimum temperature: -11 and maximum temperature: 31",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "布拉格",
+    "date": "星期六",
+    "weather_condition": "多云",
+    "temperature": "minimum temperature: 13 and maximum temperature: 21",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "布拉格",
+    "date": "星期日",
+    "weather_condition": "晴天",
+    "temperature": "minimum temperature: -5 and maximum temperature: 31",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "布拉格",
+    "date": "星期四",
+    "weather_condition": "多云",
+    "temperature": "minimum temperature: 13 and maximum temperature: 36",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "布拉格",
+    "date": "今天",
+    "weather_condition": "多云",
+    "temperature": "minimum temperature: -10 and maximum temperature: 26",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "布拉格",
+    "date": "明天",
+    "weather_condition": "晴天",
+    "temperature": "minimum temperature: -11 and maximum temperature: 29",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "布拉格",
+    "date": "星期二",
+    "weather_condition": "多云",
+    "temperature": "minimum temperature: 3 and maximum temperature: 31",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "布拉格",
+    "date": "星期三",
+    "weather_condition": "多云",
+    "temperature": "minimum temperature: 9 and maximum temperature: 35",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "罗马",
+    "date": "星期五",
+    "weather_condition": "多云",
+    "temperature": "minimum temperature: 13 and maximum temperature: 25",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "罗马",
+    "date": "星期一",
+    "weather_condition": "晴天",
+    "temperature": "minimum temperature: -11 and maximum temperature: 30",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "罗马",
+    "date": "星期六",
+    "weather_condition": "多云",
+    "temperature": "minimum temperature: 14 and maximum temperature: 21",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "罗马",
+    "date": "星期日",
+    "weather_condition": "多云",
+    "temperature": "minimum temperature: -6 and maximum temperature: 30",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "罗马",
+    "date": "星期四",
+    "weather_condition": "多云",
+    "temperature": "minimum temperature: 14 and maximum temperature: 36",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "罗马",
+    "date": "今天",
+    "weather_condition": "晴天",
+    "temperature": "minimum temperature: -11 and maximum temperature: 26",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "罗马",
+    "date": "明天",
+    "weather_condition": "多云",
+    "temperature": "minimum temperature: -11 and maximum temperature: 28",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "罗马",
+    "date": "星期二",
+    "weather_condition": "下雨",
+    "temperature": "minimum temperature: 3 and maximum temperature: 31",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "罗马",
+    "date": "星期三",
+    "weather_condition": "多云",
+    "temperature": "minimum temperature: 8 and maximum temperature: 36",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "旧金山",
+    "date": "星期五",
+    "weather_condition": "晴天",
+    "temperature": "minimum temperature: 14 and maximum temperature: 25",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "旧金山",
+    "date": "星期一",
+    "weather_condition": "晴天",
+    "temperature": "minimum temperature: -11 and maximum temperature: 31",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "旧金山",
+    "date": "星期六",
+    "weather_condition": "下雨",
+    "temperature": "minimum temperature: 13 and maximum temperature: 21",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "旧金山",
+    "date": "星期日",
+    "weather_condition": "晴天",
+    "temperature": "minimum temperature: -6 and maximum temperature: 31",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "旧金山",
+    "date": "星期四",
+    "weather_condition": "晴天",
+    "temperature": "minimum temperature: 14 and maximum temperature: 35",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "旧金山",
+    "date": "今天",
+    "weather_condition": "晴天",
+    "temperature": "minimum temperature: -15 and maximum temperature: 25",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "旧金山",
+    "date": "明天",
+    "weather_condition": "下雪",
+    "temperature": "minimum temperature: -10 and maximum temperature: 29",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "旧金山",
+    "date": "星期二",
+    "weather_condition": "下雨",
+    "temperature": "minimum temperature: 3 and maximum temperature: 31",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "旧金山",
+    "date": "星期三",
+    "weather_condition": "多云",
+    "temperature": "minimum temperature: 9 and maximum temperature: 35",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "西雅图",
+    "date": "星期五",
+    "weather_condition": "多云",
+    "temperature": "minimum temperature: 13 and maximum temperature: 25",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "西雅图",
+    "date": "星期一",
+    "weather_condition": "多云",
+    "temperature": "minimum temperature: -11 and maximum temperature: 31",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "西雅图",
+    "date": "星期六",
+    "weather_condition": "晴天",
+    "temperature": "minimum temperature: 13 and maximum temperature: 21",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "西雅图",
+    "date": "星期日",
+    "weather_condition": "下雨",
+    "temperature": "minimum temperature: -5 and maximum temperature: 31",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "西雅图",
+    "date": "星期四",
+    "weather_condition": "多云",
+    "temperature": "minimum temperature: 14 and maximum temperature: 35",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "西雅图",
+    "date": "今天",
+    "weather_condition": "晴天",
+    "temperature": "minimum temperature: -15 and maximum temperature: 26",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "西雅图",
+    "date": "明天",
+    "weather_condition": "多云",
+    "temperature": "minimum temperature: -11 and maximum temperature: 28",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "西雅图",
+    "date": "星期二",
+    "weather_condition": "多云",
+    "temperature": "minimum temperature: 4 and maximum temperature: 30",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "西雅图",
+    "date": "星期三",
+    "weather_condition": "多云",
+    "temperature": "minimum temperature: 9 and maximum temperature: 36",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "首尔",
+    "date": "星期五",
+    "weather_condition": "多云",
+    "temperature": "minimum temperature: 24 and maximum temperature: 26",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "首尔",
+    "date": "星期一",
+    "weather_condition": "下雨",
+    "temperature": "minimum temperature: 18 and maximum temperature: 30",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "首尔",
+    "date": "星期六",
+    "weather_condition": "下雨",
+    "temperature": "minimum temperature: 13 and maximum temperature: 20",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "首尔",
+    "date": "星期日",
+    "weather_condition": "晴天",
+    "temperature": "minimum temperature: 14 and maximum temperature: 31",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "首尔",
+    "date": "星期四",
+    "weather_condition": "多云",
+    "temperature": "minimum temperature: 23 and maximum temperature: 36",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "首尔",
+    "date": "今天",
+    "weather_condition": "多云",
+    "temperature": "minimum temperature: 4 and maximum temperature: 26",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "首尔",
+    "date": "明天",
+    "weather_condition": "下雨",
+    "temperature": "minimum temperature: 8 and maximum temperature: 28",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "首尔",
+    "date": "星期二",
+    "weather_condition": "下雨",
+    "temperature": "minimum temperature: 19 and maximum temperature: 30",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "首尔",
+    "date": "星期三",
+    "weather_condition": "下雨",
+    "temperature": "minimum temperature: 18 and maximum temperature: 36",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "新加坡",
+    "date": "星期五",
+    "weather_condition": "下雨",
+    "temperature": "minimum temperature: 24 and maximum temperature: 26",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "新加坡",
+    "date": "星期一",
+    "weather_condition": "晴天",
+    "temperature": "minimum temperature: 18 and maximum temperature: 31",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "新加坡",
+    "date": "星期六",
+    "weather_condition": "下雨",
+    "temperature": "minimum temperature: 14 and maximum temperature: 20",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "新加坡",
+    "date": "星期日",
+    "weather_condition": "晴天",
+    "temperature": "minimum temperature: 13 and maximum temperature: 31",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "新加坡",
+    "date": "星期四",
+    "weather_condition": "下雨",
+    "temperature": "minimum temperature: 24 and maximum temperature: 36",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "新加坡",
+    "date": "今天",
+    "weather_condition": "多云",
+    "temperature": "minimum temperature: 3 and maximum temperature: 26",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "新加坡",
+    "date": "明天",
+    "weather_condition": "多云",
+    "temperature": "minimum temperature: 9 and maximum temperature: 29",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "新加坡",
+    "date": "星期二",
+    "weather_condition": "下雨",
+    "temperature": "minimum temperature: 19 and maximum temperature: 30",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "新加坡",
+    "date": "星期三",
+    "weather_condition": "下雨",
+    "temperature": "minimum temperature: 18 and maximum temperature: 35",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "东京",
+    "date": "星期五",
+    "weather_condition": "晴天",
+    "temperature": "minimum temperature: 23 and maximum temperature: 25",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "东京",
+    "date": "星期一",
+    "weather_condition": "晴天",
+    "temperature": "minimum temperature: 18 and maximum temperature: 31",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "东京",
+    "date": "星期六",
+    "weather_condition": "多云",
+    "temperature": "minimum temperature: 14 and maximum temperature: 20",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "东京",
+    "date": "星期日",
+    "weather_condition": "下雨",
+    "temperature": "minimum temperature: 13 and maximum temperature: 31",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "东京",
+    "date": "星期四",
+    "weather_condition": "下雨",
+    "temperature": "minimum temperature: 23 and maximum temperature: 36",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "东京",
+    "date": "今天",
+    "weather_condition": "多云",
+    "temperature": "minimum temperature: 4 and maximum temperature: 25",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "东京",
+    "date": "明天",
+    "weather_condition": "多云",
+    "temperature": "minimum temperature: 8 and maximum temperature: 29",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "东京",
+    "date": "星期二",
+    "weather_condition": "晴天",
+    "temperature": "minimum temperature: 18 and maximum temperature: 30",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "东京",
+    "date": "星期三",
+    "weather_condition": "下雨",
+    "temperature": "minimum temperature: 19 and maximum temperature: 36",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "多伦多",
+    "date": "星期五",
+    "weather_condition": "晴天",
+    "temperature": "minimum temperature: 13 and maximum temperature: 25",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "多伦多",
+    "date": "星期一",
+    "weather_condition": "多云",
+    "temperature": "minimum temperature: -11 and maximum temperature: 30",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "多伦多",
+    "date": "星期六",
+    "weather_condition": "下雨",
+    "temperature": "minimum temperature: 14 and maximum temperature: 21",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "多伦多",
+    "date": "星期日",
+    "weather_condition": "下雪",
+    "temperature": "minimum temperature: -6 and maximum temperature: 31",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "多伦多",
+    "date": "星期四",
+    "weather_condition": "下雨",
+    "temperature": "minimum temperature: 13 and maximum temperature: 35",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "多伦多",
+    "date": "今天",
+    "weather_condition": "多云",
+    "temperature": "minimum temperature: -16 and maximum temperature: 25",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "多伦多",
+    "date": "明天",
+    "weather_condition": "多云",
+    "temperature": "minimum temperature: -11 and maximum temperature: 28",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "多伦多",
+    "date": "星期二",
+    "weather_condition": "晴天",
+    "temperature": "minimum temperature: 3 and maximum temperature: 30",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "多伦多",
+    "date": "星期三",
+    "weather_condition": "晴天",
+    "temperature": "minimum temperature: 8 and maximum temperature: 36",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "华盛顿",
+    "date": "星期五",
+    "weather_condition": "多云",
+    "temperature": "minimum temperature: 14 and maximum temperature: 26",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "华盛顿",
+    "date": "星期一",
+    "weather_condition": "下雨",
+    "temperature": "minimum temperature: -11 and maximum temperature: 30",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "华盛顿",
+    "date": "星期六",
+    "weather_condition": "下雨",
+    "temperature": "minimum temperature: 14 and maximum temperature: 21",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "华盛顿",
+    "date": "星期日",
+    "weather_condition": "多云",
+    "temperature": "minimum temperature: -6 and maximum temperature: 30",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "华盛顿",
+    "date": "星期四",
+    "weather_condition": "晴天",
+    "temperature": "minimum temperature: 13 and maximum temperature: 36",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "华盛顿",
+    "date": "今天",
+    "weather_condition": "多云",
+    "temperature": "minimum temperature: -16 and maximum temperature: 26",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "华盛顿",
+    "date": "明天",
+    "weather_condition": "晴天",
+    "temperature": "minimum temperature: -11 and maximum temperature: 29",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "华盛顿",
+    "date": "星期二",
+    "weather_condition": "多云",
+    "temperature": "minimum temperature: 4 and maximum temperature: 31",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "华盛顿",
+    "date": "星期三",
+    "weather_condition": "多云",
+    "temperature": "minimum temperature: 8 and maximum temperature: 36",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "滑铁卢",
+    "date": "星期五",
+    "weather_condition": "晴天",
+    "temperature": "minimum temperature: 14 and maximum temperature: 26",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "滑铁卢",
+    "date": "星期一",
+    "weather_condition": "下雨",
+    "temperature": "minimum temperature: -10 and maximum temperature: 30",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "滑铁卢",
+    "date": "星期六",
+    "weather_condition": "多云",
+    "temperature": "minimum temperature: 13 and maximum temperature: 21",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "滑铁卢",
+    "date": "星期日",
+    "weather_condition": "下雪",
+    "temperature": "minimum temperature: -6 and maximum temperature: 31",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "滑铁卢",
+    "date": "星期四",
+    "weather_condition": "晴天",
+    "temperature": "minimum temperature: 14 and maximum temperature: 35",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "滑铁卢",
+    "date": "今天",
+    "weather_condition": "下雨",
+    "temperature": "minimum temperature: -16 and maximum temperature: 25",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "滑铁卢",
+    "date": "明天",
+    "weather_condition": "多云",
+    "temperature": "minimum temperature: -11 and maximum temperature: 28",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "滑铁卢",
+    "date": "星期二",
+    "weather_condition": "下雨",
+    "temperature": "minimum temperature: 4 and maximum temperature: 30",
+    "wind": null,
+    "UV_intensity": null
+},
+{
+    "city": "滑铁卢",
+    "date": "星期三",
+    "weather_condition": "晴天",
+    "temperature": "minimum temperature: 9 and maximum temperature: 36",
+    "wind": null,
+    "UV_intensity": null
+}

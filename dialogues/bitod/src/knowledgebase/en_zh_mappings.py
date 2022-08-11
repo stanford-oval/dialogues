@@ -2,7 +2,7 @@ import json
 import os
 from collections import OrderedDict
 
-from dialogues.bitod.src.knowledgebase.hk_mtr import name_to_zh
+from dialogues.bitod.src.knowledgebase.hk_mtr import name_to_zh, name_to_fa
 
 
 def read_require_slots():
@@ -109,16 +109,24 @@ class BitodMapping(object):
         # for cross lingual transfer
         # mapping between slot values, not comprehensive, don't rely on it
         cur_dir = os.path.dirname(os.path.abspath(__file__))
-        with open(os.path.join(cur_dir, "mappings/dict_en_zh.json")) as f:
+        with open(os.path.join(cur_dir, "mappings/dict_en_fa.json")) as f:
             map_dict = json.load(f)
+        # to Chinese
+        # en2zh_VALUE_MAP = name_to_zh
+        # en2zh_VALUE_MAP.update(map_dict)
+        # self.en2zh_VALUE_MAP = en2zh_VALUE_MAP
+        #
+        # zh2en_VALUE_MAP = {v: k for k, v in name_to_zh.items()}
+        # zh2en_VALUE_MAP.update({v: k for k, v in map_dict.items()})
+        # self.zh2en_VALUE_MAP = zh2en_VALUE_MAP
+        #Giu Added: to Farsi
+        en2fa_VALUE_MAP = name_to_fa
+        en2fa_VALUE_MAP.update(map_dict)
+        self.en2fa_VALUE_MAP = en2fa_VALUE_MAP
 
-        en2zh_VALUE_MAP = name_to_zh
-        en2zh_VALUE_MAP.update(map_dict)
-        self.en2zh_VALUE_MAP = en2zh_VALUE_MAP
-
-        zh2en_VALUE_MAP = {v: k for k, v in name_to_zh.items()}
-        zh2en_VALUE_MAP.update({v: k for k, v in map_dict.items()})
-        self.zh2en_VALUE_MAP = zh2en_VALUE_MAP
+        fa2en_VALUE_MAP = {v: k for k, v in name_to_zh.items()}
+        fa2en_VALUE_MAP.update({v: k for k, v in map_dict.items()})
+        self.fa2en_VALUE_MAP = fa2en_VALUE_MAP
 
         # maps entities to their canonicalized version; api expects canonicalized version
         # note entities in original and preprocessed datasets are not canonicalized;
@@ -135,8 +143,8 @@ class BitodMapping(object):
         cur_dir = os.path.dirname(os.path.abspath(__file__))
         with open(os.path.join(cur_dir, "mappings/zh2en_missing.json")) as f:
             self.zh2en_missing_MAP = json.load(f)
-        with open(os.path.join(cur_dir, "mappings/en2zh_missing.json")) as f:
-            self.en2zh_missing_MAP = json.load(f)
+        with open(os.path.join(cur_dir, "mappings/en2fa_missing.json")) as f:
+            self.en2fa_missing_MAP = json.load(f)
 
         # Mapping between api file names in kb/apis/* to a canonical name
         self.zh2en_API_MAP = {

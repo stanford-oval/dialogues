@@ -29,6 +29,15 @@ zh2en_DAY_MAP = {
     "星期天": "Sunday",
 }
 en2zh_DAY_MAP = {v: k for k, v in zh2en_DAY_MAP.items()}
+en2fa_DAY_MAP = {
+    "Monday": 'دوشنبه',
+    "Tuesday": 'سه‌شنبه',
+    "Wednesday": 'چهارشنبه',
+    "Thursday": 'پنج‌شنبه',
+    "Friday": 'جمعه',
+    "Saturday": 'شنبه',
+    "Sunday": 'یکشنبه',
+}
 ENGLISH_MONTH_MAPPING = {
     '1': 'January',
     '2': 'February',
@@ -43,13 +52,42 @@ ENGLISH_MONTH_MAPPING = {
     '11': 'November',
     '12': 'December',
 }
+FARSI_MONTH_MAPPING = {
+    '1': 'دی',
+    '2': 'بهمن',
+    '3': 'اسفند',
+    '4': 'فروردین',
+    '5': 'اردیبهشت',
+    '6': 'خرداد',
+    '7': 'تیر',
+    '8': 'مرداد',
+    '9': 'شهریور',
+    '10': 'مهر',
+    '11': 'آبان',
+    '12': 'آذر',
+}
 MONTH_MAPPING_EN = {
     k + ' month': v for k, v in sorted(ENGLISH_MONTH_MAPPING.items(), key=lambda item: int(item[0]), reverse=True)
 }
 MONTH_MAPPING_ZH = {
     v + '月': k + '月' for k, v in sorted(ENGLISH_MONTH_MAPPING.items(), key=lambda item: int(item[0]), reverse=True)
 }
-
+# Giu Added for Farsi:
+MONTH_MAPPING_FA = {
+    'December ماه': 'آذر',
+    'November ماه': 'آبان',
+    'October ماه': 'مهر',
+    'September ماه': 'شهریور',
+    'August ماه': 'مرداد',
+    'July ماه': 'تیر',
+    'June ماه': 'خرداد',
+    'May ماه': 'اردیبهشت',
+    'April ماه': 'فروردین',
+    'March ماه': 'اسفند',
+    'February ماه': 'بهمن',
+    'January ماه': 'دی',
+}
+# print(ENGLISH_MONTH_MAPPING)
 
 def convert_to_int(val, strict=False, word2number=False):
     val = str(val)
