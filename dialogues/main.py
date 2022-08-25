@@ -21,10 +21,6 @@ from dialogues.utils import (
     zh2en_CARDINAL_MAP,
 )
 
-out_ser = open('out_ser.tsv', 'w')
-out_dst = open('out_dst.tsv', 'w')
-out_da = open('out_da.tsv', 'w')
-
 metric = load_metric("sacrebleu")
 
 
@@ -56,6 +52,10 @@ class Dataset(object):
 
         self.system_token = ''
         self.user_token = ''
+
+        self.out_ser = open('out_ser.tsv', 'w')
+        self.out_dst = open('out_dst.tsv', 'w')
+        self.out_da = open('out_da.tsv', 'w')
 
     def domain2api_name(self, domain):
         """
@@ -564,7 +564,7 @@ class WOZDataset(Dataset):
         else:
             intents = [intents]
         for intent in intents:
-            intent_action_text = self.action2span_for_single_intent(agent_actions, intent, setting) + ' '
+            intent_action_text = self.action2span_for_single_intent(agent_actions, intent, setting)
             action_text += intent_action_text
         return action_text.strip()  # retain the original output for BiToD
 
@@ -705,7 +705,7 @@ class WOZDataset(Dataset):
                 if pred_dict == ref_dict:
                     da += 1
                 else:
-                    out_da.write(str(pred) + '\t' + str(ref) + '\t' + str(list(dictdiffer.diff(pred, ref))) + '\n')
+                    self.out_da.write(str(pred) + '\t' + str(ref) + '\t' + str(list(dictdiffer.diff(pred, ref))) + '\n')
 
         return da / len(preds) * 100
 
@@ -722,7 +722,7 @@ class WOZDataset(Dataset):
                         missing = True
             if missing:
                 ser += 1.0
-                out_ser.write('\t'.join([pred, *values]) + '\n')
+                self.out_ser.write('\t'.join([pred, *values]) + '\n')
         return ser / len(preds) * 100
 
     def compute_dst_em(self, preds, golds):
@@ -734,7 +734,7 @@ class WOZDataset(Dataset):
             if pred_sets == gold_sets:
                 hit += 1
             else:
-                out_dst.write(
+                self.out_dst.write(
                     str(pred_sets) + '\t' + str(gold_sets) + '\t' + str(list(dictdiffer.diff(pred_sets, gold_sets))) + '\n'
                 )
 
@@ -1068,9 +1068,9 @@ class WOZDataset(Dataset):
         if not do_translate:
             return text
         for key, val in self.value_mapping.translation_dict.items():
-            text = replace_word(text, ' ' + key + ' ', ' ' + val + ' ')
+            text = replace_word(text, key, val)
         for key, val in self.value_mapping.zh_API_MAP.items():
-            text = replace_word(text, ' ' + key + ' ', ' ' + val + ' ')
+            text = replace_word(text, key, val)
         for key, val in zh2en_CARDINAL_MAP.items():
             text = text.replace(f'" {key} "', f'" {val} "')
         return text
@@ -1174,9 +1174,7 @@ class WOZDataset(Dataset):
                                 turn["active_intent"] = [turn["active_intent"]]
 
                             intents = [self.value_mapping.API_MAP[intent] for intent in turn["active_intent"]]
-                            task = ' / '.join(
-                                [self.translate_slots_to_english(intent, args.english_slots) for intent in intents]
-                            )
+                            task = ' / '.join([self.value_mapping.zh2en_INTENT_MAP.get(intent, intent) for intent in intents])
 
                             # accumulate dialogue utterances
                             if args.use_user_acts:

@@ -56,17 +56,11 @@ def main():
 
     args.commit = get_commit()
 
-    save_dir = os.path.join(*[args.root, args.save_dir])
+    save_dir = os.path.join(*[args.root, args.save_dir, f'{args.setting}_v{args.version}'])
     os.makedirs(save_dir, exist_ok=True)
 
     for (split, data) in zip(['train', 'fewshot', 'valid', 'test'], [data_train, data_fewshot, data_dev, data_test]):
-        with open(
-            os.path.join(
-                args.save_dir,
-                f"{args.setting}_{split}" + f"_v{args.version}.json",
-            ),
-            "w",
-        ) as f:
+        with open(os.path.join(save_dir, f"{split}.json"), "w") as f:
             if data:
                 json.dump({"args": vars(args), "data": data}, f, indent=True, ensure_ascii=False)
                 print(split, len(data))

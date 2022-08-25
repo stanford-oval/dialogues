@@ -5,20 +5,6 @@ from collections import OrderedDict
 from dialogues.bitod.src.knowledgebase.hk_mtr import name_to_zh
 
 
-def read_require_slots():
-    require_slots = OrderedDict()
-    cur_dir = os.path.dirname(os.path.abspath(__file__))
-    for fn in os.listdir(os.path.join(cur_dir, "apis")):
-        with open(os.path.join(cur_dir, "apis", fn)) as f:
-            ontology = json.load(f)
-            api_name = fn.replace(".json", "")
-            require_slots[api_name] = tuple(sorted(ontology["required"]))
-
-    require_slots['HKMTR zh'] = require_slots['HKMTR_en']
-
-    return require_slots
-
-
 class BitodMapping(object):
     def __init__(self):
 
@@ -150,6 +136,17 @@ class BitodMapping(object):
         }
         self.en2zh_API_MAP = {v: k for k, v in self.zh2en_API_MAP.items()}
 
+        self.zh2en_INTENT_MAP = {
+            "餐馆查询": "restaurants search",
+            "餐馆预订": "restaurants booking",
+            "宾馆查询": "hotels search",
+            "宾馆预订": "hotels booking",
+            "景点查询": "attractions search",
+            "天气查询": "weathers search",
+            "香港地铁": "HKMTR en",
+        }
+        self.en2zh_INTENT_MAP = {v: k for k, v in self.zh2en_INTENT_MAP.items()}
+
         self.en_API_MAP = {
             'chat': 'chat',
             "restaurants_en_US_search": "restaurants search",
@@ -159,7 +156,6 @@ class BitodMapping(object):
             "attractions_en_US_search": "attractions search",
             "weathers_en_US_search": "weathers search",
             "HKMTR_en": "HKMTR en",
-            "HKMTR_zh": "HKMTR zh",
         }
         self.r_en_API_MAP = {v: k for k, v in self.en_API_MAP.items()}
 
@@ -171,7 +167,7 @@ class BitodMapping(object):
             "hotels_zh_CN_booking": "hotels booking",
             "attractions_zh_CN_search": "attractions search",
             "weathers_zh_CN_search": "weathers search",
-            "HKMTR_zh": "HKMTR zh",
+            "HKMTR_zh": "HKMTR en",
         }
 
         self.zh_en_API_MAP = {
@@ -205,8 +201,25 @@ class BitodMapping(object):
         translation_dict["chat"] = "chat"
         self.translation_dict = OrderedDict(sorted(translation_dict.items(), key=lambda item: len(item[0]), reverse=True))
 
-        required_slots = read_require_slots()
+        required_slots = self.read_require_slots()
         self.required_slots = {self.API_MAP[k]: v for k, v in required_slots.items()}
         self.api_names = list(self.required_slots.keys())
 
         self.skip_slots_for_kb = ["type", "description", "类别", "描述"]
+
+    def read_require_slots(self):
+        require_slots = OrderedDict()
+        cur_dir = os.path.dirname(os.path.abspath(__file__))
+        for fn in os.listdir(os.path.join(cur_dir, "apis")):
+            with open(os.path.join(cur_dir, "apis", fn)) as f:
+                ontology = json.load(f)
+                api_name = fn.replace(".json", "")
+                required = tuple(sorted(ontology["required"]))
+                if 'zh' in api_name:
+                    require_slots[api_name] = [self.en2zh_SLOT_MAP[val] for val in required]
+                else:
+                    require_slots[api_name] = required
+
+        require_slots['HKMTR zh'] = require_slots['HKMTR_en']
+
+        return require_slots

@@ -80,7 +80,7 @@ def replace_word(input, search, replace):
             return match.group()
         return match.group(2).replace(search, replace)
 
-    expr = re.compile(f"(\"[^\"]*\")|({search})")
+    expr = re.compile(f"(\"[^\"]*\")|( {search}(?:$| ))")
     return re.sub(expr, replace_method, input)
 
 
@@ -89,6 +89,9 @@ def clean_text(text, is_formal=False):
     text = re.sub(' +', ' ', text)
     text = re.sub('\\n|\\t', ' ', text)
     text = text.replace('，', ',')
+    text = text.replace('，', ',')
+    text = text.replace('？', '?')
+    text = text.replace('！', '!')
 
     if not is_formal:
         text = text.replace('"', '')
