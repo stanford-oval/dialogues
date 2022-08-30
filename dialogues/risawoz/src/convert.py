@@ -81,43 +81,6 @@ def process_string(sentence):
     return sentence
 
 
-#
-#
-# def tokenize_string(sentence):
-#     output = []
-#     i = 0
-#     while i < len(sentence):
-#         output.append(sentence[i])
-#         if is_cjk_char(ord(sentence[i])):
-#             is_split = True
-#             j = i + 1
-#             while j < len(sentence):
-#                 if not re.fullmatch('[0-9:]', sentence[j]):
-#                     is_split = False
-#                     break
-#                 j += 1
-#
-#             if is_split:
-#                 output.append(' ')
-#         i += 1
-#
-#     output = "".join(output)
-#     output = output.replace('  ', ' ')
-#
-#     return output
-#
-#
-# def process_val(val, slot):
-#     val = ''.join(val.split())
-#
-#     if slot in ['教室地点']:
-#         continue
-#
-#     val = tokenize_string(val)
-#
-#     return val
-
-
 def group_slot_values(actions):
     # group slot values in user/system actions with same act-domain-slot prefix
     for i in range(len(actions)):

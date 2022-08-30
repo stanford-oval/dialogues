@@ -1296,6 +1296,10 @@ class WOZDataset(Dataset):
                                     for intent in intents:
                                         if intent in next_turn["Item"]:
                                             knowledge[intent].update(next_turn["Item"][intent])
+                                        # general intent, 1 erroneous turn in zh_train
+                                        elif self.name == 'risawoz':
+                                            print(f'intent: {intent} not found in next_turn KB. skipping...')
+                                            continue
                                         else:
                                             knowledge[intent].update(next_turn["Item"])
 

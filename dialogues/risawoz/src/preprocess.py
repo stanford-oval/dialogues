@@ -32,6 +32,8 @@ def main():
     parser.add_argument("--use_natural_response", action='store_true')
     parser.add_argument("--only_user_rg", action='store_true')
 
+    parser.add_argument("--max_input_output_length", default='1000')
+
     args = parser.parse_args()
 
     dataset = Risawoz()
@@ -61,7 +63,7 @@ def main():
     os.makedirs(save_dir, exist_ok=True)
 
     for (split, data) in zip(['train', 'fewshot', 'valid', 'test'], [data_train, data_fewshot, data_dev, data_test]):
-        with open(os.path.join(save_dir, f"${split}.json"), "w") as f:
+        with open(os.path.join(save_dir, f"{split}.json"), "w") as f:
             if data:
                 json.dump({"args": vars(args), "data": data}, f, indent=True, ensure_ascii=False)
                 print(split, len(data))

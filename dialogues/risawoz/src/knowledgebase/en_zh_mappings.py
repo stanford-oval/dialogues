@@ -159,6 +159,9 @@ class RisawozMapping(object):
         }
         self.en2zh_DOMAIN_MAP = {v: k for k, v in self.zh2en_DOMAIN_MAP.items()}
 
+        self.zh2en_INTENT_MAP = self.zh2en_DOMAIN_MAP
+        self.en2zh_INTENT_MAP = self.en2zh_DOMAIN_MAP
+
         # TODO: update below
         self.required_slots = {
             **{k: [] for k, v in self.DOMAIN_SLOT_MAP.items()},
