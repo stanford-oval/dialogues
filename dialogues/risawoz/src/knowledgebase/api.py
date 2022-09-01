@@ -1,15 +1,29 @@
+import re
+
+from genienlp.data_utils.almond_utils import is_cjk_char
+
+
 def call_api(db, api_names, constraints, lang, value_mapping, actions=None):
     knowledge = {}
     for api in api_names:
-        if api not in constraints:
-            continue
+        api_en = value_mapping.zh2en_DOMAIN_MAP.get(api, api)
+        # if api not in constraints:
+        #     continue
         knowledge[api] = {}
-        domain_constraints = constraints[api]
-        db_name = f'{value_mapping.zh2en_DOMAIN_MAP.get(api, api)}_{lang}'
+        if api not in constraints:
+            domain_constraints = {}
+        else:
+            domain_constraints = constraints[api]
+        db_name = f'{api_en}_{lang}'
         cursor = db[db_name].find(domain_constraints)
+        if api == 'car':
+            if 'number_of_seats' in domain_constraints:
+                domain_constraints['number_of_seats'] = {"$gte": int(domain_constraints['number_of_seats'])}
         domain_knowledge = []
         for matched in cursor:
             matched["_id"] = str(matched["_id"])
+            # for key, val in matched.items():
+            #     matched[key] = process_string(val)
             domain_knowledge.append(matched)
         if domain_knowledge:
             if actions:
@@ -18,16 +32,13 @@ def call_api(db, api_names, constraints, lang, value_mapping, actions=None):
                     found = True
                     for slot, value in acts.items():
                         slot = slot.replace('.', '\uFF0E')
-                        slot = slot.replace('_', ' ')
+                        # slot = slot.replace('_', ' ')
+                        slot = value_mapping.zh2en_SLOT_MAP.get(slot, slot)
                         if slot not in item:
-                            if slot == '价格' and api == '汽车':
-                                slot = '价格(万元)'
-                            if slot == '老师' and api == '辅导班':
-                                slot = '教师'
-                            if slot == '开放时间' and api == '餐厅':
-                                slot = '营业时间'
-                            if slot == '出发时间' and api == '飞机':
-                                slot = '起飞时间'
+                            if slot == 'price' and api_en == 'car':
+                                slot = 'price(ten_thousand_yuan)'
+                            if slot == 'opening_hours' and api_en == 'restaurant':
+                                slot = 'business_hours'
                         if slot not in item:
                             print(slot)
                         if item[slot] not in value:
@@ -43,3 +54,41 @@ def call_api(db, api_names, constraints, lang, value_mapping, actions=None):
 
             knowledge[api]["available_options"] = len(domain_knowledge)
     return knowledge
+
+
+def tokenize_string(sentence):
+    output = []
+    i = 0
+    while i < len(sentence):
+        output.append(sentence[i])
+        # skip space between cjk chars
+        if (
+            is_cjk_char(ord(sentence[i]))
+            and i + 1 < len(sentence)
+            and sentence[i + 1] == ' '
+            and i + 2 < len(sentence)
+            and is_cjk_char(ord(sentence[i + 2]))
+        ):
+            i += 1
+        elif is_cjk_char(ord(sentence[i])) and i + 1 < len(sentence) and not is_cjk_char(ord(sentence[i + 1])):
+            output.append(' ')
+        elif not is_cjk_char(ord(sentence[i])) and i + 1 < len(sentence) and is_cjk_char(ord(sentence[i + 1])):
+            output.append(' ')
+        i += 1
+
+    output = "".join(output)
+    output = re.sub(r'\s{2,}', ' ', output)
+
+    return output
+
+
+def process_string(sentence):
+    if isinstance(sentence, bool):
+        return str(sentence)
+    if not isinstance(sentence, str):
+        return sentence
+    sentence = re.sub(r'\s{2,}', ' ', sentence)
+    sentence = ''.join(sentence.split())
+    sentence = tokenize_string(sentence)
+
+    return sentence

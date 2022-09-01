@@ -16,12 +16,12 @@ def api_result_diff(knowledge, gold_knowledge):
     return list(dictdiffer.diff(dict(processed_knowledge), gold_knowledge))
 
 
-api_list = ["酒店", "旅游景点"]
+api_list = ["hotel", "attraction"]
 dialogue_state = {
     "hotel": {'pricerange': {'relation': 'equal_to', 'value': ['偏贵']}, 'area': {'relation': 'equal_to', 'value': ['吴江']}},
     "attraction": {"name": {'relation': 'equal_to', 'value': ['金鸡湖景区']}},
 }
-src_lang = 'en_US'
+src_lang = 'zh_CN'
 knowledge = defaultdict(dict)
 
 dataset = Risawoz()

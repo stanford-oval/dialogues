@@ -8,11 +8,10 @@ from pathlib import Path
 
 import pymongo
 import requests
-from genienlp.data_utils.almond_utils import is_cjk_char
 from tqdm.autonotebook import tqdm
 
-from dialogues import Risawoz
-from dialogues.risawoz.src.knowledgebase.api import call_api
+from dialogues.risawoz.main import Risawoz
+from dialogues.risawoz.src.knowledgebase.api import call_api, process_string
 
 dataset = Risawoz()
 
@@ -53,34 +52,6 @@ def build_db(db_json_path, api_map=None, mongodb_host="", setting='zh_CN'):
     return risawoz_db
 
 
-def tokenize_string(sentence):
-    output = []
-    i = 0
-    while i < len(sentence):
-        output.append(sentence[i])
-        if is_cjk_char(ord(sentence[i])) and i + 1 < len(sentence) and not is_cjk_char(ord(sentence[i + 1])):
-            output.append(' ')
-        elif not is_cjk_char(ord(sentence[i])) and i + 1 < len(sentence) and is_cjk_char(ord(sentence[i + 1])):
-            output.append(' ')
-        i += 1
-
-    output = "".join(output)
-    output = output.replace('  ', ' ')
-
-    return output
-
-
-def process_string(sentence):
-    if isinstance(sentence, bool):
-        return str(sentence).lower()
-    if not isinstance(sentence, str):
-        return sentence
-    sentence = ''.join(sentence.split())
-    sentence = tokenize_string(sentence)
-
-    return sentence
-
-
 def group_slot_values(actions):
     # group slot values in user/system actions with same act-domain-slot prefix
     for i in range(len(actions)):
@@ -114,41 +85,54 @@ def build_user_event(turn):
     for action in processed_original_actions:
         event_action = {}
         for i in range(len(action)):
+            if i == 1 and action[i]:
+                action[i] = dataset.value_mapping.zh2en_DOMAIN_MAP[action[i]]
+            elif i == 2 and action[i]:
+                action[i] = dataset.value_mapping.zh2en_SLOT_MAP[action[i]]
+            elif i == 3 and action[i]:
+                action[i] = process_string(action[i])
             event_action[action_seq[i]] = action[i]
         if event_action["slot"] and event_action["value"]:
-            event_action["relation"] = "等于"
+            event_action["relation"] = "equal_to"
         else:
             event_action["relation"] = ""
         event_action["active_intent"] = event_action["domain"]
         actions.append(event_action)
     event["Actions"] = actions
     # TODO: handle multiple active intents
-    event["active_intent"] = turn["turn_domain"]
+    event["active_intent"] = [dataset.value_mapping.zh2en_DOMAIN_MAP.get(dom, dom) for dom in turn["turn_domain"]]
     event["state"] = defaultdict(dict)
     for ds, v in turn["belief_state"]["inform slot-values"].items():
         d, s = ds.split("-")[0], ds.split("-")[1]
-        event["state"][d][s] = {"relation": "等于", "value": [process_string(v)]}
+        d = dataset.value_mapping.zh2en_DOMAIN_MAP.get(d, d)
+        s = dataset.value_mapping.zh2en_SLOT_MAP.get(s, s)
+        event["state"][d][s] = {"relation": "equal_to", "value": [process_string(v)]}
     event["state"] = dict(event["state"])
     # event["Text"] = turn["user_utterance"]
-    event["Text"] = process_string(turn["segmented_user_utterance"])
+    event["Text"] = process_string(turn["user_utterance"])
     return event
 
 
 def build_wizard_event(turn, mode="normal"):
     assert mode in ["normal", "query"]
     event = {"Agent": "Wizard"}
+    turn_domain_en = [dataset.value_mapping.zh2en_DOMAIN_MAP[d] for d in turn['turn_domain']]
     if mode == "query":
         event["Actions"] = "query"
         event["Constraints"] = defaultdict(dict)
-        event["Constraints_raw"] = defaultdict(dict)
+        # event["Constraints_raw"] = defaultdict(dict)
         for ds, v in turn["belief_state"]["inform slot-values"].items():
             # only return matched result in the domains of current turn
             d, s = ds.split("-")
-            # if d in turn["turn_domain"]:
-            event["Constraints"][d][s] = process_string(v)
-            event["Constraints_raw"][d][s] = ''.join(v.split())
+            d = dataset.value_mapping.zh2en_DOMAIN_MAP[d]
+            s = dataset.value_mapping.zh2en_SLOT_MAP[s]
+            if d in turn_domain_en:
+                event["Constraints"][d][s] = process_string(v)
+            # event["Constraints_raw"][d][s] = ''.join(v.split())
         # TODO: handle multiple APIs
         event["API"] = list(set([d for d in event["Constraints"].keys()]))
+        if not event["API"]:
+            event["API"] = turn_domain_en
     else:
         # actions
         action_seq = ["act", "domain", "slot", "value"]
@@ -157,25 +141,40 @@ def build_wizard_event(turn, mode="normal"):
         for action in processed_original_actions:
             event_action = {}
             for i in range(len(action)):
+                if i == 1 and action[i]:
+                    action[i] = dataset.value_mapping.zh2en_DOMAIN_MAP[action[i]]
+                elif i == 2 and action[i]:
+                    action[i] = dataset.value_mapping.zh2en_SLOT_MAP[action[i]]
+                elif i == 3 and action[i]:
+                    action[i] = process_string(action[i])
                 event_action[action_seq[i]] = action[i]
-            event_action["relation"] = "等于" if event_action["slot"] and event_action["value"] else ""
+            event_action["relation"] = "equal_to" if event_action["slot"] and event_action["value"] else ""
             actions.append(event_action)
         event["Actions"] = actions
 
         # event["Text"] = turn["system_utterance"]
-        event["Text"] = process_string(turn["segmented_system_utterance"])
+        event["Text"] = process_string(turn["system_utterance"])
     return event
 
 
-def build_kb_event(wizard_query_event, db, actions):
+def build_kb_event(wizard_query_event, db, actions, expected_num_results):
     event = {"Agent": "KnowledgeBase"}
-    constraints = wizard_query_event["Constraints_raw"]
+    constraints = wizard_query_event["Constraints"]
     api_names = wizard_query_event["API"]
     knowledge = call_api(db, api_names, constraints, lang='zh_CN', value_mapping=dataset.value_mapping, actions=actions)
     event["TotalItems"] = sum(item.get("available_options", 0) for api, item in knowledge.items())
+    # if event["TotalItems"] == 0 and not expected_num_results == 0:
+    # if event["TotalItems"] < expected_num_results and api_names != ['general']:
     for api, item in knowledge.items():
-        for slot, val in item.items():
-            knowledge[api][slot] = process_string(val)
+        if item.get("available_options", 0) < expected_num_results and api_names != ['general']:
+            print('here')
+            knowledge = call_api(
+                db, api_names, constraints, lang='zh_CN', value_mapping=dataset.value_mapping, actions=actions
+            )
+
+    # for api, item in knowledge.items():
+    #     for slot, val in item.items():
+    #         knowledge[api][slot] = process_string(val)
     event["Item"] = knowledge
     event["Topic"] = api_names
     return event
@@ -192,6 +191,7 @@ def build_dataset(original_data_path, db):
             "WizardCapabilities": [{"Task": domain} for domain in dialogue["domains"]],
         }
         events = []
+        turn_id = 0
         for turn in dialogue["dialogue"]:
             user_turn_event = build_user_event(turn)
             if "db_results" in turn and turn["db_results"]:
@@ -203,83 +203,22 @@ def build_dataset(original_data_path, db):
                     domain, slot, value = act['domain'], act['slot'], act['value']
                     if slot:
                         actions[domain][slot] = value
-
-                kb_event = build_kb_event(wizard_query_event, db, actions)
-
+                expected_num_results = int(turn["db_results"][0][len('数据库检索结果：成功匹配个数为') :])
+                kb_event = build_kb_event(wizard_query_event, db, actions, expected_num_results)
+                user_turn_event['turn_id'] = turn_id
+                wizard_query_event['turn_id'] = turn_id
+                wizard_normal_event['turn_id'] = turn_id
                 # del wizard_query_event['Constraints_raw']
                 events += [user_turn_event, wizard_query_event, kb_event, wizard_normal_event]
             else:
                 wizard_event = build_wizard_event(turn)
+                user_turn_event['turn_id'] = turn_id
+                wizard_event['turn_id'] = turn_id
                 events += [user_turn_event, wizard_event]
+
+            turn_id += 1
         processed_data[dialogue_id] = {"Dialogue_id": dialogue_id, "Scenario": scenario, "Events": events}
     return processed_data
-
-
-# def build_mock_pred_data(test_data_path):
-#     with open(test_data_path, 'r') as f:
-#         test_data = json.load(f)
-#     fake_pred_data = {}
-#     for dialog in test_data:
-#         fake_pred_dialog = {"turns": {}}
-#         final_dialog_state = {}
-#         for turn in dialog["dialogue"]:
-#             fake_pred_dialog["turns"][str(turn["turn_id"] + 1)] = {"response": [turn["system_utterance"]]}
-#             # build dialog state
-#             dialog_state = {}
-#             for ds, v in turn["belief_state"]["inform slot-values"].items():
-#                 v = ''.join(v.split())
-#                 d, s = ds.split("-")
-#                 if d in dialog_state.keys():
-#                     if s in dialog_state[d].keys():
-#                         dialog_state[d][s]["value"].append(v)
-#                     else:
-#                         dialog_state[d][s] = {}
-#                         dialog_state[d][s]["relation"] = "等于"
-#                         dialog_state[d][s]["value"] = [v]
-#                 else:
-#                     dialog_state[d] = {}
-#                     dialog_state[d][s] = {}
-#                     dialog_state[d][s]["relation"] = "等于"
-#                     dialog_state[d][s]["value"] = [v]
-#             fake_pred_dialog["turns"][str(turn["turn_id"] + 1)]["state"] = copy.deepcopy(dialog_state)
-#             # update final dialog state in each turn and build turn API text
-#             turn_api_text = []
-#             for d, sv in dialog_state.items():
-#                 if d in final_dialog_state.keys():
-#                     final_dialog_state[d].update(sv)
-#                 else:
-#                     final_dialog_state[d] = sv
-#                 # build turn API text
-#                 try:
-#                     if len(turn["db_results"]) > 1:
-#                         first_result = eval(turn["db_results"][1].replace("true", "True").replace("false", "False"))
-#                         turn_domain_api_text = f"( {d} ) "
-#                         for s, v in first_result.items():
-#                             turn_domain_api_text += f"{s} \" {v} \" , "
-#                         turn_api_text.append(turn_domain_api_text[:-3])
-#                 except:
-#                     print(turn["db_results"])
-#             fake_pred_dialog["turns"][str(turn["turn_id"] + 1)]["api"] = [' '.join(turn_api_text)]
-#             # build actions
-#             turn_action_domain_list = [action[1] for action in turn["system_actions"]]
-#             turn_action_text = [f"( {d} ) " for d in turn_action_domain_list]
-#             for action in turn["system_actions"]:
-#                 for i in range(len(turn_action_domain_list)):
-#                     if action[1] == turn_action_domain_list[i]:
-#                         if action[0].strip() == "Inform" or action[3]:
-#                             val = ''.join(action[3].split())
-#                             turn_action_text[i] += f"{action[0].strip().lower()} {action[2]} 等于 \" {val} \" , "
-#                         # elif action[3]:
-#                         #     turn_action_text[
-#                         #         i
-#                         #     ] += f"{action[0].strip().lower()} {action[2]} \" {''.join(action[3].split())} \" , "
-#                         else:
-#                             turn_action_text[i] += f"{action[0].strip().lower()} {action[2]} , "
-#             turn_action_text = [text[:-3] for text in turn_action_text]
-#             fake_pred_dialog["turns"][str(turn["turn_id"] + 1)]["actions"] = [' '.join(turn_action_text)]
-#         fake_pred_dialog["API"] = copy.deepcopy(final_dialog_state)
-#         fake_pred_data[dialog["dialogue_id"]] = copy.deepcopy(fake_pred_dialog)
-#     return fake_pred_data
 
 
 if __name__ == "__main__":
@@ -297,7 +236,10 @@ if __name__ == "__main__":
 
     # uncomment to build db
     risawoz_db = build_db(
-        db_json_path=os.path.join(*[args.root, 'database/db_2']), api_map=None, mongodb_host=mongodb_host, setting=args.setting
+        db_json_path=os.path.join(*[args.root, 'database/db_processed']),
+        api_map=None,
+        mongodb_host=mongodb_host,
+        setting=args.setting,
     )
 
     # download original RiSAWOZ dataset
@@ -318,11 +260,5 @@ if __name__ == "__main__":
         print(f"processing {split} data...")
         processed_data = build_dataset(os.path.join(original_data_path, f"{args.setting}_{split}.json"), db=risawoz_db)
         # save converted files in JSON format
-        with open(f"{processed_data_path}/{args.setting}_{split}.json", 'w') as f:
+        with open(f"{processed_data_path}/{args.setting}_{split}_2.json", 'w') as f:
             json.dump(processed_data, f, ensure_ascii=False, indent=4)
-
-    # # generating mock prediction data
-    # print("generating mock prediction data...")
-    # mock_pred_data = build_mock_pred_data(os.path.join(args.root, "./data/original/zh_test.json"))
-    # with open(os.path.join(args.root, "./results/test/risawoz_mock_preds.json"), "w") as f:
-    #     json.dump(mock_pred_data, f, ensure_ascii=False, indent=4)

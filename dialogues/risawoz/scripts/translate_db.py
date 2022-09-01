@@ -1,13 +1,15 @@
 import argparse
 import json
 import os
+from collections import OrderedDict
 
 from dialogues import Risawoz
+from dialogues.risawoz.src.knowledgebase.api import process_string
 
 parser = argparse.ArgumentParser()
 
 parser.add_argument('--input_db_dir', default='dialogues/risawoz/database/db')
-parser.add_argument('--output_db_dir', default='dialogues/risawoz/database/db_2')
+parser.add_argument('--output_db_dir', default='dialogues/risawoz/database/db_processed')
 parser.add_argument('--experiment')
 
 args = parser.parse_args()
@@ -54,7 +56,7 @@ for file in os.listdir(args.input_db_dir):
     translated_db_info = []
 
     for item in db_info:
-        translated_item = {}
+        translated_item = OrderedDict()
         for slot, value in item.items():
             # if slot not in value_mapping.zh2en_SLOT_MAP:
             #     if slot not in seen:
@@ -118,8 +120,11 @@ for file in os.listdir(args.input_db_dir):
             #
             # translated_item[value_mapping.zh2en_SLOT_MAP[slot]] = value
 
-            if isinstance(value, str):
-                translated_item[slot] = ''.join(value.split())
+            slot = value_mapping.zh2en_SLOT_MAP[slot]
+            if isinstance(value, bool):
+                translated_item[slot] = str(value)
+            elif isinstance(value, str):
+                translated_item[slot] = process_string(value)
             else:
                 translated_item[slot] = value
 
