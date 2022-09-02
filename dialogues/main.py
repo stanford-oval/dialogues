@@ -906,6 +906,8 @@ class WOZDataset(Dataset):
                     pred_turn_id += 1
 
                     pred = predictions[dial_id]["turns"][str(pred_turn_id)]["state"]
+                    pred = self.span2state(pred)
+                    pred = {self.domain2api_name(k): v for k, v in pred.items()}
                     gold = turn["state"]
 
                     preds.append(pred)
