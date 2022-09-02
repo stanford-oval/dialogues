@@ -37,6 +37,7 @@ class Dataset(object):
         self.db = None
 
         self.FAST_EVAL = False
+        self.DEBUG = False
 
         # regex to extract belief state span from input
         self.state_re = re.compile('')
@@ -53,9 +54,10 @@ class Dataset(object):
         self.system_token = ''
         self.user_token = ''
 
-        self.out_ser = open('out_ser.tsv', 'w')
-        self.out_dst = open('out_dst.tsv', 'w')
-        self.out_da = open('out_da.tsv', 'w')
+        if self.DEBUG:
+            self.out_ser = open('out_ser.tsv', 'w')
+            self.out_dst = open('out_dst.tsv', 'w')
+            self.out_da = open('out_da.tsv', 'w')
 
     def domain2api_name(self, domain):
         """
@@ -705,7 +707,8 @@ class WOZDataset(Dataset):
                 if pred_dict == ref_dict:
                     da += 1
                 else:
-                    self.out_da.write(str(pred) + '\t' + str(ref) + '\t' + str(list(dictdiffer.diff(pred, ref))) + '\n')
+                    if self.DEBUG:
+                        self.out_da.write(str(pred) + '\t' + str(ref) + '\t' + str(list(dictdiffer.diff(pred, ref))) + '\n')
 
         return da / len(preds) * 100
 
@@ -722,7 +725,8 @@ class WOZDataset(Dataset):
                         missing = True
             if missing:
                 ser += 1.0
-                self.out_ser.write('\t'.join([pred, *values]) + '\n')
+                if self.DEBUG:
+                    self.out_ser.write('\t'.join([pred, *values]) + '\n')
         return ser / len(preds) * 100
 
     def compute_dst_em(self, preds, golds):
@@ -734,9 +738,10 @@ class WOZDataset(Dataset):
             if pred_sets == gold_sets:
                 hit += 1
             else:
-                self.out_dst.write(
-                    str(pred_sets) + '\t' + str(gold_sets) + '\t' + str(list(dictdiffer.diff(pred_sets, gold_sets))) + '\n'
-                )
+                if self.DEBUG:
+                    self.out_dst.write(
+                        str(pred_sets) + '\t' + str(gold_sets) + '\t' + str(list(dictdiffer.diff(pred_sets, gold_sets))) + '\n'
+                    )
 
         return hit / len(preds) * 100
 
