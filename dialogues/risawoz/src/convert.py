@@ -188,7 +188,7 @@ def build_dataset(original_data_path, db):
         dialogue_id = dialogue["dialogue_id"]
         scenario = {
             "UserTask": dialogue.get("goal", ""),
-            "WizardCapabilities": [{"Task": domain} for domain in dialogue["domains"]],
+            "WizardCapabilities": [{"Task": dataset.value_mapping.zh2en_DOMAIN_MAP[domain]} for domain in dialogue["domains"]],
         }
         events = []
         turn_id = 0
@@ -260,5 +260,5 @@ if __name__ == "__main__":
         print(f"processing {split} data...")
         processed_data = build_dataset(os.path.join(original_data_path, f"{args.setting}_{split}.json"), db=risawoz_db)
         # save converted files in JSON format
-        with open(f"{processed_data_path}/{args.setting}_{split}_2.json", 'w') as f:
+        with open(f"{processed_data_path}/{args.setting}_{split}.json", 'w') as f:
             json.dump(processed_data, f, ensure_ascii=False, indent=4)

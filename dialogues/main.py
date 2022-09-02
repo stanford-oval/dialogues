@@ -845,6 +845,9 @@ class WOZDataset(Dataset):
         v = v.replace("，", ",")
         v = v.replace('..', '.')
 
+        v = v.replace('；', ';')
+        v = v.replace('。', '')
+
         # am, pm
         v = re.sub('(\d+)(?:[\.:](\d+))?\s?(?:pm )?(afternoon|in the afternoon|pm in the afternoon)', r'\1:\2 pm', v)
         v = re.sub('(\d+)(?:[\.:](\d+))?\s?(morning|in the morning|am in the morning)', r'\1:\2 am', v)
@@ -857,6 +860,8 @@ class WOZDataset(Dataset):
         # remove extra dot in the end
         v = re.sub('(\d+)\.$', r'\1', v)
         v = re.sub('(\w+)\.$', r'\1', v)
+
+        v = re.sub('(\w+)[。！？]$', r'\1', v)
 
         # 3rd of january --> januray 3
         v = re.sub('(\d+)(?:th|rd|st|nd) of (\w+)', r'\2 \1', v)
@@ -926,6 +931,7 @@ class WOZDataset(Dataset):
         reference_response = []
         predicted_response = []
         predicted_actions = []
+        act_sets = set()
         for dial_id in reference_data:
             if dial_id not in reference_task_success:
                 reference_task_success[dial_id]["tasks"] = {
@@ -975,20 +981,22 @@ class WOZDataset(Dataset):
                             act_values = set([self.clean_value(val) for val in act_values])
                         reference_act_values.append(act_values)
 
-                        for i in range(len(intent)):
-                            # for RiSAWOZ: filter turn actions with current intent
-                            turn_actions = (
-                                [action for action in turn["Actions"] if action["domain"] == intent[i]]
-                                if len(intent) > 1
-                                else turn["Actions"]
-                            )
-                            reference_actions.append(
-                                self.clean_value(
-                                    self.action2span(
-                                        turn_actions, self.value_mapping.en_API_MAP.get(intent[i], intent[i]), 'en'
-                                    )
-                                )
-                            )
+                        # for i in range(len(intent)):
+                        #     # for RiSAWOZ: filter turn actions with current intent
+                        #     turn_actions = (
+                        #         [action for action in turn["Actions"] if action["domain"] == intent[i]]
+                        #         if len(intent) > 1
+                        #         else turn["Actions"]
+                        #     )
+                        #     reference_actions.append(
+                        #         self.clean_value(
+                        #             self.action2span(
+                        #                 turn_actions, self.value_mapping.en_API_MAP.get(intent[i], intent[i]), 'en'
+                        #             )
+                        #         )
+                        #     )
+
+                        reference_actions.append(self.clean_value(self.action2span(turn["Actions"], intent, setting='en')))
 
                         pred_rg = predictions[dial_id]["turns"][str(pred_turn_id)]["response"]
                         if isinstance(pred_rg, list):
@@ -1008,9 +1016,13 @@ class WOZDataset(Dataset):
 
                         # For each task, the last value for each slot are considered as final requested information from user
                         for action in turn["Actions"]:
+                            if action["act"].lower() not in act_sets:
+                                print(action["act"].lower())
+                                act_sets.add(action["act"].lower())
                             trans_slot = action["slot"]
+                            # should we include "recommend" ?
                             if (
-                                (action["act"] in ["inform", "offer"])
+                                (action["act"].lower() in ["inform", "offer"])
                                 and (len(action["value"]) > 0)
                                 and action["slot"] != "available_options"
                                 and action["slot"] != "可用选项"
@@ -1024,12 +1036,12 @@ class WOZDataset(Dataset):
                                 assert len(intent) == 1
                                 confirm_info[intent[0]][trans_slot] = action["value"]
             for intent, slot_values in user_requested_info.items():
-                if intent in ["通用"]:  # for RiSAWOZ
+                if intent in ["general"]:  # for RiSAWOZ
                     continue
                 for values in slot_values.values():
                     reference_task_success[dial_id]["tasks"][intent]["inform+offer"] += values
             for intent, slot_values in confirm_info.items():
-                if intent in ["通用"]:  # for RiSAWOZ
+                if intent in ["general"]:  # for RiSAWOZ
                     continue
                 for values in slot_values.values():
                     reference_task_success[dial_id]["tasks"][intent]["confirmation"] += values
