@@ -236,7 +236,7 @@ if __name__ == "__main__":
 
     # uncomment to build db
     risawoz_db = build_db(
-        db_json_path=os.path.join(*[args.root, 'database/db_processed']),
+        db_json_path=os.path.join(*[args.root, 'database/db_zh']),
         api_map=None,
         mongodb_host=mongodb_host,
         setting=args.setting,

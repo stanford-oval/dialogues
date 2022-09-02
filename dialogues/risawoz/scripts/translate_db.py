@@ -9,7 +9,7 @@ from dialogues.risawoz.src.knowledgebase.api import process_string
 parser = argparse.ArgumentParser()
 
 parser.add_argument('--input_db_dir', default='dialogues/risawoz/database/db')
-parser.add_argument('--output_db_dir', default='dialogues/risawoz/database/db_processed')
+parser.add_argument('--output_db_dir', default='dialogues/risawoz/database/db_zh_new')
 parser.add_argument('--experiment')
 
 args = parser.parse_args()
