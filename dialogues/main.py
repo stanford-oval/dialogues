@@ -37,7 +37,7 @@ class Dataset(object):
         self.db = None
 
         self.FAST_EVAL = False
-        self.DEBUG = False
+        self.DEBUG = True
 
         # regex to extract belief state span from input
         self.state_re = re.compile('')
@@ -448,7 +448,7 @@ class WOZDataset(Dataset):
         # converts text span to state dict
 
         action = defaultdict(list)
-        re_intent_spans = re.compile('\( (.+?) \)\s?(.+?)(?=$|\( )')
+        re_intent_spans = re.compile('\( (.+?) \)\s?(.+?)(?=$| \( )')
         re_asrs = re.compile('((?:\S+? ){3}" .+? "|\S*? \S+?(?: ,|$)|\S+?(?: ,|$))')
 
         matches = re_intent_spans.findall(api_span)
