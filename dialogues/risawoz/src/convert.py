@@ -252,7 +252,7 @@ if __name__ == "__main__":
                 data_url = "https://huggingface.co/datasets/GEM/RiSAWOZ/resolve/main/dev.json"
             else:
                 data_url = f"https://huggingface.co/datasets/GEM/RiSAWOZ/resolve/main/{split}.json"
-            with open(f"{original_data_path}/{split}.json", 'wb') as f:
+            with open(f"{original_data_path}/{args.setting}_{split}.json", 'wb') as f:
                 f.write(requests.get(data_url).content)
 
     processed_data_path = os.path.join(*[args.root, args.save_dir])

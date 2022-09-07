@@ -1,3 +1,4 @@
+import copy
 import re
 
 from genienlp.data_utils.almond_utils import is_cjk_char
@@ -13,12 +14,12 @@ def call_api(db, api_names, constraints, lang, value_mapping, actions=None):
         if api not in constraints:
             domain_constraints = {}
         else:
-            domain_constraints = constraints[api]
-        db_name = f'{api_en}_{lang}'
-        cursor = db[db_name].find(domain_constraints)
+            domain_constraints = copy.deepcopy(constraints[api])
         if api == 'car':
             if 'number_of_seats' in domain_constraints:
                 domain_constraints['number_of_seats'] = {"$gte": int(domain_constraints['number_of_seats'])}
+        db_name = f'{api_en}_{lang}'
+        cursor = db[db_name].find(domain_constraints)
         domain_knowledge = []
         for matched in cursor:
             matched["_id"] = str(matched["_id"])
