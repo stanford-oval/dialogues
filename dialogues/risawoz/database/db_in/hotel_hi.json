@@ -1,0 +1,952 @@
+
+    {
+        "name":"Hotel Heritage",
+        "area":"Airport Zone Kolkata",
+        "star":3,
+        "pricerange":"fair",
+        "hotel_type":"resort",
+        "room_type":"Executive AC",
+        "parking":"charge",
+        "room_charge":"Rs. 5044",
+        "address":"Near Airport, Opp HDFC Bank, VIP Road, Raghunathpur, Deshbandhunagar",
+        "phone_number":"+91 2925491042",
+        "score":2.5
+    }
+
+    {
+        "name":"Flora Airport Hotel",
+        "area":"Cochin International Airport Kochi",
+        "star":4,
+        "pricerange":"a bit more expensive",
+        "hotel_type":"resort",
+        "room_type":"Flora Suite",
+        "parking":"charge",
+        "room_charge":"Rs. 6948",
+        "address":"Opp. Cochin International Airport, Nedumbassery, Nayathodu",
+        "phone_number":"+91 990 6168456",
+        "score":4.0
+    }
+
+    {
+        "name":"Kochi Marriott Hotel",
+        "area":"Kalamassery Kochi",
+        "star":5,
+        "pricerange":"fair",
+        "hotel_type":"resort",
+        "room_type":"Deluxe Room",
+        "parking":"free",
+        "room_charge":"Rs. 6164",
+        "address":"Lulu International Shopping Mall, 34\/1111 N. H. 47, Edappally",
+        "phone_number":"053-53476417",
+        "score":4.5
+    }
+
+    {
+        "name":"Quality Airport Hotel",
+        "area":"Cochin International Airport Kochi",
+        "star":3,
+        "pricerange":"a bit more expensive",
+        "hotel_type":"resort",
+        "room_type":"Deluxe Room",
+        "parking":"charge",
+        "room_charge":"Rs. 2667",
+        "address":"Near Cochin International Airport, Nayathode.P.O. Angamaly",
+        "phone_number":"05923882552",
+        "score":4.0
+    }
+
+    {
+        "name":"The Peerless Inn-Sarovar Group Hotel",
+        "area":"Esplanade-New market Kolkata",
+        "star":4,
+        "pricerange":"a bit more expensive",
+        "hotel_type":"business",
+        "room_type":"Suite Room",
+        "parking":"charge",
+        "room_charge":"Rs. 6314",
+        "address":"12, Jawaharlal Nehru Road",
+        "phone_number":"+91 2731148791",
+        "score":3.5
+    }
+
+    {
+        "name":"Saj Earth Resort - Airport Hotel",
+        "area":"Cochin International Airport Kochi",
+        "star":5,
+        "pricerange":"a bit more expensive",
+        "hotel_type":"business",
+        "room_type":"Standard Room",
+        "parking":"free",
+        "room_charge":"Rs. 5583",
+        "address":"Saj Junction, Nedumbassery, Ernakulam District",
+        "phone_number":"+91 4708234463",
+        "score":4.0
+    }
+
+    {
+        "name":"Hotel Pushpak International",
+        "area":"Park Street and Vicinity Kolkata",
+        "star":2,
+        "pricerange":"a bit more expensive",
+        "hotel_type":"business",
+        "room_type":"Standard Rooms",
+        "parking":"free",
+        "room_charge":"Rs. 2114",
+        "address":"10, KYD Street",
+        "phone_number":"+91 7272285922",
+        "score":2.5
+    }
+
+    {
+        "name":"Hotel Park Inn",
+        "area":"Park Street and Vicinity Kolkata",
+        "star":2,
+        "pricerange":"fair",
+        "hotel_type":"business",
+        "room_type":"Standard Room",
+        "parking":"charge",
+        "room_charge":"Rs. 2814",
+        "address":"10\/1, Talbagan Lane",
+        "phone_number":"+91 289 9207220",
+        "score":3.0
+    }
+
+    {
+        "name":"Lotus 8 - Airport Hotel",
+        "area":"Cochin International Airport Kochi",
+        "star":4,
+        "pricerange":"a bit more expensive",
+        "hotel_type":"business",
+        "room_type":"Suite",
+        "parking":"charge",
+        "room_charge":"Rs. 4731",
+        "address":"Opp. Cochin International Airport, Nedumbassery",
+        "phone_number":"+91 8458487424",
+        "score":3.5
+    }
+
+    {
+        "name":"Hotel Indismart",
+        "area":"Salt Lake Sector 5 Kolkata",
+        "star":3,
+        "pricerange":"fair",
+        "hotel_type":"resort",
+        "room_type":"Executive",
+        "parking":"charge",
+        "room_charge":"Rs. 5947",
+        "address":"X-1,8\/3 Block EP, Electronics Complex, Salt Lake, Sector-V",
+        "phone_number":"08157 958909",
+        "score":3.5
+    }
+
+    {
+        "name":"Pride Plaza Hotel Kolkata",
+        "area":"New Town - Rajarhat Kolkata",
+        "star":5,
+        "pricerange":"a bit more expensive",
+        "hotel_type":"resort",
+        "room_type":"Deluxe Room",
+        "parking":"free",
+        "room_charge":"Rs. 2702",
+        "address":"BG 12,Action Area-1B, New Town Kolkata",
+        "phone_number":"+91 2607182665",
+        "score":3.5
+    }
+
+    {
+        "name":"By The Lake - A Sterling Resort",
+        "area":"Near Kodai Lake Kodaikanal",
+        "star":4,
+        "pricerange":"a bit more expensive",
+        "hotel_type":"business",
+        "room_type":"Premiere Room",
+        "parking":"charge",
+        "room_charge":"Rs. 4844",
+        "address":"P.B. No 44, Gymkhana Road",
+        "phone_number":"+91 4725514758",
+        "score":4.0
+    }
+
+    {
+        "name":"By The Valley - A Sterling Resort",
+        "area":"Attuvampatty Kodaikanal",
+        "star":4,
+        "pricerange":"fair",
+        "hotel_type":"business",
+        "room_type":"Premiere Room",
+        "parking":"free",
+        "room_charge":"Rs. 2852",
+        "address":"P.B #75, Pallangi Road, Attuvampatti,",
+        "phone_number":"09514979793",
+        "score":4.0
+    }
+
+    {
+        "name":"Hotel Spring Valley",
+        "area":"Lawsghat Road Kodaikanal",
+        "star":2,
+        "pricerange":"a bit more expensive",
+        "hotel_type":"business",
+        "room_type":"Deluxe Room",
+        "parking":"charge",
+        "room_charge":"Rs. 9189",
+        "address":"25, Laws Ghat Road, Near Zion Matriculation School",
+        "phone_number":"088-89420768",
+        "score":3.5
+    }
+
+    {
+        "name":"Hotel Elite Palazzo - Airport Hotel",
+        "area":"Cochin International Airport Kochi",
+        "star":3,
+        "pricerange":"fair",
+        "hotel_type":"business",
+        "room_type":"Executive Room",
+        "parking":"free",
+        "room_charge":"Rs. 6827",
+        "address":"Bank Junction, NH-47 Bye Pass, Angamaly",
+        "phone_number":"+91 050 6935218",
+        "score":4.0
+    }
+
+    {
+        "name":"Novotel Kolkata Hotel and Residences",
+        "area":"New Town - Rajarhat Kolkata",
+        "star":5,
+        "pricerange":"fair",
+        "hotel_type":"resort",
+        "room_type":"Deluxe Suite King Bed",
+        "parking":"free",
+        "room_charge":"Rs. 6087",
+        "address":"CF 11 Action Area 1C,New Town Rajarhat",
+        "phone_number":"06547 788971",
+        "score":4.5
+    }
+
+    {
+        "name":"Hotel Chandralok",
+        "area":"Lonavala Bus Stand Lonavala",
+        "star":3,
+        "pricerange":"fair",
+        "hotel_type":"resort",
+        "room_type":"Non A\/C Executive Room",
+        "parking":"charge",
+        "room_charge":"Rs. 9538",
+        "address":"Near Post-Office & Bus Stand, Off Mumbai-Pune Highway",
+        "phone_number":"+91 2956196963",
+        "score":4.0
+    }
+
+    {
+        "name":"Hotel Sartaj",
+        "area":"Clock Tower-Near Railway Station Ludhiana",
+        "star":2,
+        "pricerange":"a bit more expensive",
+        "hotel_type":"resort",
+        "room_type":"Deluxe Room",
+        "parking":"free",
+        "room_charge":"Rs. 5424",
+        "address":"Bhadaur House Market Near Clock Tower",
+        "phone_number":"+91 7640552344",
+        "score":4.0
+    }
+
+    {
+        "name":"Hotel Hill Top (Forrest Palace)",
+        "area":"Jaiharikhal Lansdowne",
+        "star":3,
+        "pricerange":"fair",
+        "hotel_type":"business",
+        "room_type":"Family Room",
+        "parking":"charge",
+        "room_charge":"Rs. 8258",
+        "address":"Near Govt. Hospital ,Jaiharikhal , Pauri Garhwal",
+        "phone_number":"02930 738644",
+        "score":4.0
+    }
+
+    {
+        "name":"Hotel Nalanda Ladakh",
+        "area":"Yurthung Road Leh",
+        "star":3,
+        "pricerange":"a bit more expensive",
+        "hotel_type":"resort",
+        "room_type":"Deluxe Room",
+        "parking":"charge",
+        "room_charge":"Rs. 8096",
+        "address":"Yourtung Road upper Karzoo near circuit house Leh - Ladakh",
+        "phone_number":"+91 221 2579836",
+        "score":4.5
+    }
+
+    {
+        "name":"Hotel Metro",
+        "area":"Near Bus Terminus Kumbakonam",
+        "star":3,
+        "pricerange":"fair",
+        "hotel_type":"resort",
+        "room_type":"Executive Room",
+        "parking":"charge",
+        "room_charge":"Rs. 3873",
+        "address":"19\/11, Saragapani Santhi Street",
+        "phone_number":"07018 661724",
+        "score":4.0
+    }
+
+    {
+        "name":"Hotel Samrat",
+        "area":"Clock Tower-Near Railway Station Ludhiana",
+        "star":2,
+        "pricerange":"fair",
+        "hotel_type":"business",
+        "room_type":"Deluxe Room",
+        "parking":"free",
+        "room_charge":"Rs. 4508",
+        "address":"Kailash Cinema Road Civil Lines",
+        "phone_number":"00254 535884",
+        "score":4.0
+    }
+
+    {
+        "name":"Avion Holiday Resort",
+        "area":"Lonavala Market Lonavala",
+        "star":4,
+        "pricerange":"a bit more expensive",
+        "hotel_type":"resort",
+        "room_type":"Deluxe Room",
+        "parking":"charge",
+        "room_charge":"Rs. 9291",
+        "address":"Fly Over Junction, Bombay Pune Highway",
+        "phone_number":"00794 227722",
+        "score":3.5
+    }
+
+    {
+        "name":"Radisson Blu Hotel MBD",
+        "area":"Near Ferozpur Road Ludhiana",
+        "star":5,
+        "pricerange":"a bit more expensive",
+        "hotel_type":"business",
+        "room_type":"Deluxe Room",
+        "parking":"charge",
+        "room_charge":"Rs. 9527",
+        "address":"Adjoining to Neopolis Mall Ferozepur Road",
+        "phone_number":"+91 1126483215",
+        "score":4.5
+    }
+
+    {
+        "name":"Orchard Resort",
+        "area":"Tungarli Lonavala",
+        "star":4,
+        "pricerange":"fair",
+        "hotel_type":"business",
+        "room_type":"Deluxe Room",
+        "parking":"free",
+        "room_charge":"Rs. 9062",
+        "address":"Sr. No.-30,Sector-E, Gold Valley, New Tungarli",
+        "phone_number":"006-04020107",
+        "score":3.5
+    }
+
+    {
+        "name":"Hotel Dayal Paradise",
+        "area":"Gomti Nagar Lucknow",
+        "star":4,
+        "pricerange":"a bit more expensive",
+        "hotel_type":"business",
+        "room_type":"Deluxe Room",
+        "parking":"free",
+        "room_charge":"Rs. 9125",
+        "address":"Vipul Khand - V, Gomti Nagar Lucknow -",
+        "phone_number":"+91 677 9240272",
+        "score":3.5
+    }
+
+    {
+        "name":"Hotel Vinayaga",
+        "area":"Near Bus Terminus Kumbakonam",
+        "star":3,
+        "pricerange":"a bit more expensive",
+        "hotel_type":"resort",
+        "room_type":"Executive Room",
+        "parking":"free",
+        "room_charge":"Rs. 6329",
+        "address":"#132 C, Kamaraj Road,",
+        "phone_number":"040-35857527",
+        "score":3.5
+    }
+
+    {
+        "name":"Searock Beach Resort",
+        "area":"Light House Beach Kovalam",
+        "star":3,
+        "pricerange":"a bit more expensive",
+        "hotel_type":"business",
+        "room_type":"Deluxe Sea Facing Ac Room",
+        "parking":"charge",
+        "room_charge":"Rs. 5303",
+        "address":"Hawa Beach,Kovalam Thiruvananthapuram",
+        "phone_number":"06518636935",
+        "score":3.5
+    }
+
+    {
+        "name":"Poovar Island Resort",
+        "area":"Poovar Kovalam",
+        "star":4,
+        "pricerange":"a bit more expensive",
+        "hotel_type":"business",
+        "room_type":"Floating Cottages",
+        "parking":"free",
+        "room_charge":"Rs. 5880",
+        "address":"K.P VII\/911, Pozhiyoor, Trivandrum",
+        "phone_number":"+91 713 0925921",
+        "score":4.0
+    }
+
+    {
+        "name":"Hotel Sunshine",
+        "area":"Esplanade-New market Kolkata",
+        "star":1,
+        "pricerange":"a bit more expensive",
+        "hotel_type":"resort",
+        "room_type":"Standard Room",
+        "parking":"free",
+        "room_charge":"Rs. 4680",
+        "address":"167\/1 Lenin Sarani Road",
+        "phone_number":"+91 6610356458",
+        "score":1.5
+    }
+
+    {
+        "name":"Hotel Raya's Grand",
+        "area":"Near Bus Terminus Kumbakonam",
+        "star":3,
+        "pricerange":"a bit more expensive",
+        "hotel_type":"business",
+        "room_type":"Premium Room",
+        "parking":"charge",
+        "room_charge":"Rs. 5727",
+        "address":"23-25, Mahamaham Tank West",
+        "phone_number":"020-44713960",
+        "score":4.5
+    }
+
+    {
+        "name":"Paradise Resorts",
+        "area":"Vembanad Lake Kumarakom",
+        "star":4,
+        "pricerange":"fair",
+        "hotel_type":"business",
+        "room_type":"Luxury Cottage",
+        "parking":"charge",
+        "room_charge":"Rs. 5943",
+        "address":"Near Nazrath Church South PO Kottayam",
+        "phone_number":"060-55876369",
+        "score":4.5
+    }
+
+    {
+        "name":"James Hotels Limited (Formerly Park Plaza Chandigarh)",
+        "area":"City Centre Main Market Chandigarh",
+        "star":5,
+        "pricerange":"a bit more expensive",
+        "hotel_type":"business",
+        "room_type":"Premium Room",
+        "parking":"free",
+        "room_charge":"Rs. 6678",
+        "address":"Block No.10, Sector 17, Next to RBI",
+        "phone_number":"00091 770826",
+        "score":4.0
+    }
+
+    {
+        "name":"Hotel Chandra Park",
+        "area":"Egmore Chennai",
+        "star":3,
+        "pricerange":"fair",
+        "hotel_type":"business",
+        "room_type":"Executive Deluxe Room",
+        "parking":"charge",
+        "room_charge":"Rs. 9891",
+        "address":"9 Gandhi Irwin Road, Egmore",
+        "phone_number":"+91 031 5809136",
+        "score":3.0
+    }
+
+    {
+        "name":"Hotel Grand Palace",
+        "area":"Airport Zone Chennai",
+        "star":3,
+        "pricerange":"fair",
+        "hotel_type":"resort",
+        "room_type":"Executive Room",
+        "parking":"free",
+        "room_charge":"Rs. 5393",
+        "address":"257,G.S.T. Road, Near MIT gate, Chrompet",
+        "phone_number":"012-01113386",
+        "score":2.5
+    }
+
+    {
+        "name":"Pineridge Hotel",
+        "area":"The Mall Darjeeling",
+        "star":2,
+        "pricerange":"fair",
+        "hotel_type":"business",
+        "room_type":"Standard room",
+        "parking":"charge",
+        "room_charge":"Rs. 7199",
+        "address":"19 Nehru Road, The Mall, Chowrasta",
+        "phone_number":"+91 088 3883510",
+        "score":3.0
+    }
+
+    {
+        "name":"Coorg County Resorts",
+        "area":"Suntikoppa Coorg",
+        "star":3,
+        "pricerange":"a bit more expensive",
+        "hotel_type":"resort",
+        "room_type":"Standard Villa AC",
+        "parking":"charge",
+        "room_charge":"Rs. 9933",
+        "address":"7th Hoskote, Suntikoppa, Kodagu Dist,",
+        "phone_number":"03302912332",
+        "score":3.0
+    }
+
+    {
+        "name":"Corbett Woods Resort",
+        "area":"Dhela Village Corbett",
+        "star":4,
+        "pricerange":"fair",
+        "hotel_type":"business",
+        "room_type":"Deluxe Swiss Cottage Tent",
+        "parking":"free",
+        "room_charge":"Rs. 5282",
+        "address":"Village & PO Dhela, Ramnagar-Jhirna Road, Dstt Ramnagar, Uttarakhand, India.",
+        "phone_number":"+91 638 2224689",
+        "score":4.5
+    }
+
+    {
+        "name":"Central Nirvana Resort Darjeeling",
+        "area":"The Mall Darjeeling",
+        "star":3,
+        "pricerange":"a bit more expensive",
+        "hotel_type":"resort",
+        "room_type":"Club Room Royal",
+        "parking":"charge",
+        "room_charge":"Rs. 8395",
+        "address":"C R Das Road (Below Chowrasta, The Mall) Darjeeling",
+        "phone_number":"+91 413 0030875",
+        "score":4.0
+    }
+
+    {
+        "name":"Aamod Resort & Spa by Riverside",
+        "area":"Dhikuli Corbett",
+        "star":4,
+        "pricerange":"a bit more expensive",
+        "hotel_type":"resort",
+        "room_type":"Cottages",
+        "parking":"free",
+        "room_charge":"Rs. 4135",
+        "address":"Village & Post - Dhikuli, Ramnagar",
+        "phone_number":"076-17108204",
+        "score":4.0
+    }
+
+    {
+        "name":"Corbett View Resort",
+        "area":"Dhela Village Corbett",
+        "star":3,
+        "pricerange":"fair",
+        "hotel_type":"business",
+        "room_type":"AC Huts",
+        "parking":"free",
+        "room_charge":"Rs. 2593",
+        "address":"Village Dhella",
+        "phone_number":"+91 8001437618",
+        "score":4.0
+    }
+
+    {
+        "name":"Hotel Sakoon",
+        "area":"Rajpur Road Dehradun",
+        "star":3,
+        "pricerange":"a bit more expensive",
+        "hotel_type":"resort",
+        "room_type":"Deluxe Room",
+        "parking":"charge",
+        "room_charge":"Rs. 4122",
+        "address":"4-Muncipal Road Dalanwala,",
+        "phone_number":"+91 0364316233",
+        "score":4.5
+    }
+
+    {
+        "name":"Central Heritage Resort & Spa Darjeeling",
+        "area":"The Mall Darjeeling",
+        "star":4,
+        "pricerange":"fair",
+        "hotel_type":"resort",
+        "room_type":"Suite",
+        "parking":"free",
+        "room_charge":"Rs. 4003",
+        "address":"Robertson Road",
+        "phone_number":"+91 185 5680074",
+        "score":3.5
+    }
+
+    {
+        "name":"Hotel Tara Palace",
+        "area":"Central Gangtok Gangtok",
+        "star":4,
+        "pricerange":"fair",
+        "hotel_type":"resort",
+        "room_type":"Deluxe",
+        "parking":"charge",
+        "room_charge":"Rs. 7411",
+        "address":"Nam Nang Road, Nearest Landmark: M G Marg,",
+        "phone_number":"016-81120229",
+        "score":4.0
+    }
+
+    {
+        "name":"The Nettle and Fern Hotel",
+        "area":"Developement Area Gangtok",
+        "star":3,
+        "pricerange":"a bit more expensive",
+        "hotel_type":"resort",
+        "room_type":"Valley View Super Deluxe Suite",
+        "parking":"free",
+        "room_charge":"Rs. 2509",
+        "address":"Developement Area Jiwan Theeng Marg Development Area, Gangtok Nearest Landmark: Congress Bhawan",
+        "phone_number":"+91 1504490451",
+        "score":4.5
+    }
+
+    {
+        "name":"Rahi Coral Beach Resort",
+        "area":"Calangute Beach-North Goa Goa",
+        "star":2,
+        "pricerange":"fair",
+        "hotel_type":"resort",
+        "room_type":"Superior Room",
+        "parking":"charge",
+        "room_charge":"Rs. 3050",
+        "address":"Umtavaddo, Calangute",
+        "phone_number":"+91 399 7379718",
+        "score":3.0
+    }
+
+    {
+        "name":"Longuinhos Beach Resort",
+        "area":"Colva Beach-South Goa Goa",
+        "star":3,
+        "pricerange":"a bit more expensive",
+        "hotel_type":"resort",
+        "room_type":"Deluxe Room (Sea View) Room",
+        "parking":"free",
+        "room_charge":"Rs. 6352",
+        "address":"Colva Beach, Salcete, Colva",
+        "phone_number":"+91 624 6329654",
+        "score":3.5
+    }
+
+    {
+        "name":"Resorte Marinha Dourada",
+        "area":"Baga Beach-North Goa Goa",
+        "star":3,
+        "pricerange":"a bit more expensive",
+        "hotel_type":"business",
+        "room_type":"Standard",
+        "parking":"free",
+        "room_charge":"Rs. 9609",
+        "address":"200 Tambudki Road, Arpora, Baga",
+        "phone_number":"094-62099556",
+        "score":4.0
+    }
+
+    {
+        "name":"The Rivasa Resort",
+        "area":"Calangute Beach-North Goa Goa",
+        "star":2,
+        "pricerange":"fair",
+        "hotel_type":"resort",
+        "room_type":"Standard A\/c Room",
+        "parking":"free",
+        "room_charge":"Rs. 4776",
+        "address":"Dr. Afonso Road, Umtawado, Calangute, Bardez",
+        "phone_number":"+91 4205043523",
+        "score":3.5
+    }
+
+    {
+        "name":"Santana Beach Resort",
+        "area":"Candolim Beach-North Goa Goa",
+        "star":3,
+        "pricerange":"fair",
+        "hotel_type":"resort",
+        "room_type":"Standard Room",
+        "parking":"free",
+        "room_charge":"Rs. 8332",
+        "address":"Quinto Costa Frias Complex",
+        "phone_number":"05153 730657",
+        "score":4.5
+    }
+
+    {
+        "name":"Hotel Sahima",
+        "area":"Naddi Village Dharamshala",
+        "star":1,
+        "pricerange":"a bit more expensive",
+        "hotel_type":"resort",
+        "room_type":"Family Suit Room",
+        "parking":"free",
+        "room_charge":"Rs. 8371",
+        "address":"Naddi Road Dal Lake",
+        "phone_number":"+91 594 7556386",
+        "score":3.5
+    }
+
+    {
+        "name":"Delight Hotels The Fortuna",
+        "area":"Paljor Stadium Road Gangtok",
+        "star":3,
+        "pricerange":"a bit more expensive",
+        "hotel_type":"business",
+        "room_type":"Deluxe Room",
+        "parking":"charge",
+        "room_charge":"Rs. 4662",
+        "address":"Third Mile , By-Pass , Lower Bojogori (Near Tashi View Point)",
+        "phone_number":"+91 880 7504039",
+        "score":4.0
+    }
+
+    {
+        "name":"Hotel Shivani International",
+        "area":"Mcleodganj Dharamshala",
+        "star":3,
+        "pricerange":"a bit more expensive",
+        "hotel_type":"resort",
+        "room_type":"Deluxe Room",
+        "parking":"free",
+        "room_charge":"Rs. 9478",
+        "address":"Infront of Shivani Clinic, Bhagsu Nag , Mcleodganj, Upper Dharamshala Distt. Kangra",
+        "phone_number":"+91 5102070156",
+        "score":4.5
+    }
+
+    {
+        "name":"Hotel Viva Baga",
+        "area":"Baga Beach-North Goa Goa",
+        "star":1,
+        "pricerange":"a bit more expensive",
+        "hotel_type":"resort",
+        "room_type":"BUDGET ROOM AC 2 BED",
+        "parking":"free",
+        "room_charge":"Rs. 2284",
+        "address":"Calangute Baga Main Road, Opp. Cafe Coffee Day lane, Khobra Vaddo, Taluka Bardez, Calangute",
+        "phone_number":"+91 563 2443846",
+        "score":4.5
+    }
+
+    {
+        "name":"Estrela do Mar Beach Resort",
+        "area":"Calangute Beach-North Goa Goa",
+        "star":4,
+        "pricerange":"fair",
+        "hotel_type":"resort",
+        "room_type":"Standard Room",
+        "parking":"free",
+        "room_charge":"Rs. 2037",
+        "address":"Khobra Vaddo, Calangute, Bardez",
+        "phone_number":"+91 7348178324",
+        "score":3.5
+    }
+
+    {
+        "name":"Hotel Sonam Delek",
+        "area":"Central Gangtok Gangtok",
+        "star":2,
+        "pricerange":"fair",
+        "hotel_type":"resort",
+        "room_type":"Standard Non View",
+        "parking":"charge",
+        "room_charge":"Rs. 8361",
+        "address":"Sonam Gyatso Marg (Tibet Road)",
+        "phone_number":"01136 108063",
+        "score":4.5
+    }
+
+    {
+        "name":"Delight Hotels Susanta Awaas",
+        "area":"Central Gangtok Gangtok",
+        "star":2,
+        "pricerange":"a bit more expensive",
+        "hotel_type":"business",
+        "room_type":"Standard Room",
+        "parking":"free",
+        "room_charge":"Rs. 7494",
+        "address":"Namnang Road, Close to Star Cinema Hall, MG Marg",
+        "phone_number":"019-23740874",
+        "score":4.0
+    }
+
+    {
+        "name":"Red Fox Hotel Jaipur",
+        "area":"Airport Zone Jaipur",
+        "star":3,
+        "pricerange":"a bit more expensive",
+        "hotel_type":"business",
+        "room_type":"Executive Suite",
+        "parking":"free",
+        "room_charge":"Rs. 4853",
+        "address":"Jawahar Lal Nehru Marg",
+        "phone_number":"+91 1692256795",
+        "score":4.5
+    }
+
+    {
+        "name":"Hotel Samdariya Inn",
+        "area":"Russel Chowk Jabalpur",
+        "star":2,
+        "pricerange":"fair",
+        "hotel_type":"business",
+        "room_type":"Maharaja Suite Room",
+        "parking":"free",
+        "room_charge":"Rs. 5832",
+        "address":"Near Russel Square",
+        "phone_number":"+91 9805424908",
+        "score":3.0
+    }
+
+    {
+        "name":"Lemon Tree Hotel Indore",
+        "area":"R.N.T. Marg Indore",
+        "star":4,
+        "pricerange":"a bit more expensive",
+        "hotel_type":"business",
+        "room_type":"Executive Suite",
+        "parking":"charge",
+        "room_charge":"Rs. 5790",
+        "address":"3, R.N.T. Road",
+        "phone_number":"05580 183199",
+        "score":4.0
+    }
+
+    {
+        "name":"Jaipur Marriott Hotel",
+        "area":"Airport Zone Jaipur",
+        "star":5,
+        "pricerange":"a bit more expensive",
+        "hotel_type":"resort",
+        "room_type":"Deluxe Suite",
+        "parking":"free",
+        "room_charge":"Rs. 5321",
+        "address":"Ashram Marg Near Jawahar Circle, Tonk Road",
+        "phone_number":"040-72306151",
+        "score":4.5
+    }
+
+    {
+        "name":"Hotel Mansingh Jaipur",
+        "area":"MI Road Jaipur",
+        "star":5,
+        "pricerange":"fair",
+        "hotel_type":"resort",
+        "room_type":"Club Room",
+        "parking":"free",
+        "room_charge":"Rs. 6485",
+        "address":"Sansar Chandra Road",
+        "phone_number":"+91 0672070543",
+        "score":3.5
+    }
+
+    {
+        "name":"Hotel Chetram",
+        "area":"Ambabari Jaipur",
+        "star":2,
+        "pricerange":"fair",
+        "hotel_type":"business",
+        "room_type":"Deluxe Room",
+        "parking":"charge",
+        "room_charge":"Rs. 3867",
+        "address":"2, Ashok Vihar, Ambabari, Near HP Petrol Pump, Main Sikar Road",
+        "phone_number":"+91 143 7392358",
+        "score":4.5
+    }
+
+    {
+        "name":"Hotel Arya Niwas",
+        "area":"Bani Park Jaipur",
+        "star":3,
+        "pricerange":"a bit more expensive",
+        "hotel_type":"resort",
+        "room_type":"AC Economy Single",
+        "parking":"free",
+        "room_charge":"Rs. 3183",
+        "address":"Behind Amber TowersSansar Chandra Road",
+        "phone_number":"05897 377809",
+        "score":4.5
+    }
+
+    {
+        "name":"Ginger Hotel Jaipur",
+        "area":"Civil Lines Jaipur",
+        "star":3,
+        "pricerange":"a bit more expensive",
+        "hotel_type":"business",
+        "room_type":"Smart Single Room",
+        "parking":"charge",
+        "room_charge":"Rs. 7502",
+        "address":"Geejgarh house,Civil lines, Hawasadak,Jaipur, Rajasthan-302006",
+        "phone_number":"076-66672272",
+        "score":4.0
+    }
+
+    {
+        "name":"Hotel Taj Mahal",
+        "area":"Nampally Hyderabad",
+        "star":2,
+        "pricerange":"fair",
+        "hotel_type":"business",
+        "room_type":"Junior Suite Room",
+        "parking":"free",
+        "room_charge":"Rs. 6756",
+        "address":"4-1-999, Abid Circle, Kingkothi Road, Abids",
+        "phone_number":"00939513027",
+        "score":4.0
+    }
+
+    {
+        "name":"Hotel Shreemaya",
+        "area":"R.N.T. Marg Indore",
+        "star":3,
+        "pricerange":"fair",
+        "hotel_type":"resort",
+        "room_type":"Deluxe Room",
+        "parking":"charge",
+        "room_charge":"Rs. 7230",
+        "address":"12, R.N.T. Marg,",
+        "phone_number":"026-42684910",
+        "score":4.5
+    }
+
+    {
+        "name":"ITC Rajputana, A Luxury Collection Hotel",
+        "area":"Bani Park Jaipur",
+        "star":5,
+        "pricerange":"a bit more expensive",
+        "hotel_type":"business",
+        "room_type":"Executive Club Special",
+        "parking":"free",
+        "room_charge":"Rs. 4268",
+        "address":"Palace Road Rajasthan",
+        "phone_number":"05608172364",
+        "score":4.5
+    }

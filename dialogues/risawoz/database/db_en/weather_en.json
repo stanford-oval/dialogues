@@ -1,0 +1,562 @@
+[
+    {
+        "city": "Beijing",
+        "date": "next Monday",
+        "weather condition": "sunny",
+        "tamperature": "The maximum temperature will be 8 degrees Celsius, and the minimum temperature will be -6 degrees Celsius.",
+        "wind": "southwest force 3-4.",
+        "uv intensity": "strong"
+    },
+    {
+        "city": "Beijing",
+        "date": "next Tuesday",
+        "weather condition": "sunny",
+        "tamperature": "The maximum temperature will be 10 degrees Celsius, and the minimum temperature will be -5 degrees Celsius",
+        "wind": "southwest force 2",
+        "uv intensity": "strong"
+    },
+    {
+        "city": "Beijing",
+        "date": "next Wednesday",
+        "weather condition": "sunny to cloudy",
+        "tamperature": "The maximum temperature will be 8 degrees Celsius, and the minimum temperature will be −5 degrees Celsius.",
+        "wind": "southeast force 2",
+        "uv intensity": "strong"
+    },
+    {
+        "city": "Beijing",
+        "date": "next Thursday",
+        "weather condition": "cloudy",
+        "tamperature": "The maximum temperature will be 4 degrees Celsius, and the minimum temperature will be -4 degrees Celsius",
+        "wind": "southeast force 1",
+        "uv intensity": "strong"
+    },
+    {
+        "city": "Beijing",
+        "date": "next Friday",
+        "weather condition": "cloudy and later sunny",
+        "tamperature": "The maximum temperature will be 8 degrees Celsius and the minimum temperature will be -3 degrees Celsius",
+        "wind": "northwest force 3-4",
+        "uv intensity": "strong"
+    },
+    {
+        "city": "Beijing",
+        "date": "next Saturday",
+        "weather condition": "sunny",
+        "tamperature": "The maximum temperature will be 9 degrees Celsius and the minimum temperature will be −3 degrees Celsius.",
+        "wind": "north force 3",
+        "uv intensity": "strong"
+    },
+    {
+        "city": "Beijing",
+        "date": "next Sunday",
+        "weather condition": "sunny",
+        "tamperature": "The maximum temperature will be 9 degrees Celsius, and the minimum temperature will be -2 degrees Celsius",
+        "wind": "north force 3-4",
+        "uv intensity": "strong"
+    },
+    {
+        "city": "Shanghai",
+        "date": "next Monday",
+        "weather condition": "sunny",
+        "tamperature": "The maximum temperature will be 10 degrees Celsius, and the minimum temperature will be 1 degree Celsius.",
+        "wind": "northwest force 3-4",
+        "uv intensity": "strong"
+    },
+    {
+        "city": "Shanghai",
+        "date": "next Tuesday",
+        "weather condition": "sunny to cloudy",
+        "tamperature": "The maximum temperature will be 10 degrees Celsius, and the minimum temperature will be 2 degrees Celsius",
+        "wind": "southeast force 2",
+        "uv intensity": "strong"
+    },
+    {
+        "city": "Shanghai",
+        "date": "next Wednesday",
+        "weather condition": "cloudy and later sunny",
+        "tamperature": "The maximum temperature will be 11 degrees Celsius, and the minimum temperature will be 5 degrees Celsius.",
+        "wind": "northwest force 3-4",
+        "uv intensity": "weak"
+    },
+    {
+        "city": "Shanghai",
+        "date": "next Thursday",
+        "weather condition": "sunny",
+        "tamperature": "The maximum temperature will be 15 degrees Celsius, and the minimum temperature will be 8 degrees Celsius.",
+        "wind": "northwest force 2",
+        "uv intensity": "strong"
+    },
+    {
+        "city": "Shanghai",
+        "date": "next Friday",
+        "weather condition": "light rain",
+        "tamperature": "The maximum temperature will be 16 degrees Celsius, and the minimum temperature will be 9 degrees Celsius.",
+        "wind": "north force 2",
+        "uv intensity": "the weakest"
+    },
+    {
+        "city": "Shanghai",
+        "date": "next Saturday",
+        "weather condition": "sunny to cloudy",
+        "tamperature": "maximum temperature will be 17 degrees Celsius, and the minimum temperature will be 9 degrees Celsius",
+        "wind": "south force 1",
+        "uv intensity": "strong"
+    },
+    {
+        "city": "Shanghai",
+        "date": "next Sunday",
+        "weather condition": "sunny to cloudy",
+        "tamperature": "The maximum temperature will be 18 degrees Celsius, and the minimum temperature will be 11 degrees Celsius",
+        "wind": "south force 2",
+        "uv intensity": "strong"
+    },
+    {
+        "city": "Guangzhou",
+        "date": "next Monday",
+        "weather condition": "sunny",
+        "tamperature": "The maximum temperature will be 18 degrees Celsius, and the minimum temperature will be 5 degrees Celsius.",
+        "wind": "northeast force 1",
+        "uv intensity": "very strong"
+    },
+    {
+        "city": "Guangzhou",
+        "date": "next Tuesday",
+        "weather condition": "sunny to cloudy",
+        "tamperature": "The maximum temperature will be 18 degrees Celsius, and the minimum temperature will be 5 degrees Celsius.",
+        "wind": "a breeze without continuous direction",
+        "uv intensity": "very strong"
+    },
+    {
+        "city": "Guangzhou",
+        "date": "next Wednesday",
+        "weather condition": "cloudy",
+        "tamperature": "The maximum temperature will be 19 degrees Celsius, and the minimum temperature will be 7 degrees Celsius",
+        "wind": "a breeze without continuous direction",
+        "uv intensity": "moderate"
+    },
+    {
+        "city": "Guangzhou",
+        "date": "next Thursday",
+        "weather condition": "cloudy",
+        "tamperature": "The maximum temperature will be 20 degrees Celsius, and the minimum temperature will be 10 degrees Celsius",
+        "wind": "a breeze without continuous direction",
+        "uv intensity": "weak"
+    },
+    {
+        "city": "Guangzhou",
+        "date": "next Friday",
+        "weather condition": "cloudy",
+        "tamperature": "The maximum temperature will be 22 degrees Celsius, and the minimum temperature will be 13 degrees Celsius",
+        "wind": "northeast force 1",
+        "uv intensity": "moderate"
+    },
+    {
+        "city": "Guangzhou",
+        "date": "next Saturday",
+        "weather condition": "cloudy",
+        "tamperature": "The maximum temperature will be 23 degrees Celsius, and the minimum temperature will be 14 degrees Celsius",
+        "wind": "northeast force 2",
+        "uv intensity": "very strong"
+    },
+    {
+        "city": "Guangzhou",
+        "date": "next Sunday",
+        "weather condition": "cloudy",
+        "tamperature": "The maximum temperature will be 24 degrees Celsius, and the minimum temperature will be 14 degrees Celsius",
+        "wind": "a breeze without continuous direction",
+        "uv intensity": "moderate"
+    },
+    {
+        "city": "Shenzhen",
+        "date": "next Monday",
+        "weather condition": "sunny",
+        "tamperature": "The maximum temperature will be 17 degrees Celsius, and the minimum temperature will be 7 degrees Celsius.",
+        "wind": "northeast force 2",
+        "uv intensity": "very strong"
+    },
+    {
+        "city": "Shenzhen",
+        "date": "next Tuesday",
+        "weather condition": "sunny",
+        "tamperature": "The maximum temperature will be 17 degrees Celsius, and the minimum temperature will be 7 degrees Celsius.",
+        "wind": "a breeze without continuous direction",
+        "uv intensity": "very strong"
+    },
+    {
+        "city": "Shenzhen",
+        "date": "next Wednesday",
+        "weather condition": "sunny to cloudy",
+        "tamperature": "The maximum temperature will be 18 degrees Celsius, and the minimum temperature will be 11 degrees Celsius",
+        "wind": "east force 3-4",
+        "uv intensity": "very strong"
+    },
+    {
+        "city": "Shenzhen",
+        "date": "next Thursday",
+        "weather condition": "cloudy",
+        "tamperature": "The maximum temperature will be 20 degrees Celsius, and the minimum temperature will be 14 degrees Celsius.",
+        "wind": "east force 3-4",
+        "uv intensity": "weak"
+    },
+    {
+        "city": "Shenzhen",
+        "date": "next Friday",
+        "weather condition": "cloudy",
+        "tamperature": "The maximum temperature will be 21 degrees Celsius, and the minimum temperature will be 15 degrees Celsius",
+        "wind": "east force 2",
+        "uv intensity": "moderate"
+    },
+    {
+        "city": "Shenzhen",
+        "date": "next Saturday",
+        "weather condition": "cloudy",
+        "tamperature": "The maximum temperature will be 23 degrees Celsius, and the minimum temperature will be 16 degrees Celsius.",
+        "wind": "a breeze without continuous direction",
+        "uv intensity": "strong"
+    },
+    {
+        "city": "Shenzhen",
+        "date": "next Sunday",
+        "weather condition": "cloudy",
+        "tamperature": "The maximum temperature will be 22 degrees Celsius, and the minimum temperature will be 16 degrees Celsius.",
+        "wind": "northeast force 1",
+        "uv intensity": "weak"
+    },
+    {
+        "city": "Hangzhou",
+        "date": "next Monday",
+        "weather condition": "sunny",
+        "tamperature": "The maximum temperature will be 11 degrees Celsius, and the minimum temperature will be -1 degree Celsius.",
+        "wind": "north force 2",
+        "uv intensity": "strong"
+    },
+    {
+        "city": "Hangzhou",
+        "date": "next Tuesday",
+        "weather condition": "sunny",
+        "tamperature": "The maximum temperature will be 11 degrees Celsius, and the minimum temperature will be 0 degrees Celsius.",
+        "wind": "north force 1",
+        "uv intensity": "strong"
+    },
+    {
+        "city": "Hangzhou",
+        "date": "next Wednesday",
+        "weather condition": "cloudy",
+        "tamperature": "The maximum temperature will be 14 degrees Celsius, and the minimum temperature will be 1 degrees Celsius.",
+        "wind": "southeast force 1",
+        "uv intensity": "weak"
+    },
+    {
+        "city": "Hangzhou",
+        "date": "next Thursday",
+        "weather condition": "sunny to cloudy",
+        "tamperature": "The maximum temperature will be 16 degrees Celsius, and the minimum temperature will be 5 degrees Celsius.",
+        "wind": "east force 3-4",
+        "uv intensity": "strong"
+    },
+    {
+        "city": "Hangzhou",
+        "date": "next Friday",
+        "weather condition": "overcast to light rain",
+        "tamperature": "The maximum temperature will be 18 degrees Celsius, and the minimum temperature will be 7 degrees Celsius.",
+        "wind": "north force 3-4",
+        "uv intensity": "the weakest"
+    },
+    {
+        "city": "Hangzhou",
+        "date": "next Saturday",
+        "weather condition": "sunny",
+        "tamperature": "The maximum temperature will be 17 degrees Celsius, and the minimum temperature will be 7 degrees Celsius.",
+        "wind": "southeast force 1",
+        "uv intensity": "strong"
+    },
+    {
+        "city": "Hangzhou",
+        "date": "next Sunday",
+        "weather condition": "cloudy to overcast",
+        "tamperature": "the maximum temperature will be 21 degrees Celsius, and the minimum temperature will be 9 degrees Celsius",
+        "wind": "southeast force 3-4",
+        "uv intensity": "strong"
+    },
+    {
+        "city": "Nanjing",
+        "date": "next Monday",
+        "weather condition": "sunny",
+        "tamperature": "The maximum temperature will be 9 degrees Celsius, and the minimum temperature will be -2 degrees Celsius",
+        "wind": "northwest force 4-5",
+        "uv intensity": "strong"
+    },
+    {
+        "city": "Nanjing",
+        "date": "next Tuesday",
+        "weather condition": "sunny to cloudy",
+        "tamperature": "The maximum temperature is forecast to be 9 degrees Celsius, while the minimum temperature will be 0 degrees Celsius",
+        "wind": "southern force 3-4",
+        "uv intensity": "strong"
+    },
+    {
+        "city": "Nanjing",
+        "date": "next Wednesday",
+        "weather condition": "cloudy",
+        "tamperature": "The maximum temperature will be 10 degrees Celsius, and the minimum temperature will be 2 degrees Celsius",
+        "wind": "southeast force 3-4",
+        "uv intensity": "weak"
+    },
+    {
+        "city": "Nanjing",
+        "date": "next Thursday",
+        "weather condition": "cloudy",
+        "tamperature": "The maximum temperature will be 14 degrees Celsius, and the minimum temperature will be 5 degrees Celsius",
+        "wind": "southeast force 2",
+        "uv intensity": "moderate"
+    },
+    {
+        "city": "Nanjing",
+        "date": "next Friday",
+        "weather condition": "cloudy",
+        "tamperature": "The maximum temperature will be 11 degrees Celsius, and the minimum temperature will be 5 degrees Celsius.",
+        "wind": "west force 2",
+        "uv intensity": "weak"
+    },
+    {
+        "city": "Nanjing",
+        "date": "next Saturday",
+        "weather condition": "cloudy",
+        "tamperature": "The maximum temperature will be 17 degrees Celsius and the minimum temperature will be 6 degrees Celsius.",
+        "wind": "northwest force 2",
+        "uv intensity": "strong"
+    },
+    {
+        "city": "Nanjing",
+        "date": "next Sunday",
+        "weather condition": "cloudy",
+        "tamperature": "The maximum temperature will be 18 degrees Celsius, and the minimum temperature will be 7 degrees Celsius.",
+        "wind": "southeast force 2",
+        "uv intensity": "moderate"
+    },
+    {
+        "city": "Xiamen",
+        "date": "next Monday",
+        "weather condition": "sunny",
+        "tamperature": "The maximum temperature will be 14 degrees Celsius and the minimum temperature will be 8 degrees Celsius.",
+        "wind": "northeast force 3-4",
+        "uv intensity": "very strong"
+    },
+    {
+        "city": "Xiamen",
+        "date": "next Tuesday",
+        "weather condition": "sunny",
+        "tamperature": "The maximum temperature will be 14 degrees Celsius, and the minimum temperature will be 7 degrees Celsius",
+        "wind": "northeast force 4-5",
+        "uv intensity": "very strong"
+    },
+    {
+        "city": "Xiamen",
+        "date": "next Wednesday",
+        "weather condition": "sunny",
+        "tamperature": "maximum temperature will be 17 degrees Celsius, and the minimum temperature will be 9 degrees Celsius",
+        "wind": "east force 2",
+        "uv intensity": "very strong"
+    },
+    {
+        "city": "Xiamen",
+        "date": "next Thursday",
+        "weather condition": "sunny",
+        "tamperature": "The maximum temperature will be 20 degrees Celsius, and the minimum temperature will be 12 degrees Celsius",
+        "wind": "northeast force 4-5",
+        "uv intensity": "very strong"
+    },
+    {
+        "city": "Xiamen",
+        "date": "next Friday",
+        "weather condition": "sunny",
+        "tamperature": "The maximum temperature will be 21 degrees Celsius, and the minimum temperature will be 13 degrees Celsius.",
+        "wind": "southeast force 3-4",
+        "uv intensity": "very strong"
+    },
+    {
+        "city": "Xiamen",
+        "date": "next Saturday",
+        "weather condition": "sunny",
+        "tamperature": "The maximum temperature will be 23 degrees Celsius, and the minimum temperature will be 14 degrees Celsius",
+        "wind": "northeast force 3-4",
+        "uv intensity": "very strong"
+    },
+    {
+        "city": "Xiamen",
+        "date": "next Sunday",
+        "weather condition": "sunny",
+        "tamperature": "The maximum temperature will be 22 degrees Celsius, and the minimum temperature will be 14 degrees Celsius",
+        "wind": "northeast force 2",
+        "uv intensity": "very strong"
+    },
+    {
+        "city": "Chengdu",
+        "date": "next Monday",
+        "weather condition": "cloudy",
+        "tamperature": "The maximum temperature will be 11 degrees Celsius and the minimum temperature will be 4 degrees Celsius.",
+        "wind": "southeast force 1",
+        "uv intensity": "weak"
+    },
+    {
+        "city": "Chengdu",
+        "date": "next Tuesday",
+        "weather condition": "overcast to light rain",
+        "tamperature": "The maximum temperature will be 11 degrees Celsius and the minimum temperature will be 4 degrees Celsius.",
+        "wind": "a breeze without continuous direction",
+        "uv intensity": "the weakest"
+    },
+    {
+        "city": "Chengdu",
+        "date": "next Wednesday",
+        "weather condition": "cloudy to overcast",
+        "tamperature": "The maximum temperature will be 13 degrees Celsius, and the minimum temperature will be 4 degrees Celsius.",
+        "wind": "a breeze without continuous direction",
+        "uv intensity": "strong"
+    },
+    {
+        "city": "Chengdu",
+        "date": "next Thursday",
+        "weather condition": "overcast to showers",
+        "tamperature": "The maximum temperature will be 11 degrees Celsius, and the minimum temperature will be 7 degrees Celsius.",
+        "wind": "a breeze without continuous direction",
+        "uv intensity": "the weakest"
+    },
+    {
+        "city": "Chengdu",
+        "date": "next Friday",
+        "weather condition": "cloudy",
+        "tamperature": "The maximum temperature will be 15 degrees Celsius, and the minimum temperature will be 7 degrees Celsius.",
+        "wind": "a breeze without continuous direction",
+        "uv intensity": "moderate"
+    },
+    {
+        "city": "Chengdu",
+        "date": "next Saturday",
+        "weather condition": "cloudy to overcast",
+        "tamperature": "The maximum temperature will be 15 degrees Celsius, and the minimum temperature will be 7 degrees Celsius.",
+        "wind": "a breeze without continuous direction",
+        "uv intensity": "moderate"
+    },
+    {
+        "city": "Chengdu",
+        "date": "next Sunday",
+        "weather condition": "cloudy",
+        "tamperature": "The maximum temperature will be 16 degrees Celsius, and the minimum temperature will be 9 degrees Celsius.",
+        "wind": "a breeze without continuous direction",
+        "uv intensity": "weak"
+    },
+    {
+        "city": "Wuhan",
+        "date": "next Monday",
+        "weather condition": "cloudy",
+        "tamperature": "The maximum temperature will be 13 degrees Celsius, and the minimum temperature will be -1 degree Celsius",
+        "wind": "east force 2",
+        "uv intensity": "moderate"
+    },
+    {
+        "city": "Wuhan",
+        "date": "next Tuesday",
+        "weather condition": "sunny to cloudy",
+        "tamperature": "the maximum temperature will be 13 degrees Celsius, and the minimum temperature will be 0 degrees Celsius",
+        "wind": "southeast force 2",
+        "uv intensity": "strong"
+    },
+    {
+        "city": "Wuhan",
+        "date": "next Wednesday",
+        "weather condition": "cloudy and later sunny",
+        "tamperature": "The maximum temperature will be 11 degrees Celsius, and the minimum temperature will be 0 degrees Celsius.",
+        "wind": "south force 2",
+        "uv intensity": "moderate"
+    },
+    {
+        "city": "Wuhan",
+        "date": "next Thursday",
+        "weather condition": "sunny to cloudy",
+        "tamperature": "The maximum temperature will be 15 degrees Celsius, and the minimum temperature will be 1 degree Celsius.",
+        "wind": "east force 1",
+        "uv intensity": "strong"
+    },
+    {
+        "city": "Wuhan",
+        "date": "next Friday",
+        "weather condition": "light rain to cloudy",
+        "tamperature": "The maximum temperature will be 12 degrees Celsius, and the minimum temperature will be 3 degrees Celsius",
+        "wind": "northwest force 2",
+        "uv intensity": "the weakest"
+    },
+    {
+        "city": "Wuhan",
+        "date": "next Saturday",
+        "weather condition": "cloudy and later sunny",
+        "tamperature": "The maximum temperature will be 15 degrees Celsius, and the minimum temperature will be 4 degrees Celsius.",
+        "wind": "southeast force 2",
+        "uv intensity": "strong"
+    },
+    {
+        "city": "Wuhan",
+        "date": "next Sunday",
+        "weather condition": "cloudy and later sunny",
+        "tamperature": "The maximum temperature will be 19 degrees Celsius, and the minimum temperature will be 8 degrees Celsius.",
+        "wind": "southeast force 2",
+        "uv intensity": "moderate"
+    },
+    {
+        "city": "Suzhou",
+        "date": "next Monday",
+        "weather condition": "sunny",
+        "tamperature": "The maximum temperature will be 9 degrees Celsius, and the minimum temperature will be -1 degree Celsius.",
+        "wind": "northwest force 2",
+        "uv intensity": "strong"
+    },
+    {
+        "city": "Suzhou",
+        "date": "next Tuesday",
+        "weather condition": "sunny to cloudy",
+        "tamperature": "The maximum temperature will be 9 degrees Celsius, and the minimum temperature will be 1 degree Celsius",
+        "wind": "northwest force 2",
+        "uv intensity": "strong"
+    },
+    {
+        "city": "Suzhou",
+        "date": "next Wednesday",
+        "weather condition": "overcast",
+        "tamperature": "The maximum temperature will be 11 degrees Celsius and the minimum temperature will be 4 degrees Celsius.",
+        "wind": "southeast force 2",
+        "uv intensity": "the weakest"
+    },
+    {
+        "city": "Suzhou",
+        "date": "next Thursday",
+        "weather condition": "cloudy",
+        "tamperature": "The maximum temperature will be 16 degrees Celsius, and the minimum temperature will be 6 degrees Celsius.",
+        "wind": "southeast force 2",
+        "uv intensity": "strong"
+    },
+    {
+        "city": "Suzhou",
+        "date": "next Friday",
+        "weather condition": "overcast to light rain",
+        "tamperature": "The maximum temperature will be 15 degrees Celsius, and the minimum temperature will be 8 degrees Celsius.",
+        "wind": "west force 2",
+        "uv intensity": "the weakest"
+    },
+    {
+        "city": "Suzhou",
+        "date": "next Saturday",
+        "weather condition": "cloudy and later sunny",
+        "tamperature": "The maximum temperature will be 16 degrees Celsius, and the minimum temperature will be 6 degrees Celsius.",
+        "wind": "southwest force 2",
+        "uv intensity": "strong"
+    },
+    {
+        "city": "Suzhou",
+        "date": "next Sunday",
+        "weather condition": "cloudy",
+        "tamperature": "The maximum temperature will be 17 degrees Celsius, and the minimum temperature will be 8 degrees Celsius.",
+        "wind": "southwest force 2",
+        "uv intensity": "strong"
+    }
+]
