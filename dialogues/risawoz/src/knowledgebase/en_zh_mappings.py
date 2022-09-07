@@ -24,7 +24,7 @@ class RisawozMapping(object):
         self.reverse_entity_map = keydefaultdict(lambda k: k)
 
         cur_dir = os.path.dirname(os.path.abspath(__file__))
-        with open(os.path.join(cur_dir, "mappings/zh2en_alignment.json")) as f:
+        with open(os.path.join(cur_dir, "mappings/zh2en_alignment_new.json")) as f:
             zh2en_alignment = json.load(f)
         zh2en_value = {}
         for domain, items in zh2en_alignment.items():
