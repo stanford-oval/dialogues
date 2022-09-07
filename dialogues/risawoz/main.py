@@ -30,7 +30,7 @@ class Risawoz(WOZDataset):
         dialogue_state,
         knowledge,
         api_names,
-        src_lang='zh_CN',
+        src_lang='zh',
         dial_id=None,
         turn_id=None,
     ):

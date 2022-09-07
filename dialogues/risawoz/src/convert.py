@@ -26,9 +26,9 @@ def read_json_files_in_folder(path):
     return data
 
 
-def build_db(db_json_path, api_map=None, mongodb_host="", setting='zh_CN'):
-    if setting == 'zh':
-        setting = 'zh_CN'
+def build_db(db_json_path, api_map=None, mongodb_host="", setting='zh'):
+    # if setting == 'zh':
+    #     setting = 'zh_CN'
     raw_db = read_json_files_in_folder(db_json_path)
     if mongodb_host:
         db_client = pymongo.MongoClient(mongodb_host)
@@ -161,16 +161,14 @@ def build_kb_event(wizard_query_event, db, actions, expected_num_results):
     event = {"Agent": "KnowledgeBase"}
     constraints = wizard_query_event["Constraints"]
     api_names = wizard_query_event["API"]
-    knowledge = call_api(db, api_names, constraints, lang='zh_CN', value_mapping=dataset.value_mapping, actions=actions)
+    knowledge = call_api(db, api_names, constraints, lang='zh', value_mapping=dataset.value_mapping, actions=actions)
     event["TotalItems"] = sum(item.get("available_options", 0) for api, item in knowledge.items())
     # if event["TotalItems"] == 0 and not expected_num_results == 0:
     # if event["TotalItems"] < expected_num_results and api_names != ['general']:
     for api, item in knowledge.items():
         if item.get("available_options", 0) < expected_num_results and api_names != ['general']:
             print('here')
-            knowledge = call_api(
-                db, api_names, constraints, lang='zh_CN', value_mapping=dataset.value_mapping, actions=actions
-            )
+            knowledge = call_api(db, api_names, constraints, lang='zh', value_mapping=dataset.value_mapping, actions=actions)
 
     # for api, item in knowledge.items():
     #     for slot, val in item.items():

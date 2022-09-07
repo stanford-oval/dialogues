@@ -131,5 +131,5 @@ for file in os.listdir(args.input_db_dir):
         translated_db_info.append(translated_item)
 
     json.dump(
-        translated_db_info, open(os.path.join(args.output_db_dir, domain + '_zh_CN.json'), 'w'), ensure_ascii=False, indent=2
+        translated_db_info, open(os.path.join(args.output_db_dir, domain + '_zh.json'), 'w'), ensure_ascii=False, indent=2
     )
