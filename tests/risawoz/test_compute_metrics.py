@@ -8,7 +8,9 @@ from dialogues import Risawoz
 
 parser = argparse.ArgumentParser()
 
-parser.add_argument("--reference_file_path", type=str, default="dialogues/risawoz/data/zh_test.json", help="path of reference")
+parser.add_argument(
+    "--reference_file_path", type=str, default="dialogues/risawoz/data/zh_valid.json", help="path of reference"
+)
 parser.add_argument(
     "--prediction_file_path",
     type=str,

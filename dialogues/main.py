@@ -448,7 +448,7 @@ class WOZDataset(Dataset):
         # converts text span to state dict
 
         action = defaultdict(list)
-        re_intent_spans = re.compile('\( (.+?) \)\s?(.+?)(?=$| \( )')
+        re_intent_spans = re.compile('\( (.+?) \) (.+?)(?=$|, \( )')
         re_asrs = re.compile('((?:\S+? ){3}" .+? "|\S*? \S+?(?: ,|$)|\S+?(?: ,|$))')
 
         matches = re_intent_spans.findall(api_span)
