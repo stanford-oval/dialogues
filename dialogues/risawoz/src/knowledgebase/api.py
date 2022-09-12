@@ -18,6 +18,8 @@ def call_api(db, api_names, constraints, lang, value_mapping, actions=None):
         if api == 'car':
             if 'number_of_seats' in domain_constraints:
                 domain_constraints['number_of_seats'] = {"$gte": int(domain_constraints['number_of_seats'])}
+
+        domain_constraints = {k: value_mapping.en2canonical.get(v, v) for k, v in domain_constraints.items()}
         db_name = f'{api_en}_{lang}'
         cursor = db[db_name].find(domain_constraints)
         domain_knowledge = []
@@ -33,7 +35,7 @@ def call_api(db, api_names, constraints, lang, value_mapping, actions=None):
                     found = True
                     for slot, value in acts.items():
                         slot = slot.replace('.', '\uFF0E')
-                        # slot = slot.replace('_', ' ')
+                        slot = slot.replace(' ', '_')
                         slot = value_mapping.zh2en_SLOT_MAP.get(slot, slot)
                         if slot not in item:
                             if slot == 'price' and api_en == 'car':
@@ -83,13 +85,14 @@ def tokenize_string(sentence):
     return output
 
 
-def process_string(sentence):
+def process_string(sentence, setting):
     if isinstance(sentence, bool):
         return str(sentence)
     if not isinstance(sentence, str):
         return sentence
     sentence = re.sub(r'\s{2,}', ' ', sentence)
-    sentence = ''.join(sentence.split())
+    if setting == 'zh':
+        sentence = ''.join(sentence.split())
     sentence = tokenize_string(sentence)
 
     return sentence

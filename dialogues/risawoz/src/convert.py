@@ -26,9 +26,7 @@ def read_json_files_in_folder(path):
     return data
 
 
-def build_db(db_json_path, api_map=None, mongodb_host="", setting='zh'):
-    # if setting == 'zh':
-    #     setting = 'zh_CN'
+def build_db(db_json_path, api_map, setting, mongodb_host=""):
     raw_db = read_json_files_in_folder(db_json_path)
     if mongodb_host:
         db_client = pymongo.MongoClient(mongodb_host)
@@ -52,7 +50,7 @@ def build_db(db_json_path, api_map=None, mongodb_host="", setting='zh'):
     return risawoz_db
 
 
-def group_slot_values(actions):
+def group_slot_values(actions, setting):
     # group slot values in user/system actions with same act-domain-slot prefix
     for i in range(len(actions)):
         actions[i][0] = actions[i][0].strip()  # strip spaces of ' inform '
@@ -64,7 +62,7 @@ def group_slot_values(actions):
         for i in range(len(group)):
             if group[i][3]:
                 # keep space between cjk and other chars
-                group[i][3] = [process_string(group[i][3])]
+                group[i][3] = [process_string(group[i][3], setting)]
             else:
                 group[i][3] = []
         if len(group) == 1:
@@ -75,22 +73,22 @@ def group_slot_values(actions):
     return processed_actions
 
 
-def build_user_event(turn):
+def build_user_event(turn, setting):
     event = {"Agent": "User"}
     # actions
     # TODO: handle domain information
     action_seq = ["act", "domain", "slot", "value"]
     actions = []
-    processed_original_actions = group_slot_values(turn["user_actions"])
+    processed_original_actions = group_slot_values(turn["user_actions"], setting)
     for action in processed_original_actions:
         event_action = {}
         for i in range(len(action)):
             if i == 1 and action[i]:
-                action[i] = dataset.value_mapping.zh2en_DOMAIN_MAP[action[i]]
+                action[i] = dataset.value_mapping.zh2en_DOMAIN_MAP.get(action[i], action[i].lower())
             elif i == 2 and action[i]:
-                action[i] = dataset.value_mapping.zh2en_SLOT_MAP[action[i]]
+                action[i] = dataset.value_mapping.zh2en_SLOT_MAP.get(action[i], action[i])
             elif i == 3 and action[i]:
-                action[i] = process_string(action[i])
+                action[i] = process_string(action[i], setting)
             event_action[action_seq[i]] = action[i]
         if event_action["slot"] and event_action["value"]:
             event_action["relation"] = "equal_to"
@@ -106,17 +104,17 @@ def build_user_event(turn):
         d, s = ds.split("-")[0], ds.split("-")[1]
         d = dataset.value_mapping.zh2en_DOMAIN_MAP.get(d, d)
         s = dataset.value_mapping.zh2en_SLOT_MAP.get(s, s)
-        event["state"][d][s] = {"relation": "equal_to", "value": [process_string(v)]}
+        event["state"][d][s] = {"relation": "equal_to", "value": [process_string(v, setting)]}
     event["state"] = dict(event["state"])
     # event["Text"] = turn["user_utterance"]
-    event["Text"] = process_string(turn["user_utterance"])
+    event["Text"] = process_string(turn["user_utterance"], setting)
     return event
 
 
-def build_wizard_event(turn, mode="normal"):
+def build_wizard_event(turn, setting, mode="normal"):
     assert mode in ["normal", "query"]
     event = {"Agent": "Wizard"}
-    turn_domain_en = [dataset.value_mapping.zh2en_DOMAIN_MAP[d] for d in turn['turn_domain']]
+    turn_domain_en = [dataset.value_mapping.zh2en_DOMAIN_MAP.get(d, d.lower()) for d in turn['turn_domain']]
     if mode == "query":
         event["Actions"] = "query"
         event["Constraints"] = defaultdict(dict)
@@ -124,10 +122,10 @@ def build_wizard_event(turn, mode="normal"):
         for ds, v in turn["belief_state"]["inform slot-values"].items():
             # only return matched result in the domains of current turn
             d, s = ds.split("-")
-            d = dataset.value_mapping.zh2en_DOMAIN_MAP[d]
-            s = dataset.value_mapping.zh2en_SLOT_MAP[s]
+            d = dataset.value_mapping.zh2en_DOMAIN_MAP.get(d, d.lower())
+            s = dataset.value_mapping.zh2en_SLOT_MAP.get(s, s)
             if d in turn_domain_en:
-                event["Constraints"][d][s] = process_string(v)
+                event["Constraints"][d][s] = process_string(v, setting)
             # event["Constraints_raw"][d][s] = ''.join(v.split())
         # TODO: handle multiple APIs
         event["API"] = list(set([d for d in event["Constraints"].keys()]))
@@ -137,31 +135,33 @@ def build_wizard_event(turn, mode="normal"):
         # actions
         action_seq = ["act", "domain", "slot", "value"]
         actions = []
-        processed_original_actions = group_slot_values(turn["system_actions"])
+        processed_original_actions = group_slot_values(turn["system_actions"], setting)
         for action in processed_original_actions:
             event_action = {}
             for i in range(len(action)):
                 if i == 1 and action[i]:
-                    action[i] = dataset.value_mapping.zh2en_DOMAIN_MAP[action[i]]
+                    action[i] = dataset.value_mapping.zh2en_DOMAIN_MAP.get(action[i], action[i].lower())
                 elif i == 2 and action[i]:
-                    action[i] = dataset.value_mapping.zh2en_SLOT_MAP[action[i]]
+                    action[i] = dataset.value_mapping.zh2en_SLOT_MAP.get(action[i], action[i])
                 elif i == 3 and action[i]:
-                    action[i] = process_string(action[i])
+                    action[i] = process_string(action[i], setting)
                 event_action[action_seq[i]] = action[i]
             event_action["relation"] = "equal_to" if event_action["slot"] and event_action["value"] else ""
             actions.append(event_action)
         event["Actions"] = actions
 
         # event["Text"] = turn["system_utterance"]
-        event["Text"] = process_string(turn["system_utterance"])
+        event["Text"] = process_string(turn["system_utterance"], setting)
     return event
 
 
-def build_kb_event(wizard_query_event, db, actions, expected_num_results):
+def build_kb_event(wizard_query_event, db, actions, expected_num_results, setting):
     event = {"Agent": "KnowledgeBase"}
     constraints = wizard_query_event["Constraints"]
+    for d in constraints:
+        constraints[d] = {k.replace(" ", "_"): v for k, v in constraints[d].items()}
     api_names = wizard_query_event["API"]
-    knowledge = call_api(db, api_names, constraints, lang='zh', value_mapping=dataset.value_mapping, actions=actions)
+    knowledge = call_api(db, api_names, constraints, lang=setting, value_mapping=dataset.value_mapping, actions=actions)
     event["TotalItems"] = sum(item.get("available_options", 0) for api, item in knowledge.items())
     # if event["TotalItems"] == 0 and not expected_num_results == 0:
     # if event["TotalItems"] < expected_num_results and api_names != ['general']:
@@ -172,13 +172,13 @@ def build_kb_event(wizard_query_event, db, actions, expected_num_results):
 
     # for api, item in knowledge.items():
     #     for slot, val in item.items():
-    #         knowledge[api][slot] = process_string(val)
+    #         knowledge[api][slot] = process_string(val, setting)
     event["Item"] = knowledge
     event["Topic"] = api_names
     return event
 
 
-def build_dataset(original_data_path, db):
+def build_dataset(original_data_path, db, setting):
     with open(original_data_path) as fin:
         data = json.load(fin)
     processed_data = {}
@@ -186,30 +186,38 @@ def build_dataset(original_data_path, db):
         dialogue_id = dialogue["dialogue_id"]
         scenario = {
             "UserTask": dialogue.get("goal", ""),
-            "WizardCapabilities": [{"Task": dataset.value_mapping.zh2en_DOMAIN_MAP[domain]} for domain in dialogue["domains"]],
+            "WizardCapabilities": [
+                {"Task": dataset.value_mapping.zh2en_DOMAIN_MAP.get(domain, domain.lower())} for domain in dialogue["domains"]
+            ],
         }
         events = []
         turn_id = 0
         for turn in dialogue["dialogue"]:
-            user_turn_event = build_user_event(turn)
+            user_turn_event = build_user_event(turn, setting)
             if "db_results" in turn and turn["db_results"]:
-                wizard_query_event = build_wizard_event(turn, mode="query")
-                wizard_normal_event = build_wizard_event(turn, mode="normal")
+                wizard_query_event = build_wizard_event(turn, setting, mode="query")
+                wizard_normal_event = build_wizard_event(turn, setting, mode="normal")
 
                 actions = defaultdict(defaultdict)
                 for act in wizard_normal_event['Actions']:
                     domain, slot, value = act['domain'], act['slot'], act['value']
                     if slot:
                         actions[domain][slot] = value
-                expected_num_results = int(turn["db_results"][0][len('数据库检索结果：成功匹配个数为') :])
-                kb_event = build_kb_event(wizard_query_event, db, actions, expected_num_results)
+                if setting == 'zh':
+                    expected_num_results = int(turn["db_results"][0][len('数据库检索结果：成功匹配个数为') :])
+                else:
+                    expected_num_results = int(
+                        turn["db_results"][0][len('Database search results: the number of successful matches is ') :]
+                    )
+
+                kb_event = build_kb_event(wizard_query_event, db, actions, expected_num_results, setting)
                 user_turn_event['turn_id'] = turn_id
                 wizard_query_event['turn_id'] = turn_id
                 wizard_normal_event['turn_id'] = turn_id
                 # del wizard_query_event['Constraints_raw']
                 events += [user_turn_event, wizard_query_event, kb_event, wizard_normal_event]
             else:
-                wizard_event = build_wizard_event(turn)
+                wizard_event = build_wizard_event(turn, setting)
                 user_turn_event['turn_id'] = turn_id
                 wizard_event['turn_id'] = turn_id
                 events += [user_turn_event, wizard_event]
@@ -223,7 +231,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
 
     parser.add_argument("--root", type=str, default='dialogues/risawoz/', help='code root directory')
-    parser.add_argument("--data_dir", type=str, default="data/original", help="path to original data, relative to root dir")
+    parser.add_argument("--data_dir", type=str, default="data/original/", help="path to original data, relative to root dir")
     parser.add_argument("--save_dir", type=str, default="data/", help="path to save preprocessed data, relative to root dir")
     parser.add_argument("--setting", type=str, default="en", help="en, zh, en_zh")
     parser.add_argument("--splits", nargs='+', default=['train', 'valid', 'test'])
@@ -234,10 +242,10 @@ if __name__ == "__main__":
 
     # uncomment to build db
     risawoz_db = build_db(
-        db_json_path=os.path.join(*[args.root, 'database/db_zh']),
+        db_json_path=os.path.join(*[args.root, f'database/db_{args.setting}']),
         api_map=None,
-        mongodb_host=mongodb_host,
         setting=args.setting,
+        mongodb_host=mongodb_host,
     )
 
     # download original RiSAWOZ dataset
@@ -256,7 +264,9 @@ if __name__ == "__main__":
     processed_data_path = os.path.join(*[args.root, args.save_dir])
     for split in args.splits:
         print(f"processing {split} data...")
-        processed_data = build_dataset(os.path.join(original_data_path, f"{args.setting}_{split}.json"), db=risawoz_db)
+        processed_data = build_dataset(
+            os.path.join(original_data_path, f"{args.setting}_{split}.json"), risawoz_db, args.setting
+        )
         # save converted files in JSON format
         with open(f"{processed_data_path}/{args.setting}_{split}.json", 'w') as f:
             json.dump(processed_data, f, ensure_ascii=False, indent=4)

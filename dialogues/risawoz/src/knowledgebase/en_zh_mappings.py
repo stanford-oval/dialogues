@@ -24,6 +24,17 @@ class RisawozMapping(object):
         self.reverse_entity_map = keydefaultdict(lambda k: k)
 
         cur_dir = os.path.dirname(os.path.abspath(__file__))
+        with open(os.path.join(cur_dir, "mappings/en2canonical.json")) as f:
+            en2canonical_tmp = json.load(f)
+        en2canonical = {}
+        for domain, items in en2canonical_tmp.items():
+            for slot, values in items.items():
+                for canon, vals in values.items():
+                    for val in vals:
+                        en2canonical[val] = canon
+        self.en2canonical = en2canonical
+
+        cur_dir = os.path.dirname(os.path.abspath(__file__))
         with open(os.path.join(cur_dir, "mappings/zh2en_alignment_new.json")) as f:
             zh2en_alignment = json.load(f)
         zh2en_value = {}
