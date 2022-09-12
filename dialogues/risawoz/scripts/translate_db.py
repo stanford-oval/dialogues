@@ -124,7 +124,7 @@ for file in os.listdir(args.input_db_dir):
             if isinstance(value, bool):
                 translated_item[slot] = str(value)
             elif isinstance(value, str):
-                translated_item[slot] = process_string(value)
+                translated_item[slot] = process_string(value, setting='zh')
             else:
                 translated_item[slot] = value
 
