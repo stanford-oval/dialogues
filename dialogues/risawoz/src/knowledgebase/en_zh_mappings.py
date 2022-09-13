@@ -30,8 +30,12 @@ class RisawozMapping(object):
         for domain, items in en2canonical_tmp.items():
             for slot, values in items.items():
                 for canon, vals in values.items():
-                    for val in vals:
-                        en2canonical[val] = canon
+                    if isinstance(vals, list):
+                        for val in vals:
+                            en2canonical[val] = canon
+                    else:
+                        assert isinstance(vals, str)
+                        en2canonical[vals] = canon
         self.en2canonical = en2canonical
 
         cur_dir = os.path.dirname(os.path.abspath(__file__))
