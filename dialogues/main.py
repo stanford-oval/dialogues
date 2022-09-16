@@ -719,7 +719,7 @@ class WOZDataset(Dataset):
             missing = False
             if len(values):
                 for val in values:
-                    if val == 'null':
+                    if val in ['null', 'yes', 'no', 'true', 'false', '否', '是']:
                         continue
                     if str(val) not in pred:
                         missing = True
@@ -792,12 +792,12 @@ class WOZDataset(Dataset):
             api_acc = correct_api_call / total_api_call * 100
 
             # success
-            out = ''
+            out = dial_id + '\t'
             dial_success_flag = True
             for response in predictions[dial_id]["turns"].values():
                 responses += response["response"][0] + " "
             responses = self.clean_value(responses)
-            out += responses + '\t'
+            out += responses + '\t' + ';;;' + '\t'
 
             for intent in references[dial_id]["tasks"]:
                 if intent not in task_info:
@@ -805,14 +805,12 @@ class WOZDataset(Dataset):
                 task_success_flag = True
                 task_info[intent]["total"] += 1
 
-                for entity in references[dial_id]["tasks"][intent]["inform+offer"]:
+                for entity in (
+                    references[dial_id]["tasks"][intent]["inform+offer"] + references[dial_id]["tasks"][intent]["confirmation"]
+                ):
                     entity = self.clean_value(entity)
-                    if str(entity) not in responses:
-                        out += str(entity) + ' ; '
-                        task_success_flag = False
-                        break
-                for entity in references[dial_id]["tasks"][intent]["confirmation"]:
-                    entity = self.clean_value(entity)
+                    if entity in ['null', 'yes', 'no', 'true', 'false', '否', '是']:
+                        continue
                     if str(entity) not in responses:
                         out += str(entity) + ' ; '
                         task_success_flag = False
@@ -825,7 +823,8 @@ class WOZDataset(Dataset):
             if dial_success_flag:
                 success_dial += 1
 
-            out_success.write(out + '\n')
+            if out.split(';;;', 1)[1] != '\t':
+                out_success.write(out + '\n')
 
         total_tasks = 0
         success_tasks = 0
@@ -853,8 +852,23 @@ class WOZDataset(Dataset):
         v = re.sub('(\d+)(?:[\.:](\d+))?\s?(morning|in the morning|am in the morning)', r'\1:\2 am', v)
         v = re.sub('(\d+)(?:[\.:](\d+))?\s?(am|pm)', r'\1:\2 \3', v)
 
+        v = re.sub('(\d+)\s?年\s?(\d+)\s?月\s?(\d+)', r'\1/\2/\3', v)
+        if len(v) < 580:
+            v = re.sub('(\d+)-?(\d+)?-?(\d+)?\s?\( (?:中国香港|中国大陆|韩国) \)?', r'\1/\2/\3', v)
+
+        v = re.sub('(\d+)/0?(\d+)/0?(\d+)', r'\1/\2/\3', v)
+        v = re.sub('(\d+)-0?(\d+)-0?(\d+)', r'\1/\2/\3', v)
+
+        v = re.sub('(.*?) and (.*?) and (.*?)', r'\1,\2,\3', v)
+
+        v = re.sub('(\d+)\.0', r'\1', v)
+
         # & --> and
-        v = re.sub(' [\&\/] ', ' and ', v)
+        if self.name == 'bitod':
+            v = re.sub(' [\&\/] ', ' and ', v)
+        elif self.name == 'risawoz':
+            v = re.sub(' \/ ', ',', v)
+
         v = re.sub('\s+', ' ', v)
 
         # remove extra dot in the end
@@ -904,6 +918,8 @@ class WOZDataset(Dataset):
                             new_constraints[k][i] = self.clean_value(j, do_int=True)
                 else:
                     new_constraints[k] = self.clean_value(v, do_int=True)
+        if new_constraints is None:
+            new_constraints = {}
         return new_constraints
 
     def compute_result(self, predictions, reference_data):
@@ -1046,11 +1062,11 @@ class WOZDataset(Dataset):
                 for values in slot_values.values():
                     reference_task_success[dial_id]["tasks"][intent]["confirmation"] += values
 
+        success_rate, api_acc, task_info = self.compute_success_rate(predictions, reference_task_success)
+
         bleu = self.compute_bleu(predicted_response, reference_response)
         ser = self.compute_ser(predicted_response, reference_act_values)
         da_acc = self.compute_da(predicted_actions, reference_actions)
-
-        success_rate, api_acc, task_info = self.compute_success_rate(predictions, reference_task_success)
 
         return OrderedDict(
             {
