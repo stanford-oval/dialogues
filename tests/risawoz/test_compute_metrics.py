@@ -11,12 +11,7 @@ parser = argparse.ArgumentParser()
 parser.add_argument(
     "--reference_file_path", type=str, default="dialogues/risawoz/data/zh_valid.json", help="path of reference"
 )
-parser.add_argument(
-    "--prediction_file_path",
-    type=str,
-    default="dialogues/risawoz/results/test/risawoz_mock_preds.json",
-    help="path of prediction",
-)
+parser.add_argument("--prediction_file_path", type=str, default="tests/risawoz/data/preds.json", help="path of prediction")
 parser.add_argument("--eval_task", type=str, default="end2end", help="end2end, dst, response")
 parser.add_argument("--setting", type=str, help="en, zh, en&zh, en2zh, zh2en")
 parser.add_argument("--result_path", type=str, default="./", help="result_path")
@@ -41,28 +36,28 @@ results = dataset.compute_metrics(args, args.prediction_file_path, args.referenc
 # api, da, and ser are not correct
 gold_results = OrderedDict(
     [
-        ('bleu', 100.0),
-        ('ser', 16.347189317251775),
-        ('success_rate', 100.0),
-        ('api_acc', 0.0),
-        ('da_acc', 46.090889511091966),
-        ('jga', 100.0),
+        ('bleu', 46.0014),
+        ('ser', 18.260226712666338),
+        ('success_rate', 58.5),
+        ('api_acc', 84.56140350877193),
+        ('da_acc', 73.90340068999507),
+        ('jga', 82.97190734351898),
         (
             'task_info',
             {
-                '旅游景点': {'total': 103, 'hit': 103, 'success_rate': 1.0},
-                '餐厅': {'total': 99, 'hit': 99, 'success_rate': 1.0},
-                '酒店': {'total': 112, 'hit': 112, 'success_rate': 1.0},
-                '火车': {'total': 78, 'hit': 78, 'success_rate': 1.0},
-                '飞机': {'total': 75, 'hit': 75, 'success_rate': 1.0},
-                '天气': {'total': 99, 'hit': 99, 'success_rate': 1.0},
-                '电影': {'total': 78, 'hit': 78, 'success_rate': 1.0},
-                '电视剧': {'total': 78, 'hit': 78, 'success_rate': 1.0},
-                '医院': {'total': 47, 'hit': 47, 'success_rate': 1.0},
-                '电脑': {'total': 47, 'hit': 47, 'success_rate': 1.0},
-                '汽车': {'total': 33, 'hit': 33, 'success_rate': 1.0},
-                '辅导班': {'total': 46, 'hit': 46, 'success_rate': 1.0},
-                'Averaged_task_success': 100.0,
+                'attraction': {'total': 120, 'hit': 104, 'success_rate': 0.8666666666666667},
+                'restaurant': {'total': 120, 'hit': 101, 'success_rate': 0.8416666666666667},
+                'hotel': {'total': 120, 'hit': 60, 'success_rate': 0.5},
+                'train': {'total': 60, 'hit': 39, 'success_rate': 0.65},
+                'flight': {'total': 60, 'hit': 45, 'success_rate': 0.75},
+                'weather': {'total': 90, 'hit': 84, 'success_rate': 0.9333333333333333},
+                'movie': {'total': 60, 'hit': 20, 'success_rate': 0.3333333333333333},
+                'tv': {'total': 60, 'hit': 24, 'success_rate': 0.4},
+                'hospital': {'total': 38, 'hit': 23, 'success_rate': 0.6052631578947368},
+                'pc': {'total': 37, 'hit': 26, 'success_rate': 0.7027027027027027},
+                'car': {'total': 38, 'hit': 20, 'success_rate': 0.5263157894736842},
+                'class': {'total': 37, 'hit': 20, 'success_rate': 0.5405405405405406},
+                'Averaged_task_success': 67.38095238095238,
             },
         ),
     ]

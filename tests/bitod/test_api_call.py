@@ -24,5 +24,4 @@ knowledge = defaultdict(dict)
 dataset = Bitod()
 knowledge_text, constraints = dataset.make_api_call(dialogue_state, knowledge, api_names, src_lang=src_lang)
 
-print(knowledge_text)
 assert gold_knowledge_text == knowledge_text

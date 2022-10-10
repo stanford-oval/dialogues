@@ -21,7 +21,7 @@ dialogue_state = {
     "hotel": {'pricerange': {'relation': 'equal_to', 'value': ['偏贵']}, 'area': {'relation': 'equal_to', 'value': ['吴江']}},
     "attraction": {"name": {'relation': 'equal_to', 'value': ['金鸡湖景区']}},
 }
-src_lang = 'zh_CN'
+src_lang = 'zh'
 knowledge = defaultdict(dict)
 
 dataset = Risawoz()
@@ -35,8 +35,8 @@ gold_knowledge = {
         "hotel_type": "商务出行",
         "room_type": "大床房",
         "parking": "免费",
-        "room_charge": "629元",
-        "address": "苏州吴江区黎里镇南新街5-9号",
+        "room_charge": "629 元",
+        "address": "苏州吴江区黎里镇南新街 5-9 号",
         "phone_number": "180-5181-5602",
         "score": 4.6,
         "available_options": 4,
@@ -50,7 +50,7 @@ gold_knowledge = {
         "metro_station": "是",
         "ticket_price": "免费",
         "phone_number": "400-7558558",
-        "address": "苏州市工业园区星港街158号",
+        "address": "苏州市工业园区星港街 158 号",
         "score": 4.5,
         "opening_hours": "全天",
         "features": "看东方之门等高楼，坐摩天轮，乘船夜游，感受苏州现代化的一面。",

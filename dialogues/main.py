@@ -932,7 +932,10 @@ class WOZDataset(Dataset):
                     pred_turn_id += 1
 
                     pred = predictions[dial_id]["turns"][str(pred_turn_id)]["state"]
-                    pred = self.span2state(pred)
+                    # we record the string in genienlp instead of dict
+                    # add fololoing for backward compatibility
+                    if not isinstance(pred, dict):
+                        pred = self.span2state(pred)
                     pred = {self.domain2api_name(k): v for k, v in pred.items()}
                     gold = turn["state"]
 
@@ -1012,7 +1015,13 @@ class WOZDataset(Dataset):
                         #         )
                         #     )
 
-                        reference_actions.append(self.clean_value(self.action2span(turn["Actions"], intent, setting='en')))
+                        reference_actions.append(
+                            self.clean_value(
+                                self.action2span(
+                                    turn["Actions"], [self.value_mapping.en_API_MAP.get(i, i) for i in intent], setting='en'
+                                )
+                            )
+                        )
 
                         pred_rg = predictions[dial_id]["turns"][str(pred_turn_id)]["response"]
                         if isinstance(pred_rg, list):
