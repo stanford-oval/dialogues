@@ -72,11 +72,26 @@ def convert_to_int(val, strict=False, word2number=False):
             return val
 
 
+# very slow
+def replace_word(input, search, replace):
+    # return input.replace(search, replace)
+    def replace_method(match):
+        if match.group(2) is None:
+            return match.group()
+        return match.group(2).replace(search, replace)
+
+    expr = re.compile(f"(\"[^\"]*\")|( {search}(?:$| ))")
+    return re.sub(expr, replace_method, input)
+
+
 def clean_text(text, is_formal=False):
     text = text.strip()
     text = re.sub(' +', ' ', text)
     text = re.sub('\\n|\\t', ' ', text)
     text = text.replace('，', ',')
+    text = text.replace('，', ',')
+    text = text.replace('？', '?')
+    text = text.replace('！', '!')
 
     if not is_formal:
         text = text.replace('"', '')

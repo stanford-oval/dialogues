@@ -67,7 +67,7 @@ if __name__ == "__main__":
     all_slots = list(risawoz.value_mapping.zh2en_SLOT_MAP.values())
 
     for split in args.splits:
-        with open(os.path.join(args.directory, f"{split}_entity_check.tsv"), 'w+') as f:
+        with open(os.path.join(args.directory, f"{split}_entity_check_{args.version}.tsv"), 'w+') as f:
             for (dial_id, turn_id, input, output, ents) in zip(
                 *get_input_output(
                     ujson.load(open(os.path.join(args.directory, f'{args.setting}_{split}_v{args.version}.json')))

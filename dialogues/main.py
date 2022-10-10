@@ -7,6 +7,7 @@ from collections import OrderedDict, defaultdict
 
 import dictdiffer
 from datasets import load_metric
+from tqdm import tqdm
 
 from dialogues.utils import (
     clean_text,
@@ -16,12 +17,9 @@ from dialogues.utils import (
     is_less_than,
     is_not,
     is_one_of,
+    replace_word,
     zh2en_CARDINAL_MAP,
 )
-
-out_ser = open('out_ser.tsv', 'w')
-out_dst = open('out_dst.tsv', 'w')
-out_da = open('out_da.tsv', 'w')
 
 metric = load_metric("sacrebleu")
 
@@ -39,6 +37,7 @@ class Dataset(object):
         self.db = None
 
         self.FAST_EVAL = False
+        self.DEBUG = True
 
         # regex to extract belief state span from input
         self.state_re = re.compile('')
@@ -54,6 +53,11 @@ class Dataset(object):
 
         self.system_token = ''
         self.user_token = ''
+
+        if self.DEBUG:
+            self.out_ser = open('out_ser.tsv', 'w')
+            self.out_dst = open('out_dst.tsv', 'w')
+            self.out_da = open('out_da.tsv', 'w')
 
     def domain2api_name(self, domain):
         """
@@ -444,7 +448,7 @@ class WOZDataset(Dataset):
         # converts text span to state dict
 
         action = defaultdict(list)
-        re_intent_spans = re.compile('\( (.+?) \)\s?(.+?)(?=$|\( )')
+        re_intent_spans = re.compile('\( (.+?) \) (.+?)(?=$|, \( )')
         re_asrs = re.compile('((?:\S+? ){3}" .+? "|\S*? \S+?(?: ,|$)|\S+?(?: ,|$))')
 
         matches = re_intent_spans.findall(api_span)
@@ -562,7 +566,7 @@ class WOZDataset(Dataset):
         else:
             intents = [intents]
         for intent in intents:
-            intent_action_text = self.action2span_for_single_intent(agent_actions, intent, setting) + ' '
+            intent_action_text = self.action2span_for_single_intent(agent_actions, intent, setting)
             action_text += intent_action_text
         return action_text.strip()  # retain the original output for BiToD
 
@@ -703,7 +707,8 @@ class WOZDataset(Dataset):
                 if pred_dict == ref_dict:
                     da += 1
                 else:
-                    out_da.write(str(pred) + '\t' + str(ref) + '\t' + str(list(dictdiffer.diff(pred, ref))) + '\n')
+                    if self.DEBUG:
+                        self.out_da.write(str(pred) + '\t' + str(ref) + '\t' + str(list(dictdiffer.diff(pred, ref))) + '\n')
 
         return da / len(preds) * 100
 
@@ -714,13 +719,14 @@ class WOZDataset(Dataset):
             missing = False
             if len(values):
                 for val in values:
-                    if val == 'null':
+                    if val in ['null', 'yes', 'no', 'true', 'false', '否', '是']:
                         continue
                     if str(val) not in pred:
                         missing = True
             if missing:
                 ser += 1.0
-                out_ser.write('\t'.join([pred, *values]) + '\n')
+                if self.DEBUG:
+                    self.out_ser.write('\t'.join([pred, *values]) + '\n')
         return ser / len(preds) * 100
 
     def compute_dst_em(self, preds, golds):
@@ -732,9 +738,10 @@ class WOZDataset(Dataset):
             if pred_sets == gold_sets:
                 hit += 1
             else:
-                out_dst.write(
-                    str(pred_sets) + '\t' + str(gold_sets) + '\t' + str(list(dictdiffer.diff(pred_sets, gold_sets))) + '\n'
-                )
+                if self.DEBUG:
+                    self.out_dst.write(
+                        str(pred_sets) + '\t' + str(gold_sets) + '\t' + str(list(dictdiffer.diff(pred_sets, gold_sets))) + '\n'
+                    )
 
         return hit / len(preds) * 100
 
@@ -785,12 +792,12 @@ class WOZDataset(Dataset):
             api_acc = correct_api_call / total_api_call * 100
 
             # success
-            out = ''
+            out = dial_id + '\t'
             dial_success_flag = True
             for response in predictions[dial_id]["turns"].values():
                 responses += response["response"][0] + " "
             responses = self.clean_value(responses)
-            out += responses + '\t'
+            out += responses + '\t' + ';;;' + '\t'
 
             for intent in references[dial_id]["tasks"]:
                 if intent not in task_info:
@@ -798,14 +805,12 @@ class WOZDataset(Dataset):
                 task_success_flag = True
                 task_info[intent]["total"] += 1
 
-                for entity in references[dial_id]["tasks"][intent]["inform+offer"]:
+                for entity in (
+                    references[dial_id]["tasks"][intent]["inform+offer"] + references[dial_id]["tasks"][intent]["confirmation"]
+                ):
                     entity = self.clean_value(entity)
-                    if str(entity) not in responses:
-                        out += str(entity) + ' ; '
-                        task_success_flag = False
-                        break
-                for entity in references[dial_id]["tasks"][intent]["confirmation"]:
-                    entity = self.clean_value(entity)
+                    if entity in ['null', 'yes', 'no', 'true', 'false', '否', '是']:
+                        continue
                     if str(entity) not in responses:
                         out += str(entity) + ' ; '
                         task_success_flag = False
@@ -818,7 +823,8 @@ class WOZDataset(Dataset):
             if dial_success_flag:
                 success_dial += 1
 
-            out_success.write(out + '\n')
+            if out.split(';;;', 1)[1] != '\t':
+                out_success.write(out + '\n')
 
         total_tasks = 0
         success_tasks = 0
@@ -838,18 +844,38 @@ class WOZDataset(Dataset):
         v = v.replace("，", ",")
         v = v.replace('..', '.')
 
+        v = v.replace('；', ';')
+        v = v.replace('。', '')
+
         # am, pm
         v = re.sub('(\d+)(?:[\.:](\d+))?\s?(?:pm )?(afternoon|in the afternoon|pm in the afternoon)', r'\1:\2 pm', v)
         v = re.sub('(\d+)(?:[\.:](\d+))?\s?(morning|in the morning|am in the morning)', r'\1:\2 am', v)
         v = re.sub('(\d+)(?:[\.:](\d+))?\s?(am|pm)', r'\1:\2 \3', v)
 
+        v = re.sub('(\d+)\s?年\s?(\d+)\s?月\s?(\d+)', r'\1/\2/\3', v)
+        if len(v) < 580:
+            v = re.sub('(\d+)-?(\d+)?-?(\d+)?\s?\( (?:中国香港|中国大陆|韩国) \)?', r'\1/\2/\3', v)
+
+        v = re.sub('(\d+)/0?(\d+)/0?(\d+)', r'\1/\2/\3', v)
+        v = re.sub('(\d+)-0?(\d+)-0?(\d+)', r'\1/\2/\3', v)
+
+        v = re.sub('(.*?) and (.*?) and (.*?)', r'\1,\2,\3', v)
+
+        v = re.sub('(\d+)\.0', r'\1', v)
+
         # & --> and
-        v = re.sub(' [\&\/] ', ' and ', v)
+        if self.name == 'bitod':
+            v = re.sub(' [\&\/] ', ' and ', v)
+        elif self.name == 'risawoz':
+            v = re.sub(' \/ ', ',', v)
+
         v = re.sub('\s+', ' ', v)
 
         # remove extra dot in the end
         v = re.sub('(\d+)\.$', r'\1', v)
         v = re.sub('(\w+)\.$', r'\1', v)
+
+        v = re.sub('(\w+)[。！？]$', r'\1', v)
 
         # 3rd of january --> januray 3
         v = re.sub('(\d+)(?:th|rd|st|nd) of (\w+)', r'\2 \1', v)
@@ -892,6 +918,8 @@ class WOZDataset(Dataset):
                             new_constraints[k][i] = self.clean_value(j, do_int=True)
                 else:
                     new_constraints[k] = self.clean_value(v, do_int=True)
+        if new_constraints is None:
+            new_constraints = {}
         return new_constraints
 
     def compute_result(self, predictions, reference_data):
@@ -904,6 +932,11 @@ class WOZDataset(Dataset):
                     pred_turn_id += 1
 
                     pred = predictions[dial_id]["turns"][str(pred_turn_id)]["state"]
+                    # we record the string in genienlp instead of dict
+                    # add fololoing for backward compatibility
+                    if not isinstance(pred, dict):
+                        pred = self.span2state(pred)
+                    pred = {self.domain2api_name(k): v for k, v in pred.items()}
                     gold = turn["state"]
 
                     preds.append(pred)
@@ -917,6 +950,7 @@ class WOZDataset(Dataset):
         reference_response = []
         predicted_response = []
         predicted_actions = []
+        act_sets = set()
         for dial_id in reference_data:
             if dial_id not in reference_task_success:
                 reference_task_success[dial_id]["tasks"] = {
@@ -966,20 +1000,28 @@ class WOZDataset(Dataset):
                             act_values = set([self.clean_value(val) for val in act_values])
                         reference_act_values.append(act_values)
 
-                        for i in range(len(intent)):
-                            # for RiSAWOZ: filter turn actions with current intent
-                            turn_actions = (
-                                [action for action in turn["Actions"] if action["domain"] == intent[i]]
-                                if len(intent) > 1
-                                else turn["Actions"]
-                            )
-                            reference_actions.append(
-                                self.clean_value(
-                                    self.action2span(
-                                        turn_actions, self.value_mapping.en_API_MAP.get(intent[i], intent[i]), 'en'
-                                    )
+                        # for i in range(len(intent)):
+                        #     # for RiSAWOZ: filter turn actions with current intent
+                        #     turn_actions = (
+                        #         [action for action in turn["Actions"] if action["domain"] == intent[i]]
+                        #         if len(intent) > 1
+                        #         else turn["Actions"]
+                        #     )
+                        #     reference_actions.append(
+                        #         self.clean_value(
+                        #             self.action2span(
+                        #                 turn_actions, self.value_mapping.en_API_MAP.get(intent[i], intent[i]), 'en'
+                        #             )
+                        #         )
+                        #     )
+
+                        reference_actions.append(
+                            self.clean_value(
+                                self.action2span(
+                                    turn["Actions"], [self.value_mapping.en_API_MAP.get(i, i) for i in intent], setting='en'
                                 )
                             )
+                        )
 
                         pred_rg = predictions[dial_id]["turns"][str(pred_turn_id)]["response"]
                         if isinstance(pred_rg, list):
@@ -999,9 +1041,13 @@ class WOZDataset(Dataset):
 
                         # For each task, the last value for each slot are considered as final requested information from user
                         for action in turn["Actions"]:
+                            if action["act"].lower() not in act_sets:
+                                print(action["act"].lower())
+                                act_sets.add(action["act"].lower())
                             trans_slot = action["slot"]
+                            # should we include "recommend" ?
                             if (
-                                (action["act"] in ["inform", "offer"])
+                                (action["act"].lower() in ["inform", "offer"])
                                 and (len(action["value"]) > 0)
                                 and action["slot"] != "available_options"
                                 and action["slot"] != "可用选项"
@@ -1015,21 +1061,21 @@ class WOZDataset(Dataset):
                                 assert len(intent) == 1
                                 confirm_info[intent[0]][trans_slot] = action["value"]
             for intent, slot_values in user_requested_info.items():
-                if intent in ["通用"]:  # for RiSAWOZ
+                if intent in ["general"]:  # for RiSAWOZ
                     continue
                 for values in slot_values.values():
                     reference_task_success[dial_id]["tasks"][intent]["inform+offer"] += values
             for intent, slot_values in confirm_info.items():
-                if intent in ["通用"]:  # for RiSAWOZ
+                if intent in ["general"]:  # for RiSAWOZ
                     continue
                 for values in slot_values.values():
                     reference_task_success[dial_id]["tasks"][intent]["confirmation"] += values
 
+        success_rate, api_acc, task_info = self.compute_success_rate(predictions, reference_task_success)
+
         bleu = self.compute_bleu(predicted_response, reference_response)
         ser = self.compute_ser(predicted_response, reference_act_values)
         da_acc = self.compute_da(predicted_actions, reference_actions)
-
-        success_rate, api_acc, task_info = self.compute_success_rate(predictions, reference_task_success)
 
         return OrderedDict(
             {
@@ -1066,9 +1112,9 @@ class WOZDataset(Dataset):
         if not do_translate:
             return text
         for key, val in self.value_mapping.translation_dict.items():
-            text = text.replace(key, val)
+            text = replace_word(text, key, val)
         for key, val in self.value_mapping.zh_API_MAP.items():
-            text = text.replace(key, val)
+            text = replace_word(text, key, val)
         for key, val in zh2en_CARDINAL_MAP.items():
             text = text.replace(f'" {key} "', f'" {val} "')
         return text
@@ -1153,7 +1199,7 @@ class WOZDataset(Dataset):
                 dials = json.load(file)
 
                 data = []
-                for dial_id, dial in dials.items():
+                for dial_id, dial in tqdm(dials.items()):
                     dialogue_turns = dial["Events"]
 
                     dialog_history = []
@@ -1172,9 +1218,7 @@ class WOZDataset(Dataset):
                                 turn["active_intent"] = [turn["active_intent"]]
 
                             intents = [self.value_mapping.API_MAP[intent] for intent in turn["active_intent"]]
-                            task = ' / '.join(
-                                [self.translate_slots_to_english(intent, args.english_slots) for intent in intents]
-                            )
+                            task = ' / '.join([self.value_mapping.zh2en_INTENT_MAP.get(intent, intent) for intent in intents])
 
                             # accumulate dialogue utterances
                             if args.use_user_acts:
@@ -1239,6 +1283,8 @@ class WOZDataset(Dataset):
                                 ]
                             )
 
+                            input_text = clean_text(input_text, True)
+
                             dst_data_detail = {
                                 "dial_id": dial_id,
                                 "task": task,
@@ -1279,6 +1325,8 @@ class WOZDataset(Dataset):
                                 ]
                             )
 
+                            input_text = clean_text(input_text, True)
+
                             if turn["Actions"] == "query":
                                 # do api call
                                 # next turn is KnowledgeBase
@@ -1292,6 +1340,11 @@ class WOZDataset(Dataset):
                                     for intent in intents:
                                         if intent in next_turn["Item"]:
                                             knowledge[intent].update(next_turn["Item"][intent])
+                                        # general intent, 1 erroneous turn in zh_train
+                                        elif self.name == 'risawoz':
+                                            if intent != 'general':
+                                                print(f'intent: {intent} not found in next_turn KB. skipping...')
+                                            continue
                                         else:
                                             knowledge[intent].update(next_turn["Item"])
 
@@ -1340,6 +1393,8 @@ class WOZDataset(Dataset):
                                     "<endofhistory>",
                                 ]
                             )
+
+                            input_text = clean_text(input_text, True)
 
                             target = clean_text(turn["Text"])
 

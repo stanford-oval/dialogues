@@ -20,6 +20,8 @@ class Risawoz(WOZDataset):
 
         self.value_mapping = RisawozMapping()
 
+        self._warnings = set()
+
     def domain2api_name(self, domain):
         return domain
 
@@ -28,7 +30,7 @@ class Risawoz(WOZDataset):
         dialogue_state,
         knowledge,
         api_names,
-        src_lang='zh_CN',
+        src_lang='zh',
         dial_id=None,
         turn_id=None,
     ):
@@ -50,10 +52,10 @@ class Risawoz(WOZDataset):
             )
         for api_name in result.keys():
             if int(len(result[api_name])) <= 0:
-                logger.warning(
-                    f'Message = No item available for api_name: {api_name}, constraints: {constraints},'
-                    f' for turn: {dial_id}/{turn_id}'
-                )
+                warning = f'Message = No item available for api_name: {api_name}, constraints: {constraints}'
+                if warning not in self._warnings:
+                    logger.warning(warning + f', for turn: {dial_id}/{turn_id}')
+                    self._warnings.add(warning)
                 new_knowledge_text = f'( {api_name} ) Message = No item available.'
                 # new_knowledge_text = 'null'
             else:

@@ -1,0 +1,630 @@
+
+    {
+        "city":"Mumbai",
+        "date":"next Friday",
+        "weather_condition":"light rain",
+        "temperature":"The maximum temperature will be 25 degrees Celsius, and the minimum temperature will be 24 degrees Celsius.",
+        "wind":"south 2",
+        "UV_intensity":"high"
+    }
+
+    {
+        "city":"Delhi",
+        "date":"next Tuesday",
+        "weather_condition":"cloudy and later light rain",
+        "temperature":"The maximum temperature will be 33 degrees Celsius, and the minimum temperature will be 22 degrees Celsius.",
+        "wind":"north 3",
+        "UV_intensity":"fair"
+    }
+
+    {
+        "city":"Bangalore",
+        "date":"next Thursday",
+        "weather_condition":"overcast and later showers",
+        "temperature":"The maximum temperature will be 26 degrees Celsius, and the minimum temperature will be 25 degrees Celsius.",
+        "wind":"northwest 2-3",
+        "UV_intensity":"high"
+    }
+
+    {
+        "city":"Hyderabad",
+        "date":"next Sunday",
+        "weather_condition":"cloudy and later sunny",
+        "temperature":"The maximum temperature will be 31 degrees Celsius, and the minimum temperature will be 21 degrees Celsius.",
+        "wind":"south 1",
+        "UV_intensity":"fair"
+    }
+
+    {
+        "city":"Ahmedabad",
+        "date":"next Wednesday",
+        "weather_condition":"Sunny",
+        "temperature":"The maximum temperature will be 33 degrees Celsius, and the minimum temperature will be 20 degrees Celsius.",
+        "wind":"east 4",
+        "UV_intensity":"very high"
+    }
+
+    {
+        "city":"Chennai",
+        "date":"next Friday",
+        "weather_condition":"sunny and later cloudy",
+        "temperature":"The maximum temperature will be 26 degrees Celsius, and the minimum temperature will be 20 degrees Celsius.",
+        "wind":"southeast 2",
+        "UV_intensity":"high"
+    }
+
+    {
+        "city":"Kolkata",
+        "date":"next Wednesday",
+        "weather_condition":"light rain",
+        "temperature":"The maximum temperature will be 31 degrees Celsius, and the minimum temperature will be 23 degrees Celsius.",
+        "wind":"north 3-4",
+        "UV_intensity":"very high"
+    }
+
+    {
+        "city":"Surat",
+        "date":"next Tuesday",
+        "weather_condition":"light rain and later cloudy",
+        "temperature":"The maximum temperature will be 27 degrees Celsius, and the minimum temperature will be 20 degrees Celsius.",
+        "wind":"southwest 4",
+        "UV_intensity":"very high"
+    }
+
+    {
+        "city":"Pune",
+        "date":"next Tuesday",
+        "weather_condition":"sunny and later cloudy",
+        "temperature":"The maximum temperature will be 27 degrees Celsius, and the minimum temperature will be 23 degrees Celsius.",
+        "wind":"northwest 3",
+        "UV_intensity":"fair"
+    }
+
+    {
+        "city":"Jaipur",
+        "date":"next Tuesday",
+        "weather_condition":"cloudy",
+        "temperature":"The maximum temperature will be 33 degrees Celsius, and the minimum temperature will be 25 degrees Celsius.",
+        "wind":"south 3",
+        "UV_intensity":"very high"
+    }
+
+    {
+        "city":"Lucknow",
+        "date":"next Tuesday",
+        "weather_condition":"Sunny",
+        "temperature":"The maximum temperature will be 29 degrees Celsius, and the minimum temperature will be 23 degrees Celsius.",
+        "wind":"northeast 2-3",
+        "UV_intensity":"high"
+    }
+
+    {
+        "city":"Kanpur",
+        "date":"next Thursday",
+        "weather_condition":"overcast and later showers",
+        "temperature":"The maximum temperature will be 35 degrees Celsius, and the minimum temperature will be 21 degrees Celsius.",
+        "wind":"southwest 2-3",
+        "UV_intensity":"fair"
+    }
+
+    {
+        "city":"Nagpur",
+        "date":"next Friday",
+        "weather_condition":"overcast and later showers",
+        "temperature":"The maximum temperature will be 26 degrees Celsius, and the minimum temperature will be 21 degrees Celsius.",
+        "wind":"southeast 3-4",
+        "UV_intensity":"fair"
+    }
+
+    {
+        "city":"Indore",
+        "date":"next Thursday",
+        "weather_condition":"sunny and later cloudy",
+        "temperature":"The maximum temperature will be 31 degrees Celsius, and the minimum temperature will be 24 degrees Celsius.",
+        "wind":"northwest 2-3",
+        "UV_intensity":"fair"
+    }
+
+    {
+        "city":"Thane",
+        "date":"next Thursday",
+        "weather_condition":"sunny and later cloudy",
+        "temperature":"The maximum temperature will be 33 degrees Celsius, and the minimum temperature will be 23 degrees Celsius.",
+        "wind":"west 4",
+        "UV_intensity":"weak"
+    }
+
+    {
+        "city":"Bhopal",
+        "date":"next Sunday",
+        "weather_condition":"cloudy",
+        "temperature":"The maximum temperature will be 32 degrees Celsius, and the minimum temperature will be 24 degrees Celsius.",
+        "wind":"west 1",
+        "UV_intensity":"very high"
+    }
+
+    {
+        "city":"Visakhapatnam",
+        "date":"next Monday",
+        "weather_condition":"sunny and later cloudy",
+        "temperature":"The maximum temperature will be 26 degrees Celsius, and the minimum temperature will be 24 degrees Celsius.",
+        "wind":"southeast 4",
+        "UV_intensity":"high"
+    }
+
+    {
+        "city":"Pimpri-Chinchwad",
+        "date":"next Thursday",
+        "weather_condition":"light rain",
+        "temperature":"The maximum temperature will be 33 degrees Celsius, and the minimum temperature will be 23 degrees Celsius.",
+        "wind":"northwest 3-4",
+        "UV_intensity":"very high"
+    }
+
+    {
+        "city":"Patna",
+        "date":"next Sunday",
+        "weather_condition":"overcast and later showers",
+        "temperature":"The maximum temperature will be 31 degrees Celsius, and the minimum temperature will be 22 degrees Celsius.",
+        "wind":"east 3-4",
+        "UV_intensity":"high"
+    }
+
+    {
+        "city":"Vadodara",
+        "date":"next Wednesday",
+        "weather_condition":"cloudy",
+        "temperature":"The maximum temperature will be 35 degrees Celsius, and the minimum temperature will be 21 degrees Celsius.",
+        "wind":"southeast 1",
+        "UV_intensity":"weak"
+    }
+
+    {
+        "city":"Ghaziabad",
+        "date":"next Wednesday",
+        "weather_condition":"light rain",
+        "temperature":"The maximum temperature will be 28 degrees Celsius, and the minimum temperature will be 25 degrees Celsius.",
+        "wind":"southwest 1",
+        "UV_intensity":"weak"
+    }
+
+    {
+        "city":"Ludhiana",
+        "date":"next Friday",
+        "weather_condition":"light rain and later cloudy",
+        "temperature":"The maximum temperature will be 26 degrees Celsius, and the minimum temperature will be 22 degrees Celsius.",
+        "wind":"east 3-4",
+        "UV_intensity":"fair"
+    }
+
+    {
+        "city":"Agra",
+        "date":"next Tuesday",
+        "weather_condition":"cloudy and later overcast",
+        "temperature":"The maximum temperature will be 34 degrees Celsius, and the minimum temperature will be 23 degrees Celsius.",
+        "wind":"north 3",
+        "UV_intensity":"high"
+    }
+
+    {
+        "city":"Nashik",
+        "date":"next Monday",
+        "weather_condition":"cloudy and later sunny",
+        "temperature":"The maximum temperature will be 31 degrees Celsius, and the minimum temperature will be 21 degrees Celsius.",
+        "wind":"west 3-4",
+        "UV_intensity":"very high"
+    }
+
+    {
+        "city":"Faridabad",
+        "date":"next Thursday",
+        "weather_condition":"light rain and later cloudy",
+        "temperature":"The maximum temperature will be 31 degrees Celsius, and the minimum temperature will be 23 degrees Celsius.",
+        "wind":"north 3",
+        "UV_intensity":"very high"
+    }
+
+    {
+        "city":"Meerut",
+        "date":"next Monday",
+        "weather_condition":"cloudy",
+        "temperature":"The maximum temperature will be 28 degrees Celsius, and the minimum temperature will be 23 degrees Celsius.",
+        "wind":"northeast 4",
+        "UV_intensity":"high"
+    }
+
+    {
+        "city":"Rajkot",
+        "date":"next Monday",
+        "weather_condition":"light rain",
+        "temperature":"The maximum temperature will be 26 degrees Celsius, and the minimum temperature will be 20 degrees Celsius.",
+        "wind":"northwest 3",
+        "UV_intensity":"very high"
+    }
+
+    {
+        "city":"Kalyan-Dombivli",
+        "date":"next Thursday",
+        "weather_condition":"light rain",
+        "temperature":"The maximum temperature will be 28 degrees Celsius, and the minimum temperature will be 25 degrees Celsius.",
+        "wind":"southwest 4",
+        "UV_intensity":"very high"
+    }
+
+    {
+        "city":"Vasai-Virar",
+        "date":"next Friday",
+        "weather_condition":"overcast and later showers",
+        "temperature":"The maximum temperature will be 33 degrees Celsius, and the minimum temperature will be 22 degrees Celsius.",
+        "wind":"northeast 4",
+        "UV_intensity":"very high"
+    }
+
+    {
+        "city":"Varanasi",
+        "date":"next Wednesday",
+        "weather_condition":"cloudy and later light rain",
+        "temperature":"The maximum temperature will be 32 degrees Celsius, and the minimum temperature will be 23 degrees Celsius.",
+        "wind":"southeast 2-3",
+        "UV_intensity":"fair"
+    }
+
+    {
+        "city":"Srinagar",
+        "date":"next Monday",
+        "weather_condition":"light rain and later cloudy",
+        "temperature":"The maximum temperature will be 30 degrees Celsius, and the minimum temperature will be 25 degrees Celsius.",
+        "wind":"northeast 2",
+        "UV_intensity":"fair"
+    }
+
+    {
+        "city":"Aurangabad",
+        "date":"next Saturday",
+        "weather_condition":"Sunny",
+        "temperature":"The maximum temperature will be 34 degrees Celsius, and the minimum temperature will be 25 degrees Celsius.",
+        "wind":"southwest 1",
+        "UV_intensity":"very high"
+    }
+
+    {
+        "city":"Dhanbad",
+        "date":"next Saturday",
+        "weather_condition":"cloudy and later overcast",
+        "temperature":"The maximum temperature will be 26 degrees Celsius, and the minimum temperature will be 25 degrees Celsius.",
+        "wind":"northeast 2-3",
+        "UV_intensity":"very high"
+    }
+
+    {
+        "city":"Amritsar",
+        "date":"next Wednesday",
+        "weather_condition":"sunny and later cloudy",
+        "temperature":"The maximum temperature will be 28 degrees Celsius, and the minimum temperature will be 21 degrees Celsius.",
+        "wind":"southwest 1",
+        "UV_intensity":"weak"
+    }
+
+    {
+        "city":"Navi Mumbai",
+        "date":"next Tuesday",
+        "weather_condition":"Sunny",
+        "temperature":"The maximum temperature will be 31 degrees Celsius, and the minimum temperature will be 21 degrees Celsius.",
+        "wind":"southeast 2-3",
+        "UV_intensity":"weak"
+    }
+
+    {
+        "city":"Allahabad",
+        "date":"next Thursday",
+        "weather_condition":"cloudy and later sunny",
+        "temperature":"The maximum temperature will be 30 degrees Celsius, and the minimum temperature will be 24 degrees Celsius.",
+        "wind":"north 2-3",
+        "UV_intensity":"very high"
+    }
+
+    {
+        "city":"Howrah",
+        "date":"next Sunday",
+        "weather_condition":"cloudy",
+        "temperature":"The maximum temperature will be 35 degrees Celsius, and the minimum temperature will be 25 degrees Celsius.",
+        "wind":"south 1",
+        "UV_intensity":"very high"
+    }
+
+    {
+        "city":"Ranchi",
+        "date":"next Sunday",
+        "weather_condition":"light rain",
+        "temperature":"The maximum temperature will be 30 degrees Celsius, and the minimum temperature will be 24 degrees Celsius.",
+        "wind":"east 2",
+        "UV_intensity":"weak"
+    }
+
+    {
+        "city":"Gwalior",
+        "date":"next Friday",
+        "weather_condition":"cloudy and later overcast",
+        "temperature":"The maximum temperature will be 27 degrees Celsius, and the minimum temperature will be 20 degrees Celsius.",
+        "wind":"northwest 1",
+        "UV_intensity":"fair"
+    }
+
+    {
+        "city":"Jabalpur",
+        "date":"next Thursday",
+        "weather_condition":"cloudy and later overcast",
+        "temperature":"The maximum temperature will be 25 degrees Celsius, and the minimum temperature will be 21 degrees Celsius.",
+        "wind":"southeast 3-4",
+        "UV_intensity":"fair"
+    }
+
+    {
+        "city":"Coimbatore",
+        "date":"next Friday",
+        "weather_condition":"overcast and later showers",
+        "temperature":"The maximum temperature will be 32 degrees Celsius, and the minimum temperature will be 24 degrees Celsius.",
+        "wind":"east 3",
+        "UV_intensity":"fair"
+    }
+
+    {
+        "city":"Vijayawada",
+        "date":"next Sunday",
+        "weather_condition":"cloudy and later overcast",
+        "temperature":"The maximum temperature will be 33 degrees Celsius, and the minimum temperature will be 24 degrees Celsius.",
+        "wind":"southeast 4",
+        "UV_intensity":"high"
+    }
+
+    {
+        "city":"Jodhpur",
+        "date":"next Monday",
+        "weather_condition":"light rain",
+        "temperature":"The maximum temperature will be 35 degrees Celsius, and the minimum temperature will be 21 degrees Celsius.",
+        "wind":"south 2",
+        "UV_intensity":"high"
+    }
+
+    {
+        "city":"Madurai",
+        "date":"next Friday",
+        "weather_condition":"light rain",
+        "temperature":"The maximum temperature will be 30 degrees Celsius, and the minimum temperature will be 24 degrees Celsius.",
+        "wind":"northeast 1",
+        "UV_intensity":"weak"
+    }
+
+    {
+        "city":"Raipur",
+        "date":"next Tuesday",
+        "weather_condition":"cloudy and later light rain",
+        "temperature":"The maximum temperature will be 28 degrees Celsius, and the minimum temperature will be 20 degrees Celsius.",
+        "wind":"east 1",
+        "UV_intensity":"very high"
+    }
+
+    {
+        "city":"Kota",
+        "date":"next Sunday",
+        "weather_condition":"sunny and later cloudy",
+        "temperature":"The maximum temperature will be 29 degrees Celsius, and the minimum temperature will be 20 degrees Celsius.",
+        "wind":"northeast 2-3",
+        "UV_intensity":"fair"
+    }
+
+    {
+        "city":"Chandigarh",
+        "date":"next Monday",
+        "weather_condition":"cloudy and later overcast",
+        "temperature":"The maximum temperature will be 28 degrees Celsius, and the minimum temperature will be 23 degrees Celsius.",
+        "wind":"east 2",
+        "UV_intensity":"fair"
+    }
+
+    {
+        "city":"Guwahati",
+        "date":"next Sunday",
+        "weather_condition":"overcast and later showers",
+        "temperature":"The maximum temperature will be 30 degrees Celsius, and the minimum temperature will be 20 degrees Celsius.",
+        "wind":"east 2",
+        "UV_intensity":"fair"
+    }
+
+    {
+        "city":"Solapur",
+        "date":"next Tuesday",
+        "weather_condition":"light rain and later cloudy",
+        "temperature":"The maximum temperature will be 35 degrees Celsius, and the minimum temperature will be 25 degrees Celsius.",
+        "wind":"northeast 1",
+        "UV_intensity":"fair"
+    }
+
+    {
+        "city":"Hubli\u2013Dharwad",
+        "date":"next Sunday",
+        "weather_condition":"Sunny",
+        "temperature":"The maximum temperature will be 28 degrees Celsius, and the minimum temperature will be 20 degrees Celsius.",
+        "wind":"northeast 3-4",
+        "UV_intensity":"very high"
+    }
+
+    {
+        "city":"Mysore",
+        "date":"next Saturday",
+        "weather_condition":"cloudy and later light rain",
+        "temperature":"The maximum temperature will be 33 degrees Celsius, and the minimum temperature will be 25 degrees Celsius.",
+        "wind":"west 3",
+        "UV_intensity":"fair"
+    }
+
+    {
+        "city":"Tiruchirappalli",
+        "date":"next Friday",
+        "weather_condition":"cloudy and later sunny",
+        "temperature":"The maximum temperature will be 33 degrees Celsius, and the minimum temperature will be 22 degrees Celsius.",
+        "wind":"south 3-4",
+        "UV_intensity":"high"
+    }
+
+    {
+        "city":"Bareilly",
+        "date":"next Saturday",
+        "weather_condition":"light rain",
+        "temperature":"The maximum temperature will be 28 degrees Celsius, and the minimum temperature will be 20 degrees Celsius.",
+        "wind":"southeast 1",
+        "UV_intensity":"fair"
+    }
+
+    {
+        "city":"Aligarh",
+        "date":"next Friday",
+        "weather_condition":"cloudy and later sunny",
+        "temperature":"The maximum temperature will be 29 degrees Celsius, and the minimum temperature will be 22 degrees Celsius.",
+        "wind":"west 2",
+        "UV_intensity":"weak"
+    }
+
+    {
+        "city":"Tiruppur",
+        "date":"next Monday",
+        "weather_condition":"light rain",
+        "temperature":"The maximum temperature will be 25 degrees Celsius, and the minimum temperature will be 20 degrees Celsius.",
+        "wind":"northeast 3",
+        "UV_intensity":"high"
+    }
+
+    {
+        "city":"Gurgaon",
+        "date":"next Saturday",
+        "weather_condition":"cloudy",
+        "temperature":"The maximum temperature will be 30 degrees Celsius, and the minimum temperature will be 22 degrees Celsius.",
+        "wind":"southeast 2",
+        "UV_intensity":"weak"
+    }
+
+    {
+        "city":"Moradabad",
+        "date":"next Tuesday",
+        "weather_condition":"sunny and later cloudy",
+        "temperature":"The maximum temperature will be 29 degrees Celsius, and the minimum temperature will be 21 degrees Celsius.",
+        "wind":"north 2",
+        "UV_intensity":"fair"
+    }
+
+    {
+        "city":"Jalandhar",
+        "date":"next Friday",
+        "weather_condition":"light rain and later cloudy",
+        "temperature":"The maximum temperature will be 34 degrees Celsius, and the minimum temperature will be 24 degrees Celsius.",
+        "wind":"northeast 2-3",
+        "UV_intensity":"weak"
+    }
+
+    {
+        "city":"Bhubaneswar",
+        "date":"next Tuesday",
+        "weather_condition":"cloudy",
+        "temperature":"The maximum temperature will be 26 degrees Celsius, and the minimum temperature will be 20 degrees Celsius.",
+        "wind":"south 3-4",
+        "UV_intensity":"high"
+    }
+
+    {
+        "city":"Salem",
+        "date":"next Monday",
+        "weather_condition":"light rain",
+        "temperature":"The maximum temperature will be 26 degrees Celsius, and the minimum temperature will be 20 degrees Celsius.",
+        "wind":"northeast 3-4",
+        "UV_intensity":"high"
+    }
+
+    {
+        "city":"Warangal",
+        "date":"next Friday",
+        "weather_condition":"light rain",
+        "temperature":"The maximum temperature will be 25 degrees Celsius, and the minimum temperature will be 24 degrees Celsius.",
+        "wind":"east 1",
+        "UV_intensity":"fair"
+    }
+
+    {
+        "city":"Mira-Bhayandar",
+        "date":"next Friday",
+        "weather_condition":"overcast and later showers",
+        "temperature":"The maximum temperature will be 32 degrees Celsius, and the minimum temperature will be 22 degrees Celsius.",
+        "wind":"east 1",
+        "UV_intensity":"fair"
+    }
+
+    {
+        "city":"Jalgaon",
+        "date":"next Saturday",
+        "weather_condition":"overcast and later showers",
+        "temperature":"The maximum temperature will be 32 degrees Celsius, and the minimum temperature will be 25 degrees Celsius.",
+        "wind":"northwest 3-4",
+        "UV_intensity":"weak"
+    }
+
+    {
+        "city":"Guntur",
+        "date":"next Tuesday",
+        "weather_condition":"cloudy and later light rain",
+        "temperature":"The maximum temperature will be 29 degrees Celsius, and the minimum temperature will be 21 degrees Celsius.",
+        "wind":"west 4",
+        "UV_intensity":"weak"
+    }
+
+    {
+        "city":"Thiruvananthapuram",
+        "date":"next Tuesday",
+        "weather_condition":"cloudy and later light rain",
+        "temperature":"The maximum temperature will be 26 degrees Celsius, and the minimum temperature will be 24 degrees Celsius.",
+        "wind":"southwest 2",
+        "UV_intensity":"weak"
+    }
+
+    {
+        "city":"Bhiwandi",
+        "date":"next Friday",
+        "weather_condition":"Sunny",
+        "temperature":"The maximum temperature will be 29 degrees Celsius, and the minimum temperature will be 25 degrees Celsius.",
+        "wind":"northwest 1",
+        "UV_intensity":"very high"
+    }
+
+    {
+        "city":"Saharanpur",
+        "date":"next Saturday",
+        "weather_condition":"light rain and later cloudy",
+        "temperature":"The maximum temperature will be 31 degrees Celsius, and the minimum temperature will be 24 degrees Celsius.",
+        "wind":"east 3-4",
+        "UV_intensity":"weak"
+    }
+
+    {
+        "city":"Gorakhpur",
+        "date":"next Saturday",
+        "weather_condition":"cloudy",
+        "temperature":"The maximum temperature will be 34 degrees Celsius, and the minimum temperature will be 20 degrees Celsius.",
+        "wind":"north 2-3",
+        "UV_intensity":"weak"
+    }
+
+    {
+        "city":"Bikaner",
+        "date":"next Tuesday",
+        "weather_condition":"sunny and later cloudy",
+        "temperature":"The maximum temperature will be 29 degrees Celsius, and the minimum temperature will be 25 degrees Celsius.",
+        "wind":"northeast 2",
+        "UV_intensity":"weak"
+    }
+
+    {
+        "city":"Amravati",
+        "date":"next Wednesday",
+        "weather_condition":"light rain and later cloudy",
+        "temperature":"The maximum temperature will be 35 degrees Celsius, and the minimum temperature will be 25 degrees Celsius.",
+        "wind":"west 4",
+        "UV_intensity":"very high"
+    }

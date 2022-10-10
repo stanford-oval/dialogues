@@ -24,14 +24,28 @@ class RisawozMapping(object):
         self.reverse_entity_map = keydefaultdict(lambda k: k)
 
         cur_dir = os.path.dirname(os.path.abspath(__file__))
-        with open(os.path.join(cur_dir, "mappings/zh2en_alignment.json")) as f:
+        with open(os.path.join(cur_dir, "mappings/en2canonical.json")) as f:
+            en2canonical_tmp = json.load(f)
+        en2canonical = {}
+        for domain, items in en2canonical_tmp.items():
+            for slot, values in items.items():
+                for canon, vals in values.items():
+                    if isinstance(vals, list):
+                        for val in vals:
+                            en2canonical[val] = canon
+                    else:
+                        assert isinstance(vals, str)
+                        en2canonical[vals] = canon
+        self.en2canonical = en2canonical
+
+        cur_dir = os.path.dirname(os.path.abspath(__file__))
+        with open(os.path.join(cur_dir, "mappings/zh2en_alignment_new.json")) as f:
             zh2en_alignment = json.load(f)
         zh2en_value = {}
         for domain, items in zh2en_alignment.items():
             for slot, values in items.items():
                 for zh_val, en_vals in values.items():
-                    # we choose first value as the canonical one
-                    zh2en_value[zh_val] = en_vals[0]
+                    zh2en_value[zh_val] = en_vals
 
         self.zh2en_VALUE_MAP = zh2en_value
         self.en2zh_VALUE_MAP = {v: k for k, v in self.zh2en_VALUE_MAP.items()}
@@ -159,6 +173,9 @@ class RisawozMapping(object):
         }
         self.en2zh_DOMAIN_MAP = {v: k for k, v in self.zh2en_DOMAIN_MAP.items()}
 
+        self.zh2en_INTENT_MAP = self.zh2en_DOMAIN_MAP
+        self.en2zh_INTENT_MAP = self.en2zh_DOMAIN_MAP
+
         # TODO: update below
         self.required_slots = {
             **{k: [] for k, v in self.DOMAIN_SLOT_MAP.items()},
@@ -267,7 +284,7 @@ class RisawozMapping(object):
             '待机时长': 'standby_time',
             '色系': 'colour',
             '硬盘容量': 'hard_disk_capacity',
-            'CPU': 'CPU_model',
+            'CPU': 'CPU',
             '显卡类别': 'GPU_category',
             '首播时间': 'premiere_time',
             '集数': 'episodes',

@@ -1,4 +1,5 @@
 import argparse
+import json
 
 from dialogues import Risawoz
 
@@ -33,5 +34,9 @@ args.dataset_name = 'risawoz'
 
 dataset = Risawoz()
 train, fewshot, dev, test = dataset.process_data(args)
-print(len(dev))
+
+with open('./tests/risawoz/data/valid.json') as fin:
+    gold_data = json.load(fin)
+
 assert len(dev) == 16232
+assert dev == gold_data
