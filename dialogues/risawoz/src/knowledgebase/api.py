@@ -16,7 +16,9 @@ def call_api(db, api_names, constraints, lang, value_mapping, actions=None):
         else:
             domain_constraints = copy.deepcopy(constraints[api])
 
-        domain_constraints = {k: value_mapping.en2canonical.get(v, v) for k, v in domain_constraints.items()}
+        domain_constraints = {
+            k: process_string(value_mapping.en2canonical.get(v, v), lang) for k, v in domain_constraints.items()
+        }
 
         if api == 'car':
             if 'number_of_seats' in domain_constraints:

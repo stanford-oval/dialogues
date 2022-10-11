@@ -155,7 +155,15 @@ def build_wizard_event(turn, setting, mode="normal"):
     return event
 
 
-def build_kb_event(wizard_query_event, db, actions, expected_num_results, setting):
+DIALOGUES_WITH_ISSUE = {
+    ('attraction_restaurant_hotel_goal_1-40###5116', 2),
+    ('movie_tv_goal_2-67_v2###2464', 5),
+    ('tv_goal_1-11_v2###9693', 0),
+    ('movie_tv_goal_5-16', 1),
+}
+
+
+def build_kb_event(wizard_query_event, db, actions, expected_num_results, setting, dial_id, turn_id):
     event = {"Agent": "KnowledgeBase"}
     constraints = wizard_query_event["Constraints"]
     for d in constraints:
@@ -165,7 +173,9 @@ def build_kb_event(wizard_query_event, db, actions, expected_num_results, settin
     event["TotalItems"] = sum(item.get("available_options", 0) for api, item in knowledge.items())
     for api, item in knowledge.items():
         if item.get("available_options", 0) < expected_num_results and api_names != ['general']:
-            print('API call likely failed')
+            if (dial_id, turn_id) in DIALOGUES_WITH_ISSUE:
+                continue
+            print(f'API call likely failed for dial_id: {dial_id}, turn_id: {turn_id}')
             knowledge = call_api(db, api_names, constraints, lang='zh', value_mapping=dataset.value_mapping, actions=actions)
 
     # for api, item in knowledge.items():
@@ -208,7 +218,7 @@ def build_dataset(original_data_path, db, setting):
                         turn["db_results"][0][len('Database search results: the number of successful matches is ') :]
                     )
 
-                kb_event = build_kb_event(wizard_query_event, db, actions, expected_num_results, setting)
+                kb_event = build_kb_event(wizard_query_event, db, actions, expected_num_results, setting, dialogue_id, turn_id)
                 user_turn_event['turn_id'] = turn_id
                 wizard_query_event['turn_id'] = turn_id
                 wizard_normal_event['turn_id'] = turn_id
