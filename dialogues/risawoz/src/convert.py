@@ -163,8 +163,6 @@ def build_kb_event(wizard_query_event, db, actions, expected_num_results, settin
     api_names = wizard_query_event["API"]
     knowledge = call_api(db, api_names, constraints, lang=setting, value_mapping=dataset.value_mapping, actions=actions)
     event["TotalItems"] = sum(item.get("available_options", 0) for api, item in knowledge.items())
-    # if event["TotalItems"] == 0 and not expected_num_results == 0:
-    # if event["TotalItems"] < expected_num_results and api_names != ['general']:
     for api, item in knowledge.items():
         if item.get("available_options", 0) < expected_num_results and api_names != ['general']:
             print('API call likely failed')

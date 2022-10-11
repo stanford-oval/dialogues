@@ -38,7 +38,7 @@ def call_api(db, api_names, constraints, lang, value_mapping, actions=None):
                     for slot, value in acts.items():
                         slot = slot.replace('.', '\uFF0E')
                         slot = slot.replace(' ', '_')
-                        slot = slot.lower()
+                        # slot = slot.lower()
                         slot = value_mapping.zh2en_SLOT_MAP.get(slot, slot)
                         if slot not in item:
                             if slot == 'price' and api_en == 'car':
