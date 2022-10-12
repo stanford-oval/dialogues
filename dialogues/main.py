@@ -21,8 +21,6 @@ from dialogues.utils import (
     zh2en_CARDINAL_MAP,
 )
 
-metric = load_metric("sacrebleu")
-
 
 class Dataset(object):
     def __init__(self, name):
@@ -1103,6 +1101,7 @@ class WOZDataset(Dataset):
         # Some simple post-processing
         preds, labels = self.postprocess_text(preds, labels)
 
+        metric = load_metric("sacrebleu")
         bleu = metric.compute(predictions=preds, references=labels)["score"]
         bleu = round(bleu, 4)
 
