@@ -28,7 +28,8 @@ def call_api(db, api_names, constraints, lang, value_mapping, actions=None):
         cursor = db[db_name].find(domain_constraints)
         domain_knowledge = []
         for matched in cursor:
-            matched["_id"] = str(matched["_id"])
+            # matched["_id"] = str(matched["_id"])
+            matched.pop("_id")
             # for key, val in matched.items():
             #     matched[key] = process_string(val)
             domain_knowledge.append(matched)
