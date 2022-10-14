@@ -29,6 +29,9 @@ processed_data_path = os.path.join(*[args.root, args.save_dir])
 for split in args.splits:
     print(f"processing {split} data...")
     processed_data = build_dataset(os.path.join(original_data_path, f"{args.setting}_{split}.json"), risawoz_db, args.setting)
+
     # save converted files in JSON format
-    with open(f"{processed_data_path}/{args.setting}_{split}.json", 'w') as f:
-        json.dump(processed_data, f, ensure_ascii=False, indent=4)
+    with open(f"{processed_data_path}/{args.setting}_{split}.json") as f:
+        gold_data = json.load(f)
+
+    assert processed_data == gold_data
