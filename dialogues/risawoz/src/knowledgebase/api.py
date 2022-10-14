@@ -17,7 +17,7 @@ def call_api(db, api_names, constraints, lang, value_mapping, actions=None):
             domain_constraints = copy.deepcopy(constraints[api])
 
         domain_constraints = {
-            k: process_string(value_mapping.en2canonical.get(v, v), lang) for k, v in domain_constraints.items()
+            k.lower(): process_string(value_mapping.en2canonical.get(v, v), lang) for k, v in domain_constraints.items()
         }
 
         if api == 'car':
@@ -28,7 +28,8 @@ def call_api(db, api_names, constraints, lang, value_mapping, actions=None):
         cursor = db[db_name].find(domain_constraints)
         domain_knowledge = []
         for matched in cursor:
-            matched["_id"] = str(matched["_id"])
+            # matched["_id"] = str(matched["_id"])
+            matched.pop("_id")
             # for key, val in matched.items():
             #     matched[key] = process_string(val)
             domain_knowledge.append(matched)
@@ -40,7 +41,7 @@ def call_api(db, api_names, constraints, lang, value_mapping, actions=None):
                     for slot, value in acts.items():
                         slot = slot.replace('.', '\uFF0E')
                         slot = slot.replace(' ', '_')
-                        # slot = slot.lower()
+                        slot = slot.lower()
                         slot = value_mapping.zh2en_SLOT_MAP.get(slot, slot)
                         if slot not in item:
                             if slot == 'price' and api_en == 'car':

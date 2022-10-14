@@ -163,7 +163,7 @@ DIALOGUES_WITH_ISSUE = {
 }
 
 
-def build_kb_event(wizard_query_event, db, actions, expected_num_results, setting, dial_id, turn_id):
+def build_kb_event(wizard_query_event, db, actions, expected_num_results, setting, dial_id, turn_id, ground_truth_results=None):
     event = {"Agent": "KnowledgeBase"}
     constraints = wizard_query_event["Constraints"]
     for d in constraints:
@@ -176,6 +176,32 @@ def build_kb_event(wizard_query_event, db, actions, expected_num_results, settin
             if (dial_id, turn_id) in DIALOGUES_WITH_ISSUE:
                 continue
             print(f'API call likely failed for dial_id: {dial_id}, turn_id: {turn_id}')
+            if ground_truth_results is not None:
+                constraints[api] = {k.lower(): dataset.value_mapping.en2canonical.get(v, v) for k, v in constraints[api].items()}
+                for db_item in ground_truth_results:
+                    db_item = {k.replace(" ", "_"): v for k, v in db_item.items()}
+                    try:
+                        # compare the constraints and db_results annotation to see why the API call failed
+                        diff = set(constraints[api].items()) - set(db_item.items())
+                    except Exception as e:
+                        assert 'key_departments' in constraints[api].keys()
+                        if "unhashable type: 'list'" in str(e):
+                            if constraints[api]['key_departments'] in db_item['key_departments']:
+                                diff = {}
+                                continue  # key_departments is a list, it's ok to only mention one of the key departments by user.
+                            else:
+                                diff = {'key_departments': constraints[api]['key_departments']}
+                    if diff:
+                        # case insensitive match
+                        original = {k.lower(): db_item[k.lower()] for k in dict(diff).keys()}
+                        if list(original.keys()) == ['number_of_seats'] and int(dict(diff)['number_of_seats']) <= int(original['number_of_seats']):
+                            continue  # number_of_seats doesn't need to be exactly matched
+                        else:
+                            # print the difference between constraints and db_results for further data correction
+                            print('API call likely failed with canonical constraints: {}'.format(constraints))
+                            print('difference: {}'.format(diff))
+                            print('original: {}'.format(original))
+                print('constraints: {}, available options: {}, expected: {}'.format(constraints[api], item.get("available_options", 0), expected_num_results))
             knowledge = call_api(db, api_names, constraints, lang='zh', value_mapping=dataset.value_mapping, actions=actions)
 
     # for api, item in knowledge.items():
@@ -218,7 +244,7 @@ def build_dataset(original_data_path, db, setting):
                         turn["db_results"][0][len('Database search results: the number of successful matches is ') :]
                     )
 
-                kb_event = build_kb_event(wizard_query_event, db, actions, expected_num_results, setting, dialogue_id, turn_id)
+                kb_event = build_kb_event(wizard_query_event, db, actions, expected_num_results, setting, dialogue_id, turn_id, ground_truth_results=turn["db_results"][1:])
                 user_turn_event['turn_id'] = turn_id
                 wizard_query_event['turn_id'] = turn_id
                 wizard_normal_event['turn_id'] = turn_id
