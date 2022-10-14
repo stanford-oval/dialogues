@@ -10,7 +10,7 @@ cache: pip
 
 install:
 - pip install -e .
-- pip install genienlp==0.7.0a3
+- pip install genienlp==0.7.0a4
 
 stages:
   - test

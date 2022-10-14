@@ -53,7 +53,7 @@ setuptools.setup(
     license='BSD-3-Clause',
     author="Mehrad Moradshahi",
     author_email="mehrad@cs.stanford.edu",
-    description="This package provides a unified interface to several dialogue benchmarks",
+    description="This package provides a unified interface to several dialogue datasets",
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/Mehrad0711/dialogues",

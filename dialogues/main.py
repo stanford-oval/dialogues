@@ -21,8 +21,6 @@ from dialogues.utils import (
     zh2en_CARDINAL_MAP,
 )
 
-metric = load_metric("sacrebleu")
-
 
 class Dataset(object):
     def __init__(self, name):
@@ -566,7 +564,11 @@ class WOZDataset(Dataset):
         else:
             intents = [intents]
         for intent in intents:
-            intent_action_text = self.action2span_for_single_intent(agent_actions, intent, setting)
+            if isinstance(agent_actions, dict):
+                action = agent_actions[intent]
+            else:
+                action = agent_actions
+            intent_action_text = self.action2span_for_single_intent(action, intent, setting)
             action_text += intent_action_text
         return action_text.strip()  # retain the original output for BiToD
 
@@ -1103,6 +1105,7 @@ class WOZDataset(Dataset):
         # Some simple post-processing
         preds, labels = self.postprocess_text(preds, labels)
 
+        metric = load_metric("sacrebleu")
         bleu = metric.compute(predictions=preds, references=labels)["score"]
         bleu = round(bleu, 4)
 

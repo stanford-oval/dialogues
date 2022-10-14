@@ -1712,8 +1712,8 @@
             "4.8": "4.8"
         },
         "metro station": {
-            "false": "false",
-            "true": [
+            "False": "False",
+            "True": [
                 "directly by subway"
             ]
         },
@@ -2155,8 +2155,8 @@
             "0512-63339777": "0512-63339777"
         },
         "metro station": {
-            "false": "false",
-            "true": [
+            "False": "False",
+            "True": [
                 "directly by subway"
             ]
         },
@@ -2682,33 +2682,33 @@
             "Xiangcheng District": "Xiangcheng District"
         },
         "ct": {
-            "true": [
+            "True": [
                 "True"
             ],
-            "false": [
+            "False": [
                 "no"
             ]
         },
         "dsa": {
-            "true": [
+            "True": [
                 "True"
             ],
-            "false": [
+            "False": [
                 "No",
                 "can't"
             ]
         },
         "3.0t mri": {
-            "true": [
+            "True": [
                 "True"
             ],
-            "false": [
+            "False": [
                 "No"
             ]
         },
         "metro station": {
-            "false": "false",
-            "true": "true"
+            "False": "False",
+            "True": "True"
         },
         "key departments": {
             "pediatric": [
@@ -3781,20 +3781,20 @@
             "Volkswagen Beetle": "Volkswagen Beetle"
         },
         "cruise control system": {
-            "true": "true",
-            "false": "false"
+            "True": "True",
+            "False": "False"
         },
         "parking assist system": {
-            "true": "true",
-            "false": "false"
+            "True": "True",
+            "False": "False"
         },
         "ventilated seats": {
-            "true": "true",
-            "false": "false"
+            "True": "True",
+            "False": "False"
         },
         "heated seats": {
-            "true": "true",
-            "false": "false"
+            "True": "True",
+            "False": "False"
         },
         "number of seats": {
             "4": "4",
@@ -5616,32 +5616,12 @@
             ],
             "All-in-One PC": "All-in-One PC"
         },
-        "cpu series": {
-            "Intel Core i3": [
-                "i3"
-            ],
-            "Intel Core i5": [
-                "i5"
-            ],
-            "Intel Core i7": [
-                "i7"
-            ],
-            "Intel Core i9": [
-                "i9"
-            ]
-        },
         "cpu model": {
-            "Intel Core i7": [
-                "i7"
-            ],
             "Intel Core i7-9700": [
                 "i7-9700"
             ],
             "Intel Core i7-9700F": [
                 "i7-9700F"
-            ],
-            "Intel Core i5": [
-                "i5"
             ],
             "Intel Core i5-9400F": [
                 "i5-9400F"
@@ -5661,9 +5641,6 @@
             "Intel Core i5-8250U": [
                 "i5-8250U"
             ],
-            "Intel Core i9": [
-                "i9"
-            ],
             "Intel Core i7-10710u": [
                 "i7-10710u"
             ],
@@ -5672,9 +5649,6 @@
             ],
             "Intel Core i9-9900": [
                 "i9-9900"
-            ],
-            "Intel Core i3": [
-                "i3"
             ],
             "Inter Core i5": "Inter Core i5",
             "Intel Core i5-9300H": [
