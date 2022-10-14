@@ -1,71 +1,105 @@
 {
     "tv": {
         "production country or area": {
-            "Japanese TV show": [
-                "Japanese shows"
-            ],
             "Taiwan, China": [
-                "Taiwan"
+                "Taiwan",
+                "Taiwanese TV show",
+                "a TV show from Taiwan, China"
             ],
             "America": [
                 "American",
                 "in America",
-                "the United States"
+                "the United States",
+                "American TV show",
+                "American series",
+                "TV show in America"
             ],
-            "Chinese mainland": "Chinese mainland",
+            "Chinese mainland": [
+                "Chinese mainland",
+                "Chinese TV show",
+                "domestic TV shows",
+                "Chinese mainland TV show"
+            ],
             "Japan": [
                 "Japanese",
+                "Japanese shows",
                 "Japanese TV show"
             ],
             "Korea": [
                 "Korean",
                 "South Korea",
                 "South Korean",
-                "in South Korea"
-            ],
-            "a TV show from Taiwan, China": [
-                "Taiwanese TV show"
-            ],
-            "Chinese TV show": [
-                "domestic TV shows"
-            ],
-            "Hong Kong": "Hong Kong",
-            "Korean TV show": [
+                "in South Korea",
+                "Korean TV show",
                 "Korean drama",
                 "Korean series"
             ],
-            "American TV show": [
-                "American series",
-                "TV show in America"
-            ],
-            "Hong Kong TV show": [
+            "Hong Kong": [
+                "Hong Kong",
+                "Hong Kong TV show",
                 "Hong Kong movies",
                 "TV show from Hong Kong, China"
-            ],
-            "Chinese mainland TV show": "Chinese mainland TV show"
+            ]
         },
         "decade": {
-            "2010s": "2010s",
-            "2000s": "2000s",
-            "2010": "2010",
+            "2010s": [
+                "2010s",
+                "2010"
+            ],
+            "2000s": [
+                "2000s",
+                "the 2000s",
+                "2000s"
+            ],
+            "1980s": [
+                "1980s",
+                "the 1980s"
+            ],
             "1990s": "1990s",
-            "1980s": "1980s"
+            "1970s": "1970s"
         },
         "type": {
-            "suspenseful": [
-                "suspense drama"
+            "romantic": [
+                "romantic TV show",
+                "romance"
             ],
             "sci-fi": [
                 "science fiction",
-                "scientific"
+                "scientific",
+                "science fiction TV show",
+                "sci-fi show",
+                "scientific TV shows",
+                "sci-fis"
             ],
             "comedy": [
-                "comedies"
+                "comedies",
+                "comedic",
+                "comedic TV show"
             ],
-            "feature": "feature",
-            "crime": "crime",
-            "action": "action",
-            "romantic": "romantic",
+            "action": [
+                "action",
+                "action shows",
+                "action TV show",
+                "action-packed"
+            ],
+            "suspenseful": [
+                "suspense drama",
+                "thriller TV show",
+                "suspense"
+            ],
+            "feature": [
+                "feature",
+                "feature drama",
+                "feature dramas",
+                "feature shows",
+                "feature TV show"
+            ],
+            "crime": [
+                "crime",
+                "crime drama",
+                "crime TV show",
+                "crime shows"
+            ],
             "costume romantic": [
                 "costume romantic TV show"
             ]
@@ -758,13 +792,22 @@
     },
     "movie": {
         "decade": {
-            "2010s": "2010s",
-            "2000s": "2000s",
-            "2010": "2010",
-            "1980s": "1980s",
+            "2010s": [
+                "2010s",
+                "2010"
+            ],
+            "2000s": [
+                "2000s",
+                "the 2000s",
+                "2000s",
+                "2000"
+            ],
+            "1980s": [
+                "1980s",
+                "the 1980s"
+            ],
             "1990s": "1990s",
-            "1970s": "1970s",
-            "2000": "2000"
+            "1970s": "1970s"
         },
         "douban score": {
             "9.1": "9.1",
@@ -817,19 +860,22 @@
                 "in America",
                 "the United States"
             ],
-            "Chinese mainland": "Chinese mainland",
+            "Chinese mainland": [
+                "Chinese mainland",
+                "Chinese mainland movie"
+            ],
             "Korea": [
                 "Korean",
                 "South Korea",
                 "South Korean",
                 "in South Korea"
             ],
-            "Hong Kong": "Hong Kong",
-            "Hong Kong movies": [
+            "Hong Kong": [
+                "Hong Kong",
+                "Hong Kong movies",
                 "Hong Kong TV show",
                 "TV show from Hong Kong, China"
-            ],
-            "Chinese mainland movie": "Chinese mainland movie"
+            ]
         },
         "star": {
             "Shatrughan Sinha": "Shatrughan Sinha",
@@ -1246,18 +1292,34 @@
             "1980-03-29 in Taiwan, China": "1980-03-29 in Taiwan, China"
         },
         "type": {
-            "romantic movie": "romantic movie",
+            "romantic": [
+                "romantic movie",
+                "romance",
+                "romantic movies",
+                "costume romantic"
+            ],
             "sci-fi": [
                 "science fiction",
-                "scientific"
+                "scientific",
+                "science fiction movie",
+                "science fiction movies"
             ],
             "comedy": [
-                "comedies"
+                "comedies",
+                "comedic",
+                "comedy movie"
             ],
-            "action": "action",
-            "romantic": "romantic",
-            "horror": "horror",
-            "comedy movie": "comedy movie"
+            "action": [
+                "action",
+                "action film",
+                "action movie",
+                "action movies"
+            ],
+            "horror": [
+                "horror",
+                "horror movies",
+                "horror movie"
+            ]
         },
         "name list": {
             "Jay Chou, Gwei Lun-mei, Anthony Wong Chau Sang and Su Mingming.": "Jay Chou, Gwei Lun-mei, Anthony Wong Chau Sang and Su Mingming.",
@@ -1481,9 +1543,15 @@
     "attraction": {
         "area": {
             "Gusu District": "Gusu District",
-            "Suzhou Industrial Park": "Suzhou Industrial Park",
+            "Suzhou Industrial Park": [
+                "Suzhou Industrial Park",
+                "Industrial Park"
+            ],
             "Suzhou": "Suzhou",
-            "Suzhou New District": "Suzhou New District",
+            "Suzhou New District": [
+                "Suzhou New District",
+                "Suzhou New district"
+            ],
             "Changshu": "Changshu",
             "Wujiang District": [
                 "Wujiang"
@@ -1495,51 +1563,57 @@
         },
         "consumption": {
             "moderate": [
-                "moderately priced"
+                "moderately priced",
+                "not that expensive",
+                "fair",
+                "moderately",
+                "mid"
             ],
-            "slightly more expensive": "slightly more expensive",
+            "a slightly more expensive": [
+                "slightly more expensive",
+                "a slightly more expensive",
+                "more expensive",
+                "a bit more expensive"
+            ],
             "cheap": [
                 "affordable",
                 "cheaper",
                 "low-priced"
             ],
-            "a slightly more expensive": [
-                "more expensive"
-            ],
             "expensive": "expensive",
-            "moderately": "moderately",
             "above-average": "above-average",
             "more expensive": "more expensive"
         },
         "the most suitable people": {
             "friends": [
                 "for friends",
-                "travel with friends"
+                "travel with friends",
+                "friends to have an outing",
+                "friends and I could have some fun",
+                "for friends to have some fun",
+                "go with my friends",
+                "for a group of friends",
+                "go with friends",
+                "friend",
+                "besties"
             ],
             "dating": [
-                "date"
+                "date",
+                "for couples",
+                "partner",
+                "boyfriend",
+                "girlfriend",
+                "couples"
             ],
-            "Suzhou New District": "Suzhou New District",
             "family-friendly": [
                 "a family trip",
-                "go with kids"
+                "go with kids",
+                "family trip",
+                "families",
+                "family",
+                "traveling with family"
             ],
-            "girlfriend": "girlfriend",
-            "couples": [
-                "partner"
-            ],
-            "for couples": "for couples",
-            "boyfriend": "boyfriend",
-            "partner": "partner",
-            "family": [
-                "families"
-            ],
-            "besties": "besties",
-            "friend": "friend",
-            "family trip": "family trip",
-            "traveling with family": "traveling with family",
-            "kids": "kids",
-            "families": "families"
+            "kids": "kids"
         },
         "name": {
             "Humble Administrator's Garden": [
@@ -1607,29 +1681,35 @@
         "type": {
             "Suzhou-style garden": [
                 "Suzhou garden",
-                "Suzhou-styled garden"
+                "Suzhou-styled garden",
+                "garden"
             ],
             "landscape scenic spot": [
                 "landscape scenic spots"
             ],
             "amusement park": "amusement park",
             "water town": [
-                "water towns"
+                "water towns",
+                "ancient town"
             ],
             "historic site in Gusu District": [
                 "historic site",
                 "historic site in Suzhou",
                 "historic sites in Gusu District",
-                "historical sites in Gusu District"
+                "historical sites in Gusu District",
+                "historical sites"
             ],
-            "commercial center": "commercial center",
-            "business center": "business center",
-            "campus": "campus",
-            "garden": "garden",
-            "ancient town": "ancient town",
-            "landscape scenic spots": "landscape scenic spots",
-            "water towns": "water towns",
-            "historical sites": "historical sites"
+            "commercial center": [
+                "commercial center",
+                "business center"
+            ],
+            "campus": [
+                "campus",
+                "school campus",
+                "university",
+                "university campus"
+            ],
+            "garden": "garden"
         },
         "address": {
             "No. 178, Dongbei Street, Gusu District, Suzhou City": [
@@ -1712,9 +1792,33 @@
             "4.8": "4.8"
         },
         "metro station": {
-            "False": "False",
-            "True": [
-                "directly by subway"
+            "false": [
+                "false",
+                "No",
+                "no"
+            ],
+            "true": [
+                "directly by subway",
+                "could",
+                "can",
+                "Yes",
+                "yes",
+                "is",
+                "are",
+                "be",
+                "get to directly by subway",
+                "We can get there directly by subway",
+                "could get to by subway",
+                "you can get there by subway directly,",
+                "get to directly by subway",
+                "get there directly by subway",
+                "Yes, you can.",
+                "can get there by subway",
+                "can get to directly by subway",
+                "could get to directly by subway",
+                "the subway will take you directly there",
+                "with a subway station nearby",
+                "there is"
             ]
         },
         "ticket price": {
@@ -1884,6 +1988,7 @@
     },
     "restaurant": {
         "name": {
+            "Tangpalace Seafood Restaurant": "Tangpalace Seafood Restaurant",
             "Banyuan Private Home Cuisine": "Banyuan Private Home Cuisine",
             "Haidilao Hot Pot": "Haidilao Hot Pot",
             "Sichuan Xiang Tian Xia Hot Pot": "Sichuan Xiang Tian Xia Hot Pot",
@@ -1916,7 +2021,9 @@
             ],
             "Yamazaki Bakery": "Yamazaki Bakery",
             "Nongleyuan Charcoal Fire Barbecue": "Nongleyuan Charcoal Fire Barbecue",
-            "Palsaik Korean +Q": "Palsaik Korean +Q",
+            "Palsaik Korean BBQ": [
+                "Palsaik Korean +Q"
+            ],
             "Spicy Memory": "Spicy Memory",
             "Wufangzhai": "Wufangzhai",
             "Aobanian Hot Pot": "Aobanian Hot Pot",
@@ -1949,12 +2056,18 @@
             "Li Li Xiao Chao": "Li Li Xiao Chao",
             "Cai Zhi Zhai": "Cai Zhi Zhai",
             "Guan Zhi North": "Guan Zhi North",
-            "Tang Palace Seafood Restaurant": "Tang Palace Seafood Restaurant"
+            "Tang Palace Seafood Restaurant": [
+                "Tang Palace Seafood Restaurant",
+                "Tangpalace Seafood Restaurant"
+            ]
         },
         "area": {
             "Gusu District": "Gusu District",
             "Suzhou Industrial Park": "Suzhou Industrial Park",
-            "Suzhou New District": "Suzhou New District",
+            "Suzhou New District": [
+                "Suzhou New District",
+                "Suzhou New district"
+            ],
             "Changshu": "Changshu",
             "Wujiang District": [
                 "Wujiang"
@@ -1966,17 +2079,30 @@
         },
         "pricerange": {
             "moderate": [
-                "moderately priced"
+                "moderately priced",
+                "not that expensive",
+                "fair",
+                "moderately",
+                "mid",
+                "mid-price",
+                "mid-priced",
+                "medium"
             ],
             "a slightly more expensive": [
-                "more expensive"
+                "slightly more expensive",
+                "a slightly more expensive",
+                "more expensive",
+                "a bit more expensive",
+                "high-priced"
             ],
             "cheap": [
                 "affordable",
                 "cheaper",
                 "low-priced"
             ],
-            "expensive": "expensive"
+            "expensive": [
+                "expensive"
+            ]
         },
         "score": {
             "4.5": "4.5",
@@ -2000,18 +2126,31 @@
                 "hot pot"
             ],
             "Korean": [
-                "South Korean cuisine"
+                "South Korean cuisine",
+                "South Korean",
+                "Korean foods",
+                "Korean food",
+                "Korean cuisine",
+                "Korean Cuisine"
             ],
             "Japanese": [
                 "Japanese cuisine",
-                "Japanese food"
+                "Japanese food",
+                "Japanese restaurant",
+                "riben Cuisine"
             ],
             "Northwestern": [
                 "Northwest cuisine",
                 "Northwestern cuisine"
             ],
-            "bread and desserts": "bread and desserts",
-            "fast food": "fast food",
+            "bread and desserts": [
+                "bread and desserts",
+                "bread and dessert"
+            ],
+            "fast food": [
+                "fast food",
+                "fast food and quick meals"
+            ],
             "Sichuan": [
                 "Sichuan cuisine"
             ],
@@ -2155,9 +2294,33 @@
             "0512-63339777": "0512-63339777"
         },
         "metro station": {
-            "False": "False",
-            "True": [
-                "directly by subway"
+            "false": [
+                "false",
+                "No"
+            ],
+            "true": [
+                "directly by subway",
+                "could",
+                "can",
+                "Yes",
+                "yes",
+                "is",
+                "are",
+                "be",
+                "get to directly by subway",
+                "We can get there directly by subway",
+                "could get to by subway",
+                "you can get there by subway directly,",
+                "You can get there by subway directly.",
+                "get to directly by subway",
+                "get there directly by subway",
+                "Yes, you can.",
+                "can get there by subway",
+                "can get to directly by subway",
+                "could get to directly by subway",
+                "the subway will take you directly there",
+                "with a subway station nearby",
+                "go there by subway"
             ]
         },
         "business hours": {
@@ -2372,7 +2535,10 @@
             "Gusu District": "Gusu District",
             "Suzhou Industrial Park": "Suzhou Industrial Park",
             "Suzhou": "Suzhou",
-            "Suzhou New District": "Suzhou New District",
+            "Suzhou New District": [
+                "Suzhou New District",
+                "Suzhou New district"
+            ],
             "Changshu": "Changshu",
             "Wujiang District": [
                 "Wujiang"
@@ -2384,13 +2550,17 @@
         },
         "pricerange": {
             "moderate": [
-                "moderately priced"
+                "moderately priced",
+                "not that expensive",
+                "mid"
             ],
             "a slightly more expensive": [
-                "more expensive"
+                "more expensive",
+                "a bit more expensive",
+                "slightly more expensive",
+                "higher-priced"
             ],
             "cheap": [
-                "Wuzhong District",
                 "affordable",
                 "cheaper",
                 "low-priced"
@@ -2419,7 +2589,8 @@
         },
         "room type": {
             "standard room": [
-                "standard rooms"
+                "standard rooms",
+                "a standard room"
             ],
             "king-size room": [
                 "king-size rooms"
@@ -2450,7 +2621,10 @@
             "Genting Star Chain Hotel": "Genting Star Chain Hotel",
             "Pan Pacific Suzhou": "Pan Pacific Suzhou",
             "Pod Inn": "Pod Inn",
-            "Meijin All Suites Hotel": "Meijin All Suites Hotel",
+            "Meijin All Suites Hotel": [
+                "Meijin All Suites Hotel",
+                "Warmly Hotel"
+            ],
             "Suzhou Jinji Lake Suisse Place Ligongdi Apartment Hotel": [
                 "Jinji Lake Suzhou Suisse Place Ligongdi Apartment Hotel"
             ],
@@ -2588,15 +2762,26 @@
             "0512-57205581": "0512-57205581"
         },
         "star": {
-            "4": "4",
-            "3": "3",
+            "4": [
+                "4",
+                "4-star"
+            ],
+            "3": [
+                "3",
+                "3-star"
+            ],
             "5": [
+                "5",
                 "5-star"
             ],
             "1": [
+                "1",
                 "1-star"
             ],
-            "2": "2"
+            "2": [
+                "2",
+                "2-star"
+            ]
         },
         "address": {
             "Lifeng Plaza 1F, No. 399, Baodaidong Road": [
@@ -2668,47 +2853,56 @@
             "resort": [
                 "resort hotel"
             ],
-            "business": "business"
+            "business": [
+                "business",
+                "business hotel"
+            ]
         }
     },
     "hospital": {
         "area": {
             "Gusu District": "Gusu District",
             "Suzhou Industrial Park": "Suzhou Industrial Park",
-            "Suzhou New District": "Suzhou New District",
+            "Suzhou New District": [
+                "Suzhou New District",
+                "Suzhou New district"
+            ],
             "Wuzhong District": [
                 "Wuzhong district"
             ],
             "Xiangcheng District": "Xiangcheng District"
         },
         "ct": {
-            "True": [
+            "true": [
                 "True"
             ],
-            "False": [
+            "false": [
                 "no"
             ]
         },
         "dsa": {
-            "True": [
+            "true": [
                 "True"
             ],
-            "False": [
+            "false": [
                 "No",
                 "can't"
             ]
         },
         "3.0t mri": {
-            "True": [
+            "true": [
                 "True"
             ],
-            "False": [
+            "false": [
                 "No"
             ]
         },
         "metro station": {
-            "False": "False",
-            "True": "True"
+            "false": "false",
+            "true": [
+                "true",
+                "reached directly"
+            ]
         },
         "key departments": {
             "pediatric": [
@@ -2729,7 +2923,8 @@
                 "psychological department"
             ],
             "gynecology": [
-                "Gynecology Department"
+                "Gynecology Department",
+                "gynecology department"
             ],
             "oncology": [
                 "oncology department"
@@ -2970,8 +3165,14 @@
             ]
         },
         "public or private": {
-            "public": "public",
-            "private": "private"
+            "public": [
+                "public",
+                "public hospital"
+            ],
+            "private": [
+                "private",
+                "private hospital"
+            ]
         },
         "level": {
             "tertiary": "tertiary",
@@ -3232,9 +3433,7 @@
         "day": {
             "Friday": "Friday",
             "Saturday": "Saturday",
-            "Sunday": [
-                "date"
-            ],
+            "Sunday": "Sunday",
             "Wednesday": "Wednesday"
         },
         "grade": {
@@ -3582,7 +3781,51 @@
             "Chen Jing": "Chen Jing",
             "Li Wanli": "Li Wanli",
             "Chen Panting": "Chen Panting",
-            "Wang Zijuan": "Wang Zijuan"
+            "Wang Zijuan": "Wang Zijuan",
+            "Geng Fan": "Geng Fan",
+            "Chen Qian": "Chen Qian",
+            "Xia Zhengdong": "Xia Zhengdong",
+            "Wang Panpan": "Wang Panpan",
+            "Zhang Liping": "Zhang Liping",
+            "Yuan Xi": "Yuan Xi",
+            "Jiang Binshuai": "Jiang Binshuai",
+            "Guo Lingge": "Guo Lingge",
+            "Wang Xiaoyu": "Wang Xiaoyu",
+            "Lu Yifang": "Lu Yifang",
+            "Xie Jiahui": "Xie Jiahui",
+            "Cui Xiaohan": "Cui Xiaohan",
+            "He Chunrong": "He Chunrong",
+            "Ru Mengsha": "Ru Mengsha",
+            "Pan Yun": "Pan Yun",
+            "Xu Qingqing": "Xu Qingqing",
+            "Yan Peilin": "Yan Peilin",
+            "Xu Qihao": "Xu Qihao",
+            "Dong Xinjie": "Dong Xinjie",
+            "Xia Qin": "Xia Qin",
+            "Li Jianjie": "Li Jianjie",
+            "Yang Rujia": "Yang Rujia",
+            "Yang Liu": "Yang Liu",
+            "Pan Xiuxiu": "Pan Xiuxiu",
+            "Yan Pengfei": "Yan Pengfei",
+            "Wu Jin": "Wu Jin",
+            "Ma Luyao": "Ma Luyao",
+            "He Yaolin": "He Yaolin",
+            "Xi Jing": "Xi Jing",
+            "Guan Yujia": "Guan Yujia",
+            "Xue Rubing": "Xue Rubing",
+            "Liu Fangfang": "Liu Fangfang",
+            "Zhang Yiqi": "Zhang Yiqi",
+            "Shi Lidan": "Shi Lidan",
+            "Zhou Wenhui": "Zhou Wenhui",
+            "Huang Zhenhua": "Huang Zhenhua",
+            "Zhang Ying": "Zhang Ying",
+            "Chen Jinhua": "Chen Jinhua",
+            "Zheng Jiamin": "Zheng Jiamin",
+            "Liu Xiang": "Liu Xiang",
+            "Wang Haixia": "Wang Haixia",
+            "Min Li": "Min Li",
+            "Jin Chunfang": "Jin Chunfang",
+            "Shi Yijing": "Shi Yijing"
         },
         "campus": {
             "Lohas Town, Suzhou Industrial Park": "Lohas Town, Suzhou Industrial Park",
@@ -3662,19 +3905,29 @@
             "PHEV": "PHEV"
         },
         "pricerange": {
-            "<150,000": "<150,000",
-            ">300,000": ">300,000",
-            "150,000-200,000": "150,000-200,000",
-            "180,900": "180,900",
-            "200,000-300,000": "200,000-300,000",
-            "135,000": "135,000",
-            "359,900": [
-                "359,900 yuan"
+            "<150,000": [
+                "<150,000",
+                "within 150,000 yuan",
+                "less than 150,000 yuan"
+            ],
+            ">300,000": [
+                ">300,000",
+                "over 300,000 yuan",
+                "more than 300,000",
+                "more than 300,000 yuan"
+            ],
+            "150,000-200,000": [
+                "150,000-200,000",
+                "150,000 to 200,000 yuan",
+                "between 150,000 and 200,000"
+            ],
+            "200,000-300,000": [
+                "200,000-300,000",
+                "between 200,000 and 300,000"
             ],
             "<300,000": [
                 "less than 300,000"
-            ],
-            "> 300, 000": "> 300, 000"
+            ]
         },
         "fuel consumption": {
             "fuel-efficient": "fuel-efficient",
@@ -3781,39 +4034,39 @@
             "Volkswagen Beetle": "Volkswagen Beetle"
         },
         "cruise control system": {
-            "True": "True",
-            "False": "False"
+            "true": "true",
+            "false": "false"
         },
         "parking assist system": {
-            "True": "True",
-            "False": "False"
+            "true": "true",
+            "false": "false"
         },
         "ventilated seats": {
-            "True": "True",
-            "False": "False"
+            "true": "true",
+            "false": "false"
         },
         "heated seats": {
-            "True": "True",
-            "False": "False"
+            "true": "true",
+            "false": "false"
         },
         "number of seats": {
-            "4": "4",
-            "3": "3",
+            "4": [
+                "four"
+            ],
+            "3": [
+                "three"
+            ],
             "6": [
                 "six"
             ],
-            "1": "1",
-            "5": "5",
-            "7": "7"
-        },
-        "seat": {
-            "6": [
-                "six"
-            ]
-        },
-        "seats": {
-            "6": [
-                "six"
+            "1": [
+                "one"
+            ],
+            "5": [
+                "five"
+            ],
+            "7": [
+                "seven"
             ]
         },
         "brand": {
@@ -3824,6 +4077,24 @@
             ]
         },
         "price": {
+            "109,900": "109,900",
+            "127,900": "127,900",
+            "147,200": "147,200",
+            "149,900": "149,900",
+            "165,200": "165,200",
+            "178,800": "178,800",
+            "208,800": "208,800",
+            "209,800": "209,800",
+            "221,800": "221,800",
+            "233,900": "233,900",
+            "237,900": "237,900",
+            "253,800": "253,800",
+            "262,800": "262,800",
+            "300,900": "300,900",
+            "392,800": "392,800",
+            "428,000": "428,000",
+            "428,900": "428,900",
+            "709,800": "709,800",
             "111,800": [
                 "111,800 yuan"
             ],
@@ -4220,8 +4491,7 @@
             "16:20 that day": "16:20 that day",
             "12:25 that day": "12:25 that day",
             "15:20 that day": "15:20 that day",
-            "11:45 that day": "11:45 that day",
-            "次日 00:15": "次日 00:15"
+            "11:45 that day": "11:45 that day"
         },
         "departure time": {
             "13:30 that day": [
@@ -4493,7 +4763,10 @@
             "Friday": "Friday",
             "next Wednesday morning": "next Wednesday morning",
             "next Thursday morning": "next Thursday morning",
-            "next Tuesday morning": "next Tuesday morning",
+            "next Tuesday morning": [
+                "next Tuesday morning",
+                "next Tuesday Morning"
+            ],
             "next Tuesday afternoon": "next Tuesday afternoon",
             "next Monday afternoon": "next Monday afternoon",
             "next Friday morning": "next Friday morning",
@@ -5060,38 +5333,36 @@
             "23:08 that day": "23:08 that day",
             "19:58 that day": "19:58 that day",
             "14:28 that day": "14:28 that day",
-            "次日 07:11": "次日 07:11",
+            "07:11 the next day": "07:11 the next day",
             "21:59 that day": "21:59 that day",
             "10:31 that day": "10:31 that day",
             "08:38 that day": "08:38 that day",
-            "次日 09:36": "次日 09:36",
+            "09:36 the next day": "09:36 the next day",
             "08:56 that day": "08:56 that day",
             "12:35 that day": "12:35 that day",
             "14:20 that day": "14:20 that day",
             "21:33 that day": "21:33 that day",
-            "次日 06:56": "次日 06:56",
-            "次日 05:59": "次日 05:59",
-            "次日 10:56": "次日 10:56",
+            "06:56 the next day": "06:56 the next day",
+            "10:56 the next day": "10:56 the next day",
             "17:39 that day": "17:39 that day",
             "20:55 that day": "20:55 that day",
             "17:42 that day": "17:42 that day",
             "11:06 that day": "11:06 that day",
             "09:32 that day": "09:32 that day",
-            "次日 09:46": "次日 09:46",
-            "次日 06:40": "次日 06:40",
+            "09:46 the next day": "09:46 the next day",
+            "06:40 the next day": "06:40 the next day",
             "17:40 that day": "17:40 that day",
             "22:21 that day": "22:21 that day",
             "23:45 that day": "23:45 that day",
             "18:25 that day": "18:25 that day",
             "14:43 that day": "14:43 that day",
-            "次日 09:56": "次日 09:56",
+            "09:56 the next day": "09:56 the next day",
             "10:41 that day": "10:41 that day",
             "15:41 that day": "15:41 that day",
-            "次日 04:45": "次日 04:45",
             "17:30 that day": "17:30 that day",
             "18:27 that day": "18:27 that day",
             "18:16 that day": "18:16 that day",
-            "次日 09:22": "次日 09:22",
+            "09:22 the next day": "09:22 the next day",
             "11:40 that day": "11:40 that day",
             "16:39 that day": "16:39 that day",
             "13:28 that day": "13:28 that day",
@@ -5101,7 +5372,7 @@
             "10:37 that day": "10:37 that day",
             "21:36 that day": "21:36 that day",
             "15:33 that day": "15:33 that day",
-            "次日 07:00": "次日 07:00",
+            "07:00 the next day": "07:00 the next day",
             "17:31 that day": "17:31 that day",
             "20:00 that day": "20:00 that day",
             "19:17 that day": "19:17 that day",
@@ -5113,23 +5384,22 @@
             "21:56 that day": "21:56 that day",
             "11:24 that day": "11:24 that day",
             "13:58 that day": "13:58 that day",
-            "次日 05:54": "次日 05:54",
+            "05:54 the next day": "05:54 the next day",
             "10:18 that day": "10:18 that day",
             "18:00 that day": "18:00 that day",
-            "次日 06:27": "次日 06:27",
-            "次日 06:48": "次日 06:48",
+            "06:27 the next day": "06:27 the next day",
+            "06:48 the next day": "06:48 the next day",
             "19:21 that day": "19:21 that day",
             "17:54 that day": "17:54 that day",
             "14:39 that day": "14:39 that day",
-            "次日 06:28": "次日 06:28",
+            "06:28 the next day": "06:28 the next day",
             "18:36 that day": "18:36 that day",
             "10:13 that day": "10:13 that day",
             "18:46 that day": "18:46 that day",
             "14:23 that day": "14:23 that day",
-            "次日 07:03": "次日 07:03",
             "18:54 that day": "18:54 that day",
             "14:51 that day": "14:51 that day",
-            "次日 11:12": "次日 11:12"
+            "11:12 the next day": "11:12 the next day"
         },
         "ticket price": {
             "773.5 yuan": "773.5 yuan",
@@ -5477,9 +5747,14 @@
             "Apple": "Apple"
         },
         "usage": {
-            "lightweight": "lightweight",
+            "lightweight": [
+                "lightweight",
+                "lightweight laptop"
+            ],
             "gaming": [
-                "gaming computer"
+                "gaming computer",
+                "gaming laptop",
+                "gaming laptops"
             ],
             "business": [
                 "business computer"
@@ -5502,8 +5777,9 @@
             "Dell Inspiron 14": "Dell Inspiron 14",
             "Lenovo Tianyi 510Pro": "Lenovo Tianyi 510Pro",
             "Dell G5 5090": "Dell G5 5090",
-            "Lenovo GeekPro": [
-                "GeekPro series of Lenovo"
+            "Lenovo GeekPro Series": [
+                "GeekPro series of Lenovo",
+                "Lenovo GeekPro"
             ],
             "Dell Inspiron Flame 7000 (7572)": "Dell Inspiron Flame 7000 (7572)",
             "Dell Inspiron Gaming G3 3590": "Dell Inspiron Gaming G3 3590",
@@ -5536,7 +5812,6 @@
             "HP Zhan 99 Pro G1 MT": "HP Zhan 99 Pro G1 MT",
             "MacBook Air": "MacBook Air",
             "MacBook Air 13.3 of Apple 2019": "MacBook Air 13.3 of Apple 2019",
-            "GeekPro series of Lenovo": "GeekPro series of Lenovo",
             "HP Zhan 66 Pro 14 G3": "HP Zhan 66 Pro 14 G3",
             "Dell Vostro Flame 5000 (5590)": "Dell Vostro Flame 5000 (5590)",
             "Dell Vostro 3470": "Dell Vostro 3470",
@@ -5616,73 +5891,135 @@
             ],
             "All-in-One PC": "All-in-One PC"
         },
+        "cpu series": {
+            "Intel Core i3": [
+                "i3",
+                "Inter Core i3"
+            ],
+            "Intel Core i5": [
+                "i5",
+                "Inter Core i5"
+            ],
+            "Intel Core i7": [
+                "i7",
+                "Inter Core i7"
+            ],
+            "Intel Core i9": [
+                "i9",
+                "Inter Core i9"
+            ]
+        },
         "cpu model": {
             "Intel Core i7-9700": [
-                "i7-9700"
+                "i7-9700",
+                "Inter Core i7-9700"
             ],
             "Intel Core i7-9700F": [
-                "i7-9700F"
+                "i7-9700F",
+                "Inter Core i7-9700F"
             ],
             "Intel Core i5-9400F": [
-                "i5-9400F"
+                "i5-9400F",
+                "Inter Core i5-9400F"
             ],
             "Intel Core i7-9750H": [
-                "i7-9750H"
+                "i7-9750H",
+                "Inter Core i7-9750H"
             ],
             "Intel Core i5-8265U": [
-                "i5-8265U"
+                "i5-8265U",
+                "Inter Core i5-8265U"
             ],
             "Intel Core i7-8700": [
-                "i7-8700"
+                "i7-8700",
+                "Inter Core i7-8700"
             ],
             "Intel Core i7 8565U": [
-                "i7-8565U"
+                "i7-8565U",
+                "Inter Core i7-8565U"
             ],
             "Intel Core i5-8250U": [
-                "i5-8250U"
+                "i5-8250U",
+                "Inter Core i5-8250U"
             ],
             "Intel Core i7-10710u": [
-                "i7-10710u"
+                "i7-10710u",
+                "Inter Core i7-10710u"
             ],
             "Intel Core i5-10210U": [
-                "i5-10210U"
+                "i5-10210U",
+                "Inter Core i5-10210U"
             ],
             "Intel Core i9-9900": [
-                "i9-9900"
+                "i9-9900",
+                "Inter Core i9-9900"
             ],
-            "Inter Core i5": "Inter Core i5",
             "Intel Core i5-9300H": [
-                "i5-9300H"
+                "i5-9300H",
+                "Inter Core i5-9300H"
             ],
             "Intel Core i3-9100": [
-                "i3-9100"
+                "i3-9100",
+                "Inter Core i3-9100"
             ],
             "Intel Core i5-9400": [
-                "i5-9400"
+                "i5-9400",
+                "Inter Core i5-9400"
             ],
-            "Inter Core i9": "Inter Core i9",
-            "i5-9500": "i5-9500",
-            "i7-10510U": "i7-10510U",
-            "i7-9700K": "i7-9700K",
-            "i5-7400": "i5-7400",
-            "i7-10510u": "i7-10510u",
-            "i9-9980HK": "i9-9980HK",
-            "i9-9900K": "i9-9900K"
+            "Intel Core i5-9500": [
+                "i5-9500",
+                "Inter Core i5-9500"
+            ],
+            "Intel Core i7-10510U": [
+                "i7-10510U",
+                "Inter Core i7-10510U"
+            ],
+            "Intel Core i7-9700K": [
+                "i7-9700K",
+                "Inter Core i7-9700K"
+            ],
+            "Intel Core i5-7400": [
+                "i5-7400",
+                "Inter Core i5-7400"
+            ],
+            "Intel Core i7-10510u": [
+                "i7-10510u",
+                "Inter Core i7-10510u"
+            ],
+            "Intel Core i9-9980HK": [
+                "i9-9980HK",
+                "Inter Core i9-9980HK"
+            ],
+            "Intel Core i9-9900K": [
+                "i9-9900K",
+                "Inter Core i9-9900K"
+            ]
         },
         "pricerange": {
             "5,000-10,000": [
-                "within 5,000 yuan"
+                "5,000 to 10,000",
+                "5,000-10,000 yuan",
+                "5,000 to 10,000 yuan",
+                "5000 to 10,000",
+                "5,000 and 10,000",
+                "between 5,000 and 10,000 yuan"
             ],
-            "5,099": "5,099",
             "<5,000": [
-                "below 5,000"
+                "below 5,000",
+                "within 5,000 yuan",
+                "less than 5,000 yuan",
+                "less than 5,000",
+                "No more than 5,000 yuan",
+                "under 5,000 yuan"
             ],
             "10,000-15,000": [
                 "10,000 to 15,000",
                 "10000 to 15000"
             ],
-            ">20000": ">20000",
-            "15000 to 20000": "15000 to 20000"
+            ">20,000": ">20,000",
+            "15,000-20,000": [
+                "15000 to 20000"
+            ]
         },
         "colour": {
             "mainly silvery": [
@@ -5701,47 +6038,73 @@
         },
         "price": {
             "5,499 yuan": [
-                "5,499 yuan."
+                "5,499 yuan.",
+                "5499.0"
             ],
-            "4,889.0 yuan": [
+            "4,889 yuan": [
                 "4,889.0",
                 "4889.0"
             ],
-            "7,999.0 yuan": [
+            "7,999 yuan": [
                 "7,999.0",
                 "7999.0"
             ],
-            "5,989.0 yuan": [
+            "5,989 yuan": [
                 "5,989.0",
                 "5989.0"
             ],
-            "5,899 yuan": "5,899 yuan",
+            "5,899 yuan": [
+                "5,899 yuan",
+                "5,899.0",
+                "5899.0"
+            ],
             "8,599 yuan": "8,599 yuan",
-            "6,399 yuan": "6,399 yuan",
+            "6,399 yuan": [
+                "6,399 yuan",
+                "6399.0"
+            ],
             "3,499.0 yuan": [
                 "3499.0"
             ],
-            "7,999 yuan": "7,999 yuan",
-            "4,889 yuan": "4,889 yuan",
             "8,599.0 yuan": [
                 "8,599.0",
                 "8599.0"
             ],
-            "5,799 yuan": "5,799 yuan",
+            "5,799 yuan": [
+                "5,799 yuan",
+                "5799.0"
+            ],
             "4,999 yuan": [
                 "4999.0"
             ],
             "4,199 yuan": "4,199 yuan",
-            "5,099 yuan": "5,099 yuan",
+            "5,099 yuan": [
+                "5,099 yuan",
+                "5099.0"
+            ],
             "4,199.0 yuan": [
                 "4199.0"
             ],
-            "12,499 yuan": "12,499 yuan",
-            "6,086 yuan": "6,086 yuan",
-            "5,989 yuan": "5,989 yuan",
-            "5,699 yuan": "5,699 yuan",
-            "6,699 yuan": "6,699 yuan",
-            "2,889 yuan": "2,889 yuan",
+            "12,499 yuan": [
+                "12,499 yuan",
+                "12499.0"
+            ],
+            "6,086 yuan": [
+                "6,086 yuan",
+                "6086.0"
+            ],
+            "5,699 yuan": [
+                "5,699 yuan",
+                "5699.0"
+            ],
+            "6,699 yuan": [
+                "6,699 yuan",
+                "6699.0"
+            ],
+            "2,889 yuan": [
+                "2,889 yuan",
+                "2899.0"
+            ],
             "2,899.0 yuan": [
                 "2,899.0",
                 "2899.0"
@@ -5750,43 +6113,37 @@
                 "4,088.0",
                 "4088.0"
             ],
-            "4,299 yuan": "4,299 yuan",
-            "8,278 yuan": [
-                "8,278"
+            "4,299 yuan": [
+                "4,299 yuan",
+                "4299.0"
             ],
-            "6,088 yuan": "6,088 yuan",
-            "19999.0": "19999.0",
-            "18099.0": "18099.0",
-            "10688.0": "10688.0",
-            "4299.0": "4299.0",
-            "5799.0": "5799.0",
-            "6699.0": "6699.0",
-            "4599.0": "4599.0",
-            "10299.0": "10299.0",
-            "5949.0": "5949.0",
-            "5499.0": "5499.0",
-            "4899.0": "4899.0",
-            "20688.0": "20688.0",
-            "5899.0": "5899.0",
-            "8699.0": "8699.0",
-            "6088.0": "6088.0",
-            "5099.0": "5099.0",
-            "12499.0": "12499.0",
-            "5699.0": "5699.0",
-            "5129.0": "5129.0",
-            "6449.0": "6449.0",
-            "6199.0": "6199.0",
-            "6999.0": "6999.0",
-            "6399.0": "6399.0",
-            "10288.0": "10288.0",
-            "13688.0": "13688.0",
-            "3599.0": "3599.0",
-            "3899.0": "3899.0",
-            "8278.0": "8278.0",
-            "26999.0": "26999.0",
-            "2889.0": "2889.0",
-            "6086.0": "6086.0",
-            "4499.0": "4499.0"
+            "8,278 yuan": [
+                "8,278",
+                "8278.0"
+            ],
+            "6,088 yuan": [
+                "6,088 yuan",
+                "6088.0"
+            ],
+            "19,999 yuan": "19999.0",
+            "18,099 yuan": "18099.0",
+            "10,688 yuan": "10688.0",
+            "4,599 yuan": "4599.0",
+            "10,299 yuan": "10299.0",
+            "5,949 yuan": "5949.0",
+            "4,899 yuan": "4899.0",
+            "20,688 yuan": "20688.0",
+            "8,699 yuan": "8699.0",
+            "5,129 yuan": "5129.0",
+            "6,449 yuan": "6449.0",
+            "6,199 yuan": "6199.0",
+            "6,999 yuan": "6999.0",
+            "10,288 yuan": "10288.0",
+            "13,688 yuan": "13688.0",
+            "3,599 yuan": "3599.0",
+            "3,899 yuan": "3899.0",
+            "26,999 yuan": "26999.0",
+            "4,499 yuan": "4499.0"
         },
         "operating system": {
             "Windows 10": "Windows 10",
@@ -5844,9 +6201,12 @@
             "2TB SSD": "2TB SSD"
         },
         "series": {
-            "Dell Inspiron": "Dell Inspiron",
-            "Lenovo GeekPro": [
-                "GeekPro series of Lenovo"
+            "Lenovo Xiaoxin Chao 7000 Series": [
+                "Lenovo Xiaoxin Chao"
+            ],
+            "Lenovo GeekPro Series": [
+                "GeekPro series of Lenovo",
+                "Lenovo GeekPro"
             ],
             "Lenovo Tianyi": "Lenovo Tianyi",
             "Lenovo Xiaoxin Air": "Lenovo Xiaoxin Air",
@@ -5854,7 +6214,11 @@
             "Lenovo Y-series": "Lenovo Y-series",
             "Acer Yiwu": "Acer Yiwu",
             "HP Slimline series": "HP Slimline series",
-            "Dell Inspiron Series": "Dell Inspiron Series",
+            "Dell Inspiron Series": [
+                "Dell Inspiron",
+                "Dell Inspiron Series",
+                "Inspiron series of Dell"
+            ],
             "Dell G Series": "Dell G Series",
             "Mi laptop": [
                 "Mi Notebook"
@@ -5869,14 +6233,12 @@
             "Acer Extensa": "Acer Extensa",
             "Lenovo Tianyi series": "Lenovo Tianyi series",
             "MacBook Air": "MacBook Air",
-            "GeekPro series of Lenovo": "GeekPro series of Lenovo",
             "Dell Vostro": "Dell Vostro",
             "Dell Flame 7000": "Dell Flame 7000",
             "Lenovo YOGA": "Lenovo YOGA",
             "HP Star": "HP Star",
             "HP Slimline": "HP Slimline",
             "Dell XPS Series": "Dell XPS Series",
-            "Lenovo GeekPro Series": "Lenovo GeekPro Series",
             "Acer Predator Series": "Acer Predator Series",
             "Xiaomi Gaming Laptop Series": "Xiaomi Gaming Laptop Series",
             "Dell Vostro Series": "Dell Vostro Series",
@@ -5891,7 +6253,6 @@
             "Lenovo Legion Series": "Lenovo Legion Series",
             "Acer Concept-D Series": "Acer Concept-D Series",
             "Acer Xuan 6 Series": "Acer Xuan 6 Series",
-            "Lenovo Xiaoxin Chao 7000 Series": "Lenovo Xiaoxin Chao 7000 Series",
             "HP Omen Series": "HP Omen Series",
             "Xiaomi Air Series": "Xiaomi Air Series",
             "Lenovo Y series": "Lenovo Y series",
@@ -5960,14 +6321,6 @@
             "MX110": "MX110",
             "AMD Radeon R7 430 2G": "AMD Radeon R7 430 2G",
             "RTX2080Ti": "RTX2080Ti"
-        }
-    },
-    "general": {
-        "series": {
-            "Tiguan-L": "Tiguan-L"
-        },
-        "class number": {
-            "PM5P24018A": "PM5P24018A"
         }
     }
 }

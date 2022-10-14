@@ -18,7 +18,7 @@ with open(args.input_file) as fin:
     for domain, items in zh2en_alignment.items():
         for slot, values in items.items():
             for zh_val, en_vals in values.items():
-                value = process_string(zh_val)
+                value = process_string(zh_val, setting='zh')
                 value = value.replace('，', ',')
                 value = value.replace('：', ':')
                 zh2en_value[domain][slot][value] = en_vals
