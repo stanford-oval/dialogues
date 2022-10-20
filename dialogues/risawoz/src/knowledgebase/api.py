@@ -17,7 +17,10 @@ def call_api(db, api_names, constraints, lang, value_mapping, actions=None):
             domain_constraints = copy.deepcopy(constraints[api])
 
         domain_constraints = {
-            (k if lang == 'zh' else k.lower()): process_string((v if lang == 'zh' else value_mapping.en2canonical.get(v, v)), lang) for k, v in domain_constraints.items()
+            (k if lang == 'zh' else k.lower()): process_string(
+                (v if lang == 'zh' else value_mapping.en2canonical.get(v, v)), lang
+            )
+            for k, v in domain_constraints.items()
         }
 
         if api == 'car':
