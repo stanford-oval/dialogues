@@ -9,7 +9,7 @@ from dialogues import Risawoz
 parser = argparse.ArgumentParser()
 
 parser.add_argument(
-    "--reference_file_path", type=str, default="dialogues/risawoz/data/zh_valid.json", help="path of reference"
+    "--reference_file_path", type=str, default="./tests/risawoz/data/converted_valid.json", help="path of reference"
 )
 parser.add_argument("--prediction_file_path", type=str, default="tests/risawoz/data/preds.json", help="path of prediction")
 parser.add_argument("--eval_task", type=str, default="end2end", help="end2end, dst, response")
