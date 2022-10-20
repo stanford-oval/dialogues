@@ -564,7 +564,11 @@ class WOZDataset(Dataset):
         else:
             intents = [intents]
         for intent in intents:
-            intent_action_text = self.action2span_for_single_intent(agent_actions[intent], intent, setting)
+            if isinstance(agent_actions, dict):
+                action = agent_actions[intent]
+            else:
+                action = agent_actions
+            intent_action_text = self.action2span_for_single_intent(action, intent, setting)
             action_text += intent_action_text
         return action_text.strip()  # retain the original output for BiToD
 

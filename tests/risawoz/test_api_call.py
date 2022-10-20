@@ -2,7 +2,7 @@ from collections import defaultdict
 
 import dictdiffer
 
-from dialogues import Risawoz
+from dialogues.risawoz.src.convert import Risawoz
 
 
 def api_result_diff(knowledge, gold_knowledge):
