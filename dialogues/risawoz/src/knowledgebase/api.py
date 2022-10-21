@@ -75,7 +75,7 @@ def call_api(db, api_names, constraints, lang, value_mapping, actions=None):
                                 slot = 'business_hours'
                         if slot not in item:
                             print(slot)
-                        if item[slot] not in value:
+                        if str(item[slot]) not in value:
                             found = False
                     if found:
                         knowledge[api] = item
@@ -117,6 +117,15 @@ def tokenize_string(sentence):
 
 
 def process_string(sentence, setting):
+    if isinstance(sentence, dict):
+        return sentence
+
+    if isinstance(sentence, list):
+        result = []
+        for sent in sentence:
+            result.append(process_string(sent, setting))
+        return result
+
     if isinstance(sentence, bool):
         return str(sentence)
     if not isinstance(sentence, str):

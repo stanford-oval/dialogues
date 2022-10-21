@@ -106,8 +106,9 @@ def build_user_event(turn, setting):
         s = dataset.value_mapping.zh2en_SLOT_MAP.get(s, s)
         event["state"][d][s] = {"relation": "equal_to", "value": [process_string(v, setting)]}
     event["state"] = dict(event["state"])
-    # event["Text"] = turn["user_utterance"]
     event["Text"] = process_string(turn["user_utterance"], setting)
+    if isinstance(event["Text"], list):
+        event["Text"] = event["Text"][0]
     return event
 
 
@@ -150,8 +151,9 @@ def build_wizard_event(turn, setting, mode="normal"):
             actions.append(event_action)
         event["Actions"] = actions
 
-        # event["Text"] = turn["system_utterance"]
         event["Text"] = process_string(turn["system_utterance"], setting)
+        if isinstance(event["Text"], list):
+            event["Text"] = event["Text"][0]
     return event
 
 
