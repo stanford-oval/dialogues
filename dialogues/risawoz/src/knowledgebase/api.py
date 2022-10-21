@@ -1,6 +1,8 @@
 import copy
 import re
 
+from dialogues.main import convert_to_int
+
 CJK_RANGES = [
     (ord(u"\u3300"), ord(u"\u33ff")),
     (ord(u"\ufe30"), ord(u"\ufe4f")),  # compatibility ideographs
@@ -45,7 +47,7 @@ def call_api(db, api_names, constraints, lang, value_mapping, actions=None):
 
         if api == 'car':
             if 'number_of_seats' in domain_constraints:
-                domain_constraints['number_of_seats'] = {"$gte": int(domain_constraints['number_of_seats'])}
+                domain_constraints['number_of_seats'] = {"$gte": convert_to_int(domain_constraints['number_of_seats'])}
 
         db_name = f'{api_en}_{lang}'
         cursor = db[db_name].find(domain_constraints)
