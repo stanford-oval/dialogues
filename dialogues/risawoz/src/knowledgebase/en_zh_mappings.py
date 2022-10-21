@@ -284,7 +284,7 @@ class RisawozMapping(object):
             '待机时长': 'standby_time',
             '色系': 'colour',
             '硬盘容量': 'hard_disk_capacity',
-            'CPU': 'CPU_series',
+            'CPU': 'CPU',
             '显卡类别': 'GPU_category',
             '首播时间': 'premiere_time',
             '集数': 'episodes',

@@ -38,5 +38,8 @@ train, fewshot, dev, test = dataset.process_data(args)
 with open('./tests/risawoz/data/processed_valid.json') as fin:
     gold_data = json.load(fin)
 
+with open('processed_valid.json', 'w') as fout:
+    json.dump(dev, fout, indent=4, ensure_ascii=False)
+
 assert len(dev) == 16232
 assert dev == gold_data
