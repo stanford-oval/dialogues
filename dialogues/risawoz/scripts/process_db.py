@@ -18,9 +18,9 @@ with open(args.input_file) as fin:
     for domain, items in zh2en_alignment.items():
         for slot, values in items.items():
             for zh_val, en_vals in values.items():
+                zh_val = zh_val.replace('，', ',')
+                zh_val = zh_val.replace('：', ':')
                 value = process_string(zh_val, setting='zh')
-                value = value.replace('，', ',')
-                value = value.replace('：', ':')
                 zh2en_value[domain][slot][value] = en_vals
 
 with open(args.input_file.replace('zh2en_alignment.json', 'zh2en_alignment_new.json'), 'w') as fout:

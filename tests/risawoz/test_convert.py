@@ -32,4 +32,7 @@ for split in args.splits:
     with open('./tests/risawoz/data/converted_valid.json') as f:
         gold_data = json.load(f)
 
+    with open('converted_valid.json', 'w') as fout:
+        json.dump(processed_data, fout, indent=4, ensure_ascii=False)
+
     assert processed_data == gold_data
