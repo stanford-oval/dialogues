@@ -28,7 +28,7 @@ parser.add_argument("--only_user_rg", action='store_true')
 args = parser.parse_args()
 args.setting = 'zh'
 args.gen_full_state = True
-args.splits = ['valid', 'test']
+args.splits = ['valid']
 
 args.dataset_name = 'risawoz'
 
