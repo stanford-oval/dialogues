@@ -131,7 +131,12 @@ def build_wizard_event(turn, setting, mode="normal"):
                 event["Constraints"][d][s] = process_string(v, setting)
             # event["Constraints_raw"][d][s] = ''.join(v.split())
         # TODO: handle multiple APIs
-        event["API"] = list(set([d for d in event["Constraints"].keys()]))
+        api_domains = []
+        for d in event["Constraints"].keys():
+            if d in api_domains:
+                continue
+            api_domains.append(d)
+        event["API"] = api_domains
         if not event["API"]:
             event["API"] = turn_domain_en
     else:

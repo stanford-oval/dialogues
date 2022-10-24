@@ -8,10 +8,6 @@ from dialogues import Risawoz
 
 parser = argparse.ArgumentParser()
 
-parser.add_argument(
-    "--reference_file_path", type=str, default="./tests/risawoz/data/converted_valid.json", help="path of reference"
-)
-parser.add_argument("--prediction_file_path", type=str, default="tests/risawoz/data/preds.json", help="path of prediction")
 parser.add_argument("--eval_task", type=str, default="end2end", help="end2end, dst, response")
 parser.add_argument("--setting", type=str, help="en, zh, en&zh, en2zh, zh2en")
 parser.add_argument("--result_path", type=str, default="./", help="result_path")
@@ -22,16 +18,15 @@ args = parser.parse_args()
 if not os.path.exists(args.result_path):
     os.makedirs(args.result_path)
 
-if not args.setting:
-    file = os.path.basename(args.reference_file_path)
-    if 'zh' in file:
-        args.setting = 'zh'
-    else:
-        args.setting = 'en'
+# TODO add tests for en
+args.setting = 'zh'
+reference_file_path = f'./tests/risawoz/data/{args.setting}/converted_valid.json'
+prediction_file_path = f'tests/risawoz/data/{args.setting}/preds.json'
 
 dataset = Risawoz()
 dataset.FAST_EVAL = True
-results = dataset.compute_metrics(args, args.prediction_file_path, args.reference_file_path)
+
+results = dataset.compute_metrics(args, prediction_file_path, reference_file_path)
 
 # api, da, and ser are not correct
 gold_results = OrderedDict(
@@ -39,7 +34,10 @@ gold_results = OrderedDict(
         ('bleu', 46.0014),
         ('ser', 18.260226712666338),
         ('success_rate', 58.5),
-        ('api_acc', 83.15789473684211),
+        (
+            'api_acc',
+            83.27485380116958,
+        ),
         ('da_acc', 73.90340068999507),
         ('jga', 82.97190734351898),
         (
