@@ -84,7 +84,7 @@ def build_user_event(turn, setting):
         event_action = {}
         for i in range(len(action)):
             if i == 1 and action[i]:
-                action[i] = dataset.value_mapping.zh2en_DOMAIN_MAP.get(action[i], action[i].lower())
+                action[i] = dataset.value_mapping.zh2en_DOMAIN_MAP.get(action[i].lower(), action[i].lower())
             elif i == 2 and action[i]:
                 action[i] = dataset.value_mapping.zh2en_SLOT_MAP.get(action[i], action[i])
             elif i == 3 and action[i]:
@@ -98,11 +98,13 @@ def build_user_event(turn, setting):
         actions.append(event_action)
     event["Actions"] = actions
     # TODO: handle multiple active intents
-    event["active_intent"] = [dataset.value_mapping.zh2en_DOMAIN_MAP.get(dom, dom) for dom in turn["turn_domain"]]
+    event["active_intent"] = [
+        dataset.value_mapping.zh2en_DOMAIN_MAP.get(dom.lower(), dom.lower()) for dom in turn["turn_domain"]
+    ]
     event["state"] = defaultdict(dict)
     for ds, v in turn["belief_state"]["inform slot-values"].items():
         d, s = ds.split("-")[0], ds.split("-")[1]
-        d = dataset.value_mapping.zh2en_DOMAIN_MAP.get(d, d)
+        d = dataset.value_mapping.zh2en_DOMAIN_MAP.get(d.lower(), d.lower())
         s = dataset.value_mapping.zh2en_SLOT_MAP.get(s, s)
         event["state"][d][s] = {"relation": "equal_to", "value": [process_string(v, setting)]}
     event["state"] = dict(event["state"])
