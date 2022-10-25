@@ -11,7 +11,7 @@ parser.add_argument("--save_dir", type=str, default="data/preprocessed", help="p
 parser.add_argument(
     "--detail", type=bool, default=False, help="whether to return dict annotations, used for data augmentation"
 )
-parser.add_argument("--setting", type=str, default="en", help="en, zh, en_zh, en2zh, zh2en")
+parser.add_argument("--setting", type=str, help="en, zh, en_zh, en2zh, zh2en")
 parser.add_argument("--splits", nargs='+', default=['train', 'valid', 'test'])
 parser.add_argument("--version", type=int)
 parser.add_argument("--max_history", type=int, default=2)
@@ -26,17 +26,19 @@ parser.add_argument("--use_natural_response", action='store_true')
 parser.add_argument("--only_user_rg", action='store_true')
 
 args = parser.parse_args()
-args.setting = 'zh'
 args.gen_full_state = True
-args.splits = ['valid', 'test']
+args.splits = ['valid']
 
 args.dataset_name = 'risawoz'
 
 dataset = Risawoz()
 train, fewshot, dev, test = dataset.process_data(args)
 
-with open('./tests/risawoz/data/processed_valid.json') as fin:
+with open(f'./tests/risawoz/data/{args.setting}/processed_valid.json') as fin:
     gold_data = json.load(fin)
+
+with open(f'{args.setting}_processed_valid.json', 'w') as fout:
+    json.dump(dev, fout, indent=4, ensure_ascii=False)
 
 assert len(dev) == 16232
 assert dev == gold_data

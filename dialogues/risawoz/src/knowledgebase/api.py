@@ -1,7 +1,29 @@
 import copy
 import re
 
-from genienlp.data_utils.almond_utils import is_cjk_char
+from dialogues.main import convert_to_int
+
+CJK_RANGES = [
+    (ord(u"\u3300"), ord(u"\u33ff")),
+    (ord(u"\ufe30"), ord(u"\ufe4f")),  # compatibility ideographs
+    (ord(u"\uf900"), ord(u"\ufaff")),
+    (ord(u"\U0002F800"), ord(u"\U0002fa1f")),  # compatibility ideographs
+    (ord(u'\u3040'), ord(u'\u309f')),  # Japanese Hiragana
+    (ord(u"\u30a0"), ord(u"\u30ff")),  # Japanese Katakana
+    (ord(u"\u2e80"), ord(u"\u2eff")),  # cjk radicals supplement
+    (ord(u"\u4e00"), ord(u"\u9fff")),
+    (ord(u"\u3400"), ord(u"\u4dbf")),
+    (ord(u"\U00020000"), ord(u"\U0002a6df")),
+    (ord(u"\U0002a700"), ord(u"\U0002b73f")),
+    (ord(u"\U0002b740"), ord(u"\U0002b81f")),
+    (ord(u"\U0002b820"), ord(u"\U0002ceaf")),
+]
+
+CJK_ADDONS = [ord(u"\u3001"), ord('，'), ord('。'), ord('！'), ord('？')]
+
+
+def is_cjk_char(cp):
+    return cp in CJK_ADDONS or any([range[0] <= cp <= range[1] for range in CJK_RANGES])
 
 
 def call_api(db, api_names, constraints, lang, value_mapping, actions=None):
@@ -17,12 +39,15 @@ def call_api(db, api_names, constraints, lang, value_mapping, actions=None):
             domain_constraints = copy.deepcopy(constraints[api])
 
         domain_constraints = {
-            k: process_string(value_mapping.en2canonical.get(v, v), lang) for k, v in domain_constraints.items()
+            (k if lang == 'zh' else k.lower()): process_string(
+                (v if lang == 'zh' else value_mapping.en2canonical.get(v, v)), lang
+            )
+            for k, v in domain_constraints.items()
         }
 
         if api == 'car':
             if 'number_of_seats' in domain_constraints:
-                domain_constraints['number_of_seats'] = {"$gte": int(domain_constraints['number_of_seats'])}
+                domain_constraints['number_of_seats'] = {"$gte": convert_to_int(domain_constraints['number_of_seats'])}
 
         db_name = f'{api_en}_{lang}'
         cursor = db[db_name].find(domain_constraints)
@@ -41,7 +66,7 @@ def call_api(db, api_names, constraints, lang, value_mapping, actions=None):
                     for slot, value in acts.items():
                         slot = slot.replace('.', '\uFF0E')
                         slot = slot.replace(' ', '_')
-                        # slot = slot.lower()
+                        slot = slot if lang == "zh" else slot.lower()
                         slot = value_mapping.zh2en_SLOT_MAP.get(slot, slot)
                         if slot not in item:
                             if slot == 'price' and api_en == 'car':
@@ -50,7 +75,7 @@ def call_api(db, api_names, constraints, lang, value_mapping, actions=None):
                                 slot = 'business_hours'
                         if slot not in item:
                             print(slot)
-                        if item[slot] not in value:
+                        if str(item[slot]) not in value:
                             found = False
                     if found:
                         knowledge[api] = item
@@ -92,6 +117,15 @@ def tokenize_string(sentence):
 
 
 def process_string(sentence, setting):
+    if isinstance(sentence, dict):
+        return sentence
+
+    if isinstance(sentence, list):
+        result = []
+        for sent in sentence:
+            result.append(process_string(sent, setting))
+        return result
+
     if isinstance(sentence, bool):
         return str(sentence)
     if not isinstance(sentence, str):

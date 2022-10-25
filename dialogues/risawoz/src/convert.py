@@ -84,7 +84,7 @@ def build_user_event(turn, setting):
         event_action = {}
         for i in range(len(action)):
             if i == 1 and action[i]:
-                action[i] = dataset.value_mapping.zh2en_DOMAIN_MAP.get(action[i], action[i].lower())
+                action[i] = dataset.value_mapping.zh2en_DOMAIN_MAP.get(action[i].lower(), action[i].lower())
             elif i == 2 and action[i]:
                 action[i] = dataset.value_mapping.zh2en_SLOT_MAP.get(action[i], action[i])
             elif i == 3 and action[i]:
@@ -98,16 +98,19 @@ def build_user_event(turn, setting):
         actions.append(event_action)
     event["Actions"] = actions
     # TODO: handle multiple active intents
-    event["active_intent"] = [dataset.value_mapping.zh2en_DOMAIN_MAP.get(dom, dom) for dom in turn["turn_domain"]]
+    event["active_intent"] = [
+        dataset.value_mapping.zh2en_DOMAIN_MAP.get(dom.lower(), dom.lower()) for dom in turn["turn_domain"]
+    ]
     event["state"] = defaultdict(dict)
     for ds, v in turn["belief_state"]["inform slot-values"].items():
         d, s = ds.split("-")[0], ds.split("-")[1]
-        d = dataset.value_mapping.zh2en_DOMAIN_MAP.get(d, d)
+        d = dataset.value_mapping.zh2en_DOMAIN_MAP.get(d.lower(), d.lower())
         s = dataset.value_mapping.zh2en_SLOT_MAP.get(s, s)
         event["state"][d][s] = {"relation": "equal_to", "value": [process_string(v, setting)]}
     event["state"] = dict(event["state"])
-    # event["Text"] = turn["user_utterance"]
     event["Text"] = process_string(turn["user_utterance"], setting)
+    if isinstance(event["Text"], list):
+        event["Text"] = event["Text"][0]
     return event
 
 
@@ -128,7 +131,12 @@ def build_wizard_event(turn, setting, mode="normal"):
                 event["Constraints"][d][s] = process_string(v, setting)
             # event["Constraints_raw"][d][s] = ''.join(v.split())
         # TODO: handle multiple APIs
-        event["API"] = list(set([d for d in event["Constraints"].keys()]))
+        api_domains = []
+        for d in event["Constraints"].keys():
+            if d in api_domains:
+                continue
+            api_domains.append(d)
+        event["API"] = api_domains
         if not event["API"]:
             event["API"] = turn_domain_en
     else:
@@ -150,8 +158,9 @@ def build_wizard_event(turn, setting, mode="normal"):
             actions.append(event_action)
         event["Actions"] = actions
 
-        # event["Text"] = turn["system_utterance"]
         event["Text"] = process_string(turn["system_utterance"], setting)
+        if isinstance(event["Text"], list):
+            event["Text"] = event["Text"][0]
     return event
 
 
@@ -163,7 +172,9 @@ DIALOGUES_WITH_ISSUE = {
 }
 
 
-def build_kb_event(wizard_query_event, db, actions, expected_num_results, setting, dial_id, turn_id):
+def build_kb_event(
+    wizard_query_event, db, actions, expected_num_results, setting, dial_id, turn_id, ground_truth_results=None
+):
     event = {"Agent": "KnowledgeBase"}
     constraints = wizard_query_event["Constraints"]
     for d in constraints:
@@ -176,6 +187,53 @@ def build_kb_event(wizard_query_event, db, actions, expected_num_results, settin
             if (dial_id, turn_id) in DIALOGUES_WITH_ISSUE:
                 continue
             print(f'API call likely failed for dial_id: {dial_id}, turn_id: {turn_id}')
+            if ground_truth_results is not None:
+                constraints[api] = {
+                    # case insensitive slot name matching for English
+                    (k if setting == 'zh' else k.lower()): (
+                        v if setting == 'zh' else dataset.value_mapping.en2canonical.get(v, v)
+                    )
+                    for k, v in constraints[api].items()
+                }
+                for db_item in ground_truth_results:
+                    if not isinstance(db_item, dict):
+                        db_item = json.loads(db_item.replace("'", '"'))
+                    db_item = {
+                        (k.lower() if setting == 'en' else dataset.value_mapping.zh2en_SLOT_MAP[k]).replace(
+                            " ", "_"
+                        ): process_string(v, setting)
+                        for k, v in db_item.items()
+                    }
+                    try:
+                        # compare the constraints and db_results annotation to see why the API call failed
+                        diff = set(constraints[api].items()) - set(db_item.items())
+                    except Exception as e:
+                        if "unhashable type: 'list'" in str(e):
+                            if 'key_departments' in list(constraints[api].keys()):
+                                if constraints[api]['key_departments'] in db_item['key_departments']:
+                                    diff = {}
+                                    continue  # key_departments is a list, it's ok to only mention one of the key departments by user.
+                                else:
+                                    diff = {'key_departments': constraints[api]['key_departments']}
+                            else:
+                                hashable_db_item = {k: str(v) for k, v in db_item.items()}
+                                diff = set(constraints[api].items()) - set(hashable_db_item.items())
+                    if diff:
+                        original = {k: db_item[k] for k in dict(diff).keys()}
+                        if list(original.keys()) == ['number_of_seats'] and int(dict(diff)['number_of_seats']) <= int(
+                            original['number_of_seats']
+                        ):
+                            continue  # number_of_seats doesn't need to be exactly matched
+                        else:
+                            # print the difference between constraints and db_results for further data correction
+                            print('API call likely failed with canonical constraints: {}'.format(constraints))
+                            print('difference: {}'.format(diff))
+                            print('original: {}'.format(original))
+                print(
+                    'constraints: {}, available options: {}, expected: {}'.format(
+                        constraints[api], item.get("available_options", 0), expected_num_results
+                    )
+                )
             knowledge = call_api(db, api_names, constraints, lang='zh', value_mapping=dataset.value_mapping, actions=actions)
 
     # for api, item in knowledge.items():
@@ -218,7 +276,17 @@ def build_dataset(original_data_path, db, setting):
                         turn["db_results"][0][len('Database search results: the number of successful matches is ') :]
                     )
 
-                kb_event = build_kb_event(wizard_query_event, db, actions, expected_num_results, setting, dialogue_id, turn_id)
+                # kb_event = build_kb_event(wizard_query_event, db, actions, expected_num_results, setting, dialogue_id, turn_id, ground_truth_results=turn["db_results"][1:])
+                kb_event = build_kb_event(
+                    wizard_query_event,
+                    db,
+                    actions,
+                    expected_num_results,
+                    setting,
+                    dialogue_id,
+                    turn_id,
+                    ground_truth_results=None,
+                )
                 user_turn_event['turn_id'] = turn_id
                 wizard_query_event['turn_id'] = turn_id
                 wizard_normal_event['turn_id'] = turn_id
