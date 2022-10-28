@@ -42,9 +42,6 @@ class Risawoz(WOZDataset):
 
         try:
             result = api.call_api(self.db, api_names, constraints, src_lang, self.value_mapping)
-            # remove _id
-            # for api_name in result.keys():
-            #     result[api_name].pop('_id', None)
 
         except Exception as e:
             logger.error(f'Error: {e}')
@@ -58,7 +55,6 @@ class Risawoz(WOZDataset):
                     logger.warning(warning + f', for turn: {dial_id}/{turn_id}')
                     self._warnings.add(warning)
                 new_knowledge_text = f'( {api_name} ) Message = No item available.'
-                # new_knowledge_text = 'null'
             else:
                 knowledge.update(result)
                 new_knowledge_text = self.knowledge2span(knowledge)

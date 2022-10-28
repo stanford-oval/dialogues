@@ -127,7 +127,6 @@ def build_wizard_event(turn, setting, mode="normal"):
             s = dataset.value_mapping.zh2en_SLOT_MAP.get(s, s).replace(' ', '_')
             if d in turn_domain_en:
                 event["Constraints"][d][s] = process_string(v, setting)
-            # event["Constraints_raw"][d][s] = ''.join(v.split())
         # TODO: handle multiple APIs
         api_domains = []
         for d in event["Constraints"].keys():
@@ -237,9 +236,6 @@ def build_kb_event(
                 )
             knowledge = call_api(db, api_names, constraints, lang='zh', value_mapping=dataset.value_mapping, actions=actions)
 
-    # for api, item in knowledge.items():
-    #     for slot, val in item.items():
-    #         knowledge[api][slot] = process_string(val, setting)
     event["Item"] = knowledge
     event["Topic"] = api_names
     return event
@@ -277,7 +273,6 @@ def build_dataset(original_data_path, db, setting):
                         turn["db_results"][0][len('Database search results: the number of successful matches is ') :]
                     )
 
-                # kb_event = build_kb_event(wizard_query_event, db, actions, expected_num_results, setting, dialogue_id, turn_id, ground_truth_results=turn["db_results"][1:])
                 kb_event = build_kb_event(
                     wizard_query_event,
                     db,
@@ -289,7 +284,6 @@ def build_dataset(original_data_path, db, setting):
                     ground_truth_results=None,
                 )
                 user_turn_event['turn_id'] = wizard_query_event['turn_id'] = wizard_normal_event['turn_id'] = turn_id
-                # del wizard_query_event['Constraints_raw']
                 events += [user_turn_event, wizard_query_event, kb_event, wizard_normal_event]
             else:
                 wizard_event = build_wizard_event(turn, setting)

@@ -1,7 +1,6 @@
 import os
 import re
 import subprocess
-from typing import Any, Dict, List, Text
 
 from word2number import w2n
 
@@ -56,7 +55,6 @@ def convert_to_int(val, strict=False, word2number=False):
     if val.isdigit() and not val.startswith('0'):
         return int(val)
     elif word2number and len(val.split()) == 1:
-        # elif word2number:
         try:
             num = w2n.word_to_num(val)
             return num
@@ -74,7 +72,6 @@ def convert_to_int(val, strict=False, word2number=False):
 
 # very slow
 def replace_word(input, search, replace):
-    # return input.replace(search, replace)
     def replace_method(match):
         if match.group(2) is None:
             return match.group()
@@ -114,50 +111,49 @@ is_mongo = True
 
 def is_equal_to(value):
     if is_mongo:
-        return value  #
+        return value
     else:
         return lambda x: x == value
 
 
 def is_not(value):
     if is_mongo:
-        return {"$ne": value}  #
+        return {"$ne": value}
     else:
-        # return lambda x: x == value
         return lambda x: x != value
 
 
 def contains_none_of(value):
     if is_mongo:
-        return {"$nin": value}  #
+        return {"$nin": value}
     else:
         return lambda x: not any([e in x for e in value])
 
 
 def is_one_of(value):
     if is_mongo:
-        return {"$in": value}  #
+        return {"$in": value}
     else:
         return lambda x: x in value
 
 
 def is_at_least(value):
     if is_mongo:
-        return {"$gte": value}  #
+        return {"$gte": value}
     else:
         return lambda x: x >= value
 
 
 def is_less_than(value):
     if is_mongo:
-        return {"$lt": value}  #
+        return {"$lt": value}
     else:
         return lambda x: x < value
 
 
 def is_at_most(value):
     if is_mongo:
-        return {"$lte": value}  #
+        return {"$lte": value}
     else:
         return lambda x: x <= value
 
@@ -174,11 +170,10 @@ def constraint_and(constraint1, constraint2):
     return lambda x: constraint1(x) and constraint2(x)
 
 
-def constraint_list_to_dict(constraints: List[Dict[Text, Any]]) -> Dict[Text, Any]:
+def constraint_list_to_dict(constraints):
     result = {}
     for constraint in constraints:
         for name, constraint_function in constraint.items():
-            # print(name, callable(constraint_function))
             if name not in result:
                 result[name] = constraint_function
             else:

@@ -30,8 +30,6 @@ def call_api(db, api_names, constraints, lang, value_mapping, actions=None):
     knowledge = {}
     for api in api_names:
         api_en = value_mapping.zh2en_DOMAIN_MAP.get(api, api)
-        # if api not in constraints:
-        #     continue
         knowledge[api] = {}
         if api not in constraints:
             domain_constraints = {}
@@ -53,10 +51,7 @@ def call_api(db, api_names, constraints, lang, value_mapping, actions=None):
         cursor = db[db_name].find(domain_constraints)
         domain_knowledge = []
         for matched in cursor:
-            # matched["_id"] = str(matched["_id"])
             matched.pop("_id")
-            # for key, val in matched.items():
-            #     matched[key] = process_string(val)
             domain_knowledge.append(matched)
         if domain_knowledge:
             if actions:

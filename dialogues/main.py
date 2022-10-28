@@ -1006,21 +1006,6 @@ class WOZDataset(Dataset):
                             act_values = set([self.clean_value(val) for val in act_values])
                         reference_act_values.append(act_values)
 
-                        # for i in range(len(intent)):
-                        #     # for RiSAWOZ: filter turn actions with current intent
-                        #     turn_actions = (
-                        #         [action for action in turn["Actions"] if action["domain"] == intent[i]]
-                        #         if len(intent) > 1
-                        #         else turn["Actions"]
-                        #     )
-                        #     reference_actions.append(
-                        #         self.clean_value(
-                        #             self.action2span(
-                        #                 turn_actions, self.value_mapping.en_API_MAP.get(intent[i], intent[i]), 'en'
-                        #             )
-                        #         )
-                        #     )
-
                         reference_actions.append(
                             self.clean_value(
                                 self.action2span(
