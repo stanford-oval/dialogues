@@ -61,7 +61,9 @@
         "type": {
             "romantic": [
                 "romantic TV show",
-                "romance"
+                "romance",
+                "costume romantic",
+                "costume romantic TV show"
             ],
             "sci-fi": [
                 "science fiction",
@@ -99,9 +101,6 @@
                 "crime drama",
                 "crime TV show",
                 "crime shows"
-            ],
-            "costume romantic": [
-                "costume romantic TV show"
             ]
         },
         "title": {
@@ -1573,7 +1572,8 @@
                 "slightly more expensive",
                 "a slightly more expensive",
                 "more expensive",
-                "a bit more expensive"
+                "a bit more expensive",
+                "above-average"
             ],
             "cheap": [
                 "affordable",
@@ -1581,7 +1581,6 @@
                 "low-priced"
             ],
             "expensive": "expensive",
-            "above-average": "above-average",
             "more expensive": "more expensive"
         },
         "the most suitable people": {
@@ -2021,8 +2020,8 @@
             ],
             "Yamazaki Bakery": "Yamazaki Bakery",
             "Nongleyuan Charcoal Fire Barbecue": "Nongleyuan Charcoal Fire Barbecue",
-            "Palsaik Korean BBQ": [
-                "Palsaik Korean +Q"
+            "Palsaik Korean +Q": [
+                "Palsaik Korean BBQ"
             ],
             "Spicy Memory": "Spicy Memory",
             "Wufangzhai": "Wufangzhai",
@@ -2044,10 +2043,12 @@
             "Xin Hua Xi Beef Rice Noodle": "Xin Hua Xi Beef Rice Noodle",
             "Dongwu Noodle House": "Dongwu Noodle House",
             "Guimijia": "Guimijia",
-            "Fox's House Yoghurt": "Fox's House Yoghurt",
             "Wanyuting·hejiariben Cuisine Teppanyaki": "Wanyuting·hejiariben Cuisine Teppanyaki",
             "Yang's Dumpling": "Yang's Dumpling",
-            "Fox's Home Yogurt": "Fox's Home Yogurt",
+            "Fox's Home Yogurt": [
+                "Fox's Home Yogurt",
+                "Fox's House Yoghurt"
+            ],
             "Deyuelou": "Deyuelou",
             "Le Blé d'Or Brewery Restaurant": "Le Blé d'Or Brewery Restaurant",
             "HOU GA FEI": "HOU GA FEI",
@@ -2145,7 +2146,9 @@
             ],
             "bread and desserts": [
                 "bread and desserts",
-                "bread and dessert"
+                "bread and dessert",
+                "bread",
+                "dessert"
             ],
             "fast food": [
                 "fast food",
@@ -2162,9 +2165,7 @@
                 "Cantonese food"
             ],
             "Sushi": "Sushi",
-            "Northeastern Chinese cuisine": "Northeastern Chinese cuisine",
-            "bread": "bread",
-            "dessert": "dessert"
+            "Northeastern Chinese cuisine": "Northeastern Chinese cuisine"
         },
         "address": {
             "No. 3, Chuanfang Alley, North of Pingjiang Road": "No. 3, Chuanfang Alley, North of Pingjiang Road",
@@ -4225,15 +4226,19 @@
             "next Sunday": "next Sunday",
             "next Thursday": [
                 "Next Thursday",
-                "next Tuesday"
+                "Thursday"
             ],
             "next Friday": "next Friday",
-            "next Wednesday": "next Wednesday",
+            "next Wednesday": [
+                "next Wednesday",
+                "Wednesday"
+            ],
             "next Saturday": "next Saturday",
-            "next Tuesday": "next Tuesday",
+            "next Tuesday": [
+                "next Tuesday",
+                "Tuesday"
+            ],
             "next Monday": "next Monday",
-            "Wednesday": "Wednesday",
-            "Tuesday": "Tuesday",
             "that day": "that day",
             "the next day": "the next day"
         },
@@ -4757,8 +4762,7 @@
         "date": {
             "next Sunday": "next Sunday",
             "next Thursday": [
-                "Next Thursday",
-                "next Tuesday"
+                "Next Thursday"
             ],
             "Friday": "Friday",
             "next Wednesday morning": "next Wednesday morning",
@@ -6210,7 +6214,6 @@
             ],
             "Lenovo Tianyi": "Lenovo Tianyi",
             "Lenovo Xiaoxin Air": "Lenovo Xiaoxin Air",
-            "Lenovo Yangtian": "Lenovo Yangtian",
             "Lenovo Y-series": "Lenovo Y-series",
             "Acer Yiwu": "Acer Yiwu",
             "HP Slimline series": "HP Slimline series",
@@ -6223,8 +6226,6 @@
             "Mi laptop": [
                 "Mi Notebook"
             ],
-            "Lenovo Legion": "Lenovo Legion",
-            "HP Zhan series": "HP Zhan series",
             "Dell OptiPlex": "Dell OptiPlex",
             "Acer Shadow Knight": "Acer Shadow Knight",
             "Mi Notebook Air": "Mi Notebook Air",
@@ -6243,19 +6244,37 @@
             "Xiaomi Gaming Laptop Series": "Xiaomi Gaming Laptop Series",
             "Dell Vostro Series": "Dell Vostro Series",
             "Acer Extensa Series": "Acer Extensa Series",
-            "Lenovo Yangtian Series": "Lenovo Yangtian Series",
+            "Lenovo Yangtian Series": [
+                "Lenovo Yangtian Series",
+                "Lenovo Yangtian"
+            ],
             "Acer Shadow Knight Series": "Acer Shadow Knight Series",
             "MacBook Pro Series": "MacBook Pro Series",
-            "Acer Yiwu Series": "Acer Yiwu Series",
+            "Acer Yiwu Series": [
+                "Acer Yiwu Series",
+                "Acer Yiwu"
+            ],
             "Dell Flame 7000 Series": "Dell Flame 7000 Series",
-            "Xiaomi Laptop Series": "Xiaomi Laptop Series",
-            "HP Zhan Series": "HP Zhan Series",
-            "Lenovo Legion Series": "Lenovo Legion Series",
+            "Xiaomi Laptop Series": [
+                "Xiaomi Laptop Series",
+                "Mi laptop"
+            ],
+            "HP Zhan Series": [
+                "HP Zhan Series",
+                "HP Zhan series"
+            ],
+            "Lenovo Legion Series": [
+                "Lenovo Legion Series",
+                "Lenovo Legion"
+            ],
             "Acer Concept-D Series": "Acer Concept-D Series",
             "Acer Xuan 6 Series": "Acer Xuan 6 Series",
             "HP Omen Series": "HP Omen Series",
             "Xiaomi Air Series": "Xiaomi Air Series",
-            "Lenovo Y series": "Lenovo Y series",
+            "Lenovo Y series": [
+                "Lenovo Y series",
+                "Lenovo Y-series"
+            ],
             "Acer Aspire Series": "Acer Aspire Series",
             "RedmiBook 14 Series": "RedmiBook 14 Series",
             "Apple iMac Series": "Apple iMac Series",
