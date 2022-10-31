@@ -27,9 +27,11 @@ class RisawozMapping(object):
         with open(os.path.join(cur_dir, "mappings/en2canonical.json")) as f:
             en2canonical_tmp = json.load(f)
         en2canonical = {}
+        rev_en2canonical = {}
         for domain, items in en2canonical_tmp.items():
             for slot, values in items.items():
                 for canon, vals in values.items():
+                    rev_en2canonical[canon] = vals
                     if isinstance(vals, list):
                         for val in vals:
                             en2canonical[val] = canon
@@ -37,6 +39,7 @@ class RisawozMapping(object):
                         assert isinstance(vals, str)
                         en2canonical[vals] = canon
         self.en2canonical = en2canonical
+        self.rev_en2canonical = rev_en2canonical
 
         cur_dir = os.path.dirname(os.path.abspath(__file__))
         with open(os.path.join(cur_dir, "mappings/zh2en_alignment.json")) as f:

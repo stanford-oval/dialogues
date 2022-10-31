@@ -187,22 +187,26 @@ class WOZDataset(Dataset):
         """
         if args.setting in ["en", "zh2en"]:
             path_train = ["data/en_train.json"]
+            path_fewshot = ["data/en_fewshot.json"]
             path_dev = ["data/en_valid.json"]
             path_test = ["data/en_test.json"]
         elif args.setting in ["zh", "en2zh"]:
             path_train = ["data/zh_train.json"]
+            path_fewshot = ["data/zg_fewshot.json"]
             path_dev = ["data/zh_valid.json"]
             path_test = ["data/zh_test.json"]
         else:
             path_train = ["data/zh_train.json", "data/en_train.json"]
+            path_fewshot = ["data/zh_fewshot.json", "data/en_fewshot.json"]
             path_dev = ["data/zh_valid.json", "data/en_valid.json"]
             path_test = ["data/zh_test.json", "data/en_test.json"]
 
         path_train = [os.path.join(args.root, p) for p in path_train]
+        path_fewshot = [os.path.join(args.root, p) for p in path_fewshot]
         path_dev = [os.path.join(args.root, p) for p in path_dev]
         path_test = [os.path.join(args.root, p) for p in path_test]
 
-        train, fewshot, dev, test = self.prepare_data(args, path_train, path_dev, path_test)
+        train, fewshot, dev, test = self.prepare_data(args, path_train, path_fewshot, path_dev, path_test)
         return train, fewshot, dev, test
 
     def postprocess_prediction(self, prediction, **kwargs):
@@ -1002,21 +1006,6 @@ class WOZDataset(Dataset):
                             act_values = set([self.clean_value(val) for val in act_values])
                         reference_act_values.append(act_values)
 
-                        # for i in range(len(intent)):
-                        #     # for RiSAWOZ: filter turn actions with current intent
-                        #     turn_actions = (
-                        #         [action for action in turn["Actions"] if action["domain"] == intent[i]]
-                        #         if len(intent) > 1
-                        #         else turn["Actions"]
-                        #     )
-                        #     reference_actions.append(
-                        #         self.clean_value(
-                        #             self.action2span(
-                        #                 turn_actions, self.value_mapping.en_API_MAP.get(intent[i], intent[i]), 'en'
-                        #             )
-                        #         )
-                        #     )
-
                         reference_actions.append(
                             self.clean_value(
                                 self.action2span(
@@ -1450,7 +1439,7 @@ class WOZDataset(Dataset):
 
         return data
 
-    def prepare_data(self, args, path_train, path_dev, path_test):
+    def prepare_data(self, args, path_train, path_fewshot, path_dev, path_test):
 
         # "en, zh, en&zh, en2zh, zh2en"
         data_train, data_fewshot, data_dev, data_test = None, None, None, None
@@ -1459,10 +1448,15 @@ class WOZDataset(Dataset):
             data_dev = self.read_data(args, path_dev)
         if 'test' in args.splits:
             data_test = self.read_data(args, path_test)
+        if 'fewshot' in args.splits:
+            data_fewshot = self.read_data(args, path_fewshot)
         if 'train' in args.splits:
             train_data = self.read_data(args, path_train)
             with open(path_train[0]) as file:
                 dials = json.load(file)
+
+            if data_fewshot is not None and args.data_fewshot != 0:
+                raise ValueError('You cannot pass fewshot data and also extract some from training!')
 
             if args.sampling == "sequential":
                 train_dials, few_dials = self.get_dials_sequential(args, dials)

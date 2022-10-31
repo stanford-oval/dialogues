@@ -38,24 +38,28 @@ def main():
 
     dataset = Risawoz()
 
-    if args.setting in ["en"]:
-        path_train = ["en_train.json"]
-        path_dev = ["en_valid.json"]
-        path_test = ["en_test.json"]
-    elif args.setting in ["zh"]:
-        path_train = ["zh_train.json"]
-        path_dev = ["zh_valid.json"]
-        path_test = ["zh_test.json"]
+    if args.setting in ["en", "zh2en"]:
+        path_train = ["data/en_train.json"]
+        path_fewshot = ["data/en_fewshot.json"]
+        path_dev = ["data/en_valid.json"]
+        path_test = ["data/en_test.json"]
+    elif args.setting in ["zh", "en2zh"]:
+        path_train = ["data/zh_train.json"]
+        path_fewshot = ["data/zh_fewshot.json"]
+        path_dev = ["data/zh_valid.json"]
+        path_test = ["data/zh_test.json"]
     else:
-        path_train = ["zh_train.json", "en_train.json"]
-        path_dev = ["zh_valid.json", "en_valid.json"]
-        path_test = ["zh_test.json", "en_test.json"]
+        path_train = ["data/zh_train.json", "data/en_train.json"]
+        path_fewshot = ["data/zh_fewshot.json", "data/en_fewshot.json"]
+        path_dev = ["data/zh_valid.json", "data/en_valid.json"]
+        path_test = ["data/zh_test.json", "data/en_test.json"]
 
-    path_train = [os.path.join(*[args.root, args.data_dir, p]) for p in path_train]
-    path_dev = [os.path.join(*[args.root, args.data_dir, p]) for p in path_dev]
-    path_test = [os.path.join(*[args.root, args.data_dir, p]) for p in path_test]
+    path_train = [os.path.join(args.root, p) for p in path_train]
+    path_fewshot = [os.path.join(args.root, p) for p in path_fewshot]
+    path_dev = [os.path.join(args.root, p) for p in path_dev]
+    path_test = [os.path.join(args.root, p) for p in path_test]
 
-    data_train, data_fewshot, data_dev, data_test = dataset.prepare_data(args, path_train, path_dev, path_test)
+    data_train, data_fewshot, data_dev, data_test = dataset.prepare_data(args, path_train, path_fewshot, path_dev, path_test)
 
     args.commit = get_commit()
 
