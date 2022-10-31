@@ -45,7 +45,7 @@ def main():
         path_test = ["data/en_test.json"]
     elif args.setting in ["zh", "en2zh"]:
         path_train = ["data/zh_train.json"]
-        path_fewshot = ["data/zg_fewshot.json"]
+        path_fewshot = ["data/zh_fewshot.json"]
         path_dev = ["data/zh_valid.json"]
         path_test = ["data/zh_test.json"]
     else:

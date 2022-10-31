@@ -84,9 +84,9 @@ def build_user_event(turn, setting):
         event_action = {}
         for i in range(len(action)):
             if i == 1 and action[i]:
-                action[i] = dataset.value_mapping.zh2en_DOMAIN_MAP.get(action[i].lower(), action[i].lower())
+                action[i] = dataset.value_mapping.zh2en_DOMAIN_MAP.get(action[i], action[i]).lower()
             elif i == 2 and action[i]:
-                action[i] = dataset.value_mapping.zh2en_SLOT_MAP.get(action[i], action[i])
+                action[i] = dataset.value_mapping.zh2en_SLOT_MAP.get(action[i], action[i]).replace(' ', '_')
             elif i == 3 and action[i]:
                 action[i] = process_string(action[i], setting)
             event_action[action_seq[i]] = action[i]
@@ -98,14 +98,12 @@ def build_user_event(turn, setting):
         actions.append(event_action)
     event["Actions"] = actions
     # TODO: handle multiple active intents
-    event["active_intent"] = [
-        dataset.value_mapping.zh2en_DOMAIN_MAP.get(dom.lower(), dom.lower()) for dom in turn["turn_domain"]
-    ]
+    event["active_intent"] = [dataset.value_mapping.zh2en_DOMAIN_MAP.get(dom, dom).lower() for dom in turn["turn_domain"]]
     event["state"] = defaultdict(dict)
     for ds, v in turn["belief_state"]["inform slot-values"].items():
         d, s = ds.split("-")[0], ds.split("-")[1]
-        d = dataset.value_mapping.zh2en_DOMAIN_MAP.get(d.lower(), d.lower())
-        s = dataset.value_mapping.zh2en_SLOT_MAP.get(s, s)
+        d = dataset.value_mapping.zh2en_DOMAIN_MAP.get(d, d).lower()
+        s = dataset.value_mapping.zh2en_SLOT_MAP.get(s, s).replace(' ', '_')
         event["state"][d][s] = {"relation": "equal_to", "value": [process_string(v, setting)]}
     event["state"] = dict(event["state"])
     event["Text"] = process_string(turn["user_utterance"], setting)
@@ -117,7 +115,7 @@ def build_user_event(turn, setting):
 def build_wizard_event(turn, setting, mode="normal"):
     assert mode in ["normal", "query"]
     event = {"Agent": "Wizard"}
-    turn_domain_en = [dataset.value_mapping.zh2en_DOMAIN_MAP.get(d, d.lower()) for d in turn['turn_domain']]
+    turn_domain_en = [dataset.value_mapping.zh2en_DOMAIN_MAP.get(d, d).lower() for d in turn['turn_domain']]
     if mode == "query":
         event["Actions"] = "query"
         event["Constraints"] = defaultdict(dict)
@@ -125,8 +123,8 @@ def build_wizard_event(turn, setting, mode="normal"):
         for ds, v in turn["belief_state"]["inform slot-values"].items():
             # only return matched result in the domains of current turn
             d, s = ds.split("-")
-            d = dataset.value_mapping.zh2en_DOMAIN_MAP.get(d, d.lower())
-            s = dataset.value_mapping.zh2en_SLOT_MAP.get(s, s)
+            d = dataset.value_mapping.zh2en_DOMAIN_MAP.get(d, d).lower()
+            s = dataset.value_mapping.zh2en_SLOT_MAP.get(s, s).replace(' ', '_')
             if d in turn_domain_en:
                 event["Constraints"][d][s] = process_string(v, setting)
             # event["Constraints_raw"][d][s] = ''.join(v.split())
@@ -148,9 +146,9 @@ def build_wizard_event(turn, setting, mode="normal"):
             event_action = {}
             for i in range(len(action)):
                 if i == 1 and action[i]:
-                    action[i] = dataset.value_mapping.zh2en_DOMAIN_MAP.get(action[i], action[i].lower())
+                    action[i] = dataset.value_mapping.zh2en_DOMAIN_MAP.get(action[i], action[i]).lower()
                 elif i == 2 and action[i]:
-                    action[i] = dataset.value_mapping.zh2en_SLOT_MAP.get(action[i], action[i])
+                    action[i] = dataset.value_mapping.zh2en_SLOT_MAP.get(action[i], action[i]).replace(' ', '_')
                 elif i == 3 and action[i]:
                     action[i] = process_string(action[i], setting)
                 event_action[action_seq[i]] = action[i]
@@ -256,7 +254,7 @@ def build_dataset(original_data_path, db, setting):
         scenario = {
             "UserTask": dialogue.get("goal", ""),
             "WizardCapabilities": [
-                {"Task": dataset.value_mapping.zh2en_DOMAIN_MAP.get(domain, domain.lower())} for domain in dialogue["domains"]
+                {"Task": dataset.value_mapping.zh2en_DOMAIN_MAP.get(domain, domain).lower()} for domain in dialogue["domains"]
             ],
         }
         events = []
@@ -290,15 +288,12 @@ def build_dataset(original_data_path, db, setting):
                     turn_id,
                     ground_truth_results=None,
                 )
-                user_turn_event['turn_id'] = turn_id
-                wizard_query_event['turn_id'] = turn_id
-                wizard_normal_event['turn_id'] = turn_id
+                user_turn_event['turn_id'] = wizard_query_event['turn_id'] = wizard_normal_event['turn_id'] = turn_id
                 # del wizard_query_event['Constraints_raw']
                 events += [user_turn_event, wizard_query_event, kb_event, wizard_normal_event]
             else:
                 wizard_event = build_wizard_event(turn, setting)
-                user_turn_event['turn_id'] = turn_id
-                wizard_event['turn_id'] = turn_id
+                user_turn_event['turn_id'] = wizard_event['turn_id'] = turn_id
                 events += [user_turn_event, wizard_event]
 
             turn_id += 1
