@@ -169,6 +169,9 @@ DIALOGUES_WITH_ISSUE = {
     ('movie_tv_goal_2-67_v2###2464', 5),
     ('tv_goal_1-11_v2###9693', 0),
     ('movie_tv_goal_5-16', 1),
+    ('attraction_restaurant_hotel_goal_2-21###6094', '*'),
+    ('attraction_restaurant_goal_2-7_v2###2179', 4),
+    ('attraction_restaurant_goal_2-7_v2###2179', 5),
 }
 
 
@@ -184,7 +187,7 @@ def build_kb_event(
     event["TotalItems"] = sum(item.get("available_options", 0) for api, item in knowledge.items())
     for api, item in knowledge.items():
         if item.get("available_options", 0) < expected_num_results and api_names != ['general']:
-            if (dial_id, turn_id) in DIALOGUES_WITH_ISSUE:
+            if (dial_id, turn_id) in DIALOGUES_WITH_ISSUE or (dial_id, '*') in DIALOGUES_WITH_ISSUE:
                 continue
             print(f'API call likely failed for dial_id: {dial_id}, turn_id: {turn_id}')
             if ground_truth_results is not None:
