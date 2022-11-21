@@ -98,7 +98,9 @@ def build_user_event(turn, setting):
         actions.append(event_action)
     event["Actions"] = actions
     # TODO: handle multiple active intents
-    event["active_intent"] = [dataset.value_mapping.zh2en_DOMAIN_MAP.get(dom, dom).lower() for dom in turn["turn_domain"]]
+    event["active_intent"] = [
+        dataset.value_mapping.zh2en_DOMAIN_MAP.get(dom, dom).lower() for dom in turn["turn_domain"]
+    ]
     event["state"] = defaultdict(dict)
     for ds, v in turn["belief_state"]["inform slot-values"].items():
         d, s = ds.split("-")[0], ds.split("-")[1]
@@ -234,7 +236,9 @@ def build_kb_event(
                         constraints[api], item.get("available_options", 0), expected_num_results
                     )
                 )
-            knowledge = call_api(db, api_names, constraints, lang='zh', value_mapping=dataset.value_mapping, actions=actions)
+            knowledge = call_api(
+                db, api_names, constraints, lang='zh', value_mapping=dataset.value_mapping, actions=actions
+            )
 
     event["Item"] = knowledge
     event["Topic"] = api_names
@@ -250,7 +254,8 @@ def build_dataset(original_data_path, db, setting):
         scenario = {
             "UserTask": dialogue.get("goal", ""),
             "WizardCapabilities": [
-                {"Task": dataset.value_mapping.zh2en_DOMAIN_MAP.get(domain, domain).lower()} for domain in dialogue["domains"]
+                {"Task": dataset.value_mapping.zh2en_DOMAIN_MAP.get(domain, domain).lower()}
+                for domain in dialogue["domains"]
             ],
         }
         events = []
@@ -273,16 +278,28 @@ def build_dataset(original_data_path, db, setting):
                         turn["db_results"][0][len('Database search results: the number of successful matches is ') :]
                     )
 
-                kb_event = build_kb_event(
-                    wizard_query_event,
-                    db,
-                    actions,
-                    expected_num_results,
-                    setting,
-                    dialogue_id,
-                    turn_id,
-                    ground_truth_results=None,
-                )
+                if args.debug:
+                    kb_event = build_kb_event(
+                        wizard_query_event,
+                        db,
+                        actions,
+                        expected_num_results,
+                        setting,
+                        dialogue_id,
+                        turn_id,
+                        ground_truth_results=turn["db_results"][1:],
+                    )
+                else:
+                    kb_event = build_kb_event(
+                        wizard_query_event,
+                        db,
+                        actions,
+                        expected_num_results,
+                        setting,
+                        dialogue_id,
+                        turn_id,
+                        ground_truth_results=None,
+                    )
                 user_turn_event['turn_id'] = wizard_query_event['turn_id'] = wizard_normal_event['turn_id'] = turn_id
                 events += [user_turn_event, wizard_query_event, kb_event, wizard_normal_event]
             else:
@@ -299,10 +316,15 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
 
     parser.add_argument("--root", type=str, default='dialogues/risawoz/', help='code root directory')
-    parser.add_argument("--data_dir", type=str, default="data/original/", help="path to original data, relative to root dir")
-    parser.add_argument("--save_dir", type=str, default="data/", help="path to save preprocessed data, relative to root dir")
+    parser.add_argument(
+        "--data_dir", type=str, default="data/original/", help="path to original data, relative to root dir"
+    )
+    parser.add_argument(
+        "--save_dir", type=str, default="data/", help="path to save preprocessed data, relative to root dir"
+    )
     parser.add_argument("--setting", type=str, help="en, zh, en_zh")
     parser.add_argument("--splits", nargs='+', default=['train', 'valid', 'test'])
+    parser.add_argument("--debug", action="store_true", help="toggle debug mode")
 
     args = parser.parse_args()
 

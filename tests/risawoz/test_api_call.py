@@ -62,7 +62,7 @@ if args.setting == 'zh':
 elif args.setting == 'en':
     dialogue_state = {
         "hotel": {
-            'pricerange': {'relation': 'equal_to', 'value': ['a slightly more expensive']},
+            'pricerange': {'relation': 'equal_to', 'value': ['slightly expensive']},
             'area': {'relation': 'equal_to', 'value': ['Wujiang District']},
         },
         "attraction": {"name": {'relation': 'equal_to', 'value': ['Jinji Lake Scenic Area']}},
@@ -72,7 +72,7 @@ elif args.setting == 'en':
             "name": "Suzhou Shui'an Hanshe Boutique Hotel",
             "area": "Wujiang District",
             "star": "5",
-            "pricerange": "a slightly more expensive",
+            "pricerange": "slightly expensive",
             "hotel_type": "business",
             "room_type": "king-size room",
             "parking": "free",
@@ -87,7 +87,7 @@ elif args.setting == 'en':
             "area": "Suzhou Industrial Park",
             "type": "landscape scenic spot",
             "the_most_suitable_people": "dating",
-            "consumption": "a slightly more expensive",
+            "consumption": "slightly expensive",
             "metro_station": "true",
             "ticket_price": "free",
             "phone_number": "400-7558558",
