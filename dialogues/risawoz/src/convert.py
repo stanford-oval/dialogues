@@ -245,7 +245,7 @@ def build_kb_event(
     return event
 
 
-def build_dataset(original_data_path, db, setting):
+def build_dataset(original_data_path, db, setting, debug=False):
     with open(original_data_path) as fin:
         data = json.load(fin)
     processed_data = {}
@@ -278,7 +278,7 @@ def build_dataset(original_data_path, db, setting):
                         turn["db_results"][0][len('Database search results: the number of successful matches is ') :]
                     )
 
-                if args.debug:
+                if debug:
                     kb_event = build_kb_event(
                         wizard_query_event,
                         db,
@@ -355,7 +355,7 @@ if __name__ == "__main__":
     for split in args.splits:
         print(f"processing {split} data...")
         processed_data = build_dataset(
-            os.path.join(original_data_path, f"{args.setting}_{split}.json"), risawoz_db, args.setting
+            os.path.join(original_data_path, f"{args.setting}_{split}.json"), risawoz_db, args.setting, debug=args.debug
         )
         # save converted files in JSON format
         with open(f"{processed_data_path}/{args.setting}_{split}.json", 'w') as f:
