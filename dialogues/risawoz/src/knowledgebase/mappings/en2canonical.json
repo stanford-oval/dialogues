@@ -1568,20 +1568,20 @@
                 "moderately",
                 "mid"
             ],
-            "a slightly more expensive": [
+            "slightly expensive": [
                 "slightly more expensive",
                 "a slightly more expensive",
                 "more expensive",
                 "a bit more expensive",
-                "above-average"
+                "above-average",
+                "expensive",
+                "more expensive"
             ],
             "cheap": [
                 "affordable",
                 "cheaper",
                 "low-priced"
-            ],
-            "expensive": "expensive",
-            "more expensive": "more expensive"
+            ]
         },
         "the most suitable people": {
             "friends": [
@@ -2047,7 +2047,8 @@
             "Yang's Dumpling": "Yang's Dumpling",
             "Fox's Home Yogurt": [
                 "Fox's Home Yogurt",
-                "Fox's House Yoghurt"
+                "Fox's House Yoghurt",
+                "Fox's Home Yoghurt"
             ],
             "Deyuelou": "Deyuelou",
             "Le Blé d'Or Brewery Restaurant": "Le Blé d'Or Brewery Restaurant",
@@ -2089,20 +2090,18 @@
                 "mid-priced",
                 "medium"
             ],
-            "a slightly more expensive": [
+            "slightly expensive": [
                 "slightly more expensive",
                 "a slightly more expensive",
                 "more expensive",
                 "a bit more expensive",
-                "high-priced"
+                "high-priced",
+                "expensive"
             ],
             "cheap": [
                 "affordable",
                 "cheaper",
                 "low-priced"
-            ],
-            "expensive": [
-                "expensive"
             ]
         },
         "score": {
@@ -2555,18 +2554,19 @@
                 "not that expensive",
                 "mid"
             ],
-            "a slightly more expensive": [
+            "slightly expensive": [
                 "more expensive",
                 "a bit more expensive",
                 "slightly more expensive",
-                "higher-priced"
+                "higher-priced",
+                "a slightly more expensive",
+                "expensive"
             ],
             "cheap": [
                 "affordable",
                 "cheaper",
                 "low-priced"
-            ],
-            "expensive": "expensive"
+            ]
         },
         "score": {
             "4.5": "4.5",
@@ -2962,6 +2962,9 @@
             ],
             "stomatology": [
                 "stomatology department"
+            ],
+            "orthopedics": [
+                "orthopedics department"
             ]
         },
         "general or specialized": {
@@ -3132,7 +3135,8 @@
                 "7:30-11:30 in the morning and 12:30-4:30 in the afternoon"
             ],
             "7:00-11:00, 12:00-16:30": [
-                "from 7:00 to 11:00, and from 12:00 to 16:30"
+                "from 7:00 to 11:00, and from 12:00 to 16:30",
+                "from 7:00 to 11:00 and from 12:00 to 16:30"
             ],
             "7:00-11:30, 12:00-16:30": [
                 "opens earlier in the morning. It is open from 7 am to 11:30 am and then from 12 pm to 4:30 pm"
@@ -3159,11 +3163,6 @@
             "7:00-11:30,12:00-16:30": "7:00-11:30,12:00-16:30",
             "7:45-11:00,13:00-16:30": "7:45-11:00,13:00-16:30",
             "7:00-11:00,12:00-16:30": "7:00-11:00,12:00-16:30"
-        },
-        "registeration time": {
-            "7:00-11:00, 12:00-16:30": [
-                "from 7:00 to 11:00 and from 12:00 to 16:30"
-            ]
         },
         "public or private": {
             "public": [
@@ -5781,7 +5780,7 @@
             "Dell Inspiron 14": "Dell Inspiron 14",
             "Lenovo Tianyi 510Pro": "Lenovo Tianyi 510Pro",
             "Dell G5 5090": "Dell G5 5090",
-            "Lenovo GeekPro Series": [
+            "Lenovo GeekPro": [
                 "GeekPro series of Lenovo",
                 "Lenovo GeekPro"
             ],
@@ -5895,7 +5894,7 @@
             ],
             "All-in-One PC": "All-in-One PC"
         },
-        "cpu series": {
+        "cpu": {
             "Intel Core i3": [
                 "i3",
                 "Inter Core i3"
@@ -6067,8 +6066,9 @@
                 "6,399 yuan",
                 "6399.0"
             ],
-            "3,499.0 yuan": [
-                "3499.0"
+            "3,499 yuan": [
+                "3499.0",
+                "3,499.0 yuan"
             ],
             "8,599.0 yuan": [
                 "8,599.0",
@@ -6084,7 +6084,8 @@
             "4,199 yuan": "4,199 yuan",
             "5,099 yuan": [
                 "5,099 yuan",
-                "5099.0"
+                "5099.0",
+                "5,099"
             ],
             "4,199.0 yuan": [
                 "4199.0"
@@ -6109,13 +6110,15 @@
                 "2,889 yuan",
                 "2899.0"
             ],
-            "2,899.0 yuan": [
+            "2,899 yuan": [
                 "2,899.0",
-                "2899.0"
+                "2899.0",
+                "2,899.0 yuan"
             ],
-            "4,088.0 yuan": [
+            "4,088 yuan": [
                 "4,088.0",
-                "4088.0"
+                "4088.0",
+                "4,088.0 yuan"
             ],
             "4,299 yuan": [
                 "4,299 yuan",
