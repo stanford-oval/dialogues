@@ -126,6 +126,9 @@ def process_string(sentence, setting):
     if not isinstance(sentence, str):
         return sentence
     sentence = re.sub(r'\s{2,}', ' ', sentence)
+    sentence = re.sub(r'"', '', sentence)
+    sentence = re.sub(r'\"', '', sentence)
+
     if setting == 'zh':
         sentence = ''.join(sentence.split())
     sentence = tokenize_string(sentence)
