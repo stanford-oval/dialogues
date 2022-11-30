@@ -35,7 +35,7 @@ class Dataset(object):
         self.db = None
 
         self.FAST_EVAL = False
-        self.DEBUG = True
+        self.DEBUG = False
 
         # regex to extract belief state span from input
         self.state_re = re.compile('')
@@ -51,11 +51,6 @@ class Dataset(object):
 
         self.system_token = ''
         self.user_token = ''
-
-        if self.DEBUG:
-            self.out_ser = open('out_ser.tsv', 'w')
-            self.out_dst = open('out_dst.tsv', 'w')
-            self.out_da = open('out_da.tsv', 'w')
 
     def domain2api_name(self, domain):
         """
@@ -229,7 +224,6 @@ class WOZDataset(Dataset):
         :param reference_path: path to file containing gold values to compare predictions against
         :return: a dictionary with metric names as keys and their computed values (in percentage)
         """
-
         reference_data = {}
         for reference_file_path in reference_path.split("__"):
             with open(reference_file_path) as f:
@@ -699,6 +693,10 @@ class WOZDataset(Dataset):
                 ref = self.clean_value(ref)
                 ref_dict = self.span2action(ref)
 
+                # pop general domain
+                pred_dict.pop('general', -1)
+                ref_dict.pop('general', -1)
+
                 if pred_dict == ref_dict:
                     da += 1
                 else:
@@ -710,11 +708,12 @@ class WOZDataset(Dataset):
     def compute_ser(self, preds, act_values):
         ser = 0.0
         for pred, values in zip(preds, act_values):
+
             # remove emtpy slot values
             missing = False
             if len(values):
                 for val in values:
-                    if val in ['null', 'yes', 'no', 'true', 'false', '否', '是']:
+                    if val in self.skipped_entities:
                         continue
                     if str(val) not in pred:
                         missing = True
@@ -804,7 +803,7 @@ class WOZDataset(Dataset):
                     references[dial_id]["tasks"][intent]["inform+offer"] + references[dial_id]["tasks"][intent]["confirmation"]
                 ):
                     entity = self.clean_value(entity)
-                    if entity in ['null', 'yes', 'no', 'true', 'false', '否', '是']:
+                    if entity in self.skipped_entities:
                         continue
                     if str(entity) not in responses:
                         out += str(entity) + ' ; '
@@ -832,6 +831,7 @@ class WOZDataset(Dataset):
         return success_rate, api_acc, task_info
 
     def clean_value(self, v, do_int=False):
+        # below was good practice for regex
         v = str(v)
         v = v.lower()
         v = v.strip()
@@ -868,12 +868,49 @@ class WOZDataset(Dataset):
 
         # remove extra dot in the end
         v = re.sub('(\d+)\.$', r'\1', v)
+        v = re.sub('(\d+\.?\d+?) 元', r'\1 yuan', v)
         v = re.sub('(\w+)\.$', r'\1', v)
 
         v = re.sub('(\w+)[。！？]$', r'\1', v)
 
+        # remove a from "a sth" or the from "the sth"
+        v = re.sub('^(?:a|the) (.*)', r'\1', v)
+
         # 3rd of january --> januray 3
         v = re.sub('(\d+)(?:th|rd|st|nd) of (\w+)', r'\2 \1', v)
+
+        # synonyms
+        v = re.sub('(fair|mid|moderate-range|moderate-priced|moderate priced|moderately)', 'moderate', v)
+        v = re.sub('(bit more expensive|slightly more expensive)', 'more expensive', v)
+        v = re.sub('wujiang district', 'wujiang', v)
+        v = re.sub('jinji lake shilla hotel suzhou', 'jinji lake shilla hotel', v)
+
+        v = re.sub('suzhou-style garden', 'suzhou-styled garden', v)
+
+        v = re.sub('(\d)+ 到 (\d)+', r'\1 to \2', v)
+        v = re.sub('(\d+\.?\d+?) 英寸', r'\1 inches', v)
+
+        v = re.sub('(.*) department', r'\1', v)
+
+        v = re.sub('(\d+) 年代', r'\1s', v)
+
+        v = re.sub('19(\d+)s', r'\1s', v)
+        v = re.sub('(.*?) movie', r'\1', v)
+        v = re.sub('(.*?) class', r'\1', v)
+
+        v = re.sub('(friends to have an outing|for friends to have some fun|for friends)', 'friends', v)
+        v = re.sub('hot pot', 'hotpot', v)
+        v = re.sub('cheaper', 'cheap', v)
+        v = re.sub('family-friendly', 'family', v)
+        v = re.sub('second class ticket', 'second class', v)
+
+        # for metro
+        v = re.sub(
+            '(can|yes|be|true true|get to directly by subway|directly by subway|'
+            'the subway will take you directly there|subway will take you directly there)',
+            'true',
+            v,
+        )
 
         # time consuming but needed step
         if not self.FAST_EVAL:
@@ -918,6 +955,11 @@ class WOZDataset(Dataset):
         return new_constraints
 
     def compute_result(self, predictions, reference_data):
+        if self.DEBUG:
+            self.out_ser = open('out_ser.tsv', 'w')
+            self.out_dst = open('out_dst.tsv', 'w')
+            self.out_da = open('out_da.tsv', 'w')
+
         preds = []
         golds = []
         for dial_id in reference_data:
