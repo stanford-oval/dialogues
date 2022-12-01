@@ -70,7 +70,8 @@ def call_api(db, api_names, constraints, lang, value_mapping, actions=None):
                                 slot = 'business_hours'
                         if slot not in item:
                             print(slot)
-                        if str(item[slot]) not in value:
+                            found = False
+                        elif str(item[slot]) not in value:
                             found = False
                     if found:
                         knowledge[api] = item
