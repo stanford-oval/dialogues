@@ -136,3 +136,6 @@ dmypy.json
 dialogues/*/data/*
 out_*.tsv
 data/
+
+# kdevelop files
+*.kdev4
