@@ -1,0 +1,8 @@
+datasets
+dictdiffer
+networkx
+pydot
+pymongo
+requests
+tqdm
+word2number
