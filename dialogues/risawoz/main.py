@@ -29,10 +29,21 @@ class Risawoz(WOZDataset):
             '是',
             'has',
             'can',
+            'can\'t',
+            'could',
+            'yes',
+            'be',
             'do',
             'have',
             'does not have',
             'available',
+            'can get there directly',
+            'can\'t get there directly',
+            'can\'t get there directly by subway',
+            'no subway stations',
+            'get there directly by subway',
+            'no direct subway',
+            'ye',
         }
 
         self._warnings = set()
