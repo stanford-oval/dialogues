@@ -3484,7 +3484,7 @@
                     {
                         "name": "l'auberge Home",
                         "area": "Nouveau district de Suzhou",
-                        "star": "une",
+                        "star": "1",
                         "pricerange": "bon marché",
                         "hotel type": "d'affaires",
                         "room type": "grande chambre",
@@ -3497,7 +3497,7 @@
                     {
                         "name": "l'auberge Home",
                         "area": "Nouveau district de Suzhou",
-                        "star": "une",
+                        "star": "1",
                         "pricerange": "bon marché",
                         "hotel type": "d'affaires",
                         "room type": "chambres standard",
@@ -21407,7 +21407,7 @@
                     {
                         "name": "Pod Inn",
                         "area": "District de Wuzhong",
-                        "star": "une",
+                        "star": "1",
                         "pricerange": "bon marché",
                         "hotel type": "d'affaires",
                         "room type": "grande chambre",
@@ -21420,7 +21420,7 @@
                     {
                         "name": "Pod Inn",
                         "area": "District de Wuzhong",
-                        "star": "une",
+                        "star": "1",
                         "pricerange": "bon marché",
                         "hotel type": "d'affaires",
                         "room type": "chambres standard",
@@ -28725,7 +28725,7 @@
                     {
                         "name": "L'hôtel de la chaîne Genting Star",
                         "area": "Parc industriel de Suzhou",
-                        "star": "une",
+                        "star": "1",
                         "pricerange": "bon marché",
                         "hotel type": "d'affaires",
                         "room type": "grande chambre",
@@ -28738,7 +28738,7 @@
                     {
                         "name": "L'hôtel de la chaîne Genting Star",
                         "area": "Parc industriel de Suzhou",
-                        "star": "une",
+                        "star": "1",
                         "pricerange": "bon marché",
                         "hotel type": "d'affaires",
                         "room type": "chambres standard",
@@ -28827,7 +28827,7 @@
                     {
                         "name": "L'hôtel de la chaîne Genting Star",
                         "area": "Parc industriel de Suzhou",
-                        "star": "une",
+                        "star": "1",
                         "pricerange": "bon marché",
                         "hotel type": "d'affaires",
                         "room type": "chambres standard",
@@ -28900,7 +28900,7 @@
                     {
                         "name": "L'hôtel de la chaîne Genting Star",
                         "area": "Parc industriel de Suzhou",
-                        "star": "une",
+                        "star": "1",
                         "pricerange": "bon marché",
                         "hotel type": "d'affaires",
                         "room type": "chambres standard",
@@ -28973,7 +28973,7 @@
                     {
                         "name": "L'hôtel de la chaîne Genting Star",
                         "area": "Parc industriel de Suzhou",
-                        "star": "une",
+                        "star": "1",
                         "pricerange": "bon marché",
                         "hotel type": "d'affaires",
                         "room type": "chambres standard",
@@ -29483,10 +29483,10 @@
                 "belief_state": {
                     "inform slot-values": {
                         "Car-classification": "SUV",
-                        "Car-number of seats": "une"
+                        "Car-number of seats": "1"
                     },
                     "turn_inform": {
-                        "Car-number of seats": "une"
+                        "Car-number of seats": "1"
                     },
                     "turn request": []
                 },
@@ -29495,7 +29495,7 @@
                         "Inform",
                         "Car",
                         "number of seats",
-                        "une"
+                        "1"
                     ]
                 ],
                 "system_actions": [
@@ -29916,7 +29916,7 @@
                     "inform slot-values": {
                         "Car-classification": "SUV",
                         "Car-pricerange": "plus de 300 000 yuans",
-                        "Car-number of seats": "une"
+                        "Car-number of seats": "1"
                     },
                     "turn_inform": {
                         "Car-pricerange": "plus de 300 000 yuans"
@@ -30118,7 +30118,7 @@
                     "inform slot-values": {
                         "Car-classification": "SUV",
                         "Car-pricerange": "plus de 300 000 yuans",
-                        "Car-number of seats": "une",
+                        "Car-number of seats": "1",
                         "Car-series": "Tiguan-L"
                     },
                     "turn_inform": {},
@@ -30208,7 +30208,7 @@
                     "inform slot-values": {
                         "Car-classification": "SUV",
                         "Car-pricerange": "plus de 300 000 yuans",
-                        "Car-number of seats": "une",
+                        "Car-number of seats": "1",
                         "Car-series": "Tiguan-L"
                     },
                     "turn_inform": {},
@@ -30250,7 +30250,7 @@
                     "inform slot-values": {
                         "Car-classification": "SUV",
                         "Car-pricerange": "plus de 300 000 yuans",
-                        "Car-number of seats": "une",
+                        "Car-number of seats": "1",
                         "Car-series": "Tiguan-L"
                     },
                     "turn_inform": {},
@@ -43651,7 +43651,7 @@
                     {
                         "name": "Pod Inn",
                         "area": "District de Wuzhong",
-                        "star": "une",
+                        "star": "1",
                         "pricerange": "bon marché",
                         "hotel type": "d'affaires",
                         "room type": "grande chambre",
@@ -43664,7 +43664,7 @@
                     {
                         "name": "Pod Inn",
                         "area": "District de Wuzhong",
-                        "star": "une",
+                        "star": "1",
                         "pricerange": "bon marché",
                         "hotel type": "d'affaires",
                         "room type": "chambres standard",
@@ -43769,7 +43769,7 @@
                     {
                         "name": "Pod Inn",
                         "area": "District de Wuzhong",
-                        "star": "une",
+                        "star": "1",
                         "pricerange": "bon marché",
                         "hotel type": "d'affaires",
                         "room type": "chambres standard",
@@ -43860,7 +43860,7 @@
                     {
                         "name": "Pod Inn",
                         "area": "District de Wuzhong",
-                        "star": "une",
+                        "star": "1",
                         "pricerange": "bon marché",
                         "hotel type": "d'affaires",
                         "room type": "chambres standard",
@@ -43940,7 +43940,7 @@
                     {
                         "name": "Pod Inn",
                         "area": "District de Wuzhong",
-                        "star": "une",
+                        "star": "1",
                         "pricerange": "bon marché",
                         "hotel type": "d'affaires",
                         "room type": "chambres standard",
@@ -44010,7 +44010,7 @@
                     {
                         "name": "Pod Inn",
                         "area": "District de Wuzhong",
-                        "star": "une",
+                        "star": "1",
                         "pricerange": "bon marché",
                         "hotel type": "d'affaires",
                         "room type": "chambres standard",
@@ -60962,7 +60962,7 @@
                     {
                         "name": "l'hôtel Suzhou Yongshun Express",
                         "area": "District de Gusu",
-                        "star": "une",
+                        "star": "1",
                         "pricerange": "bon marché",
                         "hotel type": "d'affaires",
                         "room type": "une grande chambre",
@@ -60975,7 +60975,7 @@
                     {
                         "name": "l'hôtel Suzhou Yongshun Express",
                         "area": "District de Gusu",
-                        "star": "une",
+                        "star": "1",
                         "pricerange": "bon marché",
                         "hotel type": "d'affaires",
                         "room type": "chambres standard",
@@ -61086,7 +61086,7 @@
                     {
                         "name": "l'hôtel Suzhou Yongshun Express",
                         "area": "District de Gusu",
-                        "star": "une",
+                        "star": "1",
                         "pricerange": "bon marché",
                         "hotel type": "d'affaires",
                         "room type": "une grande chambre",
@@ -61155,7 +61155,7 @@
                     {
                         "name": "l'hôtel Suzhou Yongshun Express",
                         "area": "District de Gusu",
-                        "star": "une",
+                        "star": "1",
                         "pricerange": "bon marché",
                         "hotel type": "d'affaires",
                         "room type": "une grande chambre",
@@ -61224,7 +61224,7 @@
                     {
                         "name": "l'hôtel Suzhou Yongshun Express",
                         "area": "District de Gusu",
-                        "star": "une",
+                        "star": "1",
                         "pricerange": "bon marché",
                         "hotel type": "d'affaires",
                         "room type": "une grande chambre",
@@ -61679,7 +61679,7 @@
                     {
                         "name": "L'hôtel de la chaîne Genting Star",
                         "area": "Parc industriel de Suzhou",
-                        "star": "une",
+                        "star": "1",
                         "pricerange": "bon marché",
                         "hotel type": "d'affaires",
                         "room type": "chambres standard",
@@ -61782,7 +61782,7 @@
                     {
                         "name": "L'hôtel de la chaîne Genting Star",
                         "area": "Parc industriel de Suzhou",
-                        "star": "une",
+                        "star": "1",
                         "pricerange": "bon marché",
                         "hotel type": "d'affaires",
                         "room type": "chambres standard",
@@ -63870,11 +63870,11 @@
                         "Attraction-area": "Nouveau district de Suzhou",
                         "Attraction-the most suitable people": "adaptée aux familles",
                         "Attraction-name": "parc des zones humides du lac Taihu",
-                        "Hotel-star": "une",
+                        "Hotel-star": "1",
                         "Hotel-area": "Nouveau district de Suzhou"
                     },
                     "turn_inform": {
-                        "Hotel-star": "une",
+                        "Hotel-star": "1",
                         "Hotel-area": "Nouveau district de Suzhou"
                     },
                     "turn request": []
@@ -63914,7 +63914,7 @@
                     {
                         "name": "Home Inn",
                         "area": "Nouveau district de Suzhou",
-                        "star": "une",
+                        "star": "1",
                         "pricerange": "bon marché",
                         "hotel type": "d'affaires",
                         "room type": "chambre à grand lit",
@@ -63927,7 +63927,7 @@
                     {
                         "name": "Home Inn",
                         "area": "Nouveau district de Suzhou",
-                        "star": "une",
+                        "star": "1",
                         "pricerange": "bon marché",
                         "hotel type": "d'affaires",
                         "room type": "chambres standard",
@@ -63984,7 +63984,7 @@
                         "Attraction-area": "Nouveau district de Suzhou",
                         "Attraction-the most suitable people": "adaptée aux familles",
                         "Attraction-name": "parc des zones humides du lac Taihu",
-                        "Hotel-star": "une",
+                        "Hotel-star": "1",
                         "Hotel-area": "Nouveau district de Suzhou",
                         "Hotel-name": "Home Inn",
                         "Hotel-room type": "chambre à grand lit"
@@ -64036,7 +64036,7 @@
                     {
                         "name": "Home Inn",
                         "area": "Nouveau district de Suzhou",
-                        "star": "une",
+                        "star": "1",
                         "pricerange": "bon marché",
                         "hotel type": "d'affaires",
                         "room type": "chambre à grand lit",
@@ -64083,7 +64083,7 @@
                         "Attraction-area": "Nouveau district de Suzhou",
                         "Attraction-the most suitable people": "adaptée aux familles",
                         "Attraction-name": "parc des zones humides du lac Taihu",
-                        "Hotel-star": "une",
+                        "Hotel-star": "1",
                         "Hotel-area": "Nouveau district de Suzhou",
                         "Hotel-name": "Home Inn",
                         "Hotel-room type": "chambre à grand lit"
@@ -64118,7 +64118,7 @@
                     {
                         "name": "Home Inn",
                         "area": "Nouveau district de Suzhou",
-                        "star": "une",
+                        "star": "1",
                         "pricerange": "bon marché",
                         "hotel type": "d'affaires",
                         "room type": "chambre à grand lit",
@@ -64148,7 +64148,7 @@
                         "Attraction-area": "Nouveau district de Suzhou",
                         "Attraction-the most suitable people": "adaptée aux familles",
                         "Attraction-name": "parc des zones humides du lac Taihu",
-                        "Hotel-star": "une",
+                        "Hotel-star": "1",
                         "Hotel-area": "Nouveau district de Suzhou",
                         "Hotel-name": "Home Inn",
                         "Hotel-room type": "chambre à grand lit"
