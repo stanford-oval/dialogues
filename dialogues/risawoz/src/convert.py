@@ -201,7 +201,7 @@ def build_kb_event(
                     if not isinstance(db_item, dict):
                         db_item = json.loads(db_item.replace("'", '"'))
                     db_item = {
-                        (k.lower() if setting == 'en' else dataset.value_mapping.zh2en_SLOT_MAP[k]).replace(
+                        (k.lower() if setting in ['en', 'fr'] else dataset.value_mapping.zh2en_SLOT_MAP[k]).replace(
                             " ", "_"
                         ): process_string(v, setting)
                         for k, v in db_item.items()
@@ -221,7 +221,7 @@ def build_kb_event(
                                 hashable_db_item = {k: str(v) for k, v in db_item.items()}
                                 diff = set(constraints[api].items()) - set(hashable_db_item.items())
                     if diff:
-                        original = {k: db_item[k] for k in dict(diff).keys()}
+                        original = {k: db_item[k] if k in db_item else None for k in dict(diff).keys()}
                         if list(original.keys()) == ['number_of_seats'] and int(dict(diff)['number_of_seats']) <= int(
                             original['number_of_seats']
                         ):
