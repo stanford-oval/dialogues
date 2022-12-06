@@ -1,7 +1,7 @@
 [
     {
         "departure": "Shanghaï",
-        "destination": "Nanjing",
+        "destination": "Nankin",
         "date": "lundi prochain",
         "class_cabin": "classe économique",
         "flight_information": "MU2882 de la compagnie aérienne China Eastern du Terminal 1 de l'aéroport international de Pudong au Terminal 2 de l'aéroport international de Lukou",
@@ -12,7 +12,7 @@
     },
     {
         "departure": "Shanghaï",
-        "destination": "Nanjing",
+        "destination": "Nankin",
         "date": "lundi prochain",
         "class_cabin": "classe affaires",
         "flight_information": "MU2882 de la compagnie aérienne China Eastern du Terminal 1 de l'aéroport international de Pudong au Terminal 2 de l'aéroport international de Lukou",
@@ -23,7 +23,7 @@
     },
     {
         "departure": "Shanghaï",
-        "destination": "Nanjing",
+        "destination": "Nankin",
         "date": "mardi prochain",
         "class_cabin": "classe économique",
         "flight_information": "MU2882 de la compagnie aérienne China Eastern du Terminal 1 de l'aéroport international de Pudong au Terminal 2 de l'aéroport international de Lukou",
@@ -34,7 +34,7 @@
     },
     {
         "departure": "Shanghaï",
-        "destination": "Nanjing",
+        "destination": "Nankin",
         "date": "mardi prochain",
         "class_cabin": "classe affaires",
         "flight_information": "MU2882 de la compagnie aérienne China Eastern du Terminal 1 de l'aéroport international de Pudong au Terminal 2 de l'aéroport international de Lukou",
@@ -45,7 +45,7 @@
     },
     {
         "departure": "Shanghaï",
-        "destination": "Nanjing",
+        "destination": "Nankin",
         "date": "mercredi prochain",
         "class_cabin": "classe économique",
         "flight_information": "MU2882 de la compagnie aérienne China Eastern du Terminal 1 de l'aéroport international de Pudong au Terminal 2 de l'aéroport international de Lukou",
@@ -56,7 +56,7 @@
     },
     {
         "departure": "Shanghaï",
-        "destination": "Nanjing",
+        "destination": "Nankin",
         "date": "mercredi prochain",
         "class_cabin": "classe affaires",
         "flight_information": "MU2882 de la compagnie aérienne China Eastern du Terminal 1 de l'aéroport international de Pudong au Terminal 2 de l'aéroport international de Lukou",
@@ -67,7 +67,7 @@
     },
     {
         "departure": "Shanghaï",
-        "destination": "Nanjing",
+        "destination": "Nankin",
         "date": "jeudi prochain",
         "class_cabin": "classe économique",
         "flight_information": "MU2882 de la compagnie aérienne China Eastern du Terminal 1 de l'aéroport international de Pudong au Terminal 2 de l'aéroport international de Lukou",
@@ -78,7 +78,7 @@
     },
     {
         "departure": "Shanghaï",
-        "destination": "Nanjing",
+        "destination": "Nankin",
         "date": "jeudi prochain",
         "class_cabin": "classe affaires",
         "flight_information": "MU2882 de la compagnie aérienne China Eastern du Terminal 1 de l'aéroport international de Pudong au Terminal 2 de l'aéroport international de Lukou",
@@ -89,7 +89,7 @@
     },
     {
         "departure": "Shanghaï",
-        "destination": "Nanjing",
+        "destination": "Nankin",
         "date": "vendredi prochain",
         "class_cabin": "classe économique",
         "flight_information": "MU2882 de la compagnie aérienne China Eastern du Terminal 1 de l'aéroport international de Pudong au Terminal 2 de l'aéroport international de Lukou",
@@ -100,7 +100,7 @@
     },
     {
         "departure": "Shanghaï",
-        "destination": "Nanjing",
+        "destination": "Nankin",
         "date": "vendredi prochain",
         "class_cabin": "classe affaires",
         "flight_information": "MU2882 de la compagnie aérienne China Eastern du Terminal 1 de l'aéroport international de Pudong au Terminal 2 de l'aéroport international de Lukou",
@@ -111,7 +111,7 @@
     },
     {
         "departure": "Shanghaï",
-        "destination": "Nanjing",
+        "destination": "Nankin",
         "date": "samedi prochain",
         "class_cabin": "classe économique",
         "flight_information": "MU2882 de la compagnie aérienne China Eastern du Terminal 1 de l'aéroport international de Pudong au Terminal 2 de l'aéroport international de Lukou",
@@ -122,7 +122,7 @@
     },
     {
         "departure": "Shanghaï",
-        "destination": "Nanjing",
+        "destination": "Nankin",
         "date": "samedi prochain",
         "class_cabin": "classe affaires",
         "flight_information": "MU2882 de la compagnie aérienne China Eastern du Terminal 1 de l'aéroport international de Pudong au Terminal 2 de l'aéroport international de Lukou",
@@ -133,7 +133,7 @@
     },
     {
         "departure": "Shanghaï",
-        "destination": "Nanjing",
+        "destination": "Nankin",
         "date": "dimanche prochain",
         "class_cabin": "classe économique",
         "flight_information": "MU2882 de la compagnie aérienne China Eastern du Terminal 1 de l'aéroport international de Pudong au Terminal 2 de l'aéroport international de Lukou",
@@ -144,7 +144,7 @@
     },
     {
         "departure": "Shanghaï",
-        "destination": "Nanjing",
+        "destination": "Nankin",
         "date": "dimanche prochain",
         "class_cabin": "classe affaires",
         "flight_information": "MU2882 de la compagnie aérienne China Eastern du Terminal 1 de l'aéroport international de Pudong au Terminal 2 de l'aéroport international de Lukou",
@@ -154,7 +154,7 @@
         "punctuality_rate": "100 %"
     },
     {
-        "departure": "Nanjing",
+        "departure": "Nankin",
         "destination": "Shanghaï",
         "date": "lundi prochain",
         "class_cabin": "classe économique",
@@ -165,7 +165,7 @@
         "punctuality_rate": "97 %"
     },
     {
-        "departure": "Nanjing",
+        "departure": "Nankin",
         "destination": "Shanghaï",
         "date": "lundi prochain",
         "class_cabin": "classe affaires",
@@ -176,7 +176,7 @@
         "punctuality_rate": "97 %"
     },
     {
-        "departure": "Nanjing",
+        "departure": "Nankin",
         "destination": "Shanghaï",
         "date": "mardi prochain",
         "class_cabin": "classe économique",
@@ -187,7 +187,7 @@
         "punctuality_rate": "97 %"
     },
     {
-        "departure": "Nanjing",
+        "departure": "Nankin",
         "destination": "Shanghaï",
         "date": "mardi prochain",
         "class_cabin": "classe affaires",
@@ -198,7 +198,7 @@
         "punctuality_rate": "97 %"
     },
     {
-        "departure": "Nanjing",
+        "departure": "Nankin",
         "destination": "Shanghaï",
         "date": "mercredi prochain",
         "class_cabin": "classe économique",
@@ -209,7 +209,7 @@
         "punctuality_rate": "97 %"
     },
     {
-        "departure": "Nanjing",
+        "departure": "Nankin",
         "destination": "Shanghaï",
         "date": "mercredi prochain",
         "class_cabin": "classe affaires",
@@ -220,7 +220,7 @@
         "punctuality_rate": "97 %"
     },
     {
-        "departure": "Nanjing",
+        "departure": "Nankin",
         "destination": "Shanghaï",
         "date": "jeudi prochain",
         "class_cabin": "classe économique",
@@ -231,7 +231,7 @@
         "punctuality_rate": "97 %"
     },
     {
-        "departure": "Nanjing",
+        "departure": "Nankin",
         "destination": "Shanghaï",
         "date": "jeudi prochain",
         "class_cabin": "classe affaires",
@@ -242,7 +242,7 @@
         "punctuality_rate": "97 %"
     },
     {
-        "departure": "Nanjing",
+        "departure": "Nankin",
         "destination": "Shanghaï",
         "date": "vendredi prochain",
         "class_cabin": "classe économique",
@@ -253,7 +253,7 @@
         "punctuality_rate": "97 %"
     },
     {
-        "departure": "Nanjing",
+        "departure": "Nankin",
         "destination": "Shanghaï",
         "date": "vendredi prochain",
         "class_cabin": "classe affaires",
@@ -264,7 +264,7 @@
         "punctuality_rate": "97 %"
     },
     {
-        "departure": "Nanjing",
+        "departure": "Nankin",
         "destination": "Shanghaï",
         "date": "samedi prochain",
         "class_cabin": "classe économique",
@@ -275,7 +275,7 @@
         "punctuality_rate": "97 %"
     },
     {
-        "departure": "Nanjing",
+        "departure": "Nankin",
         "destination": "Shanghaï",
         "date": "samedi prochain",
         "class_cabin": "classe affaires",
@@ -286,7 +286,7 @@
         "punctuality_rate": "97 %"
     },
     {
-        "departure": "Nanjing",
+        "departure": "Nankin",
         "destination": "Shanghaï",
         "date": "dimanche prochain",
         "class_cabin": "classe économique",
@@ -297,7 +297,7 @@
         "punctuality_rate": "97 %"
     },
     {
-        "departure": "Nanjing",
+        "departure": "Nankin",
         "destination": "Shanghaï",
         "date": "dimanche prochain",
         "class_cabin": "classe affaires",
@@ -697,7 +697,7 @@
         "destination": "Guangzhou",
         "date": "lundi prochain",
         "class_cabin": "classe économique",
-        "flight_information": "FM9309 de la compagnie aérienne Shanghai, du Terminal 2 de l'aéroport international de Hongqiao au Terminal 1 de l'aéroport international de Baiyun",
+        "flight_information": "FM9309 de la compagnie aérienne Shanghaï, du Terminal 2 de l'aéroport international de Hongqiao au Terminal 1 de l'aéroport international de Baiyun",
         "departure_time": "13 h 30 ce jour-là",
         "arrival_time": "16 h 05 ce jour-là",
         "ticket_price": "1140 yuans",
@@ -708,7 +708,7 @@
         "destination": "Guangzhou",
         "date": "lundi prochain",
         "class_cabin": "classe affaires",
-        "flight_information": "FM9309 de la compagnie aérienne Shanghai, du Terminal 2 de l'aéroport international de Hongqiao au Terminal 1 de l'aéroport international de Baiyun",
+        "flight_information": "FM9309 de la compagnie aérienne Shanghaï, du Terminal 2 de l'aéroport international de Hongqiao au Terminal 1 de l'aéroport international de Baiyun",
         "departure_time": "13 h 30 ce jour-là",
         "arrival_time": "16 h 05 ce jour-là",
         "ticket_price": "1500 yuan",
@@ -719,7 +719,7 @@
         "destination": "Guangzhou",
         "date": "mardi prochain",
         "class_cabin": "classe économique",
-        "flight_information": "FM9309 de la compagnie aérienne Shanghai, du Terminal 2 de l'aéroport international de Hongqiao au Terminal 1 de l'aéroport international de Baiyun",
+        "flight_information": "FM9309 de la compagnie aérienne Shanghaï, du Terminal 2 de l'aéroport international de Hongqiao au Terminal 1 de l'aéroport international de Baiyun",
         "departure_time": "13 h 30 ce jour-là",
         "arrival_time": "16 h 05 ce jour-là",
         "ticket_price": "1140 yuans",
@@ -730,7 +730,7 @@
         "destination": "Guangzhou",
         "date": "mardi prochain",
         "class_cabin": "classe affaires",
-        "flight_information": "FM9309 de la compagnie aérienne Shanghai, du Terminal 2 de l'aéroport international de Hongqiao au Terminal 1 de l'aéroport international de Baiyun",
+        "flight_information": "FM9309 de la compagnie aérienne Shanghaï, du Terminal 2 de l'aéroport international de Hongqiao au Terminal 1 de l'aéroport international de Baiyun",
         "departure_time": "13 h 30 ce jour-là",
         "arrival_time": "16 h 05 ce jour-là",
         "ticket_price": "1500 yuan",
@@ -741,7 +741,7 @@
         "destination": "Guangzhou",
         "date": "mercredi prochain",
         "class_cabin": "classe économique",
-        "flight_information": "FM9309 de la compagnie aérienne Shanghai, du Terminal 2 de l'aéroport international de Hongqiao au Terminal 1 de l'aéroport international de Baiyun",
+        "flight_information": "FM9309 de la compagnie aérienne Shanghaï, du Terminal 2 de l'aéroport international de Hongqiao au Terminal 1 de l'aéroport international de Baiyun",
         "departure_time": "13 h 30 ce jour-là",
         "arrival_time": "16 h 05 ce jour-là",
         "ticket_price": "1140 yuans",
@@ -752,7 +752,7 @@
         "destination": "Guangzhou",
         "date": "mercredi prochain",
         "class_cabin": "classe affaires",
-        "flight_information": "FM9309 de la compagnie aérienne Shanghai, du Terminal 2 de l'aéroport international de Hongqiao au Terminal 1 de l'aéroport international de Baiyun",
+        "flight_information": "FM9309 de la compagnie aérienne Shanghaï, du Terminal 2 de l'aéroport international de Hongqiao au Terminal 1 de l'aéroport international de Baiyun",
         "departure_time": "13 h 30 ce jour-là",
         "arrival_time": "16 h 05 ce jour-là",
         "ticket_price": "1500 yuan",
@@ -763,7 +763,7 @@
         "destination": "Guangzhou",
         "date": "jeudi prochain",
         "class_cabin": "classe économique",
-        "flight_information": "FM9309 de la compagnie aérienne Shanghai, du Terminal 2 de l'aéroport international de Hongqiao au Terminal 1 de l'aéroport international de Baiyun",
+        "flight_information": "FM9309 de la compagnie aérienne Shanghaï, du Terminal 2 de l'aéroport international de Hongqiao au Terminal 1 de l'aéroport international de Baiyun",
         "departure_time": "13 h 30 ce jour-là",
         "arrival_time": "16 h 05 ce jour-là",
         "ticket_price": "1140 yuans",
@@ -774,7 +774,7 @@
         "destination": "Guangzhou",
         "date": "jeudi prochain",
         "class_cabin": "classe affaires",
-        "flight_information": "FM9309 de la compagnie aérienne Shanghai, du Terminal 2 de l'aéroport international de Hongqiao au Terminal 1 de l'aéroport international de Baiyun",
+        "flight_information": "FM9309 de la compagnie aérienne Shanghaï, du Terminal 2 de l'aéroport international de Hongqiao au Terminal 1 de l'aéroport international de Baiyun",
         "departure_time": "13 h 30 ce jour-là",
         "arrival_time": "16 h 05 ce jour-là",
         "ticket_price": "1500 yuan",
@@ -785,7 +785,7 @@
         "destination": "Guangzhou",
         "date": "vendredi prochain",
         "class_cabin": "classe économique",
-        "flight_information": "FM9309 de la compagnie aérienne Shanghai, du Terminal 2 de l'aéroport international de Hongqiao au Terminal 1 de l'aéroport international de Baiyun",
+        "flight_information": "FM9309 de la compagnie aérienne Shanghaï, du Terminal 2 de l'aéroport international de Hongqiao au Terminal 1 de l'aéroport international de Baiyun",
         "departure_time": "13 h 30 ce jour-là",
         "arrival_time": "16 h 05 ce jour-là",
         "ticket_price": "1140 yuans",
@@ -796,7 +796,7 @@
         "destination": "Guangzhou",
         "date": "vendredi prochain",
         "class_cabin": "classe affaires",
-        "flight_information": "FM9309 de la compagnie aérienne Shanghai, du Terminal 2 de l'aéroport international de Hongqiao au Terminal 1 de l'aéroport international de Baiyun",
+        "flight_information": "FM9309 de la compagnie aérienne Shanghaï, du Terminal 2 de l'aéroport international de Hongqiao au Terminal 1 de l'aéroport international de Baiyun",
         "departure_time": "13 h 30 ce jour-là",
         "arrival_time": "16 h 05 ce jour-là",
         "ticket_price": "1500 yuan",
@@ -807,7 +807,7 @@
         "destination": "Guangzhou",
         "date": "samedi prochain",
         "class_cabin": "classe économique",
-        "flight_information": "FM9309 de la compagnie aérienne Shanghai, du Terminal 2 de l'aéroport international de Hongqiao au Terminal 1 de l'aéroport international de Baiyun",
+        "flight_information": "FM9309 de la compagnie aérienne Shanghaï, du Terminal 2 de l'aéroport international de Hongqiao au Terminal 1 de l'aéroport international de Baiyun",
         "departure_time": "13 h 30 ce jour-là",
         "arrival_time": "16 h 05 ce jour-là",
         "ticket_price": "1140 yuans",
@@ -818,7 +818,7 @@
         "destination": "Guangzhou",
         "date": "samedi prochain",
         "class_cabin": "classe affaires",
-        "flight_information": "FM9309 de la compagnie aérienne Shanghai, du Terminal 2 de l'aéroport international de Hongqiao au Terminal 1 de l'aéroport international de Baiyun",
+        "flight_information": "FM9309 de la compagnie aérienne Shanghaï, du Terminal 2 de l'aéroport international de Hongqiao au Terminal 1 de l'aéroport international de Baiyun",
         "departure_time": "13 h 30 ce jour-là",
         "arrival_time": "16 h 05 ce jour-là",
         "ticket_price": "1500 yuan",
@@ -829,7 +829,7 @@
         "destination": "Guangzhou",
         "date": "dimanche prochain",
         "class_cabin": "classe économique",
-        "flight_information": "FM9309 de la compagnie aérienne Shanghai, du Terminal 2 de l'aéroport international de Hongqiao au Terminal 1 de l'aéroport international de Baiyun",
+        "flight_information": "FM9309 de la compagnie aérienne Shanghaï, du Terminal 2 de l'aéroport international de Hongqiao au Terminal 1 de l'aéroport international de Baiyun",
         "departure_time": "13 h 30 ce jour-là",
         "arrival_time": "16 h 05 ce jour-là",
         "ticket_price": "1140 yuans",
@@ -840,7 +840,7 @@
         "destination": "Guangzhou",
         "date": "dimanche prochain",
         "class_cabin": "classe affaires",
-        "flight_information": "FM9309 de la compagnie aérienne Shanghai, du Terminal 2 de l'aéroport international de Hongqiao au Terminal 1 de l'aéroport international de Baiyun",
+        "flight_information": "FM9309 de la compagnie aérienne Shanghaï, du Terminal 2 de l'aéroport international de Hongqiao au Terminal 1 de l'aéroport international de Baiyun",
         "departure_time": "13 h 30 ce jour-là",
         "arrival_time": "16 h 05 ce jour-là",
         "ticket_price": "1500 yuan",
@@ -1925,7 +1925,7 @@
         "punctuality_rate": "100 %"
     },
     {
-        "departure": "Nanjing",
+        "departure": "Nankin",
         "destination": "Pékin",
         "date": "lundi prochain",
         "class_cabin": "classe économique",
@@ -1936,7 +1936,7 @@
         "punctuality_rate": "96,61 %"
     },
     {
-        "departure": "Nanjing",
+        "departure": "Nankin",
         "destination": "Pékin",
         "date": "lundi prochain",
         "class_cabin": "classe affaires",
@@ -1947,31 +1947,9 @@
         "punctuality_rate": "96,61 %"
     },
     {
-        "departure": "Nanjing",
+        "departure": "Nankin",
         "destination": "Pékin",
         "date": "mardi prochain",
-        "class_cabin": "classe économique",
-        "flight_information": "MU2831 de la compagnie aérienne China Eastern, du Terminal 2 de l'aéroport international de Lukou au Terminal 2 de l'aéroport international de Pékin",
-        "departure_time": "14 h 55 ce jour-là",
-        "arrival_time": "16 h 50 ce jour-là",
-        "ticket_price": "1180 yuans",
-        "punctuality_rate": "96,61 %"
-    },
-    {
-        "departure": "Nanjing",
-        "destination": "Pékin",
-        "date": "mardi prochain",
-        "class_cabin": "classe affaires",
-        "flight_information": "MU2831 de la compagnie aérienne China Eastern, du Terminal 2 de l'aéroport international de Lukou au Terminal 2 de l'aéroport international de Pékin",
-        "departure_time": "14 h 55 ce jour-là",
-        "arrival_time": "16 h 50 ce jour-là",
-        "ticket_price": "6620 yuans",
-        "punctuality_rate": "96,61 %"
-    },
-    {
-        "departure": "Nanjing",
-        "destination": "Pékin",
-        "date": "mercredi prochain",
         "class_cabin": "classe économique",
         "flight_information": "MU2831 de la compagnie aérienne China Eastern, du Terminal 2 de l'aéroport international de Lukou au Terminal 2 de l'aéroport international de Pékin",
         "departure_time": "14 h 55 ce jour-là",
@@ -1980,7 +1958,29 @@
         "punctuality_rate": "96,61 %"
     },
     {
-        "departure": "Nanjing",
+        "departure": "Nankin",
+        "destination": "Pékin",
+        "date": "mardi prochain",
+        "class_cabin": "classe affaires",
+        "flight_information": "MU2831 de la compagnie aérienne China Eastern, du Terminal 2 de l'aéroport international de Lukou au Terminal 2 de l'aéroport international de Pékin",
+        "departure_time": "14 h 55 ce jour-là",
+        "arrival_time": "16 h 50 ce jour-là",
+        "ticket_price": "6620 yuans",
+        "punctuality_rate": "96,61 %"
+    },
+    {
+        "departure": "Nankin",
+        "destination": "Pékin",
+        "date": "mercredi prochain",
+        "class_cabin": "classe économique",
+        "flight_information": "MU2831 de la compagnie aérienne China Eastern, du Terminal 2 de l'aéroport international de Lukou au Terminal 2 de l'aéroport international de Pékin",
+        "departure_time": "14 h 55 ce jour-là",
+        "arrival_time": "16 h 50 ce jour-là",
+        "ticket_price": "1180 yuans",
+        "punctuality_rate": "96,61 %"
+    },
+    {
+        "departure": "Nankin",
         "destination": "Pékin",
         "date": "mercredi prochain",
         "class_cabin": "classe affaires",
@@ -1991,7 +1991,7 @@
         "punctuality_rate": "96,61 %"
     },
     {
-        "departure": "Nanjing",
+        "departure": "Nankin",
         "destination": "Pékin",
         "date": "jeudi prochain",
         "class_cabin": "classe économique",
@@ -2002,7 +2002,7 @@
         "punctuality_rate": "96,61 %"
     },
     {
-        "departure": "Nanjing",
+        "departure": "Nankin",
         "destination": "Pékin",
         "date": "jeudi prochain",
         "class_cabin": "classe affaires",
@@ -2013,31 +2013,9 @@
         "punctuality_rate": "96,61 %"
     },
     {
-        "departure": "Nanjing",
+        "departure": "Nankin",
         "destination": "Pékin",
         "date": "vendredi prochain",
-        "class_cabin": "classe économique",
-        "flight_information": "MU2831 de la compagnie aérienne China Eastern, du Terminal 2 de l'aéroport international de Lukou au Terminal 2 de l'aéroport international de Pékin",
-        "departure_time": "14 h 55 ce jour-là",
-        "arrival_time": "16 h 50 ce jour-là",
-        "ticket_price": "1180 yuans",
-        "punctuality_rate": "96,61 %"
-    },
-    {
-        "departure": "Nanjing",
-        "destination": "Pékin",
-        "date": "vendredi prochain",
-        "class_cabin": "classe affaires",
-        "flight_information": "MU2831 de la compagnie aérienne China Eastern, du Terminal 2 de l'aéroport international de Lukou au Terminal 2 de l'aéroport international de Pékin",
-        "departure_time": "14 h 55 ce jour-là",
-        "arrival_time": "16 h 50 ce jour-là",
-        "ticket_price": "6620 yuans",
-        "punctuality_rate": "96,61 %"
-    },
-    {
-        "departure": "Nanjing",
-        "destination": "Pékin",
-        "date": "samedi prochain",
         "class_cabin": "classe économique",
         "flight_information": "MU2831 de la compagnie aérienne China Eastern, du Terminal 2 de l'aéroport international de Lukou au Terminal 2 de l'aéroport international de Pékin",
         "departure_time": "14 h 55 ce jour-là",
@@ -2046,7 +2024,29 @@
         "punctuality_rate": "96,61 %"
     },
     {
-        "departure": "Nanjing",
+        "departure": "Nankin",
+        "destination": "Pékin",
+        "date": "vendredi prochain",
+        "class_cabin": "classe affaires",
+        "flight_information": "MU2831 de la compagnie aérienne China Eastern, du Terminal 2 de l'aéroport international de Lukou au Terminal 2 de l'aéroport international de Pékin",
+        "departure_time": "14 h 55 ce jour-là",
+        "arrival_time": "16 h 50 ce jour-là",
+        "ticket_price": "6620 yuans",
+        "punctuality_rate": "96,61 %"
+    },
+    {
+        "departure": "Nankin",
+        "destination": "Pékin",
+        "date": "samedi prochain",
+        "class_cabin": "classe économique",
+        "flight_information": "MU2831 de la compagnie aérienne China Eastern, du Terminal 2 de l'aéroport international de Lukou au Terminal 2 de l'aéroport international de Pékin",
+        "departure_time": "14 h 55 ce jour-là",
+        "arrival_time": "16 h 50 ce jour-là",
+        "ticket_price": "1180 yuans",
+        "punctuality_rate": "96,61 %"
+    },
+    {
+        "departure": "Nankin",
         "destination": "Pékin",
         "date": "samedi prochain",
         "class_cabin": "classe affaires",
@@ -2057,7 +2057,7 @@
         "punctuality_rate": "96,61 %"
     },
     {
-        "departure": "Nanjing",
+        "departure": "Nankin",
         "destination": "Pékin",
         "date": "dimanche prochain",
         "class_cabin": "classe économique",
@@ -2068,7 +2068,7 @@
         "punctuality_rate": "96,61 %"
     },
     {
-        "departure": "Nanjing",
+        "departure": "Nankin",
         "destination": "Pékin",
         "date": "dimanche prochain",
         "class_cabin": "classe affaires",
@@ -2080,7 +2080,7 @@
     },
     {
         "departure": "Pékin",
-        "destination": "Nanjing",
+        "destination": "Nankin",
         "date": "lundi prochain",
         "class_cabin": "classe économique",
         "flight_information": "Air China CA1847, du terminal 3 de l'aéroport international de Pékin-Capitale au terminal 2 de l'aéroport international de Lukou",
@@ -2091,7 +2091,7 @@
     },
     {
         "departure": "Pékin",
-        "destination": "Nanjing",
+        "destination": "Nankin",
         "date": "lundi prochain",
         "class_cabin": "classe affaires",
         "flight_information": "Air China CA1847, du terminal 3 de l'aéroport international de Pékin-Capitale au terminal 2 de l'aéroport international de Lukou",
@@ -2102,7 +2102,7 @@
     },
     {
         "departure": "Pékin",
-        "destination": "Nanjing",
+        "destination": "Nankin",
         "date": "mardi prochain",
         "class_cabin": "classe économique",
         "flight_information": "Air China CA1847, du terminal 3 de l'aéroport international de Pékin-Capitale au terminal 2 de l'aéroport international de Lukou",
@@ -2113,7 +2113,7 @@
     },
     {
         "departure": "Pékin",
-        "destination": "Nanjing",
+        "destination": "Nankin",
         "date": "mardi prochain",
         "class_cabin": "classe affaires",
         "flight_information": "Air China CA1847, du terminal 3 de l'aéroport international de Pékin-Capitale au terminal 2 de l'aéroport international de Lukou",
@@ -2124,7 +2124,7 @@
     },
     {
         "departure": "Pékin",
-        "destination": "Nanjing",
+        "destination": "Nankin",
         "date": "mercredi prochain",
         "class_cabin": "classe économique",
         "flight_information": "Air China CA1847, du terminal 3 de l'aéroport international de Pékin-Capitale au terminal 2 de l'aéroport international de Lukou",
@@ -2135,7 +2135,7 @@
     },
     {
         "departure": "Pékin",
-        "destination": "Nanjing",
+        "destination": "Nankin",
         "date": "mercredi prochain",
         "class_cabin": "classe affaires",
         "flight_information": "Air China CA1847, du terminal 3 de l'aéroport international de Pékin-Capitale au terminal 2 de l'aéroport international de Lukou",
@@ -2146,7 +2146,7 @@
     },
     {
         "departure": "Pékin",
-        "destination": "Nanjing",
+        "destination": "Nankin",
         "date": "jeudi prochain",
         "class_cabin": "classe économique",
         "flight_information": "Air China CA1847, du terminal 3 de l'aéroport international de Pékin-Capitale au terminal 2 de l'aéroport international de Lukou",
@@ -2157,7 +2157,7 @@
     },
     {
         "departure": "Pékin",
-        "destination": "Nanjing",
+        "destination": "Nankin",
         "date": "jeudi prochain",
         "class_cabin": "classe affaires",
         "flight_information": "Air China CA1847, du terminal 3 de l'aéroport international de Pékin-Capitale au terminal 2 de l'aéroport international de Lukou",
@@ -2168,7 +2168,7 @@
     },
     {
         "departure": "Pékin",
-        "destination": "Nanjing",
+        "destination": "Nankin",
         "date": "vendredi prochain",
         "class_cabin": "classe économique",
         "flight_information": "Air China CA1847, du terminal 3 de l'aéroport international de Pékin-Capitale au terminal 2 de l'aéroport international de Lukou",
@@ -2179,7 +2179,7 @@
     },
     {
         "departure": "Pékin",
-        "destination": "Nanjing",
+        "destination": "Nankin",
         "date": "vendredi prochain",
         "class_cabin": "classe affaires",
         "flight_information": "Air China CA1847, du terminal 3 de l'aéroport international de Pékin-Capitale au terminal 2 de l'aéroport international de Lukou",
@@ -2190,7 +2190,7 @@
     },
     {
         "departure": "Pékin",
-        "destination": "Nanjing",
+        "destination": "Nankin",
         "date": "samedi prochain",
         "class_cabin": "classe économique",
         "flight_information": "Air China CA1847, du terminal 3 de l'aéroport international de Pékin-Capitale au terminal 2 de l'aéroport international de Lukou",
@@ -2201,7 +2201,7 @@
     },
     {
         "departure": "Pékin",
-        "destination": "Nanjing",
+        "destination": "Nankin",
         "date": "samedi prochain",
         "class_cabin": "classe affaires",
         "flight_information": "Air China CA1847, du terminal 3 de l'aéroport international de Pékin-Capitale au terminal 2 de l'aéroport international de Lukou",
@@ -2212,7 +2212,7 @@
     },
     {
         "departure": "Pékin",
-        "destination": "Nanjing",
+        "destination": "Nankin",
         "date": "dimanche prochain",
         "class_cabin": "classe économique",
         "flight_information": "Air China CA1847, du terminal 3 de l'aéroport international de Pékin-Capitale au terminal 2 de l'aéroport international de Lukou",
@@ -2223,7 +2223,7 @@
     },
     {
         "departure": "Pékin",
-        "destination": "Nanjing",
+        "destination": "Nankin",
         "date": "dimanche prochain",
         "class_cabin": "classe affaires",
         "flight_information": "Air China CA1847, du terminal 3 de l'aéroport international de Pékin-Capitale au terminal 2 de l'aéroport international de Lukou",
@@ -2233,7 +2233,7 @@
         "punctuality_rate": "89,44 %"
     },
     {
-        "departure": "Nanjing",
+        "departure": "Nankin",
         "destination": "Guangzhou",
         "date": "lundi prochain",
         "class_cabin": "classe économique",
@@ -2244,7 +2244,7 @@
         "punctuality_rate": "100 %"
     },
     {
-        "departure": "Nanjing",
+        "departure": "Nankin",
         "destination": "Guangzhou",
         "date": "lundi prochain",
         "class_cabin": "classe affaires",
@@ -2255,7 +2255,7 @@
         "punctuality_rate": "100 %"
     },
     {
-        "departure": "Nanjing",
+        "departure": "Nankin",
         "destination": "Guangzhou",
         "date": "mardi prochain",
         "class_cabin": "classe économique",
@@ -2266,7 +2266,7 @@
         "punctuality_rate": "100 %"
     },
     {
-        "departure": "Nanjing",
+        "departure": "Nankin",
         "destination": "Guangzhou",
         "date": "mardi prochain",
         "class_cabin": "classe affaires",
@@ -2277,7 +2277,7 @@
         "punctuality_rate": "100 %"
     },
     {
-        "departure": "Nanjing",
+        "departure": "Nankin",
         "destination": "Guangzhou",
         "date": "mercredi prochain",
         "class_cabin": "classe économique",
@@ -2288,7 +2288,7 @@
         "punctuality_rate": "100 %"
     },
     {
-        "departure": "Nanjing",
+        "departure": "Nankin",
         "destination": "Guangzhou",
         "date": "mercredi prochain",
         "class_cabin": "classe affaires",
@@ -2299,7 +2299,7 @@
         "punctuality_rate": "100 %"
     },
     {
-        "departure": "Nanjing",
+        "departure": "Nankin",
         "destination": "Guangzhou",
         "date": "jeudi prochain",
         "class_cabin": "classe économique",
@@ -2310,7 +2310,7 @@
         "punctuality_rate": "100 %"
     },
     {
-        "departure": "Nanjing",
+        "departure": "Nankin",
         "destination": "Guangzhou",
         "date": "jeudi prochain",
         "class_cabin": "classe affaires",
@@ -2321,7 +2321,7 @@
         "punctuality_rate": "100 %"
     },
     {
-        "departure": "Nanjing",
+        "departure": "Nankin",
         "destination": "Guangzhou",
         "date": "vendredi prochain",
         "class_cabin": "classe économique",
@@ -2332,7 +2332,7 @@
         "punctuality_rate": "100 %"
     },
     {
-        "departure": "Nanjing",
+        "departure": "Nankin",
         "destination": "Guangzhou",
         "date": "vendredi prochain",
         "class_cabin": "classe affaires",
@@ -2343,7 +2343,7 @@
         "punctuality_rate": "100 %"
     },
     {
-        "departure": "Nanjing",
+        "departure": "Nankin",
         "destination": "Guangzhou",
         "date": "samedi prochain",
         "class_cabin": "classe économique",
@@ -2354,7 +2354,7 @@
         "punctuality_rate": "100 %"
     },
     {
-        "departure": "Nanjing",
+        "departure": "Nankin",
         "destination": "Guangzhou",
         "date": "samedi prochain",
         "class_cabin": "classe affaires",
@@ -2365,7 +2365,7 @@
         "punctuality_rate": "100 %"
     },
     {
-        "departure": "Nanjing",
+        "departure": "Nankin",
         "destination": "Guangzhou",
         "date": "dimanche prochain",
         "class_cabin": "classe économique",
@@ -2376,7 +2376,7 @@
         "punctuality_rate": "100 %"
     },
     {
-        "departure": "Nanjing",
+        "departure": "Nankin",
         "destination": "Guangzhou",
         "date": "dimanche prochain",
         "class_cabin": "classe affaires",
@@ -2388,7 +2388,7 @@
     },
     {
         "departure": "Guangzhou",
-        "destination": "Nanjing",
+        "destination": "Nankin",
         "date": "lundi prochain",
         "class_cabin": "classe économique",
         "flight_information": "la compagnie aérienne China Eastern MU2808, de l'aéroport international de Baiyun T1 à l'aéroport international de Lukou T2",
@@ -2399,7 +2399,7 @@
     },
     {
         "departure": "Guangzhou",
-        "destination": "Nanjing",
+        "destination": "Nankin",
         "date": "lundi prochain",
         "class_cabin": "classe affaires",
         "flight_information": "la compagnie aérienne China Eastern MU2808, de l'aéroport international de Baiyun T1 à l'aéroport international de Lukou T2",
@@ -2410,7 +2410,7 @@
     },
     {
         "departure": "Guangzhou",
-        "destination": "Nanjing",
+        "destination": "Nankin",
         "date": "mardi prochain",
         "class_cabin": "classe économique",
         "flight_information": "la compagnie aérienne China Eastern MU2808, de l'aéroport international de Baiyun T1 à l'aéroport international de Lukou T2",
@@ -2421,7 +2421,7 @@
     },
     {
         "departure": "Guangzhou",
-        "destination": "Nanjing",
+        "destination": "Nankin",
         "date": "mardi prochain",
         "class_cabin": "classe affaires",
         "flight_information": "la compagnie aérienne China Eastern MU2808, de l'aéroport international de Baiyun T1 à l'aéroport international de Lukou T2",
@@ -2432,7 +2432,7 @@
     },
     {
         "departure": "Guangzhou",
-        "destination": "Nanjing",
+        "destination": "Nankin",
         "date": "mercredi prochain",
         "class_cabin": "classe économique",
         "flight_information": "la compagnie aérienne China Eastern MU2808, de l'aéroport international de Baiyun T1 à l'aéroport international de Lukou T2",
@@ -2443,7 +2443,7 @@
     },
     {
         "departure": "Guangzhou",
-        "destination": "Nanjing",
+        "destination": "Nankin",
         "date": "mercredi prochain",
         "class_cabin": "classe affaires",
         "flight_information": "la compagnie aérienne China Eastern MU2808, de l'aéroport international de Baiyun T1 à l'aéroport international de Lukou T2",
@@ -2454,7 +2454,7 @@
     },
     {
         "departure": "Guangzhou",
-        "destination": "Nanjing",
+        "destination": "Nankin",
         "date": "jeudi prochain",
         "class_cabin": "classe économique",
         "flight_information": "la compagnie aérienne China Eastern MU2808, de l'aéroport international de Baiyun T1 à l'aéroport international de Lukou T2",
@@ -2465,7 +2465,7 @@
     },
     {
         "departure": "Guangzhou",
-        "destination": "Nanjing",
+        "destination": "Nankin",
         "date": "jeudi prochain",
         "class_cabin": "classe affaires",
         "flight_information": "la compagnie aérienne China Eastern MU2808, de l'aéroport international de Baiyun T1 à l'aéroport international de Lukou T2",
@@ -2476,7 +2476,7 @@
     },
     {
         "departure": "Guangzhou",
-        "destination": "Nanjing",
+        "destination": "Nankin",
         "date": "vendredi prochain",
         "class_cabin": "classe économique",
         "flight_information": "la compagnie aérienne China Eastern MU2808, de l'aéroport international de Baiyun T1 à l'aéroport international de Lukou T2",
@@ -2487,7 +2487,7 @@
     },
     {
         "departure": "Guangzhou",
-        "destination": "Nanjing",
+        "destination": "Nankin",
         "date": "vendredi prochain",
         "class_cabin": "classe affaires",
         "flight_information": "la compagnie aérienne China Eastern MU2808, de l'aéroport international de Baiyun T1 à l'aéroport international de Lukou T2",
@@ -2498,7 +2498,7 @@
     },
     {
         "departure": "Guangzhou",
-        "destination": "Nanjing",
+        "destination": "Nankin",
         "date": "samedi prochain",
         "class_cabin": "classe économique",
         "flight_information": "la compagnie aérienne China Eastern MU2808, de l'aéroport international de Baiyun T1 à l'aéroport international de Lukou T2",
@@ -2509,7 +2509,7 @@
     },
     {
         "departure": "Guangzhou",
-        "destination": "Nanjing",
+        "destination": "Nankin",
         "date": "samedi prochain",
         "class_cabin": "classe affaires",
         "flight_information": "la compagnie aérienne China Eastern MU2808, de l'aéroport international de Baiyun T1 à l'aéroport international de Lukou T2",
@@ -2520,7 +2520,7 @@
     },
     {
         "departure": "Guangzhou",
-        "destination": "Nanjing",
+        "destination": "Nankin",
         "date": "dimanche prochain",
         "class_cabin": "classe économique",
         "flight_information": "la compagnie aérienne China Eastern MU2808, de l'aéroport international de Baiyun T1 à l'aéroport international de Lukou T2",
@@ -2531,7 +2531,7 @@
     },
     {
         "departure": "Guangzhou",
-        "destination": "Nanjing",
+        "destination": "Nankin",
         "date": "dimanche prochain",
         "class_cabin": "classe affaires",
         "flight_information": "la compagnie aérienne China Eastern MU2808, de l'aéroport international de Baiyun T1 à l'aéroport international de Lukou T2",
@@ -2541,7 +2541,7 @@
         "punctuality_rate": "100 %"
     },
     {
-        "departure": "Nanjing",
+        "departure": "Nankin",
         "destination": "Shenzhen",
         "date": "lundi prochain",
         "class_cabin": "classe économique",
@@ -2552,7 +2552,7 @@
         "punctuality_rate": "89,44 %"
     },
     {
-        "departure": "Nanjing",
+        "departure": "Nankin",
         "destination": "Shenzhen",
         "date": "lundi prochain",
         "class_cabin": "classe affaires",
@@ -2563,7 +2563,7 @@
         "punctuality_rate": "89,44 %"
     },
     {
-        "departure": "Nanjing",
+        "departure": "Nankin",
         "destination": "Shenzhen",
         "date": "mardi prochain",
         "class_cabin": "classe économique",
@@ -2574,7 +2574,7 @@
         "punctuality_rate": "89,44 %"
     },
     {
-        "departure": "Nanjing",
+        "departure": "Nankin",
         "destination": "Shenzhen",
         "date": "mardi prochain",
         "class_cabin": "classe affaires",
@@ -2585,7 +2585,7 @@
         "punctuality_rate": "89,44 %"
     },
     {
-        "departure": "Nanjing",
+        "departure": "Nankin",
         "destination": "Shenzhen",
         "date": "mercredi prochain",
         "class_cabin": "classe économique",
@@ -2596,7 +2596,7 @@
         "punctuality_rate": "89,44 %"
     },
     {
-        "departure": "Nanjing",
+        "departure": "Nankin",
         "destination": "Shenzhen",
         "date": "mercredi prochain",
         "class_cabin": "classe affaires",
@@ -2607,7 +2607,7 @@
         "punctuality_rate": "89,44 %"
     },
     {
-        "departure": "Nanjing",
+        "departure": "Nankin",
         "destination": "Shenzhen",
         "date": "jeudi prochain",
         "class_cabin": "classe économique",
@@ -2618,7 +2618,7 @@
         "punctuality_rate": "89,44 %"
     },
     {
-        "departure": "Nanjing",
+        "departure": "Nankin",
         "destination": "Shenzhen",
         "date": "jeudi prochain",
         "class_cabin": "classe affaires",
@@ -2629,7 +2629,7 @@
         "punctuality_rate": "89,44 %"
     },
     {
-        "departure": "Nanjing",
+        "departure": "Nankin",
         "destination": "Shenzhen",
         "date": "vendredi prochain",
         "class_cabin": "classe économique",
@@ -2640,7 +2640,7 @@
         "punctuality_rate": "89,44 %"
     },
     {
-        "departure": "Nanjing",
+        "departure": "Nankin",
         "destination": "Shenzhen",
         "date": "vendredi prochain",
         "class_cabin": "classe affaires",
@@ -2651,7 +2651,7 @@
         "punctuality_rate": "89,44 %"
     },
     {
-        "departure": "Nanjing",
+        "departure": "Nankin",
         "destination": "Shenzhen",
         "date": "samedi prochain",
         "class_cabin": "classe économique",
@@ -2662,7 +2662,7 @@
         "punctuality_rate": "89,44 %"
     },
     {
-        "departure": "Nanjing",
+        "departure": "Nankin",
         "destination": "Shenzhen",
         "date": "samedi prochain",
         "class_cabin": "classe affaires",
@@ -2673,7 +2673,7 @@
         "punctuality_rate": "89,44 %"
     },
     {
-        "departure": "Nanjing",
+        "departure": "Nankin",
         "destination": "Shenzhen",
         "date": "dimanche prochain",
         "class_cabin": "classe économique",
@@ -2684,7 +2684,7 @@
         "punctuality_rate": "89,44 %"
     },
     {
-        "departure": "Nanjing",
+        "departure": "Nankin",
         "destination": "Shenzhen",
         "date": "dimanche prochain",
         "class_cabin": "classe affaires",
@@ -2696,7 +2696,7 @@
     },
     {
         "departure": "Shenzhen",
-        "destination": "Nanjing",
+        "destination": "Nankin",
         "date": "lundi prochain",
         "class_cabin": "classe économique",
         "flight_information": "CZ3827 de China Southern entre le terminal 3 de l'aéroport international de Bao'an et le terminal 2 de l'aéroport international de Lukou",
@@ -2707,7 +2707,7 @@
     },
     {
         "departure": "Shenzhen",
-        "destination": "Nanjing",
+        "destination": "Nankin",
         "date": "lundi prochain",
         "class_cabin": "classe affaires",
         "flight_information": "CZ3827 de China Southern entre le terminal 3 de l'aéroport international de Bao'an et le terminal 2 de l'aéroport international de Lukou",
@@ -2718,7 +2718,7 @@
     },
     {
         "departure": "Shenzhen",
-        "destination": "Nanjing",
+        "destination": "Nankin",
         "date": "mardi prochain",
         "class_cabin": "classe économique",
         "flight_information": "CZ3827 de China Southern entre le terminal 3 de l'aéroport international de Bao'an et le terminal 2 de l'aéroport international de Lukou",
@@ -2729,7 +2729,7 @@
     },
     {
         "departure": "Shenzhen",
-        "destination": "Nanjing",
+        "destination": "Nankin",
         "date": "mardi prochain",
         "class_cabin": "classe affaires",
         "flight_information": "CZ3827 de China Southern entre le terminal 3 de l'aéroport international de Bao'an et le terminal 2 de l'aéroport international de Lukou",
@@ -2740,7 +2740,7 @@
     },
     {
         "departure": "Shenzhen",
-        "destination": "Nanjing",
+        "destination": "Nankin",
         "date": "mercredi prochain",
         "class_cabin": "classe économique",
         "flight_information": "CZ3827 de China Southern entre le terminal 3 de l'aéroport international de Bao'an et le terminal 2 de l'aéroport international de Lukou",
@@ -2751,7 +2751,7 @@
     },
     {
         "departure": "Shenzhen",
-        "destination": "Nanjing",
+        "destination": "Nankin",
         "date": "mercredi prochain",
         "class_cabin": "classe affaires",
         "flight_information": "CZ3827 de China Southern entre le terminal 3 de l'aéroport international de Bao'an et le terminal 2 de l'aéroport international de Lukou",
@@ -2762,7 +2762,7 @@
     },
     {
         "departure": "Shenzhen",
-        "destination": "Nanjing",
+        "destination": "Nankin",
         "date": "jeudi prochain",
         "class_cabin": "classe économique",
         "flight_information": "CZ3827 de China Southern entre le terminal 3 de l'aéroport international de Bao'an et le terminal 2 de l'aéroport international de Lukou",
@@ -2773,7 +2773,7 @@
     },
     {
         "departure": "Shenzhen",
-        "destination": "Nanjing",
+        "destination": "Nankin",
         "date": "jeudi prochain",
         "class_cabin": "classe affaires",
         "flight_information": "CZ3827 de China Southern entre le terminal 3 de l'aéroport international de Bao'an et le terminal 2 de l'aéroport international de Lukou",
@@ -2784,7 +2784,7 @@
     },
     {
         "departure": "Shenzhen",
-        "destination": "Nanjing",
+        "destination": "Nankin",
         "date": "vendredi prochain",
         "class_cabin": "classe économique",
         "flight_information": "CZ3827 de China Southern entre le terminal 3 de l'aéroport international de Bao'an et le terminal 2 de l'aéroport international de Lukou",
@@ -2795,7 +2795,7 @@
     },
     {
         "departure": "Shenzhen",
-        "destination": "Nanjing",
+        "destination": "Nankin",
         "date": "vendredi prochain",
         "class_cabin": "classe affaires",
         "flight_information": "CZ3827 de China Southern entre le terminal 3 de l'aéroport international de Bao'an et le terminal 2 de l'aéroport international de Lukou",
@@ -2806,7 +2806,7 @@
     },
     {
         "departure": "Shenzhen",
-        "destination": "Nanjing",
+        "destination": "Nankin",
         "date": "samedi prochain",
         "class_cabin": "classe économique",
         "flight_information": "CZ3827 de China Southern entre le terminal 3 de l'aéroport international de Bao'an et le terminal 2 de l'aéroport international de Lukou",
@@ -2817,7 +2817,7 @@
     },
     {
         "departure": "Shenzhen",
-        "destination": "Nanjing",
+        "destination": "Nankin",
         "date": "samedi prochain",
         "class_cabin": "classe affaires",
         "flight_information": "CZ3827 de China Southern entre le terminal 3 de l'aéroport international de Bao'an et le terminal 2 de l'aéroport international de Lukou",
@@ -2828,7 +2828,7 @@
     },
     {
         "departure": "Shenzhen",
-        "destination": "Nanjing",
+        "destination": "Nankin",
         "date": "dimanche prochain",
         "class_cabin": "classe économique",
         "flight_information": "CZ3827 de China Southern entre le terminal 3 de l'aéroport international de Bao'an et le terminal 2 de l'aéroport international de Lukou",
@@ -2839,7 +2839,7 @@
     },
     {
         "departure": "Shenzhen",
-        "destination": "Nanjing",
+        "destination": "Nankin",
         "date": "dimanche prochain",
         "class_cabin": "classe affaires",
         "flight_information": "CZ3827 de China Southern entre le terminal 3 de l'aéroport international de Bao'an et le terminal 2 de l'aéroport international de Lukou",
@@ -2849,7 +2849,7 @@
         "punctuality_rate": "96,61 %"
     },
     {
-        "departure": "Nanjing",
+        "departure": "Nankin",
         "destination": "Chengdu",
         "date": "lundi prochain",
         "class_cabin": "classe économique",
@@ -2860,7 +2860,7 @@
         "punctuality_rate": "96,61 %"
     },
     {
-        "departure": "Nanjing",
+        "departure": "Nankin",
         "destination": "Chengdu",
         "date": "lundi prochain",
         "class_cabin": "classe affaires",
@@ -2871,7 +2871,7 @@
         "punctuality_rate": "96,61 %"
     },
     {
-        "departure": "Nanjing",
+        "departure": "Nankin",
         "destination": "Chengdu",
         "date": "mardi prochain",
         "class_cabin": "classe économique",
@@ -2882,7 +2882,7 @@
         "punctuality_rate": "96,61 %"
     },
     {
-        "departure": "Nanjing",
+        "departure": "Nankin",
         "destination": "Chengdu",
         "date": "mardi prochain",
         "class_cabin": "classe affaires",
@@ -2893,7 +2893,7 @@
         "punctuality_rate": "96,61 %"
     },
     {
-        "departure": "Nanjing",
+        "departure": "Nankin",
         "destination": "Chengdu",
         "date": "mercredi prochain",
         "class_cabin": "classe économique",
@@ -2904,7 +2904,7 @@
         "punctuality_rate": "96,61 %"
     },
     {
-        "departure": "Nanjing",
+        "departure": "Nankin",
         "destination": "Chengdu",
         "date": "mercredi prochain",
         "class_cabin": "classe affaires",
@@ -2915,7 +2915,7 @@
         "punctuality_rate": "96,61 %"
     },
     {
-        "departure": "Nanjing",
+        "departure": "Nankin",
         "destination": "Chengdu",
         "date": "jeudi prochain",
         "class_cabin": "classe économique",
@@ -2926,7 +2926,7 @@
         "punctuality_rate": "96,61 %"
     },
     {
-        "departure": "Nanjing",
+        "departure": "Nankin",
         "destination": "Chengdu",
         "date": "jeudi prochain",
         "class_cabin": "classe affaires",
@@ -2937,7 +2937,7 @@
         "punctuality_rate": "96,61 %"
     },
     {
-        "departure": "Nanjing",
+        "departure": "Nankin",
         "destination": "Chengdu",
         "date": "vendredi prochain",
         "class_cabin": "classe économique",
@@ -2948,7 +2948,7 @@
         "punctuality_rate": "96,61 %"
     },
     {
-        "departure": "Nanjing",
+        "departure": "Nankin",
         "destination": "Chengdu",
         "date": "vendredi prochain",
         "class_cabin": "classe affaires",
@@ -2959,7 +2959,7 @@
         "punctuality_rate": "96,61 %"
     },
     {
-        "departure": "Nanjing",
+        "departure": "Nankin",
         "destination": "Chengdu",
         "date": "samedi prochain",
         "class_cabin": "classe économique",
@@ -2970,7 +2970,7 @@
         "punctuality_rate": "96,61 %"
     },
     {
-        "departure": "Nanjing",
+        "departure": "Nankin",
         "destination": "Chengdu",
         "date": "samedi prochain",
         "class_cabin": "classe affaires",
@@ -2981,7 +2981,7 @@
         "punctuality_rate": "96,61 %"
     },
     {
-        "departure": "Nanjing",
+        "departure": "Nankin",
         "destination": "Chengdu",
         "date": "dimanche prochain",
         "class_cabin": "classe économique",
@@ -2992,7 +2992,7 @@
         "punctuality_rate": "96,61 %"
     },
     {
-        "departure": "Nanjing",
+        "departure": "Nankin",
         "destination": "Chengdu",
         "date": "dimanche prochain",
         "class_cabin": "classe affaires",
@@ -3004,7 +3004,7 @@
     },
     {
         "departure": "Chengdu",
-        "destination": "Nanjing",
+        "destination": "Nankin",
         "date": "lundi prochain",
         "class_cabin": "classe économique",
         "flight_information": "3U8993 de la compagnie aérienne Sichuan, de l'aéroport international de Shuangliu Terminal 1 à l'aéroport international de Lukou Terminal 2",
@@ -3015,7 +3015,7 @@
     },
     {
         "departure": "Chengdu",
-        "destination": "Nanjing",
+        "destination": "Nankin",
         "date": "lundi prochain",
         "class_cabin": "classe affaires",
         "flight_information": "3U8993 de la compagnie aérienne Sichuan, de l'aéroport international de Shuangliu Terminal 1 à l'aéroport international de Lukou Terminal 2",
@@ -3026,7 +3026,7 @@
     },
     {
         "departure": "Chengdu",
-        "destination": "Nanjing",
+        "destination": "Nankin",
         "date": "mardi prochain",
         "class_cabin": "classe économique",
         "flight_information": "3U8993 de la compagnie aérienne Sichuan, de l'aéroport international de Shuangliu Terminal 1 à l'aéroport international de Lukou Terminal 2",
@@ -3037,7 +3037,7 @@
     },
     {
         "departure": "Chengdu",
-        "destination": "Nanjing",
+        "destination": "Nankin",
         "date": "mardi prochain",
         "class_cabin": "classe affaires",
         "flight_information": "3U8993 de la compagnie aérienne Sichuan, de l'aéroport international de Shuangliu Terminal 1 à l'aéroport international de Lukou Terminal 2",
@@ -3048,7 +3048,7 @@
     },
     {
         "departure": "Chengdu",
-        "destination": "Nanjing",
+        "destination": "Nankin",
         "date": "mercredi prochain",
         "class_cabin": "classe économique",
         "flight_information": "3U8993 de la compagnie aérienne Sichuan, de l'aéroport international de Shuangliu Terminal 1 à l'aéroport international de Lukou Terminal 2",
@@ -3059,7 +3059,7 @@
     },
     {
         "departure": "Chengdu",
-        "destination": "Nanjing",
+        "destination": "Nankin",
         "date": "mercredi prochain",
         "class_cabin": "classe affaires",
         "flight_information": "3U8993 de la compagnie aérienne Sichuan, de l'aéroport international de Shuangliu Terminal 1 à l'aéroport international de Lukou Terminal 2",
@@ -3070,7 +3070,7 @@
     },
     {
         "departure": "Chengdu",
-        "destination": "Nanjing",
+        "destination": "Nankin",
         "date": "jeudi prochain",
         "class_cabin": "classe économique",
         "flight_information": "3U8993 de la compagnie aérienne Sichuan, de l'aéroport international de Shuangliu Terminal 1 à l'aéroport international de Lukou Terminal 2",
@@ -3081,7 +3081,7 @@
     },
     {
         "departure": "Chengdu",
-        "destination": "Nanjing",
+        "destination": "Nankin",
         "date": "jeudi prochain",
         "class_cabin": "classe affaires",
         "flight_information": "3U8993 de la compagnie aérienne Sichuan, de l'aéroport international de Shuangliu Terminal 1 à l'aéroport international de Lukou Terminal 2",
@@ -3092,7 +3092,7 @@
     },
     {
         "departure": "Chengdu",
-        "destination": "Nanjing",
+        "destination": "Nankin",
         "date": "vendredi prochain",
         "class_cabin": "classe économique",
         "flight_information": "3U8993 de la compagnie aérienne Sichuan, de l'aéroport international de Shuangliu Terminal 1 à l'aéroport international de Lukou Terminal 2",
@@ -3103,7 +3103,7 @@
     },
     {
         "departure": "Chengdu",
-        "destination": "Nanjing",
+        "destination": "Nankin",
         "date": "vendredi prochain",
         "class_cabin": "classe affaires",
         "flight_information": "3U8993 de la compagnie aérienne Sichuan, de l'aéroport international de Shuangliu Terminal 1 à l'aéroport international de Lukou Terminal 2",
@@ -3114,7 +3114,7 @@
     },
     {
         "departure": "Chengdu",
-        "destination": "Nanjing",
+        "destination": "Nankin",
         "date": "samedi prochain",
         "class_cabin": "classe économique",
         "flight_information": "3U8993 de la compagnie aérienne Sichuan, de l'aéroport international de Shuangliu Terminal 1 à l'aéroport international de Lukou Terminal 2",
@@ -3125,7 +3125,7 @@
     },
     {
         "departure": "Chengdu",
-        "destination": "Nanjing",
+        "destination": "Nankin",
         "date": "samedi prochain",
         "class_cabin": "classe affaires",
         "flight_information": "3U8993 de la compagnie aérienne Sichuan, de l'aéroport international de Shuangliu Terminal 1 à l'aéroport international de Lukou Terminal 2",
@@ -3136,7 +3136,7 @@
     },
     {
         "departure": "Chengdu",
-        "destination": "Nanjing",
+        "destination": "Nankin",
         "date": "dimanche prochain",
         "class_cabin": "classe économique",
         "flight_information": "3U8993 de la compagnie aérienne Sichuan, de l'aéroport international de Shuangliu Terminal 1 à l'aéroport international de Lukou Terminal 2",
@@ -3147,7 +3147,7 @@
     },
     {
         "departure": "Chengdu",
-        "destination": "Nanjing",
+        "destination": "Nankin",
         "date": "dimanche prochain",
         "class_cabin": "classe affaires",
         "flight_information": "3U8993 de la compagnie aérienne Sichuan, de l'aéroport international de Shuangliu Terminal 1 à l'aéroport international de Lukou Terminal 2",
@@ -3157,7 +3157,7 @@
         "punctuality_rate": "98,32 %"
     },
     {
-        "departure": "Nanjing",
+        "departure": "Nankin",
         "destination": "Xiamen",
         "date": "lundi prochain",
         "class_cabin": "classe économique",
@@ -3168,7 +3168,7 @@
         "punctuality_rate": "80 %"
     },
     {
-        "departure": "Nanjing",
+        "departure": "Nankin",
         "destination": "Xiamen",
         "date": "lundi prochain",
         "class_cabin": "classe affaires",
@@ -3179,7 +3179,7 @@
         "punctuality_rate": "80 %"
     },
     {
-        "departure": "Nanjing",
+        "departure": "Nankin",
         "destination": "Xiamen",
         "date": "mardi prochain",
         "class_cabin": "classe économique",
@@ -3190,7 +3190,7 @@
         "punctuality_rate": "80 %"
     },
     {
-        "departure": "Nanjing",
+        "departure": "Nankin",
         "destination": "Xiamen",
         "date": "mardi prochain",
         "class_cabin": "classe affaires",
@@ -3201,7 +3201,7 @@
         "punctuality_rate": "80 %"
     },
     {
-        "departure": "Nanjing",
+        "departure": "Nankin",
         "destination": "Xiamen",
         "date": "mercredi prochain",
         "class_cabin": "classe économique",
@@ -3212,7 +3212,7 @@
         "punctuality_rate": "80 %"
     },
     {
-        "departure": "Nanjing",
+        "departure": "Nankin",
         "destination": "Xiamen",
         "date": "mercredi prochain",
         "class_cabin": "classe affaires",
@@ -3223,7 +3223,7 @@
         "punctuality_rate": "80 %"
     },
     {
-        "departure": "Nanjing",
+        "departure": "Nankin",
         "destination": "Xiamen",
         "date": "jeudi prochain",
         "class_cabin": "classe économique",
@@ -3234,7 +3234,7 @@
         "punctuality_rate": "80 %"
     },
     {
-        "departure": "Nanjing",
+        "departure": "Nankin",
         "destination": "Xiamen",
         "date": "jeudi prochain",
         "class_cabin": "classe affaires",
@@ -3245,7 +3245,7 @@
         "punctuality_rate": "80 %"
     },
     {
-        "departure": "Nanjing",
+        "departure": "Nankin",
         "destination": "Xiamen",
         "date": "vendredi prochain",
         "class_cabin": "classe économique",
@@ -3256,7 +3256,7 @@
         "punctuality_rate": "80 %"
     },
     {
-        "departure": "Nanjing",
+        "departure": "Nankin",
         "destination": "Xiamen",
         "date": "vendredi prochain",
         "class_cabin": "classe affaires",
@@ -3267,7 +3267,7 @@
         "punctuality_rate": "80 %"
     },
     {
-        "departure": "Nanjing",
+        "departure": "Nankin",
         "destination": "Xiamen",
         "date": "samedi prochain",
         "class_cabin": "classe économique",
@@ -3278,7 +3278,7 @@
         "punctuality_rate": "80 %"
     },
     {
-        "departure": "Nanjing",
+        "departure": "Nankin",
         "destination": "Xiamen",
         "date": "samedi prochain",
         "class_cabin": "classe affaires",
@@ -3289,7 +3289,7 @@
         "punctuality_rate": "80 %"
     },
     {
-        "departure": "Nanjing",
+        "departure": "Nankin",
         "destination": "Xiamen",
         "date": "dimanche prochain",
         "class_cabin": "classe économique",
@@ -3300,7 +3300,7 @@
         "punctuality_rate": "80 %"
     },
     {
-        "departure": "Nanjing",
+        "departure": "Nankin",
         "destination": "Xiamen",
         "date": "dimanche prochain",
         "class_cabin": "classe affaires",
@@ -3312,7 +3312,7 @@
     },
     {
         "departure": "Xiamen",
-        "destination": "Nanjing",
+        "destination": "Nankin",
         "date": "lundi prochain",
         "class_cabin": "classe économique",
         "flight_information": "MF8513 de la compagnie aérienne Xiamen du Terminal 3 de l'aéroport international de Gaoqi au Terminal 2 de l'aéroport international de Lukou",
@@ -3323,7 +3323,7 @@
     },
     {
         "departure": "Xiamen",
-        "destination": "Nanjing",
+        "destination": "Nankin",
         "date": "lundi prochain",
         "class_cabin": "classe affaires",
         "flight_information": "MF8513 de la compagnie aérienne Xiamen du Terminal 3 de l'aéroport international de Gaoqi au Terminal 2 de l'aéroport international de Lukou",
@@ -3334,7 +3334,7 @@
     },
     {
         "departure": "Xiamen",
-        "destination": "Nanjing",
+        "destination": "Nankin",
         "date": "mardi prochain",
         "class_cabin": "classe économique",
         "flight_information": "MF8513 de la compagnie aérienne Xiamen du Terminal 3 de l'aéroport international de Gaoqi au Terminal 2 de l'aéroport international de Lukou",
@@ -3345,7 +3345,7 @@
     },
     {
         "departure": "Xiamen",
-        "destination": "Nanjing",
+        "destination": "Nankin",
         "date": "mardi prochain",
         "class_cabin": "classe affaires",
         "flight_information": "MF8513 de la compagnie aérienne Xiamen du Terminal 3 de l'aéroport international de Gaoqi au Terminal 2 de l'aéroport international de Lukou",
@@ -3356,7 +3356,7 @@
     },
     {
         "departure": "Xiamen",
-        "destination": "Nanjing",
+        "destination": "Nankin",
         "date": "mercredi prochain",
         "class_cabin": "classe économique",
         "flight_information": "MF8513 de la compagnie aérienne Xiamen du Terminal 3 de l'aéroport international de Gaoqi au Terminal 2 de l'aéroport international de Lukou",
@@ -3367,7 +3367,7 @@
     },
     {
         "departure": "Xiamen",
-        "destination": "Nanjing",
+        "destination": "Nankin",
         "date": "mercredi prochain",
         "class_cabin": "classe affaires",
         "flight_information": "MF8513 de la compagnie aérienne Xiamen du Terminal 3 de l'aéroport international de Gaoqi au Terminal 2 de l'aéroport international de Lukou",
@@ -3378,7 +3378,7 @@
     },
     {
         "departure": "Xiamen",
-        "destination": "Nanjing",
+        "destination": "Nankin",
         "date": "jeudi prochain",
         "class_cabin": "classe économique",
         "flight_information": "MF8513 de la compagnie aérienne Xiamen du Terminal 3 de l'aéroport international de Gaoqi au Terminal 2 de l'aéroport international de Lukou",
@@ -3389,7 +3389,7 @@
     },
     {
         "departure": "Xiamen",
-        "destination": "Nanjing",
+        "destination": "Nankin",
         "date": "jeudi prochain",
         "class_cabin": "classe affaires",
         "flight_information": "MF8513 de la compagnie aérienne Xiamen du Terminal 3 de l'aéroport international de Gaoqi au Terminal 2 de l'aéroport international de Lukou",
@@ -3400,7 +3400,7 @@
     },
     {
         "departure": "Xiamen",
-        "destination": "Nanjing",
+        "destination": "Nankin",
         "date": "vendredi prochain",
         "class_cabin": "classe économique",
         "flight_information": "MF8513 de la compagnie aérienne Xiamen du Terminal 3 de l'aéroport international de Gaoqi au Terminal 2 de l'aéroport international de Lukou",
@@ -3411,7 +3411,7 @@
     },
     {
         "departure": "Xiamen",
-        "destination": "Nanjing",
+        "destination": "Nankin",
         "date": "vendredi prochain",
         "class_cabin": "classe affaires",
         "flight_information": "MF8513 de la compagnie aérienne Xiamen du Terminal 3 de l'aéroport international de Gaoqi au Terminal 2 de l'aéroport international de Lukou",
@@ -3422,7 +3422,7 @@
     },
     {
         "departure": "Xiamen",
-        "destination": "Nanjing",
+        "destination": "Nankin",
         "date": "samedi prochain",
         "class_cabin": "classe économique",
         "flight_information": "MF8513 de la compagnie aérienne Xiamen du Terminal 3 de l'aéroport international de Gaoqi au Terminal 2 de l'aéroport international de Lukou",
@@ -3433,7 +3433,7 @@
     },
     {
         "departure": "Xiamen",
-        "destination": "Nanjing",
+        "destination": "Nankin",
         "date": "samedi prochain",
         "class_cabin": "classe affaires",
         "flight_information": "MF8513 de la compagnie aérienne Xiamen du Terminal 3 de l'aéroport international de Gaoqi au Terminal 2 de l'aéroport international de Lukou",
@@ -3444,7 +3444,7 @@
     },
     {
         "departure": "Xiamen",
-        "destination": "Nanjing",
+        "destination": "Nankin",
         "date": "dimanche prochain",
         "class_cabin": "classe économique",
         "flight_information": "MF8513 de la compagnie aérienne Xiamen du Terminal 3 de l'aéroport international de Gaoqi au Terminal 2 de l'aéroport international de Lukou",
@@ -3455,7 +3455,7 @@
     },
     {
         "departure": "Xiamen",
-        "destination": "Nanjing",
+        "destination": "Nankin",
         "date": "dimanche prochain",
         "class_cabin": "classe affaires",
         "flight_information": "MF8513 de la compagnie aérienne Xiamen du Terminal 3 de l'aéroport international de Gaoqi au Terminal 2 de l'aéroport international de Lukou",

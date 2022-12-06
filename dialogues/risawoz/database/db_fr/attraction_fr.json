@@ -28,7 +28,7 @@
         "features": "Le nouveau bâtiment du musée de Suzhou, d'une élégance exquise, conçu par Ieoh Ming Pei, mérite d'être visité. Vous pourrez également admirer le précieux bol en forme de lotus vert olive."
     },
     {
-        "name": "ville de Zhouzhuang",
+        "name": "village de Zhouzhuang",
         "area": "Kunshan",
         "type": "ville d'eau",
         "the_most_suitable_people": "amis",
@@ -128,7 +128,7 @@
     {
         "name": "zone panoramique du mont Tianping",
         "area": "District de Wuzhong",
-        "type": "des endroits",
+        "type": "endroit",
         "the_most_suitable_people": "amis",
         "consumption": "modérée",
         "metro_station": "false",
@@ -154,9 +154,9 @@
         "features": "Promenez-vous dans les anciens pâtés de maisons bien préservés, observez les ponts et l'eau qui coule, visitez les boutiques littéraires et artistiques, et mangez des plats délicieux."
     },
     {
-        "name": "la zone pittoresque du lac de Jinji",
+        "name": "zone pittoresque du lac de Jinji",
         "area": "Parc industriel de Suzhou",
-        "type": "des endroits",
+        "type": "endroit",
         "the_most_suitable_people": "rencontres",
         "consumption": "un peu cher",
         "metro_station": "true",
@@ -212,7 +212,7 @@
     {
         "name": "site panoramique de Shajiabang",
         "area": "Changshu",
-        "type": "des endroits",
+        "type": "endroit",
         "the_most_suitable_people": "adaptés aux familles",
         "consumption": "un peu cher",
         "metro_station": "false",
@@ -240,7 +240,7 @@
     {
         "name": "la montagne Xishan",
         "area": "District de Wuzhong",
-        "type": "des endroits",
+        "type": "endroit",
         "the_most_suitable_people": "adaptés aux familles",
         "consumption": "bon marché",
         "metro_station": "false",
@@ -254,7 +254,7 @@
     {
         "name": "Zone panoramique de la montagne Qionglong",
         "area": "District de Wuzhong",
-        "type": "des endroits",
+        "type": "endroit",
         "the_most_suitable_people": "amis",
         "consumption": "modérée",
         "metro_station": "false",
@@ -310,7 +310,7 @@
     {
         "name": "région pittoresque de la montagne Lingyan",
         "area": "District de Wuzhong",
-        "type": "des endroits",
+        "type": "endroit",
         "the_most_suitable_people": "adaptés aux familles",
         "consumption": "bon marché",
         "metro_station": "false",
@@ -338,7 +338,7 @@
     {
         "name": "parc des zones humides du lac de Taihu Suzhou",
         "area": "Nouveau district de Suzhou",
-        "type": "des endroits",
+        "type": "endroit",
         "the_most_suitable_people": "adaptés aux familles",
         "consumption": "bon marché",
         "metro_station": "false",
@@ -380,7 +380,7 @@
     {
         "name": "Dongting Dongshan",
         "area": "District de Wuzhong",
-        "type": "des endroits",
+        "type": "endroit",
         "the_most_suitable_people": "adaptés aux familles",
         "consumption": "modérée",
         "metro_station": "false",
@@ -506,7 +506,7 @@
     {
         "name": "Lac de pierre",
         "area": "District de Wuzhong",
-        "type": "des endroits",
+        "type": "endroit",
         "the_most_suitable_people": "amis",
         "consumption": "bon marché",
         "metro_station": "true",
@@ -548,7 +548,7 @@
     {
         "name": "Parc écologique de Baimajian",
         "area": "Nouveau district de Suzhou",
-        "type": "des endroits",
+        "type": "endroit",
         "the_most_suitable_people": "adaptés aux familles",
         "consumption": "bon marché",
         "metro_station": "false",

@@ -93,7 +93,7 @@
     {
         "name": "barbecue au charbon de bois Nongleyuan",
         "area": "District de Gusu",
-        "cuisine": "sud-coréennes",
+        "cuisine": "sud-coréenne",
         "pricerange": "modérée",
         "metro_station": "true",
         "per_capita_consumption": "88 yuans",
@@ -104,7 +104,7 @@
         "dishes": "riz en pot de pierre"
     },
     {
-        "name": "Cuisine de la maison privée Banyuan",
+        "name": "Banyuan Private Home Cuisine",
         "area": "District de Gusu",
         "cuisine": "Jiangsu-Zhejiang",
         "pricerange": "un peu cher",
@@ -260,7 +260,7 @@
         "dishes": "le bifteck Tai-sow"
     },
     {
-        "name": "fondue chinoise de Haidilao",
+        "name": "fondue chinoise Haidilao",
         "area": "Parc industriel de Suzhou",
         "cuisine": "Hotpot",
         "pricerange": "un peu cher",
@@ -314,7 +314,7 @@
     {
         "name": "Qing He Gu",
         "area": "Parc industriel de Suzhou",
-        "cuisine": "sud-coréennes",
+        "cuisine": "sud-coréenne",
         "pricerange": "un peu cher",
         "metro_station": "false",
         "per_capita_consumption": "154 yuans",
@@ -418,7 +418,7 @@
     {
         "name": "Seoul Korean Cuisine",
         "area": "District de Wuzhong",
-        "cuisine": "sud-coréennes",
+        "cuisine": "sud-coréenne",
         "pricerange": "modérée",
         "metro_station": "true",
         "per_capita_consumption": "81 yuans",
@@ -522,7 +522,7 @@
     {
         "name": "Palsaik Coréen +Q",
         "area": "Nouveau district de Suzhou",
-        "cuisine": "sud-coréennes",
+        "cuisine": "sud-coréenne",
         "pricerange": "modérée",
         "metro_station": "true",
         "per_capita_consumption": "103 yuans",

@@ -10,7 +10,7 @@ logger = logging.getLogger(__name__)
 
 
 class Risawoz(WOZDataset):
-    def __init__(self, name='risawoz'):
+    def __init__(self, name='risawoz', src='zh', tgt='en'):
         super().__init__(name)
 
         mongodb_host = 'mongodb+srv://bitod:plGYPp44hASzGbmm@cluster0.vo7pq.mongodb.net/risawoz?retryWrites=true&w=majority&ssl=true&ssl_cert_reqs=CERT_NONE'
@@ -18,7 +18,7 @@ class Risawoz(WOZDataset):
 
         self.db = client["risawoz"]
 
-        self.value_mapping = RisawozMapping()
+        self.value_mapping = RisawozMapping(src=src, tgt=tgt)
 
         self._warnings = set()
 

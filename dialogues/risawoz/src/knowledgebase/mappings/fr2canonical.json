@@ -4,13 +4,24 @@
             "Taïwan, Chine": [
                 "Taïwan",
                 "Série télévisée taïwanaise",
-                "une série télévisée de Taiwan, Chine"
+                "Série télé taïwanaise",
+                "série télé taïwanaise",
+                "une série télévisée de Taïwan, Chine",
+                "une série télé de Taïwan, Chine"
             ],
-            "l'Amérique": [
+            "Amérique": [
+                "Américain",
+                "américain",
+                "Américaine",
                 "américaine",
                 "en Amérique",
+                "l'Amérique",
                 "Etats-Unis",
+                "aux Etats-Unis",
+                "États-Unis",
+                "aux États-Unis",
                 "Série télévisée américaine",
+                "série télé américaine",
                 "des séries américaines",
                 "Série TV en Amérique"
             ],
@@ -22,11 +33,13 @@
             ],
             "Japon": [
                 "japonaise",
+                "japonaises",
                 "des séries japonaises",
                 "série télé japonaise"
             ],
             "Corée": [
                 "sud-coréennes",
+                "sud-coréenne",
                 "Corée du Sud",
                 "Sud-Coréen",
                 "en Corée du Sud",
@@ -44,19 +57,37 @@
         "decade": {
             "années 2010": [
                 "années 2010",
+                "les années 2010",
+                "des années 2010",
                 "2010"
             ],
-            "les années 2000": [
+            "années 2000": [
+                "2000",
+                "années 2000",
                 "les années 2000",
-                "des années 2000",
-                "les années 2000"
+                "des années 2000"
             ],
-            "des années 1980": [
+            "années 1990": [
+                "les années 1990",
+                "des années 1990",
+                "les années 90",
+                "des années 90",
+                "années 90"
+            ],
+            "années 1980": [
+                "les années 1980",
                 "des années 1980",
-                "les années 80"
+                "les années 80",
+                "des années 80",
+                "années 80"
             ],
-            "années 1990": "années 1990",
-            "des années 70": "des années 70"
+            "années 1970": [
+                "les années 1970",
+                "des années 1970",
+                "les années 70",
+                "des années 70",
+                "années 70"
+            ]
         },
         "type": {
             "romantique": [
@@ -80,11 +111,13 @@
             ],
             "d'action": [
                 "d'action",
+                "série d'action",
                 "des séries d'action",
                 "série télé d'action",
                 "pleine d'action"
             ],
             "polar": [
+                "à suspense",
                 "drame à suspense",
                 "une série polar",
                 "suspense"
@@ -94,9 +127,10 @@
                 "long métrage de fiction",
                 "longs métrages",
                 "les séries de long-métrage",
-                "série télé"
+                "série télé",
+                "des séries télévisées"
             ],
-            "télévisée policière": [
+            "série policière": [
                 "télévisée policière",
                 "drame policier",
                 "série télé policière",
@@ -281,7 +315,7 @@
             "2017-12-15 au Japon": "2017-12-15 au Japon",
             "2008-01-20 en Amérique": "2008-01-20 en Amérique",
             "2012-04-17 au Japon": "2012-04-17 au Japon",
-            "2019-03-24 à Taiwan, Chine": "2019-03-24 à Taiwan, Chine",
+            "2019-03-24 à Taïwan, Chine": "2019-03-24 à Taïwan, Chine",
             "2001-09-03 en Chine continentale": "2001-09-03 en Chine continentale",
             "2009-04-01 en Chine continentale": "2009-04-01 en Chine continentale",
             "2011-04-17 en Amérique": "2011-04-17 en Amérique",
@@ -291,8 +325,8 @@
             "2016-06-27 à Hong Kong, Chine": "2016-06-27 à Hong Kong, Chine",
             "2005-06-01 en Corée du Sud": "2005-06-01 en Corée du Sud",
             "2019-10-18 en Amérique": "2019-10-18 en Amérique",
-            "2001-04-21 à Taiwan, Chine": "2001-04-21 à Taiwan, Chine",
-            "1994-03-10 à Taiwan, Chine": "1994-03-10 à Taiwan, Chine",
+            "2001-04-21 à Taïwan, Chine": "2001-04-21 à Taïwan, Chine",
+            "1994-03-10 à Taïwan, Chine": "1994-03-10 à Taïwan, Chine",
             "2017-08-30 en Chine continentale": "2017-08-30 en Chine continentale",
             "1995-08-14 à Hong Kong, Chine": "1995-08-14 à Hong Kong, Chine",
             "2014-07-14 à Hong Kong, Chine": "2014-07-14 à Hong Kong, Chine",
@@ -304,12 +338,12 @@
             "1998-10-26 à Hong Kong, Chine": "1998-10-26 à Hong Kong, Chine",
             "1993-07-01 en Chine continentale": "1993-07-01 en Chine continentale",
             "2017-03-28 en Chine continentale": "2017-03-28 en Chine continentale",
-            "2001-03-14 à Taiwan, Chine": "2001-03-14 à Taiwan, Chine",
-            "1991-04-23 à Taiwan, Chine": "1991-04-23 à Taiwan, Chine",
+            "2001-03-14 à Taïwan, Chine": "2001-03-14 à Taïwan, Chine",
+            "1991-04-23 à Taïwan, Chine": "1991-04-23 à Taïwan, Chine",
             "2004-10-02 au Japon": "2004-10-02 au Japon",
             "1995-07-31 à Hong Kong, Chine": "1995-07-31 à Hong Kong, Chine",
             "2017-01-17 au Japon": "2017-01-17 au Japon",
-            "2009-02-27 à Taiwan, Chine": "2009-02-27 à Taiwan, Chine",
+            "2009-02-27 à Taïwan, Chine": "2009-02-27 à Taïwan, Chine",
             "2007-09-24 en Amérique": "2007-09-24 en Amérique",
             "2011-05-25 en Corée du Sud": "2011-05-25 en Corée du Sud",
             "2013-12-18 en Corée du Sud": "2013-12-18 en Corée du Sud",
@@ -317,7 +351,7 @@
             "2018-10-14 au Japon": "2018-10-14 au Japon",
             "1998-06-01 à Hong Kong, Chine": "1998-06-01 à Hong Kong, Chine",
             "2010-01-02 en Chine continentale": "2010-01-02 en Chine continentale",
-            "2009-04-11 à Taiwan, Chine": "2009-04-11 à Taiwan, Chine",
+            "2009-04-11 à Taïwan, Chine": "2009-04-11 à Taïwan, Chine",
             "2013-04-04 en Amérique": "2013-04-04 en Amérique",
             "2008-05-21 en Corée du Sud": "2008-05-21 en Corée du Sud",
             "2007-10-15 au Japon": "2007-10-15 au Japon",
@@ -325,30 +359,30 @@
             "2008-09-23 en Amérique": "2008-09-23 en Amérique",
             "2018-01-12 au Japon": "2018-01-12 au Japon",
             "2001-09-09 en Amérique": "2001-09-09 en Amérique",
-            "2019-08-04 à Taiwan, Chine": "2019-08-04 à Taiwan, Chine",
+            "2019-08-04 à Taïwan, Chine": "2019-08-04 à Taïwan, Chine",
             "1994-10-23 en Chine continentale": "1994-10-23 en Chine continentale",
             "2019-12-14 en Corée du Sud": "2019-12-14 en Corée du Sud",
-            "2019-06-08 à Taiwan, Chine": "2019-06-08 à Taiwan, Chine",
+            "2019-06-08 à Taïwan, Chine": "2019-06-08 à Taïwan, Chine",
             "2015-11-06 en Corée du Sud": "2015-11-06 en Corée du Sud",
             "2019-11-26 en Chine continentale": "2019-11-26 en Chine continentale",
-            "2003-10-07 à Taiwan, Chine": "2003-10-07 à Taiwan, Chine",
+            "2003-10-07 à Taïwan, Chine": "2003-10-07 à Taïwan, Chine",
             "2018-08-09 en Chine continentale": "2018-08-09 en Chine continentale",
             "2014-08-25 à Hong Kong, Chine": "2014-08-25 à Hong Kong, Chine",
             "1980-03-10 à Hong Kong, Chine": "1980-03-10 à Hong Kong, Chine",
             "1985 en Chine continentale": "1985 en Chine continentale",
-            "2012-06-27 à Taiwan, Chine": "2012-06-27 à Taiwan, Chine",
+            "2012-06-27 à Taïwan, Chine": "2012-06-27 à Taïwan, Chine",
             "2005-09-01 en Amérique": "2005-09-01 en Amérique",
             "2016-04-08 en Chine continentale": "2016-04-08 en Chine continentale",
             "2004-07-14 en Corée du Sud": "2004-07-14 en Corée du Sud",
             "2001-10-15 à Hong Kong, Chine": "2001-10-15 à Hong Kong, Chine",
             "2006-10-16 au Japon": "2006-10-16 au Japon",
-            "1992-11-15 à Taiwan, Chine": "1992-11-15 à Taiwan, Chine",
+            "1992-11-15 à Taïwan, Chine": "1992-11-15 à Taïwan, Chine",
             "2004-10-03 en Amérique": "2004-10-03 en Amérique",
             "1998-10-28 en Chine continentale": "1998-10-28 en Chine continentale",
             "2004-09-22 en Amérique": "2004-09-22 en Amérique",
-            "2008-11-07 à Taiwan, Chine": "2008-11-07 à Taiwan, Chine",
-            "2019-11-17 à Taiwan, Chine": "2019-11-17 à Taiwan, Chine",
-            "1999-06-28 à Taiwan, Chine": "1999-06-28 à Taiwan, Chine",
+            "2008-11-07 à Taïwan, Chine": "2008-11-07 à Taïwan, Chine",
+            "2019-11-17 à Taïwan, Chine": "2019-11-17 à Taïwan, Chine",
+            "1999-06-28 à Taïwan, Chine": "1999-06-28 à Taïwan, Chine",
             "1986-02 en Chine continentale": "1986-02 en Chine continentale",
             "2015-08-28 en Amérique": "2015-08-28 en Amérique",
             "1991-02-21 en Amérique": "1991-02-21 en Amérique",
@@ -359,7 +393,7 @@
             "1997-04-09 en Corée du Sud": "1997-04-09 en Corée du Sud",
             "2003-12-11 en Chine continentale": "2003-12-11 en Chine continentale",
             "2003-02-24 à Hong Kong, Chine": "2003-02-24 à Hong Kong, Chine",
-            "2005-09-25 à Taiwan, Chine": "2005-09-25 à Taiwan, Chine",
+            "2005-09-25 à Taïwan, Chine": "2005-09-25 à Taïwan, Chine",
             "1998 en Chine continentale": "1998 en Chine continentale",
             "2007-04-14 au Japon": "2007-04-14 au Japon",
             "2012-01-16 au Japon": "2012-01-16 au Japon",
@@ -793,20 +827,37 @@
         "decade": {
             "années 2010": [
                 "années 2010",
+                "les années 2010",
+                "des années 2010",
                 "2010"
             ],
-            "les années 2000": [
+            "années 2000": [
+                "2000",
+                "années 2000",
                 "les années 2000",
-                "des années 2000",
-                "les années 2000",
-                "2000"
+                "des années 2000"
             ],
-            "des années 1980": [
+            "années 1990": [
+                "les années 1990",
+                "des années 1990",
+                "les années 90",
+                "des années 90",
+                "années 90"
+            ],
+            "années 1980": [
+                "les années 1980",
                 "des années 1980",
-                "les années 80"
+                "les années 80",
+                "des années 80",
+                "années 80"
             ],
-            "années 1990": "années 1990",
-            "des années 70": "des années 70"
+            "années 1970": [
+                "les années 1970",
+                "des années 1970",
+                "les années 70",
+                "des années 70",
+                "années 70"
+            ]
         },
         "douban score": {
             "9,1": "9,1",
@@ -847,33 +898,45 @@
             "5.4": "5.4"
         },
         "production country or area": {
-            "Inde": [
-                "indiens",
-                "en Inde"
-            ],
-            "Taïwan, Chine": [
-                "Taïwan"
-            ],
-            "l'Amérique": [
+            "Amérique": [
                 "américaine",
+                "l'Amérique",
                 "en Amérique",
                 "Etats-Unis"
+            ],
+            "Corée": [
+                "sud-coréennes",
+                "sud-coréenne",
+                "Corée du Sud",
+                "Sud-Coréen",
+                "en Corée du Sud",
+                "série télé coréenne",
+                "drame coréen",
+                "série coréenne"
             ],
             "Chine continentale": [
                 "Chine continentale",
                 "film de Chine continentale"
-            ],
-            "Corée": [
-                "sud-coréennes",
-                "Corée du Sud",
-                "Sud-Coréen",
-                "en Corée du Sud"
             ],
             "Hong Kong": [
                 "Hong Kong",
                 "films de Hong Kong",
                 "série télé captivante de Hong Kong",
                 "série télé bien notée de Hong Kong, en Chine"
+            ],
+            "Inde": [
+                "Indien",
+                "indiens",
+                "en Inde"
+            ],
+            "Japon": [
+                "japonaise",
+                "japonaises",
+                "des séries japonaises",
+                "série télé japonaise"
+            ],
+            "Taïwan, Chine": [
+                "Taïwan"
             ]
         },
         "star": {
@@ -994,7 +1057,7 @@
                 "Kong Fu Kids"
             ],
             "La légende de la Sixième Dynastie,": "La légende de la Sixième Dynastie,",
-            "Les Treize de Shanghai": "Les Treize de Shanghai",
+            "Les Treize de Shanghaï": "Les Treize de Shanghaï",
             "Once Upon a Time in China 3": "Once Upon a Time in China 3",
             "The Rooftop": "The Rooftop",
             "Scream": "Scream",
@@ -1124,9 +1187,9 @@
             "145 minutes": "145 minutes"
         },
         "release date": {
-            "Le 27 juillet 2007 à Taiwan et le 31 juillet de la même année en Chine continentale": "Le 27 juillet 2007 à Taiwan et le 31 juillet de la même année en Chine continentale",
+            "Le 27 juillet 2007 à Taïwan et le 31 juillet de la même année en Chine continentale": "Le 27 juillet 2007 à Taïwan et le 31 juillet de la même année en Chine continentale",
             "20 août 2015": "20 août 2015",
-            "le 25 octobre 2002 à Taiwan, Chine": "le 25 octobre 2002 à Taiwan, Chine",
+            "le 25 octobre 2002 à Taïwan, Chine": "le 25 octobre 2002 à Taïwan, Chine",
             "le 9 juillet 2003 aux États-Unis": "le 9 juillet 2003 aux États-Unis",
             "le 21 novembre de la même année sur le continent chinois.": "le 21 novembre de la même année sur le continent chinois.",
             "5 juillet 2018": "5 juillet 2018",
@@ -1187,7 +1250,7 @@
             "1988": "1988",
             "25 octobre 2019 (Chine continentale)": "25 octobre 2019 (Chine continentale)",
             "26 octobre 1977": "26 octobre 1977",
-            "à Taiwan, en Chine, le 27 juillet 2007": "à Taiwan, en Chine, le 27 juillet 2007",
+            "à Taïwan, en Chine, le 27 juillet 2007": "à Taïwan, en Chine, le 27 juillet 2007",
             "sur le continent chinois le 31 juillet 2007": "sur le continent chinois le 31 juillet 2007",
             "19 août 1995": "19 août 1995",
             "1er février 1982 (Chine continentale)": "1er février 1982 (Chine continentale)",
@@ -1197,28 +1260,28 @@
             "en Inde le 7 avril 1997": "en Inde le 7 avril 1997",
             "en Amérique le 16 novembre 2018 et en Chine continentale le 1er mars 2019": "en Amérique le 16 novembre 2018 et en Chine continentale le 1er mars 2019",
             "en Chine continentale le 22 novembre 2013": "en Chine continentale le 22 novembre 2013",
-            "2013-07-11 en Chine continentale / Taiwan, Chine": "2013-07-11 en Chine continentale / Taiwan, Chine",
-            "1986-03-28 à Taiwan, Chine": "1986-03-28 à Taiwan, Chine",
+            "2013-07-11 en Chine continentale / Taïwan, Chine": "2013-07-11 en Chine continentale / Taïwan, Chine",
+            "1986-03-28 à Taïwan, Chine": "1986-03-28 à Taïwan, Chine",
             "1987-05-25 en Inde": "1987-05-25 en Inde",
             "2010-09-01 en Chine continentale / 2010-07-16 en Amérique": "2010-09-01 en Chine continentale / 2010-07-16 en Amérique",
             "1992-06 en Chine continentale / 1984-10-26 en Amérique": "1992-06 en Chine continentale / 1984-10-26 en Amérique",
             "1974-10-05 à Hong Kong, Chine": "1974-10-05 à Hong Kong, Chine",
-            "2011-08-19 à Taiwan, Chine / 2012-01-06 en Chine continentale": "2011-08-19 à Taiwan, Chine / 2012-01-06 en Chine continentale",
+            "2011-08-19 à Taïwan, Chine / 2012-01-06 en Chine continentale": "2011-08-19 à Taïwan, Chine / 2012-01-06 en Chine continentale",
             "1989-12-14 à Hong Kong, Chine": "1989-12-14 à Hong Kong, Chine",
             "2008-01-30 en Chine continentale": "2008-01-30 en Chine continentale",
             "2013-07-19 en Amérique": "2013-07-19 en Amérique",
-            "2007-07-27 à Taiwan, Chine / 2007-07-31 en Chine continentale": "2007-07-27 à Taiwan, Chine / 2007-07-31 en Chine continentale",
+            "2007-07-27 à Taïwan, Chine / 2007-07-31 en Chine continentale": "2007-07-27 à Taïwan, Chine / 2007-07-31 en Chine continentale",
             "1986-05-16 en Amérique": "1986-05-16 en Amérique",
-            "2012-08-17 à Taiwan, Chine / 2013-03-14 en Chine continentale": "2012-08-17 à Taiwan, Chine / 2013-03-14 en Chine continentale",
-            "1991-08-01 à Taiwan, Chine": "1991-08-01 à Taiwan, Chine",
-            "1984-03-02 à Taiwan, Chine": "1984-03-02 à Taiwan, Chine",
+            "2012-08-17 à Taïwan, Chine / 2013-03-14 en Chine continentale": "2012-08-17 à Taïwan, Chine / 2013-03-14 en Chine continentale",
+            "1991-08-01 à Taïwan, Chine": "1991-08-01 à Taïwan, Chine",
+            "1984-03-02 à Taïwan, Chine": "1984-03-02 à Taïwan, Chine",
             "1982-06-25 en Amérique": "1982-06-25 en Amérique",
             "1991-01-01 à Hong Kong, Chine": "1991-01-01 à Hong Kong, Chine",
-            "1996-12-28 à Taiwan, Chine": "1996-12-28 à Taiwan, Chine",
+            "1996-12-28 à Taïwan, Chine": "1996-12-28 à Taïwan, Chine",
             "1993-01-01 à Hong Kong, Chine / 1993-07-26 en Chine continentale": "1993-01-01 à Hong Kong, Chine / 1993-07-26 en Chine continentale",
             "2001-07-12 à Hong Kong, Chine": "2001-07-12 à Hong Kong, Chine",
             "2010-7-8 à Hong Kong, Chine": "2010-7-8 à Hong Kong, Chine",
-            "2015-08-20 à Taiwan, Chine": "2015-08-20 à Taiwan, Chine",
+            "2015-08-20 à Taïwan, Chine": "2015-08-20 à Taïwan, Chine",
             "2010-10-01 en Amérique": "2010-10-01 en Amérique",
             "2010-03-25 à Hong Kong, Chine / 2010-06-18 en Chine continentale": "2010-03-25 à Hong Kong, Chine / 2010-06-18 en Chine continentale",
             "1993-02-11 à Hong Kong, Chine": "1993-02-11 à Hong Kong, Chine",
@@ -1230,7 +1293,7 @@
             "2003-11-21 en Chine continentale / 2003-07-09 en Amérique": "2003-11-21 en Chine continentale / 2003-07-09 en Amérique",
             "2006-06-23 en Inde": "2006-06-23 en Inde",
             "2013-12-19 en Chine continentale / 2012-10-31 en Corée du Sud": "2013-12-19 en Chine continentale / 2012-10-31 en Corée du Sud",
-            "1980-01-09 à Taiwan, Chine": "1980-01-09 à Taiwan, Chine",
+            "1980-01-09 à Taïwan, Chine": "1980-01-09 à Taïwan, Chine",
             "2008-12-12 en Chine continentale / 2008-12-19 à Hong Kong, Chine": "2008-12-12 en Chine continentale / 2008-12-19 à Hong Kong, Chine",
             "2008-12-25 en Amérique": "2008-12-25 en Amérique",
             "2000-09-29 à Hong Kong, Chine": "2000-09-29 à Hong Kong, Chine",
@@ -1240,12 +1303,12 @@
             "2018-03-02 en Chine continentale / 2015-07-17 en Inde": "2018-03-02 en Chine continentale / 2015-07-17 en Inde",
             "1988-10-10 en Chine continentale": "1988-10-10 en Chine continentale",
             "2016-07-20 en Corée du Sud": "2016-07-20 en Corée du Sud",
-            "2010-2-5 à Taiwan, Chine": "2010-2-5 à Taiwan, Chine",
+            "2010-2-5 à Taïwan, Chine": "2010-2-5 à Taïwan, Chine",
             "1999-02-13 à Hong Kong, Chine": "1999-02-13 à Hong Kong, Chine",
             "2002-03-28 à Hong Kong, Chine / 2005-03-25 en Chine continentale": "2002-03-28 à Hong Kong, Chine / 2005-03-25 en Chine continentale",
             "2019-04-24 en Chine continentale / 2019-04-26 en Amérique": "2019-04-24 en Chine continentale / 2019-04-26 en Amérique",
             "1980-05-23 en Amérique": "1980-05-23 en Amérique",
-            "1974-09-12 à Taiwan, Chine": "1974-09-12 à Taiwan, Chine",
+            "1974-09-12 à Taïwan, Chine": "1974-09-12 à Taïwan, Chine",
             "1976-12-03 en Amérique": "1976-12-03 en Amérique",
             "1986-08-02 à Hong Kong, Chine / 2017-11-17 en Chine continentale": "1986-08-02 à Hong Kong, Chine / 2017-11-17 en Chine continentale",
             "1996-05-22 en Amérique": "1996-05-22 en Amérique",
@@ -1254,13 +1317,13 @@
             "1996-12-20 en Amérique": "1996-12-20 en Amérique",
             "1998-06-05 en Amérique": "1998-06-05 en Amérique",
             "2010-07-26 première à Hollywood / 2010-09-10 en Amérique": "2010-07-26 première à Hollywood / 2010-09-10 en Amérique",
-            "1993 à Taiwan, Chine": "1993 à Taiwan, Chine",
-            "2006-09-29 à Taiwan, Chine": "2006-09-29 à Taiwan, Chine",
-            "2008-02-07 à Hong Kong, Chine / Taiwan, Chine": "2008-02-07 à Hong Kong, Chine / Taiwan, Chine",
-            "2006/3/24 à Taiwan, Chine": "2006/3/24 à Taiwan, Chine",
+            "1993 à Taïwan, Chine": "1993 à Taïwan, Chine",
+            "2006-09-29 à Taïwan, Chine": "2006-09-29 à Taïwan, Chine",
+            "2008-02-07 à Hong Kong, Chine / Taïwan, Chine": "2008-02-07 à Hong Kong, Chine / Taïwan, Chine",
+            "2006/3/24 à Taïwan, Chine": "2006/3/24 à Taïwan, Chine",
             "2007-11-01 en Chine continentale": "2007-11-01 en Chine continentale",
             "2008-01-11 en Amérique": "2008-01-11 en Amérique",
-            "1979-01-28 à Taiwan, Chine": "1979-01-28 à Taiwan, Chine",
+            "1979-01-28 à Taïwan, Chine": "1979-01-28 à Taïwan, Chine",
             "2002-01-11 à Hong Kong, Chine": "2002-01-11 à Hong Kong, Chine",
             "1992-12-17 à Hong Kong, Chine": "1992-12-17 à Hong Kong, Chine",
             "2010-11-30 en Chine continentale / 2010-02-12 en Inde": "2010-11-30 en Chine continentale / 2010-02-12 en Inde",
@@ -1272,7 +1335,7 @@
             "2014-07-18 en Chine continentale": "2014-07-18 en Chine continentale",
             "2002-07-11 en Inde": "2002-07-11 en Inde",
             "1995-08-19 à Hong Kong, Chine": "1995-08-19 à Hong Kong, Chine",
-            "2002-10-25 à Taiwan, Chine": "2002-10-25 à Taiwan, Chine",
+            "2002-10-25 à Taïwan, Chine": "2002-10-25 à Taïwan, Chine",
             "2003-11-21 en Corée du Sud": "2003-11-21 en Corée du Sud",
             "2015-05-22 en Chine continentale / 2014-12-19 en Inde": "2015-05-22 en Chine continentale / 2014-12-19 en Inde",
             "1987-07-18 à Hong Kong, Chine / 2011-04-30 en Chine continentale": "1987-07-18 à Hong Kong, Chine / 2011-04-30 en Chine continentale",
@@ -1283,12 +1346,12 @@
             "2004-12-23 en Chine continentale / Hong Kong, Chine": "2004-12-23 en Chine continentale / Hong Kong, Chine",
             "2008-06-12 en Chine continentale": "2008-06-12 en Chine continentale",
             "1982-02-01 en Chine continentale": "1982-02-01 en Chine continentale",
-            "1970-10-09 à Taiwan, Chine": "1970-10-09 à Taiwan, Chine",
+            "1970-10-09 à Taïwan, Chine": "1970-10-09 à Taïwan, Chine",
             "2017-07-27 en Chine continentale": "2017-07-27 en Chine continentale",
             "2013-10-24 à Hong Kong, Chine": "2013-10-24 à Hong Kong, Chine",
             "2004-10-29 en Amérique": "2004-10-29 en Amérique",
             "1972-12-30 à Hong Kong, Chine": "1972-12-30 à Hong Kong, Chine",
-            "1980-03-29 à Taiwan, Chine": "1980-03-29 à Taiwan, Chine"
+            "1980-03-29 à Taïwan, Chine": "1980-03-29 à Taïwan, Chine"
         },
         "type": {
             "romantique": [
@@ -1301,6 +1364,7 @@
                 "science-fiction",
                 "scientifique",
                 "des films de science-fiction",
+                "film de science-fiction",
                 "films de science-fiction"
             ],
             "comique": [
@@ -1540,7 +1604,10 @@
     },
     "attraction": {
         "area": {
-            "District de Gusu": "District de Gusu",
+            "District de Gusu": [
+                "nouveau district de Suzhou ou le district de Gusu",
+                "District de Gusu"
+            ],
             "Parc industriel de Suzhou": [
                 "Parc industriel de Suzhou",
                 "Parc industriel"
@@ -1561,24 +1628,29 @@
         },
         "consumption": {
             "modérée": [
-                "à prix modérés",
                 "pas trop cher",
+                "pas trop chère",
+                "pas trop chers",
+                "pas trop chères",
+                "à prix modérés",
                 "juste",
                 "modérés",
                 "milieu du site"
             ],
             "un peu cher": [
+                "d'un peu cher",
                 "un peu cher",
-                "un peu cher",
-                "plus chers",
-                "un peu cher",
-                "supérieure",
                 "un peu chers",
+                "supérieure",
                 "plus chers"
             ],
             "bon marché": [
+                "pas cher",
+                "pas chers",
+                "pas chère",
+                "pas chères",
                 "abordable",
-                "pas trop cher",
+                "abordables",
                 "à bas prix"
             ]
         },
@@ -1593,7 +1665,15 @@
                 "pour un groupe d'amis",
                 "aller avec des amis",
                 "ami",
-                "meilleures potes"
+                "amie",
+                "amis",
+                "amies",
+                "copine",
+                "meilleures potes",
+                "des amis fassent une sortie",
+                "pour des amis",
+                "une sortie entre amis",
+                "rencontres"
             ],
             "rencontres": [
                 "rendez-vous",
@@ -1601,7 +1681,9 @@
                 "conjoint",
                 "petit ami",
                 "petite amie",
-                "couples"
+                "couples",
+                "rencontres",
+                "rendez-vous romantique"
             ],
             "adaptés aux familles": [
                 "un voyage en famille",
@@ -1609,7 +1691,8 @@
                 "voyage en famille",
                 "familles",
                 "famille",
-                "voyager en famille"
+                "voyager en famille",
+                "aller avec des enfants"
             ],
             "enfants": "enfants"
         },
@@ -1617,7 +1700,10 @@
             "Jardin du modeste administrateur": [
                 "Le jardin de l'humble administrateur"
             ],
-            "zone panoramique du mont Tianping": "zone panoramique du mont Tianping",
+            "zone panoramique du mont Tianping": [
+                "zone panoramique du mont Tianping",
+                "région pittoresque de la montagne Tianping"
+            ],
             "village de Mudu": "village de Mudu",
             "Jardin du maître des filets": [
                 "Le jardin du Maître des filets"
@@ -1633,10 +1719,16 @@
             ],
             "L'église du lac Dushu": "L'église du lac Dushu",
             "la montagne Xishan": [
-                "la zone panoramique de l'île de Xishan"
+                "la zone panoramique de l'île de Xishan",
+                "zone panoramique de l'île de Xishan"
             ],
-            "la zone pittoresque du lac de Jinji": "la zone pittoresque du lac de Jinji",
-            "ville de Zhouzhuang": "ville de Zhouzhuang",
+            "zone pittoresque du lac de Jinji": [
+                "zone panoramique du lac Jinji",
+                "région pittoresque du lac de Jinji",
+                "la région pittoresque du lac de Jinji",
+                "la zone pittoresque du lac de Jinji"
+            ],
+            "village de Zhouzhuang": "village de Zhouzhuang",
             "Musée de Suzhou": [
                 "musée de Suzhou"
             ],
@@ -1670,7 +1762,10 @@
             "Pavillon Canglang": "Pavillon Canglang",
             "Dongting Dongshan": "Dongting Dongshan",
             "Suzhou Aquarium": "Suzhou Aquarium",
-            "région pittoresque de la montagne Lingyan": "région pittoresque de la montagne Lingyan",
+            "région pittoresque de la montagne Lingyan": [
+                "région pittoresque de la montagne Lingyan",
+                "zone panoramique de la montagne Lingyan"
+            ],
             "centre commercial Impression City": "centre commercial Impression City",
             "Jardin Pérsistant": "Jardin Pérsistant",
             "Pingjiang Road": "Pingjiang Road",
@@ -1682,7 +1777,10 @@
                 "jardin de style Suzhou",
                 "jardin"
             ],
-            "des endroits": [
+            "endroit": [
+                "des endroits",
+                "sites paysagers",
+                "zones paysagères",
                 "les paysages pittoresques"
             ],
             "parc d'attractions": "parc d'attractions",
@@ -1793,9 +1891,12 @@
             "false": [
                 "false",
                 "Non",
-                "pas de"
+                "pas de",
+                "pas"
             ],
             "true": [
+                "peux",
+                "peut",
                 "directement en métro",
                 "pouvoir",
                 "pouvez",
@@ -1816,7 +1917,11 @@
                 "auquel nous pouvons accéder directement en métro",
                 "le métro vous y emmènera directement",
                 "avec une station de métro à proximité",
-                "il y a"
+                "il y a",
+                "accéder directement en métro",
+                "peux accéder directement en métro",
+                "pouvons accéder directement en métro",
+                "directement au restaurant en métro"
             ]
         },
         "ticket price": {
@@ -1987,8 +2092,8 @@
     "restaurant": {
         "name": {
             "Restaurant de fruits de mer Tangpalace": "Restaurant de fruits de mer Tangpalace",
-            "Cuisine de la maison privée Banyuan": "Cuisine de la maison privée Banyuan",
-            "fondue chinoise de Haidilao": "fondue chinoise de Haidilao",
+            "Banyuan Private Home Cuisine": "Cuisine de la maison privée Banyuan",
+            "fondue chinoise Haidilao": "fondue chinoise de Haidilao",
             "fondue chinoise Sichuan Xiang Tian Xia": "fondue chinoise Sichuan Xiang Tian Xia",
             "fondue chinoise Laotianqiao Frog": [
                 "fondue chinoise Laotianqiao Walu"
@@ -2063,7 +2168,10 @@
             ]
         },
         "area": {
-            "District de Gusu": "District de Gusu",
+            "District de Gusu": [
+                "nouveau district de Suzhou ou le district de Gusu",
+                "District de Gusu"
+            ],
             "Parc industriel de Suzhou": "Parc industriel de Suzhou",
             "Nouveau district de Suzhou": [
                 "Nouveau district de Suzhou",
@@ -2090,6 +2198,7 @@
                 "moyen"
             ],
             "un peu cher": [
+                "un peu chère",
                 "un peu cher",
                 "un peu cher",
                 "plus chers",
@@ -2099,7 +2208,7 @@
             ],
             "bon marché": [
                 "abordable",
-                "pas trop cher",
+                "moins chère",
                 "à bas prix"
             ]
         },
@@ -2122,9 +2231,13 @@
                 "La cuisine du Jiangsu-Zhejiang"
             ],
             "Hotpot": [
-                "fondue chinoise"
+                "fondue chinoise",
+                "hotpot"
             ],
-            "sud-coréennes": [
+            "sud-coréenne": [
+                "Corée",
+                "sud-coréennes",
+                "sud-coréenne",
                 "cuisine sud-coréenne",
                 "Sud-Coréen",
                 "restaurant coréen",
@@ -2133,13 +2246,18 @@
                 "Cuisine coréenne"
             ],
             "japonaise": [
+                "Japon",
+                "cuisine japonaise",
                 "Cuisine japonaise",
                 "nourriture japonaise",
+                "restaurant japonais",
                 "Restaurant japonais",
+                "restaurants japonais",
+                "Restaurants japonais",
                 "Cuisine riben"
             ],
             "du Nord-Ouest": [
-                "Cuisine du Nord-Ouest",
+                "cuisine du Nord-Ouest",
                 "Cuisine du Nord-Ouest"
             ],
             "du pain et des desserts": [
@@ -2159,6 +2277,7 @@
                 "cuisine occidentale"
             ],
             "Cantonais": [
+                "cuisine cantonaise",
                 "Cuisine cantonaise",
                 "nourriture cantonaise"
             ],
@@ -2218,7 +2337,7 @@
             "1F, bâtiment 13, Mudu Studio": "1F, bâtiment 13, Mudu Studio",
             "à l'intersection de la rue Jingde et la rue Xueshi, à côté du musée de la médecine traditionnelle chinoise de Suzhou": "à l'intersection de la rue Jingde et la rue Xueshi, à côté du musée de la médecine traditionnelle chinoise de Suzhou",
             "près du parking de la zone panoramique, route de Luweidang": "près du parking de la zone panoramique, route de Luweidang",
-            "10 mètres au nord du site touristique de la rue Zhongshi n° 110, dans la ville de Zhouzhuang": "10 mètres au nord du site touristique de la rue Zhongshi n° 110, dans la ville de Zhouzhuang",
+            "10 mètres au nord du site touristique de la rue Zhongshi n° 110, dans le village de Zhouzhuang": "10 mètres au nord du site touristique de la rue Zhongshi n° 110, dans le village de Zhouzhuang",
             "boutique Zhongqingnian dans la route Henggang": "boutique Zhongqingnian dans la route Henggang",
             "numéro 1 de la rue Shizi, porte ouest de l'université de Soochow": "numéro 1 de la rue Shizi, porte ouest de l'université de Soochow",
             "5F, Bâtiment Est du Metro Mall, n° 245, rue Guanqian": "5F, Bâtiment Est du Metro Mall, n° 245, rue Guanqian",
@@ -2295,10 +2414,13 @@
         "metro station": {
             "false": [
                 "false",
-                "Non"
+                "Non",
+                "pas"
             ],
             "true": [
                 "directement en métro",
+                "peut",
+                "peux",
                 "pouvoir",
                 "pouvez",
                 "Oui",
@@ -2319,7 +2441,12 @@
                 "auquel nous pouvons accéder directement en métro",
                 "le métro vous y emmènera directement",
                 "avec une station de métro à proximité",
-                "y aller en métro"
+                "y aller en métro",
+                "rendre directement en métro",
+                "accéder directement en métro",
+                "peux accéder directement en métro",
+                "pouvons accéder directement en métro",
+                "directement au restaurant en métro"
             ]
         },
         "business hours": {
@@ -2531,7 +2658,10 @@
     },
     "hotel": {
         "area": {
-            "District de Gusu": "District de Gusu",
+            "District de Gusu": [
+                "nouveau district de Suzhou ou le district de Gusu",
+                "District de Gusu"
+            ],
             "Parc industriel de Suzhou": "Parc industriel de Suzhou",
             "Suzhou": "Suzhou",
             "Nouveau district de Suzhou": [
@@ -2549,8 +2679,10 @@
         },
         "pricerange": {
             "modérée": [
+                "à prix modéré",
                 "à prix modérés",
                 "pas trop cher",
+                "pas trop chers",
                 "milieu du site"
             ],
             "un peu cher": [
@@ -2563,7 +2695,9 @@
             ],
             "bon marché": [
                 "abordable",
-                "pas trop cher",
+                "abordables",
+                "pas cher",
+                "pas chers",
                 "à bas prix"
             ]
         },
@@ -2588,20 +2722,28 @@
             ]
         },
         "room type": {
-            "chambres standard": [
+            "chambre standard": [
                 "chambres standard",
                 "une chambre standard"
             ],
             "grande chambre": [
-                "grandes chambres"
+                "grandes chambres",
+                "très grandes chambres",
+                "très grande chambre",
+                "une grande chambre"
             ]
         },
         "name": {
-            "le petit hôtel de luxe Womu": [
-                "petit hôtel de luxe Warmly"
+            "petit hôtel de luxe Womu": [
+                "le petit hôtel de luxe Womu"
+            ],
+            "petit hôtel de luxe Warmly": [
+                "le petit hôtel de luxe Warmly",
+                "l'hôtel Warmly"
             ],
             "L'hôtel Grand Rezen dans la nouvelle ville de Suzhou": [
-                "Hôtel New City Grand Rezen"
+                "Hôtel New City Grand Rezen",
+                "L'hôtel New City Grand Rezen"
             ],
             "l'hôtel Atour dans la rue Changjiang, à Changshu": [
                 "Atour Hotel de la route Changjiang"
@@ -2774,8 +2916,9 @@
                 "5",
                 "5 étoiles"
             ],
-            "une": [
+            "1": [
                 "une",
+                "1",
                 "1 étoile"
             ],
             "2": [
@@ -2851,7 +2994,8 @@
         },
         "hotel type": {
             "hôtels": [
-                "hôtel de villégiature"
+                "hôtel de villégiature",
+                "hôtel"
             ],
             "d'affaires": [
                 "d'affaires",
@@ -2861,7 +3005,10 @@
     },
     "hospital": {
         "area": {
-            "District de Gusu": "District de Gusu",
+            "District de Gusu": [
+                "nouveau district de Suzhou ou le district de Gusu",
+                "District de Gusu"
+            ],
             "Parc industriel de Suzhou": "Parc industriel de Suzhou",
             "Nouveau district de Suzhou": [
                 "Nouveau district de Suzhou",
@@ -3188,7 +3335,7 @@
             "Shanghaï": "Shanghaï",
             "Guangzhou": "Guangzhou",
             "Chengdu": "Chengdu",
-            "Nanjing": "Nanjing",
+            "Nankin": ["Nankin", "Nankin"],
             "Wuhan": "Wuhan"
         },
         "uv intensity": {
@@ -3417,7 +3564,10 @@
     },
     "class": {
         "area": {
-            "District de Gusu": "District de Gusu",
+            "District de Gusu": [
+                "nouveau district de Suzhou ou le district de Gusu",
+                "District de Gusu"
+            ],
             "Parc industriel de Suzhou": "Parc industriel de Suzhou",
             "Nouveau district de Suzhou": "Nouveau district de Suzhou",
             "District de Wuzhong": [
@@ -3427,7 +3577,7 @@
         },
         "day": {
             "Vendredi": "Vendredi",
-            "Samedi": "Samedi",
+            "Samedi": ["Samedi", "samedi ou le dimanche"],
             "dimanche": "dimanche",
             "Mercredi": "Mercredi"
         },
@@ -3442,11 +3592,14 @@
             "Chinois": "Chinois"
         },
         "time": {
-            "l'après-midi": [
-                "après-midi"
+            "après-midi": [
+                "après-midi",
+                "l'après-midi",
+                "après-midi ou le soir"
             ],
             "matin": [
-                "matin"
+                "matin",
+                "matin ou après-midi"
             ],
             "soir": "soir"
         },
@@ -3903,6 +4056,7 @@
             "<150,000": [
                 "<150,000",
                 "en dessous de 150 000 yuans",
+                "à moins de 150 000 yuans",
                 "moins de 150 000 yuans"
             ],
             ">300,000": [
@@ -4054,7 +4208,7 @@
             "6": [
                 "six"
             ],
-            "une": [
+            "1": [
                 "un"
             ],
             "5": [
@@ -4173,7 +4327,7 @@
             "Shanghaï": "Shanghaï",
             "Guangzhou": "Guangzhou",
             "Chengdu": "Chengdu",
-            "Nanjing": "Nanjing",
+            "Nankin": ["Nankin", "Nankin"],
             "Terminal 2 de l'aéroport international de Baiyun": [
                 "T2 de l'aéroport international de Baiyun"
             ],
@@ -4200,7 +4354,7 @@
             "Shanghaï": "Shanghaï",
             "Guangzhou": "Guangzhou",
             "Chengdu": "Chengdu",
-            "Nanjing": "Nanjing",
+            "Nankin": ["Nankin", "Nankin"],
             "Terminal 1 de l'aéroport international de Shuangliu": [
                 "T1 de l'aéroport international de Shuangliu"
             ],
@@ -4350,7 +4504,7 @@
                 "vol MU2831 de China Eastern, de l'aéroport international de Lukou Terminal 2 à l'aéroport international de Pékin Terminal 2"
             ],
             "MF8502": "MF8502",
-            "FM9309 de la compagnie aérienne Shanghai, du Terminal 2 de l'aéroport international de Hongqiao au Terminal 1 de l'aéroport international de Baiyun": "FM9309 de la compagnie aérienne Shanghai, du Terminal 2 de l'aéroport international de Hongqiao au Terminal 1 de l'aéroport international de Baiyun",
+            "FM9309 de la compagnie aérienne Shanghaï, du Terminal 2 de l'aéroport international de Hongqiao au Terminal 1 de l'aéroport international de Baiyun": "FM9309 de la compagnie aérienne Shanghaï, du Terminal 2 de l'aéroport international de Hongqiao au Terminal 1 de l'aéroport international de Baiyun",
             "CZ3560 de China Southern, du Terminal 2 de l'aéroport international de Lukou au Terminal 3 de l'aéroport international de Bao'an": [
                 "CZ3560 de la compagnie aérienne China Southern, qui part du T2 de l'aéroport international de Lukou et va au T3 de l'aéroport international de Bao'an"
             ],
@@ -4724,17 +4878,16 @@
             "Shanghaï": "Shanghaï",
             "Guangzhou": "Guangzhou",
             "Chengdu": "Chengdu",
-            "Nanjing": "Nanjing",
+            "Nankin": ["Nankin", "Nankin"],
             "Pékin-Sud": "Pékin-Sud",
             "Chimelong à Canton": "Chimelong à Canton",
-            "Shanghai Hongqiao": "Shanghai Hongqiao"
+            "Shanghaï Hongqiao": "Shanghaï Hongqiao"
         },
         "classification": {
             "grande vitesse": [
+                "TGV",
+                "TGVs",
                 "train à grande vitesse",
-                "trains à grande vitesse"
-            ],
-            "train à grande vitesse": [
                 "trains à grande vitesse"
             ]
         },
@@ -4746,7 +4899,7 @@
             "Shanghaï": "Shanghaï",
             "Guangzhou": "Guangzhou",
             "Chengdu": "Chengdu",
-            "Nanjing": "Nanjing",
+            "Nankin": ["Nankin", "Nankin"],
             "Futian": "Futian",
             "Hangzhou-Est": "Hangzhou-Est"
         },
@@ -4779,12 +4932,14 @@
         },
         "seat type": {
             "première": [
+                "première classe",
                 "en première classe",
                 "un siège en première classe",
                 "un billet en première classe",
                 "siège en première classe"
             ],
             "seconde classe": [
+                "deuxième classe",
                 "billet en deuxième classe",
                 "siège en seconde classe",
                 "billet en seconde classe"
@@ -4796,324 +4951,324 @@
             "couchette": "couchette"
         },
         "train number": {
-            "G1653, de Shanghai Hongqiao à la gare de Xiamen-Nord": "G1653, de Shanghai Hongqiao à la gare de Xiamen-Nord",
+            "G1653, de Shanghaï Hongqiao à la gare de Xiamen-Nord": "G1653, de Shanghaï Hongqiao à la gare de Xiamen-Nord",
             "G79, de la gare de Pékin-Ouest à la gare de Shenzhen-Nord": [
                 "G79 de la gare de Pékin-Ouest à la gare de Shenzhen-Nord"
             ],
             "D3141": "D3141",
             "G1373": "G1373",
             "G7323": "G7323",
-            "G7323, de Shanghai Hongqiao à Hangzhoudong.": [
-                "G7323 de Shanghai Hongqiao à la gare de Hangzhou-Est"
+            "G7323, de Shanghaï Hongqiao à Hangzhoudong.": [
+                "G7323 de Shanghaï Hongqiao à la gare de Hangzhou-Est"
             ],
-            "D2294, de Shenzhenbei à Hangzhoudong": [
+            "D2294, de Shenzhen-Nord à Hangzhoudong": [
                 "D2294 de la gare de Shenzhen-Nord à celle de Hangzhou-Est"
             ],
             "G1604, de la gare de Shenzhen-Nord à celle de Hangzhou-Est": [
                 "G1604 de Shenzhen-Nord à Hangzhou-Est"
             ],
-            "G1652, de Xiamen à Shanghai Hongqiao": "G1652, de Xiamen à Shanghai Hongqiao",
+            "G1652, de Xiamen à Shanghaï Hongqiao": "G1652, de Xiamen à Shanghaï Hongqiao",
             "G135, de la gare de Pékin-Sud à Nankin-Sud": [
                 "G135 de la gare de Pékin-Sud à la gare de Nankin-Sud"
             ],
-            "G59, de Beijingnan à Hangzhoudong": [
+            "G59, de Pékin-Sud à Hangzhoudong": [
                 "G59 de la gare de Pékin-Sud à la gare de Hangzhou-Est"
             ],
             "G59": "G59",
             "D2262, de la gare de Hangzhou-Est à celle de Chengdu-Est": "D2262, de la gare de Hangzhou-Est à celle de Chengdu-Est",
             "G1744": "G1744",
-            "G1305, de Shanghai Hongqiao à Guangzhounan": [
-                "G1305 de Shanghai Hongqiao à la gare de Canton-Sud"
+            "G1305, de Shanghaï Hongqiao à Canton-Sud": [
+                "G1305 de Shanghaï Hongqiao à la gare de Canton-Sud"
             ],
-            "D941, de Shanghai Hongqiao à Guangzhounan": [
-                "D941 va de Shanghai Hongqiao à la gare de Canton-Sud"
+            "D941, de Shanghaï Hongqiao à Canton-Sud": [
+                "D941 va de Shanghaï Hongqiao à la gare de Canton-Sud"
             ],
             "G349, de Beijingxi à Chengdudong": [
-                "G349 de la gare de Pékin-Nord à la gare de Chengdu-Est"
+                "G349 de la gare de Pékin-Ouest à la gare de Chengdu-Est"
             ],
-            "D1970, de Shanghai Hongqiao à Nanjingnan": [
-                "D1970 de Shanghai Hongqiao à la gare de Nankin-Sud"
+            "D1970, de Shanghaï Hongqiao à Nankin-Sud": [
+                "D1970 de Shanghaï Hongqiao à la gare de Nankin-Sud"
             ],
             "G204": "G204",
-            "G204, de Nanjingnan à Beijingnan": [
-                "G204 de Nanjingnan à Beijingnan"
+            "G204, de Nankin-Sud à Pékin-Sud": [
+                "G204 de Nankin-Sud à Pékin-Sud"
             ],
-            "G32, de Hangzhoudong à Beijingnan": [
+            "G32, de Hangzhoudong à Pékin-Sud": [
                 "G32 de la gare de Hangzhou-Est à la gare de Pékin-Sud"
             ],
-            "G20, de Hangzhoudong à Beijingnan": [
+            "G20, de Hangzhoudong à Pékin-Sud": [
                 "G20 de la gare de Hangzhou-Est à la gare de Pékin-Sud"
             ],
-            "G1304, de Guangzhounan à Shanghai Hongqiao": [
-                "G1304 de la gare de Canton-Sud à Shanghai Hongqiao"
+            "G1304, de Canton-Sud à Shanghaï Hongqiao": [
+                "G1304 de la gare de Canton-Sud à Shanghaï Hongqiao"
             ],
-            "D901, de Beijingxi à Guangzhounan": [
-                "D901 de Pékin-Sud à Guangzhou-Sud"
+            "D901, de Beijingxi à Canton-Sud": [
+                "D901 de Pékin-Ouest à Guangzhou-Sud"
             ],
-            "G69, de Beijingxi à Guangzhounan": [
+            "G69, de Beijingxi à Canton-Sud": [
                 "G69 de Pékin-Ouest à Guangzhou-Sud"
             ],
-            "G14, de Shanghai Hongqiao à Beijingnan": [
-                "G14 de Shanghai Hongqiao à Pékin-Sud"
+            "G14, de Shanghaï Hongqiao à Pékin-Sud": [
+                "G14 de Shanghaï Hongqiao à Pékin-Sud"
             ],
             "D2264, de Chengdudong à Hangzhoudong.": [
                 "D2264 de la gare de Chengdu-Est à celle de Hangzhou-Est"
             ],
-            "G86, de Guangzhounan à Shanghai Hongqiao": [
-                "G86 de la gare de Guangzhoun-Sud à Shanghai Hongqiao"
+            "G86, de Canton-Sud à Shanghaï Hongqiao": [
+                "G86 de la gare de Guangzhoun-Sud à Shanghaï Hongqiao"
             ],
-            "G7320, de Hangzhoudong à Shanghai Hongqiao": [
-                "G7320 de Hangzhou-Est à Shanghai Hongqiao"
+            "G7320, de Hangzhoudong à Shanghaï Hongqiao": [
+                "G7320 de Hangzhou-Est à Shanghaï Hongqiao"
             ],
-            "D717, de Pékin à Nanjing": [
+            "D717, de Pékin à Nankin": [
                 "D717 de Pékin à Nankin"
             ],
             "D7554, de Shenzhen à Guangzhou": [
                 "le D7554 de Shenzhen à Canton"
             ],
-            "G822, de Shenzhenbei à Guangzhounan.": [
+            "G822, de Shenzhen-Nord à Canton-Sud.": [
                 "G822 de la gare de Shenzhen-Nord à la gare de Canton-Sud"
             ],
             "D711, de Pékin à Hangzhou": [
                 "D711 de Pékin à Hangzhou"
             ],
-            "G1604, de Shenzhenbei à Nanjingnan.": [
+            "G1604, de Shenzhen-Nord à Nankin-Sud.": [
                 "G1604 de la gare de Shenzhen-Nord à la gare de Nankin-Sud"
             ],
             "G99": "G99",
-            "G99, de Shanghai Hongqiao à Shenzhenbei": [
-                "G99 de Shanghai Hongqiao à la gare de Shenzhen-Nord"
+            "G99, de Shanghaï Hongqiao à Shenzhen-Nord": [
+                "G99 de Shanghaï Hongqiao à la gare de Shenzhen-Nord"
             ],
-            "D941, de Shanghai Hongqiao à Shenzhenbei": [
-                "D941 de Shanghai Hongqiao à la gare de Shenzhen-Nord"
+            "D941, de Shanghaï Hongqiao à Shenzhen-Nord": [
+                "D941 de Shanghaï Hongqiao à la gare de Shenzhen-Nord"
             ],
-            "D3235, de Nanjingnan à Hangzhoudong": [
+            "D3235, de Nankin-Sud à Hangzhoudong": [
                 "D3235 de la gare de Nankin-Sid à la gare de Hangzhou-Est"
             ],
-            "D709, de Beijingnan à Shanghai": [
-                "D709 de la gare de Pékin-Sud à Shanghai"
+            "D709, de Pékin-Sud à Shanghaï": [
+                "D709 de la gare de Pékin-Sud à Shanghaï"
             ],
-            "G137, de Beijingnan à Shanghai Hongqiao": [
-                "G137 de Pékin-Sud à Shanghai Hongqiao"
+            "G137, de Pékin-Sud à Shanghaï Hongqiao": [
+                "G137 de Pékin-Sud à Shanghaï Hongqiao"
             ],
-            "G19, de Beijingnan à Hangzhoudong": [
+            "G19, de Pékin-Sud à Hangzhoudong": [
                 "G19 de la gare de Pékin-Sud à la gare de Hangzhou-Est"
             ],
-            "D2282, de Xiamenbei à Nanjing": [
-                "D2282 de Xiamen-Nord à Nanjing"
+            "D2282, de Xiamen-Nord à Nankin": [
+                "D2282 de Xiamen-Nord à Nankin"
             ],
-            "G38, de Nanjingnan à Beijingnan": [
+            "G38, de Nankin-Sud à Pékin-Sud": [
                 "G38 de la gare de Nankin-Sud à celle de Pékin-Sud"
             ],
-            "D716, de Nanjing à Beijingnan": [
+            "D716, de Nankin à Pékin-Sud": [
                 "D716 de Nankin à la gare de Pékin-Sud"
             ],
-            "G1373, de Shanghai Hongqiao à Hangzhoudong": "G1373, de Shanghai Hongqiao à Hangzhoudong",
-            "G1744, de Guangzhounan à Nanjingnan": [
+            "G1373, de Shanghaï Hongqiao à Hangzhoudong": "G1373, de Shanghaï Hongqiao à Hangzhou-Est",
+            "G1744, de Canton-Sud à Nankin-Sud": [
                 "G1744 de la gare de Canton-Sud à la gare de Nankin-Sud"
             ],
             "G72, de Futian à Beijingxi": [
                 "G72 de Futian à la gare de Pékin-Ouest"
             ],
-            "D936, de Shenzhenbei à Hangzhoudong": [
+            "D936, de Shenzhen-Nord à Hangzhoudong": [
                 "D936 de la gare de Shenzhen-Nord à celle de Hangzhou-Est"
             ],
-            "G1607, de Guangzhounan à Xiamenbei": [
+            "G1607, de Canton-Sud à Xiamen-Nord": [
                 "G1607 de la gare de Canton-Sud à celle de Xiamen-Nord"
             ],
-            "G1974, de Shanghai Hongqiao à Chengdudong": [
-                "G1974 de Shanghai Hongqiao à la gare de Chengdu-Est"
+            "G1974, de Shanghaï Hongqiao à Chengdudong": [
+                "G1974 de Shanghaï Hongqiao à la gare de Chengdu-Est"
             ],
-            "G2, de Shanghai Hongqiao à Beijingnan": [
-                "G2 de la gare de Shanghai Hongqiao à la gare de Pékin-Sud"
+            "G2, de Shanghaï Hongqiao à Pékin-Sud": [
+                "G2 de la gare de Shanghaï Hongqiao à la gare de Pékin-Sud"
             ],
             "D3292": "D3292",
-            "D951, de Nanjingnan à Shanghai": [
-                "D951 de la gare de Nankin-Sud à Shanghai"
+            "D951, de Nankin-Sud à Shanghaï": [
+                "D951 de la gare de Nankin-Sud à Shanghaï"
             ],
-            "D3135, de Nanjing à Shanghai Hongqiao": [
-                "D3135 de Nankin à Shanghai Hongqiao"
+            "D3135, de Nankin à Shanghaï Hongqiao": [
+                "D3135 de Nankin à Shanghaï Hongqiao"
             ],
-            "D3111, de Hangzhoudong à Shenzhenbei": [
+            "D3111, de Hangzhoudong à Shenzhen-Nord": [
                 "D3111 de la gare de Hangzhou-Est à la gare de Shenzhen-Nord"
             ],
             "G308, de Chengdudong à Beijingxi": [
-                "G308 de la gare de Chengdu-Est à la gare de Pékin-Est"
+                "G308 de la gare de Chengdu-Est à la gare de Pékin-Ouest"
             ],
-            "D3295, de Nanjingnan à Hangzhoudong": [
+            "D3295, de Nankin-Sud à Hangzhoudong": [
                 "D3295 de la gare de Nankin-Sud à la gare de Hangzhou-Est"
             ],
-            "G1659, de Shanghai Hongqiao à Xiamen": [
-                "G1659 de Shanghai Hongqiao à Xiamen"
+            "G1659, de Shanghaï Hongqiao à Xiamen": [
+                "G1659 de Shanghaï Hongqiao à Xiamen"
             ],
             "G308": "G308",
             "G90": "G90",
             "G1652, de Xiamen à Hangzhoudong": [
-                "G1652 de Xiamen à Hangzhoudong"
+                "G1652 de Xiamen à Hangzhou-Est"
             ],
-            "G1656 de Xiamenbei à Hangzhoudong": [
-                "G1656 de Xiamenbei à Hangzhoudon"
+            "G1656 de Xiamen-Nord à Hangzhoudong": [
+                "G1656 de Xiamen-Nord à Hangzhoudon"
             ],
-            "D3126, de Shenzhenbei à Shanghai Hongqiao": [
-                "D3126 de la gare de Shenzhen-Nord à Shanghai Hongqiao"
+            "D3126, de Shenzhen-Nord à Shanghaï Hongqiao": [
+                "D3126 de la gare de Shenzhen-Nord à Shanghaï Hongqiao"
             ],
-            "D952, de Shanghai à Nanjingnan": [
-                "D952 de Shanghai à la gare de Nankin-Sud"
+            "D952, de Shanghaï à Nankin-Sud": [
+                "D952 de Shanghaï à la gare de Nankin-Sud"
             ],
-            "G70, de Guangzhounan à Beijingxi": [
+            "G70, de Canton-Sud à Beijingxi": [
                 "G70 de la gare de Canton-Sud à la gare de Pékin-Ouest"
             ],
             "G2278": "G2278",
-            "D3292, de Xiamenbei à Shanghai Hongqiao": "D3292, de Xiamenbei à Shanghai Hongqiao",
-            "G1304, de Guangzhounan à Hangzhoudong": "G1304, de Guangzhounan à Hangzhoudong",
-            "G7016, de Shanghai à Nanjing": [
-                "G7016 de Shanghai à Nanjing"
+            "D3292, de Xiamen-Nord à Shanghaï Hongqiao": "D3292, de Xiamen-Nord à Shanghaï Hongqiao",
+            "G1304, de Canton-Sud à Hangzhoudong": "G1304, de Canton-Sud à Hangzhou-Est",
+            "G7016, de Shanghaï à Nankin": [
+                "G7016 de Shanghaï à Nankin"
             ],
-            "G1603, de Nanjingnan à Shenzhenbei.": [
-                "G1603 de Nanjingnan à Shenzhenbei"
+            "G1603, de Nankin-Sud à Shenzhen-Nord.": [
+                "G1603 de Nankin-Sud à Shenzhen-Nord"
             ],
-            "D3324, de Hangzhoudong à Shanghai Hongqiao": [
-                "D3324 de Hangzhoudong à Shanghai Hongqiao"
+            "D3324, de Hangzhoudong à Shanghaï Hongqiao": [
+                "D3324 de Hangzhou-Est à Shanghaï Hongqiao"
             ],
-            "D5482, de Hangzhoudong à Shanghainan": [
-                "D5482 de Hangzhoudong à Shanghainan"
+            "D5482, de Hangzhoudong à Shanghaïnan": [
+                "D5482 de Hangzhou-Est à Shanghaï-Sud"
             ],
-            "G99, de Hangzhoudong à Guangzhounan": [
+            "G99, de Hangzhoudong à Canton-Sud": [
                 "G99 de Hangzhou-Est à Guangzhou-Sud"
             ],
-            "D941, de Hangzhoudong à Guangzhounan": [
+            "D941, de Hangzhoudong à Canton-Sud": [
                 "D941 de Hangzhou-Est à Guangzhou-Sud"
             ],
-            "D710, de Shanghai à Beijingnan": [
-                "D710 de Shanghai à Pékin-Sud"
+            "D710, de Shanghaï à Pékin-Sud": [
+                "D710 de Shanghaï à Pékin-Sud"
             ],
             "G7320": "G7320",
             "D5482": "D5482",
             "D941": "D941",
             "": [
-                "D2282 de Xiamen à Shanghai Hongqiao"
+                "D2282 de Xiamen à Shanghaï Hongqiao"
             ],
-            "D2246, de Hangzhou-Est à Nanjing-Sud": "D2246, de Hangzhou-Est à Nanjing-Sud",
-            "G7019, de Nanjing à Shanghai": [
-                "G7019 de Nanjing à Shanghai"
+            "D2246, de Hangzhou-Est à Nankin-Sud": "D2246, de Hangzhou-Est à Nankin-Sud",
+            "G7019, de Nankin à Shanghaï": [
+                "G7019 de Nankin à Shanghaï"
             ],
             "G1662, de la gare de Xiamen-Nord à la gare de Nankin-Sud": "G1662, de la gare de Xiamen-Nord à la gare de Nankin-Sud",
             "G90, de Chengdudong à Beijingxi": [
-                "G90 de Chengdudong à la gare de Pékin-Ouest"
+                "G90 de Chengdu-Est à la gare de Pékin-Ouest"
             ],
-            "D1765, de Chengdudong à Guangzhounan.": [
+            "D1765, de Chengdudong à Canton-Sud.": [
                 "D1765 de Chengdu-Est à Canton-Est"
             ],
             "D1859, de Chengdudong à Guangzhou": [
-                "D1859 de Chengdudong à Guangzhou"
+                "D1859 de Chengdu-Est à Guangzhou"
             ],
-            "D954, de Chengdudong à Shanghai": [
+            "D954, de Chengdudong à Shanghaï": [
                 "D954 de la gare de Chengdu-Est à Shanghaï"
             ],
-            "G1676, de Xiamen à Nanjingnan": [
+            "G1676, de Xiamen à Nankin-Sud": [
                 "G1676 de Xiamen à Nankin-Sud"
             ],
             "G2189, de Hangzhoudong à Chengdudong.": [
                 "G2189 de la gare de Hangzhou-Est à la gare de Chengdu-Est"
             ],
             "G1113": "G1113",
-            "G1667, de Nanjingnan à Xiamenbei.": [
+            "G1667, de Nankin-Sud à Xiamen-Nord.": [
                 "G1667 de Nankin-sud à Xiamen-Nord"
             ],
-            "G6154, de Shenzhenbei à Guangzhounan": [
+            "G6154, de Shenzhen-Nord à Canton-Sud": [
                 "G6154 de Shenzhen-Nord à Canton-Sud"
             ],
-            "D353, de Nanjingnan à Chengdudong": [
+            "D353, de Nankin-Sud à Chengdudong": [
                 "D353 de Nankin-Sud à Chengdu-Est"
             ],
             "D3211": "D3211",
             "G19": "G19",
             "D3136": "D3136",
-            "D3296, de Hangzhoudong à Nanjingnan": [
+            "D3296, de Hangzhoudong à Nankin-Sud": [
                 "D3296 de Hangzhou-Est à Nankin-Sud"
             ],
-            "G1675, de Hangzhoudong à Xiamenbei.": [
+            "G1675, de Hangzhoudong à Xiamen-Nord.": [
                 "G1675 de Hangzhou-Est à Xiamen-Nord"
             ],
-            "G2385, de Hangzhoudong à Xiamenbei": [
+            "G2385, de Hangzhoudong à Xiamen-Nord": [
                 "le vol G2385 de Hangzhou-Est à Xiamen-Nord"
             ],
-            "D3136, de Shanghai Hongqiao à Nanjing": [
-                "le D3136 de Shanghai Hongqiao à Nankin"
+            "D3136, de Shanghaï Hongqiao à Nankin": [
+                "le D3136 de Shanghaï Hongqiao à Nankin"
             ],
             "G1604": "G1604",
             "D936": "D936",
-            "G105, de Beijingnan à Shanghai Hongqiao": [
-                "G105 de Pékin-Sud à Shanghai Hongqiao"
+            "G105, de Pékin-Sud à Shanghaï Hongqiao": [
+                "G105 de Pékin-Sud à Shanghaï Hongqiao"
             ],
             "Le G322, de la gare de Xiamen-Nord à la gare de Pékin-Sud": "Le G322, de la gare de Xiamen-Nord à la gare de Pékin-Sud",
-            "D3141, qui relie Shanghai Hongqiao à Xiamenbei": "D3141, qui relie Shanghai Hongqiao à Xiamenbei",
-            "D3131, de Shanghai Hongqiao à Xiamenbei": "D3131, de Shanghai Hongqiao à Xiamenbei",
+            "D3141, qui relie Shanghaï Hongqiao à Xiamen-Nord": "D3141, qui relie Shanghaï Hongqiao à Xiamen-Nord",
+            "D3131, de Shanghaï Hongqiao à Xiamen-Nord": "D3131, de Shanghaï Hongqiao à Xiamen-Nord",
             "G86, de la gare de Canton-Sud à la gare de Hangzhou-Est": "G86, de la gare de Canton-Sud à la gare de Hangzhou-Est",
-            "G1128, de Guangzhounan à Nanjingnan": [
+            "G1128, de Canton-Sud à Nankin-Sud": [
                 "G1128 de la gare de Canton-Sud à la gare de Nankin-Sud"
             ],
             "D1766, de la gare de Canton-Sud à la gar de Chengdu-Est": "D1766, de la gare de Canton-Sud à la gar de Chengdu-Est",
-            "D1752, de Guangzhounan à Chengdudong": [
+            "D1752, de Canton-Sud à Chengdudong": [
                 "D1752 de la gare de Canton-Sud à la gare du Chengdu-Est"
             ],
-            "G355, de Beijingnan à Xiamenbei": [
+            "G355, de Pékin-Sud à Xiamen-Nord": [
                 "G355 de la gare de Pékin-Sud à la gare de Xiamen-Nord"
             ],
             "G1603, de la gare de Hangzhou-Est à la gare de Shenzhen-Nord": "G1603, de la gare de Hangzhou-Est à la gare de Shenzhen-Nord",
             "D3211, de la gare de Hangzhou-Est à la gare de Xiamen-Nord": "D3211, de la gare de Hangzhou-Est à la gare de Xiamen-Nord",
-            "D2294, de la gare de Shenzhen-Nord à la gare de Nanjing-Sud": "D2294, de la gare de Shenzhen-Nord à la gare de Nanjing-Sud",
-            "G2807, de Nanjingnan à Hangzhoudong": "G2807, de Nanjingnan à Hangzhoudong",
-            "G6209, de Guangzhounan à Shenzhenbei.": "G6209, de Guangzhounan à Shenzhenbei.",
+            "D2294, de la gare de Shenzhen-Nord à la gare de Nankin-Sud": "D2294, de la gare de Shenzhen-Nord à la gare de Nankin-Sud",
+            "G2807, de Nankin-Sud à Hangzhoudong": "G2807, de Nankin-Sud à Hangzhou-Est",
+            "G6209, de Canton-Sud à Shenzhen-Nord.": "G6209, de Canton-Sud à Shenzhen-Nord.",
             "D712, de Hangzhou à Pékin": "D712, de Hangzhou à Pékin",
-            "D746, de Xiamenbei à Beijingxi": "D746, de Xiamenbei à Beijingxi",
-            "G1656, de Xiamenbei à Shanghai Hongqiao": "G1656, de Xiamenbei à Shanghai Hongqiao",
-            "D3125, de Nanjing à Shenzhenbei": "D3125, de Nanjing à Shenzhenbei",
-            "D3296, de Xiamenbei à Nanjingnan": "D3296, de Xiamenbei à Nanjingnan",
-            "D943, de Guangzhounan à Shanghai Hongqiao": "D943, de Guangzhounan à Shanghai Hongqiao",
-            "D903, de Beijingxi à Shenzhenbei": "D903, de Beijingxi à Shenzhenbei",
-            "D745, de Beijingxi à Xiamenbei": "D745, de Beijingxi à Xiamenbei",
-            "D2381, de Guangzhoudong à Xiamen": "D2381, de Guangzhoudong à Xiamen",
-            "D638, de Chengdudong à Nanjingnan": "D638, de Chengdudong à Nanjingnan",
-            "G20, de Hangzhoudong à Nanjingnan": "G20, de Hangzhoudong à Nanjingnan",
+            "D746, de Xiamen-Nord à Beijingxi": "D746, de Xiamen-Nord à Pékin-Ouest",
+            "G1656, de Xiamen-Nord à Shanghaï Hongqiao": "G1656, de Xiamen-Nord à Shanghaï Hongqiao",
+            "D3125, de Nankin à Shenzhen-Nord": "D3125, de Nankin à Shenzhen-Nord",
+            "D3296, de Xiamen-Nord à Nankin-Sud": "D3296, de Xiamen-Nord à Nankin-Sud",
+            "D943, de Canton-Sud à Shanghaï Hongqiao": "D943, de Canton-Sud à Shanghaï Hongqiao",
+            "D903, de Beijingxi à Shenzhen-Nord": "D903, de Pékin-Ouest à Shenzhen-Nord",
+            "D745, de Beijingxi à Xiamen-Nord": "D745, de Pékin-Ouest à Xiamen-Nord",
+            "D2381, de Guangzhoudong à Xiamen": "D2381, de Guangzhou-Est à Xiamen",
+            "D638, de Chengdudong à Nankin-Sud": "D638, de Chengdu-Est à Nankin-Sud",
+            "G20, de Hangzhoudong à Nankin-Sud": "G20, de Hangzhou-Est à Nankin-Sud",
             "D7553, de Guangzhou à Shenzhen": "D7553, de Guangzhou à Shenzhen",
-            "G7572, de Hangzhoudong à Shanghai Hongqiao": "G7572, de Hangzhoudong à Shanghai Hongqiao",
-            "G1886, de Nanjingnan à Chengdudong": "G1886, de Nanjingnan à Chengdudong",
-            "D3295, de Nanjingnan à Xiamenbei": "D3295, de Nanjingnan à Xiamenbei",
-            "D2282, de Xiamenbei à Hangzhoudong": "D2282, de Xiamenbei à Hangzhoudong",
-            "G1113, de Nanjingnan à Guangzhounan.": "G1113, de Nanjingnan à Guangzhounan.",
-            "G2278, de Xiamenbei à Chengdudong.": "G2278, de Xiamenbei à Chengdudong.",
-            "G85, de Shanghai Hongqiao à Guangzhounan": "G85, de Shanghai Hongqiao à Guangzhounan",
-            "D922, de Guangzhounan à Beijingxi": "D922, de Guangzhounan à Beijingxi",
-            "G85, de Hangzhoudong à Guangzhounan": "G85, de Hangzhoudong à Guangzhounan",
-            "D2339, de Xiamen à Shenzhenbei": "D2339, de Xiamen à Shenzhenbei",
-            "D3141, de Hangzhoudong à Xiamenbei": "D3141, de Hangzhoudong à Xiamenbei",
-            "D3218, de Xiamen à Hangzhoudong": "D3218, de Xiamen à Hangzhoudong",
-            "D2287, de Shanghai Hongqiao à Shenzhenbei": "D2287, de Shanghai Hongqiao à Shenzhenbei",
-            "G1602, de Shenzhenbei à Xiamenbei.": "G1602, de Shenzhenbei à Xiamenbei.",
-            "D941, de Hangzhoudong à Shenzhenbei": "D941, de Hangzhoudong à Shenzhenbei",
-            "G571, de Beijingxi à Chengdudong": "G571, de Beijingxi à Chengdudong",
-            "G1743, de Nanjingnan à Guangzhounan.": "G1743, de Nanjingnan à Guangzhounan.",
-            "D902, de Shenzhenbei à Beijingxi": "D902, de Shenzhenbei à Beijingxi",
-            "D933, de Guangzhounan à Hangzhoudong": "D933, de Guangzhounan à Hangzhoudong",
-            "D3336, de Shenzhenbei à Xiamenbei": "D3336, de Shenzhenbei à Xiamenbei",
-            "G2187, de Chengdudong à Hangzhoudong.": "G2187, de Chengdudong à Hangzhoudong.",
-            "D2206, de Shanghai Hongqiao à Chengdudong": "D2206, de Shanghai Hongqiao à Chengdudong",
-            "G7662, de Hangzhoudong à Nanjingnan.": "G7662, de Hangzhoudong à Nanjingnan.",
-            "G19, de Beijingnan à Nanjingnan": "G19, de Beijingnan à Nanjingnan",
-            "G1675, de Nanjingnan à Xiamenbei": "G1675, de Nanjingnan à Xiamenbei",
-            "G2277, de Chengdudong à Xiamenbei.": "G2277, de Chengdudong à Xiamenbei.",
-            "G1509, de Nanjingnan à Hangzhoudong": "G1509, de Nanjingnan à Hangzhoudong",
-            "G9759, de Guangzhounan à Shenzhenbei": "G9759, de Guangzhounan à Shenzhenbei",
-            "G2195, de Chengdudong à Shanghai Hongqiao": "G2195, de Chengdudong à Shanghai Hongqiao",
-            "G71, de Beijingxi à Guangzhounan": "G71, de Beijingxi à Guangzhounan",
-            "G7185, de Nanjingnan à Shanghai Hongqiao": "G7185, de Nanjingnan à Shanghai Hongqiao",
-            "D942, de Shenzhenbei à Shanghai Hongqiao": "D942, de Shenzhenbei à Shanghai Hongqiao",
-            "D381, de Shanghai Hongqiao à Hangzhoudong": "D381, de Shanghai Hongqiao à Hangzhoudong",
-            "G66, de Guangzhounan à Beijingxi": "G66, de Guangzhounan à Beijingxi",
-            "G1976, de Chengdudong à Nanjingnan.": "G1976, de Chengdudong à Nanjingnan.",
-            "G3007, de Xiamen à Shenzhenbei": "G3007, de Xiamen à Shenzhenbei",
-            "D2285, de Shanghai Hongqiao à Hangzhoudong": "D2285, de Shanghai Hongqiao à Hangzhoudong"
+            "G7572, de Hangzhoudong à Shanghaï Hongqiao": "G7572, de Hangzhou-Est à Shanghaï Hongqiao",
+            "G1886, de Nankin-Sud à Chengdudong": "G1886, de Nankin-Sud à Chengdu-Est",
+            "D3295, de Nankin-Sud à Xiamen-Nord": "D3295, de Nankin-Sud à Xiamen-Nord",
+            "D2282, de Xiamen-Nord à Hangzhoudong": "D2282, de Xiamen-Nord à Hangzhou-Est",
+            "G1113, de Nankin-Sud à Canton-Sud.": "G1113, de Nankin-Sud à Canton-Sud.",
+            "G2278, de Xiamen-Nord à Chengdudong.": "G2278, de Xiamen-Nord à Chengdu-Est.",
+            "G85, de Shanghaï Hongqiao à Canton-Sud": "G85, de Shanghaï Hongqiao à Canton-Sud",
+            "D922, de Canton-Sud à Beijingxi": "D922, de Canton-Sud à Pékin-Ouest",
+            "G85, de Hangzhoudong à Canton-Sud": "G85, de Hangzhou-Est à Canton-Sud",
+            "D2339, de Xiamen à Shenzhen-Nord": "D2339, de Xiamen à Shenzhen-Nord",
+            "D3141, de Hangzhoudong à Xiamen-Nord": "D3141, de Hangzhou-Est à Xiamen-Nord",
+            "D3218, de Xiamen à Hangzhoudong": "D3218, de Xiamen à Hangzhou-Est",
+            "D2287, de Shanghaï Hongqiao à Shenzhen-Nord": "D2287, de Shanghaï Hongqiao à Shenzhen-Nord",
+            "G1602, de Shenzhen-Nord à Xiamen-Nord.": "G1602, de Shenzhen-Nord à Xiamen-Nord.",
+            "D941, de Hangzhoudong à Shenzhen-Nord": "D941, de Hangzhou-Est à Shenzhen-Nord",
+            "G571, de Beijingxi à Chengdudong": "G571, de Pékin-Ouest à Chengdu-Est",
+            "G1743, de Nankin-Sud à Canton-Sud.": "G1743, de Nankin-Sud à Canton-Sud.",
+            "D902, de Shenzhen-Nord à Beijingxi": "D902, de Shenzhen-Nord à Pékin-Ouest",
+            "D933, de Canton-Sud à Hangzhoudong": "D933, de Canton-Sud à Hangzhou-Est",
+            "D3336, de Shenzhen-Nord à Xiamen-Nord": "D3336, de Shenzhen-Nord à Xiamen-Nord",
+            "G2187, de Chengdudong à Hangzhoudong.": "G2187, de Chengdu-Est à Hangzhou-Est.",
+            "D2206, de Shanghaï Hongqiao à Chengdudong": "D2206, de Shanghaï Hongqiao à Chengdu-Est",
+            "G7662, de Hangzhoudong à Nankin-Sud.": "G7662, de Hangzhou-Est à Nankin-Sud.",
+            "G19, de Pékin-Sud à Nankin-Sud": "G19, de Pékin-Sud à Nankin-Sud",
+            "G1675, de Nankin-Sud à Xiamen-Nord": "G1675, de Nankin-Sud à Xiamen-Nord",
+            "G2277, de Chengdudong à Xiamen-Nord.": "G2277, de Chengdu-Est à Xiamen-Nord.",
+            "G1509, de Nankin-Sud à Hangzhoudong": "G1509, de Nankin-Sud à Hangzhou-Est",
+            "G9759, de Canton-Sud à Shenzhen-Nord": "G9759, de Canton-Sud à Shenzhen-Nord",
+            "G2195, de Chengdudong à Shanghaï Hongqiao": "G2195, de Chengdu-Est à Shanghaï Hongqiao",
+            "G71, de Beijingxi à Canton-Sud": "G71, de Pékin-Ouest à Canton-Sud",
+            "G7185, de Nankin-Sud à Shanghaï Hongqiao": "G7185, de Nankin-Sud à Shanghaï Hongqiao",
+            "D942, de Shenzhen-Nord à Shanghaï Hongqiao": "D942, de Shenzhen-Nord à Shanghaï Hongqiao",
+            "D381, de Shanghaï Hongqiao à Hangzhoudong": "D381, de Shanghaï Hongqiao à Hangzhou-Est",
+            "G66, de Canton-Sud à Beijingxi": "G66, de Canton-Sud à Pékin-Ouest",
+            "G1976, de Chengdudong à Nankin-Sud.": "G1976, de Chengdu-Est à Nankin-Sud.",
+            "G3007, de Xiamen à Shenzhen-Nord": "G3007, de Xiamen à Shenzhen-Nord",
+            "D2285, de Shanghaï Hongqiao à Hangzhoudong": "D2285, de Shanghaï Hongqiao à Hangzhou-Est"
         },
         "departure time": {
             "08 h 15 ce jour-là": "08 h 15 ce jour-là",
@@ -5734,7 +5889,10 @@
         "brand": {
             "Lenovo": "Lenovo",
             "Dell": "Dell",
-            "Acer": "Acer",
+            "Acer": [
+                "Acer",
+                "d'Acer"
+            ],
             "HP": "HP",
             "Mi": "Mi",
             "Apple": "Apple"
@@ -5880,6 +6038,8 @@
             ],
             "ordinateur de bureau": [
                 "Bureau",
+                "l'ordinateur de bureau",
+                "d'ordinateur de bureau",
                 "ordinateurs de bureau"
             ],
             "PC tout-en-un": "PC tout-en-un"
@@ -5989,8 +6149,9 @@
             ]
         },
         "pricerange": {
-            "5 000 à 10 000": [
+            "5,000 à 10,000": [
                 "5 000 à 10 000",
+                "5 000 à 10 000 yuans",
                 "5 000 et 10 000 yuans",
                 "5 000 et 10 000 yuans",
                 "5000 à 10 000",
@@ -5998,6 +6159,8 @@
                 "entre 5 000 et 10 000 yuans"
             ],
             "<5,000": [
+                "en dessous de 5 000",
+                "en dessous de 5 000 yuans",
                 "inférieur à 5 000",
                 "moins de 5 000 yuans",
                 "inférieur à 5 000 yuans",

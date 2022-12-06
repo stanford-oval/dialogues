@@ -2,18 +2,40 @@ import argparse
 import itertools
 import json
 import os
+import pymongo
+import requests
+import sys
+
 from collections import defaultdict
 from contextlib import ExitStack
 from pathlib import Path
 
-import pymongo
-import requests
 from tqdm.autonotebook import tqdm
 
 from dialogues.risawoz.main import Risawoz
 from dialogues.risawoz.src.knowledgebase.api import call_api, process_string
 
-dataset = Risawoz()
+parser = argparse.ArgumentParser()
+
+parser.add_argument("--root", type=str, default='dialogues/risawoz/', help='code root directory')
+parser.add_argument(
+    "--data_dir", type=str, default="data/original/", help="path to original data, relative to root dir"
+)
+parser.add_argument(
+    "--save_dir", type=str, default="data/", help="path to save preprocessed data, relative to root dir"
+)
+parser.add_argument("--src", type=str, help="en, zh, en_zh", default="zh")
+parser.add_argument("--tgt", type=str, help="en, fr", default="en")
+parser.add_argument("--setting", type=str, help="en, zh, en_zh")
+parser.add_argument("--splits", nargs='+', default=['train', 'valid', 'test'])
+parser.add_argument("--debug", action="store_true", help="toggle debug mode")
+parser.add_argument("--no-build-db", action="store_true", dest="no_build_db",
+                    help="If set, do not import the database into MongoDB. "
+                         "Default is to import it.")
+args = parser.parse_args()
+build_db = True if args.no_build_db == False else False
+
+dataset = Risawoz(name='risawoz', src=args.src, tgt=args.tgt)
 
 
 def read_json_files_in_folder(path):
@@ -27,6 +49,7 @@ def read_json_files_in_folder(path):
 
 
 def build_db(db_json_path, api_map, setting, mongodb_host=""):
+    print(f"build_db {mongodb_host}", file=sys.stderr)
     raw_db = read_json_files_in_folder(db_json_path)
     if mongodb_host:
         db_client = pymongo.MongoClient(mongodb_host)
@@ -313,30 +336,21 @@ def build_dataset(original_data_path, db, setting, debug=False):
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser()
+    mongodb_host = (os.environ.get("MONGODB_HOST")
+                    if "MONGODB_HOST" in os.environ
+                    else 'mongodb+srv://bitod:plGYPp44hASzGbmm@cluster0.vo7pq.mongodb.net/risawoz?retryWrites=true&w=majority&ssl=true&ssl_cert_reqs=CERT_NONE')
 
-    parser.add_argument("--root", type=str, default='dialogues/risawoz/', help='code root directory')
-    parser.add_argument(
-        "--data_dir", type=str, default="data/original/", help="path to original data, relative to root dir"
-    )
-    parser.add_argument(
-        "--save_dir", type=str, default="data/", help="path to save preprocessed data, relative to root dir"
-    )
-    parser.add_argument("--setting", type=str, help="en, zh, en_zh")
-    parser.add_argument("--splits", nargs='+', default=['train', 'valid', 'test'])
-    parser.add_argument("--debug", action="store_true", help="toggle debug mode")
-
-    args = parser.parse_args()
-
-    mongodb_host = "mongodb://localhost:27017/"
-
-    # uncomment to build db
-    risawoz_db = build_db(
-        db_json_path=os.path.join(*[args.root, f'database/db_{args.setting}']),
-        api_map=None,
-        setting=args.setting,
-        mongodb_host=mongodb_host,
-    )
+    if build_db:
+        risawoz_db = build_db(
+            db_json_path=os.path.join(*[args.root, f'database/db_{args.setting}']),
+            api_map=None,
+            setting=args.setting,
+            mongodb_host=mongodb_host,
+        )
+    elif mongodb_host:
+        db_client = pymongo.MongoClient(mongodb_host)
+    else:
+        db_client = pymongo.MongoClient()
 
     # download original RiSAWOZ dataset
     original_data_path = os.path.join(*[args.root, args.data_dir])
