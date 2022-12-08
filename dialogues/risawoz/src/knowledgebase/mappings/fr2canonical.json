@@ -35,7 +35,8 @@
                 "japonaise",
                 "japonaises",
                 "des séries japonaises",
-                "série télé japonaise"
+                "série télé japonaise",
+                "séries télé japonaises"
             ],
             "Corée": [
                 "sud-coréennes",
@@ -104,9 +105,10 @@
                 "les séries télé scientifiques",
                 "la science-fiction"
             ],
-            "comique": [
+            "comédie": [
                 "comédies",
                 "comique",
+                "comiques",
                 "série télé comique"
             ],
             "d'action": [
@@ -920,9 +922,7 @@
             ],
             "Hong Kong": [
                 "Hong Kong",
-                "films de Hong Kong",
-                "série télé captivante de Hong Kong",
-                "série télé bien notée de Hong Kong, en Chine"
+                "films de Hong Kong"
             ],
             "Inde": [
                 "Indien",
@@ -930,10 +930,8 @@
                 "en Inde"
             ],
             "Japon": [
-                "japonaise",
-                "japonaises",
-                "des séries japonaises",
-                "série télé japonaise"
+                "japonais",
+                "japonaise"
             ],
             "Taïwan, Chine": [
                 "Taïwan"
@@ -1367,9 +1365,11 @@
                 "film de science-fiction",
                 "films de science-fiction"
             ],
-            "comique": [
+            "comédie": [
+                "comédie",
                 "comédies",
                 "comique",
+                "comiques",
                 "film comique"
             ],
             "d'action": [
@@ -1627,24 +1627,28 @@
             "Kunshan": "Kunshan"
         },
         "consumption": {
+            "un peu cher": [
+                "d'un peu cher",
+                "un peu cher",
+                "un peu chers",
+                "supérieure",
+                "plus chers",
+                "plus cher"
+            ],
             "modérée": [
                 "pas trop cher",
                 "pas trop chère",
                 "pas trop chers",
                 "pas trop chères",
                 "à prix modérés",
+                "à prix modéré",
                 "juste",
+                "modéré",
                 "modérés",
                 "milieu du site"
             ],
-            "un peu cher": [
-                "d'un peu cher",
-                "un peu cher",
-                "un peu chers",
-                "supérieure",
-                "plus chers"
-            ],
             "bon marché": [
+                "gratuit",
                 "pas cher",
                 "pas chers",
                 "pas chère",
@@ -1717,7 +1721,10 @@
             "Ville de Tongli": [
                 "vieille ville de Tongli"
             ],
-            "L'église du lac Dushu": "L'église du lac Dushu",
+            "L'église du lac Dushu": [
+                "L'église du lac Dushu",
+                "Église du lac Dushu"
+            ],
             "la montagne Xishan": [
                 "la zone panoramique de l'île de Xishan",
                 "zone panoramique de l'île de Xishan"
@@ -2093,7 +2100,10 @@
         "name": {
             "Restaurant de fruits de mer Tangpalace": "Restaurant de fruits de mer Tangpalace",
             "Banyuan Private Home Cuisine": "Cuisine de la maison privée Banyuan",
-            "fondue chinoise Haidilao": "fondue chinoise de Haidilao",
+            "fondue chinoise Haidilao": [
+                "fondue chinoise de Haidilao",
+                "Fondue Chinoise Haidilao"
+            ],
             "fondue chinoise Sichuan Xiang Tian Xia": "fondue chinoise Sichuan Xiang Tian Xia",
             "fondue chinoise Laotianqiao Frog": [
                 "fondue chinoise Laotianqiao Walu"
@@ -2698,6 +2708,8 @@
                 "abordables",
                 "pas cher",
                 "pas chers",
+                "pas chère",
+                "pas chères",
                 "à bas prix"
             ]
         },
@@ -2752,9 +2764,15 @@
                 "Shui'an Hanshe Boutique",
                 "petit hôtel de luxe Suzhou Shui'an Hanshe"
             ],
-            "l'hôtel Jinling Nanlin": "l'hôtel Jinling Nanlin",
+            "l'hôtel Jinling Nanlin": [
+                "l'hôtel Jinling Nanlin",
+                "Hôtel Jinling Nanlin"
+            ],
             "hôtel Marriott Lac de Taihu Suzhou": "hôtel Marriott Lac de Taihu Suzhou",
-            "L'hôtel Vienna": "L'hôtel Vienna",
+            "L'hôtel Vienna": [
+                "L'hôtel Vienna",
+                "l'hôtel Vienna"
+            ],
             "l'hôtel Chengyi Lianhao": "l'hôtel Chengyi Lianhao",
             "Hôtel Suzhou Jinji Lake Shilla": [
                 "l'hôtel Jinji Lac Shilla",

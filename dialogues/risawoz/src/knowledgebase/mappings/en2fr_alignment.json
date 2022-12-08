@@ -17,7 +17,7 @@
         "type": {
             "suspenseful": "polar",
             "sci-fi": "science-fiction",
-            "comedy": "comique",
+            "comedy": "comédie",
             "feature": "série",
             "crime": "série policière",
             "action": "d'action",
@@ -1150,7 +1150,7 @@
         "type": {
             "romantic": "romantique",
             "sci-fi": "science-fiction",
-            "comedy": "comique",
+            "comedy": "comédie",
             "action": "d'action",
             "horror": "d'horreur"
         },

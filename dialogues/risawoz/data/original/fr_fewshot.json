@@ -18,7 +18,7 @@
                             "séries télé japonaises": [
                                 [
                                     40,
-                                    74
+                                    62
                                 ]
                             ]
                         }
@@ -31,7 +31,7 @@
                             "série télé japonaise": [
                                 [
                                     14,
-                                    46
+                                    34
                                 ]
                             ]
                         }
@@ -39,10 +39,10 @@
                 ],
                 "belief_state": {
                     "inform slot-values": {
-                        "TV-production country or area": "série télé japonaise"
+                        "TV-production country or area": "Japon"
                     },
                     "turn_inform": {
-                        "TV-production country or area": "série télé japonaise"
+                        "TV-production country or area": "Japon"
                     },
                     "turn request": [
                         "title"
@@ -53,7 +53,7 @@
                         "Inform",
                         "TV",
                         "production country or area",
-                        "série télé japonaise"
+                        "Japon"
                     ],
                     [
                         "Request",
@@ -77,7 +77,8 @@
                     ]
                 ],
                 "alignment": {
-                    "série télé japonaise": "Japanese TV show"
+                    "série télé japonaise": "Japanese TV show",
+                    "séries télé japonaises": "Japanese TV shows"
                 },
                 "db_results": [
                     "Database search results: the number of successful matches is 17",
@@ -122,7 +123,7 @@
                     },
                     {
                         "production country or area": "Japon",
-                        "type": "comique",
+                        "type": "comédie",
                         "decade": "années 2010",
                         "star": "Kento Kaku",
                         "director": "Fukuda Yuuichi",
@@ -135,7 +136,7 @@
                     },
                     {
                         "production country or area": "Japon",
-                        "type": "comique",
+                        "type": "comédie",
                         "decade": "années 2000",
                         "star": "Juri Ueno",
                         "director": "Hideki Takeuchi",
@@ -148,7 +149,7 @@
                     },
                     {
                         "production country or area": "Japon",
-                        "type": "comique",
+                        "type": "comédie",
                         "decade": "années 1990",
                         "star": "Takuya Kimura",
                         "director": "Kozo Nagayama",
@@ -315,8 +316,8 @@
                         "TV-decade": {
                             "années 2010": [
                                 [
-                                    41,
-                                    52
+                                    29,
+                                    40
                                 ]
                             ]
                         },
@@ -324,21 +325,21 @@
                             "série télé japonaise": [
                                 [
                                     4,
-                                    36
+                                    24
                                 ]
                             ]
                         }
                     }
                 ],
                 "system_utterance": [
-                    "Quel genre d'séries télé japonaises aimez-vous regarder en général ?",
+                    "Quel genre de séries télé japonaises aimez-vous regarder en général ?",
                     {
                         "TV-production country or area": {}
                     }
                 ],
                 "belief_state": {
                     "inform slot-values": {
-                        "TV-production country or area": "série télé japonaise",
+                        "TV-production country or area": "Japon",
                         "TV-decade": "années 2010"
                     },
                     "turn_inform": {
@@ -392,7 +393,7 @@
                     },
                     {
                         "production country or area": "Japon",
-                        "type": "comique",
+                        "type": "comédie",
                         "decade": "années 2010",
                         "star": "Kento Kaku",
                         "director": "Fukuda Yuuichi",
@@ -503,7 +504,7 @@
                 ],
                 "belief_state": {
                     "inform slot-values": {
-                        "TV-production country or area": "série télé japonaise",
+                        "TV-production country or area": "Japon",
                         "TV-decade": "années 2010",
                         "TV-type": "polar"
                     },
@@ -581,7 +582,7 @@
                 ],
                 "belief_state": {
                     "inform slot-values": {
-                        "TV-production country or area": "série télé japonaise",
+                        "TV-production country or area": "Japon",
                         "TV-decade": "années 2010",
                         "TV-type": "polar"
                     },
@@ -650,7 +651,7 @@
                 ],
                 "belief_state": {
                     "inform slot-values": {
-                        "TV-production country or area": "série télé japonaise",
+                        "TV-production country or area": "Japon",
                         "TV-decade": "années 2010",
                         "TV-type": "polar"
                     },
@@ -719,7 +720,7 @@
                 ],
                 "belief_state": {
                     "inform slot-values": {
-                        "TV-production country or area": "série télé japonaise",
+                        "TV-production country or area": "Japon",
                         "TV-decade": "années 2010",
                         "TV-type": "polar"
                     },
@@ -798,7 +799,7 @@
                 "belief_state": {
                     "inform slot-values": {
                         "Movie-production country or area": "Indien",
-                        "TV-production country or area": "série télé japonaise",
+                        "TV-production country or area": "Japon",
                         "TV-decade": "années 2010",
                         "TV-type": "polar"
                     },
@@ -838,7 +839,7 @@
                     "Database search results: the number of successful matches is 12",
                     {
                         "production country or area": "Inde",
-                        "type": "comique",
+                        "type": "comédie",
                         "decade": "années 2010",
                         "star": "Aamir Khan",
                         "director": "Rajkumar Hirani",
@@ -850,7 +851,7 @@
                     },
                     {
                         "production country or area": "Inde",
-                        "type": "comique",
+                        "type": "comédie",
                         "decade": "années 2000",
                         "star": "Aamir Khan",
                         "director": "Rajkumar Hirani",
@@ -862,7 +863,7 @@
                     },
                     {
                         "production country or area": "Inde",
-                        "type": "comique",
+                        "type": "comédie",
                         "decade": "années 1990",
                         "star": "Shahrukh Khan",
                         "director": "Rakesh Roshan",
@@ -874,7 +875,7 @@
                     },
                     {
                         "production country or area": "Inde",
-                        "type": "comique",
+                        "type": "comédie",
                         "decade": "années 1980",
                         "star": "Anil Kapoor",
                         "director": "Shekar Kapoor",
@@ -1016,7 +1017,7 @@
                 "belief_state": {
                     "inform slot-values": {
                         "Movie-production country or area": "Indien",
-                        "TV-production country or area": "série télé japonaise",
+                        "TV-production country or area": "Japon",
                         "TV-decade": "années 2010",
                         "TV-type": "polar"
                     },
@@ -1092,7 +1093,7 @@
                 "belief_state": {
                     "inform slot-values": {
                         "Movie-production country or area": "Indien",
-                        "TV-production country or area": "série télé japonaise",
+                        "TV-production country or area": "Japon",
                         "TV-decade": "années 2010",
                         "TV-type": "polar"
                     },
@@ -1161,7 +1162,7 @@
                 "belief_state": {
                     "inform slot-values": {
                         "Movie-production country or area": "Indien",
-                        "TV-production country or area": "série télé japonaise",
+                        "TV-production country or area": "Japon",
                         "TV-decade": "années 2010",
                         "TV-type": "polar"
                     },
@@ -1221,7 +1222,7 @@
                 "belief_state": {
                     "inform slot-values": {
                         "Movie-production country or area": "Indien",
-                        "TV-production country or area": "série télé japonaise",
+                        "TV-production country or area": "Japon",
                         "TV-decade": "années 2010",
                         "TV-type": "polar"
                     },
@@ -5123,7 +5124,7 @@
                     ]
                 ],
                 "alignment": {
-                    "village de Mudu": "Mudu Town",
+                    "village de Mudu": "village de Mudu",
                     "Suzhou": "Suzhou",
                     "08 h 30 à 17 h 00": "08:30-17:00"
                 },
@@ -12175,28 +12176,28 @@
                     "Attraction"
                 ],
                 "user_utterance": [
-                    "Bonjour, je suis à la recherche d'une région pittoresque pas trop chère, de préférence une ville d'eau. Des recommandations ?",
+                    "Bonjour, je suis à la recherche d'une région pittoresque pas chère, de préférence une ville d'eau. Des recommandations ?",
                     {
                         "Attraction-consumption": {
-                            "pas trop chère": [
+                            "pas chère": [
                                 [
                                     57,
-                                    68
+                                    66
                                 ]
                             ]
                         },
                         "Attraction-type": {
                             "ville d'eau": [
                                 [
-                                    88,
-                                    99
+                                    86,
+                                    97
                                 ]
                             ]
                         }
                     }
                 ],
                 "system_utterance": [
-                    "Vous pourriez aller au village de Mudu. Ce n'est pas trop cher.",
+                    "Vous pourriez aller au village de Mudu. Ce n'est pas cher.",
                     {
                         "Attraction-name": {
                             "village de Mudu": [
@@ -12210,11 +12211,11 @@
                 ],
                 "belief_state": {
                     "inform slot-values": {
-                        "Attraction-consumption": "moins chère",
+                        "Attraction-consumption": "bon marché",
                         "Attraction-type": "ville d'eau"
                     },
                     "turn_inform": {
-                        "Attraction-consumption": "moins chère",
+                        "Attraction-consumption": "bon marché",
                         "Attraction-type": "ville d'eau"
                     },
                     "turn request": []
@@ -12248,9 +12249,9 @@
                     ]
                 ],
                 "alignment": {
-                    "pas trop chère": "cheaper",
+                    "pas chère": "cheaper",
                     "ville d'eau": "water town",
-                    "village de Mudu": "Mudu Town"
+                    "village de Mudu": "village de Mudu"
                 },
                 "db_results": [
                     "Database search results: the number of successful matches is 3",
@@ -12322,7 +12323,7 @@
                 ],
                 "belief_state": {
                     "inform slot-values": {
-                        "Attraction-consumption": "moins chère",
+                        "Attraction-consumption": "bon marché",
                         "Attraction-type": "ville d'eau",
                         "Attraction-name": "village de Mudu"
                     },
@@ -12338,7 +12339,7 @@
                         "Inform",
                         "Attraction",
                         "name",
-                        "Mudu Town"
+                        "village de Mudu"
                     ],
                     [
                         "Request",
@@ -12393,7 +12394,7 @@
                 ],
                 "belief_state": {
                     "inform slot-values": {
-                        "Attraction-consumption": "moins chère",
+                        "Attraction-consumption": "bon marché",
                         "Attraction-type": "ville d'eau",
                         "Attraction-name": "village de Mudu"
                     },
@@ -12488,7 +12489,7 @@
                 ],
                 "belief_state": {
                     "inform slot-values": {
-                        "Attraction-consumption": "moins chère",
+                        "Attraction-consumption": "bon marché",
                         "Attraction-type": "ville d'eau",
                         "Attraction-name": "village de Mudu",
                         "Hotel-pricerange": "à prix modéré",
@@ -12616,7 +12617,7 @@
                 ],
                 "belief_state": {
                     "inform slot-values": {
-                        "Attraction-consumption": "moins chère",
+                        "Attraction-consumption": "bon marché",
                         "Attraction-type": "ville d'eau",
                         "Attraction-name": "village de Mudu",
                         "Hotel-pricerange": "à prix modéré",
@@ -12697,7 +12698,7 @@
                 ],
                 "belief_state": {
                     "inform slot-values": {
-                        "Attraction-consumption": "moins chère",
+                        "Attraction-consumption": "bon marché",
                         "Attraction-type": "ville d'eau",
                         "Attraction-name": "village de Mudu",
                         "Hotel-pricerange": "à prix modéré",
@@ -12761,7 +12762,7 @@
                 ],
                 "belief_state": {
                     "inform slot-values": {
-                        "Attraction-consumption": "moins chère",
+                        "Attraction-consumption": "bon marché",
                         "Attraction-type": "ville d'eau",
                         "Attraction-name": "village de Mudu",
                         "Hotel-pricerange": "à prix modéré",
@@ -15797,11 +15798,11 @@
                 "belief_state": {
                     "inform slot-values": {
                         "Attraction-type": "ville d'eau",
-                        "Attraction-consumption": "modérée"
+                        "Attraction-consumption": "bon marché"
                     },
                     "turn_inform": {
                         "Attraction-type": "ville d'eau",
-                        "Attraction-consumption": "modérée"
+                        "Attraction-consumption": "bon marché"
                     },
                     "turn request": []
                 },
@@ -15816,7 +15817,7 @@
                         "Inform",
                         "Attraction",
                         "consumption",
-                        "modérée"
+                        "bon marché"
                     ],
                     [
                         "Greeting",
@@ -15835,10 +15836,10 @@
                 ],
                 "alignment": {
                     "ville d'eau": "water town",
-                    "pas trop cher": "cheaper",
+                    "pas cher": "cheaper",
                     "Suzhou": "Suzhou",
                     "ami": "friend",
-                    "village de Mudu": "Mudu Town"
+                    "village de Mudu": "village de Mudu"
                 },
                 "db_results": [
                     "Database search results: the number of successful matches is 3",
@@ -15904,7 +15905,7 @@
                 "belief_state": {
                     "inform slot-values": {
                         "Attraction-type": "ville d'eau",
-                        "Attraction-consumption": "modérée",
+                        "Attraction-consumption": "bon marché",
                         "Attraction-name": "village de Mudu"
                     },
                     "turn_inform": {
@@ -15919,7 +15920,7 @@
                         "Inform",
                         "Attraction",
                         "name",
-                        "Mudu Town"
+                        "village de Mudu"
                     ],
                     [
                         "Request",
@@ -15982,7 +15983,7 @@
                 "belief_state": {
                     "inform slot-values": {
                         "Attraction-type": "ville d'eau",
-                        "Attraction-consumption": "modérée",
+                        "Attraction-consumption": "bon marché",
                         "Attraction-name": "village de Mudu"
                     },
                     "turn_inform": {},
@@ -16052,7 +16053,7 @@
                 "belief_state": {
                     "inform slot-values": {
                         "Attraction-type": "ville d'eau",
-                        "Attraction-consumption": "modérée",
+                        "Attraction-consumption": "bon marché",
                         "Attraction-name": "village de Mudu"
                     },
                     "turn_inform": {},
@@ -16113,7 +16114,7 @@
                 "belief_state": {
                     "inform slot-values": {
                         "Attraction-type": "ville d'eau",
-                        "Attraction-consumption": "modérée",
+                        "Attraction-consumption": "bon marché",
                         "Attraction-name": "village de Mudu"
                     },
                     "turn_inform": {},
@@ -18005,11 +18006,11 @@
                 ],
                 "belief_state": {
                     "inform slot-values": {
-                        "TV-production country or area": "japonaises",
+                        "TV-production country or area": "Japon",
                         "TV-type": "série policière"
                     },
                     "turn_inform": {
-                        "TV-production country or area": "japonaises",
+                        "TV-production country or area": "Japon",
                         "TV-type": "série policière"
                     },
                     "turn request": [
@@ -18021,7 +18022,7 @@
                         "Inform",
                         "TV",
                         "production country or area",
-                        "japonaises"
+                        "Japon"
                     ],
                     [
                         "Inform",
@@ -18117,7 +18118,7 @@
                 ],
                 "belief_state": {
                     "inform slot-values": {
-                        "TV-production country or area": "japonaises",
+                        "TV-production country or area": "Japon",
                         "TV-type": "série policière"
                     },
                     "turn_inform": {},
@@ -24818,8 +24819,8 @@
                         "TV-type": {
                             "comique": [
                                 [
-                                    73,
-                                    80
+                                    70,
+                                    77
                                 ]
                             ]
                         }
@@ -24840,10 +24841,10 @@
                 ],
                 "belief_state": {
                     "inform slot-values": {
-                        "TV-type": "comique"
+                        "TV-type": "comédie"
                     },
                     "turn_inform": {
-                        "TV-type": "comique"
+                        "TV-type": "comédie"
                     },
                     "turn request": [
                         "title"
@@ -24854,7 +24855,7 @@
                         "Inform",
                         "TV",
                         "type",
-                        "comique"
+                        "comédie"
                     ],
                     [
                         "Request",
@@ -24872,14 +24873,14 @@
                     ]
                 ],
                 "alignment": {
-                    "comique": "comedy",
+                    "comédie": "comedy",
                     "My Own Swordsman": "My Own Swordsman"
                 },
                 "db_results": [
                     "Database search results: the number of successful matches is 18",
                     {
                         "production country or area": "Chine continentale",
-                        "type": "comique",
+                        "type": "comédie",
                         "decade": "années 2010",
                         "star": "Wallace Huo",
                         "director": "Lee Kwok-lap",
@@ -24892,7 +24893,7 @@
                     },
                     {
                         "production country or area": "Chine continentale",
-                        "type": "comique",
+                        "type": "comédie",
                         "decade": "années 2000",
                         "star": "Yan Ni",
                         "director": "Shang Jing",
@@ -24905,7 +24906,7 @@
                     },
                     {
                         "production country or area": "Chine continentale",
-                        "type": "comique",
+                        "type": "comédie",
                         "decade": "années 1990",
                         "star": "Wen Xingyu",
                         "director": "Ying Da",
@@ -24918,7 +24919,7 @@
                     },
                     {
                         "production country or area": "Chine continentale",
-                        "type": "comique",
+                        "type": "comédie",
                         "decade": "années 1980",
                         "star": "Benchang You",
                         "director": "Sean Zhang",
@@ -24931,7 +24932,7 @@
                     },
                     {
                         "production country or area": "Taïwan, Chine",
-                        "type": "comique",
+                        "type": "comédie",
                         "decade": "années 2010",
                         "star": "Hsieh Ying-hsuan",
                         "director": "Yen Yi-wen",
@@ -24944,7 +24945,7 @@
                     },
                     {
                         "production country or area": "Taïwan, Chine",
-                        "type": "comique",
+                        "type": "comédie",
                         "decade": "années 2000",
                         "star": "Joseph Cheng",
                         "director": "Qu Youning",
@@ -24957,7 +24958,7 @@
                     },
                     {
                         "production country or area": "Taïwan, Chine",
-                        "type": "comique",
+                        "type": "comédie",
                         "decade": "années 1990",
                         "star": "Lin Yizhen",
                         "director": "Derek Wu",
@@ -24970,7 +24971,7 @@
                     },
                     {
                         "production country or area": "Hong Kong",
-                        "type": "comique",
+                        "type": "comédie",
                         "decade": "années 2010",
                         "star": "Bobby Au-yeung",
                         "director": "Dave Fong",
@@ -24983,7 +24984,7 @@
                     },
                     {
                         "production country or area": "Hong Kong",
-                        "type": "comique",
+                        "type": "comédie",
                         "decade": "années 2000",
                         "star": "Louis Koo",
                         "director": "Simon Sek",
@@ -24996,7 +24997,7 @@
                     },
                     {
                         "production country or area": "Hong Kong",
-                        "type": "comique",
+                        "type": "comédie",
                         "decade": "années 1990",
                         "star": "Benny Chan",
                         "director": "Sze Yu Lau",
@@ -25009,7 +25010,7 @@
                     },
                     {
                         "production country or area": "Amérique",
-                        "type": "comique",
+                        "type": "comédie",
                         "decade": "années 2010",
                         "star": "Jim Parsons",
                         "director": "Mark Cendrowski",
@@ -25022,7 +25023,7 @@
                     },
                     {
                         "production country or area": "Amérique",
-                        "type": "comique",
+                        "type": "comédie",
                         "decade": "années 2000",
                         "star": "Jim Parsons",
                         "director": "James Burrows",
@@ -25035,7 +25036,7 @@
                     },
                     {
                         "production country or area": "Amérique",
-                        "type": "comique",
+                        "type": "comédie",
                         "decade": "années 1990",
                         "star": "Jennifer Aniston",
                         "director": "David Crane",
@@ -25048,7 +25049,7 @@
                     },
                     {
                         "production country or area": "Japon",
-                        "type": "comique",
+                        "type": "comédie",
                         "decade": "années 2010",
                         "star": "Kento Kaku",
                         "director": "Fukuda Yuuichi",
@@ -25061,7 +25062,7 @@
                     },
                     {
                         "production country or area": "Japon",
-                        "type": "comique",
+                        "type": "comédie",
                         "decade": "années 2000",
                         "star": "Juri Ueno",
                         "director": "Hideki Takeuchi",
@@ -25074,7 +25075,7 @@
                     },
                     {
                         "production country or area": "Japon",
-                        "type": "comique",
+                        "type": "comédie",
                         "decade": "années 1990",
                         "star": "Takuya Kimura",
                         "director": "Kozo Nagayama",
@@ -25087,7 +25088,7 @@
                     },
                     {
                         "production country or area": "Corée",
-                        "type": "comique",
+                        "type": "comédie",
                         "decade": "années 2010",
                         "star": "Sung Dong-il",
                         "director": "Shin Won-ho",
@@ -25100,7 +25101,7 @@
                     },
                     {
                         "production country or area": "Corée",
-                        "type": "comique",
+                        "type": "comédie",
                         "decade": "années 2000",
                         "star": "Kim Sun-a",
                         "director": "Kim Yoon-cheol",
@@ -25137,7 +25138,7 @@
                 ],
                 "belief_state": {
                     "inform slot-values": {
-                        "TV-type": "comique"
+                        "TV-type": "comédie"
                     },
                     "turn_inform": {},
                     "turn request": [
@@ -25167,7 +25168,7 @@
                     "Database search results: the number of successful matches is 18",
                     {
                         "production country or area": "Chine continentale",
-                        "type": "comique",
+                        "type": "comédie",
                         "decade": "années 2010",
                         "star": "Wallace Huo",
                         "director": "Lee Kwok-lap",
@@ -25180,7 +25181,7 @@
                     },
                     {
                         "production country or area": "Chine continentale",
-                        "type": "comique",
+                        "type": "comédie",
                         "decade": "années 2000",
                         "star": "Yan Ni",
                         "director": "Shang Jing",
@@ -25193,7 +25194,7 @@
                     },
                     {
                         "production country or area": "Chine continentale",
-                        "type": "comique",
+                        "type": "comédie",
                         "decade": "années 1990",
                         "star": "Wen Xingyu",
                         "director": "Ying Da",
@@ -25206,7 +25207,7 @@
                     },
                     {
                         "production country or area": "Chine continentale",
-                        "type": "comique",
+                        "type": "comédie",
                         "decade": "années 1980",
                         "star": "Benchang You",
                         "director": "Sean Zhang",
@@ -25219,7 +25220,7 @@
                     },
                     {
                         "production country or area": "Taïwan, Chine",
-                        "type": "comique",
+                        "type": "comédie",
                         "decade": "années 2010",
                         "star": "Hsieh Ying-hsuan",
                         "director": "Yen Yi-wen",
@@ -25232,7 +25233,7 @@
                     },
                     {
                         "production country or area": "Taïwan, Chine",
-                        "type": "comique",
+                        "type": "comédie",
                         "decade": "années 2000",
                         "star": "Joseph Cheng",
                         "director": "Qu Youning",
@@ -25245,7 +25246,7 @@
                     },
                     {
                         "production country or area": "Taïwan, Chine",
-                        "type": "comique",
+                        "type": "comédie",
                         "decade": "années 1990",
                         "star": "Lin Yizhen",
                         "director": "Derek Wu",
@@ -25258,7 +25259,7 @@
                     },
                     {
                         "production country or area": "Hong Kong",
-                        "type": "comique",
+                        "type": "comédie",
                         "decade": "années 2010",
                         "star": "Bobby Au-yeung",
                         "director": "Dave Fong",
@@ -25271,7 +25272,7 @@
                     },
                     {
                         "production country or area": "Hong Kong",
-                        "type": "comique",
+                        "type": "comédie",
                         "decade": "années 2000",
                         "star": "Louis Koo",
                         "director": "Simon Sek",
@@ -25284,7 +25285,7 @@
                     },
                     {
                         "production country or area": "Hong Kong",
-                        "type": "comique",
+                        "type": "comédie",
                         "decade": "années 1990",
                         "star": "Benny Chan",
                         "director": "Sze Yu Lau",
@@ -25297,7 +25298,7 @@
                     },
                     {
                         "production country or area": "Amérique",
-                        "type": "comique",
+                        "type": "comédie",
                         "decade": "années 2010",
                         "star": "Jim Parsons",
                         "director": "Mark Cendrowski",
@@ -25310,7 +25311,7 @@
                     },
                     {
                         "production country or area": "Amérique",
-                        "type": "comique",
+                        "type": "comédie",
                         "decade": "années 2000",
                         "star": "Jim Parsons",
                         "director": "James Burrows",
@@ -25323,7 +25324,7 @@
                     },
                     {
                         "production country or area": "Amérique",
-                        "type": "comique",
+                        "type": "comédie",
                         "decade": "années 1990",
                         "star": "Jennifer Aniston",
                         "director": "David Crane",
@@ -25336,7 +25337,7 @@
                     },
                     {
                         "production country or area": "Japon",
-                        "type": "comique",
+                        "type": "comédie",
                         "decade": "années 2010",
                         "star": "Kento Kaku",
                         "director": "Fukuda Yuuichi",
@@ -25349,7 +25350,7 @@
                     },
                     {
                         "production country or area": "Japon",
-                        "type": "comique",
+                        "type": "comédie",
                         "decade": "années 2000",
                         "star": "Juri Ueno",
                         "director": "Hideki Takeuchi",
@@ -25362,7 +25363,7 @@
                     },
                     {
                         "production country or area": "Japon",
-                        "type": "comique",
+                        "type": "comédie",
                         "decade": "années 1990",
                         "star": "Takuya Kimura",
                         "director": "Kozo Nagayama",
@@ -25375,7 +25376,7 @@
                     },
                     {
                         "production country or area": "Corée",
-                        "type": "comique",
+                        "type": "comédie",
                         "decade": "années 2010",
                         "star": "Sung Dong-il",
                         "director": "Shin Won-ho",
@@ -25388,7 +25389,7 @@
                     },
                     {
                         "production country or area": "Corée",
-                        "type": "comique",
+                        "type": "comédie",
                         "decade": "années 2000",
                         "star": "Kim Sun-a",
                         "director": "Kim Yoon-cheol",
@@ -25416,7 +25417,7 @@
                 ],
                 "belief_state": {
                     "inform slot-values": {
-                        "TV-type": "comique"
+                        "TV-type": "comédie"
                     },
                     "turn_inform": {},
                     "turn request": []
@@ -30402,7 +30403,7 @@
                     },
                     {
                         "production country or area": "Taïwan, Chine",
-                        "type": "comique",
+                        "type": "comédie",
                         "decade": "années 2010",
                         "star": "Hsieh Ying-hsuan",
                         "director": "Yen Yi-wen",
@@ -30415,7 +30416,7 @@
                     },
                     {
                         "production country or area": "Taïwan, Chine",
-                        "type": "comique",
+                        "type": "comédie",
                         "decade": "années 2000",
                         "star": "Joseph Cheng",
                         "director": "Qu Youning",
@@ -30428,7 +30429,7 @@
                     },
                     {
                         "production country or area": "Taïwan, Chine",
-                        "type": "comique",
+                        "type": "comédie",
                         "decade": "années 1990",
                         "star": "Lin Yizhen",
                         "director": "Derek Wu",
@@ -33785,7 +33786,7 @@
                     },
                     {
                         "production country or area": "Chine continentale",
-                        "type": "comique",
+                        "type": "comédie",
                         "decade": "années 2010",
                         "star": "Wallace Huo",
                         "director": "Lee Kwok-lap",
@@ -39008,7 +39009,7 @@
                     },
                     {
                         "production country or area": "Taïwan, Chine",
-                        "type": "comique",
+                        "type": "comédie",
                         "decade": "années 2010",
                         "star": "Jay Chou",
                         "director": "Jay Chou",
@@ -39020,7 +39021,7 @@
                     },
                     {
                         "production country or area": "Taïwan, Chine",
-                        "type": "comique",
+                        "type": "comédie",
                         "decade": "années 2000",
                         "star": "Jay Chou",
                         "director": "Chu Yin-ping",
@@ -39099,7 +39100,7 @@
                     },
                     {
                         "production country or area": "Taïwan, Chine",
-                        "type": "comique",
+                        "type": "comédie",
                         "decade": "années 2010",
                         "star": "Jay Chou",
                         "director": "Jay Chou",
@@ -39111,7 +39112,7 @@
                     },
                     {
                         "production country or area": "Taïwan, Chine",
-                        "type": "comique",
+                        "type": "comédie",
                         "decade": "années 2000",
                         "star": "Jay Chou",
                         "director": "Chu Yin-ping",
@@ -59918,7 +59919,7 @@
                     },
                     {
                         "production country or area": "Hong Kong",
-                        "type": "comique",
+                        "type": "comédie",
                         "decade": "années 2010",
                         "star": "Bobby Au-yeung",
                         "director": "Dave Fong",
@@ -59931,7 +59932,7 @@
                     },
                     {
                         "production country or area": "Hong Kong",
-                        "type": "comique",
+                        "type": "comédie",
                         "decade": "années 2000",
                         "star": "Louis Koo",
                         "director": "Simon Sek",
@@ -59944,7 +59945,7 @@
                     },
                     {
                         "production country or area": "Hong Kong",
-                        "type": "comique",
+                        "type": "comédie",
                         "decade": "années 1990",
                         "star": "Benny Chan",
                         "director": "Sze Yu Lau",
