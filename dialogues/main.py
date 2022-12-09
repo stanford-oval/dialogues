@@ -697,11 +697,35 @@ class WOZDataset(Dataset):
                 pred_dict.pop('general', -1)
                 ref_dict.pop('general', -1)
 
-                if pred_dict == ref_dict:
+                # skip bye and greeting acts
+                ref_dict_new = {}
+                for domain, items in ref_dict.items():
+                    new_items = []
+                    for item in items:
+                        if item['act'] in ['bye', 'greeting', 'null', 'general']:
+                            continue
+                        new_items.append(item)
+                    if new_items:
+                        ref_dict_new[domain] = new_items
+
+                # skip bye and greeting acts
+                pred_dict_new = {}
+                for domain, items in pred_dict.items():
+                    new_items = []
+                    for item in items:
+                        if item['act'] in ['bye', 'greeting', 'null', 'general']:
+                            continue
+                        new_items.append(item)
+                    if new_items:
+                        pred_dict_new[domain] = new_items
+
+                if pred_dict_new == ref_dict_new:
                     da += 1
                 else:
                     if self.DEBUG:
-                        self.out_da.write(str(pred) + '\t' + str(ref) + '\t' + str(list(dictdiffer.diff(pred, ref))) + '\n')
+                        self.out_da.write(
+                            str(pred) + '\t' + str(ref) + '\t' + str(list(dictdiffer.diff(pred_dict_new, ref_dict_new))) + '\n'
+                        )
 
         return da / len(preds) * 100
 
@@ -720,7 +744,7 @@ class WOZDataset(Dataset):
             if missing:
                 ser += 1.0
                 if self.DEBUG:
-                    self.out_ser.write('\t'.join([pred, *values]) + '\n')
+                    self.out_ser.write(' ; '.join([pred, *values]) + '\n')
         return ser / len(preds) * 100
 
     def compute_dst_em(self, preds, golds):
@@ -878,55 +902,73 @@ class WOZDataset(Dataset):
         v = re.sub('(\d+)(?:th|rd|st|nd) of (\w+)', r'\2 \1', v)
 
         # synonyms
-        v = re.sub('(mid-priced?|moderate-priced?|moderate-range|moderated|moderately|fair|mid)', 'moderate', v)
-        v = re.sub('(bit more expensive|slightly more expensive)', 'more expensive', v)
-        v = re.sub('wujiang district', 'wujiang', v)
-        v = re.sub('jinji lake shilla hotel suzhou', 'jinji lake shilla hotel', v)
-
-        v = re.sub('suzhou-style garden', 'suzhou-styled garden', v)
-        v = re.sub('resort hotel', 'resort', v)
-        v = re.sub('business computer', 'business', v)
+        # v = re.sub('(mid-priced?|moderate-priced?|moderate-range|moderated|moderately|fair|mid)', 'moderate', v)
+        # v = re.sub('(bit more expensive|slightly more expensive)', 'more expensive', v)
+        # v = re.sub('wujiang district', 'wujiang', v)
+        # v = re.sub('jinji lake shilla hotel suzhou', 'jinji lake shilla hotel', v)
+        #
+        # v = re.sub('suzhou-style garden', 'suzhou-styled garden', v)
+        # v = re.sub('resort hotel', 'resort', v)
+        # v = re.sub('business computer', 'business', v)
+        #
+        # v = re.sub('high speed train', 'high speed', v)
+        # v = re.sub('trains', 'train', v)
+        v = re.sub('(second|business) ticket', r'\1', v)
+        #
+        # v = re.sub('(south|north) korean', r'korean', v)
+        # v = re.sub('hong kongs', r'hong kong', v)
+        # v = re.sub('indian', r'india', v)
 
         # remove ending s
-        v = re.sub(' rooms', ' room', v)
+        v = re.sub(' (center|room|garden|evening|morning|afternoon|laptop)s', r' \1', v)
 
         v = re.sub('(\d)+ 到 (\d)+', r'\1 to \2', v)
         v = re.sub('(\d+\.?\d+?) 英寸', r'\1 inches', v)
 
-        v = re.sub('(.*) (?:department|hospital|school|hotel|tv show)', r'\1', v)
-        v = re.sub('american', r'america', v)
-        v = re.sub('taiwan, china', r'taiwan', v)
-
+        # v = re.sub('(.*) (?:department|hospital|school|hotel|tv show)', r'\1', v)
+        # v = re.sub('american', r'america', v)
+        # v = re.sub('taiwan, china', r'taiwan', v)
+        #
         v = re.sub('(\d+) 年代', r'\1s', v)
-
+        #
         v = re.sub('19(\d+)s', r'\1s', v)
-        v = re.sub('(.*?) movie', r'\1', v)
-        v = re.sub('(.*?) class', r'\1', v)
+        # v = re.sub('(.*?) movie', r'\1', v)
+        # v = re.sub('(.*?) class', r'\1', v)
+
+        v = re.sub('general surgery', 'general hospital', v)
+        v = re.sub('suzhou science & technology town hospital', 'suzhou science & technology town', v)
+
+        v = re.sub('shajiabang scenic spot of changshu', 'shajiabang scenic spot', v)
 
         v = re.sub(
             '(go with my friends|travel with friends|for friends to have an outing|friends to have an outing|for friends to have some fun|for friends)',
             'friends',
             v,
         )
-        v = re.sub('hot pot', 'hotpot', v)
-        v = re.sub('(cheaper|bit cheap|a bit cheap)', 'cheap', v)
-        v = re.sub('family-friendly', 'family', v)
-        v = re.sub('second class ticket', 'second class', v)
 
-        v = re.sub('landscape scenic spots', 'landscape scenic spot', v)
+        # v = re.sub('hot pot', 'hotpot', v)
+        v = re.sub('(cheaper|bit cheap|a bit cheap)', 'cheap', v)
+        # v = re.sub('family-friendly', 'family', v)
+        # v = re.sub('second class ticket', 'second class', v)
+        #
+        # v = re.sub('landscape scenic spots', 'landscape scenic spot', v)
 
         # remove a from "a sth" or the from "the sth"
         v = re.sub('^(?:a|the) (.*)', r'\1', v)
 
         v = re.sub('(\d+)-star', r'\1', v)
-        v = re.sub('afternoons', r'afternoon', v)
         v = re.sub('1st', r'first', v)
         v = re.sub('2nd', r'second', v)
         v = re.sub('3rd', r'third', v)
         v = re.sub('4th', r'fourth', v)
-        v = re.sub('laptops', 'laptop', v)
-        v = re.sub('lightweight laptop|newly released laptop', 'laptop', v)
-        v = re.sub('5,000 to 10,000 yuan', '5,000 to 10,000', v)
+        # v = re.sub('laptops', 'laptop', v)
+        # v = re.sub('lightweight laptop|newly released laptop', 'laptop', v)
+        # v = re.sub('5,000 to 10,000 yuan', '5,000 to 10,000', v)
+        # v = re.sub('pay', 'paid', v)
+        #
+        v = re.sub('(\d+),(\d+)', r'\1\2', v)
+        v = re.sub('(\d) to (\d)', r'\1\-\2', v)
+        v = re.sub('(0\d+)\-(\d+)', r'\1\\2', v)
 
         # time consuming but needed step
         if not self.FAST_EVAL:
@@ -935,7 +977,9 @@ class WOZDataset(Dataset):
                 if key in v:
                     v = v.replace(key, val)
 
-        # v = re.sub('.*?(direct subway|directly by subway|subway there|by subway directly).*', 'subway', v)
+        v = self.value_mapping.en2canonical.get(v, v)
+
+        # v = re.sub('(.*?)(direct subway|directly by subway|subway there|by subway directly)(.*)', r'\1 subway \2', v)
 
         if do_int:
             v = convert_to_int(v, word2number=True)
