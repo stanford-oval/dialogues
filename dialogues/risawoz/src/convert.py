@@ -26,16 +26,15 @@ parser.add_argument(
 )
 parser.add_argument("--src", type=str, help="en, zh, en_zh", default="zh")
 parser.add_argument("--tgt", type=str, help="en, fr", default="en")
-parser.add_argument("--setting", type=str, help="en, zh, en_zh")
+parser.add_argument("--setting", type=str, help="en, fr, zh, en_zh")
 parser.add_argument("--splits", nargs='+', default=['train', 'valid', 'test'])
 parser.add_argument("--debug", action="store_true", help="toggle debug mode")
 parser.add_argument("--no-build-db", action="store_true", dest="no_build_db",
                     help="If set, do not import the database into MongoDB. "
                          "Default is to import it.")
 args = parser.parse_args()
-build_db = True if args.no_build_db == False else False
-
-dataset = Risawoz(name='risawoz', src=args.src, tgt=args.tgt)
+print(f"build_db: {not args.no_build_db}", file=sys.stderr)
+dataset = None
 
 
 def read_json_files_in_folder(path):
@@ -198,25 +197,31 @@ DIALOGUES_WITH_ISSUE = {
 
 
 def build_kb_event(
-    wizard_query_event, db, actions, expected_num_results, setting, dial_id, turn_id, ground_truth_results=None
+    wizard_query_event, db, actions, expected_num_results, setting, dial_id, turn_id,
+    ground_truth_results=None
 ):
     event = {"Agent": "KnowledgeBase"}
     constraints = wizard_query_event["Constraints"]
     for d in constraints:
         constraints[d] = {k.replace(" ", "_"): v for k, v in constraints[d].items()}
     api_names = wizard_query_event["API"]
-    knowledge = call_api(db, api_names, constraints, lang=setting, value_mapping=dataset.value_mapping, actions=actions)
-    event["TotalItems"] = sum(item.get("available_options", 0) for api, item in knowledge.items())
+    knowledge = call_api(db, api_names, constraints, lang=setting,
+                         value_mapping=dataset.value_mapping, actions=actions)
+    event["TotalItems"] = sum(item.get("available_options", 0)
+                              for api, item in knowledge.items())
     for api, item in knowledge.items():
-        if item.get("available_options", 0) < expected_num_results and api_names != ['general']:
-            if (dial_id, turn_id) in DIALOGUES_WITH_ISSUE or (dial_id, '*') in DIALOGUES_WITH_ISSUE:
+        if (item.get("available_options", 0) < expected_num_results
+                and api_names != ['general']):
+            if ((dial_id, turn_id) in DIALOGUES_WITH_ISSUE
+                    or (dial_id, '*') in DIALOGUES_WITH_ISSUE):
                 continue
             print(f'API call likely failed for dial_id: {dial_id}, turn_id: {turn_id}')
             if ground_truth_results is not None:
                 constraints[api] = {
                     # case insensitive slot name matching for English
                     (k if setting == 'zh' else k.lower()): (
-                        v if setting == 'zh' else dataset.value_mapping.en2canonical.get(v, v)
+                        v if setting == 'zh'
+                        else dataset.value_mapping.en2canonical.get(v, v)
                     )
                     for k, v in constraints[api].items()
                 }
@@ -268,7 +273,7 @@ def build_kb_event(
     return event
 
 
-def build_dataset(original_data_path, db, setting, debug=False):
+def build_dataset(original_data_path, db, setting, debug=False, mongodb_host=None):
     with open(original_data_path) as fin:
         data = json.load(fin)
     processed_data = {}
@@ -340,7 +345,7 @@ if __name__ == "__main__":
                     if "MONGODB_HOST" in os.environ
                     else 'mongodb+srv://bitod:plGYPp44hASzGbmm@cluster0.vo7pq.mongodb.net/risawoz?retryWrites=true&w=majority&ssl=true&ssl_cert_reqs=CERT_NONE')
 
-    if build_db:
+    if not args.no_build_db:
         risawoz_db = build_db(
             db_json_path=os.path.join(*[args.root, f'database/db_{args.setting}']),
             api_map=None,
@@ -351,7 +356,8 @@ if __name__ == "__main__":
         db_client = pymongo.MongoClient(mongodb_host)
     else:
         db_client = pymongo.MongoClient()
-
+    dataset = Risawoz(name='risawoz', src=args.src, tgt=args.tgt,
+                      mongodb_host=mongodb_host)
     # download original RiSAWOZ dataset
     original_data_path = os.path.join(*[args.root, args.data_dir])
     for split in args.splits:
@@ -369,7 +375,9 @@ if __name__ == "__main__":
     for split in args.splits:
         print(f"processing {split} data...")
         processed_data = build_dataset(
-            os.path.join(original_data_path, f"{args.setting}_{split}.json"), risawoz_db, args.setting, debug=args.debug
+            os.path.join(original_data_path, f"{args.setting}_{split}.json"),
+            risawoz_db, args.setting, debug=args.debug,
+            mongodb_host=mongodb_host
         )
         # save converted files in JSON format
         with open(f"{processed_data_path}/{args.setting}_{split}.json", 'w') as f:
