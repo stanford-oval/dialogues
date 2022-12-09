@@ -694,7 +694,7 @@
     },
     {
         "departure": "Shanghaï",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "lundi prochain",
         "class_cabin": "classe économique",
         "flight_information": "FM9309 de la compagnie aérienne Shanghaï, du Terminal 2 de l'aéroport international de Hongqiao au Terminal 1 de l'aéroport international de Baiyun",
@@ -705,7 +705,7 @@
     },
     {
         "departure": "Shanghaï",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "lundi prochain",
         "class_cabin": "classe affaires",
         "flight_information": "FM9309 de la compagnie aérienne Shanghaï, du Terminal 2 de l'aéroport international de Hongqiao au Terminal 1 de l'aéroport international de Baiyun",
@@ -716,7 +716,7 @@
     },
     {
         "departure": "Shanghaï",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "mardi prochain",
         "class_cabin": "classe économique",
         "flight_information": "FM9309 de la compagnie aérienne Shanghaï, du Terminal 2 de l'aéroport international de Hongqiao au Terminal 1 de l'aéroport international de Baiyun",
@@ -727,7 +727,7 @@
     },
     {
         "departure": "Shanghaï",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "mardi prochain",
         "class_cabin": "classe affaires",
         "flight_information": "FM9309 de la compagnie aérienne Shanghaï, du Terminal 2 de l'aéroport international de Hongqiao au Terminal 1 de l'aéroport international de Baiyun",
@@ -738,7 +738,7 @@
     },
     {
         "departure": "Shanghaï",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "mercredi prochain",
         "class_cabin": "classe économique",
         "flight_information": "FM9309 de la compagnie aérienne Shanghaï, du Terminal 2 de l'aéroport international de Hongqiao au Terminal 1 de l'aéroport international de Baiyun",
@@ -749,7 +749,7 @@
     },
     {
         "departure": "Shanghaï",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "mercredi prochain",
         "class_cabin": "classe affaires",
         "flight_information": "FM9309 de la compagnie aérienne Shanghaï, du Terminal 2 de l'aéroport international de Hongqiao au Terminal 1 de l'aéroport international de Baiyun",
@@ -760,7 +760,7 @@
     },
     {
         "departure": "Shanghaï",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "jeudi prochain",
         "class_cabin": "classe économique",
         "flight_information": "FM9309 de la compagnie aérienne Shanghaï, du Terminal 2 de l'aéroport international de Hongqiao au Terminal 1 de l'aéroport international de Baiyun",
@@ -771,7 +771,7 @@
     },
     {
         "departure": "Shanghaï",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "jeudi prochain",
         "class_cabin": "classe affaires",
         "flight_information": "FM9309 de la compagnie aérienne Shanghaï, du Terminal 2 de l'aéroport international de Hongqiao au Terminal 1 de l'aéroport international de Baiyun",
@@ -782,7 +782,7 @@
     },
     {
         "departure": "Shanghaï",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "vendredi prochain",
         "class_cabin": "classe économique",
         "flight_information": "FM9309 de la compagnie aérienne Shanghaï, du Terminal 2 de l'aéroport international de Hongqiao au Terminal 1 de l'aéroport international de Baiyun",
@@ -793,7 +793,7 @@
     },
     {
         "departure": "Shanghaï",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "vendredi prochain",
         "class_cabin": "classe affaires",
         "flight_information": "FM9309 de la compagnie aérienne Shanghaï, du Terminal 2 de l'aéroport international de Hongqiao au Terminal 1 de l'aéroport international de Baiyun",
@@ -804,7 +804,7 @@
     },
     {
         "departure": "Shanghaï",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "samedi prochain",
         "class_cabin": "classe économique",
         "flight_information": "FM9309 de la compagnie aérienne Shanghaï, du Terminal 2 de l'aéroport international de Hongqiao au Terminal 1 de l'aéroport international de Baiyun",
@@ -815,7 +815,7 @@
     },
     {
         "departure": "Shanghaï",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "samedi prochain",
         "class_cabin": "classe affaires",
         "flight_information": "FM9309 de la compagnie aérienne Shanghaï, du Terminal 2 de l'aéroport international de Hongqiao au Terminal 1 de l'aéroport international de Baiyun",
@@ -826,7 +826,7 @@
     },
     {
         "departure": "Shanghaï",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "dimanche prochain",
         "class_cabin": "classe économique",
         "flight_information": "FM9309 de la compagnie aérienne Shanghaï, du Terminal 2 de l'aéroport international de Hongqiao au Terminal 1 de l'aéroport international de Baiyun",
@@ -837,7 +837,7 @@
     },
     {
         "departure": "Shanghaï",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "dimanche prochain",
         "class_cabin": "classe affaires",
         "flight_information": "FM9309 de la compagnie aérienne Shanghaï, du Terminal 2 de l'aéroport international de Hongqiao au Terminal 1 de l'aéroport international de Baiyun",
@@ -847,7 +847,7 @@
         "punctuality_rate": "96,61 %"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Shanghaï",
         "date": "lundi prochain",
         "class_cabin": "classe économique",
@@ -858,7 +858,7 @@
         "punctuality_rate": "100 %"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Shanghaï",
         "date": "lundi prochain",
         "class_cabin": "classe affaires",
@@ -869,7 +869,7 @@
         "punctuality_rate": "100 %"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Shanghaï",
         "date": "mardi prochain",
         "class_cabin": "classe économique",
@@ -880,7 +880,7 @@
         "punctuality_rate": "100 %"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Shanghaï",
         "date": "mardi prochain",
         "class_cabin": "classe affaires",
@@ -891,7 +891,7 @@
         "punctuality_rate": "100 %"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Shanghaï",
         "date": "mercredi prochain",
         "class_cabin": "classe économique",
@@ -902,7 +902,7 @@
         "punctuality_rate": "100 %"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Shanghaï",
         "date": "mercredi prochain",
         "class_cabin": "classe affaires",
@@ -913,7 +913,7 @@
         "punctuality_rate": "100 %"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Shanghaï",
         "date": "jeudi prochain",
         "class_cabin": "classe économique",
@@ -924,7 +924,7 @@
         "punctuality_rate": "100 %"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Shanghaï",
         "date": "jeudi prochain",
         "class_cabin": "classe affaires",
@@ -935,7 +935,7 @@
         "punctuality_rate": "100 %"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Shanghaï",
         "date": "vendredi prochain",
         "class_cabin": "classe économique",
@@ -946,7 +946,7 @@
         "punctuality_rate": "100 %"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Shanghaï",
         "date": "vendredi prochain",
         "class_cabin": "classe affaires",
@@ -957,7 +957,7 @@
         "punctuality_rate": "100 %"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Shanghaï",
         "date": "samedi prochain",
         "class_cabin": "classe économique",
@@ -968,7 +968,7 @@
         "punctuality_rate": "100 %"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Shanghaï",
         "date": "samedi prochain",
         "class_cabin": "classe affaires",
@@ -979,7 +979,7 @@
         "punctuality_rate": "100 %"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Shanghaï",
         "date": "dimanche prochain",
         "class_cabin": "classe économique",
@@ -990,7 +990,7 @@
         "punctuality_rate": "100 %"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Shanghaï",
         "date": "dimanche prochain",
         "class_cabin": "classe affaires",
@@ -2234,7 +2234,7 @@
     },
     {
         "departure": "Nankin",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "lundi prochain",
         "class_cabin": "classe économique",
         "flight_information": "ZH9864 de la compagnie aérienne Shenzhen, du Terminal 2 de l'aéroport international de Lukou au Terminal 1 de l'aéroport international de Baiyun",
@@ -2245,7 +2245,7 @@
     },
     {
         "departure": "Nankin",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "lundi prochain",
         "class_cabin": "classe affaires",
         "flight_information": "ZH9864 de la compagnie aérienne Shenzhen, du Terminal 2 de l'aéroport international de Lukou au Terminal 1 de l'aéroport international de Baiyun",
@@ -2256,7 +2256,7 @@
     },
     {
         "departure": "Nankin",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "mardi prochain",
         "class_cabin": "classe économique",
         "flight_information": "ZH9864 de la compagnie aérienne Shenzhen, du Terminal 2 de l'aéroport international de Lukou au Terminal 1 de l'aéroport international de Baiyun",
@@ -2267,7 +2267,7 @@
     },
     {
         "departure": "Nankin",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "mardi prochain",
         "class_cabin": "classe affaires",
         "flight_information": "ZH9864 de la compagnie aérienne Shenzhen, du Terminal 2 de l'aéroport international de Lukou au Terminal 1 de l'aéroport international de Baiyun",
@@ -2278,7 +2278,7 @@
     },
     {
         "departure": "Nankin",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "mercredi prochain",
         "class_cabin": "classe économique",
         "flight_information": "ZH9864 de la compagnie aérienne Shenzhen, du Terminal 2 de l'aéroport international de Lukou au Terminal 1 de l'aéroport international de Baiyun",
@@ -2289,7 +2289,7 @@
     },
     {
         "departure": "Nankin",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "mercredi prochain",
         "class_cabin": "classe affaires",
         "flight_information": "ZH9864 de la compagnie aérienne Shenzhen, du Terminal 2 de l'aéroport international de Lukou au Terminal 1 de l'aéroport international de Baiyun",
@@ -2300,7 +2300,7 @@
     },
     {
         "departure": "Nankin",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "jeudi prochain",
         "class_cabin": "classe économique",
         "flight_information": "ZH9864 de la compagnie aérienne Shenzhen, du Terminal 2 de l'aéroport international de Lukou au Terminal 1 de l'aéroport international de Baiyun",
@@ -2311,7 +2311,7 @@
     },
     {
         "departure": "Nankin",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "jeudi prochain",
         "class_cabin": "classe affaires",
         "flight_information": "ZH9864 de la compagnie aérienne Shenzhen, du Terminal 2 de l'aéroport international de Lukou au Terminal 1 de l'aéroport international de Baiyun",
@@ -2322,7 +2322,7 @@
     },
     {
         "departure": "Nankin",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "vendredi prochain",
         "class_cabin": "classe économique",
         "flight_information": "ZH9864 de la compagnie aérienne Shenzhen, du Terminal 2 de l'aéroport international de Lukou au Terminal 1 de l'aéroport international de Baiyun",
@@ -2333,7 +2333,7 @@
     },
     {
         "departure": "Nankin",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "vendredi prochain",
         "class_cabin": "classe affaires",
         "flight_information": "ZH9864 de la compagnie aérienne Shenzhen, du Terminal 2 de l'aéroport international de Lukou au Terminal 1 de l'aéroport international de Baiyun",
@@ -2344,7 +2344,7 @@
     },
     {
         "departure": "Nankin",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "samedi prochain",
         "class_cabin": "classe économique",
         "flight_information": "ZH9864 de la compagnie aérienne Shenzhen, du Terminal 2 de l'aéroport international de Lukou au Terminal 1 de l'aéroport international de Baiyun",
@@ -2355,7 +2355,7 @@
     },
     {
         "departure": "Nankin",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "samedi prochain",
         "class_cabin": "classe affaires",
         "flight_information": "ZH9864 de la compagnie aérienne Shenzhen, du Terminal 2 de l'aéroport international de Lukou au Terminal 1 de l'aéroport international de Baiyun",
@@ -2366,7 +2366,7 @@
     },
     {
         "departure": "Nankin",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "dimanche prochain",
         "class_cabin": "classe économique",
         "flight_information": "ZH9864 de la compagnie aérienne Shenzhen, du Terminal 2 de l'aéroport international de Lukou au Terminal 1 de l'aéroport international de Baiyun",
@@ -2377,7 +2377,7 @@
     },
     {
         "departure": "Nankin",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "dimanche prochain",
         "class_cabin": "classe affaires",
         "flight_information": "ZH9864 de la compagnie aérienne Shenzhen, du Terminal 2 de l'aéroport international de Lukou au Terminal 1 de l'aéroport international de Baiyun",
@@ -2387,7 +2387,7 @@
         "punctuality_rate": "100 %"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Nankin",
         "date": "lundi prochain",
         "class_cabin": "classe économique",
@@ -2398,7 +2398,7 @@
         "punctuality_rate": "100 %"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Nankin",
         "date": "lundi prochain",
         "class_cabin": "classe affaires",
@@ -2409,7 +2409,7 @@
         "punctuality_rate": "100 %"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Nankin",
         "date": "mardi prochain",
         "class_cabin": "classe économique",
@@ -2420,7 +2420,7 @@
         "punctuality_rate": "100 %"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Nankin",
         "date": "mardi prochain",
         "class_cabin": "classe affaires",
@@ -2431,7 +2431,7 @@
         "punctuality_rate": "100 %"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Nankin",
         "date": "mercredi prochain",
         "class_cabin": "classe économique",
@@ -2442,7 +2442,7 @@
         "punctuality_rate": "100 %"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Nankin",
         "date": "mercredi prochain",
         "class_cabin": "classe affaires",
@@ -2453,7 +2453,7 @@
         "punctuality_rate": "100 %"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Nankin",
         "date": "jeudi prochain",
         "class_cabin": "classe économique",
@@ -2464,7 +2464,7 @@
         "punctuality_rate": "100 %"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Nankin",
         "date": "jeudi prochain",
         "class_cabin": "classe affaires",
@@ -2475,7 +2475,7 @@
         "punctuality_rate": "100 %"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Nankin",
         "date": "vendredi prochain",
         "class_cabin": "classe économique",
@@ -2486,7 +2486,7 @@
         "punctuality_rate": "100 %"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Nankin",
         "date": "vendredi prochain",
         "class_cabin": "classe affaires",
@@ -2497,7 +2497,7 @@
         "punctuality_rate": "100 %"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Nankin",
         "date": "samedi prochain",
         "class_cabin": "classe économique",
@@ -2508,7 +2508,7 @@
         "punctuality_rate": "100 %"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Nankin",
         "date": "samedi prochain",
         "class_cabin": "classe affaires",
@@ -2519,7 +2519,7 @@
         "punctuality_rate": "100 %"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Nankin",
         "date": "dimanche prochain",
         "class_cabin": "classe économique",
@@ -2530,7 +2530,7 @@
         "punctuality_rate": "100 %"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Nankin",
         "date": "dimanche prochain",
         "class_cabin": "classe affaires",
@@ -3466,7 +3466,7 @@
     },
     {
         "departure": "Pékin",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "lundi prochain",
         "class_cabin": "classe économique",
         "flight_information": "le vol MU5132 de China Eastern Airlines, du T2 de l'aéroport international de Pékin au T1 de l'aéroport international de Baiyun",
@@ -3477,7 +3477,7 @@
     },
     {
         "departure": "Pékin",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "lundi prochain",
         "class_cabin": "classe affaires",
         "flight_information": "le vol MU5132 de China Eastern Airlines, du T2 de l'aéroport international de Pékin au T1 de l'aéroport international de Baiyun",
@@ -3488,7 +3488,7 @@
     },
     {
         "departure": "Pékin",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "mardi prochain",
         "class_cabin": "classe économique",
         "flight_information": "le vol MU5132 de China Eastern Airlines, du T2 de l'aéroport international de Pékin au T1 de l'aéroport international de Baiyun",
@@ -3499,7 +3499,7 @@
     },
     {
         "departure": "Pékin",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "mardi prochain",
         "class_cabin": "classe affaires",
         "flight_information": "le vol MU5132 de China Eastern Airlines, du T2 de l'aéroport international de Pékin au T1 de l'aéroport international de Baiyun",
@@ -3510,7 +3510,7 @@
     },
     {
         "departure": "Pékin",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "mercredi prochain",
         "class_cabin": "classe économique",
         "flight_information": "le vol MU5132 de China Eastern Airlines, du T2 de l'aéroport international de Pékin au T1 de l'aéroport international de Baiyun",
@@ -3521,7 +3521,7 @@
     },
     {
         "departure": "Pékin",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "mercredi prochain",
         "class_cabin": "classe affaires",
         "flight_information": "le vol MU5132 de China Eastern Airlines, du T2 de l'aéroport international de Pékin au T1 de l'aéroport international de Baiyun",
@@ -3532,7 +3532,7 @@
     },
     {
         "departure": "Pékin",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "jeudi prochain",
         "class_cabin": "classe économique",
         "flight_information": "le vol MU5132 de China Eastern Airlines, du T2 de l'aéroport international de Pékin au T1 de l'aéroport international de Baiyun",
@@ -3543,7 +3543,7 @@
     },
     {
         "departure": "Pékin",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "jeudi prochain",
         "class_cabin": "classe affaires",
         "flight_information": "le vol MU5132 de China Eastern Airlines, du T2 de l'aéroport international de Pékin au T1 de l'aéroport international de Baiyun",
@@ -3554,7 +3554,7 @@
     },
     {
         "departure": "Pékin",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "vendredi prochain",
         "class_cabin": "classe économique",
         "flight_information": "le vol MU5132 de China Eastern Airlines, du T2 de l'aéroport international de Pékin au T1 de l'aéroport international de Baiyun",
@@ -3565,7 +3565,7 @@
     },
     {
         "departure": "Pékin",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "vendredi prochain",
         "class_cabin": "classe affaires",
         "flight_information": "le vol MU5132 de China Eastern Airlines, du T2 de l'aéroport international de Pékin au T1 de l'aéroport international de Baiyun",
@@ -3576,7 +3576,7 @@
     },
     {
         "departure": "Pékin",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "samedi prochain",
         "class_cabin": "classe économique",
         "flight_information": "le vol MU5132 de China Eastern Airlines, du T2 de l'aéroport international de Pékin au T1 de l'aéroport international de Baiyun",
@@ -3587,7 +3587,7 @@
     },
     {
         "departure": "Pékin",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "samedi prochain",
         "class_cabin": "classe affaires",
         "flight_information": "le vol MU5132 de China Eastern Airlines, du T2 de l'aéroport international de Pékin au T1 de l'aéroport international de Baiyun",
@@ -3598,7 +3598,7 @@
     },
     {
         "departure": "Pékin",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "dimanche prochain",
         "class_cabin": "classe économique",
         "flight_information": "le vol MU5132 de China Eastern Airlines, du T2 de l'aéroport international de Pékin au T1 de l'aéroport international de Baiyun",
@@ -3609,7 +3609,7 @@
     },
     {
         "departure": "Pékin",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "dimanche prochain",
         "class_cabin": "classe affaires",
         "flight_information": "le vol MU5132 de China Eastern Airlines, du T2 de l'aéroport international de Pékin au T1 de l'aéroport international de Baiyun",
@@ -3619,7 +3619,7 @@
         "punctuality_rate": "98,26 %"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Pékin",
         "date": "lundi prochain",
         "class_cabin": "classe économique",
@@ -3630,7 +3630,7 @@
         "punctuality_rate": "100 %"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Pékin",
         "date": "lundi prochain",
         "class_cabin": "classe affaires",
@@ -3641,7 +3641,7 @@
         "punctuality_rate": "100 %"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Pékin",
         "date": "mardi prochain",
         "class_cabin": "classe économique",
@@ -3652,7 +3652,7 @@
         "punctuality_rate": "100 %"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Pékin",
         "date": "mardi prochain",
         "class_cabin": "classe affaires",
@@ -3663,7 +3663,7 @@
         "punctuality_rate": "100 %"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Pékin",
         "date": "mercredi prochain",
         "class_cabin": "classe économique",
@@ -3674,7 +3674,7 @@
         "punctuality_rate": "100 %"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Pékin",
         "date": "mercredi prochain",
         "class_cabin": "classe affaires",
@@ -3685,7 +3685,7 @@
         "punctuality_rate": "100 %"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Pékin",
         "date": "jeudi prochain",
         "class_cabin": "classe économique",
@@ -3696,7 +3696,7 @@
         "punctuality_rate": "100 %"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Pékin",
         "date": "jeudi prochain",
         "class_cabin": "classe affaires",
@@ -3707,7 +3707,7 @@
         "punctuality_rate": "100 %"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Pékin",
         "date": "vendredi prochain",
         "class_cabin": "classe économique",
@@ -3718,7 +3718,7 @@
         "punctuality_rate": "100 %"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Pékin",
         "date": "vendredi prochain",
         "class_cabin": "classe affaires",
@@ -3729,7 +3729,7 @@
         "punctuality_rate": "100 %"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Pékin",
         "date": "samedi prochain",
         "class_cabin": "classe économique",
@@ -3740,7 +3740,7 @@
         "punctuality_rate": "100 %"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Pékin",
         "date": "samedi prochain",
         "class_cabin": "classe affaires",
@@ -3751,7 +3751,7 @@
         "punctuality_rate": "100 %"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Pékin",
         "date": "dimanche prochain",
         "class_cabin": "classe économique",
@@ -3762,7 +3762,7 @@
         "punctuality_rate": "100 %"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Pékin",
         "date": "dimanche prochain",
         "class_cabin": "classe affaires",
@@ -5159,7 +5159,7 @@
         "punctuality_rate": "100 %"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Chengdu",
         "date": "lundi prochain",
         "class_cabin": "classe économique",
@@ -5170,7 +5170,7 @@
         "punctuality_rate": "98,32 %"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Chengdu",
         "date": "lundi prochain",
         "class_cabin": "classe affaires",
@@ -5181,7 +5181,7 @@
         "punctuality_rate": "98,32 %"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Chengdu",
         "date": "mardi prochain",
         "class_cabin": "classe économique",
@@ -5192,7 +5192,7 @@
         "punctuality_rate": "98,32 %"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Chengdu",
         "date": "mardi prochain",
         "class_cabin": "classe affaires",
@@ -5203,7 +5203,7 @@
         "punctuality_rate": "98,32 %"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Chengdu",
         "date": "mercredi prochain",
         "class_cabin": "classe économique",
@@ -5214,7 +5214,7 @@
         "punctuality_rate": "98,32 %"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Chengdu",
         "date": "mercredi prochain",
         "class_cabin": "classe affaires",
@@ -5225,7 +5225,7 @@
         "punctuality_rate": "98,32 %"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Chengdu",
         "date": "jeudi prochain",
         "class_cabin": "classe économique",
@@ -5236,7 +5236,7 @@
         "punctuality_rate": "98,32 %"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Chengdu",
         "date": "jeudi prochain",
         "class_cabin": "classe affaires",
@@ -5247,7 +5247,7 @@
         "punctuality_rate": "98,32 %"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Chengdu",
         "date": "vendredi prochain",
         "class_cabin": "classe économique",
@@ -5258,7 +5258,7 @@
         "punctuality_rate": "98,32 %"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Chengdu",
         "date": "vendredi prochain",
         "class_cabin": "classe affaires",
@@ -5269,7 +5269,7 @@
         "punctuality_rate": "98,32 %"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Chengdu",
         "date": "samedi prochain",
         "class_cabin": "classe économique",
@@ -5280,7 +5280,7 @@
         "punctuality_rate": "98,32 %"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Chengdu",
         "date": "samedi prochain",
         "class_cabin": "classe affaires",
@@ -5291,7 +5291,7 @@
         "punctuality_rate": "98,32 %"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Chengdu",
         "date": "dimanche prochain",
         "class_cabin": "classe économique",
@@ -5302,7 +5302,7 @@
         "punctuality_rate": "98,32 %"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Chengdu",
         "date": "dimanche prochain",
         "class_cabin": "classe affaires",
@@ -5314,7 +5314,7 @@
     },
     {
         "departure": "Chengdu",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "lundi prochain",
         "class_cabin": "classe économique",
         "flight_information": "CA4303 d'Air China du terminal 2 de l'aéroport international de Shuangliu au terminal 1 de l'aéroport international de Baiyun",
@@ -5325,7 +5325,7 @@
     },
     {
         "departure": "Chengdu",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "lundi prochain",
         "class_cabin": "classe affaires",
         "flight_information": "CA4303 d'Air China du terminal 2 de l'aéroport international de Shuangliu au terminal 1 de l'aéroport international de Baiyun",
@@ -5336,7 +5336,7 @@
     },
     {
         "departure": "Chengdu",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "mardi prochain",
         "class_cabin": "classe économique",
         "flight_information": "CA4303 d'Air China du terminal 2 de l'aéroport international de Shuangliu au terminal 1 de l'aéroport international de Baiyun",
@@ -5347,7 +5347,7 @@
     },
     {
         "departure": "Chengdu",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "mardi prochain",
         "class_cabin": "classe affaires",
         "flight_information": "CA4303 d'Air China du terminal 2 de l'aéroport international de Shuangliu au terminal 1 de l'aéroport international de Baiyun",
@@ -5358,7 +5358,7 @@
     },
     {
         "departure": "Chengdu",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "mercredi prochain",
         "class_cabin": "classe économique",
         "flight_information": "CA4303 d'Air China du terminal 2 de l'aéroport international de Shuangliu au terminal 1 de l'aéroport international de Baiyun",
@@ -5369,7 +5369,7 @@
     },
     {
         "departure": "Chengdu",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "mercredi prochain",
         "class_cabin": "classe affaires",
         "flight_information": "CA4303 d'Air China du terminal 2 de l'aéroport international de Shuangliu au terminal 1 de l'aéroport international de Baiyun",
@@ -5380,7 +5380,7 @@
     },
     {
         "departure": "Chengdu",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "jeudi prochain",
         "class_cabin": "classe économique",
         "flight_information": "CA4303 d'Air China du terminal 2 de l'aéroport international de Shuangliu au terminal 1 de l'aéroport international de Baiyun",
@@ -5391,7 +5391,7 @@
     },
     {
         "departure": "Chengdu",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "jeudi prochain",
         "class_cabin": "classe affaires",
         "flight_information": "CA4303 d'Air China du terminal 2 de l'aéroport international de Shuangliu au terminal 1 de l'aéroport international de Baiyun",
@@ -5402,7 +5402,7 @@
     },
     {
         "departure": "Chengdu",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "vendredi prochain",
         "class_cabin": "classe économique",
         "flight_information": "CA4303 d'Air China du terminal 2 de l'aéroport international de Shuangliu au terminal 1 de l'aéroport international de Baiyun",
@@ -5413,7 +5413,7 @@
     },
     {
         "departure": "Chengdu",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "vendredi prochain",
         "class_cabin": "classe affaires",
         "flight_information": "CA4303 d'Air China du terminal 2 de l'aéroport international de Shuangliu au terminal 1 de l'aéroport international de Baiyun",
@@ -5424,7 +5424,7 @@
     },
     {
         "departure": "Chengdu",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "samedi prochain",
         "class_cabin": "classe économique",
         "flight_information": "CA4303 d'Air China du terminal 2 de l'aéroport international de Shuangliu au terminal 1 de l'aéroport international de Baiyun",
@@ -5435,7 +5435,7 @@
     },
     {
         "departure": "Chengdu",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "samedi prochain",
         "class_cabin": "classe affaires",
         "flight_information": "CA4303 d'Air China du terminal 2 de l'aéroport international de Shuangliu au terminal 1 de l'aéroport international de Baiyun",
@@ -5446,7 +5446,7 @@
     },
     {
         "departure": "Chengdu",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "dimanche prochain",
         "class_cabin": "classe économique",
         "flight_information": "CA4303 d'Air China du terminal 2 de l'aéroport international de Shuangliu au terminal 1 de l'aéroport international de Baiyun",
@@ -5457,7 +5457,7 @@
     },
     {
         "departure": "Chengdu",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "dimanche prochain",
         "class_cabin": "classe affaires",
         "flight_information": "CA4303 d'Air China du terminal 2 de l'aéroport international de Shuangliu au terminal 1 de l'aéroport international de Baiyun",
@@ -5467,7 +5467,7 @@
         "punctuality_rate": "100 %"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Hangzhou",
         "date": "lundi prochain",
         "class_cabin": "classe économique",
@@ -5478,7 +5478,7 @@
         "punctuality_rate": "100 %"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Hangzhou",
         "date": "lundi prochain",
         "class_cabin": "classe affaires",
@@ -5489,7 +5489,7 @@
         "punctuality_rate": "100 %"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Hangzhou",
         "date": "mardi prochain",
         "class_cabin": "classe économique",
@@ -5500,7 +5500,7 @@
         "punctuality_rate": "100 %"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Hangzhou",
         "date": "mardi prochain",
         "class_cabin": "classe affaires",
@@ -5511,7 +5511,7 @@
         "punctuality_rate": "100 %"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Hangzhou",
         "date": "mercredi prochain",
         "class_cabin": "classe économique",
@@ -5522,7 +5522,7 @@
         "punctuality_rate": "100 %"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Hangzhou",
         "date": "mercredi prochain",
         "class_cabin": "classe affaires",
@@ -5533,7 +5533,7 @@
         "punctuality_rate": "100 %"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Hangzhou",
         "date": "jeudi prochain",
         "class_cabin": "classe économique",
@@ -5544,7 +5544,7 @@
         "punctuality_rate": "100 %"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Hangzhou",
         "date": "jeudi prochain",
         "class_cabin": "classe affaires",
@@ -5555,7 +5555,7 @@
         "punctuality_rate": "100 %"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Hangzhou",
         "date": "vendredi prochain",
         "class_cabin": "classe économique",
@@ -5566,7 +5566,7 @@
         "punctuality_rate": "100 %"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Hangzhou",
         "date": "vendredi prochain",
         "class_cabin": "classe affaires",
@@ -5577,7 +5577,7 @@
         "punctuality_rate": "100 %"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Hangzhou",
         "date": "samedi prochain",
         "class_cabin": "classe économique",
@@ -5588,7 +5588,7 @@
         "punctuality_rate": "100 %"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Hangzhou",
         "date": "samedi prochain",
         "class_cabin": "classe affaires",
@@ -5599,7 +5599,7 @@
         "punctuality_rate": "100 %"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Hangzhou",
         "date": "dimanche prochain",
         "class_cabin": "classe économique",
@@ -5610,7 +5610,7 @@
         "punctuality_rate": "100 %"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Hangzhou",
         "date": "dimanche prochain",
         "class_cabin": "classe affaires",
@@ -5622,7 +5622,7 @@
     },
     {
         "departure": "Hangzhou",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "lundi prochain",
         "class_cabin": "classe économique",
         "flight_information": "CA1729 d'Air China, du terminal 1 de l'aéroport international de Xiaoshan au terminal 1 de l'aéroport international de Baiyun",
@@ -5633,7 +5633,7 @@
     },
     {
         "departure": "Hangzhou",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "lundi prochain",
         "class_cabin": "classe affaires",
         "flight_information": "CA1729 d'Air China, du terminal 1 de l'aéroport international de Xiaoshan au terminal 1 de l'aéroport international de Baiyun",
@@ -5644,7 +5644,7 @@
     },
     {
         "departure": "Hangzhou",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "mardi prochain",
         "class_cabin": "classe économique",
         "flight_information": "CA1729 d'Air China, du terminal 1 de l'aéroport international de Xiaoshan au terminal 1 de l'aéroport international de Baiyun",
@@ -5655,7 +5655,7 @@
     },
     {
         "departure": "Hangzhou",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "mardi prochain",
         "class_cabin": "classe affaires",
         "flight_information": "CA1729 d'Air China, du terminal 1 de l'aéroport international de Xiaoshan au terminal 1 de l'aéroport international de Baiyun",
@@ -5666,7 +5666,7 @@
     },
     {
         "departure": "Hangzhou",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "mercredi prochain",
         "class_cabin": "classe économique",
         "flight_information": "CA1729 d'Air China, du terminal 1 de l'aéroport international de Xiaoshan au terminal 1 de l'aéroport international de Baiyun",
@@ -5677,7 +5677,7 @@
     },
     {
         "departure": "Hangzhou",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "mercredi prochain",
         "class_cabin": "classe affaires",
         "flight_information": "CA1729 d'Air China, du terminal 1 de l'aéroport international de Xiaoshan au terminal 1 de l'aéroport international de Baiyun",
@@ -5688,7 +5688,7 @@
     },
     {
         "departure": "Hangzhou",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "jeudi prochain",
         "class_cabin": "classe économique",
         "flight_information": "CA1729 d'Air China, du terminal 1 de l'aéroport international de Xiaoshan au terminal 1 de l'aéroport international de Baiyun",
@@ -5699,7 +5699,7 @@
     },
     {
         "departure": "Hangzhou",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "jeudi prochain",
         "class_cabin": "classe affaires",
         "flight_information": "CA1729 d'Air China, du terminal 1 de l'aéroport international de Xiaoshan au terminal 1 de l'aéroport international de Baiyun",
@@ -5710,7 +5710,7 @@
     },
     {
         "departure": "Hangzhou",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "vendredi prochain",
         "class_cabin": "classe économique",
         "flight_information": "CA1729 d'Air China, du terminal 1 de l'aéroport international de Xiaoshan au terminal 1 de l'aéroport international de Baiyun",
@@ -5721,7 +5721,7 @@
     },
     {
         "departure": "Hangzhou",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "vendredi prochain",
         "class_cabin": "classe affaires",
         "flight_information": "CA1729 d'Air China, du terminal 1 de l'aéroport international de Xiaoshan au terminal 1 de l'aéroport international de Baiyun",
@@ -5732,7 +5732,7 @@
     },
     {
         "departure": "Hangzhou",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "samedi prochain",
         "class_cabin": "classe économique",
         "flight_information": "CA1729 d'Air China, du terminal 1 de l'aéroport international de Xiaoshan au terminal 1 de l'aéroport international de Baiyun",
@@ -5743,7 +5743,7 @@
     },
     {
         "departure": "Hangzhou",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "samedi prochain",
         "class_cabin": "classe affaires",
         "flight_information": "CA1729 d'Air China, du terminal 1 de l'aéroport international de Xiaoshan au terminal 1 de l'aéroport international de Baiyun",
@@ -5754,7 +5754,7 @@
     },
     {
         "departure": "Hangzhou",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "dimanche prochain",
         "class_cabin": "classe économique",
         "flight_information": "CA1729 d'Air China, du terminal 1 de l'aéroport international de Xiaoshan au terminal 1 de l'aéroport international de Baiyun",
@@ -5765,7 +5765,7 @@
     },
     {
         "departure": "Hangzhou",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "dimanche prochain",
         "class_cabin": "classe affaires",
         "flight_information": "CA1729 d'Air China, du terminal 1 de l'aéroport international de Xiaoshan au terminal 1 de l'aéroport international de Baiyun",
@@ -5775,154 +5775,154 @@
         "punctuality_rate": "100 %"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Xiamen",
         "date": "lundi prochain",
         "class_cabin": "classe économique",
-        "flight_information": "vol CZ3741 de la companie aérienne China Southern, du Terminal 2 de l'aéroport international de Baiyun au Terminal 3 de l'aéroport international de Gaoqi",
+        "flight_information": "vol CZ3741 de la compagnie aérienne China Southern, du Terminal 2 de l'aéroport international de Baiyun au Terminal 3 de l'aéroport international de Gaoqi",
         "departure_time": "12 h 10 ce jour-là",
         "arrival_time": "13 h 30 ce jour-là",
         "ticket_price": "960 yuans",
         "punctuality_rate": "98,32 %"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Xiamen",
         "date": "lundi prochain",
         "class_cabin": "classe affaires",
-        "flight_information": "vol CZ3741 de la companie aérienne China Southern, du Terminal 2 de l'aéroport international de Baiyun au Terminal 3 de l'aéroport international de Gaoqi",
+        "flight_information": "vol CZ3741 de la compagnie aérienne China Southern, du Terminal 2 de l'aéroport international de Baiyun au Terminal 3 de l'aéroport international de Gaoqi",
         "departure_time": "12 h 10 ce jour-là",
         "arrival_time": "13 h 30 ce jour-là",
         "ticket_price": "2590 yuans",
         "punctuality_rate": "98,32 %"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Xiamen",
         "date": "mardi prochain",
         "class_cabin": "classe économique",
-        "flight_information": "vol CZ3741 de la companie aérienne China Southern, du Terminal 2 de l'aéroport international de Baiyun au Terminal 3 de l'aéroport international de Gaoqi",
+        "flight_information": "vol CZ3741 de la compagnie aérienne China Southern, du Terminal 2 de l'aéroport international de Baiyun au Terminal 3 de l'aéroport international de Gaoqi",
         "departure_time": "12 h 10 ce jour-là",
         "arrival_time": "13 h 30 ce jour-là",
         "ticket_price": "960 yuans",
         "punctuality_rate": "98,32 %"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Xiamen",
         "date": "mardi prochain",
         "class_cabin": "classe affaires",
-        "flight_information": "vol CZ3741 de la companie aérienne China Southern, du Terminal 2 de l'aéroport international de Baiyun au Terminal 3 de l'aéroport international de Gaoqi",
+        "flight_information": "vol CZ3741 de la compagnie aérienne China Southern, du Terminal 2 de l'aéroport international de Baiyun au Terminal 3 de l'aéroport international de Gaoqi",
         "departure_time": "12 h 10 ce jour-là",
         "arrival_time": "13 h 30 ce jour-là",
         "ticket_price": "2590 yuans",
         "punctuality_rate": "98,32 %"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Xiamen",
         "date": "mercredi prochain",
         "class_cabin": "classe économique",
-        "flight_information": "vol CZ3741 de la companie aérienne China Southern, du Terminal 2 de l'aéroport international de Baiyun au Terminal 3 de l'aéroport international de Gaoqi",
+        "flight_information": "vol CZ3741 de la compagnie aérienne China Southern, du Terminal 2 de l'aéroport international de Baiyun au Terminal 3 de l'aéroport international de Gaoqi",
         "departure_time": "12 h 10 ce jour-là",
         "arrival_time": "13 h 30 ce jour-là",
         "ticket_price": "960 yuans",
         "punctuality_rate": "98,32 %"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Xiamen",
         "date": "mercredi prochain",
         "class_cabin": "classe affaires",
-        "flight_information": "vol CZ3741 de la companie aérienne China Southern, du Terminal 2 de l'aéroport international de Baiyun au Terminal 3 de l'aéroport international de Gaoqi",
+        "flight_information": "vol CZ3741 de la compagnie aérienne China Southern, du Terminal 2 de l'aéroport international de Baiyun au Terminal 3 de l'aéroport international de Gaoqi",
         "departure_time": "12 h 10 ce jour-là",
         "arrival_time": "13 h 30 ce jour-là",
         "ticket_price": "2590 yuans",
         "punctuality_rate": "98,32 %"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Xiamen",
         "date": "jeudi prochain",
         "class_cabin": "classe économique",
-        "flight_information": "vol CZ3741 de la companie aérienne China Southern, du Terminal 2 de l'aéroport international de Baiyun au Terminal 3 de l'aéroport international de Gaoqi",
+        "flight_information": "vol CZ3741 de la compagnie aérienne China Southern, du Terminal 2 de l'aéroport international de Baiyun au Terminal 3 de l'aéroport international de Gaoqi",
         "departure_time": "12 h 10 ce jour-là",
         "arrival_time": "13 h 30 ce jour-là",
         "ticket_price": "960 yuans",
         "punctuality_rate": "98,32 %"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Xiamen",
         "date": "jeudi prochain",
         "class_cabin": "classe affaires",
-        "flight_information": "vol CZ3741 de la companie aérienne China Southern, du Terminal 2 de l'aéroport international de Baiyun au Terminal 3 de l'aéroport international de Gaoqi",
+        "flight_information": "vol CZ3741 de la compagnie aérienne China Southern, du Terminal 2 de l'aéroport international de Baiyun au Terminal 3 de l'aéroport international de Gaoqi",
         "departure_time": "12 h 10 ce jour-là",
         "arrival_time": "13 h 30 ce jour-là",
         "ticket_price": "2590 yuans",
         "punctuality_rate": "98,32 %"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Xiamen",
         "date": "vendredi prochain",
         "class_cabin": "classe économique",
-        "flight_information": "vol CZ3741 de la companie aérienne China Southern, du Terminal 2 de l'aéroport international de Baiyun au Terminal 3 de l'aéroport international de Gaoqi",
+        "flight_information": "vol CZ3741 de la compagnie aérienne China Southern, du Terminal 2 de l'aéroport international de Baiyun au Terminal 3 de l'aéroport international de Gaoqi",
         "departure_time": "12 h 10 ce jour-là",
         "arrival_time": "13 h 30 ce jour-là",
         "ticket_price": "960 yuans",
         "punctuality_rate": "98,32 %"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Xiamen",
         "date": "vendredi prochain",
         "class_cabin": "classe affaires",
-        "flight_information": "vol CZ3741 de la companie aérienne China Southern, du Terminal 2 de l'aéroport international de Baiyun au Terminal 3 de l'aéroport international de Gaoqi",
+        "flight_information": "vol CZ3741 de la compagnie aérienne China Southern, du Terminal 2 de l'aéroport international de Baiyun au Terminal 3 de l'aéroport international de Gaoqi",
         "departure_time": "12 h 10 ce jour-là",
         "arrival_time": "13 h 30 ce jour-là",
         "ticket_price": "2590 yuans",
         "punctuality_rate": "98,32 %"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Xiamen",
         "date": "samedi prochain",
         "class_cabin": "classe économique",
-        "flight_information": "vol CZ3741 de la companie aérienne China Southern, du Terminal 2 de l'aéroport international de Baiyun au Terminal 3 de l'aéroport international de Gaoqi",
+        "flight_information": "vol CZ3741 de la compagnie aérienne China Southern, du Terminal 2 de l'aéroport international de Baiyun au Terminal 3 de l'aéroport international de Gaoqi",
         "departure_time": "12 h 10 ce jour-là",
         "arrival_time": "13 h 30 ce jour-là",
         "ticket_price": "960 yuans",
         "punctuality_rate": "98,32 %"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Xiamen",
         "date": "samedi prochain",
         "class_cabin": "classe affaires",
-        "flight_information": "vol CZ3741 de la companie aérienne China Southern, du Terminal 2 de l'aéroport international de Baiyun au Terminal 3 de l'aéroport international de Gaoqi",
+        "flight_information": "vol CZ3741 de la compagnie aérienne China Southern, du Terminal 2 de l'aéroport international de Baiyun au Terminal 3 de l'aéroport international de Gaoqi",
         "departure_time": "12 h 10 ce jour-là",
         "arrival_time": "13 h 30 ce jour-là",
         "ticket_price": "2590 yuans",
         "punctuality_rate": "98,32 %"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Xiamen",
         "date": "dimanche prochain",
         "class_cabin": "classe économique",
-        "flight_information": "vol CZ3741 de la companie aérienne China Southern, du Terminal 2 de l'aéroport international de Baiyun au Terminal 3 de l'aéroport international de Gaoqi",
+        "flight_information": "vol CZ3741 de la compagnie aérienne China Southern, du Terminal 2 de l'aéroport international de Baiyun au Terminal 3 de l'aéroport international de Gaoqi",
         "departure_time": "12 h 10 ce jour-là",
         "arrival_time": "13 h 30 ce jour-là",
         "ticket_price": "960 yuans",
         "punctuality_rate": "98,32 %"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Xiamen",
         "date": "dimanche prochain",
         "class_cabin": "classe affaires",
-        "flight_information": "vol CZ3741 de la companie aérienne China Southern, du Terminal 2 de l'aéroport international de Baiyun au Terminal 3 de l'aéroport international de Gaoqi",
+        "flight_information": "vol CZ3741 de la compagnie aérienne China Southern, du Terminal 2 de l'aéroport international de Baiyun au Terminal 3 de l'aéroport international de Gaoqi",
         "departure_time": "12 h 10 ce jour-là",
         "arrival_time": "13 h 30 ce jour-là",
         "ticket_price": "2590 yuans",
@@ -5930,7 +5930,7 @@
     },
     {
         "departure": "Xiamen",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "lundi prochain",
         "class_cabin": "classe économique",
         "flight_information": "CZ5111 de la compagnie aérienne China Southern du Terminal 3 de l'aéroport international de Gaoqi au Terminal 2 de l'aéroport international de Canton-Baiyun",
@@ -5941,7 +5941,7 @@
     },
     {
         "departure": "Xiamen",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "lundi prochain",
         "class_cabin": "classe affaires",
         "flight_information": "CZ5111 de la compagnie aérienne China Southern du Terminal 3 de l'aéroport international de Gaoqi au Terminal 2 de l'aéroport international de Canton-Baiyun",
@@ -5952,7 +5952,7 @@
     },
     {
         "departure": "Xiamen",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "mardi prochain",
         "class_cabin": "classe économique",
         "flight_information": "CZ5111 de la compagnie aérienne China Southern du Terminal 3 de l'aéroport international de Gaoqi au Terminal 2 de l'aéroport international de Canton-Baiyun",
@@ -5963,7 +5963,7 @@
     },
     {
         "departure": "Xiamen",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "mardi prochain",
         "class_cabin": "classe affaires",
         "flight_information": "CZ5111 de la compagnie aérienne China Southern du Terminal 3 de l'aéroport international de Gaoqi au Terminal 2 de l'aéroport international de Canton-Baiyun",
@@ -5974,7 +5974,7 @@
     },
     {
         "departure": "Xiamen",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "mercredi prochain",
         "class_cabin": "classe économique",
         "flight_information": "CZ5111 de la compagnie aérienne China Southern du Terminal 3 de l'aéroport international de Gaoqi au Terminal 2 de l'aéroport international de Canton-Baiyun",
@@ -5985,7 +5985,7 @@
     },
     {
         "departure": "Xiamen",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "mercredi prochain",
         "class_cabin": "classe affaires",
         "flight_information": "CZ5111 de la compagnie aérienne China Southern du Terminal 3 de l'aéroport international de Gaoqi au Terminal 2 de l'aéroport international de Canton-Baiyun",
@@ -5996,7 +5996,7 @@
     },
     {
         "departure": "Xiamen",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "jeudi prochain",
         "class_cabin": "classe économique",
         "flight_information": "CZ5111 de la compagnie aérienne China Southern du Terminal 3 de l'aéroport international de Gaoqi au Terminal 2 de l'aéroport international de Canton-Baiyun",
@@ -6007,7 +6007,7 @@
     },
     {
         "departure": "Xiamen",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "jeudi prochain",
         "class_cabin": "classe affaires",
         "flight_information": "CZ5111 de la compagnie aérienne China Southern du Terminal 3 de l'aéroport international de Gaoqi au Terminal 2 de l'aéroport international de Canton-Baiyun",
@@ -6018,7 +6018,7 @@
     },
     {
         "departure": "Xiamen",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "vendredi prochain",
         "class_cabin": "classe économique",
         "flight_information": "CZ5111 de la compagnie aérienne China Southern du Terminal 3 de l'aéroport international de Gaoqi au Terminal 2 de l'aéroport international de Canton-Baiyun",
@@ -6029,7 +6029,7 @@
     },
     {
         "departure": "Xiamen",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "vendredi prochain",
         "class_cabin": "classe affaires",
         "flight_information": "CZ5111 de la compagnie aérienne China Southern du Terminal 3 de l'aéroport international de Gaoqi au Terminal 2 de l'aéroport international de Canton-Baiyun",
@@ -6040,7 +6040,7 @@
     },
     {
         "departure": "Xiamen",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "samedi prochain",
         "class_cabin": "classe économique",
         "flight_information": "CZ5111 de la compagnie aérienne China Southern du Terminal 3 de l'aéroport international de Gaoqi au Terminal 2 de l'aéroport international de Canton-Baiyun",
@@ -6051,7 +6051,7 @@
     },
     {
         "departure": "Xiamen",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "samedi prochain",
         "class_cabin": "classe affaires",
         "flight_information": "CZ5111 de la compagnie aérienne China Southern du Terminal 3 de l'aéroport international de Gaoqi au Terminal 2 de l'aéroport international de Canton-Baiyun",
@@ -6062,7 +6062,7 @@
     },
     {
         "departure": "Xiamen",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "dimanche prochain",
         "class_cabin": "classe économique",
         "flight_information": "CZ5111 de la compagnie aérienne China Southern du Terminal 3 de l'aéroport international de Gaoqi au Terminal 2 de l'aéroport international de Canton-Baiyun",
@@ -6073,7 +6073,7 @@
     },
     {
         "departure": "Xiamen",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "dimanche prochain",
         "class_cabin": "classe affaires",
         "flight_information": "CZ5111 de la compagnie aérienne China Southern du Terminal 3 de l'aéroport international de Gaoqi au Terminal 2 de l'aéroport international de Canton-Baiyun",

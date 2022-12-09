@@ -93,7 +93,7 @@
     {
         "name": "barbecue au charbon de bois Nongleyuan",
         "area": "District de Gusu",
-        "cuisine": "sud-coréenne",
+        "cuisine": "cuisine sud-coréenne",
         "pricerange": "modérée",
         "metro_station": "true",
         "per_capita_consumption": "88 yuans",
@@ -223,7 +223,7 @@
     {
         "name": "Wanyuting-hejiariben Cuisine Teppanyaki",
         "area": "Parc industriel de Suzhou",
-        "cuisine": "japonaise",
+        "cuisine": "cuisine japonaise",
         "pricerange": "un peu cher",
         "metro_station": "false",
         "per_capita_consumption": "177 yuans",
@@ -314,7 +314,7 @@
     {
         "name": "Qing He Gu",
         "area": "Parc industriel de Suzhou",
-        "cuisine": "sud-coréenne",
+        "cuisine": "cuisine sud-coréenne",
         "pricerange": "un peu cher",
         "metro_station": "false",
         "per_capita_consumption": "154 yuans",
@@ -392,7 +392,7 @@
     {
         "name": "One Plus Conveyor Belt Sushi",
         "area": "District de Wuzhong",
-        "cuisine": "japonaise",
+        "cuisine": "cuisine japonaise",
         "pricerange": "bon marché",
         "metro_station": "false",
         "per_capita_consumption": "58 yuans",
@@ -418,7 +418,7 @@
     {
         "name": "Seoul Korean Cuisine",
         "area": "District de Wuzhong",
-        "cuisine": "sud-coréenne",
+        "cuisine": "cuisine sud-coréenne",
         "pricerange": "modérée",
         "metro_station": "true",
         "per_capita_consumption": "81 yuans",
@@ -496,7 +496,7 @@
     {
         "name": "restaurant japonais Zhiwei",
         "area": "Nouveau district de Suzhou",
-        "cuisine": "japonaise",
+        "cuisine": "cuisine japonaise",
         "pricerange": "un peu cher",
         "metro_station": "false",
         "per_capita_consumption": "215 yuans",
@@ -522,7 +522,7 @@
     {
         "name": "Palsaik Coréen +Q",
         "area": "Nouveau district de Suzhou",
-        "cuisine": "sud-coréenne",
+        "cuisine": "cuisine sud-coréenne",
         "pricerange": "modérée",
         "metro_station": "true",
         "per_capita_consumption": "103 yuans",
@@ -613,7 +613,7 @@
     {
         "name": "Barbecue à charbon de Niutanjia Ben'Ge",
         "area": "District de Wujiang",
-        "cuisine": "japonaise",
+        "cuisine": "cuisine japonaise",
         "pricerange": "modérée",
         "metro_station": "false",
         "per_capita_consumption": "90 yuans",

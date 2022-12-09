@@ -2353,7 +2353,7 @@
     },
     {
         "departure": "Shanghaï",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "lundi matin prochain",
         "classification": "grande vitesse",
         "seat_type": "première",
@@ -2365,7 +2365,7 @@
     },
     {
         "departure": "Shanghaï",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "lundi matin prochain",
         "classification": "grande vitesse",
         "seat_type": "seconde classe",
@@ -2377,7 +2377,7 @@
     },
     {
         "departure": "Shanghaï",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "lundi après-midi prochain",
         "classification": "grande vitesse",
         "seat_type": "première",
@@ -2389,7 +2389,7 @@
     },
     {
         "departure": "Shanghaï",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "lundi après-midi prochain",
         "classification": "grande vitesse",
         "seat_type": "seconde classe",
@@ -2401,7 +2401,7 @@
     },
     {
         "departure": "Shanghaï",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "lundi après-midi prochain",
         "classification": "grande vitesse",
         "seat_type": "couchette en première classe",
@@ -2413,7 +2413,7 @@
     },
     {
         "departure": "Shanghaï",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "lundi après-midi prochain",
         "classification": "grande vitesse",
         "seat_type": "couchette en deuxième classe",
@@ -2425,7 +2425,7 @@
     },
     {
         "departure": "Shanghaï",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "mardi matin prochain",
         "classification": "grande vitesse",
         "seat_type": "première",
@@ -2437,7 +2437,7 @@
     },
     {
         "departure": "Shanghaï",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "mardi matin prochain",
         "classification": "grande vitesse",
         "seat_type": "seconde classe",
@@ -2449,7 +2449,7 @@
     },
     {
         "departure": "Shanghaï",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "mardi prochain après-midi",
         "classification": "grande vitesse",
         "seat_type": "première",
@@ -2461,7 +2461,7 @@
     },
     {
         "departure": "Shanghaï",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "mardi prochain après-midi",
         "classification": "grande vitesse",
         "seat_type": "seconde classe",
@@ -2473,7 +2473,7 @@
     },
     {
         "departure": "Shanghaï",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "mardi prochain après-midi",
         "classification": "grande vitesse",
         "seat_type": "couchette en première classe",
@@ -2485,7 +2485,7 @@
     },
     {
         "departure": "Shanghaï",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "mardi prochain après-midi",
         "classification": "grande vitesse",
         "seat_type": "couchette en deuxième classe",
@@ -2497,7 +2497,7 @@
     },
     {
         "departure": "Shanghaï",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "mercredi matin prochain",
         "classification": "grande vitesse",
         "seat_type": "première",
@@ -2509,7 +2509,7 @@
     },
     {
         "departure": "Shanghaï",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "mercredi matin prochain",
         "classification": "grande vitesse",
         "seat_type": "seconde classe",
@@ -2521,7 +2521,7 @@
     },
     {
         "departure": "Shanghaï",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "mercredi prochain, l'après-midi",
         "classification": "grande vitesse",
         "seat_type": "première",
@@ -2533,7 +2533,7 @@
     },
     {
         "departure": "Shanghaï",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "mercredi prochain, l'après-midi",
         "classification": "grande vitesse",
         "seat_type": "seconde classe",
@@ -2545,7 +2545,7 @@
     },
     {
         "departure": "Shanghaï",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "mercredi prochain, l'après-midi",
         "classification": "grande vitesse",
         "seat_type": "couchette en première classe",
@@ -2557,7 +2557,7 @@
     },
     {
         "departure": "Shanghaï",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "mercredi prochain, l'après-midi",
         "classification": "grande vitesse",
         "seat_type": "couchette en deuxième classe",
@@ -2569,7 +2569,7 @@
     },
     {
         "departure": "Shanghaï",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "jeudi matin prochain",
         "classification": "grande vitesse",
         "seat_type": "première",
@@ -2581,7 +2581,7 @@
     },
     {
         "departure": "Shanghaï",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "jeudi matin prochain",
         "classification": "grande vitesse",
         "seat_type": "seconde classe",
@@ -2593,7 +2593,7 @@
     },
     {
         "departure": "Shanghaï",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "jeudi prochain dans l'après-midi",
         "classification": "grande vitesse",
         "seat_type": "première",
@@ -2605,7 +2605,7 @@
     },
     {
         "departure": "Shanghaï",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "jeudi prochain dans l'après-midi",
         "classification": "grande vitesse",
         "seat_type": "seconde classe",
@@ -2617,7 +2617,7 @@
     },
     {
         "departure": "Shanghaï",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "jeudi prochain dans l'après-midi",
         "classification": "grande vitesse",
         "seat_type": "couchette en première classe",
@@ -2629,7 +2629,7 @@
     },
     {
         "departure": "Shanghaï",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "jeudi prochain dans l'après-midi",
         "classification": "grande vitesse",
         "seat_type": "couchette en deuxième classe",
@@ -2641,7 +2641,7 @@
     },
     {
         "departure": "Shanghaï",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "vendredi prochain, le matin",
         "classification": "grande vitesse",
         "seat_type": "première",
@@ -2653,7 +2653,7 @@
     },
     {
         "departure": "Shanghaï",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "vendredi prochain, le matin",
         "classification": "grande vitesse",
         "seat_type": "seconde classe",
@@ -2665,7 +2665,7 @@
     },
     {
         "departure": "Shanghaï",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "vendredi après-midi prochain",
         "classification": "grande vitesse",
         "seat_type": "première",
@@ -2677,7 +2677,7 @@
     },
     {
         "departure": "Shanghaï",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "vendredi après-midi prochain",
         "classification": "grande vitesse",
         "seat_type": "seconde classe",
@@ -2689,7 +2689,7 @@
     },
     {
         "departure": "Shanghaï",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "vendredi après-midi prochain",
         "classification": "grande vitesse",
         "seat_type": "couchette en première classe",
@@ -2701,7 +2701,7 @@
     },
     {
         "departure": "Shanghaï",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "vendredi après-midi prochain",
         "classification": "grande vitesse",
         "seat_type": "couchette en deuxième classe",
@@ -2713,7 +2713,7 @@
     },
     {
         "departure": "Shanghaï",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "samedi prochain, le matin",
         "classification": "grande vitesse",
         "seat_type": "première",
@@ -2725,7 +2725,7 @@
     },
     {
         "departure": "Shanghaï",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "samedi prochain, le matin",
         "classification": "grande vitesse",
         "seat_type": "seconde classe",
@@ -2737,7 +2737,7 @@
     },
     {
         "departure": "Shanghaï",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "samedi prochain",
         "classification": "grande vitesse",
         "seat_type": "première",
@@ -2749,7 +2749,7 @@
     },
     {
         "departure": "Shanghaï",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "samedi prochain",
         "classification": "grande vitesse",
         "seat_type": "seconde classe",
@@ -2761,7 +2761,7 @@
     },
     {
         "departure": "Shanghaï",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "samedi prochain",
         "classification": "grande vitesse",
         "seat_type": "couchette en première classe",
@@ -2773,7 +2773,7 @@
     },
     {
         "departure": "Shanghaï",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "samedi prochain",
         "classification": "grande vitesse",
         "seat_type": "couchette en deuxième classe",
@@ -2785,7 +2785,7 @@
     },
     {
         "departure": "Shanghaï",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "dimanche prochain, le matin",
         "classification": "grande vitesse",
         "seat_type": "première",
@@ -2797,7 +2797,7 @@
     },
     {
         "departure": "Shanghaï",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "dimanche prochain, le matin",
         "classification": "grande vitesse",
         "seat_type": "seconde classe",
@@ -2809,7 +2809,7 @@
     },
     {
         "departure": "Shanghaï",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "dimanche prochain, l'après-midi",
         "classification": "grande vitesse",
         "seat_type": "première",
@@ -2821,7 +2821,7 @@
     },
     {
         "departure": "Shanghaï",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "dimanche prochain, l'après-midi",
         "classification": "grande vitesse",
         "seat_type": "seconde classe",
@@ -2833,7 +2833,7 @@
     },
     {
         "departure": "Shanghaï",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "dimanche prochain, l'après-midi",
         "classification": "grande vitesse",
         "seat_type": "couchette en première classe",
@@ -2845,7 +2845,7 @@
     },
     {
         "departure": "Shanghaï",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "dimanche prochain, l'après-midi",
         "classification": "grande vitesse",
         "seat_type": "couchette en deuxième classe",
@@ -2856,7 +2856,7 @@
         "ticket_price": "700,0 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Shanghaï",
         "date": "lundi matin prochain",
         "classification": "grande vitesse",
@@ -2868,7 +2868,7 @@
         "ticket_price": "1302,5 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Shanghaï",
         "date": "lundi matin prochain",
         "classification": "grande vitesse",
@@ -2880,7 +2880,7 @@
         "ticket_price": "793,0 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Shanghaï",
         "date": "lundi après-midi prochain",
         "classification": "grande vitesse",
@@ -2892,7 +2892,7 @@
         "ticket_price": "1302,5 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Shanghaï",
         "date": "lundi après-midi prochain",
         "classification": "grande vitesse",
@@ -2904,7 +2904,7 @@
         "ticket_price": "793,0 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Shanghaï",
         "date": "lundi après-midi prochain",
         "classification": "grande vitesse",
@@ -2916,7 +2916,7 @@
         "ticket_price": "1210,0 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Shanghaï",
         "date": "lundi après-midi prochain",
         "classification": "grande vitesse",
@@ -2928,7 +2928,7 @@
         "ticket_price": "700,0 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Shanghaï",
         "date": "mardi matin prochain",
         "classification": "grande vitesse",
@@ -2940,7 +2940,7 @@
         "ticket_price": "1302,5 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Shanghaï",
         "date": "mardi matin prochain",
         "classification": "grande vitesse",
@@ -2952,7 +2952,7 @@
         "ticket_price": "793,0 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Shanghaï",
         "date": "mardi prochain après-midi",
         "classification": "grande vitesse",
@@ -2964,7 +2964,7 @@
         "ticket_price": "1302,5 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Shanghaï",
         "date": "mardi prochain après-midi",
         "classification": "grande vitesse",
@@ -2976,7 +2976,7 @@
         "ticket_price": "793,0 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Shanghaï",
         "date": "mardi prochain après-midi",
         "classification": "grande vitesse",
@@ -2988,7 +2988,7 @@
         "ticket_price": "1210,0 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Shanghaï",
         "date": "mardi prochain après-midi",
         "classification": "grande vitesse",
@@ -3000,7 +3000,7 @@
         "ticket_price": "700,0 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Shanghaï",
         "date": "mercredi matin prochain",
         "classification": "grande vitesse",
@@ -3012,7 +3012,7 @@
         "ticket_price": "1302,5 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Shanghaï",
         "date": "mercredi matin prochain",
         "classification": "grande vitesse",
@@ -3024,7 +3024,7 @@
         "ticket_price": "793,0 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Shanghaï",
         "date": "mercredi prochain, l'après-midi",
         "classification": "grande vitesse",
@@ -3036,7 +3036,7 @@
         "ticket_price": "1302,5 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Shanghaï",
         "date": "mercredi prochain, l'après-midi",
         "classification": "grande vitesse",
@@ -3048,7 +3048,7 @@
         "ticket_price": "793,0 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Shanghaï",
         "date": "mercredi prochain, l'après-midi",
         "classification": "grande vitesse",
@@ -3060,7 +3060,7 @@
         "ticket_price": "1210,0 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Shanghaï",
         "date": "mercredi prochain, l'après-midi",
         "classification": "grande vitesse",
@@ -3072,7 +3072,7 @@
         "ticket_price": "700,0 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Shanghaï",
         "date": "jeudi matin prochain",
         "classification": "grande vitesse",
@@ -3084,7 +3084,7 @@
         "ticket_price": "1302,5 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Shanghaï",
         "date": "jeudi matin prochain",
         "classification": "grande vitesse",
@@ -3096,7 +3096,7 @@
         "ticket_price": "793,0 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Shanghaï",
         "date": "jeudi prochain dans l'après-midi",
         "classification": "grande vitesse",
@@ -3108,7 +3108,7 @@
         "ticket_price": "1302,5 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Shanghaï",
         "date": "jeudi prochain dans l'après-midi",
         "classification": "grande vitesse",
@@ -3120,7 +3120,7 @@
         "ticket_price": "793,0 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Shanghaï",
         "date": "jeudi prochain dans l'après-midi",
         "classification": "grande vitesse",
@@ -3132,7 +3132,7 @@
         "ticket_price": "1210,0 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Shanghaï",
         "date": "jeudi prochain dans l'après-midi",
         "classification": "grande vitesse",
@@ -3144,7 +3144,7 @@
         "ticket_price": "700,0 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Shanghaï",
         "date": "vendredi prochain, le matin",
         "classification": "grande vitesse",
@@ -3156,7 +3156,7 @@
         "ticket_price": "1302,5 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Shanghaï",
         "date": "vendredi prochain, le matin",
         "classification": "grande vitesse",
@@ -3168,7 +3168,7 @@
         "ticket_price": "793,0 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Shanghaï",
         "date": "vendredi après-midi prochain",
         "classification": "grande vitesse",
@@ -3180,7 +3180,7 @@
         "ticket_price": "1302,5 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Shanghaï",
         "date": "vendredi après-midi prochain",
         "classification": "grande vitesse",
@@ -3192,7 +3192,7 @@
         "ticket_price": "793,0 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Shanghaï",
         "date": "vendredi après-midi prochain",
         "classification": "grande vitesse",
@@ -3204,7 +3204,7 @@
         "ticket_price": "1210,0 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Shanghaï",
         "date": "vendredi après-midi prochain",
         "classification": "grande vitesse",
@@ -3216,7 +3216,7 @@
         "ticket_price": "700,0 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Shanghaï",
         "date": "samedi prochain, le matin",
         "classification": "grande vitesse",
@@ -3228,7 +3228,7 @@
         "ticket_price": "1302,5 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Shanghaï",
         "date": "samedi prochain, le matin",
         "classification": "grande vitesse",
@@ -3240,7 +3240,7 @@
         "ticket_price": "793,0 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Shanghaï",
         "date": "samedi prochain",
         "classification": "grande vitesse",
@@ -3252,7 +3252,7 @@
         "ticket_price": "1302,5 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Shanghaï",
         "date": "samedi prochain",
         "classification": "grande vitesse",
@@ -3264,7 +3264,7 @@
         "ticket_price": "793,0 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Shanghaï",
         "date": "samedi prochain",
         "classification": "grande vitesse",
@@ -3276,7 +3276,7 @@
         "ticket_price": "1210,0 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Shanghaï",
         "date": "samedi prochain",
         "classification": "grande vitesse",
@@ -3288,7 +3288,7 @@
         "ticket_price": "700,0 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Shanghaï",
         "date": "dimanche prochain, le matin",
         "classification": "grande vitesse",
@@ -3300,7 +3300,7 @@
         "ticket_price": "1302,5 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Shanghaï",
         "date": "dimanche prochain, le matin",
         "classification": "grande vitesse",
@@ -3312,7 +3312,7 @@
         "ticket_price": "793,0 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Shanghaï",
         "date": "dimanche prochain, l'après-midi",
         "classification": "grande vitesse",
@@ -3324,7 +3324,7 @@
         "ticket_price": "1302,5 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Shanghaï",
         "date": "dimanche prochain, l'après-midi",
         "classification": "grande vitesse",
@@ -3336,7 +3336,7 @@
         "ticket_price": "793,0 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Shanghaï",
         "date": "dimanche prochain, l'après-midi",
         "classification": "grande vitesse",
@@ -3348,7 +3348,7 @@
         "ticket_price": "1210,0 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Shanghaï",
         "date": "dimanche prochain, l'après-midi",
         "classification": "grande vitesse",
@@ -8450,7 +8450,7 @@
     {
         "departure": "Pékin",
         "destination": "Nankin",
-        "date": "samedi prochain",
+        "date": "samedi après-midi prochain",
         "classification": "grande vitesse",
         "seat_type": "première",
         "train_number": "G135, de la gare de Pékin-Sud à Nankin-Sud",
@@ -8462,7 +8462,7 @@
     {
         "departure": "Pékin",
         "destination": "Nankin",
-        "date": "samedi prochain",
+        "date": "samedi après-midi prochain",
         "classification": "grande vitesse",
         "seat_type": "seconde classe",
         "train_number": "G135, de la gare de Pékin-Sud à Nankin-Sud",
@@ -8474,7 +8474,7 @@
     {
         "departure": "Pékin",
         "destination": "Nankin",
-        "date": "samedi prochain",
+        "date": "samedi après-midi prochain",
         "classification": "grande vitesse",
         "seat_type": "couchette en première classe",
         "train_number": "D717, de Pékin à Nankin",
@@ -8486,7 +8486,7 @@
     {
         "departure": "Pékin",
         "destination": "Nankin",
-        "date": "samedi prochain",
+        "date": "samedi après-midi prochain",
         "classification": "grande vitesse",
         "seat_type": "couchette en deuxième classe",
         "train_number": "D717, de Pékin à Nankin",
@@ -8569,7 +8569,7 @@
     },
     {
         "departure": "Nankin",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "lundi matin prochain",
         "classification": "grande vitesse",
         "seat_type": "première",
@@ -8581,7 +8581,7 @@
     },
     {
         "departure": "Nankin",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "lundi matin prochain",
         "classification": "grande vitesse",
         "seat_type": "seconde classe",
@@ -8593,7 +8593,7 @@
     },
     {
         "departure": "Nankin",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "lundi après-midi prochain",
         "classification": "grande vitesse",
         "seat_type": "première",
@@ -8605,7 +8605,7 @@
     },
     {
         "departure": "Nankin",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "lundi après-midi prochain",
         "classification": "grande vitesse",
         "seat_type": "seconde classe",
@@ -8617,7 +8617,7 @@
     },
     {
         "departure": "Nankin",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "mardi matin prochain",
         "classification": "grande vitesse",
         "seat_type": "première",
@@ -8629,7 +8629,7 @@
     },
     {
         "departure": "Nankin",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "mardi matin prochain",
         "classification": "grande vitesse",
         "seat_type": "seconde classe",
@@ -8641,7 +8641,7 @@
     },
     {
         "departure": "Nankin",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "mardi prochain après-midi",
         "classification": "grande vitesse",
         "seat_type": "première",
@@ -8653,7 +8653,7 @@
     },
     {
         "departure": "Nankin",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "mardi prochain après-midi",
         "classification": "grande vitesse",
         "seat_type": "seconde classe",
@@ -8665,7 +8665,7 @@
     },
     {
         "departure": "Nankin",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "mercredi matin prochain",
         "classification": "grande vitesse",
         "seat_type": "première",
@@ -8677,7 +8677,7 @@
     },
     {
         "departure": "Nankin",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "mercredi matin prochain",
         "classification": "grande vitesse",
         "seat_type": "seconde classe",
@@ -8689,7 +8689,7 @@
     },
     {
         "departure": "Nankin",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "mercredi prochain, l'après-midi",
         "classification": "grande vitesse",
         "seat_type": "première",
@@ -8701,7 +8701,7 @@
     },
     {
         "departure": "Nankin",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "mercredi prochain, l'après-midi",
         "classification": "grande vitesse",
         "seat_type": "seconde classe",
@@ -8713,7 +8713,7 @@
     },
     {
         "departure": "Nankin",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "jeudi matin prochain",
         "classification": "grande vitesse",
         "seat_type": "première",
@@ -8725,7 +8725,7 @@
     },
     {
         "departure": "Nankin",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "jeudi matin prochain",
         "classification": "grande vitesse",
         "seat_type": "seconde classe",
@@ -8737,7 +8737,7 @@
     },
     {
         "departure": "Nankin",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "jeudi prochain dans l'après-midi",
         "classification": "grande vitesse",
         "seat_type": "première",
@@ -8749,7 +8749,7 @@
     },
     {
         "departure": "Nankin",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "jeudi prochain dans l'après-midi",
         "classification": "grande vitesse",
         "seat_type": "seconde classe",
@@ -8761,7 +8761,7 @@
     },
     {
         "departure": "Nankin",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "vendredi prochain, le matin",
         "classification": "grande vitesse",
         "seat_type": "première",
@@ -8773,7 +8773,7 @@
     },
     {
         "departure": "Nankin",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "vendredi prochain, le matin",
         "classification": "grande vitesse",
         "seat_type": "seconde classe",
@@ -8785,7 +8785,7 @@
     },
     {
         "departure": "Nankin",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "vendredi après-midi prochain",
         "classification": "grande vitesse",
         "seat_type": "première",
@@ -8797,7 +8797,7 @@
     },
     {
         "departure": "Nankin",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "vendredi après-midi prochain",
         "classification": "grande vitesse",
         "seat_type": "seconde classe",
@@ -8809,7 +8809,7 @@
     },
     {
         "departure": "Nankin",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "samedi prochain, le matin",
         "classification": "grande vitesse",
         "seat_type": "première",
@@ -8821,7 +8821,7 @@
     },
     {
         "departure": "Nankin",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "samedi prochain, le matin",
         "classification": "grande vitesse",
         "seat_type": "seconde classe",
@@ -8833,7 +8833,7 @@
     },
     {
         "departure": "Nankin",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "samedi prochain",
         "classification": "grande vitesse",
         "seat_type": "première",
@@ -8845,7 +8845,7 @@
     },
     {
         "departure": "Nankin",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "samedi prochain",
         "classification": "grande vitesse",
         "seat_type": "seconde classe",
@@ -8857,7 +8857,7 @@
     },
     {
         "departure": "Nankin",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "dimanche prochain, le matin",
         "classification": "grande vitesse",
         "seat_type": "première",
@@ -8869,7 +8869,7 @@
     },
     {
         "departure": "Nankin",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "dimanche prochain, le matin",
         "classification": "grande vitesse",
         "seat_type": "seconde classe",
@@ -8881,7 +8881,7 @@
     },
     {
         "departure": "Nankin",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "dimanche prochain, l'après-midi",
         "classification": "grande vitesse",
         "seat_type": "première",
@@ -8893,7 +8893,7 @@
     },
     {
         "departure": "Nankin",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "dimanche prochain, l'après-midi",
         "classification": "grande vitesse",
         "seat_type": "seconde classe",
@@ -8904,7 +8904,7 @@
         "ticket_price": "660,0 yuan"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Nankin",
         "date": "lundi matin prochain",
         "classification": "grande vitesse",
@@ -8916,7 +8916,7 @@
         "ticket_price": "1055.0 yuan"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Nankin",
         "date": "lundi matin prochain",
         "classification": "grande vitesse",
@@ -8928,7 +8928,7 @@
         "ticket_price": "660,0 yuan"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Nankin",
         "date": "lundi après-midi prochain",
         "classification": "grande vitesse",
@@ -8940,7 +8940,7 @@
         "ticket_price": "1055.0 yuan"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Nankin",
         "date": "lundi après-midi prochain",
         "classification": "grande vitesse",
@@ -8952,7 +8952,7 @@
         "ticket_price": "660,0 yuan"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Nankin",
         "date": "mardi matin prochain",
         "classification": "grande vitesse",
@@ -8964,7 +8964,7 @@
         "ticket_price": "1055.0 yuan"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Nankin",
         "date": "mardi matin prochain",
         "classification": "grande vitesse",
@@ -8976,7 +8976,7 @@
         "ticket_price": "660,0 yuan"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Nankin",
         "date": "mardi prochain après-midi",
         "classification": "grande vitesse",
@@ -8988,7 +8988,7 @@
         "ticket_price": "1055.0 yuan"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Nankin",
         "date": "mardi prochain après-midi",
         "classification": "grande vitesse",
@@ -9000,7 +9000,7 @@
         "ticket_price": "660,0 yuan"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Nankin",
         "date": "mercredi matin prochain",
         "classification": "grande vitesse",
@@ -9012,7 +9012,7 @@
         "ticket_price": "1055.0 yuan"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Nankin",
         "date": "mercredi matin prochain",
         "classification": "grande vitesse",
@@ -9024,7 +9024,7 @@
         "ticket_price": "660,0 yuan"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Nankin",
         "date": "mercredi prochain, l'après-midi",
         "classification": "grande vitesse",
@@ -9036,7 +9036,7 @@
         "ticket_price": "1055.0 yuan"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Nankin",
         "date": "mercredi prochain, l'après-midi",
         "classification": "grande vitesse",
@@ -9048,7 +9048,7 @@
         "ticket_price": "660,0 yuan"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Nankin",
         "date": "jeudi matin prochain",
         "classification": "grande vitesse",
@@ -9060,7 +9060,7 @@
         "ticket_price": "1055.0 yuan"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Nankin",
         "date": "jeudi matin prochain",
         "classification": "grande vitesse",
@@ -9072,7 +9072,7 @@
         "ticket_price": "660,0 yuan"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Nankin",
         "date": "jeudi prochain dans l'après-midi",
         "classification": "grande vitesse",
@@ -9084,7 +9084,7 @@
         "ticket_price": "1055.0 yuan"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Nankin",
         "date": "jeudi prochain dans l'après-midi",
         "classification": "grande vitesse",
@@ -9096,7 +9096,7 @@
         "ticket_price": "660,0 yuan"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Nankin",
         "date": "vendredi prochain, le matin",
         "classification": "grande vitesse",
@@ -9108,7 +9108,7 @@
         "ticket_price": "1055.0 yuan"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Nankin",
         "date": "vendredi prochain, le matin",
         "classification": "grande vitesse",
@@ -9120,7 +9120,7 @@
         "ticket_price": "660,0 yuan"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Nankin",
         "date": "vendredi après-midi prochain",
         "classification": "grande vitesse",
@@ -9132,7 +9132,7 @@
         "ticket_price": "1055.0 yuan"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Nankin",
         "date": "vendredi après-midi prochain",
         "classification": "grande vitesse",
@@ -9144,7 +9144,7 @@
         "ticket_price": "660,0 yuan"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Nankin",
         "date": "samedi prochain, le matin",
         "classification": "grande vitesse",
@@ -9156,7 +9156,7 @@
         "ticket_price": "1055.0 yuan"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Nankin",
         "date": "samedi prochain, le matin",
         "classification": "grande vitesse",
@@ -9168,7 +9168,7 @@
         "ticket_price": "660,0 yuan"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Nankin",
         "date": "samedi prochain",
         "classification": "grande vitesse",
@@ -9180,7 +9180,7 @@
         "ticket_price": "1055.0 yuan"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Nankin",
         "date": "samedi prochain",
         "classification": "grande vitesse",
@@ -9192,7 +9192,7 @@
         "ticket_price": "660,0 yuan"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Nankin",
         "date": "dimanche prochain, le matin",
         "classification": "grande vitesse",
@@ -9204,7 +9204,7 @@
         "ticket_price": "1055.0 yuan"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Nankin",
         "date": "dimanche prochain, le matin",
         "classification": "grande vitesse",
@@ -9216,7 +9216,7 @@
         "ticket_price": "660,0 yuan"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Nankin",
         "date": "dimanche prochain, l'après-midi",
         "classification": "grande vitesse",
@@ -9228,7 +9228,7 @@
         "ticket_price": "1055.0 yuan"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Nankin",
         "date": "dimanche prochain, l'après-midi",
         "classification": "grande vitesse",
@@ -13105,7 +13105,7 @@
     },
     {
         "departure": "Pékin",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "lundi matin prochain",
         "classification": "grande vitesse",
         "seat_type": "première",
@@ -13117,7 +13117,7 @@
     },
     {
         "departure": "Pékin",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "lundi matin prochain",
         "classification": "grande vitesse",
         "seat_type": "seconde classe",
@@ -13129,7 +13129,7 @@
     },
     {
         "departure": "Pékin",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "lundi après-midi prochain",
         "classification": "grande vitesse",
         "seat_type": "première",
@@ -13141,7 +13141,7 @@
     },
     {
         "departure": "Pékin",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "lundi après-midi prochain",
         "classification": "grande vitesse",
         "seat_type": "seconde classe",
@@ -13153,7 +13153,7 @@
     },
     {
         "departure": "Pékin",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "lundi après-midi prochain",
         "classification": "grande vitesse",
         "seat_type": "couchette",
@@ -13165,7 +13165,7 @@
     },
     {
         "departure": "Pékin",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "lundi après-midi prochain",
         "classification": "grande vitesse",
         "seat_type": "seconde classe",
@@ -13177,7 +13177,7 @@
     },
     {
         "departure": "Pékin",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "mardi matin prochain",
         "classification": "grande vitesse",
         "seat_type": "première",
@@ -13189,7 +13189,7 @@
     },
     {
         "departure": "Pékin",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "mardi matin prochain",
         "classification": "grande vitesse",
         "seat_type": "seconde classe",
@@ -13201,7 +13201,7 @@
     },
     {
         "departure": "Pékin",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "mardi prochain après-midi",
         "classification": "grande vitesse",
         "seat_type": "première",
@@ -13213,7 +13213,7 @@
     },
     {
         "departure": "Pékin",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "mardi prochain après-midi",
         "classification": "grande vitesse",
         "seat_type": "seconde classe",
@@ -13225,7 +13225,7 @@
     },
     {
         "departure": "Pékin",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "mardi prochain après-midi",
         "classification": "grande vitesse",
         "seat_type": "couchette",
@@ -13237,7 +13237,7 @@
     },
     {
         "departure": "Pékin",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "mardi prochain après-midi",
         "classification": "grande vitesse",
         "seat_type": "seconde classe",
@@ -13249,7 +13249,7 @@
     },
     {
         "departure": "Pékin",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "mercredi matin prochain",
         "classification": "grande vitesse",
         "seat_type": "première",
@@ -13261,7 +13261,7 @@
     },
     {
         "departure": "Pékin",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "mercredi matin prochain",
         "classification": "grande vitesse",
         "seat_type": "seconde classe",
@@ -13273,7 +13273,7 @@
     },
     {
         "departure": "Pékin",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "mercredi prochain, l'après-midi",
         "classification": "grande vitesse",
         "seat_type": "première",
@@ -13285,7 +13285,7 @@
     },
     {
         "departure": "Pékin",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "mercredi prochain, l'après-midi",
         "classification": "grande vitesse",
         "seat_type": "seconde classe",
@@ -13297,7 +13297,7 @@
     },
     {
         "departure": "Pékin",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "mercredi prochain, l'après-midi",
         "classification": "grande vitesse",
         "seat_type": "couchette",
@@ -13309,7 +13309,7 @@
     },
     {
         "departure": "Pékin",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "mercredi prochain, l'après-midi",
         "classification": "grande vitesse",
         "seat_type": "seconde classe",
@@ -13321,7 +13321,7 @@
     },
     {
         "departure": "Pékin",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "jeudi matin prochain",
         "classification": "grande vitesse",
         "seat_type": "première",
@@ -13333,7 +13333,7 @@
     },
     {
         "departure": "Pékin",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "jeudi matin prochain",
         "classification": "grande vitesse",
         "seat_type": "seconde classe",
@@ -13345,7 +13345,7 @@
     },
     {
         "departure": "Pékin",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "jeudi prochain dans l'après-midi",
         "classification": "grande vitesse",
         "seat_type": "première",
@@ -13357,7 +13357,7 @@
     },
     {
         "departure": "Pékin",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "jeudi prochain dans l'après-midi",
         "classification": "grande vitesse",
         "seat_type": "seconde classe",
@@ -13369,7 +13369,7 @@
     },
     {
         "departure": "Pékin",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "jeudi prochain dans l'après-midi",
         "classification": "grande vitesse",
         "seat_type": "couchette",
@@ -13381,7 +13381,7 @@
     },
     {
         "departure": "Pékin",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "jeudi prochain dans l'après-midi",
         "classification": "grande vitesse",
         "seat_type": "seconde classe",
@@ -13393,7 +13393,7 @@
     },
     {
         "departure": "Pékin",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "vendredi prochain, le matin",
         "classification": "grande vitesse",
         "seat_type": "première",
@@ -13405,7 +13405,7 @@
     },
     {
         "departure": "Pékin",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "vendredi prochain, le matin",
         "classification": "grande vitesse",
         "seat_type": "seconde classe",
@@ -13417,7 +13417,7 @@
     },
     {
         "departure": "Pékin",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "vendredi après-midi prochain",
         "classification": "grande vitesse",
         "seat_type": "première",
@@ -13429,7 +13429,7 @@
     },
     {
         "departure": "Pékin",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "vendredi après-midi prochain",
         "classification": "grande vitesse",
         "seat_type": "seconde classe",
@@ -13441,7 +13441,7 @@
     },
     {
         "departure": "Pékin",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "vendredi après-midi prochain",
         "classification": "grande vitesse",
         "seat_type": "couchette",
@@ -13453,7 +13453,7 @@
     },
     {
         "departure": "Pékin",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "vendredi après-midi prochain",
         "classification": "grande vitesse",
         "seat_type": "seconde classe",
@@ -13465,7 +13465,7 @@
     },
     {
         "departure": "Pékin",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "samedi prochain, le matin",
         "classification": "grande vitesse",
         "seat_type": "première",
@@ -13477,7 +13477,7 @@
     },
     {
         "departure": "Pékin",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "samedi prochain, le matin",
         "classification": "grande vitesse",
         "seat_type": "seconde classe",
@@ -13489,7 +13489,7 @@
     },
     {
         "departure": "Pékin",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "samedi prochain",
         "classification": "grande vitesse",
         "seat_type": "première",
@@ -13501,7 +13501,7 @@
     },
     {
         "departure": "Pékin",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "samedi prochain",
         "classification": "grande vitesse",
         "seat_type": "seconde classe",
@@ -13513,7 +13513,7 @@
     },
     {
         "departure": "Pékin",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "samedi prochain",
         "classification": "grande vitesse",
         "seat_type": "couchette",
@@ -13525,7 +13525,7 @@
     },
     {
         "departure": "Pékin",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "samedi prochain",
         "classification": "grande vitesse",
         "seat_type": "seconde classe",
@@ -13537,7 +13537,7 @@
     },
     {
         "departure": "Pékin",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "dimanche prochain, le matin",
         "classification": "grande vitesse",
         "seat_type": "première",
@@ -13549,7 +13549,7 @@
     },
     {
         "departure": "Pékin",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "dimanche prochain, le matin",
         "classification": "grande vitesse",
         "seat_type": "seconde classe",
@@ -13561,7 +13561,7 @@
     },
     {
         "departure": "Pékin",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "dimanche prochain, l'après-midi",
         "classification": "grande vitesse",
         "seat_type": "première",
@@ -13573,7 +13573,7 @@
     },
     {
         "departure": "Pékin",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "dimanche prochain, l'après-midi",
         "classification": "grande vitesse",
         "seat_type": "seconde classe",
@@ -13585,7 +13585,7 @@
     },
     {
         "departure": "Pékin",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "dimanche prochain, l'après-midi",
         "classification": "grande vitesse",
         "seat_type": "couchette",
@@ -13597,7 +13597,7 @@
     },
     {
         "departure": "Pékin",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "dimanche prochain, l'après-midi",
         "classification": "grande vitesse",
         "seat_type": "seconde classe",
@@ -13608,7 +13608,7 @@
         "ticket_price": "709,0 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Pékin",
         "date": "lundi matin prochain",
         "classification": "grande vitesse",
@@ -13620,7 +13620,7 @@
         "ticket_price": "1380.0 yuan"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Pékin",
         "date": "lundi matin prochain",
         "classification": "grande vitesse",
@@ -13632,7 +13632,7 @@
         "ticket_price": "862,0 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Pékin",
         "date": "lundi après-midi prochain",
         "classification": "grande vitesse",
@@ -13644,7 +13644,7 @@
         "ticket_price": "1380.0 yuan"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Pékin",
         "date": "lundi après-midi prochain",
         "classification": "grande vitesse",
@@ -13656,7 +13656,7 @@
         "ticket_price": "862,0 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Pékin",
         "date": "lundi après-midi prochain",
         "classification": "grande vitesse",
@@ -13668,7 +13668,7 @@
         "ticket_price": "1000.0 yuan"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Pékin",
         "date": "lundi après-midi prochain",
         "classification": "grande vitesse",
@@ -13680,7 +13680,7 @@
         "ticket_price": "709,0 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Pékin",
         "date": "mardi matin prochain",
         "classification": "grande vitesse",
@@ -13692,7 +13692,7 @@
         "ticket_price": "1380.0 yuan"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Pékin",
         "date": "mardi matin prochain",
         "classification": "grande vitesse",
@@ -13704,7 +13704,7 @@
         "ticket_price": "862,0 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Pékin",
         "date": "mardi prochain après-midi",
         "classification": "grande vitesse",
@@ -13716,7 +13716,7 @@
         "ticket_price": "1380.0 yuan"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Pékin",
         "date": "mardi prochain après-midi",
         "classification": "grande vitesse",
@@ -13728,7 +13728,7 @@
         "ticket_price": "862,0 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Pékin",
         "date": "mardi prochain après-midi",
         "classification": "grande vitesse",
@@ -13740,7 +13740,7 @@
         "ticket_price": "1000.0 yuan"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Pékin",
         "date": "mardi prochain après-midi",
         "classification": "grande vitesse",
@@ -13752,7 +13752,7 @@
         "ticket_price": "709,0 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Pékin",
         "date": "mercredi matin prochain",
         "classification": "grande vitesse",
@@ -13764,7 +13764,7 @@
         "ticket_price": "1380.0 yuan"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Pékin",
         "date": "mercredi matin prochain",
         "classification": "grande vitesse",
@@ -13776,7 +13776,7 @@
         "ticket_price": "862,0 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Pékin",
         "date": "mercredi prochain, l'après-midi",
         "classification": "grande vitesse",
@@ -13788,7 +13788,7 @@
         "ticket_price": "1380.0 yuan"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Pékin",
         "date": "mercredi prochain, l'après-midi",
         "classification": "grande vitesse",
@@ -13800,7 +13800,7 @@
         "ticket_price": "862,0 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Pékin",
         "date": "mercredi prochain, l'après-midi",
         "classification": "grande vitesse",
@@ -13812,7 +13812,7 @@
         "ticket_price": "1000.0 yuan"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Pékin",
         "date": "mercredi prochain, l'après-midi",
         "classification": "grande vitesse",
@@ -13824,7 +13824,7 @@
         "ticket_price": "709,0 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Pékin",
         "date": "jeudi matin prochain",
         "classification": "grande vitesse",
@@ -13836,7 +13836,7 @@
         "ticket_price": "1380.0 yuan"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Pékin",
         "date": "jeudi matin prochain",
         "classification": "grande vitesse",
@@ -13848,7 +13848,7 @@
         "ticket_price": "862,0 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Pékin",
         "date": "jeudi prochain dans l'après-midi",
         "classification": "grande vitesse",
@@ -13860,7 +13860,7 @@
         "ticket_price": "1380.0 yuan"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Pékin",
         "date": "jeudi prochain dans l'après-midi",
         "classification": "grande vitesse",
@@ -13872,7 +13872,7 @@
         "ticket_price": "862,0 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Pékin",
         "date": "jeudi prochain dans l'après-midi",
         "classification": "grande vitesse",
@@ -13884,7 +13884,7 @@
         "ticket_price": "1000.0 yuan"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Pékin",
         "date": "jeudi prochain dans l'après-midi",
         "classification": "grande vitesse",
@@ -13896,7 +13896,7 @@
         "ticket_price": "709,0 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Pékin",
         "date": "vendredi prochain, le matin",
         "classification": "grande vitesse",
@@ -13908,7 +13908,7 @@
         "ticket_price": "1380.0 yuan"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Pékin",
         "date": "vendredi prochain, le matin",
         "classification": "grande vitesse",
@@ -13920,7 +13920,7 @@
         "ticket_price": "862,0 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Pékin",
         "date": "vendredi après-midi prochain",
         "classification": "grande vitesse",
@@ -13932,7 +13932,7 @@
         "ticket_price": "1380.0 yuan"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Pékin",
         "date": "vendredi après-midi prochain",
         "classification": "grande vitesse",
@@ -13944,7 +13944,7 @@
         "ticket_price": "862,0 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Pékin",
         "date": "vendredi après-midi prochain",
         "classification": "grande vitesse",
@@ -13956,7 +13956,7 @@
         "ticket_price": "1000.0 yuan"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Pékin",
         "date": "vendredi après-midi prochain",
         "classification": "grande vitesse",
@@ -13968,7 +13968,7 @@
         "ticket_price": "709,0 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Pékin",
         "date": "samedi prochain, le matin",
         "classification": "grande vitesse",
@@ -13980,7 +13980,7 @@
         "ticket_price": "1380.0 yuan"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Pékin",
         "date": "samedi prochain, le matin",
         "classification": "grande vitesse",
@@ -13992,7 +13992,7 @@
         "ticket_price": "862,0 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Pékin",
         "date": "samedi prochain",
         "classification": "grande vitesse",
@@ -14004,7 +14004,7 @@
         "ticket_price": "1380.0 yuan"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Pékin",
         "date": "samedi prochain",
         "classification": "grande vitesse",
@@ -14016,7 +14016,7 @@
         "ticket_price": "862,0 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Pékin",
         "date": "samedi prochain",
         "classification": "grande vitesse",
@@ -14028,7 +14028,7 @@
         "ticket_price": "1000.0 yuan"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Pékin",
         "date": "samedi prochain",
         "classification": "grande vitesse",
@@ -14040,7 +14040,7 @@
         "ticket_price": "709,0 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Pékin",
         "date": "dimanche prochain, le matin",
         "classification": "grande vitesse",
@@ -14052,7 +14052,7 @@
         "ticket_price": "1380.0 yuan"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Pékin",
         "date": "dimanche prochain, le matin",
         "classification": "grande vitesse",
@@ -14064,7 +14064,7 @@
         "ticket_price": "862,0 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Pékin",
         "date": "dimanche prochain, l'après-midi",
         "classification": "grande vitesse",
@@ -14076,7 +14076,7 @@
         "ticket_price": "1380.0 yuan"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Pékin",
         "date": "dimanche prochain, l'après-midi",
         "classification": "grande vitesse",
@@ -14088,7 +14088,7 @@
         "ticket_price": "862,0 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Pékin",
         "date": "dimanche prochain, l'après-midi",
         "classification": "grande vitesse",
@@ -14100,7 +14100,7 @@
         "ticket_price": "1000.0 yuan"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Pékin",
         "date": "dimanche prochain, l'après-midi",
         "classification": "grande vitesse",
@@ -17136,7 +17136,7 @@
         "ticket_price": "489,0 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Shenzhen",
         "date": "lundi matin prochain",
         "classification": "grande vitesse",
@@ -17148,7 +17148,7 @@
         "ticket_price": "99,5 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Shenzhen",
         "date": "lundi matin prochain",
         "classification": "grande vitesse",
@@ -17160,7 +17160,7 @@
         "ticket_price": "74,5 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Shenzhen",
         "date": "lundi après-midi prochain",
         "classification": "grande vitesse",
@@ -17172,7 +17172,7 @@
         "ticket_price": "99,5 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Shenzhen",
         "date": "lundi après-midi prochain",
         "classification": "grande vitesse",
@@ -17184,31 +17184,31 @@
         "ticket_price": "74,5 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Shenzhen",
         "date": "lundi après-midi prochain",
         "classification": "grande vitesse",
         "seat_type": "première",
-        "train_number": "D7553, de Guangzhou à Shenzhen",
+        "train_number": "D7553, de Canton à Shenzhen",
         "duration": "1 heure et 22 minutes",
         "departure_time": "12:58 ce jour-là",
         "arrival_time": "14:20 ce jour-là",
         "ticket_price": "99,5 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Shenzhen",
         "date": "lundi après-midi prochain",
         "classification": "grande vitesse",
         "seat_type": "seconde classe",
-        "train_number": "D7553, de Guangzhou à Shenzhen",
+        "train_number": "D7553, de Canton à Shenzhen",
         "duration": "1 heure et 22 minutes",
         "departure_time": "12:58 ce jour-là",
         "arrival_time": "14:20 ce jour-là",
         "ticket_price": "74,5 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Shenzhen",
         "date": "mardi matin prochain",
         "classification": "grande vitesse",
@@ -17220,7 +17220,7 @@
         "ticket_price": "99,5 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Shenzhen",
         "date": "mardi matin prochain",
         "classification": "grande vitesse",
@@ -17232,7 +17232,7 @@
         "ticket_price": "74,5 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Shenzhen",
         "date": "mardi prochain après-midi",
         "classification": "grande vitesse",
@@ -17244,7 +17244,7 @@
         "ticket_price": "99,5 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Shenzhen",
         "date": "mardi prochain après-midi",
         "classification": "grande vitesse",
@@ -17256,31 +17256,31 @@
         "ticket_price": "74,5 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Shenzhen",
         "date": "mardi prochain après-midi",
         "classification": "grande vitesse",
         "seat_type": "première",
-        "train_number": "D7553, de Guangzhou à Shenzhen",
+        "train_number": "D7553, de Canton à Shenzhen",
         "duration": "1 heure et 22 minutes",
         "departure_time": "12:58 ce jour-là",
         "arrival_time": "14:20 ce jour-là",
         "ticket_price": "99,5 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Shenzhen",
         "date": "mardi prochain après-midi",
         "classification": "grande vitesse",
         "seat_type": "seconde classe",
-        "train_number": "D7553, de Guangzhou à Shenzhen",
+        "train_number": "D7553, de Canton à Shenzhen",
         "duration": "1 heure et 22 minutes",
         "departure_time": "12:58 ce jour-là",
         "arrival_time": "14:20 ce jour-là",
         "ticket_price": "74,5 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Shenzhen",
         "date": "mercredi matin prochain",
         "classification": "grande vitesse",
@@ -17292,7 +17292,7 @@
         "ticket_price": "99,5 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Shenzhen",
         "date": "mercredi matin prochain",
         "classification": "grande vitesse",
@@ -17304,7 +17304,7 @@
         "ticket_price": "74,5 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Shenzhen",
         "date": "mercredi prochain, l'après-midi",
         "classification": "grande vitesse",
@@ -17316,7 +17316,7 @@
         "ticket_price": "99,5 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Shenzhen",
         "date": "mercredi prochain, l'après-midi",
         "classification": "grande vitesse",
@@ -17328,31 +17328,31 @@
         "ticket_price": "74,5 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Shenzhen",
         "date": "mercredi prochain, l'après-midi",
         "classification": "grande vitesse",
         "seat_type": "première",
-        "train_number": "D7553, de Guangzhou à Shenzhen",
+        "train_number": "D7553, de Canton à Shenzhen",
         "duration": "1 heure et 22 minutes",
         "departure_time": "12:58 ce jour-là",
         "arrival_time": "14:20 ce jour-là",
         "ticket_price": "99,5 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Shenzhen",
         "date": "mercredi prochain, l'après-midi",
         "classification": "grande vitesse",
         "seat_type": "seconde classe",
-        "train_number": "D7553, de Guangzhou à Shenzhen",
+        "train_number": "D7553, de Canton à Shenzhen",
         "duration": "1 heure et 22 minutes",
         "departure_time": "12:58 ce jour-là",
         "arrival_time": "14:20 ce jour-là",
         "ticket_price": "74,5 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Shenzhen",
         "date": "jeudi matin prochain",
         "classification": "grande vitesse",
@@ -17364,7 +17364,7 @@
         "ticket_price": "99,5 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Shenzhen",
         "date": "jeudi matin prochain",
         "classification": "grande vitesse",
@@ -17376,7 +17376,7 @@
         "ticket_price": "74,5 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Shenzhen",
         "date": "jeudi prochain dans l'après-midi",
         "classification": "grande vitesse",
@@ -17388,7 +17388,7 @@
         "ticket_price": "99,5 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Shenzhen",
         "date": "jeudi prochain dans l'après-midi",
         "classification": "grande vitesse",
@@ -17400,31 +17400,31 @@
         "ticket_price": "74,5 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Shenzhen",
         "date": "jeudi prochain dans l'après-midi",
         "classification": "grande vitesse",
         "seat_type": "première",
-        "train_number": "D7553, de Guangzhou à Shenzhen",
+        "train_number": "D7553, de Canton à Shenzhen",
         "duration": "1 heure et 22 minutes",
         "departure_time": "12:58 ce jour-là",
         "arrival_time": "14:20 ce jour-là",
         "ticket_price": "99,5 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Shenzhen",
         "date": "jeudi prochain dans l'après-midi",
         "classification": "grande vitesse",
         "seat_type": "seconde classe",
-        "train_number": "D7553, de Guangzhou à Shenzhen",
+        "train_number": "D7553, de Canton à Shenzhen",
         "duration": "1 heure et 22 minutes",
         "departure_time": "12:58 ce jour-là",
         "arrival_time": "14:20 ce jour-là",
         "ticket_price": "74,5 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Shenzhen",
         "date": "vendredi prochain, le matin",
         "classification": "grande vitesse",
@@ -17436,7 +17436,7 @@
         "ticket_price": "99,5 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Shenzhen",
         "date": "vendredi prochain, le matin",
         "classification": "grande vitesse",
@@ -17448,7 +17448,7 @@
         "ticket_price": "74,5 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Shenzhen",
         "date": "vendredi après-midi prochain",
         "classification": "grande vitesse",
@@ -17460,7 +17460,7 @@
         "ticket_price": "99,5 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Shenzhen",
         "date": "vendredi après-midi prochain",
         "classification": "grande vitesse",
@@ -17472,31 +17472,31 @@
         "ticket_price": "74,5 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Shenzhen",
         "date": "vendredi après-midi prochain",
         "classification": "grande vitesse",
         "seat_type": "première",
-        "train_number": "D7553, de Guangzhou à Shenzhen",
+        "train_number": "D7553, de Canton à Shenzhen",
         "duration": "1 heure et 22 minutes",
         "departure_time": "12:58 ce jour-là",
         "arrival_time": "14:20 ce jour-là",
         "ticket_price": "99,5 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Shenzhen",
         "date": "vendredi après-midi prochain",
         "classification": "grande vitesse",
         "seat_type": "seconde classe",
-        "train_number": "D7553, de Guangzhou à Shenzhen",
+        "train_number": "D7553, de Canton à Shenzhen",
         "duration": "1 heure et 22 minutes",
         "departure_time": "12:58 ce jour-là",
         "arrival_time": "14:20 ce jour-là",
         "ticket_price": "74,5 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Shenzhen",
         "date": "samedi prochain, le matin",
         "classification": "grande vitesse",
@@ -17508,7 +17508,7 @@
         "ticket_price": "99,5 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Shenzhen",
         "date": "samedi prochain, le matin",
         "classification": "grande vitesse",
@@ -17520,7 +17520,7 @@
         "ticket_price": "74,5 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Shenzhen",
         "date": "samedi prochain",
         "classification": "grande vitesse",
@@ -17532,7 +17532,7 @@
         "ticket_price": "99,5 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Shenzhen",
         "date": "samedi prochain",
         "classification": "grande vitesse",
@@ -17544,31 +17544,31 @@
         "ticket_price": "74,5 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Shenzhen",
         "date": "samedi prochain",
         "classification": "grande vitesse",
         "seat_type": "première",
-        "train_number": "D7553, de Guangzhou à Shenzhen",
+        "train_number": "D7553, de Canton à Shenzhen",
         "duration": "1 heure et 22 minutes",
         "departure_time": "12:58 ce jour-là",
         "arrival_time": "14:20 ce jour-là",
         "ticket_price": "99,5 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Shenzhen",
         "date": "samedi prochain",
         "classification": "grande vitesse",
         "seat_type": "seconde classe",
-        "train_number": "D7553, de Guangzhou à Shenzhen",
+        "train_number": "D7553, de Canton à Shenzhen",
         "duration": "1 heure et 22 minutes",
         "departure_time": "12:58 ce jour-là",
         "arrival_time": "14:20 ce jour-là",
         "ticket_price": "74,5 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Shenzhen",
         "date": "dimanche prochain, le matin",
         "classification": "grande vitesse",
@@ -17580,7 +17580,7 @@
         "ticket_price": "99,5 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Shenzhen",
         "date": "dimanche prochain, le matin",
         "classification": "grande vitesse",
@@ -17592,7 +17592,7 @@
         "ticket_price": "74,5 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Shenzhen",
         "date": "dimanche prochain, l'après-midi",
         "classification": "grande vitesse",
@@ -17604,7 +17604,7 @@
         "ticket_price": "99,5 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Shenzhen",
         "date": "dimanche prochain, l'après-midi",
         "classification": "grande vitesse",
@@ -17616,24 +17616,24 @@
         "ticket_price": "74,5 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Shenzhen",
         "date": "dimanche prochain, l'après-midi",
         "classification": "grande vitesse",
         "seat_type": "première",
-        "train_number": "D7553, de Guangzhou à Shenzhen",
+        "train_number": "D7553, de Canton à Shenzhen",
         "duration": "1 heure et 22 minutes",
         "departure_time": "12:58 ce jour-là",
         "arrival_time": "14:20 ce jour-là",
         "ticket_price": "99,5 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Shenzhen",
         "date": "dimanche prochain, l'après-midi",
         "classification": "grande vitesse",
         "seat_type": "seconde classe",
-        "train_number": "D7553, de Guangzhou à Shenzhen",
+        "train_number": "D7553, de Canton à Shenzhen",
         "duration": "1 heure et 22 minutes",
         "departure_time": "12:58 ce jour-là",
         "arrival_time": "14:20 ce jour-là",
@@ -17641,7 +17641,7 @@
     },
     {
         "departure": "Shenzhen",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "lundi matin prochain",
         "classification": "grande vitesse",
         "seat_type": "première",
@@ -17653,7 +17653,7 @@
     },
     {
         "departure": "Shenzhen",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "lundi matin prochain",
         "classification": "grande vitesse",
         "seat_type": "seconde classe",
@@ -17665,11 +17665,11 @@
     },
     {
         "departure": "Shenzhen",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "lundi matin prochain",
         "classification": "grande vitesse",
         "seat_type": "première",
-        "train_number": "D7554, de Shenzhen à Guangzhou",
+        "train_number": "D7554, de Shenzhen à Canton",
         "duration": "1 heure et 21 minutes",
         "departure_time": "07 h 55 ce jour-là",
         "arrival_time": "09 h 16 ce même jour",
@@ -17677,11 +17677,11 @@
     },
     {
         "departure": "Shenzhen",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "lundi matin prochain",
         "classification": "grande vitesse",
         "seat_type": "seconde classe",
-        "train_number": "D7554, de Shenzhen à Guangzhou",
+        "train_number": "D7554, de Shenzhen à Canton",
         "duration": "1 heure et 21 minutes",
         "departure_time": "07 h 55 ce jour-là",
         "arrival_time": "09 h 16 ce même jour",
@@ -17689,7 +17689,7 @@
     },
     {
         "departure": "Shenzhen",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "lundi après-midi prochain",
         "classification": "grande vitesse",
         "seat_type": "première",
@@ -17701,7 +17701,7 @@
     },
     {
         "departure": "Shenzhen",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "lundi après-midi prochain",
         "classification": "grande vitesse",
         "seat_type": "seconde classe",
@@ -17713,7 +17713,7 @@
     },
     {
         "departure": "Shenzhen",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "mardi matin prochain",
         "classification": "grande vitesse",
         "seat_type": "première",
@@ -17725,7 +17725,7 @@
     },
     {
         "departure": "Shenzhen",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "mardi matin prochain",
         "classification": "grande vitesse",
         "seat_type": "seconde classe",
@@ -17737,11 +17737,11 @@
     },
     {
         "departure": "Shenzhen",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "mardi matin prochain",
         "classification": "grande vitesse",
         "seat_type": "première",
-        "train_number": "D7554, de Shenzhen à Guangzhou",
+        "train_number": "D7554, de Shenzhen à Canton",
         "duration": "1 heure et 21 minutes",
         "departure_time": "07 h 55 ce jour-là",
         "arrival_time": "09 h 16 ce même jour",
@@ -17749,11 +17749,11 @@
     },
     {
         "departure": "Shenzhen",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "mardi matin prochain",
         "classification": "grande vitesse",
         "seat_type": "seconde classe",
-        "train_number": "D7554, de Shenzhen à Guangzhou",
+        "train_number": "D7554, de Shenzhen à Canton",
         "duration": "1 heure et 21 minutes",
         "departure_time": "07 h 55 ce jour-là",
         "arrival_time": "09 h 16 ce même jour",
@@ -17761,7 +17761,7 @@
     },
     {
         "departure": "Shenzhen",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "mardi prochain après-midi",
         "classification": "grande vitesse",
         "seat_type": "première",
@@ -17773,7 +17773,7 @@
     },
     {
         "departure": "Shenzhen",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "mardi prochain après-midi",
         "classification": "grande vitesse",
         "seat_type": "seconde classe",
@@ -17785,7 +17785,7 @@
     },
     {
         "departure": "Shenzhen",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "mercredi matin prochain",
         "classification": "grande vitesse",
         "seat_type": "première",
@@ -17797,7 +17797,7 @@
     },
     {
         "departure": "Shenzhen",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "mercredi matin prochain",
         "classification": "grande vitesse",
         "seat_type": "seconde classe",
@@ -17809,11 +17809,11 @@
     },
     {
         "departure": "Shenzhen",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "mercredi matin prochain",
         "classification": "grande vitesse",
         "seat_type": "première",
-        "train_number": "D7554, de Shenzhen à Guangzhou",
+        "train_number": "D7554, de Shenzhen à Canton",
         "duration": "1 heure et 21 minutes",
         "departure_time": "07 h 55 ce jour-là",
         "arrival_time": "09 h 16 ce même jour",
@@ -17821,11 +17821,11 @@
     },
     {
         "departure": "Shenzhen",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "mercredi matin prochain",
         "classification": "grande vitesse",
         "seat_type": "seconde classe",
-        "train_number": "D7554, de Shenzhen à Guangzhou",
+        "train_number": "D7554, de Shenzhen à Canton",
         "duration": "1 heure et 21 minutes",
         "departure_time": "07 h 55 ce jour-là",
         "arrival_time": "09 h 16 ce même jour",
@@ -17833,7 +17833,7 @@
     },
     {
         "departure": "Shenzhen",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "mercredi prochain, l'après-midi",
         "classification": "grande vitesse",
         "seat_type": "première",
@@ -17845,7 +17845,7 @@
     },
     {
         "departure": "Shenzhen",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "mercredi prochain, l'après-midi",
         "classification": "grande vitesse",
         "seat_type": "seconde classe",
@@ -17857,7 +17857,7 @@
     },
     {
         "departure": "Shenzhen",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "jeudi matin prochain",
         "classification": "grande vitesse",
         "seat_type": "première",
@@ -17869,7 +17869,7 @@
     },
     {
         "departure": "Shenzhen",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "jeudi matin prochain",
         "classification": "grande vitesse",
         "seat_type": "seconde classe",
@@ -17881,11 +17881,11 @@
     },
     {
         "departure": "Shenzhen",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "jeudi matin prochain",
         "classification": "grande vitesse",
         "seat_type": "première",
-        "train_number": "D7554, de Shenzhen à Guangzhou",
+        "train_number": "D7554, de Shenzhen à Canton",
         "duration": "1 heure et 21 minutes",
         "departure_time": "07 h 55 ce jour-là",
         "arrival_time": "09 h 16 ce même jour",
@@ -17893,11 +17893,11 @@
     },
     {
         "departure": "Shenzhen",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "jeudi matin prochain",
         "classification": "grande vitesse",
         "seat_type": "seconde classe",
-        "train_number": "D7554, de Shenzhen à Guangzhou",
+        "train_number": "D7554, de Shenzhen à Canton",
         "duration": "1 heure et 21 minutes",
         "departure_time": "07 h 55 ce jour-là",
         "arrival_time": "09 h 16 ce même jour",
@@ -17905,7 +17905,7 @@
     },
     {
         "departure": "Shenzhen",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "jeudi prochain dans l'après-midi",
         "classification": "grande vitesse",
         "seat_type": "première",
@@ -17917,7 +17917,7 @@
     },
     {
         "departure": "Shenzhen",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "jeudi prochain dans l'après-midi",
         "classification": "grande vitesse",
         "seat_type": "seconde classe",
@@ -17929,7 +17929,7 @@
     },
     {
         "departure": "Shenzhen",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "vendredi prochain, le matin",
         "classification": "grande vitesse",
         "seat_type": "première",
@@ -17941,7 +17941,7 @@
     },
     {
         "departure": "Shenzhen",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "vendredi prochain, le matin",
         "classification": "grande vitesse",
         "seat_type": "seconde classe",
@@ -17953,11 +17953,11 @@
     },
     {
         "departure": "Shenzhen",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "vendredi prochain, le matin",
         "classification": "grande vitesse",
         "seat_type": "première",
-        "train_number": "D7554, de Shenzhen à Guangzhou",
+        "train_number": "D7554, de Shenzhen à Canton",
         "duration": "1 heure et 21 minutes",
         "departure_time": "07 h 55 ce jour-là",
         "arrival_time": "09 h 16 ce même jour",
@@ -17965,11 +17965,11 @@
     },
     {
         "departure": "Shenzhen",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "vendredi prochain, le matin",
         "classification": "grande vitesse",
         "seat_type": "seconde classe",
-        "train_number": "D7554, de Shenzhen à Guangzhou",
+        "train_number": "D7554, de Shenzhen à Canton",
         "duration": "1 heure et 21 minutes",
         "departure_time": "07 h 55 ce jour-là",
         "arrival_time": "09 h 16 ce même jour",
@@ -17977,7 +17977,7 @@
     },
     {
         "departure": "Shenzhen",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "vendredi après-midi prochain",
         "classification": "grande vitesse",
         "seat_type": "première",
@@ -17989,7 +17989,7 @@
     },
     {
         "departure": "Shenzhen",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "vendredi après-midi prochain",
         "classification": "grande vitesse",
         "seat_type": "seconde classe",
@@ -18001,7 +18001,7 @@
     },
     {
         "departure": "Shenzhen",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "samedi prochain, le matin",
         "classification": "grande vitesse",
         "seat_type": "première",
@@ -18013,7 +18013,7 @@
     },
     {
         "departure": "Shenzhen",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "samedi prochain, le matin",
         "classification": "grande vitesse",
         "seat_type": "seconde classe",
@@ -18025,11 +18025,11 @@
     },
     {
         "departure": "Shenzhen",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "samedi prochain, le matin",
         "classification": "grande vitesse",
         "seat_type": "première",
-        "train_number": "D7554, de Shenzhen à Guangzhou",
+        "train_number": "D7554, de Shenzhen à Canton",
         "duration": "1 heure et 21 minutes",
         "departure_time": "07 h 55 ce jour-là",
         "arrival_time": "09 h 16 ce même jour",
@@ -18037,11 +18037,11 @@
     },
     {
         "departure": "Shenzhen",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "samedi prochain, le matin",
         "classification": "grande vitesse",
         "seat_type": "seconde classe",
-        "train_number": "D7554, de Shenzhen à Guangzhou",
+        "train_number": "D7554, de Shenzhen à Canton",
         "duration": "1 heure et 21 minutes",
         "departure_time": "07 h 55 ce jour-là",
         "arrival_time": "09 h 16 ce même jour",
@@ -18049,7 +18049,7 @@
     },
     {
         "departure": "Shenzhen",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "samedi prochain",
         "classification": "grande vitesse",
         "seat_type": "première",
@@ -18061,7 +18061,7 @@
     },
     {
         "departure": "Shenzhen",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "samedi prochain",
         "classification": "grande vitesse",
         "seat_type": "seconde classe",
@@ -18073,7 +18073,7 @@
     },
     {
         "departure": "Shenzhen",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "dimanche prochain, le matin",
         "classification": "grande vitesse",
         "seat_type": "première",
@@ -18085,7 +18085,7 @@
     },
     {
         "departure": "Shenzhen",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "dimanche prochain, le matin",
         "classification": "grande vitesse",
         "seat_type": "seconde classe",
@@ -18097,11 +18097,11 @@
     },
     {
         "departure": "Shenzhen",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "dimanche prochain, le matin",
         "classification": "grande vitesse",
         "seat_type": "première",
-        "train_number": "D7554, de Shenzhen à Guangzhou",
+        "train_number": "D7554, de Shenzhen à Canton",
         "duration": "1 heure et 21 minutes",
         "departure_time": "07 h 55 ce jour-là",
         "arrival_time": "09 h 16 ce même jour",
@@ -18109,11 +18109,11 @@
     },
     {
         "departure": "Shenzhen",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "dimanche prochain, le matin",
         "classification": "grande vitesse",
         "seat_type": "seconde classe",
-        "train_number": "D7554, de Shenzhen à Guangzhou",
+        "train_number": "D7554, de Shenzhen à Canton",
         "duration": "1 heure et 21 minutes",
         "departure_time": "07 h 55 ce jour-là",
         "arrival_time": "09 h 16 ce même jour",
@@ -18121,7 +18121,7 @@
     },
     {
         "departure": "Shenzhen",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "dimanche prochain, l'après-midi",
         "classification": "grande vitesse",
         "seat_type": "première",
@@ -18133,7 +18133,7 @@
     },
     {
         "departure": "Shenzhen",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "dimanche prochain, l'après-midi",
         "classification": "grande vitesse",
         "seat_type": "seconde classe",
@@ -18144,7 +18144,7 @@
         "ticket_price": "74,5 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Chengdu",
         "date": "lundi matin prochain",
         "classification": "grande vitesse",
@@ -18156,7 +18156,7 @@
         "ticket_price": "982,0 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Chengdu",
         "date": "lundi matin prochain",
         "classification": "grande vitesse",
@@ -18168,7 +18168,7 @@
         "ticket_price": "613,0 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Chengdu",
         "date": "lundi après-midi prochain",
         "classification": "grande vitesse",
@@ -18180,7 +18180,7 @@
         "ticket_price": "982,0 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Chengdu",
         "date": "lundi après-midi prochain",
         "classification": "grande vitesse",
@@ -18192,7 +18192,7 @@
         "ticket_price": "613,0 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Chengdu",
         "date": "mardi matin prochain",
         "classification": "grande vitesse",
@@ -18204,7 +18204,7 @@
         "ticket_price": "982,0 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Chengdu",
         "date": "mardi matin prochain",
         "classification": "grande vitesse",
@@ -18216,7 +18216,7 @@
         "ticket_price": "613,0 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Chengdu",
         "date": "mardi prochain après-midi",
         "classification": "grande vitesse",
@@ -18228,7 +18228,7 @@
         "ticket_price": "982,0 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Chengdu",
         "date": "mardi prochain après-midi",
         "classification": "grande vitesse",
@@ -18240,7 +18240,7 @@
         "ticket_price": "613,0 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Chengdu",
         "date": "mercredi matin prochain",
         "classification": "grande vitesse",
@@ -18252,7 +18252,7 @@
         "ticket_price": "982,0 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Chengdu",
         "date": "mercredi matin prochain",
         "classification": "grande vitesse",
@@ -18264,7 +18264,7 @@
         "ticket_price": "613,0 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Chengdu",
         "date": "mercredi prochain, l'après-midi",
         "classification": "grande vitesse",
@@ -18276,7 +18276,7 @@
         "ticket_price": "982,0 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Chengdu",
         "date": "mercredi prochain, l'après-midi",
         "classification": "grande vitesse",
@@ -18288,7 +18288,7 @@
         "ticket_price": "613,0 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Chengdu",
         "date": "jeudi matin prochain",
         "classification": "grande vitesse",
@@ -18300,7 +18300,7 @@
         "ticket_price": "982,0 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Chengdu",
         "date": "jeudi matin prochain",
         "classification": "grande vitesse",
@@ -18312,7 +18312,7 @@
         "ticket_price": "613,0 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Chengdu",
         "date": "jeudi prochain dans l'après-midi",
         "classification": "grande vitesse",
@@ -18324,7 +18324,7 @@
         "ticket_price": "982,0 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Chengdu",
         "date": "jeudi prochain dans l'après-midi",
         "classification": "grande vitesse",
@@ -18336,7 +18336,7 @@
         "ticket_price": "613,0 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Chengdu",
         "date": "vendredi prochain, le matin",
         "classification": "grande vitesse",
@@ -18348,7 +18348,7 @@
         "ticket_price": "982,0 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Chengdu",
         "date": "vendredi prochain, le matin",
         "classification": "grande vitesse",
@@ -18360,7 +18360,7 @@
         "ticket_price": "613,0 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Chengdu",
         "date": "vendredi après-midi prochain",
         "classification": "grande vitesse",
@@ -18372,7 +18372,7 @@
         "ticket_price": "982,0 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Chengdu",
         "date": "vendredi après-midi prochain",
         "classification": "grande vitesse",
@@ -18384,7 +18384,7 @@
         "ticket_price": "613,0 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Chengdu",
         "date": "samedi prochain, le matin",
         "classification": "grande vitesse",
@@ -18396,7 +18396,7 @@
         "ticket_price": "982,0 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Chengdu",
         "date": "samedi prochain, le matin",
         "classification": "grande vitesse",
@@ -18408,7 +18408,7 @@
         "ticket_price": "613,0 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Chengdu",
         "date": "samedi prochain",
         "classification": "grande vitesse",
@@ -18420,7 +18420,7 @@
         "ticket_price": "982,0 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Chengdu",
         "date": "samedi prochain",
         "classification": "grande vitesse",
@@ -18432,7 +18432,7 @@
         "ticket_price": "613,0 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Chengdu",
         "date": "dimanche prochain, le matin",
         "classification": "grande vitesse",
@@ -18444,7 +18444,7 @@
         "ticket_price": "982,0 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Chengdu",
         "date": "dimanche prochain, le matin",
         "classification": "grande vitesse",
@@ -18456,7 +18456,7 @@
         "ticket_price": "613,0 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Chengdu",
         "date": "dimanche prochain, l'après-midi",
         "classification": "grande vitesse",
@@ -18468,7 +18468,7 @@
         "ticket_price": "982,0 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Chengdu",
         "date": "dimanche prochain, l'après-midi",
         "classification": "grande vitesse",
@@ -18481,11 +18481,11 @@
     },
     {
         "departure": "Chengdu",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "lundi matin prochain",
         "classification": "grande vitesse",
         "seat_type": "première",
-        "train_number": "D1859, de Chengdu-Est à Guangzhou",
+        "train_number": "D1859, de Chengdu-Est à Canton",
         "duration": "9 heures et 3 minutes",
         "departure_time": "08 h 28 ce jour-là",
         "arrival_time": "17:31 ce jour-là",
@@ -18493,11 +18493,11 @@
     },
     {
         "departure": "Chengdu",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "lundi matin prochain",
         "classification": "grande vitesse",
         "seat_type": "seconde classe",
-        "train_number": "D1859, de Chengdu-Est à Guangzhou",
+        "train_number": "D1859, de Chengdu-Est à Canton",
         "duration": "9 heures et 3 minutes",
         "departure_time": "08 h 28 ce jour-là",
         "arrival_time": "17:31 ce jour-là",
@@ -18505,7 +18505,7 @@
     },
     {
         "departure": "Chengdu",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "lundi après-midi prochain",
         "classification": "grande vitesse",
         "seat_type": "première",
@@ -18517,7 +18517,7 @@
     },
     {
         "departure": "Chengdu",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "lundi après-midi prochain",
         "classification": "grande vitesse",
         "seat_type": "seconde classe",
@@ -18529,11 +18529,11 @@
     },
     {
         "departure": "Chengdu",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "mardi matin prochain",
         "classification": "grande vitesse",
         "seat_type": "première",
-        "train_number": "D1859, de Chengdu-Est à Guangzhou",
+        "train_number": "D1859, de Chengdu-Est à Canton",
         "duration": "9 heures et 3 minutes",
         "departure_time": "08 h 28 ce jour-là",
         "arrival_time": "17:31 ce jour-là",
@@ -18541,11 +18541,11 @@
     },
     {
         "departure": "Chengdu",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "mardi matin prochain",
         "classification": "grande vitesse",
         "seat_type": "seconde classe",
-        "train_number": "D1859, de Chengdu-Est à Guangzhou",
+        "train_number": "D1859, de Chengdu-Est à Canton",
         "duration": "9 heures et 3 minutes",
         "departure_time": "08 h 28 ce jour-là",
         "arrival_time": "17:31 ce jour-là",
@@ -18553,7 +18553,7 @@
     },
     {
         "departure": "Chengdu",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "mardi prochain après-midi",
         "classification": "grande vitesse",
         "seat_type": "première",
@@ -18565,7 +18565,7 @@
     },
     {
         "departure": "Chengdu",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "mardi prochain après-midi",
         "classification": "grande vitesse",
         "seat_type": "seconde classe",
@@ -18577,11 +18577,11 @@
     },
     {
         "departure": "Chengdu",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "mercredi matin prochain",
         "classification": "grande vitesse",
         "seat_type": "première",
-        "train_number": "D1859, de Chengdu-Est à Guangzhou",
+        "train_number": "D1859, de Chengdu-Est à Canton",
         "duration": "9 heures et 3 minutes",
         "departure_time": "08 h 28 ce jour-là",
         "arrival_time": "17:31 ce jour-là",
@@ -18589,11 +18589,11 @@
     },
     {
         "departure": "Chengdu",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "mercredi matin prochain",
         "classification": "grande vitesse",
         "seat_type": "seconde classe",
-        "train_number": "D1859, de Chengdu-Est à Guangzhou",
+        "train_number": "D1859, de Chengdu-Est à Canton",
         "duration": "9 heures et 3 minutes",
         "departure_time": "08 h 28 ce jour-là",
         "arrival_time": "17:31 ce jour-là",
@@ -18601,7 +18601,7 @@
     },
     {
         "departure": "Chengdu",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "mercredi prochain, l'après-midi",
         "classification": "grande vitesse",
         "seat_type": "première",
@@ -18613,7 +18613,7 @@
     },
     {
         "departure": "Chengdu",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "mercredi prochain, l'après-midi",
         "classification": "grande vitesse",
         "seat_type": "seconde classe",
@@ -18625,11 +18625,11 @@
     },
     {
         "departure": "Chengdu",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "jeudi matin prochain",
         "classification": "grande vitesse",
         "seat_type": "première",
-        "train_number": "D1859, de Chengdu-Est à Guangzhou",
+        "train_number": "D1859, de Chengdu-Est à Canton",
         "duration": "9 heures et 3 minutes",
         "departure_time": "08 h 28 ce jour-là",
         "arrival_time": "17:31 ce jour-là",
@@ -18637,11 +18637,11 @@
     },
     {
         "departure": "Chengdu",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "jeudi matin prochain",
         "classification": "grande vitesse",
         "seat_type": "seconde classe",
-        "train_number": "D1859, de Chengdu-Est à Guangzhou",
+        "train_number": "D1859, de Chengdu-Est à Canton",
         "duration": "9 heures et 3 minutes",
         "departure_time": "08 h 28 ce jour-là",
         "arrival_time": "17:31 ce jour-là",
@@ -18649,7 +18649,7 @@
     },
     {
         "departure": "Chengdu",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "jeudi prochain dans l'après-midi",
         "classification": "grande vitesse",
         "seat_type": "première",
@@ -18661,7 +18661,7 @@
     },
     {
         "departure": "Chengdu",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "jeudi prochain dans l'après-midi",
         "classification": "grande vitesse",
         "seat_type": "seconde classe",
@@ -18673,11 +18673,11 @@
     },
     {
         "departure": "Chengdu",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "vendredi prochain, le matin",
         "classification": "grande vitesse",
         "seat_type": "première",
-        "train_number": "D1859, de Chengdu-Est à Guangzhou",
+        "train_number": "D1859, de Chengdu-Est à Canton",
         "duration": "9 heures et 3 minutes",
         "departure_time": "08 h 28 ce jour-là",
         "arrival_time": "17:31 ce jour-là",
@@ -18685,11 +18685,11 @@
     },
     {
         "departure": "Chengdu",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "vendredi prochain, le matin",
         "classification": "grande vitesse",
         "seat_type": "seconde classe",
-        "train_number": "D1859, de Chengdu-Est à Guangzhou",
+        "train_number": "D1859, de Chengdu-Est à Canton",
         "duration": "9 heures et 3 minutes",
         "departure_time": "08 h 28 ce jour-là",
         "arrival_time": "17:31 ce jour-là",
@@ -18697,7 +18697,7 @@
     },
     {
         "departure": "Chengdu",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "vendredi après-midi prochain",
         "classification": "grande vitesse",
         "seat_type": "première",
@@ -18709,7 +18709,7 @@
     },
     {
         "departure": "Chengdu",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "vendredi après-midi prochain",
         "classification": "grande vitesse",
         "seat_type": "seconde classe",
@@ -18721,11 +18721,11 @@
     },
     {
         "departure": "Chengdu",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "samedi prochain, le matin",
         "classification": "grande vitesse",
         "seat_type": "première",
-        "train_number": "D1859, de Chengdu-Est à Guangzhou",
+        "train_number": "D1859, de Chengdu-Est à Canton",
         "duration": "9 heures et 3 minutes",
         "departure_time": "08 h 28 ce jour-là",
         "arrival_time": "17:31 ce jour-là",
@@ -18733,11 +18733,11 @@
     },
     {
         "departure": "Chengdu",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "samedi prochain, le matin",
         "classification": "grande vitesse",
         "seat_type": "seconde classe",
-        "train_number": "D1859, de Chengdu-Est à Guangzhou",
+        "train_number": "D1859, de Chengdu-Est à Canton",
         "duration": "9 heures et 3 minutes",
         "departure_time": "08 h 28 ce jour-là",
         "arrival_time": "17:31 ce jour-là",
@@ -18745,7 +18745,7 @@
     },
     {
         "departure": "Chengdu",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "samedi prochain",
         "classification": "grande vitesse",
         "seat_type": "première",
@@ -18757,7 +18757,7 @@
     },
     {
         "departure": "Chengdu",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "samedi prochain",
         "classification": "grande vitesse",
         "seat_type": "seconde classe",
@@ -18769,11 +18769,11 @@
     },
     {
         "departure": "Chengdu",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "dimanche prochain, le matin",
         "classification": "grande vitesse",
         "seat_type": "première",
-        "train_number": "D1859, de Chengdu-Est à Guangzhou",
+        "train_number": "D1859, de Chengdu-Est à Canton",
         "duration": "9 heures et 3 minutes",
         "departure_time": "08 h 28 ce jour-là",
         "arrival_time": "17:31 ce jour-là",
@@ -18781,11 +18781,11 @@
     },
     {
         "departure": "Chengdu",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "dimanche prochain, le matin",
         "classification": "grande vitesse",
         "seat_type": "seconde classe",
-        "train_number": "D1859, de Chengdu-Est à Guangzhou",
+        "train_number": "D1859, de Chengdu-Est à Canton",
         "duration": "9 heures et 3 minutes",
         "departure_time": "08 h 28 ce jour-là",
         "arrival_time": "17:31 ce jour-là",
@@ -18793,7 +18793,7 @@
     },
     {
         "departure": "Chengdu",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "dimanche prochain, l'après-midi",
         "classification": "grande vitesse",
         "seat_type": "première",
@@ -18805,7 +18805,7 @@
     },
     {
         "departure": "Chengdu",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "dimanche prochain, l'après-midi",
         "classification": "grande vitesse",
         "seat_type": "seconde classe",
@@ -18816,7 +18816,7 @@
         "ticket_price": "598,0 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Hangzhou",
         "date": "lundi matin prochain",
         "classification": "grande vitesse",
@@ -18828,7 +18828,7 @@
         "ticket_price": "1185,5 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Hangzhou",
         "date": "lundi matin prochain",
         "classification": "grande vitesse",
@@ -18840,7 +18840,7 @@
         "ticket_price": "720,0 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Hangzhou",
         "date": "lundi après-midi prochain",
         "classification": "grande vitesse",
@@ -18852,7 +18852,7 @@
         "ticket_price": "1185,5 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Hangzhou",
         "date": "lundi après-midi prochain",
         "classification": "grande vitesse",
@@ -18864,7 +18864,7 @@
         "ticket_price": "720,0 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Hangzhou",
         "date": "lundi après-midi prochain",
         "classification": "grande vitesse",
@@ -18876,7 +18876,7 @@
         "ticket_price": "1100.0 yuan"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Hangzhou",
         "date": "lundi après-midi prochain",
         "classification": "grande vitesse",
@@ -18888,7 +18888,7 @@
         "ticket_price": "650,0 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Hangzhou",
         "date": "mardi matin prochain",
         "classification": "grande vitesse",
@@ -18900,7 +18900,7 @@
         "ticket_price": "1185,5 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Hangzhou",
         "date": "mardi matin prochain",
         "classification": "grande vitesse",
@@ -18912,7 +18912,7 @@
         "ticket_price": "720,0 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Hangzhou",
         "date": "mardi prochain après-midi",
         "classification": "grande vitesse",
@@ -18924,7 +18924,7 @@
         "ticket_price": "1185,5 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Hangzhou",
         "date": "mardi prochain après-midi",
         "classification": "grande vitesse",
@@ -18936,7 +18936,7 @@
         "ticket_price": "720,0 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Hangzhou",
         "date": "mardi prochain après-midi",
         "classification": "grande vitesse",
@@ -18948,7 +18948,7 @@
         "ticket_price": "1100.0 yuan"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Hangzhou",
         "date": "mardi prochain après-midi",
         "classification": "grande vitesse",
@@ -18960,7 +18960,7 @@
         "ticket_price": "650,0 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Hangzhou",
         "date": "mercredi matin prochain",
         "classification": "grande vitesse",
@@ -18972,7 +18972,7 @@
         "ticket_price": "1185,5 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Hangzhou",
         "date": "mercredi matin prochain",
         "classification": "grande vitesse",
@@ -18984,7 +18984,7 @@
         "ticket_price": "720,0 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Hangzhou",
         "date": "mercredi prochain, l'après-midi",
         "classification": "grande vitesse",
@@ -18996,7 +18996,7 @@
         "ticket_price": "1185,5 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Hangzhou",
         "date": "mercredi prochain, l'après-midi",
         "classification": "grande vitesse",
@@ -19008,7 +19008,7 @@
         "ticket_price": "720,0 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Hangzhou",
         "date": "mercredi prochain, l'après-midi",
         "classification": "grande vitesse",
@@ -19020,7 +19020,7 @@
         "ticket_price": "1100.0 yuan"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Hangzhou",
         "date": "mercredi prochain, l'après-midi",
         "classification": "grande vitesse",
@@ -19032,7 +19032,7 @@
         "ticket_price": "650,0 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Hangzhou",
         "date": "jeudi matin prochain",
         "classification": "grande vitesse",
@@ -19044,7 +19044,7 @@
         "ticket_price": "1185,5 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Hangzhou",
         "date": "jeudi matin prochain",
         "classification": "grande vitesse",
@@ -19056,7 +19056,7 @@
         "ticket_price": "720,0 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Hangzhou",
         "date": "jeudi prochain dans l'après-midi",
         "classification": "grande vitesse",
@@ -19068,7 +19068,7 @@
         "ticket_price": "1185,5 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Hangzhou",
         "date": "jeudi prochain dans l'après-midi",
         "classification": "grande vitesse",
@@ -19080,7 +19080,7 @@
         "ticket_price": "720,0 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Hangzhou",
         "date": "jeudi prochain dans l'après-midi",
         "classification": "grande vitesse",
@@ -19092,7 +19092,7 @@
         "ticket_price": "1100.0 yuan"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Hangzhou",
         "date": "jeudi prochain dans l'après-midi",
         "classification": "grande vitesse",
@@ -19104,7 +19104,7 @@
         "ticket_price": "650,0 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Hangzhou",
         "date": "vendredi prochain, le matin",
         "classification": "grande vitesse",
@@ -19116,7 +19116,7 @@
         "ticket_price": "1185,5 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Hangzhou",
         "date": "vendredi prochain, le matin",
         "classification": "grande vitesse",
@@ -19128,7 +19128,7 @@
         "ticket_price": "720,0 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Hangzhou",
         "date": "vendredi après-midi prochain",
         "classification": "grande vitesse",
@@ -19140,7 +19140,7 @@
         "ticket_price": "1185,5 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Hangzhou",
         "date": "vendredi après-midi prochain",
         "classification": "grande vitesse",
@@ -19152,7 +19152,7 @@
         "ticket_price": "720,0 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Hangzhou",
         "date": "vendredi après-midi prochain",
         "classification": "grande vitesse",
@@ -19164,7 +19164,7 @@
         "ticket_price": "1100.0 yuan"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Hangzhou",
         "date": "vendredi après-midi prochain",
         "classification": "grande vitesse",
@@ -19176,7 +19176,7 @@
         "ticket_price": "650,0 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Hangzhou",
         "date": "samedi prochain, le matin",
         "classification": "grande vitesse",
@@ -19188,7 +19188,7 @@
         "ticket_price": "1185,5 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Hangzhou",
         "date": "samedi prochain, le matin",
         "classification": "grande vitesse",
@@ -19200,7 +19200,7 @@
         "ticket_price": "720,0 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Hangzhou",
         "date": "samedi prochain",
         "classification": "grande vitesse",
@@ -19212,7 +19212,7 @@
         "ticket_price": "1185,5 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Hangzhou",
         "date": "samedi prochain",
         "classification": "grande vitesse",
@@ -19224,7 +19224,7 @@
         "ticket_price": "720,0 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Hangzhou",
         "date": "samedi prochain",
         "classification": "grande vitesse",
@@ -19236,7 +19236,7 @@
         "ticket_price": "1100.0 yuan"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Hangzhou",
         "date": "samedi prochain",
         "classification": "grande vitesse",
@@ -19248,7 +19248,7 @@
         "ticket_price": "650,0 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Hangzhou",
         "date": "dimanche prochain, le matin",
         "classification": "grande vitesse",
@@ -19260,7 +19260,7 @@
         "ticket_price": "1185,5 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Hangzhou",
         "date": "dimanche prochain, le matin",
         "classification": "grande vitesse",
@@ -19272,7 +19272,7 @@
         "ticket_price": "720,0 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Hangzhou",
         "date": "dimanche prochain, l'après-midi",
         "classification": "grande vitesse",
@@ -19284,7 +19284,7 @@
         "ticket_price": "1185,5 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Hangzhou",
         "date": "dimanche prochain, l'après-midi",
         "classification": "grande vitesse",
@@ -19296,7 +19296,7 @@
         "ticket_price": "720,0 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Hangzhou",
         "date": "dimanche prochain, l'après-midi",
         "classification": "grande vitesse",
@@ -19308,7 +19308,7 @@
         "ticket_price": "1100.0 yuan"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Hangzhou",
         "date": "dimanche prochain, l'après-midi",
         "classification": "grande vitesse",
@@ -19321,7 +19321,7 @@
     },
     {
         "departure": "Hangzhou",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "lundi matin prochain",
         "classification": "grande vitesse",
         "seat_type": "première",
@@ -19333,7 +19333,7 @@
     },
     {
         "departure": "Hangzhou",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "lundi matin prochain",
         "classification": "grande vitesse",
         "seat_type": "seconde classe",
@@ -19345,7 +19345,7 @@
     },
     {
         "departure": "Hangzhou",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "lundi après-midi prochain",
         "classification": "grande vitesse",
         "seat_type": "première",
@@ -19357,7 +19357,7 @@
     },
     {
         "departure": "Hangzhou",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "lundi après-midi prochain",
         "classification": "grande vitesse",
         "seat_type": "seconde classe",
@@ -19369,7 +19369,7 @@
     },
     {
         "departure": "Hangzhou",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "lundi après-midi prochain",
         "classification": "grande vitesse",
         "seat_type": "couchette en première classe",
@@ -19381,7 +19381,7 @@
     },
     {
         "departure": "Hangzhou",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "lundi après-midi prochain",
         "classification": "grande vitesse",
         "seat_type": "couchette en deuxième classe",
@@ -19393,7 +19393,7 @@
     },
     {
         "departure": "Hangzhou",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "mardi matin prochain",
         "classification": "grande vitesse",
         "seat_type": "première",
@@ -19405,7 +19405,7 @@
     },
     {
         "departure": "Hangzhou",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "mardi matin prochain",
         "classification": "grande vitesse",
         "seat_type": "seconde classe",
@@ -19417,7 +19417,7 @@
     },
     {
         "departure": "Hangzhou",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "mardi prochain après-midi",
         "classification": "grande vitesse",
         "seat_type": "première",
@@ -19429,7 +19429,7 @@
     },
     {
         "departure": "Hangzhou",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "mardi prochain après-midi",
         "classification": "grande vitesse",
         "seat_type": "seconde classe",
@@ -19441,7 +19441,7 @@
     },
     {
         "departure": "Hangzhou",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "mardi prochain après-midi",
         "classification": "grande vitesse",
         "seat_type": "couchette en première classe",
@@ -19453,7 +19453,7 @@
     },
     {
         "departure": "Hangzhou",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "mardi prochain après-midi",
         "classification": "grande vitesse",
         "seat_type": "couchette en deuxième classe",
@@ -19465,7 +19465,7 @@
     },
     {
         "departure": "Hangzhou",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "mercredi matin prochain",
         "classification": "grande vitesse",
         "seat_type": "première",
@@ -19477,7 +19477,7 @@
     },
     {
         "departure": "Hangzhou",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "mercredi matin prochain",
         "classification": "grande vitesse",
         "seat_type": "seconde classe",
@@ -19489,7 +19489,7 @@
     },
     {
         "departure": "Hangzhou",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "mercredi prochain, l'après-midi",
         "classification": "grande vitesse",
         "seat_type": "première",
@@ -19501,7 +19501,7 @@
     },
     {
         "departure": "Hangzhou",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "mercredi prochain, l'après-midi",
         "classification": "grande vitesse",
         "seat_type": "seconde classe",
@@ -19513,7 +19513,7 @@
     },
     {
         "departure": "Hangzhou",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "mercredi prochain, l'après-midi",
         "classification": "grande vitesse",
         "seat_type": "couchette en première classe",
@@ -19525,7 +19525,7 @@
     },
     {
         "departure": "Hangzhou",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "mercredi prochain, l'après-midi",
         "classification": "grande vitesse",
         "seat_type": "couchette en deuxième classe",
@@ -19537,7 +19537,7 @@
     },
     {
         "departure": "Hangzhou",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "jeudi matin prochain",
         "classification": "grande vitesse",
         "seat_type": "première",
@@ -19549,7 +19549,7 @@
     },
     {
         "departure": "Hangzhou",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "jeudi matin prochain",
         "classification": "grande vitesse",
         "seat_type": "seconde classe",
@@ -19561,7 +19561,7 @@
     },
     {
         "departure": "Hangzhou",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "jeudi prochain dans l'après-midi",
         "classification": "grande vitesse",
         "seat_type": "première",
@@ -19573,7 +19573,7 @@
     },
     {
         "departure": "Hangzhou",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "jeudi prochain dans l'après-midi",
         "classification": "grande vitesse",
         "seat_type": "seconde classe",
@@ -19585,7 +19585,7 @@
     },
     {
         "departure": "Hangzhou",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "jeudi prochain dans l'après-midi",
         "classification": "grande vitesse",
         "seat_type": "couchette en première classe",
@@ -19597,7 +19597,7 @@
     },
     {
         "departure": "Hangzhou",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "jeudi prochain dans l'après-midi",
         "classification": "grande vitesse",
         "seat_type": "couchette en deuxième classe",
@@ -19609,7 +19609,7 @@
     },
     {
         "departure": "Hangzhou",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "vendredi prochain, le matin",
         "classification": "grande vitesse",
         "seat_type": "première",
@@ -19621,7 +19621,7 @@
     },
     {
         "departure": "Hangzhou",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "vendredi prochain, le matin",
         "classification": "grande vitesse",
         "seat_type": "seconde classe",
@@ -19633,7 +19633,7 @@
     },
     {
         "departure": "Hangzhou",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "vendredi après-midi prochain",
         "classification": "grande vitesse",
         "seat_type": "première",
@@ -19645,7 +19645,7 @@
     },
     {
         "departure": "Hangzhou",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "vendredi après-midi prochain",
         "classification": "grande vitesse",
         "seat_type": "seconde classe",
@@ -19657,7 +19657,7 @@
     },
     {
         "departure": "Hangzhou",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "vendredi après-midi prochain",
         "classification": "grande vitesse",
         "seat_type": "couchette en première classe",
@@ -19669,7 +19669,7 @@
     },
     {
         "departure": "Hangzhou",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "vendredi après-midi prochain",
         "classification": "grande vitesse",
         "seat_type": "couchette en deuxième classe",
@@ -19681,7 +19681,7 @@
     },
     {
         "departure": "Hangzhou",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "samedi prochain, le matin",
         "classification": "grande vitesse",
         "seat_type": "première",
@@ -19693,7 +19693,7 @@
     },
     {
         "departure": "Hangzhou",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "samedi prochain, le matin",
         "classification": "grande vitesse",
         "seat_type": "seconde classe",
@@ -19705,7 +19705,7 @@
     },
     {
         "departure": "Hangzhou",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "samedi prochain",
         "classification": "grande vitesse",
         "seat_type": "première",
@@ -19717,7 +19717,7 @@
     },
     {
         "departure": "Hangzhou",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "samedi prochain",
         "classification": "grande vitesse",
         "seat_type": "seconde classe",
@@ -19729,7 +19729,7 @@
     },
     {
         "departure": "Hangzhou",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "samedi prochain",
         "classification": "grande vitesse",
         "seat_type": "couchette en première classe",
@@ -19741,7 +19741,7 @@
     },
     {
         "departure": "Hangzhou",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "samedi prochain",
         "classification": "grande vitesse",
         "seat_type": "couchette en deuxième classe",
@@ -19753,7 +19753,7 @@
     },
     {
         "departure": "Hangzhou",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "dimanche prochain, le matin",
         "classification": "grande vitesse",
         "seat_type": "première",
@@ -19765,7 +19765,7 @@
     },
     {
         "departure": "Hangzhou",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "dimanche prochain, le matin",
         "classification": "grande vitesse",
         "seat_type": "seconde classe",
@@ -19777,7 +19777,7 @@
     },
     {
         "departure": "Hangzhou",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "dimanche prochain, l'après-midi",
         "classification": "grande vitesse",
         "seat_type": "première",
@@ -19789,7 +19789,7 @@
     },
     {
         "departure": "Hangzhou",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "dimanche prochain, l'après-midi",
         "classification": "grande vitesse",
         "seat_type": "seconde classe",
@@ -19801,7 +19801,7 @@
     },
     {
         "departure": "Hangzhou",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "dimanche prochain, l'après-midi",
         "classification": "grande vitesse",
         "seat_type": "couchette en première classe",
@@ -19813,7 +19813,7 @@
     },
     {
         "departure": "Hangzhou",
-        "destination": "Guangzhou",
+        "destination": "Canton",
         "date": "dimanche prochain, l'après-midi",
         "classification": "grande vitesse",
         "seat_type": "couchette en deuxième classe",
@@ -19824,7 +19824,7 @@
         "ticket_price": "650,0 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Xiamen",
         "date": "lundi après-midi prochain",
         "classification": "grande vitesse",
@@ -19836,7 +19836,7 @@
         "ticket_price": "404,5 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Xiamen",
         "date": "lundi après-midi prochain",
         "classification": "grande vitesse",
@@ -19848,31 +19848,31 @@
         "ticket_price": "264,5 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Xiamen",
         "date": "lundi après-midi prochain",
         "classification": "grande vitesse",
         "seat_type": "première",
-        "train_number": "D2381, de Guangzhou-Est à Xiamen",
+        "train_number": "D2381, de Canton-Est à Xiamen",
         "duration": "5 heures et 4 minutes",
         "departure_time": "12 h 38 ce jour-là",
         "arrival_time": "17:42 ce jour-là",
         "ticket_price": "387,5 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Xiamen",
         "date": "lundi après-midi prochain",
         "classification": "grande vitesse",
         "seat_type": "seconde classe",
-        "train_number": "D2381, de Guangzhou-Est à Xiamen",
+        "train_number": "D2381, de Canton-Est à Xiamen",
         "duration": "5 heures et 4 minutes",
         "departure_time": "12 h 38 ce jour-là",
         "arrival_time": "17:42 ce jour-là",
         "ticket_price": "264,0 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Xiamen",
         "date": "mardi prochain après-midi",
         "classification": "grande vitesse",
@@ -19884,7 +19884,7 @@
         "ticket_price": "404,5 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Xiamen",
         "date": "mardi prochain après-midi",
         "classification": "grande vitesse",
@@ -19896,31 +19896,31 @@
         "ticket_price": "264,5 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Xiamen",
         "date": "mardi prochain après-midi",
         "classification": "grande vitesse",
         "seat_type": "première",
-        "train_number": "D2381, de Guangzhou-Est à Xiamen",
+        "train_number": "D2381, de Canton-Est à Xiamen",
         "duration": "5 heures et 4 minutes",
         "departure_time": "12 h 38 ce jour-là",
         "arrival_time": "17:42 ce jour-là",
         "ticket_price": "387,5 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Xiamen",
         "date": "mardi prochain après-midi",
         "classification": "grande vitesse",
         "seat_type": "seconde classe",
-        "train_number": "D2381, de Guangzhou-Est à Xiamen",
+        "train_number": "D2381, de Canton-Est à Xiamen",
         "duration": "5 heures et 4 minutes",
         "departure_time": "12 h 38 ce jour-là",
         "arrival_time": "17:42 ce jour-là",
         "ticket_price": "264,0 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Xiamen",
         "date": "mercredi prochain, l'après-midi",
         "classification": "grande vitesse",
@@ -19932,7 +19932,7 @@
         "ticket_price": "404,5 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Xiamen",
         "date": "mercredi prochain, l'après-midi",
         "classification": "grande vitesse",
@@ -19944,31 +19944,31 @@
         "ticket_price": "264,5 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Xiamen",
         "date": "mercredi prochain, l'après-midi",
         "classification": "grande vitesse",
         "seat_type": "première",
-        "train_number": "D2381, de Guangzhou-Est à Xiamen",
+        "train_number": "D2381, de Canton-Est à Xiamen",
         "duration": "5 heures et 4 minutes",
         "departure_time": "12 h 38 ce jour-là",
         "arrival_time": "17:42 ce jour-là",
         "ticket_price": "387,5 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Xiamen",
         "date": "mercredi prochain, l'après-midi",
         "classification": "grande vitesse",
         "seat_type": "seconde classe",
-        "train_number": "D2381, de Guangzhou-Est à Xiamen",
+        "train_number": "D2381, de Canton-Est à Xiamen",
         "duration": "5 heures et 4 minutes",
         "departure_time": "12 h 38 ce jour-là",
         "arrival_time": "17:42 ce jour-là",
         "ticket_price": "264,0 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Xiamen",
         "date": "jeudi prochain dans l'après-midi",
         "classification": "grande vitesse",
@@ -19980,7 +19980,7 @@
         "ticket_price": "404,5 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Xiamen",
         "date": "jeudi prochain dans l'après-midi",
         "classification": "grande vitesse",
@@ -19992,31 +19992,31 @@
         "ticket_price": "264,5 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Xiamen",
         "date": "jeudi prochain dans l'après-midi",
         "classification": "grande vitesse",
         "seat_type": "première",
-        "train_number": "D2381, de Guangzhou-Est à Xiamen",
+        "train_number": "D2381, de Canton-Est à Xiamen",
         "duration": "5 heures et 4 minutes",
         "departure_time": "12 h 38 ce jour-là",
         "arrival_time": "17:42 ce jour-là",
         "ticket_price": "387,5 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Xiamen",
         "date": "jeudi prochain dans l'après-midi",
         "classification": "grande vitesse",
         "seat_type": "seconde classe",
-        "train_number": "D2381, de Guangzhou-Est à Xiamen",
+        "train_number": "D2381, de Canton-Est à Xiamen",
         "duration": "5 heures et 4 minutes",
         "departure_time": "12 h 38 ce jour-là",
         "arrival_time": "17:42 ce jour-là",
         "ticket_price": "264,0 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Xiamen",
         "date": "vendredi après-midi prochain",
         "classification": "grande vitesse",
@@ -20028,7 +20028,7 @@
         "ticket_price": "404,5 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Xiamen",
         "date": "vendredi après-midi prochain",
         "classification": "grande vitesse",
@@ -20040,31 +20040,31 @@
         "ticket_price": "264,5 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Xiamen",
         "date": "vendredi après-midi prochain",
         "classification": "grande vitesse",
         "seat_type": "première",
-        "train_number": "D2381, de Guangzhou-Est à Xiamen",
+        "train_number": "D2381, de Canton-Est à Xiamen",
         "duration": "5 heures et 4 minutes",
         "departure_time": "12 h 38 ce jour-là",
         "arrival_time": "17:42 ce jour-là",
         "ticket_price": "387,5 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Xiamen",
         "date": "vendredi après-midi prochain",
         "classification": "grande vitesse",
         "seat_type": "seconde classe",
-        "train_number": "D2381, de Guangzhou-Est à Xiamen",
+        "train_number": "D2381, de Canton-Est à Xiamen",
         "duration": "5 heures et 4 minutes",
         "departure_time": "12 h 38 ce jour-là",
         "arrival_time": "17:42 ce jour-là",
         "ticket_price": "264,0 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Xiamen",
         "date": "samedi prochain",
         "classification": "grande vitesse",
@@ -20076,7 +20076,7 @@
         "ticket_price": "404,5 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Xiamen",
         "date": "samedi prochain",
         "classification": "grande vitesse",
@@ -20088,31 +20088,31 @@
         "ticket_price": "264,5 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Xiamen",
         "date": "samedi prochain",
         "classification": "grande vitesse",
         "seat_type": "première",
-        "train_number": "D2381, de Guangzhou-Est à Xiamen",
+        "train_number": "D2381, de Canton-Est à Xiamen",
         "duration": "5 heures et 4 minutes",
         "departure_time": "12 h 38 ce jour-là",
         "arrival_time": "17:42 ce jour-là",
         "ticket_price": "387,5 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Xiamen",
         "date": "samedi prochain",
         "classification": "grande vitesse",
         "seat_type": "seconde classe",
-        "train_number": "D2381, de Guangzhou-Est à Xiamen",
+        "train_number": "D2381, de Canton-Est à Xiamen",
         "duration": "5 heures et 4 minutes",
         "departure_time": "12 h 38 ce jour-là",
         "arrival_time": "17:42 ce jour-là",
         "ticket_price": "264,0 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Xiamen",
         "date": "dimanche prochain, l'après-midi",
         "classification": "grande vitesse",
@@ -20124,7 +20124,7 @@
         "ticket_price": "404,5 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Xiamen",
         "date": "dimanche prochain, l'après-midi",
         "classification": "grande vitesse",
@@ -20136,24 +20136,24 @@
         "ticket_price": "264,5 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Xiamen",
         "date": "dimanche prochain, l'après-midi",
         "classification": "grande vitesse",
         "seat_type": "première",
-        "train_number": "D2381, de Guangzhou-Est à Xiamen",
+        "train_number": "D2381, de Canton-Est à Xiamen",
         "duration": "5 heures et 4 minutes",
         "departure_time": "12 h 38 ce jour-là",
         "arrival_time": "17:42 ce jour-là",
         "ticket_price": "387,5 yuans"
     },
     {
-        "departure": "Guangzhou",
+        "departure": "Canton",
         "destination": "Xiamen",
         "date": "dimanche prochain, l'après-midi",
         "classification": "grande vitesse",
         "seat_type": "seconde classe",
-        "train_number": "D2381, de Guangzhou-Est à Xiamen",
+        "train_number": "D2381, de Canton-Est à Xiamen",
         "duration": "5 heures et 4 minutes",
         "departure_time": "12 h 38 ce jour-là",
         "arrival_time": "17:42 ce jour-là",

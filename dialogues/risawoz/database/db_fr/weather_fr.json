@@ -112,7 +112,7 @@
         "uv_intensity": "forte"
     },
     {
-        "city": "Guangzhou",
+        "city": "Canton",
         "date": "lundi prochain",
         "weather_condition": "ensoleillé",
         "tamperature": "La température maximale sera de 18 degrés Celsius, et la température minimale de 5 degrés Celsius.",
@@ -120,7 +120,7 @@
         "uv_intensity": "très forts"
     },
     {
-        "city": "Guangzhou",
+        "city": "Canton",
         "date": "mardi prochain",
         "weather_condition": "ensoleillé à nuageux",
         "tamperature": "La température maximale sera de 18 degrés Celsius, et la température minimale de 5 degrés Celsius.",
@@ -128,7 +128,7 @@
         "uv_intensity": "très forts"
     },
     {
-        "city": "Guangzhou",
+        "city": "Canton",
         "date": "mercredi prochain",
         "weather_condition": "nuageux",
         "tamperature": "La température maximale sera de 19 degrés Celsius, et la température minimale de 7 degrés Celsius",
@@ -136,7 +136,7 @@
         "uv_intensity": "modérée"
     },
     {
-        "city": "Guangzhou",
+        "city": "Canton",
         "date": "jeudi prochain",
         "weather_condition": "nuageux",
         "tamperature": "La température maximale sera de 20 degrés Celsius, et la température minimale de 10 degrés Celsius",
@@ -144,7 +144,7 @@
         "uv_intensity": "faible"
     },
     {
-        "city": "Guangzhou",
+        "city": "Canton",
         "date": "vendredi prochain",
         "weather_condition": "nuageux",
         "tamperature": "La température maximale sera de 22 degrés Celsius, et la température minimale de 13 degrés Celsius",
@@ -152,7 +152,7 @@
         "uv_intensity": "modérée"
     },
     {
-        "city": "Guangzhou",
+        "city": "Canton",
         "date": "samedi prochain",
         "weather_condition": "nuageux",
         "tamperature": "La température maximale sera de 23 degrés Celsius, et la température minimale de 14 degrés Celsius",
@@ -160,7 +160,7 @@
         "uv_intensity": "très forts"
     },
     {
-        "city": "Guangzhou",
+        "city": "Canton",
         "date": "dimanche prochain",
         "weather_condition": "nuageux",
         "tamperature": "La température maximale sera de 24 degrés Celsius, et la température minimale de 14 degrés Celsius",
@@ -280,7 +280,7 @@
         "uv_intensity": "forte"
     },
     {
-        "city": "Nanjing",
+        "city": "Nankin",
         "date": "lundi prochain",
         "weather_condition": "ensoleillé",
         "tamperature": "La température maximale sera de 9 degrés Celsius, et la température minimale de -2 degrés Celsius",
@@ -288,7 +288,7 @@
         "uv_intensity": "forte"
     },
     {
-        "city": "Nanjing",
+        "city": "Nankin",
         "date": "mardi prochain",
         "weather_condition": "ensoleillé à nuageux",
         "tamperature": "La température maximale prévue est de 9 degrés Celsius, tandis que la température minimale sera de 0 degré Celsius",
@@ -296,7 +296,7 @@
         "uv_intensity": "forte"
     },
     {
-        "city": "Nanjing",
+        "city": "Nankin",
         "date": "mercredi prochain",
         "weather_condition": "nuageux",
         "tamperature": "La température maximale sera de 10 degrés Celsius, et la température minimale de 2 degrés Celsius",
@@ -304,7 +304,7 @@
         "uv_intensity": "faible"
     },
     {
-        "city": "Nanjing",
+        "city": "Nankin",
         "date": "jeudi prochain",
         "weather_condition": "nuageux",
         "tamperature": "La température maximale sera de 14 degrés Celsius, et la température minimale de 5 degrés Celsius",
@@ -312,7 +312,7 @@
         "uv_intensity": "modérée"
     },
     {
-        "city": "Nanjing",
+        "city": "Nankin",
         "date": "vendredi prochain",
         "weather_condition": "nuageux",
         "tamperature": "La température maximale sera de 11 degrés Celsius, et la température minimale de 5 degrés Celsius.",
@@ -320,7 +320,7 @@
         "uv_intensity": "faible"
     },
     {
-        "city": "Nanjing",
+        "city": "Nankin",
         "date": "samedi prochain",
         "weather_condition": "nuageux",
         "tamperature": "La température maximale sera de 17 degrés Celsius et la température minimale de 6 degrés Celsius.",
@@ -328,7 +328,7 @@
         "uv_intensity": "forte"
     },
     {
-        "city": "Nanjing",
+        "city": "Nankin",
         "date": "dimanche prochain",
         "weather_condition": "nuageux",
         "tamperature": "La température maximale sera de 18 degrés Celsius, et la température minimale de 7 degrés Celsius.",

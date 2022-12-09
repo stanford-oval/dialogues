@@ -14,6 +14,7 @@
                 "américain",
                 "Américaine",
                 "américaine",
+                "d'Amérique",
                 "en Amérique",
                 "l'Amérique",
                 "Etats-Unis",
@@ -126,6 +127,7 @@
             ],
             "série": [
                 "série",
+                "long métrage dramatique",
                 "long métrage de fiction",
                 "longs métrages",
                 "les séries de long-métrage",
@@ -903,6 +905,7 @@
             "Amérique": [
                 "américaine",
                 "l'Amérique",
+                "d'Amérique",
                 "en Amérique",
                 "Etats-Unis"
             ],
@@ -1375,7 +1378,6 @@
             "d'action": [
                 "d'action",
                 "film d'action",
-                "film d'action",
                 "films d'action"
             ],
             "d'horreur": [
@@ -1690,6 +1692,7 @@
                 "rendez-vous romantique"
             ],
             "adaptés aux familles": [
+                "adaptée aux familles",
                 "un voyage en famille",
                 "visiter avec des enfants",
                 "voyage en famille",
@@ -1731,6 +1734,7 @@
             ],
             "zone pittoresque du lac de Jinji": [
                 "zone panoramique du lac Jinji",
+                "région panoramique du lac Jinji",
                 "région pittoresque du lac de Jinji",
                 "la région pittoresque du lac de Jinji",
                 "la zone pittoresque du lac de Jinji"
@@ -1745,10 +1749,17 @@
                 "Zone panoramique de Shajiabang",
                 "site pittoresque de Shajiabang à Changshu"
             ],
-            "Lac de pierre": "Lac de pierre",
-            "La Porte de l'Orient": "La Porte de l'Orient",
+            "Lac de pierre": [
+                "Lac de pierre",
+                "lac de pierre"
+            ],
+            "La Porte de l'Orient": [
+                "Porte de l'Orient",
+                "la Porte de l'Orient"
+            ],
             "parc des zones humides du lac de Taihu Suzhou": [
-                "parc humide du lac Taihu"
+                "parc humide du lac Taihu",
+                "parc des zones humides du lac Taihu"
             ],
             "Parc écologique de Baimajian": "Parc écologique de Baimajian",
             "rue Shantang": "rue Shantang",
@@ -2244,10 +2255,8 @@
                 "fondue chinoise",
                 "hotpot"
             ],
-            "sud-coréenne": [
-                "Corée",
+            "cuisine sud-coréenne": [
                 "sud-coréennes",
-                "sud-coréenne",
                 "cuisine sud-coréenne",
                 "Sud-Coréen",
                 "restaurant coréen",
@@ -2255,8 +2264,7 @@
                 "Cuisine coréenne",
                 "Cuisine coréenne"
             ],
-            "japonaise": [
-                "Japon",
+            "cuisine japonaise": [
                 "cuisine japonaise",
                 "Cuisine japonaise",
                 "nourriture japonaise",
@@ -2271,6 +2279,8 @@
                 "Cuisine du Nord-Ouest"
             ],
             "du pain et des desserts": [
+                "pains et desserts",
+                "pain et des desserts",
                 "du pain et des desserts",
                 "du pain et un dessert",
                 "pain",
@@ -2278,6 +2288,7 @@
             ],
             "restauration rapide": [
                 "restauration rapide",
+                "la restauration rapide",
                 "bonne restauration rapide servant des repas rapides"
             ],
             "Sichuan": [
@@ -2742,7 +2753,8 @@
                 "grandes chambres",
                 "très grandes chambres",
                 "très grande chambre",
-                "une grande chambre"
+                "une grande chambre",
+                "chambre à grand lit"
             ]
         },
         "name": {
@@ -2778,7 +2790,10 @@
                 "l'hôtel Jinji Lac Shilla",
                 "hôtel Shilla lac de Jinji Suzhou"
             ],
-            "l'hôtel de chaîne Genting Star": "l'hôtel de chaîne Genting Star",
+            "l'hôtel de chaîne Genting Star": [
+                "L'hôtel de la chaîne Genting Star",
+                "l'hôtel de chaîne Genting Star"
+            ],
             "Pan Pacific Suzhou": "Pan Pacific Suzhou",
             "Pod Inn": "Pod Inn",
             "L'hôtel Meijin All Suites": [
@@ -2788,9 +2803,15 @@
             "l'appartement-hôtel Suzhou lac de Jinji Suisse Place Ligongd": [
                 "l'appartement-hôtel du lac de Jinji Suzhou Suisse Place Ligongdi"
             ],
-            "Suzhou Yongshun Express Hotel": "Suzhou Yongshun Express Hotel",
-            "l'auberge Home": "l'auberge Home",
-            "Le village des sciences et de la technologie Élément": "Le village des sciences et de la technologie Élément",
+            "Suzhou Yongshun Express Hotel": [
+                "Suzhou Yongshun Express Hotel",
+                "l'hôtel Suzhou Yongshun Express"
+            ],
+            "Home Inn": "Home Inn",
+            "Le village des sciences et de la technologie Élément": [
+                "Le village des sciences et de la technologie Élément",
+                "le village des sciences et de la technologie Éléments de Suzhou"
+            ],
             "l'auberge Yinjiangnan Xujia": "l'auberge Yinjiangnan Xujia",
             "l'hôtel Suzhou Shui'an Hanshe": "l'hôtel Suzhou Shui'an Hanshe",
             "l'hôtel Suzhou Mingyue Express": "l'hôtel Suzhou Mingyue Express",
@@ -3138,9 +3159,13 @@
         "name": {
             "hôpital Suzhou Kowloon": "hôpital Suzhou Kowloon",
             "le premier hôpital affilié de l'université de Soochow": [
-                "Le premier hôpital affilié de l'université de Soochow"
+                "Le premier hôpital affilié de l'université de Soochow",
+                "le premier hôpital affilié à l'université de Soochow"
             ],
-            "le Second Hôpital Affilié de l'Université de Soochow": "le Second Hôpital Affilié de l'Université de Soochow",
+            "le Second Hôpital Affilié de l'Université de Soochow": [
+                "le Second Hôpital Affilié de l'Université de Soochow",
+                "second hôpital affilié à l'université de Soochow"
+            ],
             "Le cinquième hôpital populaire de la ville de Suzhou": "Le cinquième hôpital populaire de la ville de Suzhou",
             "l'hôpital Suzhou Guangji": "l'hôpital Suzhou Guangji",
             "L'hôpital de médecine traditionnelle chinoise de Suzhou": "L'hôpital de médecine traditionnelle chinoise de Suzhou",
@@ -3351,7 +3376,7 @@
             "Shenzhen": "Shenzhen",
             "Pékin": "Pékin",
             "Shanghaï": "Shanghaï",
-            "Guangzhou": "Guangzhou",
+            "Canton": "Canton",
             "Chengdu": "Chengdu",
             "Nankin": ["Nankin", "Nankin"],
             "Wuhan": "Wuhan"
@@ -3378,6 +3403,10 @@
             "vendredi prochain": "vendredi prochain",
             "mercredi prochain": "mercredi prochain",
             "samedi prochain": "samedi prochain",
+            "samedi après-midi prochain": [
+                "samedi après-midi prochain",
+                "samedi prochain, l'après-midi"
+            ],
             "mardi prochain": "mardi prochain",
             "lundi prochain": "lundi prochain",
             "ce jour-là": "ce jour-là",
@@ -3594,10 +3623,10 @@
             "nouveau district de Suzhou ou le district de Gusu": "nouveau district de Suzhou ou le district de Gusu"
         },
         "day": {
-            "Vendredi": "Vendredi",
-            "Samedi": ["Samedi", "samedi ou le dimanche"],
+            "vendredi": "vendredi",
+            "samedi": ["samedi", "samedi ou le dimanche"],
             "dimanche": "dimanche",
-            "Mercredi": "Mercredi"
+            "mercredi": "mercredi"
         },
         "grade": {
             "sixième année": "sixième année",
@@ -4343,7 +4372,7 @@
             "Shenzhen": "Shenzhen",
             "Pékin": "Pékin",
             "Shanghaï": "Shanghaï",
-            "Guangzhou": "Guangzhou",
+            "Canton": "Canton",
             "Chengdu": "Chengdu",
             "Nankin": ["Nankin", "Nankin"],
             "Terminal 2 de l'aéroport international de Baiyun": [
@@ -4370,7 +4399,7 @@
             "Shenzhen": "Shenzhen",
             "Pékin": "Pékin",
             "Shanghaï": "Shanghaï",
-            "Guangzhou": "Guangzhou",
+            "Canton": "Canton",
             "Chengdu": "Chengdu",
             "Nankin": ["Nankin", "Nankin"],
             "Terminal 1 de l'aéroport international de Shuangliu": [
@@ -4400,6 +4429,10 @@
                 "Mercredi"
             ],
             "samedi prochain": "samedi prochain",
+            "samedi après-midi prochain": [
+                "samedi après-midi prochain",
+                "samedi prochain, l'après-midi"
+            ],
             "mardi prochain": [
                 "mardi prochain",
                 "Mardi"
@@ -4428,7 +4461,7 @@
                 "CZ5036 de la compagnie aérienne China Southern, de l'aéroport international de Gaoqi Terminal 3 à l'aéroport international de Pékin Terminal 2",
                 "CZ5036 de China Southern Airlines, du terminal 3 de l'aéroport international de Gaoqi au terminal 2 de l'aéroport international de Pékin."
             ],
-            "vol CZ3741 de la companie aérienne China Southern, du Terminal 2 de l'aéroport international de Baiyun au Terminal 3 de l'aéroport international de Gaoqi": [
+            "vol CZ3741 de la compagnie aérienne China Southern, du Terminal 2 de l'aéroport international de Baiyun au Terminal 3 de l'aéroport international de Gaoqi": [
                 "CZ3741 de la compagnie aérienne China Southern du Terminal 2 de l'aéroport international de Baiyun au Terminal 3 de l'aéroport international de Gaoqi",
                 "CZ3741 de la compagnie aérienne China Southern, du terminal 2 de l'aéroport international de Baiyun au terminal 3 de l'aéroport international de Gaoqi",
                 "CZ3741 de China Southern Airlines, qui part du T2 de l'aéroport international de Baiyun et arrive au T3 de l'aéroport international de Gaoqi à Xiamen"
@@ -4894,7 +4927,7 @@
             "Shenzhen": "Shenzhen",
             "Pékin": "Pékin",
             "Shanghaï": "Shanghaï",
-            "Guangzhou": "Guangzhou",
+            "Canton": "Canton",
             "Chengdu": "Chengdu",
             "Nankin": ["Nankin", "Nankin"],
             "Pékin-Sud": "Pékin-Sud",
@@ -4915,7 +4948,7 @@
             "Shenzhen": "Shenzhen",
             "Pékin": "Pékin",
             "Shanghaï": "Shanghaï",
-            "Guangzhou": "Guangzhou",
+            "Canton": "Canton",
             "Chengdu": "Chengdu",
             "Nankin": ["Nankin", "Nankin"],
             "Futian": "Futian",
@@ -4931,12 +4964,25 @@
             "jeudi matin prochain": "jeudi matin prochain",
             "mardi matin prochain": [
                 "mardi matin prochain",
-                "mardi matin prochain"
+                "mardi prochain le matin"
             ],
-            "mardi prochain après-midi": "mardi prochain après-midi",
-            "lundi après-midi prochain": "lundi après-midi prochain",
-            "vendredi prochain, le matin": "vendredi prochain, le matin",
+            "mardi prochain après-midi": [
+                "mardi prochain après-midi",
+                "mardi après-midi prochain"
+            ],
+            "lundi après-midi prochain": [
+                "lundi après-midi prochain",
+                "lundi prochain dans l'après-midi"
+            ],
+            "vendredi prochain, le matin": [
+                "vendredi prochain, le matin",
+                "vendredi matin prochain"
+            ],
             "samedi prochain": "samedi prochain",
+            "samedi après-midi prochain": [
+                "samedi après-midi prochain",
+                "samedi prochain, l'après-midi"
+            ],
             "dimanche prochain, le matin": "dimanche prochain, le matin",
             "dimanche prochain, l'après-midi": "dimanche prochain, l'après-midi",
             "jeudi prochain dans l'après-midi": "jeudi prochain dans l'après-midi",
@@ -5021,10 +5067,10 @@
                 "G1304 de la gare de Canton-Sud à Shanghaï Hongqiao"
             ],
             "D901, de Beijingxi à Canton-Sud": [
-                "D901 de Pékin-Ouest à Guangzhou-Sud"
+                "D901 de Pékin-Ouest à Canton-Sud"
             ],
             "G69, de Beijingxi à Canton-Sud": [
-                "G69 de Pékin-Ouest à Guangzhou-Sud"
+                "G69 de Pékin-Ouest à Canton-Sud"
             ],
             "G14, de Shanghaï Hongqiao à Pékin-Sud": [
                 "G14 de Shanghaï Hongqiao à Pékin-Sud"
@@ -5033,7 +5079,7 @@
                 "D2264 de la gare de Chengdu-Est à celle de Hangzhou-Est"
             ],
             "G86, de Canton-Sud à Shanghaï Hongqiao": [
-                "G86 de la gare de Guangzhoun-Sud à Shanghaï Hongqiao"
+                "G86 de la gare de Cantonn-Sud à Shanghaï Hongqiao"
             ],
             "G7320, de Hangzhoudong à Shanghaï Hongqiao": [
                 "G7320 de Hangzhou-Est à Shanghaï Hongqiao"
@@ -5041,7 +5087,7 @@
             "D717, de Pékin à Nankin": [
                 "D717 de Pékin à Nankin"
             ],
-            "D7554, de Shenzhen à Guangzhou": [
+            "D7554, de Shenzhen à Canton": [
                 "le D7554 de Shenzhen à Canton"
             ],
             "G822, de Shenzhen-Nord à Canton-Sud.": [
@@ -5152,10 +5198,10 @@
                 "D5482 de Hangzhou-Est à Shanghaï-Sud"
             ],
             "G99, de Hangzhoudong à Canton-Sud": [
-                "G99 de Hangzhou-Est à Guangzhou-Sud"
+                "G99 de Hangzhou-Est à Canton-Sud"
             ],
             "D941, de Hangzhoudong à Canton-Sud": [
-                "D941 de Hangzhou-Est à Guangzhou-Sud"
+                "D941 de Hangzhou-Est à Canton-Sud"
             ],
             "D710, de Shanghaï à Pékin-Sud": [
                 "D710 de Shanghaï à Pékin-Sud"
@@ -5177,8 +5223,8 @@
             "D1765, de Chengdudong à Canton-Sud.": [
                 "D1765 de Chengdu-Est à Canton-Est"
             ],
-            "D1859, de Chengdudong à Guangzhou": [
-                "D1859 de Chengdu-Est à Guangzhou"
+            "D1859, de Chengdudong à Canton": [
+                "D1859 de Chengdu-Est à Canton"
             ],
             "D954, de Chengdudong à Shanghaï": [
                 "D954 de la gare de Chengdu-Est à Shanghaï"
@@ -5246,10 +5292,10 @@
             "D943, de Canton-Sud à Shanghaï Hongqiao": "D943, de Canton-Sud à Shanghaï Hongqiao",
             "D903, de Beijingxi à Shenzhen-Nord": "D903, de Pékin-Ouest à Shenzhen-Nord",
             "D745, de Beijingxi à Xiamen-Nord": "D745, de Pékin-Ouest à Xiamen-Nord",
-            "D2381, de Guangzhoudong à Xiamen": "D2381, de Guangzhou-Est à Xiamen",
+            "D2381, de Cantondong à Xiamen": "D2381, de Canton-Est à Xiamen",
             "D638, de Chengdudong à Nankin-Sud": "D638, de Chengdu-Est à Nankin-Sud",
             "G20, de Hangzhoudong à Nankin-Sud": "G20, de Hangzhou-Est à Nankin-Sud",
-            "D7553, de Guangzhou à Shenzhen": "D7553, de Guangzhou à Shenzhen",
+            "D7553, de Canton à Shenzhen": "D7553, de Canton à Shenzhen",
             "G7572, de Hangzhoudong à Shanghaï Hongqiao": "G7572, de Hangzhou-Est à Shanghaï Hongqiao",
             "G1886, de Nankin-Sud à Chengdudong": "G1886, de Nankin-Sud à Chengdu-Est",
             "D3295, de Nankin-Sud à Xiamen-Nord": "D3295, de Nankin-Sud à Xiamen-Nord",
@@ -5935,8 +5981,8 @@
         "memory capacity": {
             "8 Go": "8 Go",
             "16 Go": "16 Go",
-            "64GB": "64GB",
-            "4GB": "4GB"
+            "64 Go": "64 Go",
+            "4 Go": "4 Go"
         },
         "product name": {
             "Lenovo Xiaoxin Chao 7000": [
@@ -5947,6 +5993,8 @@
             "Lenovo Tianyi 510Pro": "Lenovo Tianyi 510Pro",
             "Dell G5 5090": "Dell G5 5090",
             "Lenovo GeekPro": [
+                "Série GeekPro de Lenovo",
+                "série Lenovo GeekPro",
                 "série GeekPro de Lenovo",
                 "Lenovo GeekPro"
             ],
@@ -6058,6 +6106,7 @@
                 "Bureau",
                 "l'ordinateur de bureau",
                 "d'ordinateur de bureau",
+                "d'ordinateurs de bureau",
                 "ordinateurs de bureau"
             ],
             "PC tout-en-un": "PC tout-en-un"
@@ -6383,6 +6432,7 @@
                 "Lenovo Xiaoxin Chao"
             ],
             "Série Lenovo GeekPro": [
+                "Série Lenovo GeekPro",
                 "série GeekPro de Lenovo",
                 "Lenovo GeekPro"
             ],

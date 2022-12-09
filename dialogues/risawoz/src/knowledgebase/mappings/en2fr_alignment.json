@@ -2045,7 +2045,7 @@
             "Meijin All Suites Hotel": "L'hôtel Meijin All Suites",
             "Suzhou Jinji Lake Suisse Place Ligongdi Apartment Hotel": "l'appartement-hôtel Suzhou lac de Jinji Suisse Place Ligongd",
             "Suzhou Yongshun Express Hotel": "Suzhou Yongshun Express Hotel",
-            "Home Inn": "l'auberge Home",
+            "Home Inn": "Home Inn",
             "Element Suzhou Science and Technology Town": "Le village des sciences et de la technologie Élément",
             "Yinjiangnan Xujia Hostel": "l'auberge Yinjiangnan Xujia",
             "Suzhou Shui'an Hanshe Hotel": "l'hôtel Suzhou Shui'an Hanshe",
@@ -2390,7 +2390,7 @@
             "Shenzhen": "Shenzhen",
             "Beijing": "Pékin",
             "Shanghai": "Shanghaï",
-            "Guangzhou": "Guangzhou",
+            "Canton": "Guangzhou",
             "Chengdu": "Chengdu",
             "Nanjing": "Nankin",
             "Wuhan": "Wuhan"
@@ -2526,10 +2526,10 @@
             "Suzhou New District or Gusu District": "nouveau district de Suzhou ou le district de Gusu"
         },
         "day": {
-            "Friday": "Vendredi",
-            "Saturday": "Samedi",
-            "Sunday": "dimanche",
-            "Wednesday": "Mercredi"
+            "Wednesday": "mercredi",
+            "Friday": "vendredi",
+            "Saturday": "samedi",
+            "Sunday": "dimanche"
         },
         "grade": {
             "sixth grade": "sixième année",
@@ -3108,7 +3108,7 @@
             "Shenzhen": "Shenzhen",
             "Beijing": "Pékin",
             "Shanghai": "Shanghaï",
-            "Guangzhou": "Guangzhou",
+            "Canton": "Guangzhou",
             "Chengdu": "Chengdu",
             "Nanjing": "Nankin",
             "Terminal 2 of Baiyun International Airport": "Terminal 2 de l'aéroport international de Baiyun",
@@ -3127,7 +3127,7 @@
             "Shenzhen": "Shenzhen",
             "Beijing": "Pékin",
             "Shanghai": "Shanghaï",
-            "Guangzhou": "Guangzhou",
+            "Canton": "Guangzhou",
             "Chengdu": "Chengdu",
             "Nanjing": "Nankin",
             "Terminal 1 of Shuangliu International Airport": "Terminal 1 de l'aéroport international de Shuangliu",
@@ -3413,7 +3413,7 @@
             "Shenzhen": "Shenzhen",
             "Beijing": "Pékin",
             "Shanghai": "Shanghaï",
-            "Guangzhou": "Guangzhou",
+            "Canton": "Guangzhou",
             "Chengdu": "Chengdu",
             "Nanjing": "Nankin",
             "Beijingnan": "Pékin-Sud",
@@ -3430,7 +3430,7 @@
             "Shenzhen": "Shenzhen",
             "Beijing": "Pékin",
             "Shanghai": "Shanghaï",
-            "Guangzhou": "Guangzhou",
+            "Canton": "Guangzhou",
             "Chengdu": "Chengdu",
             "Nanjing": "Nankin",
             "Futian": "Futian",

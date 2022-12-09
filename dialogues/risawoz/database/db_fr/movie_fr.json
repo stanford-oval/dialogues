@@ -61,7 +61,7 @@
     },
     {
         "production_country_or_area": "Taïwan, Chine",
-        "type": "comique",
+        "type": "comédie",
         "decade": "années 2010",
         "star": "Jay Chou",
         "director": "Jay Chou",
@@ -73,7 +73,7 @@
     },
     {
         "production_country_or_area": "Taïwan, Chine",
-        "type": "comique",
+        "type": "comédie",
         "decade": "années 2000",
         "star": "Jay Chou",
         "director": "Chu Yin-ping",
@@ -85,7 +85,7 @@
     },
     {
         "production_country_or_area": "Taïwan, Chine",
-        "type": "comique",
+        "type": "comédie",
         "decade": "années 1990",
         "star": "Jacky Wu",
         "director": "Chu Yin-ping",
@@ -97,7 +97,7 @@
     },
     {
         "production_country_or_area": "Taïwan, Chine",
-        "type": "comique",
+        "type": "comédie",
         "decade": "années 1980",
         "star": "Cho Hung-shun",
         "director": "Chu Yin-ping",
@@ -109,7 +109,7 @@
     },
     {
         "production_country_or_area": "Taïwan, Chine",
-        "type": "comique",
+        "type": "comédie",
         "decade": "années 1970",
         "star": "Chen Chen",
         "director": "Li Han-hsiang",
@@ -325,7 +325,7 @@
     },
     {
         "production_country_or_area": "Hong Kong",
-        "type": "comique",
+        "type": "comédie",
         "decade": "années 2010",
         "star": "Chapman à",
         "director": "Chan Hing-ka",
@@ -337,7 +337,7 @@
     },
     {
         "production_country_or_area": "Hong Kong",
-        "type": "comique",
+        "type": "comédie",
         "decade": "années 2000",
         "star": "Stephen Chow",
         "director": "Stephen Chow",
@@ -349,7 +349,7 @@
     },
     {
         "production_country_or_area": "Hong Kong",
-        "type": "comique",
+        "type": "comédie",
         "decade": "années 1990",
         "star": "Stephen Chow",
         "director": "Stephen Chow",
@@ -361,7 +361,7 @@
     },
     {
         "production_country_or_area": "Hong Kong",
-        "type": "comique",
+        "type": "comédie",
         "decade": "années 1980",
         "star": "Chow Yun-fat",
         "director": "Wong Jing",
@@ -373,7 +373,7 @@
     },
     {
         "production_country_or_area": "Hong Kong",
-        "type": "comique",
+        "type": "comédie",
         "decade": "années 1970",
         "star": "Bruce Lee",
         "director": "Bruce Lee",
@@ -589,7 +589,7 @@
     },
     {
         "production_country_or_area": "Chine continentale",
-        "type": "comique",
+        "type": "comédie",
         "decade": "années 2010",
         "star": "Xu Zheng",
         "director": "Wen Muye",
@@ -601,7 +601,7 @@
     },
     {
         "production_country_or_area": "Chine continentale",
-        "type": "comique",
+        "type": "comédie",
         "decade": "années 2000",
         "star": "Guo Tao",
         "director": "Ning Hao",
@@ -613,7 +613,7 @@
     },
     {
         "production_country_or_area": "Chine continentale",
-        "type": "comique",
+        "type": "comédie",
         "decade": "années 1990",
         "star": "Ge You",
         "director": "Feng Xiaogang",
@@ -625,7 +625,7 @@
     },
     {
         "production_country_or_area": "Chine continentale",
-        "type": "comique",
+        "type": "comédie",
         "decade": "années 1980",
         "star": "Zhang Guoli",
         "director": "Mi Jiashan",
@@ -732,8 +732,8 @@
         "douban_score": "6.8"
     },
     {
-        "production_country_or_area": "l'Amérique",
-        "type": "comique",
+        "production_country_or_area": "Amérique",
+        "type": "comédie",
         "decade": "années 2010",
         "star": "Viggo Mortensen",
         "director": "Peter Farrelly",
@@ -744,8 +744,8 @@
         "douban_score": "8,9"
     },
     {
-        "production_country_or_area": "l'Amérique",
-        "type": "comique",
+        "production_country_or_area": "Amérique",
+        "type": "comédie",
         "decade": "années 2000",
         "star": "Jack Nicholson",
         "director": "Rob Reiner",
@@ -756,8 +756,8 @@
         "douban_score": "8,6"
     },
     {
-        "production_country_or_area": "l'Amérique",
-        "type": "comique",
+        "production_country_or_area": "Amérique",
+        "type": "comédie",
         "decade": "années 1990",
         "star": "John Travolta",
         "director": "Quentin Jerome Tarantino",
@@ -768,8 +768,8 @@
         "douban_score": "8,8"
     },
     {
-        "production_country_or_area": "l'Amérique",
-        "type": "comique",
+        "production_country_or_area": "Amérique",
+        "type": "comédie",
         "decade": "années 1980",
         "star": "Michael J. Fox",
         "director": "Robert Zemeckis",
@@ -780,7 +780,7 @@
         "douban_score": "8,6"
     },
     {
-        "production_country_or_area": "l'Amérique",
+        "production_country_or_area": "Amérique",
         "type": "d'action",
         "decade": "années 2010",
         "star": "Robert Downey Jr.",
@@ -792,7 +792,7 @@
         "douban_score": "8,5"
     },
     {
-        "production_country_or_area": "l'Amérique",
+        "production_country_or_area": "Amérique",
         "type": "d'action",
         "decade": "années 2000",
         "star": "Ted Elliott",
@@ -804,7 +804,7 @@
         "douban_score": "8,7"
     },
     {
-        "production_country_or_area": "l'Amérique",
+        "production_country_or_area": "Amérique",
         "type": "d'action",
         "decade": "années 1990",
         "star": "Tom Cruise",
@@ -816,7 +816,7 @@
         "douban_score": "8,1"
     },
     {
-        "production_country_or_area": "l'Amérique",
+        "production_country_or_area": "Amérique",
         "type": "d'action",
         "decade": "années 1980",
         "star": "Arnold Schwarzenegger",
@@ -828,7 +828,7 @@
         "douban_score": "8,1"
     },
     {
-        "production_country_or_area": "l'Amérique",
+        "production_country_or_area": "Amérique",
         "type": "science-fiction",
         "decade": "années 2010",
         "star": "Leonardo DiCaprio",
@@ -840,7 +840,7 @@
         "douban_score": "9,3"
     },
     {
-        "production_country_or_area": "l'Amérique",
+        "production_country_or_area": "Amérique",
         "type": "science-fiction",
         "decade": "années 2000",
         "star": "Sam Worthington",
@@ -852,7 +852,7 @@
         "douban_score": "8,7"
     },
     {
-        "production_country_or_area": "l'Amérique",
+        "production_country_or_area": "Amérique",
         "type": "science-fiction",
         "decade": "années 1990",
         "star": "Jim Carrey",
@@ -864,7 +864,7 @@
         "douban_score": "9,3"
     },
     {
-        "production_country_or_area": "l'Amérique",
+        "production_country_or_area": "Amérique",
         "type": "science-fiction",
         "decade": "années 1980",
         "star": "Harrison Ford",
@@ -876,7 +876,7 @@
         "douban_score": "8,4"
     },
     {
-        "production_country_or_area": "l'Amérique",
+        "production_country_or_area": "Amérique",
         "type": "science-fiction",
         "decade": "années 1970",
         "star": "Harrison Ford",
@@ -888,7 +888,7 @@
         "douban_score": "8,4"
     },
     {
-        "production_country_or_area": "l'Amérique",
+        "production_country_or_area": "Amérique",
         "type": "romantique",
         "decade": "années 2010",
         "star": "Madeline Carroll",
@@ -900,7 +900,7 @@
         "douban_score": "9,1"
     },
     {
-        "production_country_or_area": "l'Amérique",
+        "production_country_or_area": "Amérique",
         "type": "romantique",
         "decade": "années 2000",
         "star": "Cate Blanchett",
@@ -912,7 +912,7 @@
         "douban_score": "8,9"
     },
     {
-        "production_country_or_area": "l'Amérique",
+        "production_country_or_area": "Amérique",
         "type": "romantique",
         "decade": "années 1990",
         "star": "Leonardo DiCaprio",
@@ -924,7 +924,7 @@
         "douban_score": "9,4"
     },
     {
-        "production_country_or_area": "l'Amérique",
+        "production_country_or_area": "Amérique",
         "type": "romantique",
         "decade": "années 1980",
         "star": "Tom Cruise",
@@ -936,7 +936,7 @@
         "douban_score": "7,7"
     },
     {
-        "production_country_or_area": "l'Amérique",
+        "production_country_or_area": "Amérique",
         "type": "romantique",
         "decade": "années 1970",
         "star": "Sylvester Stallone",
@@ -948,7 +948,7 @@
         "douban_score": "8,7"
     },
     {
-        "production_country_or_area": "l'Amérique",
+        "production_country_or_area": "Amérique",
         "type": "d'horreur",
         "decade": "années 2010",
         "star": "Vera Farmiga",
@@ -960,7 +960,7 @@
         "douban_score": "7,9"
     },
     {
-        "production_country_or_area": "l'Amérique",
+        "production_country_or_area": "Amérique",
         "type": "d'horreur",
         "decade": "années 2000",
         "star": "Leigh Whannell",
@@ -972,7 +972,7 @@
         "douban_score": "8,7"
     },
     {
-        "production_country_or_area": "l'Amérique",
+        "production_country_or_area": "Amérique",
         "type": "d'horreur",
         "decade": "années 1990",
         "star": "Neve Campbell",
@@ -984,7 +984,7 @@
         "douban_score": "7,1"
     },
     {
-        "production_country_or_area": "l'Amérique",
+        "production_country_or_area": "Amérique",
         "type": "d'horreur",
         "decade": "années 1980",
         "star": "Jack Nicholson",
@@ -996,7 +996,7 @@
         "douban_score": "8,2"
     },
     {
-        "production_country_or_area": "l'Amérique",
+        "production_country_or_area": "Amérique",
         "type": "d'horreur",
         "decade": "années 1970",
         "star": "Sigourney Weaver",
@@ -1009,7 +1009,7 @@
     },
     {
         "production_country_or_area": "Inde",
-        "type": "comique",
+        "type": "comédie",
         "decade": "années 2010",
         "star": "Aamir Khan",
         "director": "Rajkumar Hirani",
@@ -1021,7 +1021,7 @@
     },
     {
         "production_country_or_area": "Inde",
-        "type": "comique",
+        "type": "comédie",
         "decade": "années 2000",
         "star": "Aamir Khan",
         "director": "Rajkumar Hirani",
@@ -1033,7 +1033,7 @@
     },
     {
         "production_country_or_area": "Inde",
-        "type": "comique",
+        "type": "comédie",
         "decade": "années 1990",
         "star": "Shahrukh Khan",
         "director": "Rakesh Roshan",
@@ -1045,7 +1045,7 @@
     },
     {
         "production_country_or_area": "Inde",
-        "type": "comique",
+        "type": "comédie",
         "decade": "années 1980",
         "star": "Anil Kapoor",
         "director": "Shekar Kapoor",
