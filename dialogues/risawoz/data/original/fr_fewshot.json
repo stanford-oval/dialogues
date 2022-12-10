@@ -3857,13 +3857,13 @@
                 ],
                 "belief_state": {
                     "inform slot-values": {
-                        "Attraction-type": "sites paysagers",
+                        "Attraction-type": "endroit",
                         "Hotel-area": "Nouveau district de Suzhou",
                         "Hotel-pricerange": "un peu cher",
                         "Hotel-name": "Hôtel New City Grand Rezen"
                     },
                     "turn_inform": {
-                        "Attraction-type": "sites paysagers"
+                        "Attraction-type": "endroit"
                     },
                     "turn request": []
                 },
@@ -3878,7 +3878,7 @@
                         "Inform",
                         "Attraction",
                         "type",
-                        "sites paysagers"
+                        "endroit"
                     ]
                 ],
                 "system_actions": [
@@ -3896,17 +3896,17 @@
                 "db_results": [
                     "Database search results: the number of successful matches is 6",
                     {
-                        "name": "région pittoresque de la montagne Tianping",
+                        "name": "zone panoramique du mont Tianping",
                         "area": "District de Wuzhong",
                         "type": "endroit",
-                        "the most suitable people": "amis",
+                        "the_most_suitable_people": "amis",
                         "consumption": "modérée",
-                        "metro station": "false",
-                        "ticket price": "30 yuans",
-                        "phone number": "0512-66387422",
+                        "metro_station": "false",
+                        "ticket_price": "30 yuans",
+                        "phone_number": "0512-66387422",
                         "address": "rue de Lingtian, dans le district de Wuzhong, à Suzhou",
                         "score": "4,5",
-                        "opening hours": "07 h 30 à 17 h 00",
+                        "opening_hours": "07 h 30 à 17 h 00",
                         "features": "C'est le lieu de sépulture des ancêtres de Fan Zhongyan et il est très amusant de grimper sur les routes rocheuses de la région. En outre, de la mi-novembre à la fin novembre, vous pourrez y admirer les magnifiques érables rouges."
                     },
                     {
@@ -4005,7 +4005,7 @@
                 ],
                 "belief_state": {
                     "inform slot-values": {
-                        "Attraction-type": "sites paysagers",
+                        "Attraction-type": "endroit",
                         "Attraction-name": "région pittoresque de la montagne Tianping",
                         "Hotel-area": "Nouveau district de Suzhou",
                         "Hotel-pricerange": "un peu cher",
@@ -4078,7 +4078,7 @@
                 ],
                 "belief_state": {
                     "inform slot-values": {
-                        "Attraction-type": "sites paysagers",
+                        "Attraction-type": "endroit",
                         "Attraction-name": "région pittoresque de la montagne Tianping",
                         "Hotel-area": "Nouveau district de Suzhou",
                         "Hotel-pricerange": "un peu cher",
@@ -4167,7 +4167,7 @@
                 ],
                 "belief_state": {
                     "inform slot-values": {
-                        "Attraction-type": "sites paysagers",
+                        "Attraction-type": "endroit",
                         "Attraction-name": "région pittoresque de la montagne Tianping",
                         "Restaurant-cuisine": "fondue chinoise",
                         "Hotel-area": "Nouveau district de Suzhou",
@@ -4237,7 +4237,7 @@
                 ],
                 "belief_state": {
                     "inform slot-values": {
-                        "Attraction-type": "sites paysagers",
+                        "Attraction-type": "endroit",
                         "Attraction-name": "région pittoresque de la montagne Tianping",
                         "Restaurant-cuisine": "fondue chinoise",
                         "Hotel-area": "Nouveau district de Suzhou",
@@ -22764,14 +22764,14 @@
                 ],
                 "belief_state": {
                     "inform slot-values": {
-                        "Attraction-type": "sites paysagers",
+                        "Attraction-type": "endroit",
                         "Attraction-area": "Parc industriel de Suzhou",
                         "Hotel-pricerange": "un peu cher",
                         "Hotel-area": "Parc industriel de Suzhou",
                         "Hotel-name": "l'hôtel Jinji Lac Shilla"
                     },
                     "turn_inform": {
-                        "Attraction-type": "sites paysagers",
+                        "Attraction-type": "endroit",
                         "Attraction-area": "Parc industriel de Suzhou"
                     },
                     "turn request": []
@@ -22852,7 +22852,7 @@
                 ],
                 "belief_state": {
                     "inform slot-values": {
-                        "Attraction-type": "sites paysagers",
+                        "Attraction-type": "endroit",
                         "Attraction-name": "région panoramique du lac Jinji",
                         "Attraction-area": "Parc industriel de Suzhou",
                         "Hotel-pricerange": "un peu cher",
@@ -22956,7 +22956,7 @@
                 ],
                 "belief_state": {
                     "inform slot-values": {
-                        "Attraction-type": "sites paysagers",
+                        "Attraction-type": "endroit",
                         "Attraction-name": "région panoramique du lac Jinji",
                         "Attraction-area": "Parc industriel de Suzhou",
                         "Restaurant-area": "Parc industriel de Suzhou",
@@ -23042,7 +23042,7 @@
                 ],
                 "belief_state": {
                     "inform slot-values": {
-                        "Attraction-type": "sites paysagers",
+                        "Attraction-type": "endroit",
                         "Attraction-name": "région panoramique du lac Jinji",
                         "Attraction-area": "Parc industriel de Suzhou",
                         "Restaurant-area": "Parc industriel de Suzhou",

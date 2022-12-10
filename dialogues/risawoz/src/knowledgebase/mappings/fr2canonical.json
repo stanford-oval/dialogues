@@ -1674,14 +1674,15 @@
                 "amie",
                 "amis",
                 "amies",
-                "copine",
                 "meilleures potes",
                 "des amis fassent une sortie",
                 "pour des amis",
                 "une sortie entre amis",
-                "rencontres"
+                "rencontres",
+                "faire une sortie entre amis"
             ],
             "rencontres": [
+                "copine",
                 "rendez-vous",
                 "pour les couples",
                 "conjoint",
@@ -1698,6 +1699,7 @@
                 "voyage en famille",
                 "familles",
                 "famille",
+                "familial",
                 "voyager en famille",
                 "aller avec des enfants"
             ],
@@ -1709,7 +1711,8 @@
             ],
             "zone panoramique du mont Tianping": [
                 "zone panoramique du mont Tianping",
-                "région pittoresque de la montagne Tianping"
+                "région pittoresque de la montagne Tianping",
+                "Zone pittoresque de la montagne Tianping"
             ],
             "village de Mudu": "village de Mudu",
             "Jardin du maître des filets": [
@@ -1747,7 +1750,8 @@
             "Huayi Brothers Movie World": "Huayi Brothers Movie World",
             "site panoramique de Shajiabang": [
                 "Zone panoramique de Shajiabang",
-                "site pittoresque de Shajiabang à Changshu"
+                "site pittoresque de Shajiabang à Changshu",
+                "site touristique de Shajiabang"
             ],
             "Lac de pierre": [
                 "Lac de pierre",
@@ -1759,7 +1763,8 @@
             ],
             "parc des zones humides du lac de Taihu Suzhou": [
                 "parc humide du lac Taihu",
-                "parc des zones humides du lac Taihu"
+                "parc des zones humides du lac Taihu",
+                "parc des zones humides du lac de Taihu de Suzhou"
             ],
             "Parc écologique de Baimajian": "Parc écologique de Baimajian",
             "rue Shantang": "rue Shantang",
@@ -1771,9 +1776,18 @@
                 "Rue piétonne Stone Road"
             ],
             "Zone panoramique de la montagne Qionglong": "Zone panoramique de la montagne Qionglong",
-            "l'Université de Soochow": "l'Université de Soochow",
-            "zone panoramique de Huqiu": "zone panoramique de Huqiu",
-            "jardin de la forêt du lion": "jardin de la forêt du lion",
+            "l'Université de Soochow": [
+                "l'Université de Soochow",
+                "université de Soochow"
+            ],
+            "zone panoramique de Huqiu": [
+                "zone panoramique de Huqiu",
+                "région pittoresque de Huqiu"
+            ],
+            "jardin de la forêt du lion": [
+                "jardin de la forêt du lion",
+                "Jardin de la forêt des lions"
+            ],
             "vieille ville de Jinxi": "vieille ville de Jinxi",
             "temple Hanshan": "temple Hanshan",
             "ville ancienne de Luzhi": "ville ancienne de Luzhi",
@@ -1796,8 +1810,10 @@
                 "jardin"
             ],
             "endroit": [
+                "paysages",
                 "des endroits",
                 "sites paysagers",
+                "site pittoresque paysager",
                 "zones paysagères",
                 "les paysages pittoresques"
             ],
@@ -1807,6 +1823,7 @@
                 "ville ancienne"
             ],
             "site historique du district de Gusu": [
+                "Sites historiques du district de Gusu",
                 "site historique",
                 "historique à Suzhou",
                 "sites historiques dans le district de Gusu",
@@ -1916,6 +1933,7 @@
                 "peux",
                 "peut",
                 "directement en métro",
+                "peux aller directement en métro",
                 "pouvoir",
                 "pouvez",
                 "Oui",
@@ -2117,7 +2135,8 @@
             ],
             "fondue chinoise Sichuan Xiang Tian Xia": "fondue chinoise Sichuan Xiang Tian Xia",
             "fondue chinoise Laotianqiao Frog": [
-                "fondue chinoise Laotianqiao Walu"
+                "fondue chinoise Laotianqiao Walu",
+                "fondue chinoise de Laotianqiao Frog"
             ],
             "Seoul Korean Cuisine": [
                 "Seoul South Korean Cuisine"
@@ -2144,7 +2163,10 @@
                 "L'Arome"
             ],
             "Boulangerie Yamazaki": "Boulangerie Yamazaki",
-            "barbecue au charbon de bois Nongleyuan": "barbecue au charbon de bois Nongleyuan",
+            "barbecue au charbon de bois Nongleyuan": [
+                "barbecue au charbon de bois Nongleyuan",
+                "barbecue au charbon de bois de Nongleyuan"
+            ],
             "Palsaik Coréen +Q": [
                 "barbecue coréen Palsaik"
             ],
@@ -2249,7 +2271,8 @@
                 "Cuisine du Jiangsu Zhejiang",
                 "Plats de Jiangsu Zhejiang",
                 "Cuisine du Jiangsu et du Zhejiang",
-                "La cuisine du Jiangsu-Zhejiang"
+                "La cuisine du Jiangsu-Zhejiang",
+                "Jiangsu-Zhejiang"
             ],
             "Hotpot": [
                 "fondue chinoise",
@@ -2440,6 +2463,7 @@
             ],
             "true": [
                 "directement en métro",
+                "peux aller directement en métro",
                 "peut",
                 "peux",
                 "pouvoir",
@@ -2774,7 +2798,9 @@
             ],
             "le petit hôtel de luxe Suzhou Shui'an Hanshe": [
                 "Shui'an Hanshe Boutique",
-                "petit hôtel de luxe Suzhou Shui'an Hanshe"
+                "petit hôtel de luxe Suzhou Shui'an Hanshe",
+                "L'hôtel Suzhou Shui'an Hanshe",
+                "le petit hôtel de luxe Suzhou Shui'an Hanshe"
             ],
             "l'hôtel Jinling Nanlin": [
                 "l'hôtel Jinling Nanlin",
@@ -2788,7 +2814,8 @@
             "l'hôtel Chengyi Lianhao": "l'hôtel Chengyi Lianhao",
             "Hôtel Suzhou Jinji Lake Shilla": [
                 "l'hôtel Jinji Lac Shilla",
-                "hôtel Shilla lac de Jinji Suzhou"
+                "hôtel Shilla lac de Jinji Suzhou",
+                "l'hôtel Shilla du lac de Jinji Suzhou"
             ],
             "l'hôtel de chaîne Genting Star": [
                 "L'hôtel de la chaîne Genting Star",
@@ -2801,7 +2828,9 @@
                 "l'hôtel Warmly"
             ],
             "l'appartement-hôtel Suzhou lac de Jinji Suisse Place Ligongd": [
-                "l'appartement-hôtel du lac de Jinji Suzhou Suisse Place Ligongdi"
+                "l'appartement-hôtel du lac de Jinji Suzhou Suisse Place Ligongdi",
+                "l'appartement hôtel du lac de Jinji Suisse Place Ligongdi Suzhou",
+                "l'appartement-hôtel du lac de Jinji Suisse Place Ligongdi Suzhou"
             ],
             "Suzhou Yongshun Express Hotel": [
                 "Suzhou Yongshun Express Hotel",
@@ -2813,7 +2842,10 @@
                 "le village des sciences et de la technologie Éléments de Suzhou"
             ],
             "l'auberge Yinjiangnan Xujia": "l'auberge Yinjiangnan Xujia",
-            "l'hôtel Suzhou Shui'an Hanshe": "l'hôtel Suzhou Shui'an Hanshe",
+            "l'hôtel Suzhou Shui'an Hanshe": [
+                "l'hôtel Suzhou Shui'an Hanshe",
+                "petit hôtel de luxe Shui'an Hanshe"
+            ],
             "l'hôtel Suzhou Mingyue Express": "l'hôtel Suzhou Mingyue Express",
             "l'auberge Tongli Yueshang": "l'auberge Tongli Yueshang",
             "City Comfort Inn": [

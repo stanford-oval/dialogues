@@ -506,7 +506,7 @@
     {
         "name": "Lac de pierre",
         "area": "District de Wuzhong",
-        "type": "site paysager",
+        "type": "endroit",
         "the_most_suitable_people": "amis",
         "consumption": "bon marché",
         "metro_station": "true",
