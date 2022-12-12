@@ -2,14 +2,13 @@ import argparse
 import itertools
 import json
 import os
-import pymongo
-import requests
 import sys
-
 from collections import defaultdict
 from contextlib import ExitStack
 from pathlib import Path
 
+import pymongo
+import requests
 from tqdm.autonotebook import tqdm
 
 from dialogues.risawoz.main import Risawoz
@@ -18,20 +17,19 @@ from dialogues.risawoz.src.knowledgebase.api import call_api, process_string
 parser = argparse.ArgumentParser()
 
 parser.add_argument("--root", type=str, default='dialogues/risawoz/', help='code root directory')
-parser.add_argument(
-    "--data_dir", type=str, default="data/original/", help="path to original data, relative to root dir"
-)
-parser.add_argument(
-    "--save_dir", type=str, default="data/", help="path to save preprocessed data, relative to root dir"
-)
+parser.add_argument("--data_dir", type=str, default="data/original/", help="path to original data, relative to root dir")
+parser.add_argument("--save_dir", type=str, default="data/", help="path to save preprocessed data, relative to root dir")
 parser.add_argument("--src", type=str, help="en, zh, en_zh", default="zh")
 parser.add_argument("--tgt", type=str, help="en, fr", default="en")
 parser.add_argument("--setting", type=str, help="en, fr, zh, en_zh")
 parser.add_argument("--splits", nargs='+', default=['train', 'valid', 'test'])
 parser.add_argument("--debug", action="store_true", help="toggle debug mode")
-parser.add_argument("--no-build-db", action="store_true", dest="no_build_db",
-                    help="If set, do not import the database into MongoDB. "
-                         "Default is to import it.")
+parser.add_argument(
+    "--no-build-db",
+    action="store_true",
+    dest="no_build_db",
+    help="If set, do not import the database into MongoDB. " "Default is to import it.",
+)
 args = parser.parse_args()
 print(f"build_db: {not args.no_build_db}", file=sys.stderr)
 dataset = None
@@ -120,9 +118,7 @@ def build_user_event(turn, setting):
         actions.append(event_action)
     event["Actions"] = actions
     # TODO: handle multiple active intents
-    event["active_intent"] = [
-        dataset.value_mapping.zh2en_DOMAIN_MAP.get(dom, dom).lower() for dom in turn["turn_domain"]
-    ]
+    event["active_intent"] = [dataset.value_mapping.zh2en_DOMAIN_MAP.get(dom, dom).lower() for dom in turn["turn_domain"]]
     event["state"] = defaultdict(dict)
     for ds, v in turn["belief_state"]["inform slot-values"].items():
         d, s = ds.split("-")[0], ds.split("-")[1]
@@ -197,31 +193,25 @@ DIALOGUES_WITH_ISSUE = {
 
 
 def build_kb_event(
-    wizard_query_event, db, actions, expected_num_results, setting, dial_id, turn_id,
-    ground_truth_results=None
+    wizard_query_event, db, actions, expected_num_results, setting, dial_id, turn_id, ground_truth_results=None
 ):
     event = {"Agent": "KnowledgeBase"}
     constraints = wizard_query_event["Constraints"]
     for d in constraints:
         constraints[d] = {k.replace(" ", "_"): v for k, v in constraints[d].items()}
     api_names = wizard_query_event["API"]
-    knowledge = call_api(db, api_names, constraints, lang=setting,
-                         value_mapping=dataset.value_mapping, actions=actions)
-    event["TotalItems"] = sum(item.get("available_options", 0)
-                              for api, item in knowledge.items())
+    knowledge = call_api(db, api_names, constraints, lang=setting, value_mapping=dataset.value_mapping, actions=actions)
+    event["TotalItems"] = sum(item.get("available_options", 0) for api, item in knowledge.items())
     for api, item in knowledge.items():
-        if (item.get("available_options", 0) < expected_num_results
-                and api_names != ['general']):
-            if ((dial_id, turn_id) in DIALOGUES_WITH_ISSUE
-                    or (dial_id, '*') in DIALOGUES_WITH_ISSUE):
+        if item.get("available_options", 0) < expected_num_results and api_names != ['general']:
+            if (dial_id, turn_id) in DIALOGUES_WITH_ISSUE or (dial_id, '*') in DIALOGUES_WITH_ISSUE:
                 continue
             print(f'API call likely failed for dial_id: {dial_id}, turn_id: {turn_id}')
             if ground_truth_results is not None:
                 constraints[api] = {
                     # case insensitive slot name matching for English
                     (k if setting == 'zh' else k.lower()): (
-                        v if setting == 'zh'
-                        else dataset.value_mapping.en2canonical.get(v, v)
+                        v if setting == 'zh' else dataset.value_mapping.en2canonical.get(v, v)
                     )
                     for k, v in constraints[api].items()
                 }
@@ -264,9 +254,7 @@ def build_kb_event(
                         constraints[api], item.get("available_options", 0), expected_num_results
                     )
                 )
-            knowledge = call_api(
-                db, api_names, constraints, lang='zh', value_mapping=dataset.value_mapping, actions=actions
-            )
+            knowledge = call_api(db, api_names, constraints, lang='zh', value_mapping=dataset.value_mapping, actions=actions)
 
     event["Item"] = knowledge
     event["Topic"] = api_names
@@ -282,8 +270,7 @@ def build_dataset(original_data_path, db, setting, debug=False, mongodb_host=Non
         scenario = {
             "UserTask": dialogue.get("goal", ""),
             "WizardCapabilities": [
-                {"Task": dataset.value_mapping.zh2en_DOMAIN_MAP.get(domain, domain).lower()}
-                for domain in dialogue["domains"]
+                {"Task": dataset.value_mapping.zh2en_DOMAIN_MAP.get(domain, domain).lower()} for domain in dialogue["domains"]
             ],
         }
         events = []
@@ -341,9 +328,10 @@ def build_dataset(original_data_path, db, setting, debug=False, mongodb_host=Non
 
 
 if __name__ == "__main__":
-    mongodb_host = (os.environ.get("MONGODB_HOST")
-                    if "MONGODB_HOST" in os.environ
-                    else 'mongodb+srv://bitod:plGYPp44hASzGbmm@cluster0.vo7pq.mongodb.net/risawoz?retryWrites=true&w=majority&ssl=true&ssl_cert_reqs=CERT_NONE')
+    mongodb_host = "mongodb://localhost:27017/"
+    # mongodb_host = (os.environ.get("MONGODB_HOST")
+    #                 if "MONGODB_HOST" in os.environ
+    #                 else 'mongodb+srv://bitod:plGYPp44hASzGbmm@cluster0.vo7pq.mongodb.net/risawoz?retryWrites=true&w=majority&ssl=true&ssl_cert_reqs=CERT_NONE')
 
     if not args.no_build_db:
         risawoz_db = build_db(
@@ -356,8 +344,7 @@ if __name__ == "__main__":
         db_client = pymongo.MongoClient(mongodb_host)
     else:
         db_client = pymongo.MongoClient()
-    dataset = Risawoz(name='risawoz', src=args.src, tgt=args.tgt,
-                      mongodb_host=mongodb_host)
+    dataset = Risawoz(name='risawoz', src=args.src, tgt=args.tgt, mongodb_host=mongodb_host)
     # download original RiSAWOZ dataset
     original_data_path = os.path.join(*[args.root, args.data_dir])
     for split in args.splits:
@@ -376,8 +363,10 @@ if __name__ == "__main__":
         print(f"processing {split} data...")
         processed_data = build_dataset(
             os.path.join(original_data_path, f"{args.setting}_{split}.json"),
-            risawoz_db, args.setting, debug=args.debug,
-            mongodb_host=mongodb_host
+            risawoz_db,
+            args.setting,
+            debug=args.debug,
+            mongodb_host=mongodb_host,
         )
         # save converted files in JSON format
         with open(f"{processed_data_path}/{args.setting}_{split}.json", 'w') as f:
