@@ -142,7 +142,7 @@
     {
         "class_number": "PE4J05066",
         "level": "avancé",
-        "subject": "d'anglais",
+        "subject": "anglais",
         "grade": "quatrième année",
         "area": "District de Wuzhong",
         "campus": "Manoir de Wuzhong",
@@ -162,7 +162,7 @@
     {
         "class_number": "PE4J15028A",
         "level": "avancé",
-        "subject": "d'anglais",
+        "subject": "anglais",
         "grade": "quatrième année",
         "area": "Parc industriel de Suzhou",
         "campus": "village de Lohas, dans le parc industriel de Suzhou",
@@ -182,7 +182,7 @@
     {
         "class_number": "PE4J44004A",
         "level": "avancé",
-        "subject": "d'anglais",
+        "subject": "anglais",
         "grade": "quatrième année",
         "area": "Nouveau district de Suzhou",
         "campus": "Bâtiment International Jinhe du Nouveau District de Suzhou",
@@ -202,7 +202,7 @@
     {
         "class_number": "PE4P01074A",
         "level": "cours de mise à niveau",
-        "subject": "d'anglais",
+        "subject": "anglais",
         "grade": "quatrième année",
         "area": "District de Gusu",
         "campus": "Le centre d'apprentissage Leqiao, dans le district de Gusu",
@@ -222,7 +222,7 @@
     {
         "class_number": "PE4P05066A",
         "level": "cours de mise à niveau",
-        "subject": "d'anglais",
+        "subject": "anglais",
         "grade": "quatrième année",
         "area": "District de Wuzhong",
         "campus": "Manoir de Wuzhong",
@@ -242,7 +242,7 @@
     {
         "class_number": "PE4P23037",
         "level": "cours de mise à niveau",
-        "subject": "d'anglais",
+        "subject": "anglais",
         "grade": "quatrième année",
         "area": "Parc industriel de Suzhou",
         "campus": "Central Scenery City, parc industriel de Suzhou",
@@ -262,7 +262,7 @@
     {
         "class_number": "PE4P44082A",
         "level": "cours de mise à niveau",
-        "subject": "d'anglais",
+        "subject": "anglais",
         "grade": "quatrième année",
         "area": "Nouveau district de Suzhou",
         "campus": "Bâtiment International Jinhe du Nouveau District de Suzhou",
@@ -282,7 +282,7 @@
     {
         "class_number": "PE4T01024",
         "level": "cours débutant",
-        "subject": "d'anglais",
+        "subject": "anglais",
         "grade": "quatrième année",
         "area": "District de Gusu",
         "campus": "Le centre d'apprentissage Leqiao, dans le district de Gusu",
@@ -302,7 +302,7 @@
     {
         "class_number": "PE4T05020A",
         "level": "cours débutant",
-        "subject": "d'anglais",
+        "subject": "anglais",
         "grade": "quatrième année",
         "area": "District de Wuzhong",
         "campus": "Manoir de Wuzhong",
@@ -322,7 +322,7 @@
     {
         "class_number": "PE4T15020",
         "level": "cours débutant",
-        "subject": "d'anglais",
+        "subject": "anglais",
         "grade": "quatrième année",
         "area": "Parc industriel de Suzhou",
         "campus": "village de Lohas, dans le parc industriel de Suzhou",
@@ -342,7 +342,7 @@
     {
         "class_number": "PE4T44042",
         "level": "cours débutant",
-        "subject": "d'anglais",
+        "subject": "anglais",
         "grade": "quatrième année",
         "area": "Nouveau district de Suzhou",
         "campus": "Bâtiment International Jinhe du Nouveau District de Suzhou",
@@ -682,7 +682,7 @@
     {
         "class_number": "PE5J05065",
         "level": "avancé",
-        "subject": "d'anglais",
+        "subject": "anglais",
         "grade": "cinquième année",
         "area": "District de Wuzhong",
         "campus": "Manoir de Wuzhong",
@@ -702,7 +702,7 @@
     {
         "class_number": "PE5J36036A",
         "level": "avancé",
-        "subject": "d'anglais",
+        "subject": "anglais",
         "grade": "cinquième année",
         "area": "Parc industriel de Suzhou",
         "campus": "centre d'apprentissage de la place Xinghai, dans le parc industriel de Suzhou",
@@ -722,7 +722,7 @@
     {
         "class_number": "PE5J48003",
         "level": "avancé",
-        "subject": "d'anglais",
+        "subject": "anglais",
         "grade": "cinquième année",
         "area": "Nouveau district de Suzhou",
         "campus": "Place commerciale Xijin, nouveau district de Suzhou",
@@ -742,7 +742,7 @@
     {
         "class_number": "PE5P01112",
         "level": "cours de mise à niveau",
-        "subject": "d'anglais",
+        "subject": "anglais",
         "grade": "cinquième année",
         "area": "District de Gusu",
         "campus": "Le centre d'apprentissage Leqiao, dans le district de Gusu",
@@ -762,7 +762,7 @@
     {
         "class_number": "PE5P05116A",
         "level": "cours de mise à niveau",
-        "subject": "d'anglais",
+        "subject": "anglais",
         "grade": "cinquième année",
         "area": "District de Wuzhong",
         "campus": "Manoir de Wuzhong",
@@ -782,7 +782,7 @@
     {
         "class_number": "PE5P36112A",
         "level": "cours de mise à niveau",
-        "subject": "d'anglais",
+        "subject": "anglais",
         "grade": "cinquième année",
         "area": "Parc industriel de Suzhou",
         "campus": "centre d'apprentissage de la place Xinghai, dans le parc industriel de Suzhou",
@@ -802,7 +802,7 @@
     {
         "class_number": "PE5P44094A",
         "level": "cours de mise à niveau",
-        "subject": "d'anglais",
+        "subject": "anglais",
         "grade": "cinquième année",
         "area": "Nouveau district de Suzhou",
         "campus": "Bâtiment International Jinhe du Nouveau District de Suzhou",
@@ -822,7 +822,7 @@
     {
         "class_number": "PE5T01041",
         "level": "cours débutant",
-        "subject": "d'anglais",
+        "subject": "anglais",
         "grade": "cinquième année",
         "area": "District de Gusu",
         "campus": "Le centre d'apprentissage Leqiao, dans le district de Gusu",
@@ -842,7 +842,7 @@
     {
         "class_number": "PE5T05027A",
         "level": "cours débutant",
-        "subject": "d'anglais",
+        "subject": "anglais",
         "grade": "cinquième année",
         "area": "District de Wuzhong",
         "campus": "Manoir de Wuzhong",
@@ -862,7 +862,7 @@
     {
         "class_number": "PE5T28041A",
         "level": "cours débutant",
-        "subject": "d'anglais",
+        "subject": "anglais",
         "grade": "cinquième année",
         "area": "Parc industriel de Suzhou",
         "campus": "centre du quartier de Fangzhou dans le parc industriel de Suzhou",
@@ -882,7 +882,7 @@
     {
         "class_number": "PE5T44034A",
         "level": "cours débutant",
-        "subject": "d'anglais",
+        "subject": "anglais",
         "grade": "cinquième année",
         "area": "Nouveau district de Suzhou",
         "campus": "Bâtiment International Jinhe du Nouveau District de Suzhou",
@@ -1122,7 +1122,7 @@
     {
         "class_number": "ZMCPE5J01010A",
         "level": "avancé",
-        "subject": "d'anglais",
+        "subject": "anglais",
         "grade": "cinquième année",
         "area": "District de Gusu",
         "campus": "Le centre d'apprentissage Leqiao, dans le district de Gusu",
@@ -1322,7 +1322,7 @@
     {
         "class_number": "PE6P24044A",
         "level": "cours de mise à niveau",
-        "subject": "d'anglais",
+        "subject": "anglais",
         "grade": "sixième année",
         "area": "District de Gusu",
         "campus": "centre d'apprentissage de Pingjiang New Town, dans le district de Gusu",
@@ -1342,7 +1342,7 @@
     {
         "class_number": "PE6P32071A",
         "level": "cours de mise à niveau",
-        "subject": "d'anglais",
+        "subject": "anglais",
         "grade": "sixième année",
         "area": "District de Wuzhong",
         "campus": "Shimao Plaza, district de Wuzhong",
@@ -1362,7 +1362,7 @@
     {
         "class_number": "PE6P36108A",
         "level": "cours de mise à niveau",
-        "subject": "d'anglais",
+        "subject": "anglais",
         "grade": "sixième année",
         "area": "Parc industriel de Suzhou",
         "campus": "centre d'apprentissage de la place Xinghai, dans le parc industriel de Suzhou",
@@ -1382,7 +1382,7 @@
     {
         "class_number": "PE6P48018A",
         "level": "cours de mise à niveau",
-        "subject": "d'anglais",
+        "subject": "anglais",
         "grade": "sixième année",
         "area": "Nouveau district de Suzhou",
         "campus": "Place commerciale Xijin, nouveau district de Suzhou",
@@ -1402,7 +1402,7 @@
     {
         "class_number": "PE6T01052",
         "level": "cours débutant",
-        "subject": "d'anglais",
+        "subject": "anglais",
         "grade": "sixième année",
         "area": "District de Gusu",
         "campus": "Le centre d'apprentissage Leqiao, dans le district de Gusu",
@@ -1422,7 +1422,7 @@
     {
         "class_number": "PE6T28046",
         "level": "cours débutant",
-        "subject": "d'anglais",
+        "subject": "anglais",
         "grade": "sixième année",
         "area": "Parc industriel de Suzhou",
         "campus": "centre du quartier de Fangzhou dans le parc industriel de Suzhou",
@@ -1442,7 +1442,7 @@
     {
         "class_number": "PE6T38019",
         "level": "cours débutant",
-        "subject": "d'anglais",
+        "subject": "anglais",
         "grade": "sixième année",
         "area": "District de Wuzhong",
         "campus": "Yuexi, district de Wuzhong",
@@ -1462,7 +1462,7 @@
     {
         "class_number": "PE6T48010",
         "level": "cours débutant",
-        "subject": "d'anglais",
+        "subject": "anglais",
         "grade": "sixième année",
         "area": "Nouveau district de Suzhou",
         "campus": "Place commerciale Xijin, nouveau district de Suzhou",
@@ -1702,7 +1702,7 @@
     {
         "class_number": "ZMCPE6J0519A",
         "level": "avancé",
-        "subject": "d'anglais",
+        "subject": "anglais",
         "grade": "sixième année",
         "area": "District de Wuzhong",
         "campus": "Manoir de Wuzhong",
@@ -1722,7 +1722,7 @@
     {
         "class_number": "ZMCPE6J15007A",
         "level": "avancé",
-        "subject": "d'anglais",
+        "subject": "anglais",
         "grade": "sixième année",
         "area": "Parc industriel de Suzhou",
         "campus": "village de Lohas, dans le parc industriel de Suzhou",
@@ -1742,7 +1742,7 @@
     {
         "class_number": "ZMCPE6J39007A",
         "level": "avancé",
-        "subject": "d'anglais",
+        "subject": "anglais",
         "grade": "sixième année",
         "area": "District de Gusu",
         "campus": "place du soleil, dans le district de Gusu",

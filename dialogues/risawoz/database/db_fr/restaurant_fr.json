@@ -145,7 +145,7 @@
     {
         "name": "fondue chinoise Laotianqiao Frog",
         "area": "District de Gusu",
-        "cuisine": "Hotpot",
+        "cuisine": "fondue chinoise",
         "pricerange": "un peu cher",
         "metro_station": "false",
         "per_capita_consumption": "120 yuans",
@@ -262,7 +262,7 @@
     {
         "name": "fondue chinoise Haidilao",
         "area": "Parc industriel de Suzhou",
-        "cuisine": "Hotpot",
+        "cuisine": "fondue chinoise",
         "pricerange": "un peu cher",
         "metro_station": "false",
         "per_capita_consumption": "127 yuans",
@@ -379,7 +379,7 @@
     {
         "name": "fondue chinoise Sichuan Xiang Tian Xia",
         "area": "District de Wuzhong",
-        "cuisine": "Hotpot",
+        "cuisine": "fondue chinoise",
         "pricerange": "modérée",
         "metro_station": "false",
         "per_capita_consumption": "97 yuans",
@@ -457,7 +457,7 @@
     {
         "name": "fondue chinoise Aobanian",
         "area": "Nouveau district de Suzhou",
-        "cuisine": "Hotpot",
+        "cuisine": "fondue chinoise",
         "pricerange": "un peu cher",
         "metro_station": "true",
         "per_capita_consumption": "127 yuans",
@@ -587,7 +587,7 @@
     {
         "name": "fondue chinoise de Chongqing De Zhuang",
         "area": "District de Wujiang",
-        "cuisine": "Hotpot",
+        "cuisine": "fondue chinoise",
         "pricerange": "un peu cher",
         "metro_station": "false",
         "per_capita_consumption": "130 yuans",

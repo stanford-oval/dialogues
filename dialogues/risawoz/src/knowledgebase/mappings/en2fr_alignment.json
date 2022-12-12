@@ -985,7 +985,7 @@
             "145 minutes": "145 minutes"
         },
         "release date": {
-            "July 27, 2007, in Taiwan and on July 31 of the same year on the Chinese mainland": "Le 27 juillet 2007 à Taiwan et le 31 juillet de la même année en Chine continentale",
+            "July 27, 2007, in Taiwan and on July 31 of the same year on the Chinese mainland": "Le 27 juillet 2007 à Taïwan et le 31 juillet de la même année en Chine continentale",
             "August 20, 2015": "20 août 2015",
             "October 25, 2002, in Taiwan, China": "le 25 octobre 2002 à Taïwan, Chine",
             "in the United States on July 9, 2003": "le 9 juillet 2003 aux États-Unis",
@@ -1044,7 +1044,7 @@
             "1988": "1988",
             "October 25, 2019 (Chinese mainland)": "25 octobre 2019 (Chine continentale)",
             "October 26th, 1977": "26 octobre 1977",
-            "in Taiwan, China on July 27, 2007": "à Taiwan, en Chine, le 27 juillet 2007",
+            "in Taiwan, China on July 27, 2007": "à Taïwan, en Chine, le 27 juillet 2007",
             "on the Chinese mainland on July 31, 2007": "sur le continent chinois le 31 juillet 2007",
             "August 19, 1995": "19 août 1995",
             "February 1, 1982 (Chinese mainland)": "1er février 1982 (Chine continentale)",
@@ -1395,7 +1395,7 @@
             "Tianping Mountain Scenic Area": "zone panoramique du mont Tianping",
             "Mudu Town": "village de Mudu",
             "Master of the Nets Garden": "Jardin du maître des filets",
-            "Suzhou Amusement Land Forest and Water World": "parc d'attraction aquatique Terre-Fôret de Suzhou",
+            "Suzhou Amusement Land Forest and Water World": "parc d'attraction aquatique Terre-Forêt de Suzhou",
             "Xi'an Jiaotong-Liverpool University": "Université de Xi'an Jiaotong-Liverpool",
             "Tongli Town": "Ville de Tongli",
             "Dushu Lake Church": "L'église du lac Dushu",
@@ -1715,7 +1715,7 @@
         },
         "cuisine": {
             "Jiangsu-Zhejiang": "Jiangsu-Zhejiang",
-            "Hotpot": "Hotpot",
+            "fondue chinoise": "Hotpot",
             "Korean": "sud-coréenne",
             "Japanese": "japonaise",
             "Northwestern": "du Nord-Ouest",
@@ -2210,7 +2210,7 @@
             "No. 1, Fugui Jingyuan, Kunshan": "No. 1, Fugui Jingyuan, Kunshan"
         },
         "hotel type": {
-            "resort": "hôtels",
+            "resort": "villégiature",
             "business": "d'affaires"
         }
     },

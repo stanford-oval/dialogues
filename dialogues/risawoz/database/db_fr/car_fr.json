@@ -1,7 +1,7 @@
 [
     {
         "name": "POLO Automatique Panoramique Version Enjoyment",
-        "classification": "à hayon",
+        "classification": "hayon",
         "size": "petite taille",
         "number_of_seats": "5",
         "brand": "SAIC Volkswagen",
@@ -127,7 +127,7 @@
     },
     {
         "name": "Golf 200TSI DSG version confort",
-        "classification": "à hayon",
+        "classification": "hayon",
         "size": "petite ou moyenne taille",
         "number_of_seats": "5",
         "brand": "FAW-Volkswagen",
@@ -253,7 +253,7 @@
     },
     {
         "name": "l'édition luxe de la Volkswagen Golf 280TSI DSG",
-        "classification": "à hayon",
+        "classification": "hayon",
         "size": "petite ou moyenne taille",
         "number_of_seats": "5",
         "brand": "FAW-Volkswagen",
@@ -307,7 +307,7 @@
     },
     {
         "name": "Volkswagen Beetle 180TSI Version",
-        "classification": "à hayon",
+        "classification": "hayon",
         "size": "petite ou moyenne taille",
         "number_of_seats": "4",
         "brand": "Volkswagen Import",
@@ -469,7 +469,7 @@
     },
     {
         "name": "Volkswagen Beetle 280TSI Version",
-        "classification": "à hayon",
+        "classification": "hayon",
         "size": "petite ou moyenne taille",
         "number_of_seats": "4",
         "brand": "Volkswagen Import",
