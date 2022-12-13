@@ -1646,6 +1646,7 @@
         "area": {
             "District de Gusu": [
                 "nouveau district de Suzhou ou le district de Gusu",
+                "le nouveau district de Suzhou ou le district de Gusu",
                 "District de Gusu"
             ],
             "Parc industriel de Suzhou": [
@@ -1665,7 +1666,8 @@
             "District de Wuzhong": [
                 "District de Wuzhong",
                 "district de Wuzhong",
-                "le district de Wuzhong"
+                "le district de Wuzhong",
+                "le district de Wuzhong ou le district de Suzhou"
             ],
             "Kunshan": "Kunshan"
         },
@@ -4009,13 +4011,16 @@
                 "nouveau district de Suzhou ou le district de Gusu",
                 "le district de Gusu ou dans le parc industriel de Suzhou",
                 "District de Gusu",
-                "district de Gusu"
+                "district de Gusu",
+                "le district de Gusu"
             ],
             "Parc industriel de Suzhou": [
                 "Parc industriel de Suzhou",
-                "Parc Industriel de Suzhou"
+                "Parc Industriel de Suzhou",
+                "le parc industriel de Suzhou ou dans le district de Wuzhong"
             ],
             "Nouveau district de Suzhou": [
+                "le parc industriel de Suzhou ou le nouveau district de Suzhou",
                 "nouveau district de Suzhou",
                 "Nouveau district de Suzhou",
                 "le nouveau district de Suzhou ou dans le parc industriel de Suzhou"
@@ -4023,7 +4028,10 @@
             "District de Wuzhong": [
                 "District de Wuzhong",
                 "district de Wuzhong",
-                "le district de Wuzhong ou de Gusu"
+                "le district de Wuzhong ou de Gusu",
+                "Le district de Wuzhong ou de Gusu",
+                "district de Gusu ou de Wuzhong",
+                "parc industriel de Suzhou ou dans le district de Wuzhong"
             ],
             "nouveau district de Suzhou ou le district de Gusu": "nouveau district de Suzhou ou le district de Gusu"
         },
@@ -4038,7 +4046,8 @@
                 "samedi",
                 "samedi ou le dimanche",
                 "le samedi ou le dimanche",
-                "samedis"
+                "samedis",
+                "le vendredi ou le samedi"
             ],
             "dimanche": "dimanche",
             "mercredi": "mercredi"
@@ -4075,13 +4084,20 @@
         "time": {
             "après-midi": [
                 "après-midi",
-                "l'après-midi"
+                "l'après-midi",
+                "matin ou l'après-midi",
+                "matin ou après-midi",
+                "après-midi ou le soir"
             ],
             "matin": [
-                "matin"
+                "matin",
+                "soir ou matin",
+                "soir ou le matin",
+                "le matin ou le soir"
             ],
             "soir": [
-                "soir"
+                "soir",
+                "après-midi ou soir"
             ]
         },
         "class number": {
@@ -4499,7 +4515,8 @@
             "avancé": [
                 "avancé",
                 "niveau avancé",
-                "cours avancé"
+                "cours avancé",
+                "avancées"
             ]
         },
         "start date": {
