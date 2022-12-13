@@ -12,7 +12,7 @@
         "bus_routes": "N° 2 (Tour), N° 40, N° 50, N° 202, N° 529, N° 200, N° 811, N° 89, N° 8, N° 55, N° 204, N° 309, ou N° 501",
         "metro_station": "true",
         "key_departments": [
-            "cardiovasculaire",
+            "cardiologie",
             "néphrologie",
             "sang",
             "neurologie",
@@ -45,7 +45,7 @@
         "bus_routes": "N° 2, N° 35, N° 38, N° 39, N° 40, N° 51, N° 60, N° 68, N° 69, N° 89, N° 303, N° 304, N° 308, N° 317, N° 321, N° 502, ou N° 931",
         "metro_station": "true",
         "key_departments": [
-            "cardiovasculaire",
+            "cardiologie",
             "néphrologie",
             "sang",
             "neurologie",
@@ -77,7 +77,7 @@
         "key_departments": [
             "néphrologie",
             "sang",
-            "cardiovasculaire",
+            "cardiologie",
             "neurologie",
             "chirurgie générale",
             "endocrinologie",
@@ -127,7 +127,7 @@
         "bus_routes": "No. 301 ou No. 305",
         "metro_station": "N/A",
         "key_departments": [
-            "cardiovasculaire",
+            "cardiologie",
             "gynécologie",
             "endocrinologie",
             "oncologie",
@@ -172,7 +172,7 @@
         "metro_station": "true",
         "key_departments": [
             "néphrologie",
-            "cardiovasculaire",
+            "cardiologie",
             "oncologie",
             "respiratoire",
             "urologie",
@@ -195,7 +195,7 @@
         "bus_routes": "n° 2, n° 47, n° 106, n° 206, n° 215, n° 258, n° 6, n° 108, n° 110, n° 116, ou n° 166",
         "metro_station": "N/A",
         "key_departments": [
-            "cardiovasculaire",
+            "cardiologie",
             "oncologie",
             "neurochirurgie",
             "stomatologie",
@@ -259,7 +259,7 @@
         "bus_routes": "n° 2, n° 43, n° 63, n° 64, n° 65, n° 312, n° 315, n° 326, n° 505, n° 506, n° 508, n° 511, n° 512, n° 621, n° 663, n° 691, ou n° 692",
         "metro_station": "N/A",
         "key_departments": [
-            "cardiovasculaire",
+            "cardiologie",
             "néphrologie",
             "oncologie",
             "neurochirurgie",
@@ -301,7 +301,7 @@
         "bus_routes": "n° 44, n° 301, n° 302, n° 325, n° 332, n° 357, ou n° 442",
         "metro_station": "true",
         "key_departments": [
-            "cardiovasculaire",
+            "cardiologie",
             "ophtalmologie",
             "gynécologie"
         ],

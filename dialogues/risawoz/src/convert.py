@@ -189,6 +189,7 @@ DIALOGUES_WITH_ISSUE = {
     ('attraction_restaurant_hotel_goal_2-21###6094', '*'),
     ('attraction_restaurant_goal_2-7_v2###2179', 4),
     ('attraction_restaurant_goal_2-7_v2###2179', 5),
+    ('Hospital_goal_2-32_v2###9505', '*')
 }
 
 

@@ -25,20 +25,24 @@
                 "Série télévisée américaine",
                 "série télé américaine",
                 "des séries américaines",
-                "Série TV en Amérique"
+                "Série TV en Amérique",
+                "américains",
+                "la télévision américaine"
             ],
             "Chine continentale": [
                 "Chine continentale",
                 "série télé chinoise",
                 "des séries domestiques",
-                "série télévisée chinoise"
+                "série télévisée chinoise",
+                "des séries de télé nationales"
             ],
             "Japon": [
                 "japonaise",
                 "japonaises",
                 "des séries japonaises",
                 "série télé japonaise",
-                "séries télé japonaises"
+                "séries télé japonaises",
+                "télévision japonaises"
             ],
             "Corée": [
                 "sud-coréennes",
@@ -48,7 +52,9 @@
                 "en Corée du Sud",
                 "série télé coréenne",
                 "drame coréen",
-                "série coréenne"
+                "série coréenne",
+                "série télé sud-coréenne",
+                "télévision coréenne"
             ],
             "Hong Kong": [
                 "Hong Kong",
@@ -56,7 +62,9 @@
                 "films de Hong Kong",
                 "série télé bien notée de Hong Kong, en Chine",
                 "bonne série télé de Hong Kong",
-                "série télévisée de Hong Kong"
+                "série télévisée de Hong Kong",
+                "hongkongais",
+                "série de Hong Kong"
             ]
         },
         "decade": {
@@ -122,7 +130,8 @@
                 "comique",
                 "comiques",
                 "série télé comique",
-                "série télévisée humoristique"
+                "série télévisée humoristique",
+                "humoristique"
             ],
             "d'action": [
                 "d'action",
@@ -130,13 +139,16 @@
                 "des séries d'action",
                 "série télé d'action",
                 "pleine d'action",
-                "bonne série d'action"
+                "bonne série d'action",
+                "les séries d'action",
+                "série de télé d'action"
             ],
             "polar": [
                 "à suspense",
                 "drame à suspense",
                 "une série polar",
-                "suspense"
+                "suspense",
+                "crimes"
             ],
             "série": [
                 "série",
@@ -147,13 +159,18 @@
                 "les longs métrages",
                 "les séries de long-métrage",
                 "série télé",
-                "des séries télévisées"
+                "des séries télévisées",
+                "série télé de long métrage",
+                "série télévisée",
+                "une série télé"
             ],
             "série policière": [
                 "télévisée policière",
                 "drame policier",
                 "série télé policière",
-                "séries policières"
+                "séries policières",
+                "une série télé policière",
+                "télé policière"
             ]
         },
         "title": {
@@ -922,7 +939,8 @@
                 "l'Amérique",
                 "d'Amérique",
                 "en Amérique",
-                "Etats-Unis"
+                "Etats-Unis",
+                "les États-Unis"
             ],
             "Corée": [
                 "sud-coréennes",
@@ -932,7 +950,9 @@
                 "en Corée du Sud",
                 "série télé coréenne",
                 "drame coréen",
-                "série coréenne"
+                "série coréenne",
+                "coréen",
+                "sud-coréens"
             ],
             "Chine continentale": [
                 "Chine continentale",
@@ -940,7 +960,8 @@
             ],
             "Hong Kong": [
                 "Hong Kong",
-                "films de Hong Kong"
+                "films de Hong Kong",
+                "hongkongais"
             ],
             "Inde": [
                 "Indien",
@@ -953,7 +974,8 @@
             ],
             "Taïwan, Chine": [
                 "Taïwan",
-                "Taïwan, en Chine"
+                "Taïwan, en Chine",
+                "Taïwan, de Chine"
             ]
         },
         "star": {
@@ -1632,8 +1654,9 @@
             ],
             "Suzhou": "Suzhou",
             "Nouveau district de Suzhou": [
-                "Nouveau district de Suzhou",
-                "Nouveau District de Suzhou"
+                "nouveau district de Suzhou",
+                "Nouveau District de Suzhou",
+                "Nouveau district de Suzhou"
             ],
             "Changshu": "Changshu",
             "District de Wujiang": [
@@ -1641,7 +1664,8 @@
             ],
             "District de Wuzhong": [
                 "District de Wuzhong",
-                "district de Wuzhong"
+                "district de Wuzhong",
+                "le district de Wuzhong"
             ],
             "Kunshan": "Kunshan"
         },
@@ -1696,7 +1720,8 @@
                 "pour des amis",
                 "une sortie entre amis",
                 "rencontres",
-                "faire une sortie entre amis"
+                "faire une sortie entre amis",
+                "visiter avec des amis"
             ],
             "rencontres": [
                 "copine",
@@ -1720,22 +1745,28 @@
                 "familial",
                 "voyager en famille",
                 "aller avec des enfants",
-                "attraction pour les familles"
+                "attraction pour les familles",
+                "pour les familles"
             ],
             "enfants": "enfants"
         },
         "name": {
             "Jardin du modeste administrateur": [
-                "Le jardin de l'humble administrateur"
+                "Le jardin de l'humble administrateur",
+                "Jardin de l'Humble Administrateur"
             ],
             "zone panoramique du mont Tianping": [
                 "zone panoramique du mont Tianping",
                 "région pittoresque de la montagne Tianping",
                 "Zone pittoresque de la montagne Tianping",
                 "zone panoramique de la montagne Tianping",
-                "zone pittoresque de la montagne Tianping"
+                "zone pittoresque de la montagne Tianping",
+                "La zone panoramique de la montagne Tianping"
             ],
-            "village de Mudu": "village de Mudu",
+            "village de Mudu": [
+                "village de Mudu",
+                "ville de Mudu"
+            ],
             "Jardin du maître des filets": [
                 "Le jardin du Maître des filets"
             ],
@@ -1744,7 +1775,8 @@
                 "le parc d'attraction aquatique Terre-Forêt de Suzhou",
                 "Le parc d'attraction aquatique Terre-Forêt de Suzhou",
                 "le parc d'attraction aquatique Terre-Forêt de Suzhou",
-                "parc d'attraction aquatique Terre-Forêt Suzhou"
+                "parc d'attraction aquatique Terre-Forêt Suzhou",
+                "parc d'attractions aquatique Terre-Forêt de Suzhou"
             ],
             "Université de Xi'an Jiaotong-Liverpool": [
                 "l'université de Xi'an Jiaotong-Liverpool",
@@ -1753,7 +1785,8 @@
             ],
             "Ville de Tongli": [
                 "vieille ville de Tongli",
-                "Ville ancienne de Tongli"
+                "Ville ancienne de Tongli",
+                "ville ancienne de Tongli"
             ],
             "L'église du lac Dushu": [
                 "L'église du lac Dushu",
@@ -1771,7 +1804,10 @@
                 "la région pittoresque du lac de Jinji",
                 "la zone pittoresque du lac de Jinji",
                 "La zone panoramique du lac de Jinji",
-                "site panoramique du lac Jinji"
+                "site panoramique du lac Jinji",
+                "zone pittoresque du lac Jinji",
+                "La région panoramique du lac Jinji",
+                "la région panoramique du lac Jinji"
             ],
             "village de Zhouzhuang": [
                 "village de Zhouzhuang",
@@ -1810,13 +1846,21 @@
                 "parc de la zone humide du lac de Taihu à Suzhou",
                 "Le parc des zones humides du lac de Taihu Suzhou",
                 "le parc des zones humides du lac de Taihu Suzhou",
-                "parc des zones humides du lac de Taihu Suzhou"
+                "parc des zones humides du lac de Taihu Suzhou",
+                "parc de la zone humide du lac Taihu",
+                "Parc des zones humides du lac Taihu"
             ],
             "Parc écologique de Baimajian": "Parc écologique de Baimajian",
             "rue Shantang": "rue Shantang",
-            "Ville de Qiandeng": "Ville de Qiandeng",
+            "Ville de Qiandeng": [
+                "Ville de Qiandeng",
+                "ville de Qiandeng"
+            ],
             "librairie Eslite": "librairie Eslite",
-            "rue Guanqian": "rue Guanqian",
+            "rue Guanqian": [
+                "rue Guanqian",
+                "Rue Guanqian"
+            ],
             "Harmony Times Square": "Harmony Times Square",
             "rue piétonne Shilu": [
                 "Rue piétonne Stone Road"
@@ -1835,7 +1879,8 @@
             ],
             "jardin de la forêt du lion": [
                 "jardin de la forêt du lion",
-                "Jardin de la forêt des lions"
+                "Jardin de la forêt des lions",
+                "Jardin de la Forêt du Lion"
             ],
             "vieille ville de Jinxi": [
                 "vieille ville de Jinxi",
@@ -1846,7 +1891,10 @@
                 "Temple Hanshan"
             ],
             "ville ancienne de Luzhi": "ville ancienne de Luzhi",
-            "Pavillon Canglang": "Pavillon Canglang",
+            "Pavillon Canglang": [
+                "Pavillon Canglang",
+                "pavillon Canglang"
+            ],
             "Dongting Dongshan": "Dongting Dongshan",
             "Suzhou Aquarium": [
                 "Suzhou Aquarium",
@@ -1857,7 +1905,10 @@
                 "région pittoresque de la montagne Lingyan",
                 "zone panoramique de la montagne Lingyan"
             ],
-            "centre commercial Impression City": "centre commercial Impression City",
+            "centre commercial Impression City": [
+                "centre commercial Impression City",
+                "Centre commercial Impression City"
+            ],
             "Jardin Pérsistant": "Jardin Pérsistant",
             "Pingjiang Road": "Pingjiang Road",
             "Zone pittoresque de Panmen": "Zone pittoresque de Panmen"
@@ -1867,7 +1918,8 @@
                 "Jardin de Suzhou",
                 "jardin de style Suzhou",
                 "Jardin de style Suzhou",
-                "jardin"
+                "jardin",
+                "jardin de Suzhou"
             ],
             "endroit": [
                 "paysages",
@@ -2001,6 +2053,8 @@
                 "peux aller directement en métro",
                 "pouvoir",
                 "pouvez",
+                "pourrais",
+                "Pourriez-vous",
                 "Oui",
                 "oui",
                 "a",
@@ -2023,7 +2077,8 @@
                 "peux accéder directement en métro",
                 "pouvons accéder directement en métro",
                 "directement au restaurant en métro",
-                "il y en a"
+                "il y en a",
+                "est"
             ]
         },
         "ticket price": {
@@ -2202,19 +2257,22 @@
             "fondue chinoise Sichuan Xiang Tian Xia": [
                 "fondue chinoise Sichuan Xiang Tian Xia",
                 "fondue chinoise de Sichuan Xiang Tian Xia",
-                "restaurant de fondue chinoise Sichuan Xiang Tian Xia"
+                "restaurant de fondue chinoise Sichuan Xiang Tian Xia",
+                "Fondue Chinoise Sichuan Xiang Tian Xia"
             ],
             "fondue chinoise Laotianqiao Frog": [
                 "fondue chinoise Laotianqiao Walu",
-                "fondue chinoise de Laotianqiao Frog"
+                "fondue chinoise de Laotianqiao Frog",
+                "restaurant de fondue chinoise Grenouille de Laotianqiao"
             ],
             "Seoul Korean Cuisine": [
                 "Seoul South Korean Cuisine"
             ],
-            "Restaurant Xibei": "Restaurant Xibei",
+            "Restaurant Xibei": "restaurant Xibei",
             "Barbecue à charbon de Niutanjia Ben'Ge": [
                 "Barbecue à charbon de Niutanjia Ben'Ge",
-                "barbecue au charbon de bois de Niutanjia Ben'Ge"
+                "barbecue au charbon de bois de Niutanjia Ben'Ge",
+                "Barbecue au charbon de bois de Niutanjia Ben'Ge"
             ],
             "Qing He Gu": [
                 "QingHeGu"
@@ -2239,23 +2297,30 @@
             "L'Arôme": [
                 "L'Arome"
             ],
-            "Boulangerie Yamazaki": "Boulangerie Yamazaki",
+            "Boulangerie Yamazaki": [
+                "Boulangerie Yamazaki",
+                "boulangerie Yamazaki"
+            ],
             "barbecue au charbon de bois Nongleyuan": [
                 "barbecue au charbon de bois Nongleyuan",
                 "barbecue au charbon de bois de Nongleyuan",
-                "restaurant de barbecue au charbon de bois Nongleyuan"
+                "restaurant de barbecue au charbon de bois Nongleyuan",
+                "barbecue au charbon du bois Nongleyuan"
             ],
             "Palsaik Coréen +Q": [
                 "barbecue coréen Palsaik",
                 "le barbecue coréen Palsaik",
-                "Le barbecue coréen Palsaik"
+                "Le barbecue coréen Palsaik",
+                "Palsaik Korean BBQ"
             ],
             "Spicy Memory": "Spicy Memory",
             "Wufangzhai": "Wufangzhai",
             "fondue chinoise Aobanian": [
                 "fondue chinoise Aobanian",
                 "fondue chinoise de Aobanian",
-                "celle de Aobanian"
+                "celle de Aobanian",
+                "Fondue Chinoise Aobanian",
+                "la fondue chinoise Aobanian"
             ],
             "Salon de thé Zhen Pin Yue": "Salon de thé Zhen Pin Yue",
             "restaurant Songhelou": [
@@ -2270,7 +2335,10 @@
             "Miss Fu à Chengdu": "Miss Fu à Chengdu",
             "Riverside Grilled Fish": "Riverside Grilled Fish",
             "Nailaoshiguang": "Nailaoshiguang",
-            "Wang Steak": "Wang Steak",
+            "Wang Steak": [
+                "Wang Steak",
+                "steak Wang"
+            ],
             "Grandma's Home": "Grandma's Home",
             "Restaurant Beijiang": "Restaurant Beijiang",
             "Tongli Hometown": "Tongli Hometown",
@@ -2285,7 +2353,8 @@
             "Laofengting": "Laofengting",
             "Restaurant Zhou Zhuang Hua Jian Tang Jie Geng": [
                 "Restaurant Zhou Zhuang Hua Jian Tang Jie Geng",
-                "Zhou Zhuang Hua Jian Tang Jie Geng"
+                "Zhou Zhuang Hua Jian Tang Jie Geng",
+                "restaurant Zhou Zhuang Hua Jian Tang Jie Geng"
             ],
             "nouilles de riz au boeuf de Xin Hua Xi": "nouilles de riz au boeuf de Xin Hua Xi",
             "Dongwu Noodle House": [
@@ -2308,7 +2377,10 @@
             "Restaurant de la brasserie Le Blé d'Or": "Restaurant de la brasserie Le Blé d'Or",
             "HOU GA FEI": "HOU GA FEI",
             "restaurant Xiewang": "restaurant Xiewang",
-            "Restaurant Northeast": "Restaurant Northeast",
+            "Restaurant Northeast": [
+                "Restaurant Northeast",
+                "restaurant Northeast"
+            ],
             "Li Li Xiao Chao": "Li Li Xiao Chao",
             "Cai Zhi Zhai": "Cai Zhi Zhai",
             "Guan Zhi Nord": "Guan Zhi Nord",
@@ -2322,17 +2394,21 @@
                 "nouveau district de Suzhou ou le district de Gusu",
                 "district de Gusu"
             ],
-            "Parc industriel de Suzhou": "Parc industriel de Suzhou",
+            "Parc industriel de Suzhou": [
+                "Parc industriel de Suzhou",
+                "parc industriel de Suzhou"
+            ],
             "Nouveau district de Suzhou": [
                 "Nouveau district de Suzhou",
-                "Nouveau district de Suzhou"
+                "Suzhou New District"
             ],
             "Changshu": "Changshu",
             "District de Wujiang": [
                 "Wujiang"
             ],
             "District de Wuzhong": [
-                "District de Wuzhong"
+                "District de Wuzhong",
+                "district de Wuzhong"
             ],
             "Kunshan": "Kunshan"
         },
@@ -2407,12 +2483,14 @@
                 "Restaurant japonais",
                 "restaurants japonais",
                 "Restaurants japonais",
-                "Cuisine riben",
-                "Japon"
+                "Cuisine riben"
             ],
             "du Nord-Ouest": [
                 "cuisine du Nord-Ouest",
-                "Cuisine du Nord-Ouest"
+                "Cuisine du Nord-Ouest",
+                "Nord-Ouest",
+                "Northwestern",
+                "nord-ouest"
             ],
             "du pain et des desserts": [
                 "pains et desserts",
@@ -2442,7 +2520,10 @@
                 "nourriture cantonaise"
             ],
             "sushis": "sushis",
-            "Cuisine chinoise du nord-est": "Cuisine chinoise du nord-est"
+            "Cuisine chinoise du nord-est": [
+                "Cuisine chinoise du nord-est",
+                "cuisine chinoise du nord-est"
+            ]
         },
         "address": {
             "n°3 de l'allée Chuanfang, au nord de la route Pingjiang": "n°3 de l'allée Chuanfang, au nord de la route Pingjiang",
@@ -2584,6 +2665,8 @@
                 "peux",
                 "pouvoir",
                 "pouvez",
+                "pourrais",
+                "Pourriez-vous",
                 "Oui",
                 "oui",
                 "a",
@@ -2608,7 +2691,8 @@
                 "peux accéder directement en métro",
                 "pouvons accéder directement en métro",
                 "directement au restaurant en métro",
-                "le métro vous y emmène directement"
+                "le métro vous y emmène directement",
+                "est"
             ]
         },
         "business hours": {
@@ -2828,15 +2912,15 @@
             "Parc industriel de Suzhou": "parc industriel de Suzhou",
             "Suzhou": "Suzhou",
             "Nouveau district de Suzhou": [
-                "Nouveau district de Suzhou",
-                "Nouveau district de Suzhou"
+                "nouveau district de Suzhou"
             ],
             "Changshu": "Changshu",
             "District de Wujiang": [
                 "Wujiang"
             ],
             "District de Wuzhong": [
-                "District de Wuzhong"
+                "District de Wuzhong",
+                "district de Wuzhong"
             ],
             "Kunshan": "Kunshan"
         },
@@ -2905,30 +2989,35 @@
         "name": {
             "petit hôtel de luxe Womu": [
                 "le petit hôtel de luxe Womu",
-                "Le petit hôtel de luxe Womu"
-            ],
-            "petit hôtel de luxe Warmly": [
+                "Le petit hôtel de luxe Womu",
+                "petit hôtel de luxe Warmly",
                 "le petit hôtel de luxe Warmly",
-                "l'hôtel Warmly"
+                "petit hôtel de luxe Warmly"
             ],
             "L'hôtel Grand Rezen dans la nouvelle ville de Suzhou": [
                 "Hôtel New City Grand Rezen",
                 "L'hôtel New City Grand Rezen",
                 "l'hôtel Grand Rezen de la Nouvelle Ville de Suzhou",
                 "l'hôtel Grand Rezen de la nouvelle ville de Suzhou",
-                "l'hôtel Grand Rezen de la nouvelle ville"
+                "l'hôtel Grand Rezen de la nouvelle ville",
+                "l'hôtel Suzhou New City Grand Rezen"
             ],
             "l'hôtel Atour dans la rue Changjiang, à Changshu": [
                 "Atour Hotel de la route Changjiang",
                 "L'Hôtel Atour de la route Changjiang, à Changshu",
-                "Atour dans la route de Changjiang, Changshu"
+                "Atour dans la route de Changjiang, Changshu",
+                "l'hôtel Atour dans la rue Changjiang, Changshu",
+                "l'hôtel Atour dans la route de Changjiang, à Changshu",
+                "l'hôtel Atour dans la route de Changjiang, Changshu"
             ],
             "le petit hôtel de luxe Suzhou Shui'an Hanshe": [
                 "Shui'an Hanshe Boutique",
                 "petit hôtel de luxe Suzhou Shui'an Hanshe",
                 "L'hôtel Suzhou Shui'an Hanshe",
                 "petit hôtel de luxe Shui'an Hanshe",
-                "le petit hôtel de luxe Suzhou Shui'an Hanshe"
+                "le petit hôtel de luxe Suzhou Shui'an Hanshe",
+                "l'hôtel Suzhou Shui'an Hanshe Boutique",
+                "Le petit hôtel de luxe Suzhou Shui'an Hanshe"
             ],
             "l'hôtel Jinling Nanlin": [
                 "l'hôtel Jinling Nanlin",
@@ -2940,7 +3029,11 @@
                 "hôtel Marriott Lac de Taihu Suzhou",
                 "l'hôtel Marriott Lac de Taihu Suzhou",
                 "L'hôtel Marriott Lac de Taihu Suzhou",
-                "l'hôtel Marriott Lac de Taihu de Suzhou"
+                "l'hôtel Marriott Lac de Taihu de Suzhou",
+                "l'hôtel Marriott de Suzhou Lac de Taihu",
+                "l'hôtel Suzhou Marriott du lac Taihu",
+                "L'hôtel Marriott Suzhou Lac de Taihu",
+                "l'hôtel Marriott Suzhou au Lac de Taihu"
             ],
             "L'hôtel Vienna": [
                 "L'hôtel Vienna",
@@ -2951,21 +3044,31 @@
                 "l'hôtel Jinji Lac Shilla",
                 "hôtel Shilla lac de Jinji Suzhou",
                 "l'hôtel Shilla du lac de Jinji Suzhou",
-                "l'hôtel Shilla lac de Jinji Suzhou"
+                "l'hôtel Shilla lac de Jinji Suzhou",
+                "Jinji Lake Shilla Hotel Suzhou",
+                "l'hôtel Shilla Lac de Jinji à Suzhou",
+                "l'hôtel Shilla Lac de Jinji de Suzhou",
+                "l'hôtel Suzhou Shilla lac de Jinji"
             ],
             "l'hôtel de chaîne Genting Star": [
                 "L'hôtel de la chaîne Genting Star",
                 "l'hôtel de chaîne Genting Star",
-                "L'hôtel de chaîne Genting Star"
+                "L'hôtel de chaîne Genting Star",
+                "l'hôtel Genting Star Chain",
+                "L'hôtel Genting Star Chain"
             ],
             "Pan Pacific Suzhou": "Pan Pacific Suzhou",
             "Pod Inn": [
                 "Pod Inn",
-                "l'auberge Pod"
+                "l'auberge Pod",
+                "L'auberge Pod",
+                "Auberge Pod"
             ],
             "L'hôtel Meijin All Suites": [
                 "L'hôtel Meijin All Suites",
-                "l'hôtel Warmly"
+                "l'hôtel Warmly",
+                "L'hôtel Warmly",
+                "le Meijin All Suites Hotel"
             ],
             "l'appartement-hôtel Suzhou lac de Jinji Suisse Place Ligongd": [
                 "l'appartement-hôtel du lac de Jinji Suzhou Suisse Place Ligongdi",
@@ -2975,17 +3078,27 @@
                 "L'appartement-hôtel du lac de Jinji Suzhou Suisse Place Ligongdi",
                 "L'appartement-hôtel Suzhou Lac de Jinji Suisse Place Ligongdi",
                 "l'appartement-hôtel lac de Jinji Suzhou Suisse Place Ligongdi",
-                "l'appartement-hôtel Lac de Jinji Suzhou Jinji Ligongdi"
+                "l'appartement-hôtel Lac de Jinji Suzhou Jinji Ligongdi",
+                "l'appartement-hôtel Suzhou lac de Jinji Suisse Place Ligongdi",
+                "L'appartement-hôtel Suzhou lac de Jinji Suisse Place Ligongdi",
+                "l'appartement-hôtel Suzhou Lac de Jinji Suisse Place Ligongdi",
+                "l'appart'hôtel de Suzhou Jinji Lake Suisse Place Ligongdi"
             ],
             "Suzhou Yongshun Express Hotel": [
                 "Suzhou Yongshun Express Hotel",
                 "l'hôtel Suzhou Yongshun Express",
-                "L'hôtel Suzhou Yongshun Express"
+                "L'hôtel Suzhou Yongshun Express",
+                "L'hôtel express Suzhou Yongshun"
             ],
-            "Home Inn": "Home Inn",
+            "Home Inn": [
+                "Home Inn",
+                "l'auberge Home",
+                "L'auberge Home"
+            ],
             "Le village des sciences et de la technologie Élément": [
                 "Le village des sciences et de la technologie Élément",
-                "le village des sciences et de la technologie Éléments de Suzhou"
+                "le village des sciences et de la technologie Éléments de Suzhou",
+                "village de la Science et la Technologie Élément de Suzhou"
             ],
             "l'auberge Yinjiangnan Xujia": "l'auberge Yinjiangnan Xujia",
             "l'hôtel Suzhou Shui'an Hanshe": [
@@ -2999,7 +3112,8 @@
             "l'auberge Tongli Yueshang": "l'auberge Tongli Yueshang",
             "City Comfort Inn": [
                 "L'hôtel City Comfort Inn",
-                "l'auberge City Comfort"
+                "l'auberge City Comfort",
+                "Hotel City Comfort Inn"
             ],
             "L'hôtel d'affaires Kunshan Yundu": [
                 "l'hôtel d'affaires de Yundu"
@@ -3031,14 +3145,27 @@
                 "l'hôtel Suzhou Manxiang Theme",
                 "L'hôtel Suzhou Manxiang Theme"
             ],
-            "l'hôtel Similan": "l'hôtel Similan",
-            "l'hôtel Tonino Lamborghini de Kunshan": "l'hôtel Tonino Lamborghini de Kunshan",
-            "l'hôtel de chaîne Changshu OYO Interesting": "l'hôtel de chaîne Changshu OYO Interesting",
+            "l'hôtel Similan": [
+                "L'hôtel Similan",
+                "l'hôtel Similan Hotel"
+            ],
+            "l'hôtel Tonino Lamborghini de Kunshan": [
+                "l'hôtel Tonino Lamborghini de Kunshan",
+                "L'hôtel Tonino Lamborghini à Kunshan"
+            ],
+            "l'hôtel de chaîne Changshu OYO Interesting": [
+                "l'hôtel de chaîne Changshu OYO Interesting",
+                "Changshu OYO Interesting Chain Hotel"
+            ],
             "cour de vacances Retreat Lac du Sud": "cour de vacances Retreat Lac du Sud",
             "Suzhou Pan Pacific Hotel": [
                 "Je vous recommande d'aller au Pan Pacific Suzhou."
             ],
-            "L'appartement-hôtel Suzhou Tule": "L'appartement-hôtel Suzhou Tule"
+            "L'appartement-hôtel Suzhou Tule": [
+                "L'appartement-hôtel Suzhou Tule",
+                "l'appart'hôtel Suzhou Tule",
+                "l'appartement-hôtel Suzhou Tule"
+            ]
         },
         "room charge": {
             "919 yuans": "919 yuans",
@@ -3238,7 +3365,8 @@
             ],
             "d'affaires": [
                 "d'affaires",
-                "hôtel d'affaires"
+                "hôtel d'affaires",
+                "affaires"
             ]
         }
     },
@@ -3250,10 +3378,12 @@
             ],
             "Parc industriel de Suzhou": "Parc industriel de Suzhou",
             "Nouveau district de Suzhou": [
-                "Nouveau district de Suzhou"
+                "nouveau district de Suzhou",
+                "Nouveau District de Suzhou"
             ],
             "District de Wuzhong": [
-                "District de Wuzhong"
+                "District de Wuzhong",
+                "district de Wuzhong"
             ],
             "District de Xiangcheng": "District de Xiangcheng"
         },
@@ -3287,7 +3417,9 @@
             "true": [
                 "true",
                 "directement accessible",
-                "le métro vous y emmène directement"
+                "le métro vous y emmène directement",
+                "pourrais",
+                "Pourriez-vous"
             ]
         },
         "key departments": {
@@ -3300,14 +3432,16 @@
                 "pneumologique",
                 "service de pneumologie",
                 "service de pneumologie",
-                "service de médecine respiratoire"
+                "service de médecine respiratoire",
+                "département de médecine respiratoire"
             ],
             "sang": [
                 "service de transfusion sanguine"
             ],
             "dermatologie": [
                 "service dermatologique",
-                "service de dermatologie"
+                "service de dermatologie",
+                "service dédié à la dermatologie"
             ],
             "psychologie": [
                 "service de psychologie"
@@ -3344,8 +3478,11 @@
             "neurologie": [
                 "département de neurologie"
             ],
-            "cardiovasculaire": [
-                "service de médecine cardiovasculaire"
+            "cardiologie": [
+                "service de médecine cardiovasculaire",
+                "Département de médecine cardiovasculaire",
+                "cardiovasculaire",
+                "service de cardiologie"
             ],
             "gastro-entérologie": [
                 "service de gastro-entérologie"
@@ -3358,8 +3495,14 @@
             ]
         },
         "general or specialized": {
-            "hôpital spécialisé": "spécialisé",
-            "hôpital général": "général"
+            "hôpital spécialisé": [
+                "spécialisé",
+                "hôpital spécialisé"
+            ],
+            "hôpital général": [
+                "général",
+                "hôpital général"
+            ]
         },
         "name": {
             "hôpital Suzhou Kowloon": [
@@ -3372,30 +3515,44 @@
                 "Le premier hôpital affilié à l'université de Soochow",
                 "Premier Hôpital Affilié de l'Université de Soochow",
                 "Premier Hôpital Affilié de l'université de Soochow",
-                "premier hôpital affilié de l'université de Soochow"
+                "premier hôpital affilié de l'université de Soochow",
+                "premier hôpital affilié à l'université de Soochow",
+                "le Premier Hôpital Affilié de l'Université de Soochow"
             ],
             "le Second Hôpital Affilié de l'Université de Soochow": [
                 "Le Second Hôpital Affilié de l'Université de Soochow",
                 "second hôpital affilié à l'université de Soochow",
                 "le deuxième hôpital affilié de l'université de Soochow",
-                "Le deuxième hôpital affilié de l'université de Soochow"
+                "Le deuxième hôpital affilié de l'université de Soochow",
+                "deuxième hôpital affilié à l'Université de Soochow"
             ],
-            "Le cinquième hôpital populaire de la ville de Suzhou": "Le cinquième hôpital populaire de la ville de Suzhou",
+            "Le cinquième hôpital populaire de la ville de Suzhou": [
+                "Le cinquième hôpital populaire de la ville de Suzhou",
+                "Cinquième Hôpital du Peuple de Suzhou",
+                "cinquième hôpital du peuple de Suzhou",
+                "au cinquième hôpital populaire de Suzhou"
+            ],
             "l'hôpital Suzhou Guangji": [
                 "l'hôpital Suzhou Guangji",
-                "l'hôpital Guangji de Suzhou"
+                "l'hôpital Guangji de Suzhou",
+                "L'hôpital Suzhou Guangji"
             ],
             "L'hôpital de médecine traditionnelle chinoise de Suzhou": "l'hôpital de médecine traditionnelle chinoise de Suzhou",
             "l'hôpital des enfants de l'université de Soochow": [
                 "l'hôpital des enfants de l'université de Soochow",
                 "l'hôpital pour enfants de l'université de Soochow"
             ],
-            "l'hôpital municipal de Suzhou (filiale Est)": "l'hôpital municipal de Suzhou (filiale Est)",
+            "l'hôpital municipal de Suzhou (filiale Est)": [
+                "l'hôpital municipal de Suzhou (filiale Est)",
+                "l'hôpital municipal de Suzhou (Filiale Est)"
+            ],
             "l'hôpital ophtalmologique Lixiang de l'université de Soochow": "l'hôpital ophtalmologique Lixiang de l'université de Soochow",
             "L'hôpital du village de science et technologie de Suzhou": [
                 "l'hôpital de la ville de Science et Technologie de Suzhou",
                 "hôpital municipal de Science et Technologie de Suzhou",
-                "hôpital du village de Science et Technologie de Suzhou"
+                "hôpital du village de Science et Technologie de Suzhou",
+                "l'hôpital du village de Science et Technologie de Suzhou",
+                "l'hôpital du village de science et technologie de Suzhou"
             ],
             "l'hôpital populaire de Suzhou Xiangcheng": [
                 "l'hôpital populaire de Suzhou Xiangcheng",
@@ -3627,20 +3784,25 @@
             ]
         },
         "date": {
-            "dimanche prochain": "dimanche prochain",
+            "lundi prochain": "lundi prochain",
+            "mardi prochain": [
+                "mardi prochain",
+                "Mardi prochain"
+            ],
+            "mercredi prochain": [
+                "mercredi prochain",
+                "Mercredi prochain"
+            ],
             "jeudi prochain": [
-                "Jeudi prochain",
-                "mardi prochain"
+                "Jeudi prochain"
             ],
             "vendredi prochain": "vendredi prochain",
-            "mercredi prochain": "mercredi prochain",
             "samedi prochain": "samedi prochain",
+            "dimanche prochain": "dimanche prochain",
             "samedi après-midi prochain": [
                 "samedi après-midi prochain",
                 "samedi prochain, l'après-midi"
             ],
-            "mardi prochain": "mardi prochain",
-            "lundi prochain": "lundi prochain",
             "ce jour-là": "ce jour-là",
             "le jour suivant": "le jour suivant"
         },
@@ -3845,23 +4007,47 @@
         "area": {
             "District de Gusu": [
                 "nouveau district de Suzhou ou le district de Gusu",
-                "District de Gusu"
+                "le district de Gusu ou dans le parc industriel de Suzhou",
+                "District de Gusu",
+                "district de Gusu"
             ],
-            "Parc industriel de Suzhou": "Parc industriel de Suzhou",
-            "Nouveau district de Suzhou": "Nouveau district de Suzhou",
+            "Parc industriel de Suzhou": [
+                "Parc industriel de Suzhou",
+                "Parc Industriel de Suzhou"
+            ],
+            "Nouveau district de Suzhou": [
+                "nouveau district de Suzhou",
+                "Nouveau district de Suzhou",
+                "le nouveau district de Suzhou ou dans le parc industriel de Suzhou"
+            ],
             "District de Wuzhong": [
-                "District de Wuzhong"
+                "District de Wuzhong",
+                "district de Wuzhong",
+                "le district de Wuzhong ou de Gusu"
             ],
             "nouveau district de Suzhou ou le district de Gusu": "nouveau district de Suzhou ou le district de Gusu"
         },
         "day": {
-            "vendredi": "vendredi",
-            "samedi": ["samedi", "samedi ou le dimanche"],
+            "vendredi": [
+                "vendredi",
+                "le vendredi",
+                "Le vendredi",
+                "Vendredi"
+            ],
+            "samedi": [
+                "samedi",
+                "samedi ou le dimanche",
+                "le samedi ou le dimanche",
+                "samedis"
+            ],
             "dimanche": "dimanche",
             "mercredi": "mercredi"
         },
         "grade": {
-            "sixième année": "sixième année",
+            "sixième année": [
+                "sixième",
+                "sixième année"
+            ],
             "cinquième année": [
                 "cinquième année",
                 "CM2"
@@ -3874,25 +4060,29 @@
         "subject": {
             "anglais": [
                 "d'anglais",
-                "Anglais"
+                "Anglais",
+                "anglais"
             ],
             "mathématiques": [
                 "mathématiques",
                 "maths"
             ],
-            "Chinois": "Chinois"
+            "chinois": [
+                "Chinois",
+                "chinois"
+            ]
         },
         "time": {
             "après-midi": [
                 "après-midi",
-                "l'après-midi",
-                "après-midi ou le soir"
+                "l'après-midi"
             ],
             "matin": [
-                "matin",
-                "matin ou après-midi"
+                "matin"
             ],
-            "soir": "soir"
+            "soir": [
+                "soir"
+            ]
         },
         "class number": {
             "PE6T48010": "PE6T48010",
@@ -4293,16 +4483,23 @@
         "level": {
             "cours débutant": [
                 "cours débutant",
-                "cours primaire"
-            ],
-            "avancé": [
-                "avancé"
+                "cours primaire",
+                "élémentaire",
+                "élémentaires"
             ],
             "cours de mise à niveau": [
                 "cours de mise à niveau",
                 "cours de perfectionnement",
                 "classe de perfectionnement",
-                "classe de mise à niveau"
+                "classe de mise à niveau",
+                "cours de rattrapage",
+                "classe d'amélioration",
+                "cours d'amélioration"
+            ],
+            "avancé": [
+                "avancé",
+                "niveau avancé",
+                "cours avancé"
             ]
         },
         "start date": {
@@ -4341,7 +4538,10 @@
     "car": {
         "classification": {
             "SUV": "SUV",
-            "hayon": " à hayon",
+            "hayon": [
+              "à hayon",
+              "voiture avec hayon"
+            ],
             "monospace": "monospace"
         },
         "hybrid": {
@@ -4383,7 +4583,10 @@
             "Volkswagen T-Cross avec un moteur à essence de 1,5 L": "Volkswagen T-Cross avec un moteur à essence de 1,5 L",
             "Santana 1.5L Automatique Version Confort": "Santana 1.5L Automatique Version Confort",
             "Tiguan-L 380TSI R-Line 4WD Édition Ultime": "Tiguan-L 380TSI R-Line 4WD Édition Ultime",
-            "FAW-Volkswagen TACQUA DSG Yue": "FAW-Volkswagen TACQUA DSG Yue",
+            "FAW-Volkswagen TACQUA DSG Yue": [
+                "FAW-Volkswagen TACQUA DSG Yue",
+                "TACQUA de FAW-Volkswagen"
+            ],
             "Volkswagen Touran L 280TSI 6 places": "Volkswagen Touran L 280TSI 6 places",
             "l'édition luxe de la Volkswagen Golf 280TSI DSG": "l'édition luxe de la Volkswagen Golf 280TSI DSG",
             "FAW-Volkswagen Magotan 280TSI DSG Version Confort": [
@@ -4451,11 +4654,15 @@
             "Volkswagen T-Cross": "Volkswagen T-Cross",
             "Tiguan-L": "Tiguan-L",
             "FAW-Volkswagen": "FAW-Volkswagen",
-            "FAW-Volkswagen TACQUA": "FAW-Volkswagen TACQUA",
+            "FAW-Volkswagen TACQUA": [
+                "FAW-Volkswagen TACQUA",
+                "TACQUA de FAW-Volkswagen"
+            ],
             "Volkswagen Touran L": "Volkswagen Touran L",
             "Volkswagen Golf": "Volkswagen Golf",
             "FAW-Volkswagen Magotan": [
-                "Magotan"
+                "Magotan",
+                "Magotan de FAW-Volkswagen"
             ],
             "Lamando": "Lamando",
             "T-ROC": "T-ROC",
@@ -4608,12 +4815,16 @@
                 "quatre roues motrices"
             ],
             "deux roues": [
+                "deux roues",
                 "deux roues motrices"
             ]
         },
         "size": {
             "taille moyenne": "taille moyenne",
-            "petite ou moyenne taille": "petite ou moyenne taille",
+            "petite ou moyenne taille": [
+                "petite ou moyenne taille",
+                "taille petite ou moyenne"
+            ],
             "taille moyenne ou grande": [
                 "taille moyenne ou grande",
                 "de taille moyenne ou grande"
@@ -4709,7 +4920,8 @@
             "classe affaires": [
                 "classe affaires",
                 "Classe affaires",
-                "billet en classe affaires"
+                "billet en classe affaires",
+                "Une classe affaires"
             ]
         },
         "flight information": {
@@ -5218,7 +5430,8 @@
             "lundi matin prochain": [
                 "lundi prochain matin",
                 "lundi prochain le matin",
-                "lundi prochain, le matin"
+                "lundi prochain, le matin",
+                "le matin lundi prochain"
             ],
             "lundi après-midi prochain": [
                 "lundi prochain après-midi",
@@ -5229,7 +5442,9 @@
             "mardi matin prochain": [
                 "mardi prochain matin",
                 "mardi prochain le matin",
-                "mardi prochain, le matin"
+                "mardi prochain, le matin",
+                "matin mardi prochain",
+                "le matin mardi prochain"
             ],
             "mardi après-midi prochain": [
                 "mardi prochain après-midi",
@@ -5252,12 +5467,14 @@
                 "Jeudi prochain"
             ],
             "jeudi matin": [
-                "Jeudi matin"
+                "Jeudi matin",
+                "jeudi matin"
             ],
             "jeudi matin prochain": [
                 "jeudi prochain matin",
                 "jeudi prochain le matin",
-                "jeudi prochain, le matin"
+                "jeudi prochain, le matin",
+                "jeudi matin"
             ],
             "jeudi après-midi prochain": [
                 "jeudi après-midi",
@@ -5284,7 +5501,9 @@
             "samedi matin prochain": [
                 "samedi prochain matin",
                 "samedi prochain le matin",
-                "samedi prochain, le matin"
+                "samedi prochain, le matin",
+                "le matin samedi prochain",
+                "samedi matin"
             ],
             "samedi après-midi prochain": [
                 "samedi prochain après-midi",
@@ -5313,16 +5532,21 @@
                 "en première classe",
                 "un siège en première classe",
                 "un billet en première classe",
-                "siège en première classe"
+                "siège en première classe",
+                "Un billet en première",
+                "Une première classe"
             ],
             "seconde classe": [
                 "deuxième classe",
                 "billet en deuxième classe",
                 "siège en seconde classe",
-                "billet en seconde classe"
+                "billet en seconde classe",
+                "place en seconde classe"
             ],
             "couchette en première classe": [
-                "des couchettes en première classe"
+                "des couchettes en première classe",
+                "cabine couchette en première classe",
+                "couchettes en première classe"
             ],
             "couchette en deuxième classe": [
                 "couchette en deuxième classe",
@@ -6280,7 +6504,8 @@
         "usage": {
             "léger": [
                 "léger",
-                "ordinateur portable léger"
+                "ordinateur portable léger",
+                "portable léger"
             ],
             "jeu": [
                 "ordinateur de jeu",
@@ -6418,7 +6643,8 @@
         "computer type": {
             "ordinateur portable": [
                 "Carnet de notes",
-                "ordinateurs portables"
+                "ordinateurs portables",
+                "l'ordinateur portable"
             ],
             "ordinateur de bureau": [
                 "bureau",
@@ -6766,7 +6992,10 @@
                 "Série Dell Inspiron",
                 "Série Inspiron de Dell"
             ],
-            "Série G de Dell": "Série G de Dell",
+            "Série G de Dell": [
+                "Série G de Dell",
+                "série G de Dell"
+            ],
             "ordinateur portable Mi": [
                 "Mi Notebook"
             ],
