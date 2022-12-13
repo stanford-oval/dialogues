@@ -412,7 +412,7 @@ class RisawozMapping(object):
         # TODO: update below
         self.required_slots = {
             **{k: [] for k, v in self.DOMAIN_SLOT_MAP.items()},
-            **{self.zh2en_DOMAIN_MAP[k]: [] for k, v in self.DOMAIN_SLOT_MAP.items()},
+            **{self.zh2en_DOMAIN_MAP.get(k, k): [] for k, v in self.DOMAIN_SLOT_MAP.items()},
         }
         self.api_names = list(self.required_slots.keys())
 
