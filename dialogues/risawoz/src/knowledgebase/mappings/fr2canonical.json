@@ -1732,7 +1732,8 @@
                 "zone panoramique du mont Tianping",
                 "région pittoresque de la montagne Tianping",
                 "Zone pittoresque de la montagne Tianping",
-                "zone panoramique de la montagne Tianping"
+                "zone panoramique de la montagne Tianping",
+                "zone pittoresque de la montagne Tianping"
             ],
             "village de Mudu": "village de Mudu",
             "Jardin du maître des filets": [
@@ -2021,7 +2022,8 @@
                 "accéder directement en métro",
                 "peux accéder directement en métro",
                 "pouvons accéder directement en métro",
-                "directement au restaurant en métro"
+                "directement au restaurant en métro",
+                "il y en a"
             ]
         },
         "ticket price": {
@@ -2318,7 +2320,7 @@
         "area": {
             "District de Gusu": [
                 "nouveau district de Suzhou ou le district de Gusu",
-                "District de Gusu"
+                "district de Gusu"
             ],
             "Parc industriel de Suzhou": "Parc industriel de Suzhou",
             "Nouveau district de Suzhou": [
@@ -2405,7 +2407,8 @@
                 "Restaurant japonais",
                 "restaurants japonais",
                 "Restaurants japonais",
-                "Cuisine riben"
+                "Cuisine riben",
+                "Japon"
             ],
             "du Nord-Ouest": [
                 "cuisine du Nord-Ouest",
@@ -2423,7 +2426,8 @@
             "restauration rapide": [
                 "restauration rapide",
                 "la restauration rapide",
-                "bonne restauration rapide servant des repas rapides"
+                "bonne restauration rapide servant des repas rapides",
+                "fast-food"
             ],
             "Sichuan": [
                 "cuisine sichuanaise"
@@ -2821,7 +2825,7 @@
                 "District de Gusu",
                 "quartier Gusu"
             ],
-            "Parc industriel de Suzhou": "Parc industriel de Suzhou",
+            "Parc industriel de Suzhou": "parc industriel de Suzhou",
             "Suzhou": "Suzhou",
             "Nouveau district de Suzhou": [
                 "Nouveau district de Suzhou",
@@ -3359,7 +3363,8 @@
         },
         "name": {
             "hôpital Suzhou Kowloon": [
-                "l'hôpital Suzhou Kowloon"
+                "l'hôpital Suzhou Kowloon",
+                "l'hôpital de Suzhou Kowloon"
             ],
             "le premier hôpital affilié de l'université de Soochow": [
                 "Le premier hôpital affilié de l'université de Soochow",
@@ -3389,7 +3394,8 @@
             "l'hôpital ophtalmologique Lixiang de l'université de Soochow": "l'hôpital ophtalmologique Lixiang de l'université de Soochow",
             "L'hôpital du village de science et technologie de Suzhou": [
                 "l'hôpital de la ville de Science et Technologie de Suzhou",
-                "hôpital municipal de Science et Technologie de Suzhou"
+                "hôpital municipal de Science et Technologie de Suzhou",
+                "hôpital du village de Science et Technologie de Suzhou"
             ],
             "l'hôpital populaire de Suzhou Xiangcheng": [
                 "l'hôpital populaire de Suzhou Xiangcheng",

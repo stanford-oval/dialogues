@@ -42207,12 +42207,12 @@
                 ],
                 "belief_state": {
                     "inform slot-values": {
-                        "Car-classification": "à hayon",
+                        "Car-classification": "hayon",
                         "Car-pricerange": "150 000 à 200 000 yuans",
                         "Car-hybrid": "à essence"
                     },
                     "turn_inform": {
-                        "Car-classification": "à hayon",
+                        "Car-classification": "hayon",
                         "Car-pricerange": "150 000 à 200 000 yuans",
                         "Car-hybrid": "à essence"
                     },
@@ -42323,7 +42323,7 @@
                 ],
                 "belief_state": {
                     "inform slot-values": {
-                        "Car-classification": "à hayon",
+                        "Car-classification": "hayon",
                         "Car-pricerange": "150 000 à 200 000 yuans",
                         "Car-hybrid": "à essence",
                         "Car-series": "Volkswagen Golf"
@@ -42406,7 +42406,7 @@
                 ],
                 "belief_state": {
                     "inform slot-values": {
-                        "Car-classification": "à hayon",
+                        "Car-classification": "hayon",
                         "Car-pricerange": "150 000 à 200 000 yuans",
                         "Car-hybrid": "à essence",
                         "Car-series": "Volkswagen Golf"
@@ -42481,7 +42481,7 @@
                 ],
                 "belief_state": {
                     "inform slot-values": {
-                        "Car-classification": "à hayon",
+                        "Car-classification": "hayon",
                         "Car-pricerange": "150 000 à 200 000 yuans",
                         "Car-hybrid": "à essence",
                         "Car-series": "Volkswagen Golf"
@@ -42547,7 +42547,7 @@
                 ],
                 "belief_state": {
                     "inform slot-values": {
-                        "Car-classification": "à hayon",
+                        "Car-classification": "hayon",
                         "Car-pricerange": "150 000 à 200 000 yuans",
                         "Car-hybrid": "à essence",
                         "Car-series": "Volkswagen Golf"
