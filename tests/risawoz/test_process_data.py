@@ -34,11 +34,11 @@ args.dataset_name = 'risawoz'
 dataset = Risawoz()
 train, fewshot, dev, test = dataset.process_data(args)
 
-with open(f'./tests/risawoz/data/{args.setting}/processed_valid.json') as fin:
-    gold_data = json.load(fin)
-
 with open(f'{args.setting}_processed_valid.json', 'w') as fout:
     json.dump(dev, fout, indent=4, ensure_ascii=False)
+
+with open(f'./tests/risawoz/data/{args.setting}/processed_valid.json') as fin:
+    gold_data = json.load(fin)
 
 assert len(dev) == 16232
 assert dev == gold_data

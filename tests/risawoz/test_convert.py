@@ -48,11 +48,11 @@ for split in args.splits:
         debug=True,
     )
 
-    with open(f'./tests/risawoz/data/{args.setting}/converted_valid.json') as f:
-        gold_data = json.load(f)
-
     with open(f'{args.setting}_converted_valid.json', 'w') as fout:
         json.dump(processed_data, fout, indent=4, ensure_ascii=False)
+
+    with open(f'./tests/risawoz/data/{args.setting}/converted_valid.json') as f:
+        gold_data = json.load(f)
 
     print(
         subprocess.Popen(
