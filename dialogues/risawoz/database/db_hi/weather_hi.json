@@ -1,630 +1,562 @@
-
-    {
-        "city":"Mumbai",
-        "date":"next Friday",
-        "weather_condition":"light rain",
-        "temperature":"The maximum temperature will be 25 degrees Celsius, and the minimum temperature will be 24 degrees Celsius.",
-        "wind":"south 2",
-        "UV_intensity":"high"
-    }
-
-    {
-        "city":"Delhi",
-        "date":"next Tuesday",
-        "weather_condition":"cloudy and later light rain",
-        "temperature":"The maximum temperature will be 33 degrees Celsius, and the minimum temperature will be 22 degrees Celsius.",
-        "wind":"north 3",
-        "UV_intensity":"fair"
-    }
-
-    {
-        "city":"Bangalore",
-        "date":"next Thursday",
-        "weather_condition":"overcast and later showers",
-        "temperature":"The maximum temperature will be 26 degrees Celsius, and the minimum temperature will be 25 degrees Celsius.",
-        "wind":"northwest 2-3",
-        "UV_intensity":"high"
-    }
-
-    {
-        "city":"Hyderabad",
-        "date":"next Sunday",
-        "weather_condition":"cloudy and later sunny",
-        "temperature":"The maximum temperature will be 31 degrees Celsius, and the minimum temperature will be 21 degrees Celsius.",
-        "wind":"south 1",
-        "UV_intensity":"fair"
-    }
-
-    {
-        "city":"Ahmedabad",
-        "date":"next Wednesday",
-        "weather_condition":"Sunny",
-        "temperature":"The maximum temperature will be 33 degrees Celsius, and the minimum temperature will be 20 degrees Celsius.",
-        "wind":"east 4",
-        "UV_intensity":"very high"
-    }
-
-    {
-        "city":"Chennai",
-        "date":"next Friday",
-        "weather_condition":"sunny and later cloudy",
-        "temperature":"The maximum temperature will be 26 degrees Celsius, and the minimum temperature will be 20 degrees Celsius.",
-        "wind":"southeast 2",
-        "UV_intensity":"high"
-    }
-
-    {
-        "city":"Kolkata",
-        "date":"next Wednesday",
-        "weather_condition":"light rain",
-        "temperature":"The maximum temperature will be 31 degrees Celsius, and the minimum temperature will be 23 degrees Celsius.",
-        "wind":"north 3-4",
-        "UV_intensity":"very high"
-    }
-
-    {
-        "city":"Surat",
-        "date":"next Tuesday",
-        "weather_condition":"light rain and later cloudy",
-        "temperature":"The maximum temperature will be 27 degrees Celsius, and the minimum temperature will be 20 degrees Celsius.",
-        "wind":"southwest 4",
-        "UV_intensity":"very high"
-    }
-
-    {
-        "city":"Pune",
-        "date":"next Tuesday",
-        "weather_condition":"sunny and later cloudy",
-        "temperature":"The maximum temperature will be 27 degrees Celsius, and the minimum temperature will be 23 degrees Celsius.",
-        "wind":"northwest 3",
-        "UV_intensity":"fair"
-    }
-
-    {
-        "city":"Jaipur",
-        "date":"next Tuesday",
-        "weather_condition":"cloudy",
-        "temperature":"The maximum temperature will be 33 degrees Celsius, and the minimum temperature will be 25 degrees Celsius.",
-        "wind":"south 3",
-        "UV_intensity":"very high"
-    }
-
-    {
-        "city":"Lucknow",
-        "date":"next Tuesday",
-        "weather_condition":"Sunny",
-        "temperature":"The maximum temperature will be 29 degrees Celsius, and the minimum temperature will be 23 degrees Celsius.",
-        "wind":"northeast 2-3",
-        "UV_intensity":"high"
-    }
-
-    {
-        "city":"Kanpur",
-        "date":"next Thursday",
-        "weather_condition":"overcast and later showers",
-        "temperature":"The maximum temperature will be 35 degrees Celsius, and the minimum temperature will be 21 degrees Celsius.",
-        "wind":"southwest 2-3",
-        "UV_intensity":"fair"
-    }
-
-    {
-        "city":"Nagpur",
-        "date":"next Friday",
-        "weather_condition":"overcast and later showers",
-        "temperature":"The maximum temperature will be 26 degrees Celsius, and the minimum temperature will be 21 degrees Celsius.",
-        "wind":"southeast 3-4",
-        "UV_intensity":"fair"
-    }
-
-    {
-        "city":"Indore",
-        "date":"next Thursday",
-        "weather_condition":"sunny and later cloudy",
-        "temperature":"The maximum temperature will be 31 degrees Celsius, and the minimum temperature will be 24 degrees Celsius.",
-        "wind":"northwest 2-3",
-        "UV_intensity":"fair"
-    }
-
-    {
-        "city":"Thane",
-        "date":"next Thursday",
-        "weather_condition":"sunny and later cloudy",
-        "temperature":"The maximum temperature will be 33 degrees Celsius, and the minimum temperature will be 23 degrees Celsius.",
-        "wind":"west 4",
-        "UV_intensity":"weak"
-    }
-
-    {
-        "city":"Bhopal",
-        "date":"next Sunday",
-        "weather_condition":"cloudy",
-        "temperature":"The maximum temperature will be 32 degrees Celsius, and the minimum temperature will be 24 degrees Celsius.",
-        "wind":"west 1",
-        "UV_intensity":"very high"
-    }
-
-    {
-        "city":"Visakhapatnam",
-        "date":"next Monday",
-        "weather_condition":"sunny and later cloudy",
-        "temperature":"The maximum temperature will be 26 degrees Celsius, and the minimum temperature will be 24 degrees Celsius.",
-        "wind":"southeast 4",
-        "UV_intensity":"high"
-    }
-
-    {
-        "city":"Pimpri-Chinchwad",
-        "date":"next Thursday",
-        "weather_condition":"light rain",
-        "temperature":"The maximum temperature will be 33 degrees Celsius, and the minimum temperature will be 23 degrees Celsius.",
-        "wind":"northwest 3-4",
-        "UV_intensity":"very high"
-    }
-
-    {
-        "city":"Patna",
-        "date":"next Sunday",
-        "weather_condition":"overcast and later showers",
-        "temperature":"The maximum temperature will be 31 degrees Celsius, and the minimum temperature will be 22 degrees Celsius.",
-        "wind":"east 3-4",
-        "UV_intensity":"high"
-    }
-
-    {
-        "city":"Vadodara",
-        "date":"next Wednesday",
-        "weather_condition":"cloudy",
-        "temperature":"The maximum temperature will be 35 degrees Celsius, and the minimum temperature will be 21 degrees Celsius.",
-        "wind":"southeast 1",
-        "UV_intensity":"weak"
-    }
-
-    {
-        "city":"Ghaziabad",
-        "date":"next Wednesday",
-        "weather_condition":"light rain",
-        "temperature":"The maximum temperature will be 28 degrees Celsius, and the minimum temperature will be 25 degrees Celsius.",
-        "wind":"southwest 1",
-        "UV_intensity":"weak"
-    }
-
-    {
-        "city":"Ludhiana",
-        "date":"next Friday",
-        "weather_condition":"light rain and later cloudy",
-        "temperature":"The maximum temperature will be 26 degrees Celsius, and the minimum temperature will be 22 degrees Celsius.",
-        "wind":"east 3-4",
-        "UV_intensity":"fair"
-    }
-
-    {
-        "city":"Agra",
-        "date":"next Tuesday",
-        "weather_condition":"cloudy and later overcast",
-        "temperature":"The maximum temperature will be 34 degrees Celsius, and the minimum temperature will be 23 degrees Celsius.",
-        "wind":"north 3",
-        "UV_intensity":"high"
-    }
-
-    {
-        "city":"Nashik",
-        "date":"next Monday",
-        "weather_condition":"cloudy and later sunny",
-        "temperature":"The maximum temperature will be 31 degrees Celsius, and the minimum temperature will be 21 degrees Celsius.",
-        "wind":"west 3-4",
-        "UV_intensity":"very high"
-    }
-
-    {
-        "city":"Faridabad",
-        "date":"next Thursday",
-        "weather_condition":"light rain and later cloudy",
-        "temperature":"The maximum temperature will be 31 degrees Celsius, and the minimum temperature will be 23 degrees Celsius.",
-        "wind":"north 3",
-        "UV_intensity":"very high"
-    }
-
-    {
-        "city":"Meerut",
-        "date":"next Monday",
-        "weather_condition":"cloudy",
-        "temperature":"The maximum temperature will be 28 degrees Celsius, and the minimum temperature will be 23 degrees Celsius.",
-        "wind":"northeast 4",
-        "UV_intensity":"high"
-    }
-
-    {
-        "city":"Rajkot",
-        "date":"next Monday",
-        "weather_condition":"light rain",
-        "temperature":"The maximum temperature will be 26 degrees Celsius, and the minimum temperature will be 20 degrees Celsius.",
-        "wind":"northwest 3",
-        "UV_intensity":"very high"
-    }
-
-    {
-        "city":"Kalyan-Dombivli",
-        "date":"next Thursday",
-        "weather_condition":"light rain",
-        "temperature":"The maximum temperature will be 28 degrees Celsius, and the minimum temperature will be 25 degrees Celsius.",
-        "wind":"southwest 4",
-        "UV_intensity":"very high"
-    }
-
-    {
-        "city":"Vasai-Virar",
-        "date":"next Friday",
-        "weather_condition":"overcast and later showers",
-        "temperature":"The maximum temperature will be 33 degrees Celsius, and the minimum temperature will be 22 degrees Celsius.",
-        "wind":"northeast 4",
-        "UV_intensity":"very high"
-    }
-
-    {
-        "city":"Varanasi",
-        "date":"next Wednesday",
-        "weather_condition":"cloudy and later light rain",
-        "temperature":"The maximum temperature will be 32 degrees Celsius, and the minimum temperature will be 23 degrees Celsius.",
-        "wind":"southeast 2-3",
-        "UV_intensity":"fair"
-    }
-
-    {
-        "city":"Srinagar",
-        "date":"next Monday",
-        "weather_condition":"light rain and later cloudy",
-        "temperature":"The maximum temperature will be 30 degrees Celsius, and the minimum temperature will be 25 degrees Celsius.",
-        "wind":"northeast 2",
-        "UV_intensity":"fair"
-    }
-
-    {
-        "city":"Aurangabad",
-        "date":"next Saturday",
-        "weather_condition":"Sunny",
-        "temperature":"The maximum temperature will be 34 degrees Celsius, and the minimum temperature will be 25 degrees Celsius.",
-        "wind":"southwest 1",
-        "UV_intensity":"very high"
-    }
-
-    {
-        "city":"Dhanbad",
-        "date":"next Saturday",
-        "weather_condition":"cloudy and later overcast",
-        "temperature":"The maximum temperature will be 26 degrees Celsius, and the minimum temperature will be 25 degrees Celsius.",
-        "wind":"northeast 2-3",
-        "UV_intensity":"very high"
-    }
-
-    {
-        "city":"Amritsar",
-        "date":"next Wednesday",
-        "weather_condition":"sunny and later cloudy",
-        "temperature":"The maximum temperature will be 28 degrees Celsius, and the minimum temperature will be 21 degrees Celsius.",
-        "wind":"southwest 1",
-        "UV_intensity":"weak"
-    }
-
-    {
-        "city":"Navi Mumbai",
-        "date":"next Tuesday",
-        "weather_condition":"Sunny",
-        "temperature":"The maximum temperature will be 31 degrees Celsius, and the minimum temperature will be 21 degrees Celsius.",
-        "wind":"southeast 2-3",
-        "UV_intensity":"weak"
-    }
-
-    {
-        "city":"Allahabad",
-        "date":"next Thursday",
-        "weather_condition":"cloudy and later sunny",
-        "temperature":"The maximum temperature will be 30 degrees Celsius, and the minimum temperature will be 24 degrees Celsius.",
-        "wind":"north 2-3",
-        "UV_intensity":"very high"
-    }
-
-    {
-        "city":"Howrah",
-        "date":"next Sunday",
-        "weather_condition":"cloudy",
-        "temperature":"The maximum temperature will be 35 degrees Celsius, and the minimum temperature will be 25 degrees Celsius.",
-        "wind":"south 1",
-        "UV_intensity":"very high"
-    }
-
-    {
-        "city":"Ranchi",
-        "date":"next Sunday",
-        "weather_condition":"light rain",
-        "temperature":"The maximum temperature will be 30 degrees Celsius, and the minimum temperature will be 24 degrees Celsius.",
-        "wind":"east 2",
-        "UV_intensity":"weak"
-    }
-
-    {
-        "city":"Gwalior",
-        "date":"next Friday",
-        "weather_condition":"cloudy and later overcast",
-        "temperature":"The maximum temperature will be 27 degrees Celsius, and the minimum temperature will be 20 degrees Celsius.",
-        "wind":"northwest 1",
-        "UV_intensity":"fair"
-    }
-
-    {
-        "city":"Jabalpur",
-        "date":"next Thursday",
-        "weather_condition":"cloudy and later overcast",
-        "temperature":"The maximum temperature will be 25 degrees Celsius, and the minimum temperature will be 21 degrees Celsius.",
-        "wind":"southeast 3-4",
-        "UV_intensity":"fair"
-    }
-
-    {
-        "city":"Coimbatore",
-        "date":"next Friday",
-        "weather_condition":"overcast and later showers",
-        "temperature":"The maximum temperature will be 32 degrees Celsius, and the minimum temperature will be 24 degrees Celsius.",
-        "wind":"east 3",
-        "UV_intensity":"fair"
-    }
-
-    {
-        "city":"Vijayawada",
-        "date":"next Sunday",
-        "weather_condition":"cloudy and later overcast",
-        "temperature":"The maximum temperature will be 33 degrees Celsius, and the minimum temperature will be 24 degrees Celsius.",
-        "wind":"southeast 4",
-        "UV_intensity":"high"
-    }
-
-    {
-        "city":"Jodhpur",
-        "date":"next Monday",
-        "weather_condition":"light rain",
-        "temperature":"The maximum temperature will be 35 degrees Celsius, and the minimum temperature will be 21 degrees Celsius.",
-        "wind":"south 2",
-        "UV_intensity":"high"
-    }
-
-    {
-        "city":"Madurai",
-        "date":"next Friday",
-        "weather_condition":"light rain",
-        "temperature":"The maximum temperature will be 30 degrees Celsius, and the minimum temperature will be 24 degrees Celsius.",
-        "wind":"northeast 1",
-        "UV_intensity":"weak"
-    }
-
-    {
-        "city":"Raipur",
-        "date":"next Tuesday",
-        "weather_condition":"cloudy and later light rain",
-        "temperature":"The maximum temperature will be 28 degrees Celsius, and the minimum temperature will be 20 degrees Celsius.",
-        "wind":"east 1",
-        "UV_intensity":"very high"
-    }
-
-    {
-        "city":"Kota",
-        "date":"next Sunday",
-        "weather_condition":"sunny and later cloudy",
-        "temperature":"The maximum temperature will be 29 degrees Celsius, and the minimum temperature will be 20 degrees Celsius.",
-        "wind":"northeast 2-3",
-        "UV_intensity":"fair"
-    }
-
-    {
-        "city":"Chandigarh",
-        "date":"next Monday",
-        "weather_condition":"cloudy and later overcast",
-        "temperature":"The maximum temperature will be 28 degrees Celsius, and the minimum temperature will be 23 degrees Celsius.",
-        "wind":"east 2",
-        "UV_intensity":"fair"
-    }
-
-    {
-        "city":"Guwahati",
-        "date":"next Sunday",
-        "weather_condition":"overcast and later showers",
-        "temperature":"The maximum temperature will be 30 degrees Celsius, and the minimum temperature will be 20 degrees Celsius.",
-        "wind":"east 2",
-        "UV_intensity":"fair"
-    }
-
-    {
-        "city":"Solapur",
-        "date":"next Tuesday",
-        "weather_condition":"light rain and later cloudy",
-        "temperature":"The maximum temperature will be 35 degrees Celsius, and the minimum temperature will be 25 degrees Celsius.",
-        "wind":"northeast 1",
-        "UV_intensity":"fair"
-    }
-
-    {
-        "city":"Hubli\u2013Dharwad",
-        "date":"next Sunday",
-        "weather_condition":"Sunny",
-        "temperature":"The maximum temperature will be 28 degrees Celsius, and the minimum temperature will be 20 degrees Celsius.",
-        "wind":"northeast 3-4",
-        "UV_intensity":"very high"
-    }
-
-    {
-        "city":"Mysore",
-        "date":"next Saturday",
-        "weather_condition":"cloudy and later light rain",
-        "temperature":"The maximum temperature will be 33 degrees Celsius, and the minimum temperature will be 25 degrees Celsius.",
-        "wind":"west 3",
-        "UV_intensity":"fair"
-    }
-
-    {
-        "city":"Tiruchirappalli",
-        "date":"next Friday",
-        "weather_condition":"cloudy and later sunny",
-        "temperature":"The maximum temperature will be 33 degrees Celsius, and the minimum temperature will be 22 degrees Celsius.",
-        "wind":"south 3-4",
-        "UV_intensity":"high"
-    }
-
-    {
-        "city":"Bareilly",
-        "date":"next Saturday",
-        "weather_condition":"light rain",
-        "temperature":"The maximum temperature will be 28 degrees Celsius, and the minimum temperature will be 20 degrees Celsius.",
-        "wind":"southeast 1",
-        "UV_intensity":"fair"
-    }
-
-    {
-        "city":"Aligarh",
-        "date":"next Friday",
-        "weather_condition":"cloudy and later sunny",
-        "temperature":"The maximum temperature will be 29 degrees Celsius, and the minimum temperature will be 22 degrees Celsius.",
-        "wind":"west 2",
-        "UV_intensity":"weak"
-    }
-
-    {
-        "city":"Tiruppur",
-        "date":"next Monday",
-        "weather_condition":"light rain",
-        "temperature":"The maximum temperature will be 25 degrees Celsius, and the minimum temperature will be 20 degrees Celsius.",
-        "wind":"northeast 3",
-        "UV_intensity":"high"
-    }
-
-    {
-        "city":"Gurgaon",
-        "date":"next Saturday",
-        "weather_condition":"cloudy",
-        "temperature":"The maximum temperature will be 30 degrees Celsius, and the minimum temperature will be 22 degrees Celsius.",
-        "wind":"southeast 2",
-        "UV_intensity":"weak"
-    }
-
-    {
-        "city":"Moradabad",
-        "date":"next Tuesday",
-        "weather_condition":"sunny and later cloudy",
-        "temperature":"The maximum temperature will be 29 degrees Celsius, and the minimum temperature will be 21 degrees Celsius.",
-        "wind":"north 2",
-        "UV_intensity":"fair"
-    }
-
-    {
-        "city":"Jalandhar",
-        "date":"next Friday",
-        "weather_condition":"light rain and later cloudy",
-        "temperature":"The maximum temperature will be 34 degrees Celsius, and the minimum temperature will be 24 degrees Celsius.",
-        "wind":"northeast 2-3",
-        "UV_intensity":"weak"
-    }
-
-    {
-        "city":"Bhubaneswar",
-        "date":"next Tuesday",
-        "weather_condition":"cloudy",
-        "temperature":"The maximum temperature will be 26 degrees Celsius, and the minimum temperature will be 20 degrees Celsius.",
-        "wind":"south 3-4",
-        "UV_intensity":"high"
-    }
-
-    {
-        "city":"Salem",
-        "date":"next Monday",
-        "weather_condition":"light rain",
-        "temperature":"The maximum temperature will be 26 degrees Celsius, and the minimum temperature will be 20 degrees Celsius.",
-        "wind":"northeast 3-4",
-        "UV_intensity":"high"
-    }
-
-    {
-        "city":"Warangal",
-        "date":"next Friday",
-        "weather_condition":"light rain",
-        "temperature":"The maximum temperature will be 25 degrees Celsius, and the minimum temperature will be 24 degrees Celsius.",
-        "wind":"east 1",
-        "UV_intensity":"fair"
-    }
-
-    {
-        "city":"Mira-Bhayandar",
-        "date":"next Friday",
-        "weather_condition":"overcast and later showers",
-        "temperature":"The maximum temperature will be 32 degrees Celsius, and the minimum temperature will be 22 degrees Celsius.",
-        "wind":"east 1",
-        "UV_intensity":"fair"
-    }
-
-    {
-        "city":"Jalgaon",
-        "date":"next Saturday",
-        "weather_condition":"overcast and later showers",
-        "temperature":"The maximum temperature will be 32 degrees Celsius, and the minimum temperature will be 25 degrees Celsius.",
-        "wind":"northwest 3-4",
-        "UV_intensity":"weak"
-    }
-
-    {
-        "city":"Guntur",
-        "date":"next Tuesday",
-        "weather_condition":"cloudy and later light rain",
-        "temperature":"The maximum temperature will be 29 degrees Celsius, and the minimum temperature will be 21 degrees Celsius.",
-        "wind":"west 4",
-        "UV_intensity":"weak"
-    }
-
-    {
-        "city":"Thiruvananthapuram",
-        "date":"next Tuesday",
-        "weather_condition":"cloudy and later light rain",
-        "temperature":"The maximum temperature will be 26 degrees Celsius, and the minimum temperature will be 24 degrees Celsius.",
-        "wind":"southwest 2",
-        "UV_intensity":"weak"
-    }
-
-    {
-        "city":"Bhiwandi",
-        "date":"next Friday",
-        "weather_condition":"Sunny",
-        "temperature":"The maximum temperature will be 29 degrees Celsius, and the minimum temperature will be 25 degrees Celsius.",
-        "wind":"northwest 1",
-        "UV_intensity":"very high"
-    }
-
-    {
-        "city":"Saharanpur",
-        "date":"next Saturday",
-        "weather_condition":"light rain and later cloudy",
-        "temperature":"The maximum temperature will be 31 degrees Celsius, and the minimum temperature will be 24 degrees Celsius.",
-        "wind":"east 3-4",
-        "UV_intensity":"weak"
-    }
-
-    {
-        "city":"Gorakhpur",
-        "date":"next Saturday",
-        "weather_condition":"cloudy",
-        "temperature":"The maximum temperature will be 34 degrees Celsius, and the minimum temperature will be 20 degrees Celsius.",
-        "wind":"north 2-3",
-        "UV_intensity":"weak"
-    }
-
-    {
-        "city":"Bikaner",
-        "date":"next Tuesday",
-        "weather_condition":"sunny and later cloudy",
-        "temperature":"The maximum temperature will be 29 degrees Celsius, and the minimum temperature will be 25 degrees Celsius.",
-        "wind":"northeast 2",
-        "UV_intensity":"weak"
-    }
-
-    {
-        "city":"Amravati",
-        "date":"next Wednesday",
-        "weather_condition":"light rain and later cloudy",
-        "temperature":"The maximum temperature will be 35 degrees Celsius, and the minimum temperature will be 25 degrees Celsius.",
-        "wind":"west 4",
-        "UV_intensity":"very high"
-    }
+[
+    {
+        "city": "बीजिंग",
+        "date": "अगले सोमवार",
+        "weather_condition": "धूप",
+        "tamperature": "The maximum temperature will be 8 degrees Celsius, and the minimum temperature will be -6 degrees Celsius.",
+        "wind": "southwest force 3-4.",
+        "uv_intensity": "मजबूत"
+    },
+    {
+        "city": "बीजिंग",
+        "date": "अगले मंगलवार",
+        "weather_condition": "धूप",
+        "tamperature": "अधिकतम तापमान 10 डिग्री सेल्सियस और न्यूनतम तापमान -5 डिग्री सेल्सियस रहेगा",
+        "wind": "दक्षिण-पश्चिम बल 2",
+        "uv_intensity": "मजबूत"
+    },
+    {
+        "city": "बीजिंग",
+        "date": "अगले बुधवार",
+        "weather_condition": "धूप से लेकर बादल छाए रहेंगे",
+        "tamperature": "The maximum temperature will be 8 degrees Celsius, and the minimum temperature will be −5 degrees Celsius.",
+        "wind": "दक्षिण-पूर्व बल 2",
+        "uv_intensity": "मजबूत"
+    },
+    {
+        "city": "बीजिंग",
+        "date": "अगले गुरुवार को",
+        "weather_condition": "बादल छाए",
+        "tamperature": "अधिकतम तापमान 4 डिग्री सेल्सियस और न्यूनतम तापमान -4 डिग्री सेल्सियस रहने का अनुमान है",
+        "wind": "दक्षिण-पूर्व बल 1",
+        "uv_intensity": "मजबूत"
+    },
+    {
+        "city": "बीजिंग",
+        "date": "अगले शुक्रवार",
+        "weather_condition": "बादल छाए रहेंगे और बाद में धूप खिली रहेगी",
+        "tamperature": "अधिकतम तापमान 8 डिग्री सेल्सियस और न्यूनतम तापमान -3 डिग्री सेल्सियस रहेगा",
+        "wind": "उत्तर-पश्चिम बल 3-4",
+        "uv_intensity": "मजबूत"
+    },
+    {
+        "city": "बीजिंग",
+        "date": "अगले शनिवार",
+        "weather_condition": "धूप",
+        "tamperature": "The maximum temperature will be 9 degrees Celsius and the minimum temperature will be −3 degrees Celsius.",
+        "wind": "उत्तरी बल 3",
+        "uv_intensity": "मजबूत"
+    },
+    {
+        "city": "बीजिंग",
+        "date": "अगले रविवार",
+        "weather_condition": "धूप",
+        "tamperature": "अधिकतम तापमान 9 डिग्री सेल्सियस और न्यूनतम तापमान -2 डिग्री सेल्सियस रहने का अनुमान है",
+        "wind": "north force 3-4",
+        "uv_intensity": "मजबूत"
+    },
+    {
+        "city": "शंघाई",
+        "date": "अगले सोमवार",
+        "weather_condition": "धूप",
+        "tamperature": "The maximum temperature will be 10 degrees Celsius, and the minimum temperature will be 1 degree Celsius.",
+        "wind": "उत्तर-पश्चिम बल 3-4",
+        "uv_intensity": "मजबूत"
+    },
+    {
+        "city": "शंघाई",
+        "date": "अगले मंगलवार",
+        "weather_condition": "धूप से लेकर बादल छाए रहेंगे",
+        "tamperature": "अधिकतम तापमान 10 डिग्री सेल्सियस और न्यूनतम तापमान 2 डिग्री सेल्सियस रहने का अनुमान है",
+        "wind": "दक्षिण-पूर्व बल 2",
+        "uv_intensity": "मजबूत"
+    },
+    {
+        "city": "शंघाई",
+        "date": "अगले बुधवार",
+        "weather_condition": "बादल छाए रहेंगे और बाद में धूप खिली रहेगी",
+        "tamperature": "The maximum temperature will be 11 degrees Celsius, and the minimum temperature will be 5 degrees Celsius.",
+        "wind": "उत्तर-पश्चिम बल 3-4",
+        "uv_intensity": "कमजोर"
+    },
+    {
+        "city": "शंघाई",
+        "date": "अगले गुरुवार को",
+        "weather_condition": "धूप",
+        "tamperature": "The maximum temperature will be 15 degrees Celsius, and the minimum temperature will be 8 degrees Celsius.",
+        "wind": "उत्तर-पश्चिम बल 2",
+        "uv_intensity": "मजबूत"
+    },
+    {
+        "city": "शंघाई",
+        "date": "अगले शुक्रवार",
+        "weather_condition": "हल्की बारिश",
+        "tamperature": "The maximum temperature will be 16 degrees Celsius, and the minimum temperature will be 9 degrees Celsius.",
+        "wind": "north force 2",
+        "uv_intensity": "सबसे कमजोर"
+    },
+    {
+        "city": "शंघाई",
+        "date": "अगले शनिवार",
+        "weather_condition": "धूप से लेकर बादल छाए रहेंगे",
+        "tamperature": "अधिकतम तापमान 17 डिग्री सेल्सियस और न्यूनतम तापमान 9 डिग्री सेल्सियस",
+        "wind": "south force 1",
+        "uv_intensity": "मजबूत"
+    },
+    {
+        "city": "शंघाई",
+        "date": "अगले रविवार",
+        "weather_condition": "धूप से लेकर बादल छाए रहेंगे",
+        "tamperature": "अधिकतम तापमान 18 डिग्री सेल्सियस और न्यूनतम तापमान 11 डिग्री सेल्सियस रहेगा",
+        "wind": "दक्षिण बल 2",
+        "uv_intensity": "मजबूत"
+    },
+    {
+        "city": "गुआंगज़ौ",
+        "date": "अगले सोमवार",
+        "weather_condition": "धूप",
+        "tamperature": "The maximum temperature will be 18 degrees Celsius, and the minimum temperature will be 5 degrees Celsius.",
+        "wind": "पूर्वोत्तर बल 1",
+        "uv_intensity": "बहुत मजबूत"
+    },
+    {
+        "city": "गुआंगज़ौ",
+        "date": "अगले मंगलवार",
+        "weather_condition": "धूप से लेकर बादल छाए रहेंगे",
+        "tamperature": "The maximum temperature will be 18 degrees Celsius, and the minimum temperature will be 5 degrees Celsius.",
+        "wind": "बिना निरंतर दिशा के हवा चलेगी",
+        "uv_intensity": "बहुत मजबूत"
+    },
+    {
+        "city": "गुआंगज़ौ",
+        "date": "अगले बुधवार",
+        "weather_condition": "बादल छाए",
+        "tamperature": "अधिकतम तापमान 19 डिग्री सेल्सियस होगा और न्यूनतम तापमान 7 डिग्री सेल्सियस होगा",
+        "wind": "बिना निरंतर दिशा के हवा चलेगी",
+        "uv_intensity": "मध्यम"
+    },
+    {
+        "city": "गुआंगज़ौ",
+        "date": "अगले गुरुवार को",
+        "weather_condition": "बादल छाए",
+        "tamperature": "अधिकतम तापमान 20 डिग्री सेल्सियस और न्यूनतम तापमान 10 डिग्री सेल्सियस रहने का अनुमान है",
+        "wind": "बिना निरंतर दिशा के हवा चलेगी",
+        "uv_intensity": "कमजोर"
+    },
+    {
+        "city": "गुआंगज़ौ",
+        "date": "अगले शुक्रवार",
+        "weather_condition": "बादल छाए",
+        "tamperature": "अधिकतम तापमान 22 डिग्री सेल्सियस और न्यूनतम तापमान 13 डिग्री सेल्सियस रहने का अनुमान है",
+        "wind": "पूर्वोत्तर बल 1",
+        "uv_intensity": "मध्यम"
+    },
+    {
+        "city": "गुआंगज़ौ",
+        "date": "अगले शनिवार",
+        "weather_condition": "बादल छाए",
+        "tamperature": "अधिकतम तापमान 23 डिग्री सेल्सियस और न्यूनतम तापमान 14 डिग्री सेल्सियस रहने का अनुमान है",
+        "wind": "और पूर्वोत्तर बल 2",
+        "uv_intensity": "बहुत मजबूत"
+    },
+    {
+        "city": "गुआंगज़ौ",
+        "date": "अगले रविवार",
+        "weather_condition": "बादल छाए",
+        "tamperature": "अधिकतम तापमान 24 डिग्री सेल्सियस और न्यूनतम तापमान 14 डिग्री सेल्सियस रहने का अनुमान है",
+        "wind": "बिना निरंतर दिशा के हवा चलेगी",
+        "uv_intensity": "मध्यम"
+    },
+    {
+        "city": "शेन्ज़ेन",
+        "date": "अगले सोमवार",
+        "weather_condition": "धूप",
+        "tamperature": "The maximum temperature will be 17 degrees Celsius, and the minimum temperature will be 7 degrees Celsius.",
+        "wind": "और पूर्वोत्तर बल 2",
+        "uv_intensity": "बहुत मजबूत"
+    },
+    {
+        "city": "शेन्ज़ेन",
+        "date": "अगले मंगलवार",
+        "weather_condition": "धूप",
+        "tamperature": "The maximum temperature will be 17 degrees Celsius, and the minimum temperature will be 7 degrees Celsius.",
+        "wind": "बिना निरंतर दिशा के हवा चलेगी",
+        "uv_intensity": "बहुत मजबूत"
+    },
+    {
+        "city": "शेन्ज़ेन",
+        "date": "अगले बुधवार",
+        "weather_condition": "धूप से लेकर बादल छाए रहेंगे",
+        "tamperature": "अधिकतम तापमान 18 डिग्री सेल्सियस और न्यूनतम तापमान 11 डिग्री सेल्सियस रहेगा",
+        "wind": "पूर्वी बल 3-4",
+        "uv_intensity": "बहुत मजबूत"
+    },
+    {
+        "city": "शेन्ज़ेन",
+        "date": "अगले गुरुवार को",
+        "weather_condition": "बादल छाए",
+        "tamperature": "The maximum temperature will be 20 degrees Celsius, and the minimum temperature will be 14 degrees Celsius.",
+        "wind": "पूर्वी बल 3-4",
+        "uv_intensity": "कमजोर"
+    },
+    {
+        "city": "शेन्ज़ेन",
+        "date": "अगले शुक्रवार",
+        "weather_condition": "बादल छाए",
+        "tamperature": "अधिकतम तापमान 21 डिग्री सेल्सियस और न्यूनतम तापमान 15 डिग्री सेल्सियस रहेगा",
+        "wind": "ईस्ट फोर्स 2",
+        "uv_intensity": "मध्यम"
+    },
+    {
+        "city": "शेन्ज़ेन",
+        "date": "अगले शनिवार",
+        "weather_condition": "बादल छाए",
+        "tamperature": "The maximum temperature will be 23 degrees Celsius, and the minimum temperature will be 16 degrees Celsius.",
+        "wind": "बिना निरंतर दिशा के हवा चलेगी",
+        "uv_intensity": "मजबूत"
+    },
+    {
+        "city": "शेन्ज़ेन",
+        "date": "अगले रविवार",
+        "weather_condition": "बादल छाए",
+        "tamperature": "The maximum temperature will be 22 degrees Celsius, and the minimum temperature will be 16 degrees Celsius.",
+        "wind": "पूर्वोत्तर बल 1",
+        "uv_intensity": "कमजोर"
+    },
+    {
+        "city": "हांग्जो",
+        "date": "अगले सोमवार",
+        "weather_condition": "धूप",
+        "tamperature": "The maximum temperature will be 11 degrees Celsius, and the minimum temperature will be -1 degree Celsius.",
+        "wind": "north force 2",
+        "uv_intensity": "मजबूत"
+    },
+    {
+        "city": "हांग्जो",
+        "date": "अगले मंगलवार",
+        "weather_condition": "धूप",
+        "tamperature": "The maximum temperature will be 11 degrees Celsius, and the minimum temperature will be 0 degrees Celsius.",
+        "wind": "उत्तर बल 1",
+        "uv_intensity": "मजबूत"
+    },
+    {
+        "city": "हांग्जो",
+        "date": "अगले बुधवार",
+        "weather_condition": "बादल छाए",
+        "tamperature": "The maximum temperature will be 14 degrees Celsius, and the minimum temperature will be 1 degrees Celsius.",
+        "wind": "दक्षिण-पूर्व बल 1",
+        "uv_intensity": "कमजोर"
+    },
+    {
+        "city": "हांग्जो",
+        "date": "अगले गुरुवार को",
+        "weather_condition": "धूप से लेकर बादल छाए रहेंगे",
+        "tamperature": "The maximum temperature will be 16 degrees Celsius, and the minimum temperature will be 5 degrees Celsius.",
+        "wind": "पूर्वी बल 3-4",
+        "uv_intensity": "मजबूत"
+    },
+    {
+        "city": "हांग्जो",
+        "date": "अगले शुक्रवार",
+        "weather_condition": "overcast to light rain",
+        "tamperature": "The maximum temperature will be 18 degrees Celsius, and the minimum temperature will be 7 degrees Celsius.",
+        "wind": "north force 3-4",
+        "uv_intensity": "सबसे कमजोर"
+    },
+    {
+        "city": "हांग्जो",
+        "date": "अगले शनिवार",
+        "weather_condition": "धूप",
+        "tamperature": "The maximum temperature will be 17 degrees Celsius, and the minimum temperature will be 7 degrees Celsius.",
+        "wind": "दक्षिण-पूर्व बल 1",
+        "uv_intensity": "मजबूत"
+    },
+    {
+        "city": "हांग्जो",
+        "date": "अगले रविवार",
+        "weather_condition": "cloudy to overcast",
+        "tamperature": "अधिकतम तापमान 21 डिग्री सेल्सियस और न्यूनतम तापमान 9 डिग्री सेल्सियस रहने का अनुमान है",
+        "wind": "दक्षिण-पूर्वी बल 3-4",
+        "uv_intensity": "मजबूत"
+    },
+    {
+        "city": "नानजिंग",
+        "date": "अगले सोमवार",
+        "weather_condition": "धूप",
+        "tamperature": "अधिकतम तापमान 9 डिग्री सेल्सियस और न्यूनतम तापमान -2 डिग्री सेल्सियस रहने का अनुमान है",
+        "wind": "उत्तर-पश्चिम बल 4-5",
+        "uv_intensity": "मजबूत"
+    },
+    {
+        "city": "नानजिंग",
+        "date": "अगले मंगलवार",
+        "weather_condition": "धूप से लेकर बादल छाए रहेंगे",
+        "tamperature": "मैक्सिमम टेंपरेचर 9 डिग्री सेल्सियस और मिनिमम टेंपरेचर 0 डिग्री सेल्सियस रहने का अनुमान है",
+        "wind": "दक्षिणी बल 3-4",
+        "uv_intensity": "मजबूत"
+    },
+    {
+        "city": "नानजिंग",
+        "date": "अगले बुधवार",
+        "weather_condition": "बादल छाए",
+        "tamperature": "अधिकतम तापमान 10 डिग्री सेल्सियस और न्यूनतम तापमान 2 डिग्री सेल्सियस रहने का अनुमान है",
+        "wind": "दक्षिण-पूर्वी बल 3-4",
+        "uv_intensity": "कमजोर"
+    },
+    {
+        "city": "नानजिंग",
+        "date": "अगले गुरुवार को",
+        "weather_condition": "बादल छाए",
+        "tamperature": "अधिकतम तापमान 14 डिग्री सेल्सियस और न्यूनतम तापमान 5 डिग्री सेल्सियस रहने का अनुमान है",
+        "wind": "दक्षिण-पूर्व बल 2",
+        "uv_intensity": "मध्यम"
+    },
+    {
+        "city": "नानजिंग",
+        "date": "अगले शुक्रवार",
+        "weather_condition": "बादल छाए",
+        "tamperature": "The maximum temperature will be 11 degrees Celsius, and the minimum temperature will be 5 degrees Celsius.",
+        "wind": "पश्चिम बल 2",
+        "uv_intensity": "कमजोर"
+    },
+    {
+        "city": "नानजिंग",
+        "date": "अगले शनिवार",
+        "weather_condition": "बादल छाए",
+        "tamperature": "The maximum temperature will be 17 degrees Celsius and the minimum temperature will be 6 degrees Celsius.",
+        "wind": "उत्तर-पश्चिम बल 2",
+        "uv_intensity": "मजबूत"
+    },
+    {
+        "city": "नानजिंग",
+        "date": "अगले रविवार",
+        "weather_condition": "बादल छाए",
+        "tamperature": "The maximum temperature will be 18 degrees Celsius, and the minimum temperature will be 7 degrees Celsius.",
+        "wind": "दक्षिण-पूर्व बल 2",
+        "uv_intensity": "मध्यम"
+    },
+    {
+        "city": "ज़ियामेन",
+        "date": "अगले सोमवार",
+        "weather_condition": "धूप",
+        "tamperature": "The maximum temperature will be 14 degrees Celsius and the minimum temperature will be 8 degrees Celsius.",
+        "wind": "पूर्वोत्तर बल 3-4",
+        "uv_intensity": "बहुत मजबूत"
+    },
+    {
+        "city": "ज़ियामेन",
+        "date": "अगले मंगलवार",
+        "weather_condition": "धूप",
+        "tamperature": "अधिकतम तापमान 14 डिग्री सेल्सियस और न्यूनतम तापमान 7 डिग्री सेल्सियस रहेगा",
+        "wind": "पूर्वोत्तर बल 4-5",
+        "uv_intensity": "बहुत मजबूत"
+    },
+    {
+        "city": "ज़ियामेन",
+        "date": "अगले बुधवार",
+        "weather_condition": "धूप",
+        "tamperature": "अधिकतम तापमान 17 डिग्री सेल्सियस और न्यूनतम तापमान 9 डिग्री सेल्सियस",
+        "wind": "ईस्ट फोर्स 2",
+        "uv_intensity": "बहुत मजबूत"
+    },
+    {
+        "city": "ज़ियामेन",
+        "date": "अगले गुरुवार को",
+        "weather_condition": "धूप",
+        "tamperature": "अधिकतम तापमान 20 डिग्री सेल्सियस और न्यूनतम तापमान 12 डिग्री सेल्सियस रहने का अनुमान है",
+        "wind": "पूर्वोत्तर बल 4-5",
+        "uv_intensity": "बहुत मजबूत"
+    },
+    {
+        "city": "ज़ियामेन",
+        "date": "अगले शुक्रवार",
+        "weather_condition": "धूप",
+        "tamperature": "The maximum temperature will be 21 degrees Celsius, and the minimum temperature will be 13 degrees Celsius.",
+        "wind": "दक्षिण-पूर्वी बल 3-4",
+        "uv_intensity": "बहुत मजबूत"
+    },
+    {
+        "city": "ज़ियामेन",
+        "date": "अगले शनिवार",
+        "weather_condition": "धूप",
+        "tamperature": "अधिकतम तापमान 23 डिग्री सेल्सियस और न्यूनतम तापमान 14 डिग्री सेल्सियस रहने का अनुमान है",
+        "wind": "पूर्वोत्तर बल 3-4",
+        "uv_intensity": "बहुत मजबूत"
+    },
+    {
+        "city": "ज़ियामेन",
+        "date": "अगले रविवार",
+        "weather_condition": "धूप",
+        "tamperature": "अधिकतम तापमान 22 डिग्री सेल्सियस और न्यूनतम तापमान 14 डिग्री सेल्सियस रहने का अनुमान है",
+        "wind": "और पूर्वोत्तर बल 2",
+        "uv_intensity": "बहुत मजबूत"
+    },
+    {
+        "city": "चेंगदू",
+        "date": "अगले सोमवार",
+        "weather_condition": "बादल छाए",
+        "tamperature": "The maximum temperature will be 11 degrees Celsius and the minimum temperature will be 4 degrees Celsius.",
+        "wind": "दक्षिण-पूर्व बल 1",
+        "uv_intensity": "कमजोर"
+    },
+    {
+        "city": "चेंगदू",
+        "date": "अगले मंगलवार",
+        "weather_condition": "overcast to light rain",
+        "tamperature": "The maximum temperature will be 11 degrees Celsius and the minimum temperature will be 4 degrees Celsius.",
+        "wind": "बिना निरंतर दिशा के हवा चलेगी",
+        "uv_intensity": "सबसे कमजोर"
+    },
+    {
+        "city": "चेंगदू",
+        "date": "अगले बुधवार",
+        "weather_condition": "cloudy to overcast",
+        "tamperature": "The maximum temperature will be 13 degrees Celsius, and the minimum temperature will be 4 degrees Celsius.",
+        "wind": "बिना निरंतर दिशा के हवा चलेगी",
+        "uv_intensity": "मजबूत"
+    },
+    {
+        "city": "चेंगदू",
+        "date": "अगले गुरुवार को",
+        "weather_condition": "overcast to showers",
+        "tamperature": "The maximum temperature will be 11 degrees Celsius, and the minimum temperature will be 7 degrees Celsius.",
+        "wind": "बिना निरंतर दिशा के हवा चलेगी",
+        "uv_intensity": "सबसे कमजोर"
+    },
+    {
+        "city": "चेंगदू",
+        "date": "अगले शुक्रवार",
+        "weather_condition": "बादल छाए",
+        "tamperature": "The maximum temperature will be 15 degrees Celsius, and the minimum temperature will be 7 degrees Celsius.",
+        "wind": "बिना निरंतर दिशा के हवा चलेगी",
+        "uv_intensity": "मध्यम"
+    },
+    {
+        "city": "चेंगदू",
+        "date": "अगले शनिवार",
+        "weather_condition": "cloudy to overcast",
+        "tamperature": "The maximum temperature will be 15 degrees Celsius, and the minimum temperature will be 7 degrees Celsius.",
+        "wind": "बिना निरंतर दिशा के हवा चलेगी",
+        "uv_intensity": "मध्यम"
+    },
+    {
+        "city": "चेंगदू",
+        "date": "अगले रविवार",
+        "weather_condition": "बादल छाए",
+        "tamperature": "The maximum temperature will be 16 degrees Celsius, and the minimum temperature will be 9 degrees Celsius.",
+        "wind": "बिना निरंतर दिशा के हवा चलेगी",
+        "uv_intensity": "कमजोर"
+    },
+    {
+        "city": "वुहान",
+        "date": "अगले सोमवार",
+        "weather_condition": "बादल छाए",
+        "tamperature": "अधिकतम तापमान 13 डिग्री सेल्सियस और न्यूनतम तापमान -1 डिग्री सेल्सियस रहने का अनुमान है",
+        "wind": "ईस्ट फोर्स 2",
+        "uv_intensity": "मध्यम"
+    },
+    {
+        "city": "वुहान",
+        "date": "अगले मंगलवार",
+        "weather_condition": "धूप से लेकर बादल छाए रहेंगे",
+        "tamperature": "अधिकतम तापमान 13 डिग्री सेल्सियस और न्यूनतम तापमान 0 डिग्री सेल्सियस रहेगा",
+        "wind": "दक्षिण-पूर्व बल 2",
+        "uv_intensity": "मजबूत"
+    },
+    {
+        "city": "वुहान",
+        "date": "अगले बुधवार",
+        "weather_condition": "बादल छाए रहेंगे और बाद में धूप खिली रहेगी",
+        "tamperature": "The maximum temperature will be 11 degrees Celsius, and the minimum temperature will be 0 degrees Celsius.",
+        "wind": "दक्षिण बल 2",
+        "uv_intensity": "मध्यम"
+    },
+    {
+        "city": "वुहान",
+        "date": "अगले गुरुवार को",
+        "weather_condition": "धूप से लेकर बादल छाए रहेंगे",
+        "tamperature": "The maximum temperature will be 15 degrees Celsius, and the minimum temperature will be 1 degree Celsius.",
+        "wind": "पूर्व बल 1",
+        "uv_intensity": "मजबूत"
+    },
+    {
+        "city": "वुहान",
+        "date": "अगले शुक्रवार",
+        "weather_condition": "light rain to cloudy",
+        "tamperature": "अधिकतम तापमान 12 डिग्री सेल्सियस और न्यूनतम तापमान 3 डिग्री सेल्सियस रहने का अनुमान है",
+        "wind": "उत्तर-पश्चिम बल 2",
+        "uv_intensity": "सबसे कमजोर"
+    },
+    {
+        "city": "वुहान",
+        "date": "अगले शनिवार",
+        "weather_condition": "बादल छाए रहेंगे और बाद में धूप खिली रहेगी",
+        "tamperature": "The maximum temperature will be 15 degrees Celsius, and the minimum temperature will be 4 degrees Celsius.",
+        "wind": "दक्षिण-पूर्व बल 2",
+        "uv_intensity": "मजबूत"
+    },
+    {
+        "city": "वुहान",
+        "date": "अगले रविवार",
+        "weather_condition": "बादल छाए रहेंगे और बाद में धूप खिली रहेगी",
+        "tamperature": "The maximum temperature will be 19 degrees Celsius, and the minimum temperature will be 8 degrees Celsius.",
+        "wind": "दक्षिण-पूर्व बल 2",
+        "uv_intensity": "मध्यम"
+    },
+    {
+        "city": "सूज़ौ",
+        "date": "अगले सोमवार",
+        "weather_condition": "धूप",
+        "tamperature": "The maximum temperature will be 9 degrees Celsius, and the minimum temperature will be -1 degree Celsius.",
+        "wind": "उत्तर-पश्चिम बल 2",
+        "uv_intensity": "मजबूत"
+    },
+    {
+        "city": "सूज़ौ",
+        "date": "अगले मंगलवार",
+        "weather_condition": "धूप से लेकर बादल छाए रहेंगे",
+        "tamperature": "अधिकतम तापमान 9 डिग्री सेल्सियस और न्यूनतम तापमान 1 डिग्री सेल्सियस रहने का अनुमान है",
+        "wind": "उत्तर-पश्चिम बल 2",
+        "uv_intensity": "मजबूत"
+    },
+    {
+        "city": "सूज़ौ",
+        "date": "अगले बुधवार",
+        "weather_condition": "बादल छाए रहेंगे",
+        "tamperature": "The maximum temperature will be 11 degrees Celsius and the minimum temperature will be 4 degrees Celsius.",
+        "wind": "दक्षिण-पूर्व बल 2",
+        "uv_intensity": "सबसे कमजोर"
+    },
+    {
+        "city": "सूज़ौ",
+        "date": "अगले गुरुवार को",
+        "weather_condition": "बादल छाए",
+        "tamperature": "The maximum temperature will be 16 degrees Celsius, and the minimum temperature will be 6 degrees Celsius.",
+        "wind": "दक्षिण-पूर्व बल 2",
+        "uv_intensity": "मजबूत"
+    },
+    {
+        "city": "सूज़ौ",
+        "date": "अगले शुक्रवार",
+        "weather_condition": "overcast to light rain",
+        "tamperature": "The maximum temperature will be 15 degrees Celsius, and the minimum temperature will be 8 degrees Celsius.",
+        "wind": "पश्चिम बल 2",
+        "uv_intensity": "सबसे कमजोर"
+    },
+    {
+        "city": "सूज़ौ",
+        "date": "अगले शनिवार",
+        "weather_condition": "बादल छाए रहेंगे और बाद में धूप खिली रहेगी",
+        "tamperature": "The maximum temperature will be 16 degrees Celsius, and the minimum temperature will be 6 degrees Celsius.",
+        "wind": "दक्षिण-पश्चिम बल 2",
+        "uv_intensity": "मजबूत"
+    },
+    {
+        "city": "सूज़ौ",
+        "date": "अगले रविवार",
+        "weather_condition": "बादल छाए",
+        "tamperature": "The maximum temperature will be 17 degrees Celsius, and the minimum temperature will be 8 degrees Celsius.",
+        "wind": "दक्षिण-पश्चिम बल 2",
+        "uv_intensity": "मजबूत"
+    }
+]

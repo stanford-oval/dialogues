@@ -1,1148 +1,1367 @@
-
-    {
-        "production_country_or_area":"India",
-        "type":"Action",
-        "decade":2000,
-        "star":"Manoj Bajpayee",
-        "director":"Krishna D.K.",
-        "title":"The Family Man",
-        "name_list":"['Manoj Bajpayee', 'Samantha Akkineni', 'Priyamani']",
-        "premiere_time":1170806400000,
-        "episodes":19,
-        "episode_length":"45min",
-        "Douban_score":8.8
-    }
-
-    {
-        "production_country_or_area":"India",
-        "type":"Drama",
-        "decade":2010,
-        "star":"Naveen Kasturia",
-        "director":"Arunabh Kumar",
-        "title":"Aspirants",
-        "name_list":"['Naveen Kasturia', 'Shivankit Singh Parihar', 'Abhilash Thapliyal']",
-        "premiere_time":1490918400000,
-        "episodes":5,
-        "episode_length":"45min",
-        "Douban_score":9.0
-    }
-
-    {
-        "production_country_or_area":"India",
-        "type":"Action",
-        "decade":2010,
-        "star":"Pankaj Tripathi",
-        "director":"Puneet Krishna",
-        "title":"Mirzapur",
-        "name_list":"['Pankaj Tripathi', 'Ali Fazal', 'Divyendu Sharma']",
-        "premiere_time":1518480000000,
-        "episodes":19,
-        "episode_length":"1h",
-        "Douban_score":8.4
-    }
-
-    {
-        "production_country_or_area":"India",
-        "type":"Crime",
-        "decade":2010,
-        "star":"Tamannaah Bhatia",
-        "director":"Indhra Subramaniam",
-        "title":"November Story",
-        "name_list":"['Tamannaah Bhatia', 'G.M. Kumar', 'Pasupathy']",
-        "premiere_time":1397433600000,
-        "episodes":7,
-        "episode_length":"40min",
-        "Douban_score":8.0
-    }
-
-    {
-        "production_country_or_area":"India",
-        "type":"Crime",
-        "decade":2020,
-        "star":"Sanjay Kapoor",
-        "director":"Amit Kumar",
-        "title":"The Last Hour",
-        "name_list":"['Sanjay Kapoor', 'Karma Takapa', 'Shaylee Krishen']",
-        "premiere_time":1623110400000,
-        "episodes":8,
-        "episode_length":"36min",
-        "Douban_score":7.6
-    }
-
-    {
-        "production_country_or_area":"India",
-        "type":"Action",
-        "decade":2010,
-        "star":"Saif Ali Khan",
-        "director":"Varun Grover",
-        "title":"Sacred Games",
-        "name_list":"['Saif Ali Khan', 'Nawazuddin Siddiqui', 'Neeraj Kabi']",
-        "premiere_time":1507939200000,
-        "episodes":16,
-        "episode_length":"50min",
-        "Douban_score":8.6
-    }
-
-    {
-        "production_country_or_area":"India",
-        "type":"Action",
-        "decade":2010,
-        "star":"Kay Kay Menon",
-        "director":"Neeraj Pandey",
-        "title":"Special OPS",
-        "name_list":"['Kay Kay Menon', 'Karan Tacker', 'Gautami Kapoor']",
-        "premiere_time":1285459200000,
-        "episodes":8,
-        "episode_length":"49min",
-        "Douban_score":8.6
-    }
-
-    {
-        "production_country_or_area":"India",
-        "type":"Crime",
-        "decade":2010,
-        "star":"Arshad Warsi",
-        "director":"Gaurav Shukla",
-        "title":"Asur: Welcome to Your Dark Side",
-        "name_list":"['Arshad Warsi', 'Barun Sobti', 'Riddhi Dogra']",
-        "premiere_time":1263081600000,
-        "episodes":8,
-        "episode_length":"43min",
-        "Douban_score":8.5
-    }
-
-    {
-        "production_country_or_area":"India",
-        "type":"Crime",
-        "decade":2000,
-        "star":"Jaideep Ahlawat",
-        "director":"Sudip Sharma",
-        "title":"Paatal Lok",
-        "name_list":"['Jaideep Ahlawat', 'Neeraj Kabi', 'Ishwak Singh']",
-        "premiere_time":1206230400000,
-        "episodes":9,
-        "episode_length":"44min",
-        "Douban_score":7.8
-    }
-
-    {
-        "production_country_or_area":"India",
-        "type":"Comedy",
-        "decade":2010,
-        "star":"Mayur More",
-        "director":"Saurabh Khanna",
-        "title":"Kota Factory",
-        "name_list":"['Mayur More', 'Jitendra Kumar', 'Ranjan Raj']",
-        "premiere_time":1383868800000,
-        "episodes":6,
-        "episode_length":"45min",
-        "Douban_score":9.2
-    }
-
-    {
-        "production_country_or_area":"India",
-        "type":"Crime",
-        "decade":2020,
-        "star":"Shefali Shah",
-        "director":"Richie Mehta",
-        "title":"Delhi Crime",
-        "name_list":"['Shefali Shah', 'Rajesh Tailang', 'Rasika Dugal']",
-        "premiere_time":1606003200000,
-        "episodes":8,
-        "episode_length":"50min",
-        "Douban_score":8.5
-    }
-
-    {
-        "production_country_or_area":"India",
-        "type":"Crime",
-        "decade":2010,
-        "star":"Harsh Chhaya",
-        "director":"Siddharth Sengupta",
-        "title":"Undekhi",
-        "name_list":"['Harsh Chhaya', 'Dibyendu Bhattacharya', 'Abhishek Chauhan']",
-        "premiere_time":1364428800000,
-        "episodes":10,
-        "episode_length":"32min",
-        "Douban_score":8.2
-    }
-
-    {
-        "production_country_or_area":"India",
-        "type":"Animation",
-        "decade":2000,
-        "star":"Harland Williams",
-        "director":"Harland Williams",
-        "title":"Puppy Dog Pals",
-        "name_list":"['Harland Williams', 'Issac Ryan Brown', 'Sam Lavagnino']",
-        "premiere_time":1164844800000,
-        "episodes":91,
-        "episode_length":"24min",
-        "Douban_score":7.0
-    }
-
-    {
-        "production_country_or_area":"India",
-        "type":"Crime",
-        "decade":2000,
-        "star":"Sushmita Sen",
-        "director":"Ram Madhvani",
-        "title":"Aarya",
-        "name_list":"['Sushmita Sen', 'Vikas Kumar', 'Namit Das']",
-        "premiere_time":1209340800000,
-        "episodes":9,
-        "episode_length":"51min",
-        "Douban_score":7.9
-    }
-
-    {
-        "production_country_or_area":"India",
-        "type":"Animation",
-        "decade":2010,
-        "star":"Tony Anselmo",
-        "director":"Roberts Gannaway",
-        "title":"Mickey Mouse Clubhouse",
-        "name_list":"['Tony Anselmo', 'Bill Farmer', 'Tress MacNeille']",
-        "premiere_time":1313712000000,
-        "episodes":133,
-        "episode_length":"30min",
-        "Douban_score":5.7
-    }
-
-    {
-        "production_country_or_area":"India",
-        "type":"Drama",
-        "decade":2020,
-        "star":"Arjun Mathur",
-        "director":"Zoya Akhtar",
-        "title":"Made in Heaven",
-        "name_list":"['Arjun Mathur', 'Sobhita Dhulipala', 'Jim Sarbh']",
-        "premiere_time":1578873600000,
-        "episodes":9,
-        "episode_length":"50min",
-        "Douban_score":8.3
-    }
-
-    {
-        "production_country_or_area":"India",
-        "type":"Drama",
-        "decade":2010,
-        "star":"Richa Chadha",
-        "director":"Karan Anshuman",
-        "title":"Inside Edge",
-        "name_list":"['Richa Chadha', 'Angad Bedi', 'Tanuj Virwani']",
-        "premiere_time":1301270400000,
-        "episodes":30,
-        "episode_length":"45min",
-        "Douban_score":8.0
-    }
-
-    {
-        "production_country_or_area":"India",
-        "type":"Drama",
-        "decade":2010,
-        "star":"Ritwik Bhowmik",
-        "director":"Amritpal Singh Bindra",
-        "title":"Bandish Bandits",
-        "name_list":"['Ritwik Bhowmik', 'Shreya Chaudhary', 'Naseeruddin Shah']",
-        "premiere_time":1515110400000,
-        "episodes":10,
-        "episode_length":"30min",
-        "Douban_score":8.7
-    }
-
-    {
-        "production_country_or_area":"India",
-        "type":"Comedy",
-        "decade":2010,
-        "star":"Jameel Khan",
-        "director":"Shreyansh Pandey",
-        "title":"Gullak",
-        "name_list":"['Jameel Khan', 'Geetanjali Kulkarni', 'Vaibhav Raj Gupta']",
-        "premiere_time":1377043200000,
-        "episodes":10,
-        "episode_length":"24min",
-        "Douban_score":9.2
-    }
-
-    {
-        "production_country_or_area":"India",
-        "type":"Drama",
-        "decade":2000,
-        "star":"Saif Ali Khan",
-        "director":"Ali Abbas Zafar",
-        "title":"Tandav",
-        "name_list":"['Saif Ali Khan', 'Dimple Kapadia', 'Mohd. Zeeshan Ayyub']",
-        "premiere_time":1258070400000,
-        "episodes":9,
-        "episode_length":"30min",
-        "Douban_score":3.7
-    }
-
-    {
-        "production_country_or_area":"India",
-        "type":"Thriller",
-        "decade":2010,
-        "star":"Rasika Dugal",
-        "director":"Mike Bartlett",
-        "title":"Out of Love",
-        "name_list":"['Rasika Dugal', 'Purab Kohli', 'Suhaas Ahuja']",
-        "premiere_time":1545955200000,
-        "episodes":10,
-        "episode_length":"50min",
-        "Douban_score":7.1
-    }
-
-    {
-        "production_country_or_area":"India",
-        "type":"Comedy",
-        "decade":2010,
-        "star":"Dhruv Sehgal",
-        "director":"Dhruv Sehgal",
-        "title":"Little Things",
-        "name_list":"['Dhruv Sehgal', 'Mithila Palkar', 'Abhishek Bhalerao']",
-        "premiere_time":1321401600000,
-        "episodes":24,
-        "episode_length":"16min",
-        "Douban_score":8.3
-    }
-
-    {
-        "production_country_or_area":"India",
-        "type":"Comedy",
-        "decade":2010,
-        "star":"Vishesh Bansal",
-        "director":"Sameer Saxena",
-        "title":"Yeh Meri Family",
-        "name_list":"['Vishesh Bansal', 'Mona Singh', 'Akarsh Khurana']",
-        "premiere_time":1462233600000,
-        "episodes":7,
-        "episode_length":"30min",
-        "Douban_score":9.1
-    }
-
-    {
-        "production_country_or_area":"India",
-        "type":"Action",
-        "decade":2010,
-        "star":"Anil Kapoor",
-        "director":"Robert Cochran",
-        "title":"24: India",
-        "name_list":"['Anil Kapoor', 'Neil Bhoopalam', 'Raaghavv Chanana']",
-        "premiere_time":1312070400000,
-        "episodes":48,
-        "episode_length":"1h",
-        "Douban_score":8.2
-    }
-
-    {
-        "production_country_or_area":"India",
-        "type":"Comedy",
-        "decade":2000,
-        "star":"Abhishek Chauhan",
-        "director":"Amit Golani",
-        "title":"Cubicles",
-        "name_list":"['Abhishek Chauhan', 'Nidhi Bisht', 'Arnav Bhasin']",
-        "premiere_time":1161561600000,
-        "episodes":5,
-        "episode_length":"28min",
-        "Douban_score":8.3
-    }
-
-    {
-        "production_country_or_area":"India",
-        "type":"Comedy",
-        "decade":2010,
-        "star":"Sayani Gupta",
-        "director":"Rangita Pritish Nandy",
-        "title":"Four More Shots Please",
-        "name_list":"['Sayani Gupta', 'Maanvi Gagroo', 'Kirti Kulhari']",
-        "premiere_time":1306540800000,
-        "episodes":20,
-        "episode_length":"1h",
-        "Douban_score":6.5
-    }
-
-    {
-        "production_country_or_area":"India",
-        "type":"Action",
-        "decade":2020,
-        "star":"Arunoday Singh",
-        "director":"Siddharth Sengupta",
-        "title":"Apharan",
-        "name_list":"['Arunoday Singh', 'Mahie Gill', 'Nidhi Singh']",
-        "premiere_time":1620345600000,
-        "episodes":12,
-        "episode_length":"45min",
-        "Douban_score":8.3
-    }
-
-    {
-        "production_country_or_area":"India",
-        "type":"Drama",
-        "decade":2010,
-        "star":"Pooja Bhatt",
-        "director":"Alankrita Shrivastava",
-        "title":"Bombay Begums",
-        "name_list":"['Pooja Bhatt', 'Shahana Goswami', 'Amruta Subhash']",
-        "premiere_time":1415750400000,
-        "episodes":6,
-        "episode_length":"50min",
-        "Douban_score":4.9
-    }
-
-    {
-        "production_country_or_area":"India",
-        "type":"Comedy",
-        "decade":2010,
-        "star":"Rashmi Agdekar",
-        "director":"Sameer Saxena",
-        "title":"ImMATURE",
-        "name_list":"['Rashmi Agdekar', 'Omkar Kulkarni', 'Chinmay Chandraunshuh']",
-        "premiere_time":1457222400000,
-        "episodes":5,
-        "episode_length":"25min",
-        "Douban_score":8.9
-    }
-
-    {
-        "production_country_or_area":"India",
-        "type":"Drama",
-        "decade":2000,
-        "star":"Saurabh Raj Jain",
-        "director":"Siddharth Kumar Tewary",
-        "title":"Mahabharat",
-        "name_list":"['Saurabh Raj Jain', 'Shaheer Sheikh', 'Pooja Sharma']",
-        "premiere_time":1247961600000,
-        "episodes":268,
-        "episode_length":"20min",
-        "Douban_score":8.9
-    }
-
-    {
-        "production_country_or_area":"India",
-        "type":"Comedy",
-        "decade":2010,
-        "star":"Sumeet Vyas",
-        "director":"Biswapati Sarkar",
-        "title":"Permanent Roommates",
-        "name_list":"['Sumeet Vyas', 'Nidhi Singh', 'Deepak Kumar Mishra']",
-        "premiere_time":1287100800000,
-        "episodes":13,
-        "episode_length":"21min",
-        "Douban_score":8.6
-    }
-
-    {
-        "production_country_or_area":"India",
-        "type":"Crime",
-        "decade":2010,
-        "star":"Ronit Roy",
-        "director":"Omri Givon",
-        "title":"Hostages",
-        "name_list":"['Ronit Roy', 'Tisca Chopra', 'Mohan Kapur']",
-        "premiere_time":1286323200000,
-        "episodes":22,
-        "episode_length":"42min",
-        "Douban_score":6.9
-    }
-
-    {
-        "production_country_or_area":"India",
-        "type":"Crime",
-        "decade":2010,
-        "star":"Dawood Khan",
-        "director":"Imtiaz Ali",
-        "title":"She",
-        "name_list":"['Dawood Khan', 'Aditi Sudhir Pohankar', 'Vijay Varma']",
-        "premiere_time":1563408000000,
-        "episodes":8,
-        "episode_length":"36min",
-        "Douban_score":6.5
-    }
-
-    {
-        "production_country_or_area":"India",
-        "type":"Action",
-        "decade":2020,
-        "star":"Nimrat Kaur",
-        "director":"Samar Khan",
-        "title":"The Test Case",
-        "name_list":"['Nimrat Kaur', 'Akshay Oberoi', 'Atul Kulkarni']",
-        "premiere_time":1626480000000,
-        "episodes":10,
-        "episode_length":"29min",
-        "Douban_score":8.4
-    }
-
-    {
-        "production_country_or_area":"India",
-        "type":"Drama",
-        "decade":2010,
-        "star":"Priyank Sharma",
-        "director":"Vikas Gupta",
-        "title":"Puncch Beat",
-        "name_list":"['Priyank Sharma', 'Siddharth Sharma', 'Harshita Gaur']",
-        "premiere_time":1513728000000,
-        "episodes":14,
-        "episode_length":"30min",
-        "Douban_score":7.0
-    }
-
-    {
-        "production_country_or_area":"India",
-        "type":"Drama",
-        "decade":2010,
-        "star":"Shaheer Sheikh",
-        "director":"Mamta Patnaik",
-        "title":"Kuch Rang Pyar Ke Aise Bhi",
-        "name_list":"['Shaheer Sheikh', 'Erica Fernandes', 'Supriya Pilgaonkar']",
-        "premiere_time":1497225600000,
-        "episodes":414,
-        "episode_length":"22min",
-        "Douban_score":8.7
-    }
-
-    {
-        "production_country_or_area":"India",
-        "type":"Drama",
-        "decade":2010,
-        "star":"Huma Qureshi",
-        "director":"Urmi Juvekar",
-        "title":"Leila",
-        "name_list":"['Huma Qureshi', 'Rahul Khanna', 'Siddharth']",
-        "premiere_time":1389657600000,
-        "episodes":6,
-        "episode_length":"48min",
-        "Douban_score":4.8
-    }
-
-    {
-        "production_country_or_area":"India",
-        "type":"Adventure",
-        "decade":2010,
-        "star":"Arun Govil",
-        "director":"Ramanand Sagar",
-        "title":"Ramayan",
-        "name_list":"['Arun Govil', 'Deepika Chikhalia', 'Sunil Lahri']",
-        "premiere_time":1550361600000,
-        "episodes":78,
-        "episode_length":"30min",
-        "Douban_score":9.1
-    }
-
-    {
-        "production_country_or_area":"India",
-        "type":"Action",
-        "decade":2000,
-        "star":"Utkarsh Gaharwar",
-        "director":"Harjeet Chhabra",
-        "title":"Murder Meri Jaan",
-        "name_list":"['Utkarsh Gaharwar', 'Tanuj Virwani', 'Barkha Singh']",
-        "premiere_time":1227744000000,
-        "episodes":21,
-        "episode_length":"15min",
-        "Douban_score":8.4
-    }
-
-    {
-        "production_country_or_area":"India",
-        "type":"Action",
-        "decade":2000,
-        "star":"Helly Shah",
-        "director":"Yash Patnaik",
-        "title":"Ishq Mein Marjawan 2",
-        "name_list":"['Helly Shah', 'Rrahul Sudhir', 'Vishal Vashishtha']",
-        "premiere_time":1240704000000,
-        "episodes":215,
-        "episode_length":"25min",
-        "Douban_score":9.8
-    }
-
-    {
-        "production_country_or_area":"India",
-        "type":"Drama",
-        "decade":2010,
-        "star":"Biswa Kalyan Rath",
-        "director":"Biswa Kalyan Rath",
-        "title":"Laakhon Mein Ek",
-        "name_list":"['Biswa Kalyan Rath', 'Akshaya Bhingare', 'Abhay Kulkarni']",
-        "premiere_time":1366156800000,
-        "episodes":14,
-        "episode_length":"30min",
-        "Douban_score":8.3
-    }
-
-    {
-        "production_country_or_area":"India",
-        "type":"Crime",
-        "decade":2010,
-        "star":"Rocky Verma",
-        "director":"Ram Gopal Varma",
-        "title":"Guns and Thighs",
-        "name_list":"['Rocky Verma']",
-        "premiere_time":1328054400000,
-        "episodes":3,
-        "episode_length":"1h",
-        "Douban_score":null
-    }
-
-    {
-        "production_country_or_area":"India",
-        "type":"Short",
-        "decade":2000,
-        "star":"Manish Anand",
-        "director":"Sumukhi Suresh",
-        "title":"Pushpavalli",
-        "name_list":"['Manish Anand', 'Naveen Richard', 'Sumukhi Suresh']",
-        "premiere_time":1244851200000,
-        "episodes":16,
-        "episode_length":"22min",
-        "Douban_score":7.5
-    }
-
-    {
-        "production_country_or_area":"India",
-        "type":"Crime",
-        "decade":2020,
-        "star":"Dinesh Phadnis",
-        "director":"B.P. Singh",
-        "title":"C.I.D.",
-        "name_list":"['Dinesh Phadnis', 'Dayanand Shetty', 'Aditya Srivastav']",
-        "premiere_time":1578614400000,
-        "episodes":1548,
-        "episode_length":"42min",
-        "Douban_score":6.7
-    }
-
-    {
-        "production_country_or_area":"India",
-        "type":"Animation",
-        "decade":2010,
-        "star":"Saara Chaudry",
-        "director":"Joe Murray",
-        "title":"Let's Go Luna!",
-        "name_list":"['Saara Chaudry', 'Judy Greer', 'Jaiden Cannatelli']",
-        "premiere_time":1518566400000,
-        "episodes":47,
-        "episode_length":"30min",
-        "Douban_score":7.4
-    }
-
-    {
-        "production_country_or_area":"India",
-        "type":"Biography",
-        "decade":2010,
-        "star":"Rajkummar Rao",
-        "director":"Ekalavya Bhattacharya",
-        "title":"Bose: Dead\/Alive",
-        "name_list":"['Rajkummar Rao', 'Naveen Kasturia', 'Edward Sonnenblick']",
-        "premiere_time":1411862400000,
-        "episodes":9,
-        "episode_length":"20min",
-        "Douban_score":8.8
-    }
-
-    {
-        "production_country_or_area":"India",
-        "type":"Drama",
-        "decade":2010,
-        "star":"Nakuul Mehta",
-        "director":"Gul Khan",
-        "title":"Ishqbaaaz",
-        "name_list":"['Nakuul Mehta', 'Surbhi Chandna', 'Kunal Jaisingh']",
-        "premiere_time":1486857600000,
-        "episodes":694,
-        "episode_length":"22min",
-        "Douban_score":5.7
-    }
-
-    {
-        "production_country_or_area":"India",
-        "type":"Drama",
-        "decade":2000,
-        "star":"Sumedh Mudgalkar",
-        "director":"Siddharth Kumar Tewary",
-        "title":"RadhaKrishn",
-        "name_list":"['Sumedh Mudgalkar', 'Mallika Singh', 'Basant Bhatt']",
-        "premiere_time":1188086400000,
-        "episodes":557,
-        "episode_length":"1h",
-        "Douban_score":8.6
-    }
-
-    {
-        "production_country_or_area":"India",
-        "type":"Animation",
-        "decade":2010,
-        "star":"Da Man",
-        "director":"Charuvi P. Agrawal",
-        "title":"The Legend of Hanuman",
-        "name_list":"['Da Man', 'Shakti Singh', 'Sanket Mhatre']",
-        "premiere_time":1560729600000,
-        "episodes":13,
-        "episode_length":"25min",
-        "Douban_score":9.4
-    }
-
-    {
-        "production_country_or_area":"India",
-        "type":"Animation",
-        "decade":2010,
-        "star":"Erin Mathews",
-        "director":"Shelley Hoffman",
-        "title":"Kid vs. Kat",
-        "name_list":"['Erin Mathews', 'Kathleen Barr', 'Trevor Devall']",
-        "premiere_time":1416009600000,
-        "episodes":52,
-        "episode_length":"22min",
-        "Douban_score":6.0
-    }
-
-    {
-        "production_country_or_area":"India",
-        "type":"Drama",
-        "decade":2010,
-        "star":"Aamna Sharif",
-        "director":"Ekta Kapoor",
-        "title":"Kahiin To Hoga",
-        "name_list":"['Aamna Sharif', 'Rajeev Khandelwal', 'Rohit Bakshi']",
-        "premiere_time":1521072000000,
-        "episodes":799,
-        "episode_length":"24min",
-        "Douban_score":4.8
-    }
-
-    {
-        "production_country_or_area":"India",
-        "type":"Animation",
-        "decade":2010,
-        "star":"David Attar",
-        "director":"Tommy Andreasen",
-        "title":"Legends of Chima",
-        "name_list":"['David Attar', 'Bethany Brown', 'Bill Courage']",
-        "premiere_time":1415923200000,
-        "episodes":42,
-        "episode_length":"22min",
-        "Douban_score":5.8
-    }
-
-    {
-        "production_country_or_area":"India",
-        "type":"Comedy",
-        "decade":2020,
-        "star":"Swara Bhaskar",
-        "director":"Ravi Patel",
-        "title":"Bhaag Beanie Bhaag",
-        "name_list":"['Swara Bhaskar', 'Ravi Patel', 'Varun Thakur']",
-        "premiere_time":1596672000000,
-        "episodes":6,
-        "episode_length":"29min",
-        "Douban_score":3.8
-    }
-
-    {
-        "production_country_or_area":"India",
-        "type":"Comedy",
-        "decade":2010,
-        "star":"Sriti Jha",
-        "director":"Ekta Kapoor",
-        "title":"Kumkum Bhagya",
-        "name_list":"['Sriti Jha', 'Shabbir Ahluwalia', 'Vin Rana']",
-        "premiere_time":1461024000000,
-        "episodes":1782,
-        "episode_length":"20min",
-        "Douban_score":3.5
-    }
-
-    {
-        "production_country_or_area":"India",
-        "type":"Drama",
-        "decade":2010,
-        "star":"Ayaz Ahmed",
-        "director":"Rashmi Sharma",
-        "title":"Santoshi Maa",
-        "name_list":"['Ayaz Ahmed', 'Debina Bonnerjee', 'Ratan Rajput']",
-        "premiere_time":1449619200000,
-        "episodes":499,
-        "episode_length":"20min",
-        "Douban_score":4.8
-    }
-
-    {
-        "production_country_or_area":"India",
-        "type":"Animation",
-        "decade":2010,
-        "star":"Adrienne Posta",
-        "director":"An Vrombaut",
-        "title":"64 Zoo Lane",
-        "name_list":"['Adrienne Posta', 'Keith Wickham', 'Bob Saker']",
-        "premiere_time":1326326400000,
-        "episodes":104,
-        "episode_length":"11min",
-        "Douban_score":6.5
-    }
-
-    {
-        "production_country_or_area":"India",
-        "type":"Drama",
-        "decade":2010,
-        "star":"Tasneem Sheikh",
-        "director":"Ekta Kapoor",
-        "title":"Kkusum",
-        "name_list":"['Tasneem Sheikh', 'Rupa Divetia', 'Raymon Singh']",
-        "premiere_time":1402358400000,
-        "episodes":1001,
-        "episode_length":"20min",
-        "Douban_score":4.3
-    }
-
-    {
-        "production_country_or_area":"India",
-        "type":"Drama",
-        "decade":2000,
-        "star":"Ankita Lokhande",
-        "director":"Ekta Kapoor",
-        "title":"Pavitra Rishta",
-        "name_list":"['Ankita Lokhande', 'Amit Sarin', 'Sushant Singh Rajput']",
-        "premiere_time":1238371200000,
-        "episodes":1324,
-        "episode_length":"24min",
-        "Douban_score":7.2
-    }
-
-    {
-        "production_country_or_area":"India",
-        "type":"History",
-        "decade":2010,
-        "star":"Aditya Redij",
-        "director":"Siddharth Kumar Tewary",
-        "title":"Porus",
-        "name_list":"['Aditya Redij', 'Laksh Lalwani', 'Rohit Purohit']",
-        "premiere_time":1574035200000,
-        "episodes":252,
-        "episode_length":"22min",
-        "Douban_score":7.8
-    }
-
-    {
-        "production_country_or_area":"India",
-        "type":"Comedy",
-        "decade":2010,
-        "star":"Ayush Mehra",
-        "director":"Chirag Mahabal",
-        "title":"Life Lafde Aur Bandiyan",
-        "name_list":"['Ayush Mehra', 'Harshit Sidwani', 'Payal Thapa']",
-        "premiere_time":1431734400000,
-        "episodes":2,
-        "episode_length":"22min",
-        "Douban_score":7.4
-    }
-
-    {
-        "production_country_or_area":"India",
-        "type":"Drama",
-        "decade":2020,
-        "star":"Rupali Bhosale",
-        "director":"Rajan Shahi",
-        "title":"Aai Kuthe Kay Karte",
-        "name_list":"['Rupali Bhosale', 'Poonam Chandorkar', 'Abhishek Deshmukh']",
-        "premiere_time":1613606400000,
-        "episodes":240,
-        "episode_length":"22min",
-        "Douban_score":6.3
-    }
-
-    {
-        "production_country_or_area":"India",
-        "type":"Drama",
-        "decade":2010,
-        "star":"Kushal Tandon",
-        "director":"Ekta Kapoor",
-        "title":"Bebaakee",
-        "name_list":"['Kushal Tandon', 'Shivjyoti Rajput', 'Karan Jotwani']",
-        "premiere_time":1501545600000,
-        "episodes":31,
-        "episode_length":"26min",
-        "Douban_score":8.2
-    }
-
-    {
-        "production_country_or_area":"India",
-        "type":"Fantasy",
-        "decade":2000,
-        "star":"Vinod Kapoor",
-        "director":"Ekta Kapoor",
-        "title":"Chandrakanta",
-        "name_list":"['Vinod Kapoor', 'Maleeka Ghai', 'Anuj Sharma']",
-        "premiere_time":1246752000000,
-        "episodes":95,
-        "episode_length":"45min",
-        "Douban_score":3.8
-    }
-
-    {
-        "production_country_or_area":"India",
-        "type":"Thriller",
-        "decade":2010,
-        "star":"Pooja Banerjee",
-        "director":"Deepak Pachory",
-        "title":"The Casino",
-        "name_list":"['Pooja Banerjee', 'Karanvir Bohra', 'Dhanveer']",
-        "premiere_time":1342310400000,
-        "episodes":10,
-        "episode_length":"5h",
-        "Douban_score":4.0
-    }
-
-    {
-        "production_country_or_area":"India",
-        "type":"Fantasy",
-        "decade":2010,
-        "star":"Vivian Dsena",
-        "director":"Ekta Kapoor",
-        "title":"Pyaar Kii Ye Ek Kahaani",
-        "name_list":"['Vivian Dsena', 'Sukirti Kandpal', 'Mohit Keswani']",
-        "premiere_time":1392940800000,
-        "episodes":334,
-        "episode_length":"24min",
-        "Douban_score":6.8
-    }
-
-    {
-        "production_country_or_area":"India",
-        "type":"Animation",
-        "decade":2010,
-        "star":"Viraj Adhav",
-        "director":"Sharad Devarajan",
-        "title":"Baahubali: The Lost Legends",
-        "name_list":"['Viraj Adhav', 'Manoj Pandey', 'Manini Mishra']",
-        "premiere_time":1519257600000,
-        "episodes":71,
-        "episode_length":"23min",
-        "Douban_score":7.4
-    }
-
-    {
-        "production_country_or_area":"India",
-        "type":"Drama",
-        "decade":2000,
-        "star":"Satyadeep Misra",
-        "director":"Nikkhil Advani",
-        "title":"P.O.W. Bandi Yuddh Ke",
-        "name_list":"['Satyadeep Misra', 'Purab Kohli', 'Manish Chaudhary']",
-        "premiere_time":1262131200000,
-        "episodes":110,
-        "episode_length":"24min",
-        "Douban_score":8.8
-    }
-
-    {
-        "production_country_or_area":"India",
-        "type":"Drama",
-        "decade":2010,
-        "star":"Anindita Bose",
-        "director":"Rohan Ghose",
-        "title":"Mafia",
-        "name_list":"['Anindita Bose', 'Ishaa Saha', 'Madhurima Roy']",
-        "premiere_time":1569110400000,
-        "episodes":8,
-        "episode_length":"31min",
-        "Douban_score":7.7
-    }
-
-    {
-        "production_country_or_area":"India",
-        "type":"Comedy",
-        "decade":2010,
-        "star":"Akanksha Thakur",
-        "director":"Palash Vaswani",
-        "title":"Cheesecake",
-        "name_list":"['Akanksha Thakur', 'Jitendra Kumar', 'Kumar Varun']",
-        "premiere_time":1455235200000,
-        "episodes":5,
-        "episode_length":"28min",
-        "Douban_score":8.5
-    }
-
-    {
-        "production_country_or_area":"India",
-        "type":"Comedy",
-        "decade":2010,
-        "star":"Gundu Hanumantha Rao",
-        "director":"Gunnam Gangaraju",
-        "title":"Amrutham",
-        "name_list":"['Gundu Hanumantha Rao', 'Jhansi', 'Ragini']",
-        "premiere_time":1309046400000,
-        "episodes":61,
-        "episode_length":"24min",
-        "Douban_score":9.2
-    }
-
-    {
-        "production_country_or_area":"India",
-        "type":"Crime",
-        "decade":2000,
-        "star":"Arjun Bijlani",
-        "director":"Mamta Patnaik",
-        "title":"Ishq Mein Marjawan",
-        "name_list":"['Arjun Bijlani', 'Aalisha Panwar', 'Nia Sharma']",
-        "premiere_time":1214438400000,
-        "episodes":475,
-        "episode_length":"22min",
-        "Douban_score":5.9
-    }
-
-    {
-        "production_country_or_area":"India",
-        "type":"Comedy",
-        "decade":2000,
-        "star":"Ashish Verma",
-        "director":"Raghav Raj Kakker",
-        "title":"InMates",
-        "name_list":"['Ashish Verma', 'Mukti Mohan', 'Raghav Raj Kakker']",
-        "premiere_time":1248825600000,
-        "episodes":6,
-        "episode_length":"25min",
-        "Douban_score":6.6
-    }
-
-    {
-        "production_country_or_area":"India",
-        "type":"Reality-TV",
-        "decade":2010,
-        "star":"Pearl Almeida",
-        "director":"Raghu Ram",
-        "title":"Skulls and Roses",
-        "name_list":"['Pearl Almeida', 'Angel Bhandari', 'Vipin Changani']",
-        "premiere_time":1527552000000,
-        "episodes":10,
-        "episode_length":"55min",
-        "Douban_score":4.3
-    }
-
-    {
-        "production_country_or_area":"India",
-        "type":"Drama",
-        "decade":2010,
-        "star":"Hemant Choudhary",
-        "director":"Anirudh Pathak",
-        "title":"Dastaan-E-Mohabbat: Salim Anarkali",
-        "name_list":"['Hemant Choudhary', 'Heli Daruwala', 'Sayantani Ghosh']",
-        "premiere_time":1522627200000,
-        "episodes":10,
-        "episode_length":"1h",
-        "Douban_score":7.8
-    }
-
-    {
-        "production_country_or_area":"India",
-        "type":"War",
-        "decade":2000,
-        "star":"Harry Chauhan",
-        "director":"Abhimanyu Raj Singh",
-        "title":"21 Sarfarosh Saragarhi 1897",
-        "name_list":"['Harry Chauhan', 'Paras Raajj Ganndhhi', 'Sooraj Ohri']",
-        "premiere_time":1260748800000,
-        "episodes":3,
-        "episode_length":"18min",
-        "Douban_score":8.2
-    }
-
-    {
-        "production_country_or_area":"India",
-        "type":"Comedy",
-        "decade":2010,
-        "star":"Smriti Malhotra-Irani",
-        "director":"Ekta Kapoor",
-        "title":"Kyunki Saas Bhi Kabhi Bahu Thi",
-        "name_list":"['Smriti Malhotra-Irani', 'Ronit Roy', 'Amar Upadhyay']",
-        "premiere_time":1434844800000,
-        "episodes":1833,
-        "episode_length":"30min",
-        "Douban_score":1.6
-    }
-
-    {
-        "production_country_or_area":"India",
-        "type":"Comedy",
-        "decade":2010,
-        "star":"Bhumika Gurung",
-        "director":"Zama Habib",
-        "title":"Nimki Mukhiya",
-        "name_list":"['Bhumika Gurung', 'Indraneil Sengupta', 'Abhishek Sharma']",
-        "premiere_time":1423094400000,
-        "episodes":698,
-        "episode_length":"20min",
-        "Douban_score":6.8
-    }
-
-    {
-        "production_country_or_area":"India",
-        "type":"Drama",
-        "decade":2000,
-        "star":"Ashish Sharma",
-        "director":"Saurabh Tewari",
-        "title":"Rangrasiya",
-        "name_list":"['Ashish Sharma', 'Sanaya Irani', 'Sadiya Siddiqui']",
-        "premiere_time":1176422400000,
-        "episodes":186,
-        "episode_length":"21min",
-        "Douban_score":7.1
-    }
-
-    {
-        "production_country_or_area":"India",
-        "type":"Romance",
-        "decade":2010,
-        "star":"Arjun Bijlani",
-        "director":"Ritu Bhatia",
-        "title":"Pardes Mein Hai Mera Dil",
-        "name_list":"['Arjun Bijlani', 'Drashti Dhami', 'Surekha Sikri']",
-        "premiere_time":1285632000000,
-        "episodes":171,
-        "episode_length":"22min",
-        "Douban_score":5.4
-    }
-
-    {
-        "production_country_or_area":"India",
-        "type":"Crime",
-        "decade":2000,
-        "star":"Anup Soni",
-        "director":"Samir Rajda",
-        "title":"Crime Patrol",
-        "name_list":"['Anup Soni', 'Saptrishi Ghosh', 'Sanjeev Tyagi']",
-        "premiere_time":1197158400000,
-        "episodes":756,
-        "episode_length":"42min",
-        "Douban_score":8.0
-    }
-
-    {
-        "production_country_or_area":"India",
-        "type":"Game-Show",
-        "decade":2010,
-        "star":"Amitabh Bachchan",
-        "director":"Siddharth Basu",
-        "title":"Kaun Banega Crorepati?",
-        "name_list":"['Amitabh Bachchan', 'Shah Rukh Khan', 'Deepika Padukone']",
-        "premiere_time":1501891200000,
-        "episodes":667,
-        "episode_length":"1h",
-        "Douban_score":8.3
-    }
-
-    {
-        "production_country_or_area":"India",
-        "type":"Mystery",
-        "decade":2010,
-        "star":"Surbhi Jyoti",
-        "director":"Rajita Sharma",
-        "title":"Koi Laut Ke Aaya Hai",
-        "name_list":"['Surbhi Jyoti', 'Shoaib Ibrahim', 'Shaleen Malhotra']",
-        "premiere_time":1304812800000,
-        "episodes":33,
-        "episode_length":"45min",
-        "Douban_score":7.8
-    }
+[
+    {
+        "production_country_or_area": "चीनी मुख्य भूमि",
+        "type": "फीचर",
+        "decade": "2010 के दशक",
+        "star": "झांग रुओयुन",
+        "director": "Sun Hao",
+        "title": "जॉय ऑफ लाइफ",
+        "name_list": "Zhang Ruoyun/Li Qin/Chen Daoming/Wu Gang",
+        "premiere_time": "2019-11-26 in the Chinese mainland",
+        "episodes": "46 एपिसोड",
+        "episode_length": "45 मिनट",
+        "douban_score": "7.9"
+    },
+    {
+        "production_country_or_area": "चीनी मुख्य भूमि",
+        "type": "फीचर",
+        "decade": "2000 का दशक",
+        "star": "सन होंगलेई",
+        "director": "जियांग वेई",
+        "title": "लर्क",
+        "name_list": "सन होंगलेई, याओ चेन, शेन एओजुन और ज़ू फेंग",
+        "premiere_time": "2009-04-01 in the Chinese mainland",
+        "episodes": "30 एपिसोड",
+        "episode_length": "40 minutes",
+        "douban_score": "9.3"
+    },
+    {
+        "production_country_or_area": "चीनी मुख्य भूमि",
+        "type": "फीचर",
+        "decade": "1990 के दशक",
+        "star": "Tang Guoqiang",
+        "director": "Wang Fulin",
+        "title": "Romance of the Three Kingdoms",
+        "name_list": "Tang Guoqiang/Sun Yanjun/Bao Guoan/Li Jingfei",
+        "premiere_time": "1994-10-23 in the Chinese mainland",
+        "episodes": "84 episodes",
+        "episode_length": "45 मिनट",
+        "douban_score": "9.4"
+    },
+    {
+        "production_country_or_area": "चीनी मुख्य भूमि",
+        "type": "फीचर",
+        "decade": "1980s",
+        "star": "लियू शियाओ लिंग टोंग",
+        "director": "Yang Jie",
+        "title": "पश्चिम की यात्रा",
+        "name_list": "Liu Xiao Ling Tong/Chi Zhongrui/Ma Dehua/Wang Yue",
+        "premiere_time": "1986-02 in the Chinese mainland",
+        "episodes": "25 एपिसोड",
+        "episode_length": "45 मिनट",
+        "douban_score": "9.6"
+    },
+    {
+        "production_country_or_area": "चीनी मुख्य भूमि",
+        "type": "कॉमेडी",
+        "decade": "2010 के दशक",
+        "star": "Wallace Huo",
+        "director": "Lee Kwok-lap",
+        "title": "मास्क में सतर्कता",
+        "name_list": "वालेस हुओ, लियू शिशी, मा तियानयू और शी यानेंग",
+        "premiere_time": "22 नवंबर, 2010 को चीनी मुख्य भूमि में",
+        "episodes": "30 एपिसोड",
+        "episode_length": "45 मिनट",
+        "douban_score": "8.4"
+    },
+    {
+        "production_country_or_area": "चीनी मुख्य भूमि",
+        "type": "कॉमेडी",
+        "decade": "2000 का दशक",
+        "star": "Yan Ni",
+        "director": "Shang Jing",
+        "title": "माई ओन स्वॉर्ड्समैन",
+        "name_list": "Yan Ni/Yao Chen/Sha Yi/Johnson Yuen",
+        "premiere_time": "2006-01-02 in the Chinese mainland",
+        "episodes": "80 एपिसोड",
+        "episode_length": "40 minutes",
+        "douban_score": "9.5"
+    },
+    {
+        "production_country_or_area": "चीनी मुख्य भूमि",
+        "type": "कॉमेडी",
+        "decade": "1990 के दशक",
+        "star": "वेन जिंग्यू",
+        "director": "यिंग दा",
+        "title": "आई लव माई फैमिली",
+        "name_list": "Wen Xingyu/Song Dandan/Yang Lixin/Liang Tian",
+        "premiere_time": "1993-07-01 in the Chinese mainland",
+        "episodes": "120 एपिसोड",
+        "episode_length": "30 मिनट",
+        "douban_score": "9.3"
+    },
+    {
+        "production_country_or_area": "चीनी मुख्य भूमि",
+        "type": "कॉमेडी",
+        "decade": "1980s",
+        "star": "बेंचांग यू",
+        "director": "Sean Zhang",
+        "title": "मेड मोंक",
+        "name_list": "You Benchang/Lv Liang",
+        "premiere_time": "1985 in the Chinese mainland",
+        "episodes": "12 एपिसोड",
+        "episode_length": "45 मिनट",
+        "douban_score": "8.3"
+    },
+    {
+        "production_country_or_area": "चीनी मुख्य भूमि",
+        "type": "एक्शन",
+        "decade": "2010 के दशक",
+        "star": "हू गे",
+        "director": "जेफरी चियांग",
+        "title": "द मिथ",
+        "name_list": "Hu Ge/Michelle Bai/Zhang Shi/Ren Quan",
+        "premiere_time": "2010-01-02 in the Chinese mainland",
+        "episodes": "50 एपिसोड",
+        "episode_length": "46 मिनट",
+        "douban_score": "7.3"
+    },
+    {
+        "production_country_or_area": "चीनी मुख्य भूमि",
+        "type": "एक्शन",
+        "decade": "2000 का दशक",
+        "star": "Hu Jun",
+        "director": "कोक लेउंग कुक",
+        "title": "डेमी-गॉड्स और सेमी-डेविल्स",
+        "name_list": "हू जून, जिमी लिन, गाओ हू और शिउ किंग",
+        "premiere_time": "2003-12-11 in the Chinese mainland",
+        "episodes": "40 एपिसोड",
+        "episode_length": "42 minutes",
+        "douban_score": "8.3"
+    },
+    {
+        "production_country_or_area": "चीनी मुख्य भूमि",
+        "type": "एक्शन",
+        "decade": "1990 के दशक",
+        "star": "Wu Jing",
+        "director": "Yuen Woo-ping",
+        "title": "Tai Chi Master",
+        "name_list": "Wu Jing/Yu Hai/Wai Ying-hung/Billy Chow",
+        "premiere_time": "1998 in the Chinese mainland",
+        "episodes": "28 एपिसोड",
+        "episode_length": "40 minutes",
+        "douban_score": "8.2"
+    },
+    {
+        "production_country_or_area": "चीनी मुख्य भूमि",
+        "type": "रोमांटिक",
+        "decade": "2010 के दशक",
+        "star": "हाओरान लियू",
+        "director": "Liu Chang",
+        "title": "विथ यू",
+        "name_list": "Liu Haoran/Seven Tan/Wang Lixin/Dong Qing",
+        "premiere_time": "2016-04-08 in the Chinese mainland",
+        "episodes": "24 एपिसोड",
+        "episode_length": "45 मिनट",
+        "douban_score": "8.9"
+    },
+    {
+        "production_country_or_area": "चीनी मुख्य भूमि",
+        "type": "रोमांटिक",
+        "decade": "2000 का दशक",
+        "star": "Vicki Zhao",
+        "director": "Li Ping",
+        "title": "Romance in the Rain",
+        "name_list": "Vicki Zhao/Ruby Lin/Leo Ku/Alec Su",
+        "premiere_time": "2001-09-03 in the Chinese mainland",
+        "episodes": "46 एपिसोड",
+        "episode_length": "40 minutes",
+        "douban_score": "7.2"
+    },
+    {
+        "production_country_or_area": "चीनी मुख्य भूमि",
+        "type": "रोमांटिक",
+        "decade": "1990 के दशक",
+        "star": "Vicki Zhao",
+        "director": "Sun Shu-pei",
+        "title": "Princess Pearl",
+        "name_list": "Zhao Wei/Alec Su/Ruby Lin/Zhou Jie",
+        "premiere_time": "1998-10-28 in the Chinese mainland",
+        "episodes": "24 एपिसोड",
+        "episode_length": "45 मिनट",
+        "douban_score": "8.4"
+    },
+    {
+        "production_country_or_area": "चीनी मुख्य भूमि",
+        "type": "रोमांटिक",
+        "decade": "1980s",
+        "star": "फेनकियांग ओयंग",
+        "director": "Wang Fulin",
+        "title": "लाल हवेली में एक सपना",
+        "name_list": "Ouyang Fenqiang/Chen Xiaoxu/Deng Jie/Zhang Li",
+        "premiere_time": "1987-05-02 in the Chinese mainland",
+        "episodes": "36 एपिसोड",
+        "episode_length": "45 मिनट",
+        "douban_score": "9.6"
+    },
+    {
+        "production_country_or_area": "चीनी मुख्य भूमि",
+        "type": "sci-fi",
+        "decade": "2010 के दशक",
+        "star": "लियू चांग",
+        "director": "पाससी मु",
+        "title": "मैड हाउस",
+        "name_list": "Liu Chang/Lu Shan/Mei Ting/Liu Mintao",
+        "premiere_time": "2018-08-09 in the Chinese mainland",
+        "episodes": "24 एपिसोड",
+        "episode_length": "50 मिनट",
+        "douban_score": "7.7"
+    },
+    {
+        "production_country_or_area": "चीनी मुख्य भूमि",
+        "type": "sci-fi",
+        "decade": "2000 का दशक",
+        "star": "ली रुई",
+        "director": "झांग हुइमिन",
+        "title": "हैप्पी स्टार",
+        "name_list": "Li Rui/Xing Kaixuan/Wang Xinbo/Li Xue",
+        "premiere_time": "2004-08-04 in the Chinese mainland",
+        "episodes": "52 एपिसोड",
+        "episode_length": "48 minutes",
+        "douban_score": "8.3"
+    },
+    {
+        "production_country_or_area": "चीनी मुख्य भूमि",
+        "type": "सस्पेंस",
+        "decade": "2010 के दशक",
+        "star": "Pan Yueming",
+        "director": "वांग वेई",
+        "title": "डे एंड नाइट",
+        "name_list": "पैन युएमिंग, वांग लोंगझेंग, लियांग युआन और एलवी जियाओलिन",
+        "premiere_time": "2017-08-30 in the Chinese mainland",
+        "episodes": "32 एपिसोड",
+        "episode_length": "45 मिनट",
+        "douban_score": "9.0"
+    },
+    {
+        "production_country_or_area": "चीनी मुख्य भूमि",
+        "type": "सस्पेंस",
+        "decade": "2000 का दशक",
+        "star": "Zhou Jie",
+        "director": "Woo Ming-hoi",
+        "title": "यंग जस्टिस बाओ",
+        "name_list": "Zhou Jie/Shi Xiaolong/Ren Quan/Li Bingbing",
+        "premiere_time": "2000-09-04 in the Chinese mainland",
+        "episodes": "40 एपिसोड",
+        "episode_length": "45 मिनट",
+        "douban_score": "8.3"
+    },
+    {
+        "production_country_or_area": "चीनी मुख्य भूमि",
+        "type": "अपराध",
+        "decade": "2010 के दशक",
+        "star": "Lu Yi",
+        "director": "ली लू",
+        "title": "लोगों के नाम पर",
+        "name_list": "Lu Yi/Michelle Ke/Zhang Fengyi/Wu Gang",
+        "premiere_time": "2017-03-28 in the Chinese mainland",
+        "episodes": "52 एपिसोड",
+        "episode_length": "55 मिनट",
+        "douban_score": "8.3"
+    },
+    {
+        "production_country_or_area": "चीनी मुख्य भूमि",
+        "type": "अपराध",
+        "decade": "2000 का दशक",
+        "star": "Wang Zhifei",
+        "director": "जियांग वेई",
+        "title": "डायरी ऑफ डेथ",
+        "name_list": "वांग झिफेई, लिन शियू, डोंग योंग और ज़ेंग ली",
+        "premiere_time": "2004-10-01 in the Chinese mainland",
+        "episodes": "25 एपिसोड",
+        "episode_length": "43 minutes",
+        "douban_score": "8.9"
+    },
+    {
+        "production_country_or_area": "ताइवान, चीन",
+        "type": "फीचर",
+        "decade": "2010 के दशक",
+        "star": "Alyssa Chia",
+        "director": "लिन चुन-यांग",
+        "title": "द वर्ल्ड बिटवीन अस",
+        "name_list": "Alyssa Chia/James Wen/Wu Kang-ren/Tracy Chou",
+        "premiere_time": "2019-03-24 in Taiwan, China",
+        "episodes": "10 एपिसोड",
+        "episode_length": "55 मिनट",
+        "douban_score": "9.5"
+    },
+    {
+        "production_country_or_area": "ताइवान, चीन",
+        "type": "फीचर",
+        "decade": "2000 का दशक",
+        "star": "Alex To",
+        "director": "Chen Chun-liang",
+        "title": "नंबर 8 पॉनशॉप",
+        "name_list": "Alex To/Tien Hsin/Carol Cheng/Penny Lin",
+        "premiere_time": "2003-10-07 in Taiwan, China",
+        "episodes": "116 episodes",
+        "episode_length": "45 मिनट",
+        "douban_score": "7.9"
+    },
+    {
+        "production_country_or_area": "ताइवान, चीन",
+        "type": "फीचर",
+        "decade": "1990 के दशक",
+        "star": "स्टीव मा जिंगताओ",
+        "director": "शुई-चिंग लाई",
+        "title": "द हेवन स्वॉर्ड और ड्रैगन सेबर",
+        "name_list": "Steve Ma/Cecilia Yip/Kathy Chau/Suen Hing",
+        "premiere_time": "1994-03-10 in Taiwan, China",
+        "episodes": "64 episodes",
+        "episode_length": "50 मिनट",
+        "douban_score": "7.8"
+    },
+    {
+        "production_country_or_area": "ताइवान, चीन",
+        "type": "कॉमेडी",
+        "decade": "2010 के दशक",
+        "star": "Hsieh Ying-hsuan",
+        "director": "Yen Yi-wen",
+        "title": "The Making of an Ordinary Woman",
+        "name_list": "Hsieh Ying-hsuan/James Wen/Lan Weihua/Wu Yee-han",
+        "premiere_time": "2019-08-04 in Taiwan, China",
+        "episodes": "10 एपिसोड",
+        "episode_length": "50 मिनट",
+        "douban_score": "9.1"
+    },
+    {
+        "production_country_or_area": "ताइवान, चीन",
+        "type": "कॉमेडी",
+        "decade": "2000 का दशक",
+        "star": "Joseph Cheng",
+        "director": "Qu Youning",
+        "title": "इट स्टार्ट विद ए किस",
+        "name_list": "Joseph Cheng/Ariel Lin/Cyndi Chao/Tang Tsung Sheng",
+        "premiere_time": "2005-09-25 in Taiwan, China",
+        "episodes": "20 एपिसोड",
+        "episode_length": "68 minutes",
+        "douban_score": "8.9"
+    },
+    {
+        "production_country_or_area": "ताइवान, चीन",
+        "type": "कॉमेडी",
+        "decade": "1990 के दशक",
+        "star": "Lin Yizhen",
+        "director": "Derek Wu",
+        "title": "Bewitched",
+        "name_list": "Lin Yizhen/Peng Qiaqia/Sun Xing/Bai Bingbing",
+        "premiere_time": "1991-04-23 in Taiwan, China",
+        "episodes": "40 एपिसोड",
+        "episode_length": "40 minutes",
+        "douban_score": "8.2"
+    },
+    {
+        "production_country_or_area": "ताइवान, चीन",
+        "type": "एक्शन",
+        "decade": "2010 के दशक",
+        "star": "शी यान-वेन",
+        "director": "Steven Huang",
+        "title": "सु यानवेन का अंतिम संघर्ष",
+        "name_list": "Shi Yan-wen/The Man Behind The Mirror/Shengu Wenhuang",
+        "premiere_time": "2012-06-27 in Taiwan, China",
+        "episodes": "20 एपिसोड",
+        "episode_length": "58 minutes",
+        "douban_score": "9.5"
+    },
+    {
+        "production_country_or_area": "ताइवान, चीन",
+        "type": "एक्शन",
+        "decade": "2000 का दशक",
+        "star": "Dicky Cheung",
+        "director": "डेलॉन्ग लियांग",
+        "title": "ताईजी प्रोडिजी",
+        "name_list": "Dicky Cheung/Li Bingbing/Li Xiaolu/Alec Su",
+        "premiere_time": "2001-03-14 in Taiwan, China",
+        "episodes": "40 एपिसोड",
+        "episode_length": "45 मिनट",
+        "douban_score": "7.3"
+    },
+    {
+        "production_country_or_area": "ताइवान, चीन",
+        "type": "एक्शन",
+        "decade": "1990 के दशक",
+        "star": "Anita Yuen",
+        "director": "शुई-चिंग लाई",
+        "title": "हुआ मुलान",
+        "name_list": "Anita Yuen/Chiu Man-Cheuk/Suen Hing/Doze Niu",
+        "premiere_time": "1999-06-28 in Taiwan, China",
+        "episodes": "48 एपिसोड",
+        "episode_length": "45 मिनट",
+        "douban_score": "7.4"
+    },
+    {
+        "production_country_or_area": "ताइवान, चीन",
+        "type": "रोमांटिक",
+        "decade": "2010 के दशक",
+        "star": "Alice Ko",
+        "director": "हुआंग टिएन-जेन",
+        "title": "समड़े और वन ड़े",
+        "name_list": "ऐलिस को, ग्रेग हान, पैट्रिक शिह और कीनी येन",
+        "premiere_time": "2019-11-17 in Taiwan, China",
+        "episodes": "13 एपिसोड",
+        "episode_length": "72 मिनट",
+        "douban_score": "9.2"
+    },
+    {
+        "production_country_or_area": "ताइवान, चीन",
+        "type": "रोमांटिक",
+        "decade": "2000 का दशक",
+        "star": "बार्बी सू",
+        "director": "Tsai Yueh-Hsun",
+        "title": "मिटिओर गार्डन",
+        "name_list": "Barbie Hsu/Jerry Yan/Vic Chou/Ken Chu",
+        "premiere_time": "2001-04-21 in Taiwan, China",
+        "episodes": "20 एपिसोड",
+        "episode_length": "45 मिनट",
+        "douban_score": "8.2"
+    },
+    {
+        "production_country_or_area": "ताइवान, चीन",
+        "type": "रोमांटिक",
+        "decade": "1990 के दशक",
+        "star": "Angie Chiu",
+        "director": "Xia Zuhui",
+        "title": "The Legend of White Snake",
+        "name_list": "Angie Chiu/Cecilia Chan/Maggie Chan/Shi Naiwen",
+        "premiere_time": "1992-11-15 in Taiwan, China",
+        "episodes": "50 एपिसोड",
+        "episode_length": "49 मिनट",
+        "douban_score": "9.1"
+    },
+    {
+        "production_country_or_area": "ताइवान, चीन",
+        "type": "sci-fi",
+        "decade": "2010 के दशक",
+        "star": "को सु-यूं",
+        "director": "चेन वेई-लिंग",
+        "title": "बच्चों पर",
+        "name_list": "को सु-यूं, लियू ज़ी-चुआन, त्सेंग शाओ-ज़ोंग और लिंग सिन-यू",
+        "premiere_time": "7 जुलाई, 2018 को ताइवान, चीन में",
+        "episodes": "10 एपिसोड",
+        "episode_length": "50 मिनट",
+        "douban_score": "8.4"
+    },
+    {
+        "production_country_or_area": "ताइवान, चीन",
+        "type": "sci-fi",
+        "decade": "2000 का दशक",
+        "star": "George Hu",
+        "director": "Liao Fei-hung",
+        "title": "न्यू अल्टीमेट 2017",
+        "name_list": "जॉर्ज हू, डेविड लिन, बेंजामिन एच. वांग और शियाउ-शियांग ली",
+        "premiere_time": "2009-02-27 in Taiwan, China",
+        "episodes": "53 एपिसोड",
+        "episode_length": "72 मिनट",
+        "douban_score": "7.8"
+    },
+    {
+        "production_country_or_area": "ताइवान, चीन",
+        "type": "सस्पेंस",
+        "decade": "2010 के दशक",
+        "star": "Kuo Shu-Yao",
+        "director": "Chen Ho-yu",
+        "title": "किशोर मानसिक",
+        "name_list": "कुओ शू-याओ, काई फांक्सी, अकियो चेन और अलीना चेंग",
+        "premiere_time": "2 अप्रैल, 2017 को ताइवान, चीन में",
+        "episodes": "6 एपिसोड",
+        "episode_length": "45 मिनट",
+        "douban_score": "7.6"
+    },
+    {
+        "production_country_or_area": "ताइवान, चीन",
+        "type": "सस्पेंस",
+        "decade": "2000 का दशक",
+        "star": "Aaron Yan",
+        "director": "Lin Qingzhen",
+        "title": "Mysterious Incredible Terminator",
+        "name_list": "Aaron Yan/Alien Huang/Lu Tingwei/Emma Wu",
+        "premiere_time": "2008-11-07 in Taiwan, China",
+        "episodes": "16 एपिसोड",
+        "episode_length": "50 मिनट",
+        "douban_score": "7.6"
+    },
+    {
+        "production_country_or_area": "ताइवान, चीन",
+        "type": "अपराध",
+        "decade": "2010 के दशक",
+        "star": "Cash Chuang",
+        "director": "Chang Heng-ju",
+        "title": "Hate the Sin, Love the Sinner",
+        "name_list": "Cash Chuang/Xia Yuqiao/Cao Yanhao/Cai Shuzhen",
+        "premiere_time": "2019-06-08 in Taiwan, China",
+        "episodes": "13 एपिसोड",
+        "episode_length": "50 मिनट",
+        "douban_score": "8.0"
+    },
+    {
+        "production_country_or_area": "ताइवान, चीन",
+        "type": "अपराध",
+        "decade": "2000 का दशक",
+        "star": "विक चाउ",
+        "director": "Tsai Yueh-Hsun",
+        "title": "ब्लैक एंड व्हाइट",
+        "name_list": "Vic Zhou/Mark Chao/Ivy Chen/Janine Chang",
+        "premiere_time": "2009-04-11 in Taiwan, China",
+        "episodes": "24 एपिसोड",
+        "episode_length": "50 मिनट",
+        "douban_score": "8.1"
+    },
+    {
+        "production_country_or_area": "हांगकांग",
+        "type": "फीचर",
+        "decade": "2010 के दशक",
+        "star": "माइकल मिउ",
+        "director": "Jazz Boon",
+        "title": "लाइन वाकर",
+        "name_list": "Michael Miu/Charmaine Sheh/Raymond Lam/Sammy Sum",
+        "premiere_time": "2014-08-25 in Hong Kong, China",
+        "episodes": "30 एपिसोड",
+        "episode_length": "45 मिनट",
+        "douban_score": "8.3"
+    },
+    {
+        "production_country_or_area": "हांगकांग",
+        "type": "फीचर",
+        "decade": "2000 का दशक",
+        "star": "Bobby Au-yeung",
+        "director": "Mui Siu-ching",
+        "title": "फोरेंसिक हीरोज",
+        "name_list": "Bobby Au-yeung/Frankie Lam/Mung Yoyo/Linda Chung",
+        "premiere_time": "2006-06-13 in Hong Kong, China",
+        "episodes": "25 एपिसोड",
+        "episode_length": "45 मिनट",
+        "douban_score": "8.5"
+    },
+    {
+        "production_country_or_area": "हांगकांग",
+        "type": "फीचर",
+        "decade": "1990 के दशक",
+        "star": "Jordan Chan",
+        "director": "Lee Tim-sing",
+        "title": "The Deer and the Cauldron",
+        "name_list": "Jordan Chan/Steven Ma/Rain Lau/Noel Leung",
+        "premiere_time": "1998-06-01 in Hong Kong, China",
+        "episodes": "45 episodes",
+        "episode_length": "45 मिनट",
+        "douban_score": "8.8"
+    },
+    {
+        "production_country_or_area": "हांगकांग",
+        "type": "फीचर",
+        "decade": "1980s",
+        "star": "Chow Yun-fat",
+        "director": "Chiu Chun-keung",
+        "title": "द बंड",
+        "name_list": "Chow Yun-fat/Angie Chiu/Ray Lui/Lau Dan",
+        "premiere_time": "1980-03-10 in Hong Kong, China",
+        "episodes": "25 एपिसोड",
+        "episode_length": "45 मिनट",
+        "douban_score": "9.0"
+    },
+    {
+        "production_country_or_area": "हांगकांग",
+        "type": "कॉमेडी",
+        "decade": "2010 के दशक",
+        "star": "Bobby Au-yeung",
+        "director": "Dave Fong",
+        "title": "House Of Spirits",
+        "name_list": "Bobby Au-yeung/Wu Ting-yan/Helena Law/Woo Fung",
+        "premiere_time": "2016-06-27 in Hong Kong, China",
+        "episodes": "31 episodes",
+        "episode_length": "43 minutes",
+        "douban_score": "8.3"
+    },
+    {
+        "production_country_or_area": "हांगकांग",
+        "type": "कॉमेडी",
+        "decade": "2000 का दशक",
+        "star": "Louis Koo",
+        "director": "Simon Sek",
+        "title": "ए स्टेप इन द पास्ट",
+        "name_list": "Louis Koo/Kwong Wa/Jessica Hester Hsuan/Sonija Kwok",
+        "premiere_time": "2001-10-15 in Hong Kong, China",
+        "episodes": "40 एपिसोड",
+        "episode_length": "45 मिनट",
+        "douban_score": "8.4"
+    },
+    {
+        "production_country_or_area": "हांगकांग",
+        "type": "कॉमेडी",
+        "decade": "1990 के दशक",
+        "star": "Benny Chan",
+        "director": "सेज़े यू लाउ",
+        "title": "मंकी किंग",
+        "name_list": "Benny Chan/Kwong Wa/Wayne Lai/Mak Cheung-ching",
+        "premiere_time": "1998-10-26 in Hong Kong, China",
+        "episodes": "42 episodes",
+        "episode_length": "45 मिनट",
+        "douban_score": "7.8"
+    },
+    {
+        "production_country_or_area": "हांगकांग",
+        "type": "एक्शन",
+        "decade": "2010 के दशक",
+        "star": "बॉस्को वोंग",
+        "director": "चोंग वाई-किन",
+        "title": "Lives of Omission",
+        "name_list": "बॉस्को वोंग, माइकल त्से, फला चेन और केट त्सुई",
+        "premiere_time": "2011-08-01 in Hong Kong, China",
+        "episodes": "30 एपिसोड",
+        "episode_length": "45 मिनट",
+        "douban_score": "8.5"
+    },
+    {
+        "production_country_or_area": "हांगकांग",
+        "type": "एक्शन",
+        "decade": "2000 का दशक",
+        "star": "Benny Chan",
+        "director": "सेज़े यू लाउ",
+        "title": "League of Gods",
+        "name_list": "Benny Chan/Irene Wan/Chin Ka-lok/Yuen Lai-king",
+        "premiere_time": "2001-07-23 in Hong Kong, China",
+        "episodes": "40 एपिसोड",
+        "episode_length": "45 मिनट",
+        "douban_score": "8.1"
+    },
+    {
+        "production_country_or_area": "हांगकांग",
+        "type": "एक्शन",
+        "decade": "1990 के दशक",
+        "star": "डॉनी येन",
+        "director": "Benny Chan",
+        "title": "मुट्ठी ऑफ फ्यूरी",
+        "name_list": "Donnie Yen/Man Meng-yee/Kenny Lin",
+        "premiere_time": "1995-08-14 in Hong Kong, China",
+        "episodes": "30 एपिसोड",
+        "episode_length": "45 मिनट",
+        "douban_score": "8.2"
+    },
+    {
+        "production_country_or_area": "हांगकांग",
+        "type": "रोमांटिक",
+        "decade": "2010 के दशक",
+        "star": "बॉस्को वोंग",
+        "director": "चोंग वाई-किन",
+        "title": "Lives of Omission",
+        "name_list": "बॉस्को वोंग, माइकल त्से, फला चेन और केट त्सुई",
+        "premiere_time": "2011-08-01 in Hong Kong, China",
+        "episodes": "30 एपिसोड",
+        "episode_length": "45 मिनट",
+        "douban_score": "8.5"
+    },
+    {
+        "production_country_or_area": "हांगकांग",
+        "type": "रोमांटिक",
+        "decade": "2000 का दशक",
+        "star": "Nick Cheung",
+        "director": "Marco Law",
+        "title": "द लीजेंडरी फोर एसेस",
+        "name_list": "Nick Cheung/Gordon Lam/Bobby Au-yeung/Marco Ngai",
+        "premiere_time": "2000-08-07 in Hong Kong, China",
+        "episodes": "52 एपिसोड",
+        "episode_length": "45 मिनट",
+        "douban_score": "7.6"
+    },
+    {
+        "production_country_or_area": "हांगकांग",
+        "type": "रोमांटिक",
+        "decade": "1990 के दशक",
+        "star": "Louis Koo",
+        "director": "Lee Tim-sing",
+        "title": "Legends of the Condor Heroes",
+        "name_list": "Louis Koo/Carman Lee/Jason Pai/Bonnie Ngai",
+        "premiere_time": "1995-07-31 in Hong Kong, China",
+        "episodes": "32 एपिसोड",
+        "episode_length": "45 मिनट",
+        "douban_score": "9.1"
+    },
+    {
+        "production_country_or_area": "हांगकांग",
+        "type": "sci-fi",
+        "decade": "2010 के दशक",
+        "star": "Elaine Ng",
+        "director": "वाई-चिंग टैम",
+        "title": "द रिपब्लिक",
+        "name_list": "Haoran Liu/Thomas Lam/Thor Lok/Sofiee Ng",
+        "premiere_time": "2019-08-05 in Hong Kong, China",
+        "episodes": "13 एपिसोड",
+        "episode_length": "45 मिनट",
+        "douban_score": "7.4"
+    },
+    {
+        "production_country_or_area": "हांगकांग",
+        "type": "सस्पेंस",
+        "decade": "2010 के दशक",
+        "star": "Kwok Chun-on",
+        "director": "Amy Wong",
+        "title": "Black Heart White Soul",
+        "name_list": "Kwok Chun-on/Ng Cheuk-hei/Kristal Tin/Kiki Sheung",
+        "premiere_time": "2014-07-14 in Hong Kong, China",
+        "episodes": "30 एपिसोड",
+        "episode_length": "40 minutes",
+        "douban_score": "7.7"
+    },
+    {
+        "production_country_or_area": "हांगकांग",
+        "type": "सस्पेंस",
+        "decade": "2000 का दशक",
+        "star": "Bobby Au-yeung",
+        "director": "Siu Hin-Fai",
+        "title": "विटनेस तो प्रॉसिक्यूशन 2",
+        "name_list": "बॉबी औ-यूंग, चारमाइन शेह, जॉयस तांग और स्टीफन एयू",
+        "premiere_time": "2003-02-24 in Hong Kong, China",
+        "episodes": "22 एपिसोड",
+        "episode_length": "45 मिनट",
+        "douban_score": "7.8"
+    },
+    {
+        "production_country_or_area": "हांगकांग",
+        "type": "अपराध",
+        "decade": "2010 के दशक",
+        "star": "माइकल मिउ",
+        "director": "Jazz Boon",
+        "title": "लाइन वाकर",
+        "name_list": "Michael Miu/Charmaine Sheh/Raymond Lam/Sammy Sum",
+        "premiere_time": "2014-08-25 in Hong Kong, China",
+        "episodes": "30 एपिसोड",
+        "episode_length": "45 मिनट",
+        "douban_score": "8.3"
+    },
+    {
+        "production_country_or_area": "हांगकांग",
+        "type": "अपराध",
+        "decade": "2000 का दशक",
+        "star": "Bobby Au-yeung",
+        "director": "Mui Siu-ching",
+        "title": "फोरेंसिक हीरोज",
+        "name_list": "Bobby Au-yeung/Frankie Lam/Mung Yoyo/Linda Chung",
+        "premiere_time": "2006-06-13 in Hong Kong, China",
+        "episodes": "25 एपिसोड",
+        "episode_length": "45 मिनट",
+        "douban_score": "8.5"
+    },
+    {
+        "production_country_or_area": "अमेरिका",
+        "type": "फीचर",
+        "decade": "2010 के दशक",
+        "star": "Isaac Hempstead-Wright",
+        "director": "Timothy Van Patten",
+        "title": "Game of Thrones Season 1",
+        "name_list": "Isaac Hempstead-Wright/Charles Dance/John C. Bradley",
+        "premiere_time": "2011-04-17 in America",
+        "episodes": "10 एपिसोड",
+        "episode_length": "60 मिनट",
+        "douban_score": "9.4"
+    },
+    {
+        "production_country_or_area": "अमेरिका",
+        "type": "फीचर",
+        "decade": "2000 का दशक",
+        "star": "Damien Lewis",
+        "director": "डेविड फ्रैंकेल",
+        "title": "बैंड ऑफ ब्रदर्स",
+        "name_list": "डेमियन लुईस, डॉनी वाह्लबर्ग और रॉन लिविंगस्टन",
+        "premiere_time": "2001-09-09 in America",
+        "episodes": "10 एपिसोड",
+        "episode_length": "70 मिनट",
+        "douban_score": "9.6"
+    },
+    {
+        "production_country_or_area": "अमेरिका",
+        "type": "फीचर",
+        "decade": "1990 के दशक",
+        "star": "Jeremy Brett",
+        "director": "John Madden",
+        "title": "The Complete Sherlock Holmes",
+        "name_list": "Jeremy Brett/Edward Hardwick",
+        "premiere_time": "1991-02-21 in America",
+        "episodes": "12 एपिसोड",
+        "episode_length": "50 मिनट",
+        "douban_score": "9.5"
+    },
+    {
+        "production_country_or_area": "अमेरिका",
+        "type": "कॉमेडी",
+        "decade": "2010 के दशक",
+        "star": "Jim Parsons",
+        "director": "मार्क सेंड्रोव्स्की",
+        "title": "बिग बैंग थ्योरी के सीजन 12",
+        "name_list": "जिम पार्सन्स, जॉनी गैलेकी और केली कुओको",
+        "premiere_time": "2018-09-24 in America",
+        "episodes": "24 एपिसोड",
+        "episode_length": "22 मिनट",
+        "douban_score": "9.6"
+    },
+    {
+        "production_country_or_area": "अमेरिका",
+        "type": "कॉमेडी",
+        "decade": "2000 का दशक",
+        "star": "Jim Parsons",
+        "director": "James Burrows",
+        "title": "बिग बैंग थ्योरी के सीजन 1",
+        "name_list": "जिम पार्सन्स, जॉनी गैलेकी और केली कुओको",
+        "premiere_time": "2007-09-24 in America",
+        "episodes": "17 एपिसोड",
+        "episode_length": "21 मिनट",
+        "douban_score": "9.4"
+    },
+    {
+        "production_country_or_area": "अमेरिका",
+        "type": "कॉमेडी",
+        "decade": "1990 के दशक",
+        "star": "Jennifer Aniston",
+        "director": "डेविड क्रेन",
+        "title": "फ्रेंड्स के सीजन 1",
+        "name_list": "Jennifer Aniston/Courteney Cox/Lisa Kudrow",
+        "premiere_time": "22 सितंबर, 1994 को अमेरिका में",
+        "episodes": "24 एपिसोड",
+        "episode_length": "30 मिनट",
+        "douban_score": "9.6"
+    },
+    {
+        "production_country_or_area": "अमेरिका",
+        "type": "एक्शन",
+        "decade": "2010 के दशक",
+        "star": "Wagner Moura",
+        "director": "Andrés Baiz",
+        "title": "नार्कोस",
+        "name_list": "वैगनर मौरा, जोआना क्रिस्टी और मौरिस कॉम्पटे",
+        "premiere_time": "2015-08-28 in America",
+        "episodes": "10 एपिसोड",
+        "episode_length": "49 मिनट",
+        "douban_score": "9.3"
+    },
+    {
+        "production_country_or_area": "अमेरिका",
+        "type": "एक्शन",
+        "decade": "2000 का दशक",
+        "star": "Wentworth Miller",
+        "director": "ब्रेट रैटनर",
+        "title": "प्रिजन ब्रेक के पहले सीजन",
+        "name_list": "Wentworth Miller, Dominic Purcell, and Peter Stormare.",
+        "premiere_time": "2005-09-01 in America",
+        "episodes": "22 एपिसोड",
+        "episode_length": "42 minutes",
+        "douban_score": "9.3"
+    },
+    {
+        "production_country_or_area": "अमेरिका",
+        "type": "रोमांटिक",
+        "decade": "2010 के दशक",
+        "star": "Anne Hathaway",
+        "director": "John Carney",
+        "title": "Modern Love Season 1",
+        "name_list": "ऐनी हैथवे, एंड्रयू स्कॉट और टीना फे",
+        "premiere_time": "2019-10-18 in America",
+        "episodes": "8 episodes",
+        "episode_length": "30 मिनट",
+        "douban_score": "8.7"
+    },
+    {
+        "production_country_or_area": "अमेरिका",
+        "type": "रोमांटिक",
+        "decade": "2000 का दशक",
+        "star": "Marcia Cross",
+        "director": "Larry Shaw",
+        "title": "Desperate Housewives Season 1",
+        "name_list": "Marcia Klaus/Felicity Hoffmann/Eva Longoria",
+        "premiere_time": "2004-10-03 in America",
+        "episodes": "23 episodes",
+        "episode_length": "45 मिनट",
+        "douban_score": "8.8"
+    },
+    {
+        "production_country_or_area": "अमेरिका",
+        "type": "रोमांटिक",
+        "decade": "1990 के दशक",
+        "star": "Jennifer Aniston",
+        "director": "डेविड क्रेन",
+        "title": "फ्रेंड्स के सीजन 1",
+        "name_list": "Jennifer Aniston/Courteney Cox/Lisa Kudrow",
+        "premiere_time": "22 सितंबर, 1994 को अमेरिका में",
+        "episodes": "24 एपिसोड",
+        "episode_length": "30 मिनट",
+        "douban_score": "9.6"
+    },
+    {
+        "production_country_or_area": "अमेरिका",
+        "type": "sci-fi",
+        "decade": "2010 के दशक",
+        "star": "Evan Rachel Wood",
+        "director": "जोनाथन नोलन",
+        "title": "वेस्टवर्ल्ड सीजन 1",
+        "name_list": "Evan Rachel Wood/Anthony Hopkins/Ed Harris",
+        "premiere_time": "2016-10-02 in America",
+        "episodes": "10 एपिसोड",
+        "episode_length": "60 मिनट",
+        "douban_score": "8.9"
+    },
+    {
+        "production_country_or_area": "अमेरिका",
+        "type": "sci-fi",
+        "decade": "2000 का दशक",
+        "star": "Anna Toff",
+        "director": "Alex Graves",
+        "title": "Fringe Season 1",
+        "name_list": "Anna Toff/John Nobel/Joshua Jackson",
+        "premiere_time": "2008-09-23 in America",
+        "episodes": "20 एपिसोड",
+        "episode_length": "45 मिनट",
+        "douban_score": "8.6"
+    },
+    {
+        "production_country_or_area": "अमेरिका",
+        "type": "सस्पेंस",
+        "decade": "2010 के दशक",
+        "star": "Hugh Dancy",
+        "director": "David Slade",
+        "title": "Hannibal Season 1",
+        "name_list": "Hugh Dancy/Mads Mikkelsen/Caroline Dhavernas",
+        "premiere_time": "2013-04-04 in America",
+        "episodes": "13 एपिसोड",
+        "episode_length": "43 minutes",
+        "douban_score": "8.3"
+    },
+    {
+        "production_country_or_area": "अमेरिका",
+        "type": "सस्पेंस",
+        "decade": "2000 का दशक",
+        "star": "मैथ्यू फॉक्स",
+        "director": "J. J. Abrams",
+        "title": "लॉस्ट के सीजन 1",
+        "name_list": "Matthew Fox/Jorge Garcia/Daniel Dae Kim",
+        "premiere_time": "2004-09-22 in America",
+        "episodes": "25 एपिसोड",
+        "episode_length": "42 minutes",
+        "douban_score": "8.5"
+    },
+    {
+        "production_country_or_area": "अमेरिका",
+        "type": "अपराध",
+        "decade": "2010 के दशक",
+        "star": "Wagner Moura",
+        "director": "Andrés Baiz",
+        "title": "नार्कोस",
+        "name_list": "वैगनर मौरा, जोआना क्रिस्टी और मौरिस कॉम्पटे",
+        "premiere_time": "2015-08-28 in America",
+        "episodes": "10 एपिसोड",
+        "episode_length": "49 मिनट",
+        "douban_score": "9.3"
+    },
+    {
+        "production_country_or_area": "अमेरिका",
+        "type": "अपराध",
+        "decade": "2000 का दशक",
+        "star": "Brian Collanston",
+        "director": "Adam Bernstein",
+        "title": "Breaking Bad Season 1",
+        "name_list": "Brian Collanston/Aaron Paul/Anna Gon",
+        "premiere_time": "2008-01-20 in America",
+        "episodes": "7 episodes",
+        "episode_length": "50 मिनट",
+        "douban_score": "9.0"
+    },
+    {
+        "production_country_or_area": "जापान",
+        "type": "फीचर",
+        "decade": "2010 के दशक",
+        "star": "Satomi Ishihara",
+        "director": "आयुको त्सुकाहारा",
+        "title": "अप्राकृतिक",
+        "name_list": "Satomi Ishihara/Iura Arata/Kubota Masataka",
+        "premiere_time": "2018-01-12 in Japan",
+        "episodes": "10 एपिसोड",
+        "episode_length": "45 मिनट",
+        "douban_score": "9.4"
+    },
+    {
+        "production_country_or_area": "जापान",
+        "type": "फीचर",
+        "decade": "2000 का दशक",
+        "star": "Kobayashi Kaoru",
+        "director": "Joji Matsuoka",
+        "title": "Midnight Food Store",
+        "name_list": "Kobayashi Kaoru/Sudou Risa/Tomoko Tabata",
+        "premiere_time": "2009-10-09 in Japan",
+        "episodes": "10 एपिसोड",
+        "episode_length": "25 minutes",
+        "douban_score": "9.2"
+    },
+    {
+        "production_country_or_area": "जापान",
+        "type": "फीचर",
+        "decade": "1990 के दशक",
+        "star": "Kazuki Futami",
+        "director": "तारू सकामोटो",
+        "title": "बी-रोबो कबुतैक",
+        "name_list": "Kazuki Futami/Miyabi Kimura/Koide Yuka",
+        "premiere_time": "23 फरवरी, 1997 को जापान में",
+        "episodes": "52 एपिसोड",
+        "episode_length": "22 मिनट",
+        "douban_score": "8.4"
+    },
+    {
+        "production_country_or_area": "जापान",
+        "type": "कॉमेडी",
+        "decade": "2010 के दशक",
+        "star": "Kento Kaku",
+        "director": "फुकुदा युइची",
+        "title": "From Today, It's My Turn!!",
+        "name_list": "Kento Kaku/Kentarō Itō/Nana Seino",
+        "premiere_time": "2018-10-14 in Japan",
+        "episodes": "10 एपिसोड",
+        "episode_length": "46 मिनट",
+        "douban_score": "9.2"
+    },
+    {
+        "production_country_or_area": "जापान",
+        "type": "कॉमेडी",
+        "decade": "2000 का दशक",
+        "star": "Juri Ueno",
+        "director": "Hideki Takeuchi",
+        "title": "Nodame Cantabile",
+        "name_list": "Juri Ueno/Tamaki Hiroshi/Nagayama Eita",
+        "premiere_time": "2006-10-16 in Japan",
+        "episodes": "11 एपिसोड",
+        "episode_length": "47 मिनट",
+        "douban_score": "9.1"
+    },
+    {
+        "production_country_or_area": "जापान",
+        "type": "कॉमेडी",
+        "decade": "1990 के दशक",
+        "star": "ताकुया किमुरा",
+        "director": "कोजो नागायामा",
+        "title": "लॉन्ग वेकेशन",
+        "name_list": "ताकुया किमुरा, यामागुची टोमोको और ताकेनौची युताका",
+        "premiere_time": "15 अप्रैल, 1996 को जापान में",
+        "episodes": "11 एपिसोड",
+        "episode_length": "54 मिनट",
+        "douban_score": "9.2"
+    },
+    {
+        "production_country_or_area": "जापान",
+        "type": "एक्शन",
+        "decade": "2010 के दशक",
+        "star": "जून मात्सुमोतो",
+        "director": "शिंस्के सातो",
+        "title": "लकी सेवन",
+        "name_list": "Jun Matsumoto/Nagayama Eita/Riisa Naka",
+        "premiere_time": "2012-01-16 in Japan",
+        "episodes": "10 एपिसोड",
+        "episode_length": "54 मिनट",
+        "douban_score": "7.3"
+    },
+    {
+        "production_country_or_area": "जापान",
+        "type": "एक्शन",
+        "decade": "2000 का दशक",
+        "star": "Takuji Kawakubo",
+        "director": "Kazuya Konaka",
+        "title": "अल्ट्रामैन नेक्सस",
+        "name_list": "Takuji Kawakubo/Yusuke Kirishima/Masato Uchiyama",
+        "premiere_time": "2004-10-02 in Japan",
+        "episodes": "37 एपिसोड",
+        "episode_length": "24 minutes",
+        "douban_score": "9.4"
+    },
+    {
+        "production_country_or_area": "जापान",
+        "type": "रोमांटिक",
+        "decade": "2010 के दशक",
+        "star": "Yahagi Honoka",
+        "director": "नगाता कोटो",
+        "title": "फॉल इन लव आट फर्स्ट किस्स",
+        "name_list": "याहागी होनोका, युकी फुरुकावा और यामादा युकी",
+        "premiere_time": "29 मार्च 2013 को जापान",
+        "episodes": "16 एपिसोड",
+        "episode_length": "50 मिनट",
+        "douban_score": "8.4"
+    },
+    {
+        "production_country_or_area": "जापान",
+        "type": "रोमांटिक",
+        "decade": "2000 का दशक",
+        "star": "Tomohisa Yamashita",
+        "director": "गाकू नरीता",
+        "title": "ऑपरेशन लव",
+        "name_list": "तोमोहिसा यामाशिता, मासामी नागासावा और नाओतो फुजिकी",
+        "premiere_time": "2007-04-16 in Japan",
+        "episodes": "11 एपिसोड",
+        "episode_length": "50 मिनट",
+        "douban_score": "8.8"
+    },
+    {
+        "production_country_or_area": "जापान",
+        "type": "रोमांटिक",
+        "decade": "1990 के दशक",
+        "star": "Honami Suzuki",
+        "director": "कोजो नागायामा",
+        "title": "टोक्यो लव स्टोरी",
+        "name_list": "Honami Suzuki/Yūji Oda/Yōsuke Eguchi",
+        "premiere_time": "1 जनवरी, 1991 (जापान)",
+        "episodes": "11 एपिसोड",
+        "episode_length": "47 मिनट",
+        "douban_score": "9.4"
+    },
+    {
+        "production_country_or_area": "जापान",
+        "type": "sci-fi",
+        "decade": "2010 के दशक",
+        "star": "युकी फुरुकावा",
+        "director": "टेन शिमोयामा",
+        "title": "एरेसड",
+        "name_list": "युकी फुरुकावा, मियो युकी और जिन शिरासू",
+        "premiere_time": "2017-12-15 in Japan",
+        "episodes": "12 एपिसोड",
+        "episode_length": "30 मिनट",
+        "douban_score": "8.1"
+    },
+    {
+        "production_country_or_area": "जापान",
+        "type": "sci-fi",
+        "decade": "2000 का दशक",
+        "star": "Osawa Takao",
+        "director": "हीराकावा युइचिरो",
+        "title": "जिन",
+        "name_list": "Osawa Takao/Miki Nakatani/Ayase Haruka",
+        "premiere_time": "2009-10-11 in Japan",
+        "episodes": "11 एपिसोड",
+        "episode_length": "54 मिनट",
+        "douban_score": "9.1"
+    },
+    {
+        "production_country_or_area": "जापान",
+        "type": "सस्पेंस",
+        "decade": "2010 के दशक",
+        "star": "Matsu Takako",
+        "director": "नोबुहिरो दोई",
+        "title": "चौकड़ी",
+        "name_list": "Matsu Takako/Mitsushima Hikari/Takahashi Issey",
+        "premiere_time": "2017-01-17 in Japan",
+        "episodes": "10 एपिसोड",
+        "episode_length": "45 मिनट",
+        "douban_score": "9.1"
+    },
+    {
+        "production_country_or_area": "जापान",
+        "type": "सस्पेंस",
+        "decade": "2000 का दशक",
+        "star": "Fukuyama Masaharu",
+        "director": "Hiroshi Nishitani",
+        "title": "Galileo",
+        "name_list": "Fukuyama Masaharu/Kou Shibasaki/Kazuki Kitamura",
+        "premiere_time": "2007-10-15 in Japan",
+        "episodes": "10 एपिसोड",
+        "episode_length": "54 मिनट",
+        "douban_score": "8.2"
+    },
+    {
+        "production_country_or_area": "जापान",
+        "type": "अपराध",
+        "decade": "2010 के दशक",
+        "star": "मसातो सकाई",
+        "director": "Jun'ichi Ishikawa",
+        "title": "लीगल हाई",
+        "name_list": "Sakai Masato/Aragaki Yui/Namase Katsuhisa",
+        "premiere_time": "2012-04-17 in Japan",
+        "episodes": "11 एपिसोड",
+        "episode_length": "54 मिनट",
+        "douban_score": "9.4"
+    },
+    {
+        "production_country_or_area": "जापान",
+        "type": "अपराध",
+        "decade": "2000 का दशक",
+        "star": "एरिका टोडा",
+        "director": "Hiroaki Matsuyama",
+        "title": "लॉयर गेम",
+        "name_list": "Erika Toda/Shota Matsuda/Michiko Kichise",
+        "premiere_time": "2007-04-14 in Japan",
+        "episodes": "11 एपिसोड",
+        "episode_length": "36 minutes",
+        "douban_score": "8.4"
+    },
+    {
+        "production_country_or_area": "Korea",
+        "type": "फीचर",
+        "decade": "2010 के दशक",
+        "star": "ह्यून बिन",
+        "director": "Lee Jung-hyo",
+        "title": "क्रैश लैंडिंग ऑन यू",
+        "name_list": "Hyun Bin/Son Ye-jin/Seo Ji-hye/Kim Jung-hyun",
+        "premiere_time": "2019-12-14 in South Korea",
+        "episodes": "16 एपिसोड",
+        "episode_length": "70 मिनट",
+        "douban_score": "8.3"
+    },
+    {
+        "production_country_or_area": "Korea",
+        "type": "फीचर",
+        "decade": "2000 का दशक",
+        "star": "Lee Young-ae",
+        "director": "Lee Byung Hoon",
+        "title": "डे जंग ग्यूम",
+        "name_list": "Lee Young-ae/Ji Jin-hee/Lim Ho/Hong Ri-na",
+        "premiere_time": "15 सितंबर, 2003 को दक्षिण कोरिया में",
+        "episodes": "54 एपिसोड",
+        "episode_length": "60 मिनट",
+        "douban_score": "8.2"
+    },
+    {
+        "production_country_or_area": "Korea",
+        "type": "फीचर",
+        "decade": "1990 के दशक",
+        "star": "Yum Jung-ah",
+        "director": "Lee Kwang-hoon",
+        "title": "Project Runway",
+        "name_list": "Yum Jung-ah/Gun Jang-dong/Han Jae-seok/Kim Nam-joo",
+        "premiere_time": "1997-04-09 in South Korea",
+        "episodes": "36 एपिसोड",
+        "episode_length": "50 मिनट",
+        "douban_score": "8.4"
+    },
+    {
+        "production_country_or_area": "Korea",
+        "type": "कॉमेडी",
+        "decade": "2010 के दशक",
+        "star": "Sung Dong-il",
+        "director": "शिन वोन-हो",
+        "title": "रिप्लाई 1988",
+        "name_list": "Sung Dong-il/Lee Il-hwa/Ra Mi-ran/Kim Sung-kyun",
+        "premiere_time": "2015-11-06 in South Korea",
+        "episodes": "20 एपिसोड",
+        "episode_length": "90 मिनट",
+        "douban_score": "9.7"
+    },
+    {
+        "production_country_or_area": "Korea",
+        "type": "कॉमेडी",
+        "decade": "2000 का दशक",
+        "star": "Kim Sun-a",
+        "director": "किम यूं-चियोल",
+        "title": "माई लवली सैम सून",
+        "name_list": "किम सन-ए, ह्यून बिन, जंग रियो-वोन और डैनियल हेनी",
+        "premiere_time": "2005-06-01 in South Korea",
+        "episodes": "16 एपिसोड",
+        "episode_length": "60 मिनट",
+        "douban_score": "8.5"
+    },
+    {
+        "production_country_or_area": "Korea",
+        "type": "एक्शन",
+        "decade": "2010 के दशक",
+        "star": "Lee Min-ho",
+        "director": "जिन ह्यूक",
+        "title": "सिटी हंटर",
+        "name_list": "Lee Min-ho/ParkMin-young/Lee Jun-hyuk/Koo Hara",
+        "premiere_time": "2011-05-25 in South Korea",
+        "episodes": "20 एपिसोड",
+        "episode_length": "65 मिनट",
+        "douban_score": "8.1"
+    },
+    {
+        "production_country_or_area": "Korea",
+        "type": "एक्शन",
+        "decade": "2000 का दशक",
+        "star": "ली जून-गि",
+        "director": "ली योंग-सुक",
+        "title": "इल्जिमाई",
+        "name_list": "ली जून-गि, हान ह्यो-जू, ली यंग-आह और पार्क सी-हू",
+        "premiere_time": "2008-05-21 in South Korea",
+        "episodes": "20 एपिसोड",
+        "episode_length": "60 मिनट",
+        "douban_score": "8.5"
+    },
+    {
+        "production_country_or_area": "Korea",
+        "type": "रोमांटिक",
+        "decade": "2010 के दशक",
+        "star": "Kim Soo Hyun",
+        "director": "Jang Tae-yoo",
+        "title": "माय लव फ्रॉम द",
+        "name_list": "किम सो ह्यून, जून जी-ह्यून, पार्क हे जिन और यू इन ना",
+        "premiere_time": "2013-12-18 in South Korea",
+        "episodes": "21 episodes",
+        "episode_length": "60 मिनट",
+        "douban_score": "8.3"
+    },
+    {
+        "production_country_or_area": "Korea",
+        "type": "रोमांटिक",
+        "decade": "2000 का दशक",
+        "star": "सॉन्ग हाय-क्यो",
+        "director": "प्यो मिन-सो",
+        "title": "फुल हाउस",
+        "name_list": "सॉन्ग हाय-क्यो, जंग जी-हून, किम सुंग-सो और हान दा-गाम",
+        "premiere_time": "2004-07-14 in South Korea",
+        "episodes": "16 एपिसोड",
+        "episode_length": "66 मिनट",
+        "douban_score": "8.1"
+    },
+    {
+        "production_country_or_area": "Korea",
+        "type": "रोमांटिक",
+        "decade": "1990 के दशक",
+        "star": "Choi Jin-sil",
+        "director": "ली चांग-हून",
+        "title": "स्टार इन माई हार्ट",
+        "name_list": "Choi Jin-sil/Ahn Jae-wook/Cha In-pyo/Jeon Do-yeon",
+        "premiere_time": "10 मार्च, 1997 को दक्षिण कोरिया में",
+        "episodes": "16 एपिसोड",
+        "episode_length": "60 मिनट",
+        "douban_score": "8.2"
+    },
+    {
+        "production_country_or_area": "Korea",
+        "type": "sci-fi",
+        "decade": "2010 के दशक",
+        "star": "ह्यून बिन",
+        "director": "शिन वू-चुल",
+        "title": "सीक्रेट गार्डन",
+        "name_list": "Hyun Bin/Ha Ji-won/Yoon Sang-hyun/Kim Sa-rang",
+        "premiere_time": "2010-11-13 in South Korea",
+        "episodes": "20 एपिसोड",
+        "episode_length": "65 मिनट",
+        "douban_score": "8.4"
+    },
+    {
+        "production_country_or_area": "Korea",
+        "type": "सस्पेंस",
+        "decade": "2010 के दशक",
+        "star": "ली जे-हून",
+        "director": "Kim Won-seok",
+        "title": "सिग्नल",
+        "name_list": "Je-hoon Lee, Cho Jin-woong, Hye-soo Kim, and Hyeong-seong Jang,",
+        "premiere_time": "2016-01-22 in South Korea",
+        "episodes": "16 एपिसोड",
+        "episode_length": "64 minutes",
+        "douban_score": "9.2"
+    },
+    {
+        "production_country_or_area": "Korea",
+        "type": "अपराध",
+        "decade": "2010 के दशक",
+        "star": "Im Si-wan",
+        "director": "ली चांग-ही",
+        "title": "नरक अन्य लोग हैं",
+        "name_list": "इम सी-वान, ली डोंग-वूक, ली जंग-यूं और ली ह्यून-वूक",
+        "premiere_time": "31 अगस्त, 2019 को दक्षिण कोरिया में",
+        "episodes": "10 एपिसोड",
+        "episode_length": "60 मिनट",
+        "douban_score": "8.4"
+    },
+    {
+        "production_country_or_area": "Korea",
+        "type": "अपराध",
+        "decade": "2000 का दशक",
+        "star": "ली जून-गि",
+        "director": "जिन मिन किम",
+        "title": "थे टाइम बिटवीन डॉग एंड वुल्फ",
+        "name_list": "Lee Joon-gi/Nam Sang-mi/Jung Kyung-ho/Choi Jae-Sung",
+        "premiere_time": "2007-07-18 in South Korea",
+        "episodes": "16 एपिसोड",
+        "episode_length": "60 मिनट",
+        "douban_score": "8.5"
+    }
+]

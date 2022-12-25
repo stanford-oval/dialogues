@@ -1,952 +1,912 @@
-
-    {
-        "name":"Hotel Heritage",
-        "area":"Airport Zone Kolkata",
-        "star":3,
-        "pricerange":"fair",
-        "hotel_type":"resort",
-        "room_type":"Executive AC",
-        "parking":"charge",
-        "room_charge":"Rs. 5044",
-        "address":"Near Airport, Opp HDFC Bank, VIP Road, Raghunathpur, Deshbandhunagar",
-        "phone_number":"+91 2925491042",
-        "score":2.5
-    }
-
-    {
-        "name":"Flora Airport Hotel",
-        "area":"Cochin International Airport Kochi",
-        "star":4,
-        "pricerange":"a bit more expensive",
-        "hotel_type":"resort",
-        "room_type":"Flora Suite",
-        "parking":"charge",
-        "room_charge":"Rs. 6948",
-        "address":"Opp. Cochin International Airport, Nedumbassery, Nayathodu",
-        "phone_number":"+91 990 6168456",
-        "score":4.0
-    }
-
-    {
-        "name":"Kochi Marriott Hotel",
-        "area":"Kalamassery Kochi",
-        "star":5,
-        "pricerange":"fair",
-        "hotel_type":"resort",
-        "room_type":"Deluxe Room",
-        "parking":"free",
-        "room_charge":"Rs. 6164",
-        "address":"Lulu International Shopping Mall, 34\/1111 N. H. 47, Edappally",
-        "phone_number":"053-53476417",
-        "score":4.5
-    }
-
-    {
-        "name":"Quality Airport Hotel",
-        "area":"Cochin International Airport Kochi",
-        "star":3,
-        "pricerange":"a bit more expensive",
-        "hotel_type":"resort",
-        "room_type":"Deluxe Room",
-        "parking":"charge",
-        "room_charge":"Rs. 2667",
-        "address":"Near Cochin International Airport, Nayathode.P.O. Angamaly",
-        "phone_number":"05923882552",
-        "score":4.0
-    }
-
-    {
-        "name":"The Peerless Inn-Sarovar Group Hotel",
-        "area":"Esplanade-New market Kolkata",
-        "star":4,
-        "pricerange":"a bit more expensive",
-        "hotel_type":"business",
-        "room_type":"Suite Room",
-        "parking":"charge",
-        "room_charge":"Rs. 6314",
-        "address":"12, Jawaharlal Nehru Road",
-        "phone_number":"+91 2731148791",
-        "score":3.5
-    }
-
-    {
-        "name":"Saj Earth Resort - Airport Hotel",
-        "area":"Cochin International Airport Kochi",
-        "star":5,
-        "pricerange":"a bit more expensive",
-        "hotel_type":"business",
-        "room_type":"Standard Room",
-        "parking":"free",
-        "room_charge":"Rs. 5583",
-        "address":"Saj Junction, Nedumbassery, Ernakulam District",
-        "phone_number":"+91 4708234463",
-        "score":4.0
-    }
-
-    {
-        "name":"Hotel Pushpak International",
-        "area":"Park Street and Vicinity Kolkata",
-        "star":2,
-        "pricerange":"a bit more expensive",
-        "hotel_type":"business",
-        "room_type":"Standard Rooms",
-        "parking":"free",
-        "room_charge":"Rs. 2114",
-        "address":"10, KYD Street",
-        "phone_number":"+91 7272285922",
-        "score":2.5
-    }
-
-    {
-        "name":"Hotel Park Inn",
-        "area":"Park Street and Vicinity Kolkata",
-        "star":2,
-        "pricerange":"fair",
-        "hotel_type":"business",
-        "room_type":"Standard Room",
-        "parking":"charge",
-        "room_charge":"Rs. 2814",
-        "address":"10\/1, Talbagan Lane",
-        "phone_number":"+91 289 9207220",
-        "score":3.0
-    }
-
-    {
-        "name":"Lotus 8 - Airport Hotel",
-        "area":"Cochin International Airport Kochi",
-        "star":4,
-        "pricerange":"a bit more expensive",
-        "hotel_type":"business",
-        "room_type":"Suite",
-        "parking":"charge",
-        "room_charge":"Rs. 4731",
-        "address":"Opp. Cochin International Airport, Nedumbassery",
-        "phone_number":"+91 8458487424",
-        "score":3.5
-    }
-
-    {
-        "name":"Hotel Indismart",
-        "area":"Salt Lake Sector 5 Kolkata",
-        "star":3,
-        "pricerange":"fair",
-        "hotel_type":"resort",
-        "room_type":"Executive",
-        "parking":"charge",
-        "room_charge":"Rs. 5947",
-        "address":"X-1,8\/3 Block EP, Electronics Complex, Salt Lake, Sector-V",
-        "phone_number":"08157 958909",
-        "score":3.5
-    }
-
-    {
-        "name":"Pride Plaza Hotel Kolkata",
-        "area":"New Town - Rajarhat Kolkata",
-        "star":5,
-        "pricerange":"a bit more expensive",
-        "hotel_type":"resort",
-        "room_type":"Deluxe Room",
-        "parking":"free",
-        "room_charge":"Rs. 2702",
-        "address":"BG 12,Action Area-1B, New Town Kolkata",
-        "phone_number":"+91 2607182665",
-        "score":3.5
-    }
-
-    {
-        "name":"By The Lake - A Sterling Resort",
-        "area":"Near Kodai Lake Kodaikanal",
-        "star":4,
-        "pricerange":"a bit more expensive",
-        "hotel_type":"business",
-        "room_type":"Premiere Room",
-        "parking":"charge",
-        "room_charge":"Rs. 4844",
-        "address":"P.B. No 44, Gymkhana Road",
-        "phone_number":"+91 4725514758",
-        "score":4.0
-    }
-
-    {
-        "name":"By The Valley - A Sterling Resort",
-        "area":"Attuvampatty Kodaikanal",
-        "star":4,
-        "pricerange":"fair",
-        "hotel_type":"business",
-        "room_type":"Premiere Room",
-        "parking":"free",
-        "room_charge":"Rs. 2852",
-        "address":"P.B #75, Pallangi Road, Attuvampatti,",
-        "phone_number":"09514979793",
-        "score":4.0
-    }
-
-    {
-        "name":"Hotel Spring Valley",
-        "area":"Lawsghat Road Kodaikanal",
-        "star":2,
-        "pricerange":"a bit more expensive",
-        "hotel_type":"business",
-        "room_type":"Deluxe Room",
-        "parking":"charge",
-        "room_charge":"Rs. 9189",
-        "address":"25, Laws Ghat Road, Near Zion Matriculation School",
-        "phone_number":"088-89420768",
-        "score":3.5
-    }
-
-    {
-        "name":"Hotel Elite Palazzo - Airport Hotel",
-        "area":"Cochin International Airport Kochi",
-        "star":3,
-        "pricerange":"fair",
-        "hotel_type":"business",
-        "room_type":"Executive Room",
-        "parking":"free",
-        "room_charge":"Rs. 6827",
-        "address":"Bank Junction, NH-47 Bye Pass, Angamaly",
-        "phone_number":"+91 050 6935218",
-        "score":4.0
-    }
-
-    {
-        "name":"Novotel Kolkata Hotel and Residences",
-        "area":"New Town - Rajarhat Kolkata",
-        "star":5,
-        "pricerange":"fair",
-        "hotel_type":"resort",
-        "room_type":"Deluxe Suite King Bed",
-        "parking":"free",
-        "room_charge":"Rs. 6087",
-        "address":"CF 11 Action Area 1C,New Town Rajarhat",
-        "phone_number":"06547 788971",
-        "score":4.5
-    }
-
-    {
-        "name":"Hotel Chandralok",
-        "area":"Lonavala Bus Stand Lonavala",
-        "star":3,
-        "pricerange":"fair",
-        "hotel_type":"resort",
-        "room_type":"Non A\/C Executive Room",
-        "parking":"charge",
-        "room_charge":"Rs. 9538",
-        "address":"Near Post-Office & Bus Stand, Off Mumbai-Pune Highway",
-        "phone_number":"+91 2956196963",
-        "score":4.0
-    }
-
-    {
-        "name":"Hotel Sartaj",
-        "area":"Clock Tower-Near Railway Station Ludhiana",
-        "star":2,
-        "pricerange":"a bit more expensive",
-        "hotel_type":"resort",
-        "room_type":"Deluxe Room",
-        "parking":"free",
-        "room_charge":"Rs. 5424",
-        "address":"Bhadaur House Market Near Clock Tower",
-        "phone_number":"+91 7640552344",
-        "score":4.0
-    }
-
-    {
-        "name":"Hotel Hill Top (Forrest Palace)",
-        "area":"Jaiharikhal Lansdowne",
-        "star":3,
-        "pricerange":"fair",
-        "hotel_type":"business",
-        "room_type":"Family Room",
-        "parking":"charge",
-        "room_charge":"Rs. 8258",
-        "address":"Near Govt. Hospital ,Jaiharikhal , Pauri Garhwal",
-        "phone_number":"02930 738644",
-        "score":4.0
-    }
-
-    {
-        "name":"Hotel Nalanda Ladakh",
-        "area":"Yurthung Road Leh",
-        "star":3,
-        "pricerange":"a bit more expensive",
-        "hotel_type":"resort",
-        "room_type":"Deluxe Room",
-        "parking":"charge",
-        "room_charge":"Rs. 8096",
-        "address":"Yourtung Road upper Karzoo near circuit house Leh - Ladakh",
-        "phone_number":"+91 221 2579836",
-        "score":4.5
-    }
-
-    {
-        "name":"Hotel Metro",
-        "area":"Near Bus Terminus Kumbakonam",
-        "star":3,
-        "pricerange":"fair",
-        "hotel_type":"resort",
-        "room_type":"Executive Room",
-        "parking":"charge",
-        "room_charge":"Rs. 3873",
-        "address":"19\/11, Saragapani Santhi Street",
-        "phone_number":"07018 661724",
-        "score":4.0
-    }
-
-    {
-        "name":"Hotel Samrat",
-        "area":"Clock Tower-Near Railway Station Ludhiana",
-        "star":2,
-        "pricerange":"fair",
-        "hotel_type":"business",
-        "room_type":"Deluxe Room",
-        "parking":"free",
-        "room_charge":"Rs. 4508",
-        "address":"Kailash Cinema Road Civil Lines",
-        "phone_number":"00254 535884",
-        "score":4.0
-    }
-
-    {
-        "name":"Avion Holiday Resort",
-        "area":"Lonavala Market Lonavala",
-        "star":4,
-        "pricerange":"a bit more expensive",
-        "hotel_type":"resort",
-        "room_type":"Deluxe Room",
-        "parking":"charge",
-        "room_charge":"Rs. 9291",
-        "address":"Fly Over Junction, Bombay Pune Highway",
-        "phone_number":"00794 227722",
-        "score":3.5
-    }
-
-    {
-        "name":"Radisson Blu Hotel MBD",
-        "area":"Near Ferozpur Road Ludhiana",
-        "star":5,
-        "pricerange":"a bit more expensive",
-        "hotel_type":"business",
-        "room_type":"Deluxe Room",
-        "parking":"charge",
-        "room_charge":"Rs. 9527",
-        "address":"Adjoining to Neopolis Mall Ferozepur Road",
-        "phone_number":"+91 1126483215",
-        "score":4.5
-    }
-
-    {
-        "name":"Orchard Resort",
-        "area":"Tungarli Lonavala",
-        "star":4,
-        "pricerange":"fair",
-        "hotel_type":"business",
-        "room_type":"Deluxe Room",
-        "parking":"free",
-        "room_charge":"Rs. 9062",
-        "address":"Sr. No.-30,Sector-E, Gold Valley, New Tungarli",
-        "phone_number":"006-04020107",
-        "score":3.5
-    }
-
-    {
-        "name":"Hotel Dayal Paradise",
-        "area":"Gomti Nagar Lucknow",
-        "star":4,
-        "pricerange":"a bit more expensive",
-        "hotel_type":"business",
-        "room_type":"Deluxe Room",
-        "parking":"free",
-        "room_charge":"Rs. 9125",
-        "address":"Vipul Khand - V, Gomti Nagar Lucknow -",
-        "phone_number":"+91 677 9240272",
-        "score":3.5
-    }
-
-    {
-        "name":"Hotel Vinayaga",
-        "area":"Near Bus Terminus Kumbakonam",
-        "star":3,
-        "pricerange":"a bit more expensive",
-        "hotel_type":"resort",
-        "room_type":"Executive Room",
-        "parking":"free",
-        "room_charge":"Rs. 6329",
-        "address":"#132 C, Kamaraj Road,",
-        "phone_number":"040-35857527",
-        "score":3.5
-    }
-
-    {
-        "name":"Searock Beach Resort",
-        "area":"Light House Beach Kovalam",
-        "star":3,
-        "pricerange":"a bit more expensive",
-        "hotel_type":"business",
-        "room_type":"Deluxe Sea Facing Ac Room",
-        "parking":"charge",
-        "room_charge":"Rs. 5303",
-        "address":"Hawa Beach,Kovalam Thiruvananthapuram",
-        "phone_number":"06518636935",
-        "score":3.5
-    }
-
-    {
-        "name":"Poovar Island Resort",
-        "area":"Poovar Kovalam",
-        "star":4,
-        "pricerange":"a bit more expensive",
-        "hotel_type":"business",
-        "room_type":"Floating Cottages",
-        "parking":"free",
-        "room_charge":"Rs. 5880",
-        "address":"K.P VII\/911, Pozhiyoor, Trivandrum",
-        "phone_number":"+91 713 0925921",
-        "score":4.0
-    }
-
-    {
-        "name":"Hotel Sunshine",
-        "area":"Esplanade-New market Kolkata",
-        "star":1,
-        "pricerange":"a bit more expensive",
-        "hotel_type":"resort",
-        "room_type":"Standard Room",
-        "parking":"free",
-        "room_charge":"Rs. 4680",
-        "address":"167\/1 Lenin Sarani Road",
-        "phone_number":"+91 6610356458",
-        "score":1.5
-    }
-
-    {
-        "name":"Hotel Raya's Grand",
-        "area":"Near Bus Terminus Kumbakonam",
-        "star":3,
-        "pricerange":"a bit more expensive",
-        "hotel_type":"business",
-        "room_type":"Premium Room",
-        "parking":"charge",
-        "room_charge":"Rs. 5727",
-        "address":"23-25, Mahamaham Tank West",
-        "phone_number":"020-44713960",
-        "score":4.5
-    }
-
-    {
-        "name":"Paradise Resorts",
-        "area":"Vembanad Lake Kumarakom",
-        "star":4,
-        "pricerange":"fair",
-        "hotel_type":"business",
-        "room_type":"Luxury Cottage",
-        "parking":"charge",
-        "room_charge":"Rs. 5943",
-        "address":"Near Nazrath Church South PO Kottayam",
-        "phone_number":"060-55876369",
-        "score":4.5
-    }
-
-    {
-        "name":"James Hotels Limited (Formerly Park Plaza Chandigarh)",
-        "area":"City Centre Main Market Chandigarh",
-        "star":5,
-        "pricerange":"a bit more expensive",
-        "hotel_type":"business",
-        "room_type":"Premium Room",
-        "parking":"free",
-        "room_charge":"Rs. 6678",
-        "address":"Block No.10, Sector 17, Next to RBI",
-        "phone_number":"00091 770826",
-        "score":4.0
-    }
-
-    {
-        "name":"Hotel Chandra Park",
-        "area":"Egmore Chennai",
-        "star":3,
-        "pricerange":"fair",
-        "hotel_type":"business",
-        "room_type":"Executive Deluxe Room",
-        "parking":"charge",
-        "room_charge":"Rs. 9891",
-        "address":"9 Gandhi Irwin Road, Egmore",
-        "phone_number":"+91 031 5809136",
-        "score":3.0
-    }
-
-    {
-        "name":"Hotel Grand Palace",
-        "area":"Airport Zone Chennai",
-        "star":3,
-        "pricerange":"fair",
-        "hotel_type":"resort",
-        "room_type":"Executive Room",
-        "parking":"free",
-        "room_charge":"Rs. 5393",
-        "address":"257,G.S.T. Road, Near MIT gate, Chrompet",
-        "phone_number":"012-01113386",
-        "score":2.5
-    }
-
-    {
-        "name":"Pineridge Hotel",
-        "area":"The Mall Darjeeling",
-        "star":2,
-        "pricerange":"fair",
-        "hotel_type":"business",
-        "room_type":"Standard room",
-        "parking":"charge",
-        "room_charge":"Rs. 7199",
-        "address":"19 Nehru Road, The Mall, Chowrasta",
-        "phone_number":"+91 088 3883510",
-        "score":3.0
-    }
-
-    {
-        "name":"Coorg County Resorts",
-        "area":"Suntikoppa Coorg",
-        "star":3,
-        "pricerange":"a bit more expensive",
-        "hotel_type":"resort",
-        "room_type":"Standard Villa AC",
-        "parking":"charge",
-        "room_charge":"Rs. 9933",
-        "address":"7th Hoskote, Suntikoppa, Kodagu Dist,",
-        "phone_number":"03302912332",
-        "score":3.0
-    }
-
-    {
-        "name":"Corbett Woods Resort",
-        "area":"Dhela Village Corbett",
-        "star":4,
-        "pricerange":"fair",
-        "hotel_type":"business",
-        "room_type":"Deluxe Swiss Cottage Tent",
-        "parking":"free",
-        "room_charge":"Rs. 5282",
-        "address":"Village & PO Dhela, Ramnagar-Jhirna Road, Dstt Ramnagar, Uttarakhand, India.",
-        "phone_number":"+91 638 2224689",
-        "score":4.5
-    }
-
-    {
-        "name":"Central Nirvana Resort Darjeeling",
-        "area":"The Mall Darjeeling",
-        "star":3,
-        "pricerange":"a bit more expensive",
-        "hotel_type":"resort",
-        "room_type":"Club Room Royal",
-        "parking":"charge",
-        "room_charge":"Rs. 8395",
-        "address":"C R Das Road (Below Chowrasta, The Mall) Darjeeling",
-        "phone_number":"+91 413 0030875",
-        "score":4.0
-    }
-
-    {
-        "name":"Aamod Resort & Spa by Riverside",
-        "area":"Dhikuli Corbett",
-        "star":4,
-        "pricerange":"a bit more expensive",
-        "hotel_type":"resort",
-        "room_type":"Cottages",
-        "parking":"free",
-        "room_charge":"Rs. 4135",
-        "address":"Village & Post - Dhikuli, Ramnagar",
-        "phone_number":"076-17108204",
-        "score":4.0
-    }
-
-    {
-        "name":"Corbett View Resort",
-        "area":"Dhela Village Corbett",
-        "star":3,
-        "pricerange":"fair",
-        "hotel_type":"business",
-        "room_type":"AC Huts",
-        "parking":"free",
-        "room_charge":"Rs. 2593",
-        "address":"Village Dhella",
-        "phone_number":"+91 8001437618",
-        "score":4.0
-    }
-
-    {
-        "name":"Hotel Sakoon",
-        "area":"Rajpur Road Dehradun",
-        "star":3,
-        "pricerange":"a bit more expensive",
-        "hotel_type":"resort",
-        "room_type":"Deluxe Room",
-        "parking":"charge",
-        "room_charge":"Rs. 4122",
-        "address":"4-Muncipal Road Dalanwala,",
-        "phone_number":"+91 0364316233",
-        "score":4.5
-    }
-
-    {
-        "name":"Central Heritage Resort & Spa Darjeeling",
-        "area":"The Mall Darjeeling",
-        "star":4,
-        "pricerange":"fair",
-        "hotel_type":"resort",
-        "room_type":"Suite",
-        "parking":"free",
-        "room_charge":"Rs. 4003",
-        "address":"Robertson Road",
-        "phone_number":"+91 185 5680074",
-        "score":3.5
-    }
-
-    {
-        "name":"Hotel Tara Palace",
-        "area":"Central Gangtok Gangtok",
-        "star":4,
-        "pricerange":"fair",
-        "hotel_type":"resort",
-        "room_type":"Deluxe",
-        "parking":"charge",
-        "room_charge":"Rs. 7411",
-        "address":"Nam Nang Road, Nearest Landmark: M G Marg,",
-        "phone_number":"016-81120229",
-        "score":4.0
-    }
-
-    {
-        "name":"The Nettle and Fern Hotel",
-        "area":"Developement Area Gangtok",
-        "star":3,
-        "pricerange":"a bit more expensive",
-        "hotel_type":"resort",
-        "room_type":"Valley View Super Deluxe Suite",
-        "parking":"free",
-        "room_charge":"Rs. 2509",
-        "address":"Developement Area Jiwan Theeng Marg Development Area, Gangtok Nearest Landmark: Congress Bhawan",
-        "phone_number":"+91 1504490451",
-        "score":4.5
-    }
-
-    {
-        "name":"Rahi Coral Beach Resort",
-        "area":"Calangute Beach-North Goa Goa",
-        "star":2,
-        "pricerange":"fair",
-        "hotel_type":"resort",
-        "room_type":"Superior Room",
-        "parking":"charge",
-        "room_charge":"Rs. 3050",
-        "address":"Umtavaddo, Calangute",
-        "phone_number":"+91 399 7379718",
-        "score":3.0
-    }
-
-    {
-        "name":"Longuinhos Beach Resort",
-        "area":"Colva Beach-South Goa Goa",
-        "star":3,
-        "pricerange":"a bit more expensive",
-        "hotel_type":"resort",
-        "room_type":"Deluxe Room (Sea View) Room",
-        "parking":"free",
-        "room_charge":"Rs. 6352",
-        "address":"Colva Beach, Salcete, Colva",
-        "phone_number":"+91 624 6329654",
-        "score":3.5
-    }
-
-    {
-        "name":"Resorte Marinha Dourada",
-        "area":"Baga Beach-North Goa Goa",
-        "star":3,
-        "pricerange":"a bit more expensive",
-        "hotel_type":"business",
-        "room_type":"Standard",
-        "parking":"free",
-        "room_charge":"Rs. 9609",
-        "address":"200 Tambudki Road, Arpora, Baga",
-        "phone_number":"094-62099556",
-        "score":4.0
-    }
-
-    {
-        "name":"The Rivasa Resort",
-        "area":"Calangute Beach-North Goa Goa",
-        "star":2,
-        "pricerange":"fair",
-        "hotel_type":"resort",
-        "room_type":"Standard A\/c Room",
-        "parking":"free",
-        "room_charge":"Rs. 4776",
-        "address":"Dr. Afonso Road, Umtawado, Calangute, Bardez",
-        "phone_number":"+91 4205043523",
-        "score":3.5
-    }
-
-    {
-        "name":"Santana Beach Resort",
-        "area":"Candolim Beach-North Goa Goa",
-        "star":3,
-        "pricerange":"fair",
-        "hotel_type":"resort",
-        "room_type":"Standard Room",
-        "parking":"free",
-        "room_charge":"Rs. 8332",
-        "address":"Quinto Costa Frias Complex",
-        "phone_number":"05153 730657",
-        "score":4.5
-    }
-
-    {
-        "name":"Hotel Sahima",
-        "area":"Naddi Village Dharamshala",
-        "star":1,
-        "pricerange":"a bit more expensive",
-        "hotel_type":"resort",
-        "room_type":"Family Suit Room",
-        "parking":"free",
-        "room_charge":"Rs. 8371",
-        "address":"Naddi Road Dal Lake",
-        "phone_number":"+91 594 7556386",
-        "score":3.5
-    }
-
-    {
-        "name":"Delight Hotels The Fortuna",
-        "area":"Paljor Stadium Road Gangtok",
-        "star":3,
-        "pricerange":"a bit more expensive",
-        "hotel_type":"business",
-        "room_type":"Deluxe Room",
-        "parking":"charge",
-        "room_charge":"Rs. 4662",
-        "address":"Third Mile , By-Pass , Lower Bojogori (Near Tashi View Point)",
-        "phone_number":"+91 880 7504039",
-        "score":4.0
-    }
-
-    {
-        "name":"Hotel Shivani International",
-        "area":"Mcleodganj Dharamshala",
-        "star":3,
-        "pricerange":"a bit more expensive",
-        "hotel_type":"resort",
-        "room_type":"Deluxe Room",
-        "parking":"free",
-        "room_charge":"Rs. 9478",
-        "address":"Infront of Shivani Clinic, Bhagsu Nag , Mcleodganj, Upper Dharamshala Distt. Kangra",
-        "phone_number":"+91 5102070156",
-        "score":4.5
-    }
-
-    {
-        "name":"Hotel Viva Baga",
-        "area":"Baga Beach-North Goa Goa",
-        "star":1,
-        "pricerange":"a bit more expensive",
-        "hotel_type":"resort",
-        "room_type":"BUDGET ROOM AC 2 BED",
-        "parking":"free",
-        "room_charge":"Rs. 2284",
-        "address":"Calangute Baga Main Road, Opp. Cafe Coffee Day lane, Khobra Vaddo, Taluka Bardez, Calangute",
-        "phone_number":"+91 563 2443846",
-        "score":4.5
-    }
-
-    {
-        "name":"Estrela do Mar Beach Resort",
-        "area":"Calangute Beach-North Goa Goa",
-        "star":4,
-        "pricerange":"fair",
-        "hotel_type":"resort",
-        "room_type":"Standard Room",
-        "parking":"free",
-        "room_charge":"Rs. 2037",
-        "address":"Khobra Vaddo, Calangute, Bardez",
-        "phone_number":"+91 7348178324",
-        "score":3.5
-    }
-
-    {
-        "name":"Hotel Sonam Delek",
-        "area":"Central Gangtok Gangtok",
-        "star":2,
-        "pricerange":"fair",
-        "hotel_type":"resort",
-        "room_type":"Standard Non View",
-        "parking":"charge",
-        "room_charge":"Rs. 8361",
-        "address":"Sonam Gyatso Marg (Tibet Road)",
-        "phone_number":"01136 108063",
-        "score":4.5
-    }
-
-    {
-        "name":"Delight Hotels Susanta Awaas",
-        "area":"Central Gangtok Gangtok",
-        "star":2,
-        "pricerange":"a bit more expensive",
-        "hotel_type":"business",
-        "room_type":"Standard Room",
-        "parking":"free",
-        "room_charge":"Rs. 7494",
-        "address":"Namnang Road, Close to Star Cinema Hall, MG Marg",
-        "phone_number":"019-23740874",
-        "score":4.0
-    }
-
-    {
-        "name":"Red Fox Hotel Jaipur",
-        "area":"Airport Zone Jaipur",
-        "star":3,
-        "pricerange":"a bit more expensive",
-        "hotel_type":"business",
-        "room_type":"Executive Suite",
-        "parking":"free",
-        "room_charge":"Rs. 4853",
-        "address":"Jawahar Lal Nehru Marg",
-        "phone_number":"+91 1692256795",
-        "score":4.5
-    }
-
-    {
-        "name":"Hotel Samdariya Inn",
-        "area":"Russel Chowk Jabalpur",
-        "star":2,
-        "pricerange":"fair",
-        "hotel_type":"business",
-        "room_type":"Maharaja Suite Room",
-        "parking":"free",
-        "room_charge":"Rs. 5832",
-        "address":"Near Russel Square",
-        "phone_number":"+91 9805424908",
-        "score":3.0
-    }
-
-    {
-        "name":"Lemon Tree Hotel Indore",
-        "area":"R.N.T. Marg Indore",
-        "star":4,
-        "pricerange":"a bit more expensive",
-        "hotel_type":"business",
-        "room_type":"Executive Suite",
-        "parking":"charge",
-        "room_charge":"Rs. 5790",
-        "address":"3, R.N.T. Road",
-        "phone_number":"05580 183199",
-        "score":4.0
-    }
-
-    {
-        "name":"Jaipur Marriott Hotel",
-        "area":"Airport Zone Jaipur",
-        "star":5,
-        "pricerange":"a bit more expensive",
-        "hotel_type":"resort",
-        "room_type":"Deluxe Suite",
-        "parking":"free",
-        "room_charge":"Rs. 5321",
-        "address":"Ashram Marg Near Jawahar Circle, Tonk Road",
-        "phone_number":"040-72306151",
-        "score":4.5
-    }
-
-    {
-        "name":"Hotel Mansingh Jaipur",
-        "area":"MI Road Jaipur",
-        "star":5,
-        "pricerange":"fair",
-        "hotel_type":"resort",
-        "room_type":"Club Room",
-        "parking":"free",
-        "room_charge":"Rs. 6485",
-        "address":"Sansar Chandra Road",
-        "phone_number":"+91 0672070543",
-        "score":3.5
-    }
-
-    {
-        "name":"Hotel Chetram",
-        "area":"Ambabari Jaipur",
-        "star":2,
-        "pricerange":"fair",
-        "hotel_type":"business",
-        "room_type":"Deluxe Room",
-        "parking":"charge",
-        "room_charge":"Rs. 3867",
-        "address":"2, Ashok Vihar, Ambabari, Near HP Petrol Pump, Main Sikar Road",
-        "phone_number":"+91 143 7392358",
-        "score":4.5
-    }
-
-    {
-        "name":"Hotel Arya Niwas",
-        "area":"Bani Park Jaipur",
-        "star":3,
-        "pricerange":"a bit more expensive",
-        "hotel_type":"resort",
-        "room_type":"AC Economy Single",
-        "parking":"free",
-        "room_charge":"Rs. 3183",
-        "address":"Behind Amber TowersSansar Chandra Road",
-        "phone_number":"05897 377809",
-        "score":4.5
-    }
-
-    {
-        "name":"Ginger Hotel Jaipur",
-        "area":"Civil Lines Jaipur",
-        "star":3,
-        "pricerange":"a bit more expensive",
-        "hotel_type":"business",
-        "room_type":"Smart Single Room",
-        "parking":"charge",
-        "room_charge":"Rs. 7502",
-        "address":"Geejgarh house,Civil lines, Hawasadak,Jaipur, Rajasthan-302006",
-        "phone_number":"076-66672272",
-        "score":4.0
-    }
-
-    {
-        "name":"Hotel Taj Mahal",
-        "area":"Nampally Hyderabad",
-        "star":2,
-        "pricerange":"fair",
-        "hotel_type":"business",
-        "room_type":"Junior Suite Room",
-        "parking":"free",
-        "room_charge":"Rs. 6756",
-        "address":"4-1-999, Abid Circle, Kingkothi Road, Abids",
-        "phone_number":"00939513027",
-        "score":4.0
-    }
-
-    {
-        "name":"Hotel Shreemaya",
-        "area":"R.N.T. Marg Indore",
-        "star":3,
-        "pricerange":"fair",
-        "hotel_type":"resort",
-        "room_type":"Deluxe Room",
-        "parking":"charge",
-        "room_charge":"Rs. 7230",
-        "address":"12, R.N.T. Marg,",
-        "phone_number":"026-42684910",
-        "score":4.5
-    }
-
-    {
-        "name":"ITC Rajputana, A Luxury Collection Hotel",
-        "area":"Bani Park Jaipur",
-        "star":5,
-        "pricerange":"a bit more expensive",
-        "hotel_type":"business",
-        "room_type":"Executive Club Special",
-        "parking":"free",
-        "room_charge":"Rs. 4268",
-        "address":"Palace Road Rajasthan",
-        "phone_number":"05608172364",
-        "score":4.5
-    }
+[
+    {
+        "name": "पैन पैसिफिक सूज़ौ",
+        "area": "गुसु जिले",
+        "star": "5-स्टार",
+        "pricerange": "थोड़ा महंगा",
+        "hotel_type": "रिसॉर्ट",
+        "room_type": "बड़ा आकार के कमरे",
+        "parking": "मुफ्त",
+        "room_charge": "592 युआन",
+        "address": "नंबर 259, शिन्शी रोड, गुसू जिला, सूज़ौ",
+        "phone_number": "0512-65103388",
+        "score": "4.6"
+    },
+    {
+        "name": "पैन पैसिफिक सूज़ौ",
+        "area": "गुसु जिले",
+        "star": "5-स्टार",
+        "pricerange": "थोड़ा महंगा",
+        "hotel_type": "रिसॉर्ट",
+        "room_type": "मानक कमरा",
+        "parking": "मुफ्त",
+        "room_charge": "592 युआन",
+        "address": "नंबर 259, शिन्शी रोड, गुसू जिला, सूज़ौ",
+        "phone_number": "0512-65103388",
+        "score": "4.6"
+    },
+    {
+        "name": "जिनलिंग नानलिन होटल",
+        "area": "गुसु जिले",
+        "star": "4",
+        "pricerange": "moderate",
+        "hotel_type": "रिसॉर्ट",
+        "room_type": "बड़ा आकार के कमरे",
+        "parking": "मुफ्त",
+        "room_charge": "438 युआन",
+        "address": "नंबर 20, गुंक्सिउफांग, शिक्वान स्ट्रीट, गुसू जिला, सूज़ौ",
+        "phone_number": "0512-68017888",
+        "score": "4.7"
+    },
+    {
+        "name": "जिनलिंग नानलिन होटल",
+        "area": "गुसु जिले",
+        "star": "4",
+        "pricerange": "moderate",
+        "hotel_type": "रिसॉर्ट",
+        "room_type": "मानक कमरा",
+        "parking": "मुफ्त",
+        "room_charge": "389 युआन",
+        "address": "नंबर 20, गुंक्सिउफांग, शिक्वान स्ट्रीट, गुसू जिला, सूज़ौ",
+        "phone_number": "0512-68017888",
+        "score": "4.7"
+    },
+    {
+        "name": "सूज़ौ मैंक्सियांग थीम होटल",
+        "area": "गुसु जिले",
+        "star": "3-स्टार",
+        "pricerange": "moderate",
+        "hotel_type": "बिजनेस",
+        "room_type": "बड़ा आकार के कमरे",
+        "parking": "पेड",
+        "room_charge": "266 युआन",
+        "address": "नंबर 26-64 जिंगडे रोड, गुसू जिला, सूज़ौ",
+        "phone_number": "0512-67570999",
+        "score": "4.7"
+    },
+    {
+        "name": "सूज़ौ मैंक्सियांग थीम होटल",
+        "area": "गुसु जिले",
+        "star": "3-स्टार",
+        "pricerange": "moderate",
+        "hotel_type": "बिजनेस",
+        "room_type": "मानक कमरा",
+        "parking": "पेड",
+        "room_charge": "278 yuan",
+        "address": "नंबर 26-64 जिंगडे रोड, गुसू जिला, सूज़ौ",
+        "phone_number": "0512-67570999",
+        "score": "4.7"
+    },
+    {
+        "name": "सुपर 8 होटल",
+        "area": "गुसु जिले",
+        "star": "2-सितारा",
+        "pricerange": "सस्ता",
+        "hotel_type": "बिजनेस",
+        "room_type": "बड़ा आकार के कमरे",
+        "parking": "मुफ्त",
+        "room_charge": "238 युआन",
+        "address": "नंबर 318, लौमेन रोड, गुसु जिला, सूज़ौ",
+        "phone_number": "0512-67729999",
+        "score": "4.5"
+    },
+    {
+        "name": "सुपर 8 होटल",
+        "area": "गुसु जिले",
+        "star": "2-सितारा",
+        "pricerange": "सस्ता",
+        "hotel_type": "बिजनेस",
+        "room_type": "मानक कमरा",
+        "parking": "मुफ्त",
+        "room_charge": "238 युआन",
+        "address": "नंबर 318, लौमेन रोड, गुसु जिला, सूज़ौ",
+        "phone_number": "0512-67729999",
+        "score": "4.5"
+    },
+    {
+        "name": "सूज़ौ योंगशुन एक्सप्रेस होटल",
+        "area": "गुसु जिले",
+        "star": "1-सितारा",
+        "pricerange": "सस्ता",
+        "hotel_type": "बिजनेस",
+        "room_type": "बड़ा आकार के कमरे",
+        "parking": "पेड",
+        "room_charge": "126 युआन",
+        "address": "नंबर 246, फेंगहुआंग स्ट्रीट, गुसू जिला, सूज़ौ",
+        "phone_number": "0512-65222229",
+        "score": "4.4"
+    },
+    {
+        "name": "सूज़ौ योंगशुन एक्सप्रेस होटल",
+        "area": "गुसु जिले",
+        "star": "1-सितारा",
+        "pricerange": "सस्ता",
+        "hotel_type": "बिजनेस",
+        "room_type": "मानक कमरा",
+        "parking": "पेड",
+        "room_charge": "131 युआन",
+        "address": "नंबर 246, फेंगहुआंग स्ट्रीट, गुसू जिला, सूज़ौ",
+        "phone_number": "0512-65222229",
+        "score": "4.4"
+    },
+    {
+        "name": "सूज़ौ न्यू सिटी ग्रैंड रेज़ेन होटल",
+        "area": "सूज़ौ न्यू डिस्ट्रिक्ट",
+        "star": "5-स्टार",
+        "pricerange": "थोड़ा महंगा",
+        "hotel_type": "रिसॉर्ट",
+        "room_type": "बड़ा आकार के कमरे",
+        "parking": "मुफ्त",
+        "room_charge": "919 युआन",
+        "address": "नंबर 1, शीशन रोड, सूज़ौ न्यू डिस्ट्रिक्ट, सूज़ौ",
+        "phone_number": "0512-68182888",
+        "score": "4.8"
+    },
+    {
+        "name": "सूज़ौ न्यू सिटी ग्रैंड रेज़ेन होटल",
+        "area": "सूज़ौ न्यू डिस्ट्रिक्ट",
+        "star": "5-स्टार",
+        "pricerange": "थोड़ा महंगा",
+        "hotel_type": "रिसॉर्ट",
+        "room_type": "मानक कमरा",
+        "parking": "मुफ्त",
+        "room_charge": "1019 युआन",
+        "address": "नंबर 1, शीशन रोड, सूज़ौ न्यू डिस्ट्रिक्ट, सूज़ौ",
+        "phone_number": "0512-68182888",
+        "score": "4.8"
+    },
+    {
+        "name": "तत्व सूज़ौ विज्ञान और प्रौद्योगिकी टाउन",
+        "area": "सूज़ौ न्यू डिस्ट्रिक्ट",
+        "star": "4",
+        "pricerange": "थोड़ा महंगा",
+        "hotel_type": "रिसॉर्ट",
+        "room_type": "बड़ा आकार के कमरे",
+        "parking": "मुफ्त",
+        "room_charge": "636 युआन",
+        "address": "नंबर 77, वुयिशन रोड, सूज़ौ न्यू डिस्ट्रिक्ट",
+        "phone_number": "0512-88168888",
+        "score": "4.7"
+    },
+    {
+        "name": "तत्व सूज़ौ विज्ञान और प्रौद्योगिकी टाउन",
+        "area": "सूज़ौ न्यू डिस्ट्रिक्ट",
+        "star": "4",
+        "pricerange": "थोड़ा महंगा",
+        "hotel_type": "रिसॉर्ट",
+        "room_type": "मानक कमरा",
+        "parking": "मुफ्त",
+        "room_charge": "636 युआन",
+        "address": "नंबर 77, वुयिशन रोड, सूज़ौ न्यू डिस्ट्रिक्ट",
+        "phone_number": "0512-88168888",
+        "score": "4.7"
+    },
+    {
+        "name": "मीजिन ऑल सुइट्स होटल",
+        "area": "सूज़ौ न्यू डिस्ट्रिक्ट",
+        "star": "3-स्टार",
+        "pricerange": "moderate",
+        "hotel_type": "बिजनेस",
+        "room_type": "बड़ा आकार के कमरे",
+        "parking": "मुफ्त",
+        "room_charge": "308 युआन",
+        "address": "पहली मंजिल, बिल्डिंग 5, सूज़ौ शिनियन प्लाजा, नंबर 999, बिन्हे रोड, सूज़ौ न्यू डिस्ट्रिक्ट, सूज़ौ",
+        "phone_number": "0512-66053331",
+        "score": "4.8"
+    },
+    {
+        "name": "मीजिन ऑल सुइट्स होटल",
+        "area": "सूज़ौ न्यू डिस्ट्रिक्ट",
+        "star": "3-स्टार",
+        "pricerange": "moderate",
+        "hotel_type": "बिजनेस",
+        "room_type": "मानक कमरा",
+        "parking": "मुफ्त",
+        "room_charge": "349 युआन",
+        "address": "पहली मंजिल, बिल्डिंग 5, सूज़ौ शिनियन प्लाजा, नंबर 999, बिन्हे रोड, सूज़ौ न्यू डिस्ट्रिक्ट, सूज़ौ",
+        "phone_number": "0512-66053331",
+        "score": "4.8"
+    },
+    {
+        "name": "Home Inn",
+        "area": "सूज़ौ न्यू डिस्ट्रिक्ट",
+        "star": "1-सितारा",
+        "pricerange": "सस्ता",
+        "hotel_type": "बिजनेस",
+        "room_type": "बड़ा आकार के कमरे",
+        "parking": "मुफ्त",
+        "room_charge": "188 युआन",
+        "address": "नंबर 168, मयुन रोड, सूज़ौ न्यू डिस्ट्रिक्ट",
+        "phone_number": "0512-68019666",
+        "score": "4.6"
+    },
+    {
+        "name": "Home Inn",
+        "area": "सूज़ौ न्यू डिस्ट्रिक्ट",
+        "star": "1-सितारा",
+        "pricerange": "सस्ता",
+        "hotel_type": "बिजनेस",
+        "room_type": "मानक कमरा",
+        "parking": "मुफ्त",
+        "room_charge": "188 युआन",
+        "address": "नंबर 168, मयुन रोड, सूज़ौ न्यू डिस्ट्रिक्ट",
+        "phone_number": "0512-68019666",
+        "score": "4.6"
+    },
+    {
+        "name": "जिनजियांग इन",
+        "area": "सूज़ौ न्यू डिस्ट्रिक्ट",
+        "star": "2-सितारा",
+        "pricerange": "सस्ता",
+        "hotel_type": "बिजनेस",
+        "room_type": "बड़ा आकार के कमरे",
+        "parking": "मुफ्त",
+        "room_charge": "208 युआन",
+        "address": "No. 338, Tayuan Road, Suzhou High-tech Zone",
+        "phone_number": "0512-66620888",
+        "score": "4.5"
+    },
+    {
+        "name": "जिनजियांग इन",
+        "area": "सूज़ौ न्यू डिस्ट्रिक्ट",
+        "star": "2-सितारा",
+        "pricerange": "सस्ता",
+        "hotel_type": "बिजनेस",
+        "room_type": "मानक कमरा",
+        "parking": "मुफ्त",
+        "room_charge": "208 युआन",
+        "address": "No. 338, Tayuan Road, Suzhou High-tech Zone",
+        "phone_number": "0512-66620888",
+        "score": "4.5"
+    },
+    {
+        "name": "Suzhou Jinji Lake Shilla Hotel",
+        "area": "सूज़ौ औद्योगिक पार्क",
+        "star": "5-स्टार",
+        "pricerange": "थोड़ा महंगा",
+        "hotel_type": "रिसॉर्ट",
+        "room_type": "बड़ा आकार के कमरे",
+        "parking": "मुफ्त",
+        "room_charge": "640 युआन",
+        "address": "मॉडर्न लीजर प्लाजा, वांगडुन रोड, सूज़ौ औद्योगिक पार्क, सूज़ौ",
+        "phone_number": "0512-62968888",
+        "score": "4.6"
+    },
+    {
+        "name": "Suzhou Jinji Lake Shilla Hotel",
+        "area": "सूज़ौ औद्योगिक पार्क",
+        "star": "5-स्टार",
+        "pricerange": "थोड़ा महंगा",
+        "hotel_type": "रिसॉर्ट",
+        "room_type": "मानक कमरा",
+        "parking": "मुफ्त",
+        "room_charge": "640 युआन",
+        "address": "मॉडर्न लीजर प्लाजा, वांगडुन रोड, सूज़ौ औद्योगिक पार्क, सूज़ौ",
+        "phone_number": "0512-62968888",
+        "score": "4.6"
+    },
+    {
+        "name": "सूज़ौ जिनजी लेक सुइस प्लेस लिगोंगडी अपार्टमेंट होटल",
+        "area": "सूज़ौ औद्योगिक पार्क",
+        "star": "4",
+        "pricerange": "moderate",
+        "hotel_type": "बिजनेस",
+        "room_type": "बड़ा आकार के कमरे",
+        "parking": "मुफ्त",
+        "room_charge": "438 युआन",
+        "address": "बिल्डिंग 9, लिगोंगडी कमर्शियल स्ट्रीट तृतीय, जोन ई, सूज़ौ औद्योगिक पार्क",
+        "phone_number": "0512-69995666",
+        "score": "4.6"
+    },
+    {
+        "name": "सूज़ौ जिनजी लेक सुइस प्लेस लिगोंगडी अपार्टमेंट होटल",
+        "area": "सूज़ौ औद्योगिक पार्क",
+        "star": "4",
+        "pricerange": "moderate",
+        "hotel_type": "बिजनेस",
+        "room_type": "मानक कमरा",
+        "parking": "मुफ्त",
+        "room_charge": "438 युआन",
+        "address": "बिल्डिंग 9, लिगोंगडी कमर्शियल स्ट्रीट तृतीय, जोन ई, सूज़ौ औद्योगिक पार्क",
+        "phone_number": "0512-69995666",
+        "score": "4.6"
+    },
+    {
+        "name": "वोमू बुटीक होटल",
+        "area": "सूज़ौ औद्योगिक पार्क",
+        "star": "3-स्टार",
+        "pricerange": "moderate",
+        "hotel_type": "रिसॉर्ट",
+        "room_type": "बड़ा आकार के कमरे",
+        "parking": "मुफ्त",
+        "room_charge": "446 yuan",
+        "address": "बिल्डिंग 1, शिनशांग लिंगली सेंटर, लिगोंगडी के दक्षिण क्षेत्र, नंबर 36 शुइफांग रोड, सूज़ौ औद्योगिक पार्क",
+        "phone_number": "0512-85883698",
+        "score": "4.7"
+    },
+    {
+        "name": "वोमू बुटीक होटल",
+        "area": "सूज़ौ औद्योगिक पार्क",
+        "star": "3-स्टार",
+        "pricerange": "moderate",
+        "hotel_type": "रिसॉर्ट",
+        "room_type": "मानक कमरा",
+        "parking": "मुफ्त",
+        "room_charge": "463 युआन",
+        "address": "बिल्डिंग 1, शिनशांग लिंगली सेंटर, लिगोंगडी के दक्षिण क्षेत्र, नंबर 36 शुइफांग रोड, सूज़ौ औद्योगिक पार्क",
+        "phone_number": "0512-85883698",
+        "score": "4.7"
+    },
+    {
+        "name": "जेंटिंग स्टार चेन होटल",
+        "area": "सूज़ौ औद्योगिक पार्क",
+        "star": "1-सितारा",
+        "pricerange": "सस्ता",
+        "hotel_type": "बिजनेस",
+        "room_type": "बड़ा आकार के कमरे",
+        "parking": "मुफ्त",
+        "room_charge": "152 युआन",
+        "address": "नंबर 288, सूज़ौ एवेन्यू ईस्ट, सूज़ौ इंडस्ट्रियल पार्क, सूज़ौ",
+        "phone_number": "0512-62726222",
+        "score": "4.2"
+    },
+    {
+        "name": "जेंटिंग स्टार चेन होटल",
+        "area": "सूज़ौ औद्योगिक पार्क",
+        "star": "1-सितारा",
+        "pricerange": "सस्ता",
+        "hotel_type": "बिजनेस",
+        "room_type": "मानक कमरा",
+        "parking": "मुफ्त",
+        "room_charge": "152 युआन",
+        "address": "नंबर 288, सूज़ौ एवेन्यू ईस्ट, सूज़ौ इंडस्ट्रियल पार्क, सूज़ौ",
+        "phone_number": "0512-62726222",
+        "score": "4.2"
+    },
+    {
+        "name": "सूज़ौ ट्यूल होटल अपार्टमेंट",
+        "area": "सूज़ौ औद्योगिक पार्क",
+        "star": "2-सितारा",
+        "pricerange": "moderate",
+        "hotel_type": "बिजनेस",
+        "room_type": "बड़ा आकार के कमरे",
+        "parking": "पेड",
+        "room_charge": "486 युआन",
+        "address": "मंजिल 1, बिल्डिंग टी 1, हांग लियोंग सिटी सेंटर, सूज़ौ औद्योगिक पार्क",
+        "phone_number": "151-5149-7911",
+        "score": "4.6"
+    },
+    {
+        "name": "सूज़ौ ट्यूल होटल अपार्टमेंट",
+        "area": "सूज़ौ औद्योगिक पार्क",
+        "star": "2-सितारा",
+        "pricerange": "moderate",
+        "hotel_type": "बिजनेस",
+        "room_type": "मानक कमरा",
+        "parking": "पेड",
+        "room_charge": "486 युआन",
+        "address": "मंजिल 1, बिल्डिंग टी 1, हांग लियोंग सिटी सेंटर, सूज़ौ औद्योगिक पार्क",
+        "phone_number": "151-5149-7911",
+        "score": "4.6"
+    },
+    {
+        "name": "सूज़ौ मैरियट होटल ताइहू झील",
+        "area": "वुझोंग जिले",
+        "star": "5-स्टार",
+        "pricerange": "थोड़ा महंगा",
+        "hotel_type": "रिसॉर्ट",
+        "room_type": "बड़ा आकार के कमरे",
+        "parking": "मुफ्त",
+        "room_charge": "1224 युआन",
+        "address": "नंबर 6, शुली रोड, सूज़ौ ताइहू नेशनल टूरिज्म वेकेशन ज़ोन, वुझोंग जिला, सूज़ौ",
+        "phone_number": "0512-65693333",
+        "score": "4.7"
+    },
+    {
+        "name": "सूज़ौ मैरियट होटल ताइहू झील",
+        "area": "वुझोंग जिले",
+        "star": "5-स्टार",
+        "pricerange": "थोड़ा महंगा",
+        "hotel_type": "रिसॉर्ट",
+        "room_type": "मानक कमरा",
+        "parking": "मुफ्त",
+        "room_charge": "1399 yuan",
+        "address": "नंबर 6, शुली रोड, सूज़ौ ताइहू नेशनल टूरिज्म वेकेशन ज़ोन, वुझोंग जिला, सूज़ौ",
+        "phone_number": "0512-65693333",
+        "score": "4.7"
+    },
+    {
+        "name": "मैंक्सिन होटल",
+        "area": "वुझोंग जिले",
+        "star": "4",
+        "pricerange": "moderate",
+        "hotel_type": "रिसॉर्ट",
+        "room_type": "बड़ा आकार के कमरे",
+        "parking": "मुफ्त",
+        "room_charge": "460 युआन",
+        "address": "नंबर 699, लिंग्टियन रोड, मुडू टाउन, वुझोंग जिला, सूज़ौ",
+        "phone_number": "0512-65696088",
+        "score": "4.7"
+    },
+    {
+        "name": "मैंक्सिन होटल",
+        "area": "वुझोंग जिले",
+        "star": "4",
+        "pricerange": "moderate",
+        "hotel_type": "रिसॉर्ट",
+        "room_type": "मानक कमरा",
+        "parking": "मुफ्त",
+        "room_charge": "481 युआन",
+        "address": "नंबर 699, लिंग्टियन रोड, मुडू टाउन, वुझोंग जिला, सूज़ौ",
+        "phone_number": "0512-65696088",
+        "score": "4.7"
+    },
+    {
+        "name": "सिमिलन होटल",
+        "area": "वुझोंग जिले",
+        "star": "3-स्टार",
+        "pricerange": "moderate",
+        "hotel_type": "बिजनेस",
+        "room_type": "बड़ा आकार के कमरे",
+        "parking": "मुफ्त",
+        "room_charge": "346 युआन",
+        "address": "नंबर 47-2, जिनशान रोड, वुझोंग जिला, सूज़ौ",
+        "phone_number": "0512-83808380",
+        "score": "4.5"
+    },
+    {
+        "name": "सिमिलन होटल",
+        "area": "वुझोंग जिले",
+        "star": "3-स्टार",
+        "pricerange": "moderate",
+        "hotel_type": "बिजनेस",
+        "room_type": "मानक कमरा",
+        "parking": "मुफ्त",
+        "room_charge": "338 युआन",
+        "address": "नंबर 47-2, जिनशान रोड, वुझोंग जिला, सूज़ौ",
+        "phone_number": "0512-83808380",
+        "score": "4.5"
+    },
+    {
+        "name": "Pod Inn",
+        "area": "वुझोंग जिले",
+        "star": "1-सितारा",
+        "pricerange": "सस्ता",
+        "hotel_type": "बिजनेस",
+        "room_type": "बड़ा आकार के कमरे",
+        "parking": "मुफ्त",
+        "room_charge": "99 युआन",
+        "address": "नंबर 198, साउथ डोंगवू रोड, वुझोंग जिला, सूज़ौ",
+        "phone_number": "0512-69385585",
+        "score": "4.1"
+    },
+    {
+        "name": "Pod Inn",
+        "area": "वुझोंग जिले",
+        "star": "1-सितारा",
+        "pricerange": "सस्ता",
+        "hotel_type": "बिजनेस",
+        "room_type": "मानक कमरा",
+        "parking": "मुफ्त",
+        "room_charge": "161 युआन",
+        "address": "नंबर 198, साउथ डोंगवू रोड, वुझोंग जिला, सूज़ौ",
+        "phone_number": "0512-69385585",
+        "score": "4.1"
+    },
+    {
+        "name": "चेंगयी लियानहाओ होटल",
+        "area": "वुझोंग जिले",
+        "star": "2-सितारा",
+        "pricerange": "सस्ता",
+        "hotel_type": "बिजनेस",
+        "room_type": "बड़ा आकार के कमरे",
+        "parking": "N/A",
+        "room_charge": "148 युआन",
+        "address": "नंबर 67 गुआंगज़ियन रोड, वुझोंग जिला, सूज़ौ का बस स्टेशन",
+        "phone_number": "0512-67079995",
+        "score": "4.6"
+    },
+    {
+        "name": "चेंगयी लियानहाओ होटल",
+        "area": "वुझोंग जिले",
+        "star": "2-सितारा",
+        "pricerange": "सस्ता",
+        "hotel_type": "बिजनेस",
+        "room_type": "मानक कमरा",
+        "parking": "N/A",
+        "room_charge": "168 युआन",
+        "address": "नंबर 67 गुआंगज़ियन रोड, वुझोंग जिला, सूज़ौ का बस स्टेशन",
+        "phone_number": "0512-67079995",
+        "score": "4.6"
+    },
+    {
+        "name": "सूज़ौ शुआन हंसे बुटीक होटल",
+        "area": "वुजियांग जिले",
+        "star": "5-स्टार",
+        "pricerange": "थोड़ा महंगा",
+        "hotel_type": "बिजनेस",
+        "room_type": "बड़ा आकार के कमरे",
+        "parking": "मुफ्त",
+        "room_charge": "629 युआन",
+        "address": "नंबर 5-9, नानक्सिन स्ट्रीट, लिली टाउन, वुजियांग जिला, सूज़ौ",
+        "phone_number": "180-5181-5602",
+        "score": "4.6"
+    },
+    {
+        "name": "सूज़ौ शुआन हंसे बुटीक होटल",
+        "area": "वुजियांग जिले",
+        "star": "5-स्टार",
+        "pricerange": "थोड़ा महंगा",
+        "hotel_type": "बिजनेस",
+        "room_type": "मानक कमरा",
+        "parking": "मुफ्त",
+        "room_charge": "789 युआन",
+        "address": "नंबर 5-9, नानक्सिन स्ट्रीट, लिली टाउन, वुजियांग जिला, सूज़ौ",
+        "phone_number": "180-5181-5602",
+        "score": "4.6"
+    },
+    {
+        "name": "सूज़ौ शुआन हंसे होटल",
+        "area": "वुजियांग जिले",
+        "star": "4",
+        "pricerange": "थोड़ा महंगा",
+        "hotel_type": "रिसॉर्ट",
+        "room_type": "बड़ा आकार के कमरे",
+        "parking": "मुफ्त",
+        "room_charge": "1246 yuan",
+        "address": "नंबर 8, बाओटा स्ट्रीट, झेंजे प्राचीन टाउन, वुजियांग जिला, सूज़ौ",
+        "phone_number": "151-5172-4978",
+        "score": "4.8"
+    },
+    {
+        "name": "सूज़ौ शुआन हंसे होटल",
+        "area": "वुजियांग जिले",
+        "star": "4",
+        "pricerange": "थोड़ा महंगा",
+        "hotel_type": "रिसॉर्ट",
+        "room_type": "मानक कमरा",
+        "parking": "मुफ्त",
+        "room_charge": "1286 yuan",
+        "address": "नंबर 8, बाओटा स्ट्रीट, झेंजे प्राचीन टाउन, वुजियांग जिला, सूज़ौ",
+        "phone_number": "151-5172-4978",
+        "score": "4.8"
+    },
+    {
+        "name": "टोंगली यूशांग इन",
+        "area": "वुजियांग जिले",
+        "star": "3-स्टार",
+        "pricerange": "moderate",
+        "hotel_type": "रिसॉर्ट",
+        "room_type": "बड़ा आकार के कमरे",
+        "parking": "पेड",
+        "room_charge": "328 युआन",
+        "address": "नंबर 53, डोंगशी स्ट्रीट, टोंगली टाउन, वुजियांग जिला, सूज़ौ",
+        "phone_number": "0512-63052900",
+        "score": "5.0"
+    },
+    {
+        "name": "टोंगली यूशांग इन",
+        "area": "वुजियांग जिले",
+        "star": "3-स्टार",
+        "pricerange": "moderate",
+        "hotel_type": "रिसॉर्ट",
+        "room_type": "मानक कमरा",
+        "parking": "पेड",
+        "room_charge": "458 युआन",
+        "address": "नंबर 53, डोंगशी स्ट्रीट, टोंगली टाउन, वुजियांग जिला, सूज़ौ",
+        "phone_number": "0512-63052900",
+        "score": "5.0"
+    },
+    {
+        "name": "सिटी कम्फर्ट इन",
+        "area": "वुजियांग जिले",
+        "star": "2-सितारा",
+        "pricerange": "सस्ता",
+        "hotel_type": "बिजनेस",
+        "room_type": "बड़ा आकार के कमरे",
+        "parking": "मुफ्त",
+        "room_charge": "204 युआन",
+        "address": "नंबर 199, योंगकांग रोड, सोंगलिंग टाउन, वुजियांग जिला, सूज़ौ",
+        "phone_number": "0512-63661555",
+        "score": "4.7"
+    },
+    {
+        "name": "सिटी कम्फर्ट इन",
+        "area": "वुजियांग जिले",
+        "star": "2-सितारा",
+        "pricerange": "सस्ता",
+        "hotel_type": "बिजनेस",
+        "room_type": "मानक कमरा",
+        "parking": "मुफ्त",
+        "room_charge": "221 युआन",
+        "address": "नंबर 199, योंगकांग रोड, सोंगलिंग टाउन, वुजियांग जिला, सूज़ौ",
+        "phone_number": "0512-63661555",
+        "score": "4.7"
+    },
+    {
+        "name": "सूज़ौ मिंग्यू एक्सप्रेस होटल",
+        "area": "वुजियांग जिले",
+        "star": "1-सितारा",
+        "pricerange": "सस्ता",
+        "hotel_type": "बिजनेस",
+        "room_type": "बड़ा आकार के कमरे",
+        "parking": "मुफ्त",
+        "room_charge": "155 युआन",
+        "address": "नंबर 2487, लुक्सियांग साउथ रोड, वुजियांग जिला, सूज़ौ",
+        "phone_number": "0512-63000168",
+        "score": "4.5"
+    },
+    {
+        "name": "सूज़ौ मिंग्यू एक्सप्रेस होटल",
+        "area": "वुजियांग जिले",
+        "star": "1-सितारा",
+        "pricerange": "सस्ता",
+        "hotel_type": "बिजनेस",
+        "room_type": "मानक कमरा",
+        "parking": "मुफ्त",
+        "room_charge": "171 युआन",
+        "address": "नंबर 2487, लुक्सियांग साउथ रोड, वुजियांग जिला, सूज़ौ",
+        "phone_number": "0512-63000168",
+        "score": "4.5"
+    },
+    {
+        "name": "टोनिनो लेम्बोर्गिनी होटल कुनशान",
+        "area": "कुनशान",
+        "star": "5-स्टार",
+        "pricerange": "थोड़ा महंगा",
+        "hotel_type": "रिसॉर्ट",
+        "room_type": "बड़ा आकार के कमरे",
+        "parking": "मुफ्त",
+        "room_charge": "628 युआन",
+        "address": "Zhongyin World Trade Plaza, No. 287, Zhongshan Road, Kunshan.",
+        "phone_number": "0512-57119999",
+        "score": "4.7"
+    },
+    {
+        "name": "टोनिनो लेम्बोर्गिनी होटल कुनशान",
+        "area": "कुनशान",
+        "star": "5-स्टार",
+        "pricerange": "थोड़ा महंगा",
+        "hotel_type": "रिसॉर्ट",
+        "room_type": "मानक कमरा",
+        "parking": "मुफ्त",
+        "room_charge": "628 युआन",
+        "address": "Zhongyin World Trade Plaza, No. 287, Zhongshan Road, Kunshan.",
+        "phone_number": "0512-57119999",
+        "score": "4.7"
+    },
+    {
+        "name": "साउथ लेक रिट्रीट हॉलिडे कोर्टयार्ड",
+        "area": "कुनशान",
+        "star": "4",
+        "pricerange": "थोड़ा महंगा",
+        "hotel_type": "रिसॉर्ट",
+        "room_type": "बड़ा आकार के कमरे",
+        "parking": "मुफ्त",
+        "room_charge": "1300 yuan",
+        "address": "No. 1, Fugui Jingyuan, Kunshan",
+        "phone_number": "0512-57205581",
+        "score": "4.7"
+    },
+    {
+        "name": "साउथ लेक रिट्रीट हॉलिडे कोर्टयार्ड",
+        "area": "कुनशान",
+        "star": "4",
+        "pricerange": "थोड़ा महंगा",
+        "hotel_type": "रिसॉर्ट",
+        "room_type": "मानक कमरा",
+        "parking": "मुफ्त",
+        "room_charge": "1336 yuan",
+        "address": "No. 1, Fugui Jingyuan, Kunshan",
+        "phone_number": "0512-57205581",
+        "score": "4.7"
+    },
+    {
+        "name": "डोवा रिवरसाइड इन",
+        "area": "कुनशान",
+        "star": "3-स्टार",
+        "pricerange": "moderate",
+        "hotel_type": "बिजनेस",
+        "room_type": "बड़ा आकार के कमरे",
+        "parking": "पेड",
+        "room_charge": "279 युआन",
+        "address": "नंबर 75, डोंगबिन गांव, झोउझुआंग टाउन, कुनशान",
+        "phone_number": "181-3619-1632",
+        "score": "4.8"
+    },
+    {
+        "name": "डोवा रिवरसाइड इन",
+        "area": "कुनशान",
+        "star": "3-स्टार",
+        "pricerange": "moderate",
+        "hotel_type": "बिजनेस",
+        "room_type": "मानक कमरा",
+        "parking": "पेड",
+        "room_charge": "279 युआन",
+        "address": "नंबर 75, डोंगबिन गांव, झोउझुआंग टाउन, कुनशान",
+        "phone_number": "181-3619-1632",
+        "score": "4.8"
+    },
+    {
+        "name": "यिनजियांगन ज़ुजिया हॉस्टल",
+        "area": "कुनशान",
+        "star": "2-सितारा",
+        "pricerange": "सस्ता",
+        "hotel_type": "रिसॉर्ट",
+        "room_type": "बड़ा आकार के कमरे",
+        "parking": "पेड",
+        "room_charge": "166 युआन",
+        "address": "नंबर 6 यिनज़िबांग, झोउझांग टाउन, कुनशान",
+        "phone_number": "180-6809-6635",
+        "score": "4.9"
+    },
+    {
+        "name": "यिनजियांगन ज़ुजिया हॉस्टल",
+        "area": "कुनशान",
+        "star": "2-सितारा",
+        "pricerange": "सस्ता",
+        "hotel_type": "रिसॉर्ट",
+        "room_type": "मानक कमरा",
+        "parking": "पेड",
+        "room_charge": "166 युआन",
+        "address": "नंबर 6 यिनज़िबांग, झोउझांग टाउन, कुनशान",
+        "phone_number": "180-6809-6635",
+        "score": "4.9"
+    },
+    {
+        "name": "कुनशान युंडु बिजनेस होटल",
+        "area": "कुनशान",
+        "star": "1-सितारा",
+        "pricerange": "सस्ता",
+        "hotel_type": "बिजनेस",
+        "room_type": "बड़ा आकार के कमरे",
+        "parking": "N/A",
+        "room_charge": "126 युआन",
+        "address": "बिल्डिंग 1, जियाहे गार्डन, कुनशान",
+        "phone_number": "0512-57868877",
+        "score": "4.4"
+    },
+    {
+        "name": "कुनशान युंडु बिजनेस होटल",
+        "area": "कुनशान",
+        "star": "1-सितारा",
+        "pricerange": "सस्ता",
+        "hotel_type": "बिजनेस",
+        "room_type": "मानक कमरा",
+        "parking": "N/A",
+        "room_charge": "116 युआन",
+        "address": "बिल्डिंग 1, जियाहे गार्डन, कुनशान",
+        "phone_number": "0512-57868877",
+        "score": "4.4"
+    },
+    {
+        "name": "क्राउन प्लाजा चांग्शू होटल",
+        "area": "चांगशु",
+        "star": "5-स्टार",
+        "pricerange": "थोड़ा महंगा",
+        "hotel_type": "रिसॉर्ट",
+        "room_type": "बड़ा आकार के कमरे",
+        "parking": "मुफ्त",
+        "room_charge": "568 युआन",
+        "address": "No. 6, Kaiyuan Avenue, Changshu",
+        "phone_number": "0512-52729999",
+        "score": "4.6"
+    },
+    {
+        "name": "क्राउन प्लाजा चांग्शू होटल",
+        "area": "चांगशु",
+        "star": "5-स्टार",
+        "pricerange": "थोड़ा महंगा",
+        "hotel_type": "रिसॉर्ट",
+        "room_type": "मानक कमरा",
+        "parking": "मुफ्त",
+        "room_charge": "568 युआन",
+        "address": "No. 6, Kaiyuan Avenue, Changshu",
+        "phone_number": "0512-52729999",
+        "score": "4.6"
+    },
+    {
+        "name": "चांगजियांग रोड, चांग्शू में अटौर होटल",
+        "area": "चांगशु",
+        "star": "4",
+        "pricerange": "moderate",
+        "hotel_type": "बिजनेस",
+        "room_type": "बड़ा आकार के कमरे",
+        "parking": "मुफ्त",
+        "room_charge": "312 युआन",
+        "address": "नंबर 268, चांगजियांग रोड, चांगशु",
+        "phone_number": "0512-51661666",
+        "score": "4.8"
+    },
+    {
+        "name": "चांगजियांग रोड, चांग्शू में अटौर होटल",
+        "area": "चांगशु",
+        "star": "4",
+        "pricerange": "moderate",
+        "hotel_type": "बिजनेस",
+        "room_type": "मानक कमरा",
+        "parking": "मुफ्त",
+        "room_charge": "312 युआन",
+        "address": "नंबर 268, चांगजियांग रोड, चांगशु",
+        "phone_number": "0512-51661666",
+        "score": "4.8"
+    },
+    {
+        "name": "वियना होटल",
+        "area": "चांगशु",
+        "star": "3-स्टार",
+        "pricerange": "moderate",
+        "hotel_type": "बिजनेस",
+        "room_type": "बड़ा आकार के कमरे",
+        "parking": "मुफ्त",
+        "room_charge": "322 yuan",
+        "address": "No. 8, Jingang Road, Bixi Town, Changshu",
+        "phone_number": "0512-52018188",
+        "score": "4.8"
+    },
+    {
+        "name": "वियना होटल",
+        "area": "चांगशु",
+        "star": "3-स्टार",
+        "pricerange": "moderate",
+        "hotel_type": "बिजनेस",
+        "room_type": "मानक कमरा",
+        "parking": "मुफ्त",
+        "room_charge": "340 युआन",
+        "address": "No. 8, Jingang Road, Bixi Town, Changshu",
+        "phone_number": "0512-52018188",
+        "score": "4.8"
+    },
+    {
+        "name": "चांगशु यिवेंगे होटल",
+        "area": "चांगशु",
+        "star": "2-सितारा",
+        "pricerange": "सस्ता",
+        "hotel_type": "बिजनेस",
+        "room_type": "बड़ा आकार के कमरे",
+        "parking": "मुफ्त",
+        "room_charge": "208 युआन",
+        "address": "नंबर 7, लोंग्शी नॉर्थ रोड, बिक्सी न्यू जोन, चांग्शू",
+        "phone_number": "0512-52995885",
+        "score": "4.4"
+    },
+    {
+        "name": "चांगशु यिवेंगे होटल",
+        "area": "चांगशु",
+        "star": "2-सितारा",
+        "pricerange": "सस्ता",
+        "hotel_type": "बिजनेस",
+        "room_type": "मानक कमरा",
+        "parking": "मुफ्त",
+        "room_charge": "208 युआन",
+        "address": "नंबर 7, लोंग्शी नॉर्थ रोड, बिक्सी न्यू जोन, चांग्शू",
+        "phone_number": "0512-52995885",
+        "score": "4.4"
+    },
+    {
+        "name": "चांग्शू ओयो दिलचस्प चेन होटल",
+        "area": "चांगशु",
+        "star": "1-सितारा",
+        "pricerange": "सस्ता",
+        "hotel_type": "बिजनेस",
+        "room_type": "बड़ा आकार के कमरे",
+        "parking": "मुफ्त",
+        "room_charge": "70 युआन",
+        "address": "नंबर 12, होंगकी नॉर्थ रोड, चांगशु",
+        "phone_number": "0512-81561588",
+        "score": "4.4"
+    },
+    {
+        "name": "चांग्शू ओयो दिलचस्प चेन होटल",
+        "area": "चांगशु",
+        "star": "1-सितारा",
+        "pricerange": "सस्ता",
+        "hotel_type": "बिजनेस",
+        "room_type": "मानक कमरा",
+        "parking": "मुफ्त",
+        "room_charge": "70 युआन",
+        "address": "नंबर 12, होंगकी नॉर्थ रोड, चांगशु",
+        "phone_number": "0512-81561588",
+        "score": "4.4"
+    }
+]
