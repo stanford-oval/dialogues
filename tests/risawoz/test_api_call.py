@@ -59,6 +59,46 @@ if args.setting == 'zh':
             "available_options": 1,
         },
     }
+elif args.setting == 'fr':
+    dialogue_state = {
+        "hotel": {
+            'pricerange': {'relation': 'equal_to', 'value': ['un peu cher']},
+            'area': {'relation': 'equal_to', 'value': ['District de Wujiang']},
+        },
+        "attraction": {"name": {'relation': 'equal_to', 'value': ['zone pittoresque du lac de Jinji']}},
+    }
+    gold_knowledge = {
+        'hotel': {
+            "name": "le petit hôtel de luxe Suzhou Shui'an Hanshe",
+            "area": "District de Wujiang",
+            "star": "5",
+            "pricerange": "un peu cher",
+            "hotel_type": "d'affaires",
+            "room_type": "grande chambre",
+            "parking": "gratuit",
+            "room_charge": "629 yuans",
+            "address": "n° 5-9, rue Nanxin, dans le village de Lili, dans le district de Wujiang, à Suzhou",
+            "phone_number": "180-5181-5602",
+            "score": "4,6",
+            "available_options": 4,
+        },
+        'attraction': {
+            "name": "zone pittoresque du lac de Jinji",
+            "area": "Parc industriel de Suzhou",
+            "type": "endroit",
+            "the_most_suitable_people": "rencontres",
+            "consumption": "un peu cher",
+            "metro_station": "true",
+            "ticket_price": "gratuit",
+            "phone_number": "400-7558558",
+            "address": "n° 158 de la rue Xinggang, dans le parc industriel de Suzhou, dans la ville de Suzhou",
+            "score": "4,5",
+            "opening_hours": "toute la journée",
+            "features": "Vous aurez une bonne vue sur les grands bâtiments comme la Porte de l'Orient, vous pourrez monter sur la grande roue, faire une croisière de nuit et découvrir le côté moderne de Suzhou.",
+            "available_options": 1,
+        },
+    }
+
 elif args.setting == 'en':
     dialogue_state = {
         "hotel": {

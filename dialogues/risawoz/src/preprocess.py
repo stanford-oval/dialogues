@@ -48,6 +48,11 @@ def main():
         path_fewshot = ["data/zh_fewshot.json"]
         path_dev = ["data/zh_valid.json"]
         path_test = ["data/zh_test.json"]
+    elif args.setting in ["fr"]:
+        path_train = ["data/fr_train.json"]
+        path_fewshot = ["data/fr_fewshot.json"]
+        path_dev = ["data/fr_valid.json"]
+        path_test = ["data/fr_test.json"]
     else:
         path_train = ["data/zh_train.json", "data/en_train.json"]
         path_fewshot = ["data/zh_fewshot.json", "data/en_fewshot.json"]

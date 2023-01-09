@@ -12,8 +12,9 @@ class keydefaultdict(defaultdict):
 
 
 class RisawozMapping(object):
-    def __init__(self):
-
+    def __init__(self, src='zh', tgt='en'):
+        self.src = src
+        self.tgt = tgt
         # currently untranslated
         self.API_MAP = keydefaultdict(lambda k: k)
         self.zh_API_MAP = keydefaultdict(lambda k: k)
@@ -24,7 +25,7 @@ class RisawozMapping(object):
         self.reverse_entity_map = keydefaultdict(lambda k: k)
 
         cur_dir = os.path.dirname(os.path.abspath(__file__))
-        with open(os.path.join(cur_dir, "mappings/en2canonical.json")) as f:
+        with open(os.path.join(cur_dir, f"mappings/{tgt}2canonical.json")) as f:
             en2canonical_tmp = json.load(f)
         en2canonical = {}
         rev_en2canonical = {}
@@ -42,13 +43,33 @@ class RisawozMapping(object):
         self.rev_en2canonical = rev_en2canonical
 
         cur_dir = os.path.dirname(os.path.abspath(__file__))
-        with open(os.path.join(cur_dir, "mappings/zh2en_alignment.json")) as f:
-            zh2en_alignment = json.load(f)
-        zh2en_value = {}
-        for domain, items in zh2en_alignment.items():
-            for slot, values in items.items():
-                for zh_val, en_vals in values.items():
-                    zh2en_value[zh_val] = en_vals
+        if os.path.exists(os.path.join(cur_dir, f"mappings/{src}2{tgt}_alignment.json")):
+            with open(os.path.join(cur_dir, f"mappings/{src}2{tgt}_alignment.json")) as f:
+                zh2en_alignment = json.load(f)
+            zh2en_value = {}
+            for domain, items in zh2en_alignment.items():
+                for slot, values in items.items():
+                    for zh_val, en_val in values.items():
+                        zh2en_value[zh_val] = en_val
+        else:
+            with open(os.path.join(cur_dir, f"mappings/{src}2en_alignment.json")) as f:
+                src2en_alignment = json.load(f)
+                src2en_value = {}
+                for domain, items in src2en_alignment.items():
+                    for slot, values in items.items():
+                        for src_val, en_val in values.items():
+                            src2en_value[src_val] = en_val
+            with open(os.path.join(cur_dir, f"mappings/en2{tgt}_alignment.json")) as f:
+                en2tgt_alignment = json.load(f)
+                en2tgt_value = {}
+                for domain, items in en2tgt_alignment.items():
+                    for slot, values in items.items():
+                        for en_val, tgt_val in values.items():
+                            en2tgt_value[en_val] = tgt_val
+
+            zh2en_value = {}
+            for k, v in src2en_value.items():
+                zh2en_value[k] = en2tgt_value.get(v, v)
 
         self.zh2en_VALUE_MAP = zh2en_value
         self.en2zh_VALUE_MAP = {v: k for k, v in self.zh2en_VALUE_MAP.items()}
@@ -56,6 +77,9 @@ class RisawozMapping(object):
         cur_dir = os.path.dirname(os.path.abspath(__file__))
         with open(os.path.join(cur_dir, "mappings/zh2en_missing.json")) as f:
             self.zh2en_missing_MAP = json.load(f)
+
+        with open(os.path.join(cur_dir, "mappings/zh2fr_missing.json")) as f:
+            self.zh2fr_missing_MAP = json.load(f)
 
         # self.zh2en_missing_MAP = keydefaultdict(lambda k: k)
 
@@ -68,98 +92,303 @@ class RisawozMapping(object):
         self.en2zh_SPECIAL_MAP = {v: k for k, v in self.zh2en_SPECIAL_MAP.items()}
 
         # TODO: this mapping should only include slots that are required to make an api call for the domain. It should not include all the slots.
-        self.DOMAIN_SLOT_MAP = {
-            '医院': ['区域', '名称', '门诊时间', '挂号时间', 'DSA', '3.0T MRI', '重点科室', '电话', '公交线路', '地铁可达', 'CT', '等级', '性质', '类别', '地址'],
-            '天气': ['温度', '目的地', '日期', '城市', '风力风向', '天气', '紫外线强度'],
-            '旅游景点': [
-                '门票价格',
-                '电话号码',
-                '菜系',
-                '名称',
-                '评分',
-                '最适合人群',
-                '房费',
-                '景点类型',
-                '房型',
-                '推荐菜',
-                '消费',
-                '开放时间',
-                '价位',
-                '是否地铁直达',
-                '区域',
-                '地址',
-                '特点',
-            ],
-            '汽车': [
-                '座椅通风',
-                '油耗水平',
-                '级别',
-                '能源类型',
-                '名称',
-                '价格',
-                '驱动方式',
-                '所属价格区间',
-                '车型',
-                '座位数',
-                '座椅加热',
-                '倒车影像',
-                '定速巡航',
-                '动力水平',
-                '车系',
-                '厂商',
-            ],
-            '火车': ['出发时间', '票价', '目的地', '车型', '舱位档次', '日期', '时长', '到达时间', '车次信息', '出发地', '准点率', '航班信息', '坐席'],
-            '电影': ['制片国家/地区', '豆瓣评分', '片名', '主演名单', '具体上映时间', '导演', '片长', '类型', '年代', '主演'],
-            '电脑': [
-                '价格区间',
-                '内存容量',
-                '商品名称',
-                '显卡型号',
-                '裸机重量',
-                '价格',
-                '品牌',
-                '系统',
-                'CPU型号',
-                '系列',
-                '特性',
-                '屏幕尺寸',
-                '游戏性能',
-                '分类',
-                '产品类别',
-                '待机时长',
-                '色系',
-                '硬盘容量',
-                'CPU',
-                '显卡类别',
-            ],
-            '电视剧': ['制片国家/地区', '豆瓣评分', '片名', '主演名单', '首播时间', '导演', '片长', '集数', '单集片长', '类型', '年代', '主演'],
-            '辅导班': [
-                '开始日期',
-                '教师',
-                '上课方式',
-                '校区',
-                '价格',
-                '难度',
-                '时段',
-                '课时',
-                '科目',
-                '班号',
-                '结束日期',
-                '年级',
-                '下课时间',
-                '教室地点',
-                '每周',
-                '课次',
-                '上课时间',
-                '区域',
-            ],
-            '酒店': ['电话号码', '星级', '名称', '房费', '地址', '地铁是否直达', '房型', '停车场', '推荐菜', '酒店类型', '价位', '是否地铁直达', '区域', '评分'],
-            '飞机': ['出发时间', '票价', '温度', '目的地', '起飞时间', '舱位档次', '日期', '城市', '到达时间', '出发地', '准点率', '航班信息', '天气'],
-            '餐厅': ['营业时间', '电话号码', '菜系', '名称', '评分', '房费', '人均消费', '推荐菜', '开放时间', '价位', '是否地铁直达', '区域', '地址'],
-            '通用': [],
+        self.DOMAIN_SLOT_MAPS = {
+            "zh": {
+                '医院': [
+                    '区域',
+                    '名称',
+                    '门诊时间',
+                    '挂号时间',
+                    'DSA',
+                    '3.0T MRI',
+                    '重点科室',
+                    '电话',
+                    '公交线路',
+                    '地铁可达',
+                    'CT',
+                    '等级',
+                    '性质',
+                    '类别',
+                    '地址',
+                ],
+                '天气': ['温度', '目的地', '日期', '城市', '风力风向', '天气', '紫外线强度'],
+                '旅游景点': [
+                    '门票价格',
+                    '电话号码',
+                    '菜系',
+                    '名称',
+                    '评分',
+                    '最适合人群',
+                    '房费',
+                    '景点类型',
+                    '房型',
+                    '推荐菜',
+                    '消费',
+                    '开放时间',
+                    '价位',
+                    '是否地铁直达',
+                    '区域',
+                    '地址',
+                    '特点',
+                ],
+                '汽车': [
+                    '座椅通风',
+                    '油耗水平',
+                    '级别',
+                    '能源类型',
+                    '名称',
+                    '价格',
+                    '驱动方式',
+                    '所属价格区间',
+                    '车型',
+                    '座位数',
+                    '座椅加热',
+                    '倒车影像',
+                    '定速巡航',
+                    '动力水平',
+                    '车系',
+                    '厂商',
+                ],
+                '火车': ['出发时间', '票价', '目的地', '车型', '舱位档次', '日期', '时长', '到达时间', '车次信息', '出发地', '准点率', '航班信息', '坐席'],
+                '电影': ['制片国家/地区', '豆瓣评分', '片名', '主演名单', '具体上映时间', '导演', '片长', '类型', '年代', '主演'],
+                '电脑': [
+                    '价格区间',
+                    '内存容量',
+                    '商品名称',
+                    '显卡型号',
+                    '裸机重量',
+                    '价格',
+                    '品牌',
+                    '系统',
+                    'CPU型号',
+                    '系列',
+                    '特性',
+                    '屏幕尺寸',
+                    '游戏性能',
+                    '分类',
+                    '产品类别',
+                    '待机时长',
+                    '色系',
+                    '硬盘容量',
+                    'CPU',
+                    '显卡类别',
+                ],
+                '电视剧': ['制片国家/地区', '豆瓣评分', '片名', '主演名单', '首播时间', '导演', '片长', '集数', '单集片长', '类型', '年代', '主演'],
+                '辅导班': [
+                    '开始日期',
+                    '教师',
+                    '上课方式',
+                    '校区',
+                    '价格',
+                    '难度',
+                    '时段',
+                    '课时',
+                    '科目',
+                    '班号',
+                    '结束日期',
+                    '年级',
+                    '下课时间',
+                    '教室地点',
+                    '每周',
+                    '课次',
+                    '上课时间',
+                    '区域',
+                ],
+                '酒店': ['电话号码', '星级', '名称', '房费', '地址', '地铁是否直达', '房型', '停车场', '推荐菜', '酒店类型', '价位', '是否地铁直达', '区域', '评分'],
+                '飞机': ['出发时间', '票价', '温度', '目的地', '起飞时间', '舱位档次', '日期', '城市', '到达时间', '出发地', '准点率', '航班信息', '天气'],
+                '餐厅': ['营业时间', '电话号码', '菜系', '名称', '评分', '房费', '人均消费', '推荐菜', '开放时间', '价位', '是否地铁直达', '区域', '地址'],
+                '通用': [],
+            },
+            "en": {
+                'hospital': [
+                    'area',
+                    'name',
+                    'service_time',
+                    'registration_time',
+                    'DSA',
+                    '3.0T_MRI',
+                    'key_departments',
+                    'phone',
+                    'bus_routes',
+                    'metro_station',
+                    'CT',
+                    'level',
+                    'public_or_private',
+                    'general_or_specialized',
+                    'address',
+                ],
+                'weather': ['tamperature', 'destination', 'date', 'city', 'wind', 'weather_condition', 'UV_intensity'],
+                'attraction': [
+                    'ticket_price',
+                    'phone_number',
+                    'cuisine',
+                    'name',
+                    'score',
+                    'the_most_suitable_people',
+                    'room_charge',
+                    'type',
+                    'room_type',
+                    'dishes',
+                    'consumption',
+                    'opening_hours',
+                    'pricerange',
+                    'metro_station',
+                    'area',
+                    'address',
+                    'features',
+                ],
+                'car': [
+                    'ventilated_seats',
+                    'fuel_consumption',
+                    'size',
+                    'hybrid',
+                    'name',
+                    'price',
+                    '4WD',
+                    'pricerange',
+                    'classification',
+                    'number_of_seats',
+                    'heated_seats',
+                    'parking_assist_system',
+                    'cruise_control_system',
+                    'power_level',
+                    'series',
+                    'brand',
+                ],
+                'train': [
+                    'departure_time',
+                    'ticket_price',
+                    'destination',
+                    'classification',
+                    'class_cabin',
+                    'date',
+                    'duration',
+                    'arrival_time',
+                    'train_number',
+                    'departure',
+                    'punctuality_rate',
+                    'flight_information',
+                    'seat_type',
+                ],
+                'movie': [
+                    'production_country_or_area',
+                    'Douban_score',
+                    'title',
+                    'name_list',
+                    'release_date',
+                    'director',
+                    'film_length',
+                    'type',
+                    'decade',
+                    'star',
+                ],
+                'pc': [
+                    'pricerange',
+                    'memory_capacity',
+                    'product_name',
+                    'GPU_model',
+                    'weight',
+                    'price',
+                    'brand',
+                    'operating_system',
+                    'CPU_model',
+                    'series',
+                    'screen_size',
+                    'game_performance',
+                    'usage',
+                    'computer_type',
+                    'standby_time',
+                    'colour',
+                    'hard_disk_capacity',
+                    'CPU',
+                    'GPU_category',
+                ],
+                'tv': [
+                    'production_country_or_area',
+                    'Douban_score',
+                    'title',
+                    'name_list',
+                    'premiere_time',
+                    'director',
+                    'film_length',
+                    'episodes',
+                    'episode_length',
+                    'type',
+                    'decade',
+                    'star',
+                ],
+                'class': [
+                    'start_date',
+                    'teacher',
+                    'type',
+                    'campus',
+                    'price',
+                    'level',
+                    'time',
+                    'hours',
+                    'subject',
+                    'class_number',
+                    'end_date',
+                    'grade',
+                    'end_time',
+                    'classroom',
+                    'day',
+                    'times',
+                    'start_time',
+                    'area',
+                ],
+                'hotel': [
+                    'phone_number',
+                    'star',
+                    'name',
+                    'room_charge',
+                    'address',
+                    'metro_station',
+                    'room_type',
+                    'parking',
+                    'dishes',
+                    'hotel_type',
+                    'pricerange',
+                    'metro_station',
+                    'area',
+                    'score',
+                ],
+                'flight': [
+                    'departure_time',
+                    'ticket_price',
+                    'tamperature',
+                    'destination',
+                    'departure_time',
+                    'class_cabin',
+                    'date',
+                    'city',
+                    'arrival_time',
+                    'departure',
+                    'punctuality_rate',
+                    'flight_information',
+                    'weather_condition',
+                ],
+                'restaurant': [
+                    'business_hours',
+                    'phone_number',
+                    'cuisine',
+                    'name',
+                    'score',
+                    'room_charge',
+                    'per_capita_consumption',
+                    'dishes',
+                    'opening_hours',
+                    'pricerange',
+                    'metro_station',
+                    'area',
+                    'address',
+                ],
+                'general': [],
+            },
         }
+        self.DOMAIN_SLOT_MAP = self.DOMAIN_SLOT_MAPS[src]
 
-        self.zh2en_DOMAIN_MAP = {
+        self.zh2en_DOMAIN_MAPS = {
             "天气": "weather",
             "火车": "train",
             "电脑": "pc",
@@ -174,6 +403,7 @@ class RisawozMapping(object):
             "电视剧": "tv",
             "通用": "general",
         }
+        self.zh2en_DOMAIN_MAP = self.zh2en_DOMAIN_MAPS
         self.en2zh_DOMAIN_MAP = {v: k for k, v in self.zh2en_DOMAIN_MAP.items()}
 
         self.zh2en_INTENT_MAP = self.zh2en_DOMAIN_MAP
@@ -182,7 +412,7 @@ class RisawozMapping(object):
         # TODO: update below
         self.required_slots = {
             **{k: [] for k, v in self.DOMAIN_SLOT_MAP.items()},
-            **{self.zh2en_DOMAIN_MAP[k]: [] for k, v in self.DOMAIN_SLOT_MAP.items()},
+            **{self.zh2en_DOMAIN_MAP.get(k, k): [] for k, v in self.DOMAIN_SLOT_MAP.items()},
         }
         self.api_names = list(self.required_slots.keys())
 
@@ -198,7 +428,7 @@ class RisawozMapping(object):
         }
         self.en2zh_ACT_MAP = {v: k for k, v in self.zh2en_ACT_MAP.items()}
 
-        self.zh2en_SLOT_MAP = {
+        self.zh2en_SLOT_MAPS = {
             '区域': 'area',
             '名称': 'name',
             '门诊时间': 'service_time',
@@ -329,6 +559,7 @@ class RisawozMapping(object):
             "课程网址": "course_URL",
             "教师网址": "teacher_URL",
         }
+        self.zh2en_SLOT_MAP = self.zh2en_SLOT_MAPS
         self.en2zh_SLOT_MAP = {v: k for k, v in self.zh2en_SLOT_MAP.items()}
 
         translation_dict = {

@@ -1,4 +1,5 @@
 import logging
+import sys
 
 from pymongo import MongoClient
 
@@ -10,15 +11,16 @@ logger = logging.getLogger(__name__)
 
 
 class Risawoz(WOZDataset):
-    def __init__(self, name='risawoz'):
+    def __init__(self, name='risawoz', src='zh', tgt='en', mongodb_host=None):
         super().__init__(name)
-
-        mongodb_host = 'mongodb+srv://bitod:plGYPp44hASzGbmm@cluster0.vo7pq.mongodb.net/risawoz?retryWrites=true&w=majority&ssl=true&ssl_cert_reqs=CERT_NONE'
+        print(f"Risawoz {name}, {src}, {tgt}, {mongodb_host}", file=sys.stderr)
+        if mongodb_host is None:
+            mongodb_host = 'mongodb+srv://bitod:plGYPp44hASzGbmm@cluster0.vo7pq.mongodb.net/risawoz?retryWrites=true&w=majority&ssl=true&ssl_cert_reqs=CERT_NONE'
         client = MongoClient(mongodb_host, authSource='admin')
 
         self.db = client["risawoz"]
 
-        self.value_mapping = RisawozMapping()
+        self.value_mapping = RisawozMapping(src=src, tgt=tgt)
 
         self._warnings = set()
 

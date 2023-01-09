@@ -3,6 +3,7 @@ import json
 import os
 import subprocess
 
+from dialogues import Risawoz
 from dialogues.risawoz.src.convert import build_dataset, build_db
 
 parser = argparse.ArgumentParser()
@@ -17,24 +18,41 @@ args = parser.parse_args()
 
 mongodb_host = "mongodb://localhost:27017/"
 
+if args.setting in ['en', 'zh']:
+    src, tgt = 'zh', 'en'
+elif args.setting == 'fr':
+    src, tgt = 'en', 'fr'
+
+
+dataset = Risawoz(src=src, tgt=tgt, mongodb_host=mongodb_host)
+
+
 risawoz_db = build_db(
     db_json_path=os.path.join(*[args.root, f'database/db_{args.setting}']),
     api_map=None,
     setting=args.setting,
+    value_mapping=dataset.value_mapping,
     mongodb_host=mongodb_host,
 )
+
 
 original_data_path = os.path.join(*[args.root, args.data_dir])
 
 for split in args.splits:
     print(f"processing {split} data...")
-    processed_data = build_dataset(os.path.join(original_data_path, f"{args.setting}_{split}.json"), risawoz_db, args.setting, debug=True)
-
-    with open(f'./tests/risawoz/data/{args.setting}/converted_valid.json') as f:
-        gold_data = json.load(f)
+    processed_data = build_dataset(
+        os.path.join(original_data_path, f"{args.setting}_{split}.json"),
+        risawoz_db,
+        args.setting,
+        dataset.value_mapping,
+        debug=True,
+    )
 
     with open(f'{args.setting}_converted_valid.json', 'w') as fout:
         json.dump(processed_data, fout, indent=4, ensure_ascii=False)
+
+    with open(f'./tests/risawoz/data/{args.setting}/converted_valid.json') as f:
+        gold_data = json.load(f)
 
     print(
         subprocess.Popen(

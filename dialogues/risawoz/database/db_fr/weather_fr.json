@@ -1,0 +1,562 @@
+[
+    {
+        "city": "Pékin",
+        "date": "lundi prochain",
+        "weather_condition": "ensoleillé",
+        "temperature": "La température maximale sera de 8 degrés Celsius, et la température minimale de -6 degrés Celsius.",
+        "wind": "force sud-ouest 3-4.",
+        "uv_intensity": "forte"
+    },
+    {
+        "city": "Pékin",
+        "date": "mardi prochain",
+        "weather_condition": "ensoleillé",
+        "temperature": "La température maximale sera de 10 degrés Celsius, et la température minimale de -5 degrés Celsius",
+        "wind": "force 2",
+        "uv_intensity": "forte"
+    },
+    {
+        "city": "Pékin",
+        "date": "mercredi prochain",
+        "weather_condition": "ensoleillé à nuageux",
+        "temperature": "La température maximale sera de 8 degrés Celsius, et la température minimale de -5 degrés Celsius.",
+        "wind": "force 2 sud-est",
+        "uv_intensity": "forte"
+    },
+    {
+        "city": "Pékin",
+        "date": "jeudi prochain",
+        "weather_condition": "nuageux",
+        "temperature": "La température maximale sera de 4 degrés Celsius, et la température minimale de -4 degrés Celsius",
+        "wind": "force 1 du sud-est",
+        "uv_intensity": "forte"
+    },
+    {
+        "city": "Pékin",
+        "date": "vendredi prochain",
+        "weather_condition": "nuageux puis ensoleillé",
+        "temperature": "La température maximale sera de 8 degrés Celsius et la température minimale de -3 degrés Celsius",
+        "wind": "force 3-4 nord-ouest",
+        "uv_intensity": "forte"
+    },
+    {
+        "city": "Pékin",
+        "date": "samedi prochain",
+        "weather_condition": "ensoleillé",
+        "temperature": "La température maximale sera de 9 degrés Celsius et la température minimale de -3 degrés Celsius.",
+        "wind": "force 3 nord",
+        "uv_intensity": "forte"
+    },
+    {
+        "city": "Pékin",
+        "date": "dimanche prochain",
+        "weather_condition": "ensoleillé",
+        "temperature": "La température maximale sera de 9 degrés Celsius, et la température minimale de -2 degrés Celsius",
+        "wind": "north force 3-4",
+        "uv_intensity": "forte"
+    },
+    {
+        "city": "Shanghaï",
+        "date": "lundi prochain",
+        "weather_condition": "ensoleillé",
+        "temperature": "La température maximale sera de 10 degrés Celsius, et la température minimale de 1 degré Celsius.",
+        "wind": "force 3-4 nord-ouest",
+        "uv_intensity": "forte"
+    },
+    {
+        "city": "Shanghaï",
+        "date": "mardi prochain",
+        "weather_condition": "ensoleillé à nuageux",
+        "temperature": "La température maximale sera de 10 degrés Celsius, et la température minimale de 2 degrés Celsius",
+        "wind": "force 2 sud-est",
+        "uv_intensity": "forte"
+    },
+    {
+        "city": "Shanghaï",
+        "date": "mercredi prochain",
+        "weather_condition": "nuageux puis ensoleillé",
+        "temperature": "La température maximale sera de 11 degrés Celsius, et la température minimale de 5 degrés Celsius.",
+        "wind": "force 3-4 nord-ouest",
+        "uv_intensity": "faible"
+    },
+    {
+        "city": "Shanghaï",
+        "date": "jeudi prochain",
+        "weather_condition": "ensoleillé",
+        "temperature": "La température maximale sera de 15 degrés Celsius, et la température minimale de 8 degrés Celsius.",
+        "wind": "force 2 nord-ouest",
+        "uv_intensity": "forte"
+    },
+    {
+        "city": "Shanghaï",
+        "date": "vendredi prochain",
+        "weather_condition": "pluie légère",
+        "temperature": "La température maximale sera de 16 degrés Celsius, et la température minimale de 9 degrés Celsius.",
+        "wind": "force du nord 2",
+        "uv_intensity": "le plus faible"
+    },
+    {
+        "city": "Shanghaï",
+        "date": "samedi prochain",
+        "weather_condition": "ensoleillé à nuageux",
+        "temperature": "La température maximale sera de 17 degrés Celsius, et la température minimale de 9 degrés Celsius",
+        "wind": "force sud 1",
+        "uv_intensity": "forte"
+    },
+    {
+        "city": "Shanghaï",
+        "date": "dimanche prochain",
+        "weather_condition": "ensoleillé à nuageux",
+        "temperature": "La température maximale sera de 18 degrés Celsius, et la température minimale de 11 degrés Celsius",
+        "wind": "force 2 sud",
+        "uv_intensity": "forte"
+    },
+    {
+        "city": "Canton",
+        "date": "lundi prochain",
+        "weather_condition": "ensoleillé",
+        "temperature": "La température maximale sera de 18 degrés Celsius, et la température minimale de 5 degrés Celsius.",
+        "wind": "force 1 nord-est",
+        "uv_intensity": "très forts"
+    },
+    {
+        "city": "Canton",
+        "date": "mardi prochain",
+        "weather_condition": "ensoleillé à nuageux",
+        "temperature": "La température maximale sera de 18 degrés Celsius, et la température minimale de 5 degrés Celsius.",
+        "wind": "une brise sans direction continue",
+        "uv_intensity": "très forts"
+    },
+    {
+        "city": "Canton",
+        "date": "mercredi prochain",
+        "weather_condition": "nuageux",
+        "temperature": "La température maximale sera de 19 degrés Celsius, et la température minimale de 7 degrés Celsius",
+        "wind": "une brise sans direction continue",
+        "uv_intensity": "modérée"
+    },
+    {
+        "city": "Canton",
+        "date": "jeudi prochain",
+        "weather_condition": "nuageux",
+        "temperature": "La température maximale sera de 20 degrés Celsius, et la température minimale de 10 degrés Celsius",
+        "wind": "une brise sans direction continue",
+        "uv_intensity": "faible"
+    },
+    {
+        "city": "Canton",
+        "date": "vendredi prochain",
+        "weather_condition": "nuageux",
+        "temperature": "La température maximale sera de 22 degrés Celsius, et la température minimale de 13 degrés Celsius",
+        "wind": "force 1 nord-est",
+        "uv_intensity": "modérée"
+    },
+    {
+        "city": "Canton",
+        "date": "samedi prochain",
+        "weather_condition": "nuageux",
+        "temperature": "La température maximale sera de 23 degrés Celsius, et la température minimale de 14 degrés Celsius",
+        "wind": "force 2 nord-est",
+        "uv_intensity": "très forts"
+    },
+    {
+        "city": "Canton",
+        "date": "dimanche prochain",
+        "weather_condition": "nuageux",
+        "temperature": "La température maximale sera de 24 degrés Celsius, et la température minimale de 14 degrés Celsius",
+        "wind": "une brise sans direction continue",
+        "uv_intensity": "modérée"
+    },
+    {
+        "city": "Shenzhen",
+        "date": "lundi prochain",
+        "weather_condition": "ensoleillé",
+        "temperature": "La température maximale sera de 17 degrés Celsius, et la température minimale de 7 degrés Celsius.",
+        "wind": "force 2 nord-est",
+        "uv_intensity": "très forts"
+    },
+    {
+        "city": "Shenzhen",
+        "date": "mardi prochain",
+        "weather_condition": "ensoleillé",
+        "temperature": "La température maximale sera de 17 degrés Celsius, et la température minimale de 7 degrés Celsius.",
+        "wind": "une brise sans direction continue",
+        "uv_intensity": "très forts"
+    },
+    {
+        "city": "Shenzhen",
+        "date": "mercredi prochain",
+        "weather_condition": "ensoleillé à nuageux",
+        "temperature": "La température maximale sera de 18 degrés Celsius, et la température minimale de 11 degrés Celsius",
+        "wind": "force d'est 3-4",
+        "uv_intensity": "très forts"
+    },
+    {
+        "city": "Shenzhen",
+        "date": "jeudi prochain",
+        "weather_condition": "nuageux",
+        "temperature": "La température maximale sera de 20 degrés Celsius, et la température minimale de 14 degrés Celsius.",
+        "wind": "force d'est 3-4",
+        "uv_intensity": "faible"
+    },
+    {
+        "city": "Shenzhen",
+        "date": "vendredi prochain",
+        "weather_condition": "nuageux",
+        "temperature": "La température maximale sera de 21 degrés Celsius, et la température minimale de 15 degrés Celsius",
+        "wind": "force est 2",
+        "uv_intensity": "modérée"
+    },
+    {
+        "city": "Shenzhen",
+        "date": "samedi prochain",
+        "weather_condition": "nuageux",
+        "temperature": "La température maximale sera de 23 degrés Celsius, et la température minimale de 16 degrés Celsius.",
+        "wind": "une brise sans direction continue",
+        "uv_intensity": "forte"
+    },
+    {
+        "city": "Shenzhen",
+        "date": "dimanche prochain",
+        "weather_condition": "nuageux",
+        "temperature": "La température maximale sera de 22 degrés Celsius, et la température minimale de 16 degrés Celsius.",
+        "wind": "force 1 nord-est",
+        "uv_intensity": "faible"
+    },
+    {
+        "city": "Hangzhou",
+        "date": "lundi prochain",
+        "weather_condition": "ensoleillé",
+        "temperature": "La température maximale sera de 11 degrés Celsius, et la température minimale de -1 degré Celsius.",
+        "wind": "force du nord 2",
+        "uv_intensity": "forte"
+    },
+    {
+        "city": "Hangzhou",
+        "date": "mardi prochain",
+        "weather_condition": "ensoleillé",
+        "temperature": "La température maximale sera de 11 degrés Celsius, et la température minimale de 0 degré Celsius.",
+        "wind": "force nord 1",
+        "uv_intensity": "forte"
+    },
+    {
+        "city": "Hangzhou",
+        "date": "mercredi prochain",
+        "weather_condition": "nuageux",
+        "temperature": "La température maximale sera de 14 degrés Celsius, et la température minimale de 1 degré Celsius.",
+        "wind": "force 1 du sud-est",
+        "uv_intensity": "faible"
+    },
+    {
+        "city": "Hangzhou",
+        "date": "jeudi prochain",
+        "weather_condition": "ensoleillé à nuageux",
+        "temperature": "La température maximale sera de 16 degrés Celsius, et la température minimale de 5 degrés Celsius.",
+        "wind": "force d'est 3-4",
+        "uv_intensity": "forte"
+    },
+    {
+        "city": "Hangzhou",
+        "date": "vendredi prochain",
+        "weather_condition": "",
+        "temperature": "La température maximale sera de 18 degrés Celsius, et la température minimale de 7 degrés Celsius.",
+        "wind": "north force 3-4",
+        "uv_intensity": "le plus faible"
+    },
+    {
+        "city": "Hangzhou",
+        "date": "samedi prochain",
+        "weather_condition": "ensoleillé",
+        "temperature": "La température maximale sera de 17 degrés Celsius, et la température minimale de 7 degrés Celsius.",
+        "wind": "force 1 du sud-est",
+        "uv_intensity": "forte"
+    },
+    {
+        "city": "Hangzhou",
+        "date": "dimanche prochain",
+        "weather_condition": "nuageux à couvert",
+        "temperature": "la température maximale sera de 21 degrés Celsius, et la température minimale de 9 degrés Celsius",
+        "wind": "force 3-4 sud-est",
+        "uv_intensity": "forte"
+    },
+    {
+        "city": "Nankin",
+        "date": "lundi prochain",
+        "weather_condition": "ensoleillé",
+        "temperature": "La température maximale sera de 9 degrés Celsius, et la température minimale de -2 degrés Celsius",
+        "wind": "nord-ouest 4-5",
+        "uv_intensity": "forte"
+    },
+    {
+        "city": "Nankin",
+        "date": "mardi prochain",
+        "weather_condition": "ensoleillé à nuageux",
+        "temperature": "La température maximale prévue est de 9 degrés Celsius, tandis que la température minimale sera de 0 degré Celsius",
+        "wind": "un vent de force 3-4 du sud",
+        "uv_intensity": "forte"
+    },
+    {
+        "city": "Nankin",
+        "date": "mercredi prochain",
+        "weather_condition": "nuageux",
+        "temperature": "La température maximale sera de 10 degrés Celsius, et la température minimale de 2 degrés Celsius",
+        "wind": "force 3-4 sud-est",
+        "uv_intensity": "faible"
+    },
+    {
+        "city": "Nankin",
+        "date": "jeudi prochain",
+        "weather_condition": "nuageux",
+        "temperature": "La température maximale sera de 14 degrés Celsius, et la température minimale de 5 degrés Celsius",
+        "wind": "force 2 sud-est",
+        "uv_intensity": "modérée"
+    },
+    {
+        "city": "Nankin",
+        "date": "vendredi prochain",
+        "weather_condition": "nuageux",
+        "temperature": "La température maximale sera de 11 degrés Celsius, et la température minimale de 5 degrés Celsius.",
+        "wind": "force 2 ouest",
+        "uv_intensity": "faible"
+    },
+    {
+        "city": "Nankin",
+        "date": "samedi prochain",
+        "weather_condition": "nuageux",
+        "temperature": "La température maximale sera de 17 degrés Celsius et la température minimale de 6 degrés Celsius.",
+        "wind": "force 2 nord-ouest",
+        "uv_intensity": "forte"
+    },
+    {
+        "city": "Nankin",
+        "date": "dimanche prochain",
+        "weather_condition": "nuageux",
+        "temperature": "La température maximale sera de 18 degrés Celsius, et la température minimale de 7 degrés Celsius.",
+        "wind": "force 2 sud-est",
+        "uv_intensity": "modérée"
+    },
+    {
+        "city": "Xiamen",
+        "date": "lundi prochain",
+        "weather_condition": "ensoleillé",
+        "temperature": "La température maximale sera de 14 degrés Celsius et la température minimale de 8 degrés Celsius.",
+        "wind": "force 3-4 nord-est",
+        "uv_intensity": "très forts"
+    },
+    {
+        "city": "Xiamen",
+        "date": "mardi prochain",
+        "weather_condition": "ensoleillé",
+        "temperature": "La température maximale sera de 14 degrés Celsius, et la température minimale de 7 degrés Celsius",
+        "wind": "force 4-5 nord-est",
+        "uv_intensity": "très forts"
+    },
+    {
+        "city": "Xiamen",
+        "date": "mercredi prochain",
+        "weather_condition": "ensoleillé",
+        "temperature": "La température maximale sera de 17 degrés Celsius, et la température minimale de 9 degrés Celsius",
+        "wind": "force est 2",
+        "uv_intensity": "très forts"
+    },
+    {
+        "city": "Xiamen",
+        "date": "jeudi prochain",
+        "weather_condition": "ensoleillé",
+        "temperature": "La température maximale sera de 20 degrés Celsius, et la température minimale de 12 degrés Celsius",
+        "wind": "force 4-5 nord-est",
+        "uv_intensity": "très forts"
+    },
+    {
+        "city": "Xiamen",
+        "date": "vendredi prochain",
+        "weather_condition": "ensoleillé",
+        "temperature": "La température maximale sera de 21 degrés Celsius, et la température minimale de 13 degrés Celsius.",
+        "wind": "force 3-4 sud-est",
+        "uv_intensity": "très forts"
+    },
+    {
+        "city": "Xiamen",
+        "date": "samedi prochain",
+        "weather_condition": "ensoleillé",
+        "temperature": "La température maximale sera de 23 degrés Celsius, et la température minimale de 14 degrés Celsius",
+        "wind": "force 3-4 nord-est",
+        "uv_intensity": "très forts"
+    },
+    {
+        "city": "Xiamen",
+        "date": "dimanche prochain",
+        "weather_condition": "ensoleillé",
+        "temperature": "La température maximale sera de 22 degrés Celsius, et la température minimale de 14 degrés Celsius",
+        "wind": "force 2 nord-est",
+        "uv_intensity": "très forts"
+    },
+    {
+        "city": "Chengdu",
+        "date": "lundi prochain",
+        "weather_condition": "nuageux",
+        "temperature": "La température maximale sera de 11 degrés Celsius et la température minimale de 4 degrés Celsius.",
+        "wind": "force 1 du sud-est",
+        "uv_intensity": "faible"
+    },
+    {
+        "city": "Chengdu",
+        "date": "mardi prochain",
+        "weather_condition": "",
+        "temperature": "La température maximale sera de 11 degrés Celsius et la température minimale de 4 degrés Celsius.",
+        "wind": "une brise sans direction continue",
+        "uv_intensity": "le plus faible"
+    },
+    {
+        "city": "Chengdu",
+        "date": "mercredi prochain",
+        "weather_condition": "nuageux à couvert",
+        "temperature": "La température maximale sera de 13 degrés Celsius, et la température minimale de 4 degrés Celsius.",
+        "wind": "une brise sans direction continue",
+        "uv_intensity": "forte"
+    },
+    {
+        "city": "Chengdu",
+        "date": "jeudi prochain",
+        "weather_condition": "",
+        "temperature": "La température maximale sera de 11 degrés Celsius, et la température minimale de 7 degrés Celsius.",
+        "wind": "une brise sans direction continue",
+        "uv_intensity": "le plus faible"
+    },
+    {
+        "city": "Chengdu",
+        "date": "vendredi prochain",
+        "weather_condition": "nuageux",
+        "temperature": "La température maximale sera de 15 degrés Celsius, et la température minimale de 7 degrés Celsius.",
+        "wind": "une brise sans direction continue",
+        "uv_intensity": "modérée"
+    },
+    {
+        "city": "Chengdu",
+        "date": "samedi prochain",
+        "weather_condition": "nuageux à couvert",
+        "temperature": "La température maximale sera de 15 degrés Celsius, et la température minimale de 7 degrés Celsius.",
+        "wind": "une brise sans direction continue",
+        "uv_intensity": "modérée"
+    },
+    {
+        "city": "Chengdu",
+        "date": "dimanche prochain",
+        "weather_condition": "nuageux",
+        "temperature": "La température maximale sera de 16 degrés Celsius, et la température minimale de 9 degrés Celsius.",
+        "wind": "une brise sans direction continue",
+        "uv_intensity": "faible"
+    },
+    {
+        "city": "Wuhan",
+        "date": "lundi prochain",
+        "weather_condition": "nuageux",
+        "temperature": "La température maximale sera de 13 degrés Celsius, et la température minimale de -1 degré Celsius",
+        "wind": "force est 2",
+        "uv_intensity": "modérée"
+    },
+    {
+        "city": "Wuhan",
+        "date": "mardi prochain",
+        "weather_condition": "ensoleillé à nuageux",
+        "temperature": "la température maximale sera de 13 degrés Celsius, et la température minimale de 0 degré Celsius",
+        "wind": "force 2 sud-est",
+        "uv_intensity": "forte"
+    },
+    {
+        "city": "Wuhan",
+        "date": "mercredi prochain",
+        "weather_condition": "nuageux puis ensoleillé",
+        "temperature": "La température maximale sera de 11 degrés Celsius, et la température minimale de 0 degré Celsius.",
+        "wind": "force 2 sud",
+        "uv_intensity": "modérée"
+    },
+    {
+        "city": "Wuhan",
+        "date": "jeudi prochain",
+        "weather_condition": "ensoleillé à nuageux",
+        "temperature": "La température maximale sera de 15 degrés Celsius, et la température minimale de 1 degré Celsius.",
+        "wind": "force 1 est",
+        "uv_intensity": "forte"
+    },
+    {
+        "city": "Wuhan",
+        "date": "vendredi prochain",
+        "weather_condition": "pluie légère à nu nu nu pour de de pluie légère",
+        "temperature": "La température maximale sera de 12 degrés Celsius, et la température minimale de 3 degrés Celsius",
+        "wind": "force 2 nord-ouest",
+        "uv_intensity": "le plus faible"
+    },
+    {
+        "city": "Wuhan",
+        "date": "samedi prochain",
+        "weather_condition": "nuageux puis ensoleillé",
+        "temperature": "La température maximale sera de 15 degrés Celsius, et la température minimale de 4 degrés Celsius.",
+        "wind": "force 2 sud-est",
+        "uv_intensity": "forte"
+    },
+    {
+        "city": "Wuhan",
+        "date": "dimanche prochain",
+        "weather_condition": "nuageux puis ensoleillé",
+        "temperature": "La température maximale sera de 19 degrés Celsius, et la température minimale de 8 degrés Celsius.",
+        "wind": "force 2 sud-est",
+        "uv_intensity": "modérée"
+    },
+    {
+        "city": "Suzhou",
+        "date": "lundi prochain",
+        "weather_condition": "ensoleillé",
+        "temperature": "La température maximale sera de 9 degrés Celsius, et la température minimale de -1 degré Celsius.",
+        "wind": "force 2 nord-ouest",
+        "uv_intensity": "forte"
+    },
+    {
+        "city": "Suzhou",
+        "date": "mardi prochain",
+        "weather_condition": "ensoleillé à nuageux",
+        "temperature": "La température maximale sera de 9 degrés Celsius, et la température minimale de 1 degré Celsius",
+        "wind": "force 2 nord-ouest",
+        "uv_intensity": "forte"
+    },
+    {
+        "city": "Suzhou",
+        "date": "mercredi prochain",
+        "weather_condition": "couvert",
+        "temperature": "La température maximale sera de 11 degrés Celsius et la température minimale de 4 degrés Celsius.",
+        "wind": "force 2 sud-est",
+        "uv_intensity": "le plus faible"
+    },
+    {
+        "city": "Suzhou",
+        "date": "jeudi prochain",
+        "weather_condition": "nuageux",
+        "temperature": "La température maximale sera de 16 degrés Celsius, et la température minimale de 6 degrés Celsius.",
+        "wind": "force 2 sud-est",
+        "uv_intensity": "forte"
+    },
+    {
+        "city": "Suzhou",
+        "date": "vendredi prochain",
+        "weather_condition": "",
+        "temperature": "La température maximale sera de 15 degrés Celsius, et la température minimale de 8 degrés Celsius.",
+        "wind": "force 2 ouest",
+        "uv_intensity": "le plus faible"
+    },
+    {
+        "city": "Suzhou",
+        "date": "samedi prochain",
+        "weather_condition": "nuageux puis ensoleillé",
+        "temperature": "La température maximale sera de 16 degrés Celsius, et la température minimale de 6 degrés Celsius.",
+        "wind": "force 2",
+        "uv_intensity": "forte"
+    },
+    {
+        "city": "Suzhou",
+        "date": "dimanche prochain",
+        "weather_condition": "nuageux",
+        "temperature": "La température maximale sera de 17 degrés Celsius, et la température minimale de 8 degrés Celsius.",
+        "wind": "force 2",
+        "uv_intensity": "forte"
+    }
+]
