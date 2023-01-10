@@ -2,9 +2,8 @@ import argparse
 import json
 import os
 
-from utils import get_commit
-
 from dialogues.risawoz.main import Risawoz
+from dialogues.utils import get_commit
 
 
 def main():
