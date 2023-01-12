@@ -196,7 +196,7 @@ def build_kb_event(
                     if not isinstance(db_item, dict):
                         db_item = json.loads(db_item.replace("'", '"'))
                     db_item = {
-                        (k.lower() if setting in ['en', 'fr'] else value_mapping.zh2en_SLOT_MAP[k]).replace(
+                        (k.lower() if setting in ['en', 'fr', 'hi'] else value_mapping.zh2en_SLOT_MAP[k]).replace(
                             " ", "_"
                         ): process_string(v, setting)
                         for k, v in db_item.items()
