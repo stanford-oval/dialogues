@@ -81,6 +81,9 @@ class RisawozMapping(object):
         with open(os.path.join(cur_dir, "mappings/zh2fr_missing.json")) as f:
             self.zh2fr_missing_MAP = json.load(f)
 
+        with open(os.path.join(cur_dir, "mappings/zh2hi_missing.json")) as f:
+            self.zh2hi_missing_MAP = json.load(f)
+
         # self.zh2en_missing_MAP = keydefaultdict(lambda k: k)
 
         self.en2zh_missing_MAP = keydefaultdict(lambda k: k)
