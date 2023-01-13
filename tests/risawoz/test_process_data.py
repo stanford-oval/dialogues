@@ -1,5 +1,6 @@
 import argparse
 import json
+import subprocess
 
 from dialogues import Risawoz
 
@@ -41,4 +42,14 @@ with open(f'./tests/risawoz/data/{args.setting}/processed_valid.json') as fin:
     gold_data = json.load(fin)
 
 assert len(dev) == 16232
+
+print(
+    subprocess.Popen(
+        f"diff -u {args.setting}_processed_valid.json ./tests/risawoz/data/{args.setting}/processed_valid.json",
+        shell=True,
+        stdout=subprocess.PIPE,
+    )
+    .stdout.read()
+    .decode()
+)
 assert dev == gold_data

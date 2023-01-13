@@ -138,12 +138,51 @@ elif args.setting == 'en':
             "available_options": 1,
         },
     }
+elif args.setting == 'hi':
+    dialogue_state = {
+        "hotel": {
+            'pricerange': {'relation': 'equal_to', 'value': ['थोड़ा महंगा']},
+            'area': {'relation': 'equal_to', 'value': ['वुजियांग जिले']},
+        },
+        "attraction": {"name": {'relation': 'equal_to', 'value': ['जिनजी झील दर्शनीय क्षेत्र']}},
+    }
+    gold_knowledge = {
+        'hotel': {
+            "name": "सूज़ौ शुआन हंसे बुटीक होटल",
+            "area": "वुजियांग जिले",
+            "star": "5-स्टार",
+            "pricerange": "थोड़ा महंगा",
+            "hotel_type": "बिजनेस",
+            "room_type": "बड़ा आकार के कमरे",
+            "parking": "मुफ्त",
+            "room_charge": "629 युआन",
+            "address": "नंबर 5-9, नानक्सिन स्ट्रीट, लिली टाउन, वुजियांग जिला, सूज़ौ",
+            "phone_number": "180-5181-5602",
+            "score": "4.6",
+            "available_options": 4,
+        },
+        'attraction': {
+            "name": "जिनजी झील दर्शनीय क्षेत्र",
+            "area": "सूज़ौ औद्योगिक पार्क",
+            "type": "लैंडस्केप दर्शनीय स्थल",
+            "the_most_suitable_people": "डेटिंग",
+            "consumption": "थोड़ा महंगा",
+            "metro_station": "true",
+            "ticket_price": "मुफ्त",
+            "phone_number": "400-7558558",
+            "address": "158, जिंगगैंग स्ट्रीट, सूज़ौ इंडस्ट्रियल पार्क, सूज़ौ सिटी",
+            "score": "4.5",
+            "opening_hours": "पूरे दिन",
+            "features": "get a good view of tall buildings like the Gate of the Orient, ride the Ferris wheel, take a night cruise, and feel the modern side of Suzhou.",
+            "available_options": 1,
+        },
+    }
+
 
 knowledge = defaultdict(dict)
 
 dataset = Risawoz()
 new_knowledge_text, constraints = dataset.make_api_call(dialogue_state, knowledge, api_list, src_lang=args.setting)
-
 
 api_diff = api_result_diff(new_knowledge_text, gold_knowledge)
 print('diff:', api_diff)

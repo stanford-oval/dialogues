@@ -18,10 +18,10 @@ args = parser.parse_args()
 
 mongodb_host = "mongodb://localhost:27017/"
 
-if args.setting in ['en', 'zh']:
+if args.setting in ['en', 'zh', 'hi']:
     src, tgt = 'zh', 'en'
-elif args.setting == 'fr':
-    src, tgt = 'en', 'fr'
+else:
+    src, tgt = 'en', args.setting
 
 
 dataset = Risawoz(src=src, tgt=tgt, mongodb_host=mongodb_host)
@@ -45,7 +45,7 @@ for split in args.splits:
         risawoz_db,
         args.setting,
         dataset.value_mapping,
-        debug=True,
+        debug=False,
     )
 
     with open(f'{args.setting}_converted_valid.json', 'w') as fout:
