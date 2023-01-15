@@ -4,11 +4,8 @@
             "Japanese TV shows": "Japanese TV shows",
             "Japanese TV show": "Japanese TV show",
             "Taiwan, China": "Taiwan, China",
-            "American": "American",
             "Chinese mainland": "Chinese mainland",
-            "Japanese": "Japanese",
-            "Japan": "Japan",
-            "South Korean": "South Korean",
+            "South Korean": "Korea",
             "a TV show from Taiwan, China": "a TV show from Taiwan, China",
             "Chinese TV show": "Chinese TV show",
             "Chinese TV shows": "चीनी टीवी शो",
@@ -16,16 +13,13 @@
             "Korean TV shows": "Korean TV shows",
             "Korean TV show": "Korean TV show",
             "South Korea": "South Korea",
-            "Taiwan": "Taiwan",
             "the United States": "United States",
             "Hong Kong TV show": "Hong Kong TV show",
             "American TV shows": "American TV shows",
             "American TV show": "American TV show",
-            "Korean": "Korean",
             "Taiwanese TV show": "Taiwanese TV show",
             "Chinese mainland TV shows": "chinese mainland TV shows",
             "Chinese mainland TV show": "Chinese mainland TV",
-            "America": "America",
             "TV show in America": "TV show in America",
             "TV show from Hong Kong, China": "Hong Kong, China के एक high-rating वाले TV show",
             "Japanese shows": "Japanese shows",
@@ -36,11 +30,11 @@
             "Korean drama": "Korean drama",
             "in South Korea": "South Korea में",
             "Hong Kong movies": "Hong Kong movies",
-            "Korea": "Korea"
+            "Taiwan": "Taiwan, China"
         },
         "decade": {
             "2010s": "2010s",
-            "the 2000s": "the 2000s",
+            "the 2000s": "2000s",
             "1990s": "1990s",
             "2010": "2010",
             "2010's": "2010",
@@ -48,15 +42,12 @@
             "1980s": "1980s"
         },
         "type": {
-            "suspenseful": "suspenseful",
             "science fiction TV show": "science fiction TV show",
-            "feature drama": "feature drama",
-            "crime drama": "crime drama",
-            "comedy": "comedy",
+            "feature drama": "feature",
+            "crime drama": "crime",
             "feature dramas": "feature dramas",
             "science fiction TV shows": "science fiction TV show",
-            "romantic": "romantic",
-            "action TV show": "action TV show",
+            "action TV show": "action",
             "romantic TV show": "romantic TV show",
             "suspense drama": "suspense drama",
             "crime dramas": "crime dramas",
@@ -68,19 +59,14 @@
             "science fiction": "science fiction",
             "romantic TV shows": "romantic TV shows",
             "costume romantic TV show": "costume romantic TV show",
-            "feature": "feature",
             "romantic movies": "romantic movies",
-            "suspense": "suspense",
-            "comedies": "comedies",
             "Sci-fi shows": "Sci-fi shows",
-            "romance": "romance",
             "feature one": "एक feature",
             "feature shows": "feature shows",
             "thriller TV show": "thriller TV show",
-            "scientific": "scientific",
             "scientific TV shows": "scientific TV shows",
             "crime TV show": "crime TV show",
-            "sci-fi show": "sci-fi show",
+            "sci-fi show": "sci-fi",
             "feature TV show": "feature TV show",
             "sci-fis": "sci-fis",
             "action shows": "action shows",
@@ -88,19 +74,16 @@
             "Action shows": "Action shows",
             "Action TV show": "Action TV show",
             "crime shows": "क्राइम शो",
-            "crime": "crime",
             "feature TV shows": "feature TV shows",
             "Action TV shows": "Action TV shows",
-            "action": "action",
-            "sci-fi": "sci-fi"
+            "sci-fi": "sci-fi",
+            "scientific": "sci-fi"
         },
         "title": {
-            "Quartet": "Quartet",
             "On Children": "On Children",
             "the first season of Westworld": "first season of Westworld",
             "Journey to the West": "पश्चिम to यात्रा",
             "Legal High": "Legal High",
-            "Unnatural": "Unnatural",
             "Hell Is Other People": "Hell Is Other People",
             "My Own Swordsman": "My Own Swordsman",
             "Heaven Sword and Dragon Sabre": "स्वर्ग तलवार and Dragon Sabre",
@@ -119,7 +102,6 @@
             "The Teenage Psychic": "The Teenage Psychic",
             "The World Between Us": "The World Between Us",
             "first season of Friends": "first season of Friends",
-            "Signal": "Signal",
             "Secret Garden": "Secret Garden",
             "Monkey King": "Monkey King",
             "Band of Brothers": "Band of Brothers",
@@ -134,7 +116,6 @@
             "Lucky Seven": "Lucky Severn",
             "Liar Game": "Liar Game",
             "The Mad Monk": "The Mad Monk",
-            "Lurk": "Lurk",
             "Fist of Fury": "Fist of Fury",
             "Long Vacation": "Long Vacation",
             "My Love From The Star": "My Love From The Star",
@@ -143,12 +124,10 @@
             "Westworld Season 1": "Westworld Season 1",
             "A Dream in Red Mansions": "A Dream in Red Mansions",
             "first season of The Big Bang Theory": "The Big Bang Theory के first season",
-            "Narcos": "Narcos",
             "My Lovely Sam Soon": "My Lovely Sam Soon",
             "first season of Hannibal": "Hannibal का पहला season",
             "I Love My Family": "I Love My Family",
             "the first season of Game of Thrones": "Game of Thrones first season",
-            "Friends": "Friends",
             "Tai Chi Master": "Tai Chi Master",
             "Line Walker": "Line Walker",
             "The Legendary Four Aces": "The Legendary Four Aces",
@@ -158,7 +137,6 @@
             "Someday or One Day": "Someday or One Day",
             "Fall in Love at First Kiss": "First Kiss recommend",
             "Season 12 of The Big Bang Theory": "Season 12 of The बिग बैंग थ्योरी",
-            "Iljimae": "Iljimae",
             "City Hunter": "City Hunter",
             "Tokyo Love Story": "Tokyo Love Story",
             "Kyō Kara Ore Wa": "Kyō Kara Ore Wa",
@@ -168,12 +146,10 @@
             "A Step into the Past": "A Step into the Past",
             "Ultraman Nexus": "Ultraman Nexus",
             "Someday Or One Day": "Someday Or One Day",
-            "Erased": "Erased",
             "Day and Night": "डे एंड नाइट",
             "The Final Conflict of Su Yanwen": "The Final Conflict of Su Yanwen",
             "Forensic Heroes": "Forensic Heroes",
             "Black & White": "Black & White",
-            "Jin": "Jin",
             "Meteor Garden": "Meteor Garden",
             "Season 1 of Lost": "Lost का Season 1",
             "Star in My Heart": "Star in My Heart",
@@ -184,14 +160,12 @@
             "The Vigilantes in Masks": "The Vigilantes in Masks",
             "Dae Jang Geum": "Dae Jang Geum",
             "B-Robo Kabutack": "B-Robo Kabutack",
-            "Puppets": "Puppets",
             "Romance of the Three Kingdoms": "Romance of the Three Kingdoms",
             "the Mad Monk": "the Mad Monk",
             "Romance in the Rain": "Romance in the Rain",
             "Princess Pearl": "Princess Pearl",
             "the Heaven Sword and Dragon Saber": "the Heaven Sword and Dragon Saber",
             "The Making of an Ordinary Woman": "The Making of an Ordinary Woman",
-            "Bewitched": "Bewitched",
             "The Legend of White Snake": "The Legend of White Snake",
             "the Teenage Psychic": "the Teenage Psychic",
             "Mysterious Incredible Terminator": "Mysterious Incredible Terminator",
@@ -211,7 +185,6 @@
             "Midnight Food Store": "Midnight Food Store",
             "From Today, It's My Turn!!": "From Today, It's My Turn!!",
             "Nodame Cantabile": "Nodame Cantabile",
-            "Galileo": "Galileo",
             "Project Runway": "Project Runway"
         },
         "premiere time": {
@@ -784,30 +757,22 @@
     },
     "movie": {
         "production country or area": {
-            "Indian": "Indian",
             "Taiwan, China": "Taiwan, China",
             "Chinese mainland": "Chinese mainland",
-            "American": "American",
-            "South Korean": "South Korean",
-            "Korean": "Korean",
+            "South Korean": "Korea",
             "South Korea": "South Korea",
             "Hong Kong": "Hong Kong",
-            "India": "India",
-            "Taiwan": "Taiwan",
             "Chinese Mainland": "Chinese Mainland",
             "the United States": "the United States",
-            "America": "America",
             "in America": "in America",
-            "Taiwanese": "Taiwanese",
-            "Korea": "Korea",
             "Korea)": "Korea",
             "Chinese mainland movie": "Chinese mainland movie",
             "in India": "in India",
-            "Hong Kong TV show": "हांगकांग टीवी शो"
+            "Hong Kong TV show": "हांगकांग टीवी शो",
+            "Taiwan": "Taiwan, China"
         },
         "title": {
             "Khoon Bhari Maang": "खून भरी मांग",
-            "Secret": "Secret",
             "The Bride": "The Bride",
             "You Are the Apple of My Eye": "You Are the Apple of My Eye",
             "Dying to Survive": "Dying to Survive",
@@ -816,17 +781,13 @@
             "American science fiction movie": "अमेरिकी science fiction movie",
             "Double Vision": "Double Vision",
             "Train To Busan": "Train to Busan",
-            "Inception": "Inception",
             "Better Days": "Better Days",
             "My Sassy Girl": "My Sassy Girl",
             "Old Boy": "ओल्ड बॉय",
             "Back to the Future": "बैक टू द फ्यूचर",
             "Pulp Fiction": "Pulp Fiction",
             "Rigor Mortis": "Rigor Mortis",
-            "Flipped": "Flipped",
-            "Avatar": "Avatar",
             "All in the Dim Cold Night": "All in the Dim Cold Night",
-            "Missing": "Missing",
             "Chasing the Dragon": "Chasing the Dragon",
             "Train to Busan": "Train to Busan",
             "The Curious Case of Benjamin Button": "The Curious Case of Benjamin Button",
@@ -834,26 +795,19 @@
             "Green Book": "Green Book",
             "A Better Tomorrow": "A Better Tomorrow",
             "3 Idiots, Ghajini, Devdas, and Krrish": "3 Idiots, Ghajini, Devdas, and Krrish",
-            "Krrish": "Krrish",
             "The Conjuring": "The Conjuring",
             "Mr. India": "Mr . India",
             "Love in A Puff": "Love in A Puff",
-            "Control": "Control",
             "YiP Man": "YiP Man",
             "Red Sorghum": "Red Sorghum",
             "Mr. Vampire": "Mr. Vampire",
-            "Catch": "Catch",
             "Kung Fu Kids": "Kung Fu Kids",
             "The Legend of the Six Dynasty": "the Legend of the Six Dynasty",
             "The Shanghai Thirteen": "The Shanghai Thirteen",
             "Once Upon a Time in China 3": "Once Upon a Time in China 3",
             "The Rooftop": "The Rooftop",
-            "Scream": "Scream",
-            "Titanic": "Titanic",
-            "Silk": "Silk",
             "Meteor Garden": "Meteor Garden",
             "The Shining": "The Shining",
-            "Saw": "Saw",
             "Crazy Alien": "Crazy alien",
             "The Dream Factory": "The Dream Factory",
             "The Terminator": "The Terminator",
@@ -864,11 +818,8 @@
             "God of Gamblers": "God of Gamblers",
             "My Name Is Khan": "My Name is Khan",
             "Exorcist Master": "Exorcist Master",
-            "Alien": "Alien",
-            "Ghajini": "Ghajini",
             "Ip Man": "Ip Man",
             "Star Wars": "स्टार Wars",
-            "Monga": "Monga",
             "Love in A Puff, La Comédie humaine, Rigor Mortis, Chasing the Dragon, and Control": "लव इन ए पफ, La Comédie humaine, Rigor Mortis, Chasing the Dragon, and Control",
             "Kong Fu Kids": "Kong Fu Kids",
             "3 Idiots": "3 Idiots",
@@ -890,15 +841,11 @@
             "Kung Fu Hustle": "Kung Fu Hustle",
             "Ashes of Time": "Ashes of Time",
             "Silent Code": "silent को ड।",
-            "Endhiran": "Endhiran",
-            "Duplicate": "Duplicate",
             "Inner Senses": "Inner Senses",
             "King Of Beggars": "King Of Beggars",
-            "Koyla": "Koyla",
             "Blade Runner": "Blade Runner",
             "Shaolin Soccer": "Shaolin Soccer",
             "City Hunter": "City Hunter",
-            "Iljimae": "Iljimae",
             "The Way of the Dragon": "The Way of the Dragon",
             "CJ7": "CJ7",
             "The Marigolds": "The Marigolds",
@@ -915,9 +862,7 @@
             "Mission: Impossible": "Mission: Impossible",
             "The Truman Show.": "The Truman Show.",
             "Top Gun": "Top Gun",
-            "Rocky": "Rocky",
             "P.K.（Peekay)": "P.K.（Peekay)",
-            "Devdas": "Devdas",
             "A Werewolf Boy": "A Werewolf Boy"
         },
         "douban score": {
@@ -1022,7 +967,6 @@
         },
         "type": {
             "romantic movie": "romantic movie",
-            "comedy": "comedy",
             "action movies": "action movies",
             "action movie": "action movie",
             "science fiction movie": "science fiction movie",
@@ -1030,21 +974,15 @@
             "horror movies": "horror movies",
             "horror movie": "horror movie",
             "romantic movies": "romantic movies",
-            "romantic": "romantic",
-            "horror": "horror",
-            "comedic": "comedic",
             "comedy movie": "comedy फ़िल्म",
-            "action film": "action film",
-            "comedies": "comedies",
-            "romance": "romance",
+            "action film": "action",
             "science fiction": "science fiction",
-            "action": "action",
             "sci-fi": "sci-fi"
         },
         "decade": {
-            "the 2000s": "the 2000s",
+            "the 2000s": "2000",
             "2010s": "2010s",
-            "the 1980s": "the 1980s",
+            "the 1980s": "1980s",
             "1990s": "1990s",
             "2010": "2010",
             "1970s": "1970s",
@@ -1517,20 +1455,16 @@
             "Gusu District": "Gusu District",
             "Suzhou Industrial Park": "Suzhou Industrial Park",
             "Suzhou New District": "Suzhou New District",
-            "Changshu": "Changshu",
             "Wuzhong District": "Wuzhong District",
             "Suzhou New district": "Suzhou New district",
-            "Wujiang": "Wujiang",
-            "Kunshan": "Kunshan",
             "Industrial Park": "Industrial Park",
-            "Wujiang District": "Wujiang District"
+            "Wujiang District": "Wujiang District",
+            "Wujiang": "Wujiang District",
+            "Wuzhong district": "Wuzhong District"
         },
         "consumption": {
             "not that expensive": "not that expensive",
             "a bit more expensive": "a bit more expensive",
-            "affordable": "affordable",
-            "cheap": "cheap",
-            "cheaper": "cheaper",
             "slightly more expensive": "slightly more expensive",
             "moderately priced": "मामूली कीमत वाली",
             "fairly": "काफी",
@@ -1541,34 +1475,26 @@
             "above-average": "above average",
             "more expensive": "more expensive",
             "a little expensive": "थोड़ा expensive",
-            "moderate": "moderate",
-            "slightly expensive": "slightly expensive"
+            "slightly expensive": "slightly expensive",
+            "a slightly more expensive": "slightly expensive",
+            "expensive": "slightly expensive"
         },
         "the most suitable people": {
-            "friends": "friends",
-            "friend": "friend",
-            "date": "date",
             "family-friendly": "family-friendly",
             "a family trip": "family trip",
-            "girlfriend": "girlfriend",
-            "couples": "couples",
             "friends to have an outing": "दोस्तों के साथ घूमने के लिए",
             "friends and I could have some fun": "where my friends and I could have some fun",
-            "boyfriend": "boyfriend",
-            "partner": "partner",
             "for friends to have some fun": "friends के साथ fun करने के लिए एक good place खोजने में help कर सकते हैं ",
             "go with my friends": "friends के साथ",
             "for friends": "friends",
             "for a group of friends": "friends group के लिए",
-            "family": "family",
             "travel with friends": "Friends के साथ travel",
             "go with friends": "दोस्तों के साथ जाने",
             "go with kids": "बच्चों के साथ जाने",
             "family trip": "family trip",
-            "dating": "dating",
             "traveling with family": "traveling with family",
-            "kids": "kids",
-            "families": "families"
+            "family": "family-friendly",
+            "families": "family-friendly"
         },
         "name": {
             "Humble Administrator's Garden": "Humble Administrator's Garden",
@@ -1589,7 +1515,7 @@
             "the Suzhou Museum": "the Suzhou Museum",
             "Suzhou Center": "Suzhou Center",
             "Huayi Brothers Movie World": "Huayi Brothers Movie World",
-            "Shajiabang Scenic Spot of Changshu": "Changshu के Shajiabang Scenic Spot",
+            "Shajiabang Scenic Spot of Changshu": "Shajiabang Scenic Spot",
             "Stone Lake": "Stone Lake",
             "the Gate of the Orient": "the Gate of the Orient",
             "The Gate of the Orient": "The Gate of the Orient",
@@ -1644,20 +1570,17 @@
             "water towns": "water towns",
             "business center": "business center",
             "school campus": "school campus",
-            "university": "university",
             "historical sites in Gusu District": "Gusu District में कुछ historical sites",
             "Suzhou-styled garden": "Suzhou-styled garden",
             "university campus": "university campus",
             "commercial centers": "commercial centers",
-            "campus": "campus",
             "historic site in Suzhou": "historic site in Suzhou",
-            "garden": "garden",
             "Suzhou garden": "Suzhou garden",
             "ancient towns": "ancient towns",
             "historic site": "historic site",
             "Suzhou-styled gardens": "Suzhou-styled gardens",
-            "campuses": "campuses",
-            "historical sites": "historical sites"
+            "historical sites": "historical sites",
+            "ancient town": "water town"
         },
         "address": {
             "No. 178, Dongbei Street, Gusu District, Suzhou City": "number 178 , डोंगबेई स्ट्रीट , गुसु जिला , Suzhou सिटी",
@@ -1730,7 +1653,6 @@
         },
         "ticket price": {
             "30 yuan": "30 yuan",
-            "free": "free",
             "198 yuan": "198 yuan",
             "45 yuan": "45 युआन",
             "299 yuan": "299 युआन",
@@ -1920,10 +1842,8 @@
             "You can get there directly by subway": "आप सीधे मेट्रो द्वारा वहां पहुंच सकते हैं ।",
             "can't": "नहीं",
             "could": "सकता",
-            "can": "can",
             "directly by subway": "सीधे subway से",
             "you can get there by subway directly": "आप directly मेट्रो द्वारा वहां पहुंच सकते हैं",
-            "Yes": "Yes",
             "get to directly by subway": "subway",
             "We can get there directly by subway": "हम सीधे subway द्वारा वहां पहुंच सकते हैं",
             "there is no direct subway": "कोई सीधा subway नहीं है",
@@ -1949,18 +1869,13 @@
             "there i": "है",
             "with a subway station nearby": "with a subway station nearby",
             "there is": "there is",
-            "there is no": "नहीं है",
-            "false": "false",
-            "true": "true"
+            "there is no": "नहीं है"
         }
     },
     "restaurant": {
         "pricerange": {
             "a bit more expensive": "a bit more expensive",
             "moderately priced": "moderately priced",
-            "fair": "fair",
-            "cheaper": "cheaper",
-            "cheap": "cheap",
             "a slightly more expensive": "थोड़े अधिक expensive",
             "mid-price": "mid-price",
             "slightly more expensive": "slightly more expensive",
@@ -1972,8 +1887,8 @@
             "low-priced": "low-priced",
             "high-priced": "high-priced",
             "medium-with": "medium-with",
-            "moderate": "moderate",
-            "slightly expensive": "slightly expensive"
+            "slightly expensive": "slightly expensive",
+            "expensive": "slightly expensive"
         },
         "name": {
             "Banyuan Private Home Cuisine": "Banyuan Private Home Cuisine",
@@ -1983,12 +1898,10 @@
             "Seoul South Korean Cuisine": "Seoul South Korean Cuisine",
             "Xibei Restaurant": "Xibei Restaurant",
             "Niutanjia Ben'Ge Charcoal Barbecue": "Niutanjia Ben'Ge Charcoal Barbecue",
-            "QingHeGu": "QingHeGu",
             "Chongqing De Zhuang Hot Pot": "चोंगकिंग De ज़ुआंग हॉट pot",
             "Yangguanguren Restaurant": "यंगगुआंगुरन रेस्तरां",
             "Dream of Taoyuan": "Dream of Taoyuan",
             "Beijiang Restaurant": "Beijiang Restaurant",
-            "LELECHA": "LELECHA",
             "One Plus Conveyor Belt Sushi": "One Plus Conveyor Belt Sushi",
             "Goodman Folk Snacks": "Goodman Folk Snacks",
             "L'Arome": "एल'एरोम",
@@ -1997,7 +1910,6 @@
             "L'Arôme": "L'Arôme",
             "Palsaik Korean BBQ": "Palsaik Korean BBQ",
             "Spicy Memory": "Spicy Memory",
-            "Wufangzhai": "Wufangzhai",
             "Aobanian Hot Pot": "Aobanian Hot Pot",
             "Zhen Pin Yue Teahouse": "Zhen Pin Yue Teahouse",
             "Zhen Pin Yue Teahouse's": "जेन पिन यू टीहाउस का",
@@ -2008,19 +1920,16 @@
             "Seoul Korean Cuisine": "Seoul Korean Cuisine",
             "Riverside Grilled Fish": "Riverside Grilled Fish",
             "Sichuan Xiang Tian Xia Hot Pot's": "Sichuan Xiang Tian Xia Hot Pot",
-            "Nailaoshiguang": "Nailaoshiguang",
             "Wang Steak": "Wang Steak",
             "Grandma's Home": "Grandma's Home",
             "Tongli Hometown": "Tongli Hometown",
             "Zhiwei Japanese Restaurant": "Zhiwei Japanese Restaurant",
             "L'Arôme's": "L'Arôme का",
             "Master Yan": "Master Yan",
-            "Laofengting": "Laofengting",
             "Laofengting's": "लाओफेंगटिंग",
             "Zhou Zhuang Hua Jian Tang Jie Geng Restaurant": "Zhou Zhuang Hua Jian Tang Jie Geng Restaurant",
             "Xin Hua Xi Beef Rice Noodle": "Xin Hua Xi Beef Rice Noodle",
             "Dongwu Noodle House": "Dongwu Noodle House",
-            "Guimijia": "Guimijia",
             "Fox's House Yoghurt": "Fox House Yoghurt",
             "Spicy Memory's": "Spicy Memory",
             "Wanyuting·hejiariben Cuisine Teppanyaki": "Wanyuting·hejiariben Cuisine Teppanyaki",
@@ -2040,48 +1949,43 @@
             "Guan Zhi North": "Guan Zhi North",
             "Tangpalace Seafood Restaurant": "Tangpalace Seafood Restaurant",
             "Tang Palace Seafood Restaurant": "Tang Palace Seafood Restaurant",
-            "Palsaik Korean +Q": "Palsaik Korean +Q"
+            "Palsaik Korean +Q": "Palsaik Korean +Q",
+            "One Plus Conveyor Belt Sushi.": "One Plus Conveyor Belt Sushi"
         },
         "cuisine": {
             "Banyuan Private Home Cuisine": "Banyuan Private Home Cuisine",
             "Jiangsu Zhejiang Cuisine": "Jiangsu Zhejiang Cuisine",
             "hot pot": "hot pot",
-            "South Korean food": "South Korean food",
+            "South Korean food": "Korean",
             "South Korean": "South Korean",
             "Japanese cuisine": "Japanese cuisine",
-            "Northwestern cuisine": "Northwestern cuisine",
+            "Northwestern cuisine": "Northwestern",
             "Northwest cuisine": "Northwest cuisine",
             "Jiangsu-Zhejiang cuisine": "Zhejiang cuisine",
             "bread and desserts": "bread and desserts",
             "fast food and quick meals": "fast food and quick meals",
             "jiangsu zhejiang cuisine": "Jiangsu Zhejiang cuisine",
-            "Sichuan": "Sichuan",
-            "western": "western",
-            "Northwestern": "Northwestern",
             "Korean foods": "Korean foods",
             "japanese restaurant": "Japanese restaurant",
             "bread and dessert": "bread and dessert",
-            "Cantonese food": "Cantonese food",
+            "Cantonese food": "Cantonese",
             "Wanyuting·hejiariben Cuisine": "Wanyuting·hejiariben Cuisine",
             "Sichuan cuisine": "Sichuan cuisine",
             "fast food": "fast food",
             "Korean food": "Korean food",
             "Korean Cuisine": "Korean Cuisine",
-            "Hotpot": "Hotpot",
             "Japanese restaurant": "Japanese restaurant",
             "western food": "western food",
             "Jiangsu Zhejiang dishes": "Jiangsu Zhejiang dishes",
             "Northeastern Chinese cuisine": "Northeastern Chinese cuisine",
-            "Japanese food": "Japanese food",
+            "Japanese food": "Japanese",
             "Korean restaurant": "Korean restaurant",
             "Jiangsu and Zhejiang cuisine": "Jiangsu and Zhejiang cuisine",
             "South Korean cuisine": "South Korean cuisine",
             "Cantonese cuisine": "Cantonese cuisine",
-            "bread": "bread",
-            "Korean": "Korean",
             "Jiangsu-Zhejiang": "Jiangsu-Zhejiang",
-            "Cantonese": "Cantonese",
-            "Japanese": "Japanese"
+            "bread": "bread and desserts",
+            "null": "Korean"
         },
         "address": {
             "No. 3, Chuanfang Alley, North of Pingjiang Road": "No. 3, Chuanfang Alley, North of Pingjiang Road",
@@ -2203,14 +2107,11 @@
         },
         "metro station": {
             "no direct subway line to it": "इसके लिए कोई direct subway line नहीं",
-            "is": "is",
             "no": "नहीं",
             "it would be best if I could get there directly by subway": "it would be best अगर मैं वहां direct subway से पहुँच सकूं",
             "you can get there by subway directly": "।You can get there by subway directly",
-            "can": "can",
             "get to directly by subway": "get to directly by subway",
             "directly by subway": "directly by subway",
-            "Yes": "Yes",
             "can get there by subway": "आप subway से वहां पहुंच सकते",
             "get there directly by subway": "directly मेट्रो से वह पहूंच सकते",
             "yes, you can": "हाँ , तुम जा सकते हो।",
@@ -2228,7 +2129,6 @@
             "can't get there directly": "सीधे subway से वहाँ नहीं पहुँच सकते",
             "can't get there by subway": "आप subway से वहां नहीं जा सकते।",
             "there is": "there is",
-            "subway": "subway",
             "Yes, you can get there by subway directly": "हाँ, आप वहाँ सीधे subway द्वारा पहुँच सकते हैं",
             "can't": "नहीं",
             "get directly to the restaurant by subway": "subway से सीधे restaurant जा",
@@ -2237,20 +2137,16 @@
             "Sure, you can": "हाँ, बिलकुल",
             "with a subway station nearby": "with a subway station nearby",
             "go there by subway": "उधर subway से जाना",
-            "could": "could",
-            "Sorry, there isn't": "Sorry, वो नहीं है",
-            "true": "true",
-            "false": "false"
+            "Sorry, there isn't": "Sorry, वो नहीं है"
         },
         "area": {
             "Suzhou Industrial Park": "Suzhou Industrial Park",
             "Wuzhong District": "Wuzhong District",
             "Suzhou New District": "Suzhou New District",
             "Gusu District": "Gusu District",
-            "Wujiang": "Wujiang",
-            "Kunshan": "Kunshan",
             "Wujiang District": "Wujiang District",
-            "Changshu": "Changshu"
+            "Wujiang": "Wujiang District",
+            "Suzhou New district": "Suzhou New District"
         },
         "business hours": {
             "from Monday to Sunday, 09:00-07:00": "from Monday to Sunday, 09:00 - 07:00",
@@ -2329,7 +2225,6 @@
             "4.8": "4.8"
         },
         "dishes": {
-            "bullfrogs": "bullfrogs",
             "fried mutton with shallot": "shallot के साथ तला हुआ मटन",
             "It's recommended you give the tomato pot": "यह अनुशंसा की जाती 's कि आप tomato pot",
             "Xinjiang Big Plate Chicken": "Xinjiang Big Plate Chicken",
@@ -2359,8 +2254,6 @@
             "Grandma's Red Braised Pork Belly": "Grandma's Red Braised Pork Belly",
             "the shrimp balls": "the shrimp balls",
             "Braised Crab with Tofu": "Braised Crab with Tofu",
-            "pizzas": "pizzas",
-            "salmon": "salmon",
             "pasta Bolognese": "pasta Bolognese",
             "Hairy Crab": "Hairy Crab",
             "homemade yogurt": "homemade yogurt",
@@ -2433,17 +2326,10 @@
         }
     },
     "car": {
-        "classification": {
-            "SUV": "SUV",
-            "notchback": "notchback",
-            "MPV": "MPV",
-            "hatchback": "hatchback"
-        },
+        "classification": {},
         "hybrid": {
             "gas-powered": "gas-powered",
-            "gasoline-driven": "gasoline से चलने वाली",
-            "PHEV": "PHEV",
-            "gas": "gas"
+            "gasoline-driven": "gasoline से चलने वाली"
         },
         "pricerange": {
             "within 150,000 yuan": "within 150,000 yuan",
@@ -2537,82 +2423,46 @@
             "Volkswagen Touran L": "Volkswagen Touran L",
             "Volkswagen Golf": "वोक्सवैगन गोल्फ",
             "FAW-Volkswagen Magotan": "FAW-Volkswagen Magotan",
-            "Lamando": "Lamando",
             "T-ROC": "T-ROC",
-            "Passat": "Passat",
-            "Bora": "Bora",
-            "Lavida": "Lavida",
             "FAW-Volkswagen CC": "FAW-Volkswagen CC",
             "FAW-Volkswagen TACQUA": "FAW-Volkswagen TACQUA",
-            "Teramont": "Teramont",
             "Teramont X": "Teramont X",
-            "Phideon": "Phideon",
-            "Tayron": "Tayron",
             "Volkswagen Golf Variant": "Volkswagen Golf Variant",
             "C-TREK Weiling": "C-TREK Weiling",
             "Volkswagen Multivan": "Volkswagen Multivan",
             "Magotan": "मैगोटन",
-            "Sagitar": "Sagitar",
-            "Santana": "Santana",
-            "Tharu": "Tharu",
-            "POLO": "POLO",
-            "Volkswagen Beetle": "Volkswagen Beetle",
-            "Sharan": "Sharan",
-            "Caravelle": "Caravelle",
-            "Touareg": "Touareg"
+            "Volkswagen Beetle": "Volkswagen Beetle"
         },
         "cruise control system": {
             "Sure, it has": "Sure, it has",
-            "Yes": "Yes",
             "is not equipped with": "equipped नहीं है",
             "does have": "हैं।",
             "available": "उपलब्ध",
             "does not have": "नहीं है।",
-            "cruise": "cruise",
-            "has": "has",
             "is": "है।",
-            "does": "does",
-            "are": "are",
-            "have": "have",
-            "is equipped with": "equipped है",
-            "true": "true",
-            "false": "false"
+            "is equipped with": "equipped है"
         },
         "parking assist system": {
             "does not have": "does not have",
-            "Yes": "Yes",
-            "support": "support",
-            "This": "This",
             "have": "है",
             "Sure, it does": "Sure , इसमें है",
             "does have": "हैं।",
-            "has": "has",
-            "available": "available",
             "no": "नहीं",
             "this": "यह",
             "yes": "Yes",
             "is": "है।",
             "does": "इसमें",
-            "are": "are",
-            "is equipped with": "equipped है",
-            "false": "false",
-            "true": "true"
+            "is equipped with": "equipped है"
         },
         "ventilated seats": {
             "does not have": "does not have",
-            "Yes": "Yes",
             "is not equipped with": "equipped नहीं है",
             "it does not have seat ventilation at the moment": "इसमें फिलहाल सीट ventilation नहीं है",
-            "not": "not",
-            "no": "no",
-            "This": "This",
             "Not for the time being": "फिलहाल नहीं",
             "No, it does not": "ऐसा not does",
             "has neither": "दोनों ही नहीं है",
             "has": "है",
-            "No": "नहीं",
-            "false": "false",
-            "true": "true"
+            "No": "नहीं"
         },
         "brand": {
             "SAIC Volkswagen": "SAIC Volkswagen",
@@ -2624,10 +2474,10 @@
             "3": "3",
             "1": "1",
             "6": "6",
-            "four": "four",
             "5": "5",
             "7": "7",
-            "4": "4"
+            "4": "4",
+            "four": "4"
         },
         "price": {
             "111,800 yuan": "111 , 800 yuan",
@@ -2696,11 +2546,9 @@
         },
         "heated seats": {
             "does not have": "does not have",
-            "has": "has",
             "is not equipped with": "equipped नहीं है",
             "no": "नहीं",
             "This": "इस",
-            "have": "have",
             "has neither": "दोनों ही नहीं है",
             "available": "उपलब्ध",
             "Yes": "हां",
@@ -2708,9 +2556,7 @@
             "No": "नहीं",
             "doesn't": "doesn't",
             "are": "हैं।",
-            "is": "है",
-            "false": "false",
-            "true": "true"
+            "is": "है"
         },
         "4wd": {
             "all-wheel": "all-wheel",
@@ -2724,36 +2570,27 @@
         },
         "power level": {
             "relatively strong": "relatively strong",
-            "stronger": "मजबूत",
-            "normal": "normal"
+            "stronger": "मजबूत"
         },
         "fuel consumption": {
-            "fuel-efficient": "fuel-efficient",
-            "normal": "normal"
+            "fuel-efficient": "fuel-efficient"
         }
     },
     "other": {
         "localized": {
-            "Suzhou": "Suzhou",
             "Suzhou's": "Suzhou का",
             "Peking opera": "Peking opera",
-            "Meituan": "Meituan",
             "Chongqing flavor": "Chongqing flavor",
-            "restaurant": "restaurant",
             "piano class": "पियानो की class"
         },
-        "数据库": {
-            "seven": "seven"
-        }
+        "数据库": {}
     },
     "hotel": {
         "pricerange": {
             "not that expensive": "not that expensive",
             "a bit more expensive": "कुछ और महंगे",
             "moderately priced": "moderately priced",
-            "cheaper": "cheaper",
             "slightly more expensive": "slightly more expensive",
-            "cheap": "cheap",
             "a slightly more expensive": "थोड़ा और expensive",
             "a little bit expensive": "a little bit expensive",
             "mid-priced": "mid-priced",
@@ -2761,8 +2598,7 @@
             "A little bit expensive": "थोड़ा महंगा",
             "more expensive": "more expensive",
             "higher-priced": "higher-priced",
-            "slightly expensive": "slightly expensive",
-            "moderate": "moderate"
+            "slightly expensive": "slightly expensive"
         },
         "room type": {
             "standard rooms": "standard rooms",
@@ -2836,27 +2672,22 @@
             "5.0": "5.0"
         },
         "parking": {
-            "free": "free",
             "need to pay": "भुगतान करना",
-            "charge": "charge",
             "does not": "नहीं है।",
-            "pay": "pay",
-            "paid": "paid",
             "don't charge for parking": "parking के लिए कोई charge नहीं लेते",
             "doesn't": "नहीं",
             "N/A": "N/A"
         },
         "area": {
             "Suzhou New District": "Suzhou New District",
-            "Changshu": "Changshu",
             "Wujiang District": "वुजियांग जिले",
             "Wuzhong District": "Wuzhong District",
             "Suzhou Industrial Park": "Suzhou Industrial Park",
-            "Suzhou": "Suzhou",
-            "Kunshan": "Kunshan",
-            "Wujiang": "Wujiang",
             "Gusu District": "Gusu District",
-            "Industrial Park": "Industrial Park"
+            "Industrial Park": "Industrial Park",
+            "Wujiang": "वुजियांग जिले",
+            "Wuzhong district": "Wuzhong District",
+            "Suzhou New district": "Suzhou New District"
         },
         "room charge": {
             "919 yuan": "919 yuan",
@@ -2973,9 +2804,7 @@
         },
         "hotel type": {
             "resort hotel": "resort hotel",
-            "business hotel": "business hotel",
-            "business": "business",
-            "resort": "resort"
+            "business hotel": "business hotel"
         },
         "address": {
             "No. 20, Gunxiufang, Shiquan Street, Gusu District, Suzhou": "No. 20, Gunxiufang, Shiquan Street, Gusu District, Suzhou",
@@ -3046,7 +2875,6 @@
             "psychological department": "psychological department",
             "gynecology department": "Gynecology Department",
             "general hospital": "general hospital",
-            "respiratory": "respiratory",
             "respiratory medicine department": "respiratory medicine department",
             "oncology department": "oncology department",
             "ophthalmic department": "ophthalmic department",
@@ -3058,27 +2886,11 @@
             "nephrology department": "nephrology department",
             "neurology department": "neurology department",
             "cardiovascular medicine department": "cardiovascular medicine department",
-            "pediatric": "pediatric",
             "Cardiovascular Medicine Department": "Cardiovascular Medicine Department",
             "Gastroenterology Department": "Gastroenterology Department",
             "Gynecology Department": "Gynecology Department",
             "stomatology department": "Stomatology Department",
-            "cardiovascular": "cardiovascular",
-            "nephrology": "nephrology",
-            "blood": "blood",
-            "neurology": "neurology",
-            "general surgery": "general surgery",
-            "gynecology": "gynecology",
-            "endocrinology": "endocrinology",
-            "gastroenterology": "gastroenterology",
-            "psychology": "psychology",
-            "burn": "burn",
-            "oncology": "oncology",
-            "neurosurgery": "neurosurgery",
-            "urology": "urology",
-            "ophthalmology": "ophthalmology",
-            "stomatology": "stomatology",
-            "dermatology": "dermatology"
+            "general surgery": "general surgery"
         },
         "name": {
             "Suzhou Kowloon Hospital": "Suzhou Kowloon Hospital",
@@ -3146,18 +2958,12 @@
             "No. 242, Guangji Road": "No. 242, Guangji Road"
         },
         "ct": {
-            "Yes": "Yes",
-            "available": "available",
             "yes": "हाँ",
             "not": "नहीं",
             "Yes, and CT": "हां , अौर CT ",
             "Of course": "Of course",
             "have": "है।",
-            "has": "has",
-            "does": "does",
-            "is": "is",
             "offers": "प्रदान",
-            "true": "true",
             "N/A": "N/A"
         },
         "bus routes": {
@@ -3191,40 +2997,26 @@
             "No. 5, No. 33, No. 88, No. 101, No. 811, No. 812, No. 872, or No. 876": "No. 5, No. 33, No. 88, No. 101, No. 811, No. 812, No. 872, or No. 876"
         },
         "dsa": {
-            "Yes": "Yes",
             "can't": "can't",
             "not": "नहीं",
             "is": "है",
             "also has": "भी हैं।",
-            "does": "does",
-            "No": "No",
             "there is": "है।",
             "yes": "हां",
-            "available": "available",
             "Not": "नहीं।",
-            "has": "has",
             "doesn't have": "नहीं हैं।",
-            "can": "can",
             "offers": "प्रदान",
             "does not have": "does not have",
-            "true": "true",
             "N/A": "N/A"
         },
         "3.0t mri": {
-            "Yes": "Yes",
             "does not have": "does not have",
-            "has": "has",
             "Of course it has 3.0T MRI equipment": "Of course, इसमें 3.0T MRI equipment है ",
-            "available": "available",
-            "No": "No",
             "have": "हैं",
             "not": "नहीं",
-            "no": "no",
             "As of now, no": "फिलहाल , No",
             "doesn't have": "नहीं है।",
-            "does": "does",
             "there is": "वहाँ है।",
-            "true": "true",
             "N/A": "N/A"
         },
         "service time": {
@@ -3269,7 +3061,8 @@
             "Xiangcheng District": "Xiangcheng District",
             "gusu district": "Gusu District",
             "Suzhou Industrial Park": "Suzhou Industrial Park",
-            "Wuzhong District": "Wuzhong District"
+            "Wuzhong District": "Wuzhong District",
+            "Suzhou New district": "Suzhou New District"
         },
         "registration time": {
             "from 07:00 to 16:50": "07:00 से 16:50 तक",
@@ -3316,44 +3109,19 @@
             "7:30-12:00,13:00-17:30": "7:30-12:00,13:00-17:30"
         },
         "public or private": {
-            "public hospital": "public hospital",
-            "public": "public",
-            "private": "private"
+            "public hospital": "public hospital"
         },
-        "level": {
-            "tertiary": "tertiary",
-            "secondary": "secondary"
-        },
+        "level": {},
         "metro station": {
             "no": "नहीं",
             "reached directly": "directly पहुंचा",
-            "No": "No",
             "is": "है",
             "can": "सकते",
-            "true": "true",
             "N/A": "N/A"
         }
     },
     "weather": {
-        "city": {
-            "Xiamen": "Xiamen",
-            "Shenzhen": "Shenzhen",
-            "Beijing": "Beijing",
-            "Chengdu": "Chengdu",
-            "Guangzhou": "Guangzhou",
-            "Shanghai": "Shanghai",
-            "Nanjing": "Nanjing",
-            "Wuhan": "Wuhan",
-            "Hangzhou": "Hangzhou",
-            "Suzhou": "Suzhou",
-            "Hangzhoudong": "Hangzhoudong",
-            "Shenzhenbei": "Shenzhenbei",
-            "Beijingxi": "Beijingxi",
-            "Nanjingnan": "Nanjingnan",
-            "Chengdudong": "Chengdudong",
-            "Beijingnan": "Beijingnan",
-            "Xiamenbei": "Xiamenbei"
-        },
+        "city": {},
         "date": {
             "next Sunday": "next Sunday",
             "next Thursday": "next Thursday",
@@ -3417,17 +3185,14 @@
             "south force 1": "south force 1"
         },
         "weather condition": {
-            "sunny": "sunny",
             "cloudy and later sunny": "cloudy and later sunny",
             "sunny and then cloudy": "धूप खिली रहेगी और फिर बादल छाए रहेंगे।",
             "cloudy and later light rain": "बादल छाए रहेंगे and later हल्की rain",
             "sunny and later cloudy": "sunny and later cloudy",
             "cloudy and turn into overcast skies": "cloudy and turn into overcast skies",
-            "cloudy": "cloudy",
             "light rain": "light rain",
             "The maximum temperature will be 11 degrees Celsius, and the minimum temperature will be 0 degrees Celsius": "बादल छाए रहेंगे और बाद में धूप खिली रहेगी",
             "cloudy and later overcast": "cloudy and later overcast",
-            "overcast": "overcast",
             "overcast and later light rain": "हल्की बारिश",
             "light rain and later cloudy": "हल्की बारिश और बाद में बादल छाए रहेंगे।",
             "overcast and later showers": "बादल छाए रहेंगे और बाद में rain होगी।",
@@ -3571,38 +3336,18 @@
             "The maximum temperature will be 17 degrees Celsius, and the minimum temperature will be 8 degrees Celsius.": "The maximum temperature will be 17 degrees Celsius, and the minimum temperature will be 8 degrees Celsius."
         },
         "uv intensity": {
-            "moderate": "moderate",
             "The UV intensity will be high": "UV intensity अधिक होगी",
-            "strong": "strong",
             "very strong": "very strong",
-            "weak": "weak",
-            "weakest": "weakest",
-            "intensity": "intensity",
             "the weakest": "weakest",
             "very high": "very high"
         }
     },
     "flight": {
         "departure": {
-            "Hangzhou": "Hangzhou",
-            "Xiamen": "Xiamen",
-            "Guangzhou": "Guangzhou",
-            "Beijing": "Beijing",
-            "Shenzhen": "Shenzhen",
-            "Shanghai": "Shanghai",
-            "Chengdu": "Chengdu",
             "Terminal 2 of Baiyun International Airport": "Baiyun अंतर्राष्ट्रीय Airport अड्डे के टर्मिनल 2",
-            "Nanjing": "Nanjing"
+            "T2, Baiyun International Airport": "Baiyun अंतर्राष्ट्रीय Airport अड्डे के टर्मिनल 2"
         },
         "destination": {
-            "Shenzhen": "Shenzhen",
-            "Beijing": "Beijing",
-            "Xiamen": "Xiamen",
-            "Chengdu": "Chengdu",
-            "Hangzhou": "Hangzhou",
-            "Shanghai": "Shanghai",
-            "Nanjing": "Nanjing",
-            "Guangzhou": "Guangzhou",
             "Terminal 1 of Shuangliu International Airport": "शुआंगलियू अंतर्राष्ट्रीय हवाई अड्डे के टर्मिनल 1"
         },
         "date": {
@@ -3615,11 +3360,9 @@
             "next sunday": "next sunday",
             "next Wednesday": "next Wednesday",
             "next wednesday": "Next Wednesday",
-            "Tuesday": "Tuesday",
             "next saturday": "Next Saturday",
             "next monday": "Next Monday",
             "next tuesday": "Next Tuesday",
-            "Wednesday": "Wednesday",
             "next Saturday's": "next Saturday",
             "next Monday's": "next Monday's",
             "Next Thursday": "Next Thursday",
@@ -3631,10 +3374,10 @@
             "business class": "business class",
             "economy cla": "Economy class",
             "Business class": "Business class",
-            "economy": "economy",
             "a business cla": "एक business class",
             "A business class": "A business class",
-            "business class ticket": "बिजनेस क्लास के टिकट"
+            "business class ticket": "बिजनेस क्लास के टिकट",
+            "economy": "economy class"
         },
         "flight information": {
             "HU7394 of Hainan Airlines from Terminal 3 of Hangzhou International Airport to Terminal 3 of Shenzhen Baoan International Airport": "हांग्जो अंतरराष्ट्रीय Airport अड्डे के Terminal 3 से हैनान अंतरराष्ट्रीय Airport तक हैनान Airlines के flight HU7394",
@@ -4042,14 +3785,8 @@
     "pc": {
         "brand": {
             "1,700 yuan": "हल्के लैपटॉप",
-            "Lenovo": "Lenovo",
-            "Dell": "Dell",
-            "Acer": "Acer",
-            "HP": "HP",
-            "Mi": "Mi",
             "Lenovo's": "Lenovo's",
-            "Acer's": "Acer के",
-            "Apple": "Apple"
+            "Acer's": "Acer के"
         },
         "usage": {
             "lightweight laptop": "lightweight laptop",
@@ -4057,11 +3794,7 @@
             "business computer": "business computer",
             "regular laptop": "regular laptop",
             "gaming laptops": "gaming laptops",
-            "gaming computer": "gaming computer",
-            "lightweight": "lightweight",
-            "gaming": "gaming",
-            "regular": "regular",
-            "business": "business"
+            "gaming computer": "gaming computer"
         },
         "memory capacity": {
             "8GB": "8GB",
@@ -4282,21 +4015,14 @@
         "game performance": {
             "entry-level": "entry-level",
             "made for enthusiast": "enthusiasts के लिए बना है।",
-            "entry level": "entry-level",
-            "enthusiast": "enthusiast"
+            "entry level": "entry-level"
         },
         "computer type": {
-            "laptop": "laptop",
-            "desktops": "desktops",
-            "desktop": "desktop",
-            "laptops": "laptops",
-            "Notebook": "Notebook",
             "All-in-One PC": "All-in-One PC"
         },
         "cpu": {
             "Intel Core i7": "Intel Core i7",
             "Intel Core i5": "Intel Core i5",
-            "i7": "i7",
             "Intel Core i9": "Intel Core i9",
             "Intel Core i3": "Intel Core i3",
             "Inter Core i5": "Inter Core i5",
@@ -4431,7 +4157,8 @@
             "Intel Core i5-7400": "Intel Core i5-7400",
             "Inter Core i5": "Inter Core i5",
             "Inter Core i9": "Inter Core i9",
-            "Intel Core i7-10510U": "Intel Core i7-10510U"
+            "Intel Core i7-10510U": "Intel Core i7-10510U",
+            "i7-10710u": "Intel Core i7-10710u"
         },
         "gpu category": {
             "discrete graphics": "discrete graphics",
@@ -4501,50 +4228,14 @@
         "classification": {
             "high-speed trains": "high-speed trains",
             "high-speed train": "high-speed train",
-            "bullet trains": "bullet trains",
+            "bullet trains": "bullet train",
             "bullet train": "bullet train",
-            "train": "train",
-            "high-speed": "high-speed",
-            "trains": "trains"
+            "high-speed": "high-speed"
         },
         "destination": {
-            "Xiamen": "Xiamen",
-            "Xiamenbei": "Xiamenbei",
-            "Shenzhen": "Shenzhen",
-            "Shenzhenbei": "Shenzhenbei",
-            "Hangzhou": "Hangzhou",
-            "Hangzhoudong": "Hangzhoudong",
-            "Shanghai": "Shanghai",
-            "Nanjing": "Nanjing",
-            "Nanjingnan": "Nanjingnan",
-            "Chengdu": "Chengdu",
-            "Chengdudong": "Chengdudong",
-            "Guangzhou": "Guangzhou",
-            "Guangzhounan": "Guangzhounan",
-            "Beijing": "Beijing",
-            "Beijingnan": "Beijingnan",
-            "Beijingxi": "Beijingxi",
-            "Shanghainan": "Shanghainan",
             "Changlong, Guangzhou": "चांगलोंग , गुआंगज़ौ"
         },
-        "departure": {
-            "Shanghai": "Shanghai",
-            "Beijing": "Beijing",
-            "Beijingxi": "Beijingxi",
-            "Hangzhou": "Hangzhou",
-            "Shenzhen": "Shenzhen",
-            "Shenzhenbei": "Shenzhenbei",
-            "Xiamen": "Xiamen",
-            "Beijingnan": "Beijingnan",
-            "Hangzhoudong": "Hangzhoudong",
-            "Guangzhou": "Guangzhou",
-            "Nanjing": "Nanjing",
-            "Nanjingnan": "Nanjingnan",
-            "Guangzhounan": "Guangzhounan",
-            "Chengdudong": "Chengdudong",
-            "Xiamenbei": "Xiamenbei",
-            "Chengdu": "Chengdu"
-        },
+        "departure": {},
         "date": {
             "next Wednesday morning": "next Wednesday morning",
             "next Thursday morning": "next Thursday morning",
@@ -4569,9 +4260,7 @@
             "next friday afternoon": "Next Friday afternoon",
             "next sunday morning": "अगली Sunday morning",
             "next thursday morning": "अगले Thursday morning",
-            "next Wednesday": "next Wednesday",
-            "morning": "morning",
-            "afternoon": "afternoon"
+            "next Wednesday": "next Wednesday"
         },
         "seat type": {
             "first class": "first class",
@@ -4587,7 +4276,6 @@
             "second-class seat": "second-class seat",
             "first-class seat": "first-class seat",
             "sleepers in first class": "first class में sleepers",
-            "sleeper": "sleeper",
             "second-class ticket": "second-class ticket",
             "a first-class ticket": "first-class ticket"
         },
@@ -5454,27 +5142,13 @@
             "fifth grade": "fifth grade",
             "fourth grade": "fourth grade"
         },
-        "subject": {
-            "English": "English",
-            "math": "math",
-            "Chinese": "Chinese"
-        },
+        "subject": {},
         "day": {
-            "Saturday": "Saturday",
-            "Sunday": "Sunday",
             "Saturdays or Sundays": "Saturdays or Sundays",
-            "Wednesday": "Wednesday",
-            "Saturday or Sunday": "Saturday or Sunday",
-            "Friday": "Friday"
+            "Saturday or Sunday": "Saturday or Sunday"
         },
         "time": {
-            "afternoon": "afternoon",
-            "morning": "morning",
-            "evening": "evening",
-            "mornings": "mornings",
-            "afternoons": "afternoons",
             "morning or afternoon": "सुबह या दोपहर",
-            "evenings": "evenings",
             "afternoons or evenings": "afternoons or evenings",
             "evening or mornings": "evenings या mornings",
             "mornings or afternoons": "mornings or afternoons",
@@ -5578,7 +5252,6 @@
             "6": "6",
             "10": "10",
             "nine": "नौ",
-            "six": "six",
             "10:00": "10:00",
             "9": "9",
             "20": "20",
@@ -5847,14 +5520,14 @@
             "Central Scenery City, Suzhou Industrial Park": "Central Scenery City, Suzhou Industrial Park",
             "Xijin Commercial Square, Suzhou New District": "Xijin Commercial Square, Suzhou New District",
             "Shimao Plaza, Wuzhong District": "Shimao Plaza, Wuzhong District",
-            "Yuexi, Wuzhong District": "Yuexi, Wuzhong District"
+            "Yuexi, Wuzhong District": "Yuexi, Wuzhong District",
+            "Jinhe International Building": "Jinhe International Building of the Suzhou New District"
         },
         "level": {
             "elementary class": "elementary class",
             "advanced class": "advanced class",
             "upgrading class": "upgrading class",
-            "advanced classes": "advanced classes",
-            "advanced": "advanced"
+            "advanced classes": "advanced classes"
         },
         "start date": {
             "March 7, 2020": "March 7, 2020",

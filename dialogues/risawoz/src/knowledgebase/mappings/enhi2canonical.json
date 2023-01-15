@@ -13,32 +13,37 @@
             ],
             "Taiwan, China": [
                 "Taiwan , China",
-                "ताइवान , चीन",
+                "Taiwan , China के एक TV show",
+                "ताइवान, चीन",
                 "ताइवान,चीन",
-                "ताइवान , China",
-                "ताइवान, चीन"
+                "ताइवान , चीन",
+                "ताइवान , China"
             ],
             "American": [
                 "american"
             ],
             "Chinese mainland": [
-                "चीनी मुख्य mainland",
-                "chineese mainland",
+                "domestic tv शो",
+                "Chinese मुख्य land",
                 "चीनी मुख्य भूमि",
+                "चीनी मुख्य mainland",
+                "Chinese mainland",
+                "Chinese mainland TV",
                 "Chinese Minland",
-                "Chinese मुख्य land"
+                "chineese mainland"
             ],
             "Japanese": "Japanese",
-            "Japan": [
-                "जापान"
-            ],
+            "Japan": [],
             "South Korean": "South Korean",
             "a TV show from Taiwan, China": [
-                "Taiwan , China के एक TV show"
+                "a TV show from Taiwan, China"
             ],
             "Chinese TV show": "Chinese TV show",
             "चीनी टीवी शो": "चीनी टीवी शो",
-            "Hong Kong": "Hong Kong",
+            "Hong Kong": [
+                "Hong Kong",
+                "Hong Kong, China के एक high-rating वाले TV show"
+            ],
             "Korean TV shows": "Korean TV shows",
             "Korean TV show": "Korean TV show",
             "South Korea": [
@@ -60,12 +65,8 @@
             ],
             "Taiwanese TV show": "Taiwanese TV show",
             "chinese mainland TV shows": "chinese mainland TV shows",
-            "Chinese mainland TV": [
-                "Chinese mainland"
-            ],
             "America": "America",
             "TV show in America": "TV show in America",
-            "Hong Kong, China के एक high-rating वाले TV show": "Hong Kong, China के एक high-rating वाले TV show",
             "Japanese shows": "Japanese shows",
             "Korean TV Show": "Korean TV Show",
             "अमेरिकी श्रृंखला": "अमेरिकी श्रृंखला",
@@ -73,24 +74,23 @@
                 "America में"
             ],
             "domestic TV shows": [
-                "domestic tv शो"
+                "domestic TV shows"
             ],
             "Korean drama": "Korean drama",
             "South Korea में": [
-                "in दक्षिण कोरिया"
+                "South Korea में"
             ],
-            "Hong Kong movies": "Hong Kong movies"
+            "Hong Kong movies": "Hong Kong movies",
+            "Korea": []
         },
         "decade": {
             "2010s": [
-                "2010 के",
-                "2010",
+                "2010s के 2010s",
                 "2010 के 2010s",
-                "2010s के 2010s"
+                "2010",
+                "2010 के"
             ],
             "the 2000s": [
-                "2000s",
-                "2000 के दशक",
                 "2000s decade",
                 "2000s के दशक",
                 "2000 के decade",
@@ -100,7 +100,10 @@
                 "1990"
             ],
             "2010": "2010",
-            "2000s": "2000s"
+            "2000s": [
+                "2000 के दशक",
+                "2000s"
+            ]
         },
         "type": {
             "suspenseful": "suspenseful",
@@ -110,16 +113,11 @@
             ],
             "feature drama": "feature drama",
             "crime drama": "crime drama",
-            "comedy": [
-                "कॉमेडी",
-                "Comedy"
-            ],
+            "comedy": [],
             "feature dramas": [
                 "features dramas"
             ],
-            "romantic": [
-                "Romantic"
-            ],
+            "romantic": [],
             "action TV show": "action TV show",
             "romantic TV show": "romantic TV show",
             "suspense drama": "suspense drama",
@@ -127,7 +125,6 @@
                 "crime drama",
                 "अपराध नाटक।"
             ],
-            "action से भरपूर": "action से भरपूर",
             "action movie": "action movie",
             "comedic TV show": [
                 "comedic टीवी show",
@@ -156,31 +153,28 @@
             "thriller TV show": "thriller TV show",
             "scientific": "scientific",
             "scientific TV shows": [
-                "वैज्ञानिक TV shows"
+                "scientific TV shows"
             ],
             "crime TV show": "crime TV show",
             "sci-fi show": "sci-fi show",
             "feature TV show": [
                 "फीचर टीवी TV",
-                "feature TV",
-                "फीचर टीवी शो"
+                "feature TV"
             ],
             "sci-fis": "sci-fis",
             "action shows": "action shows",
             "action TV shows": "action TV shows",
             "Action shows": "Action shows",
             "Action TV show": "Action TV show",
-            "क्राइम शो": "क्राइम शो",
-            "crime": [
-                "क्राइम"
-            ],
+            "crime": [],
             "feature TV shows": [
                 "feature टीवी शो"
             ],
             "Action TV shows": "Action TV shows",
             "action": [
                 "एक्शन"
-            ]
+            ],
+            "sci-fi": []
         },
         "title": {
             "Quartet": "Quartet",
@@ -516,7 +510,10 @@
             "Hu Ge": "Hu Ge",
             "Li Rui": "Li Rui",
             "Jun Matsumoto": "Jun Matsumoto",
-            "Masato Sakai": "Masato Sakai",
+            "Masato Sakai": [
+                "Masato Sakai",
+                "सकाई मसातो"
+            ],
             "Erika Toda": "Erika Toda",
             "Benchang You": "Benchang You",
             "Sun Honglei": "Sun Honglei",
@@ -530,7 +527,6 @@
             "Takuya Kimura": "Takuya Kimura",
             "Yuki Furukawa": "Yuki Furukawa",
             "युकी फुरुकावा": "युकी फुरुकावा",
-            "सकाई मसातो": "सकाई मसातो",
             "वेन जिंग्यु": "वेन जिंग्यु",
             "Zhang Ruoyun": [
                 "झांग रुओयुन"
@@ -724,9 +720,9 @@
                 "ताइवान , चीन"
             ],
             "Chinese mainland": [
-                "romantic movies के different ages हैं । आपको कौन सा era",
                 "चीनी mainland",
                 "chineese mainland",
+                "romantic movies के different ages हैं । आपको कौन सा era",
                 "Chinise mainland"
             ],
             "American": [
@@ -736,15 +732,14 @@
                 "अमेरिकन"
             ],
             "South Korean": "South Korean",
-            "Korean": "Korean",
             "South Korea": "South Korea",
             "Hong Kong": [
                 "Honk Kong",
+                "हांगकांग टीवी शो",
                 "हांगकांग"
             ],
             "India": [
-                "Indian",
-                "इंडिया"
+                "Indian"
             ],
             "Taiwan": "Taiwan",
             "Chinese Mainland": "Chinese Mainland",
@@ -759,12 +754,13 @@
                 "in अमेरिका "
             ],
             "Taiwanese": "Taiwanese",
-            "Korea": "Korea",
+            "Korea": [
+                "Korea"
+            ],
             "Chinese mainland movie": "Chinese mainland movie",
             "in India": [
                 "India में"
-            ],
-            "हांगकांग टीवी शो": "हांगकांग टीवी शो"
+            ]
         },
         "title": {
             "खून भरी मांग": "खून भरी मांग",
@@ -1065,9 +1061,7 @@
         },
         "type": {
             "romantic movie": "romantic movie",
-            "comedy": [
-                "कॉमेडी"
-            ],
+            "comedy": [],
             "action movies": [
                 "action films",
                 "एक्शन फिल्में",
@@ -1075,8 +1069,7 @@
                 "एक्शन फिल्मों"
             ],
             "action movie": [
-                "action film",
-                "एक्शन फिल्म"
+                "action film"
             ],
             "science fiction movie": [
                 "science fiction फिल्म",
@@ -1098,12 +1091,9 @@
                 "romantic films",
                 "रोमांटिक फिल्मों"
             ],
-            "romantic": [
-                "रोमांटिक"
-            ],
+            "romantic": [],
             "horror": [
-                "हॉरर",
-                "डरावनी"
+                "हॉरर"
             ],
             "comedic": "comedic",
             "comedy फ़िल्म": "comedy फ़िल्म",
@@ -1116,17 +1106,11 @@
                 "science साहित्य",
                 "वैज्ञानिक साहित्य"
             ],
-            "action": "action"
+            "action": [
+                "action"
+            ]
         },
         "decade": {
-            "the 2000s": [
-                "2000s",
-                "2000 के दशक",
-                "2000s decade",
-                "2000s दशक",
-                "2000s के दशक",
-                "2000"
-            ],
             "2010s": [
                 "2010",
                 "2010 के दशक",
@@ -1136,8 +1120,6 @@
             "the 1980s": [
                 "1980s decade",
                 "1980 decade",
-                "1980 के दशक",
-                "1980s",
                 "1980s के दशक",
                 "1980 के दशक की"
             ],
@@ -1148,8 +1130,18 @@
             "1970s": [
                 "1970"
             ],
-            "2000": "2000",
-            "1980s": "1980s"
+            "2000s": [
+                "2000",
+                "2000 के दशक",
+                "the 2000s",
+                "2000s decade",
+                "2000s दशक",
+                "2000s के दशक"
+            ],
+            "1980s": [
+                "1980 के दशक",
+                "1980s"
+            ]
         },
         "name list": {
             "जे चाउ , ग्वेई लुन-मेई , एंथोनी वोंग चाउ सांग और सु मिंगमिंग": "जे चाउ , ग्वेई लुन-मेई , एंथोनी वोंग चाउ सांग और सु मिंगमिंग",
@@ -1323,7 +1315,10 @@
             "वू कांग-रेन": [
                 "Wu Kang - Ren"
             ],
-            "को Chen Tung": "को Chen Tung",
+            "को Chen Tung": [
+                "को Chen Tung",
+                "काई को"
+            ],
             "Xu झेंग": "Xu झेंग",
             "Leonardo DiCaprio": [
                 "लियोनार्डो डिकैप्रियो"
@@ -1374,7 +1369,6 @@
             "झोउ डोंग्यु": "झोउ डोंग्यु",
             "Jack Nicholson": "Jack Nicholson",
             "Ti Lung": "Ti Lung",
-            "काई को": "काई को",
             "Chen Chen": "Chen Chen",
             "Shahrukh Khan": [
                 "शाहरुख Khan"
@@ -1457,15 +1451,16 @@
     "attraction": {
         "area": {
             "Gusu District": [
-                "गुसू जिला",
                 "गुसु जिले",
+                "गुसू जिला",
                 "Gusu district",
                 "गुसु जिला"
             ],
             "Suzhou Industrial Park": [
-                "सूज़ौ Industrial पार्क",
-                "Suzhou इंडस्ट्रियल पार्क",
+                "इंडस्ट्रियल पार्क",
                 "Suzhou industrial Park",
+                "Suzhou इंडस्ट्रियल पार्क",
+                "सूज़ौ Industrial पार्क",
                 "सूज़ौ इंडस्ट्रियल पार्क",
                 "सूज़ौ औद्योगिक पार्क"
             ],
@@ -1480,10 +1475,10 @@
                 "चांग्शू"
             ],
             "Wuzhong District": [
-                "Wuzhong district",
-                "Wuzhong जिले",
                 "Wuzhong जिला",
-                "वुझोंग जिला"
+                "वुझोंग जिला",
+                "Wuzhong district",
+                "Wuzhong जिले"
             ],
             "Suzhou New district": "Suzhou New district",
             "Wujiang": [
@@ -1493,7 +1488,7 @@
                 "कुनशान"
             ],
             "Industrial Park": [
-                "इंडस्ट्रियल पार्क"
+                "Industrial Park"
             ]
         },
         "consumption": {
@@ -1505,8 +1500,6 @@
             ],
             "affordable": "affordable",
             "cheap": [
-                "सस्ते",
-                "सस्ता",
                 "सस्ती"
             ],
             "cheaper": [
@@ -1550,7 +1543,26 @@
             "थोड़ा expensive": "थोड़ा expensive"
         },
         "the most suitable people": {
-            "friends": "friends",
+            "friends": [
+                "friends के साथ जा सकूँ",
+                "friends group के लिए",
+                "friends के लिए",
+                "where my friends and I could have some fun",
+                "friends के साथ जा",
+                "friends के घूमने के लिए",
+                "दोस्तों के साथ बाहर घूमने",
+                "दोस्तों के साथ जा",
+                "friends",
+                "दोस्तों के लिए",
+                "friends के लिए outing",
+                "दोस्तों के साथ जाने",
+                "friends के साथ",
+                "दोस्तों के साथ",
+                "friends के साथ घूमने के लिए",
+                "दोस्तों के साथ घूमने के लिए",
+                "Friends के साथ travel",
+                "friends के साथ fun करने के लिए एक good place खोजने में help कर सकते हैं "
+            ],
             "friend": [
                 "दोस्त"
             ],
@@ -1558,42 +1570,22 @@
                 "डेट"
             ],
             "family-friendly": [
+                "बच्चों के साथ जाने",
+                "मैं बच्चों के साथ जा सकूँ",
                 "family friendly",
-                "family के friendly",
-                "परिवार के अनुकूल"
+                "बच्चो के साथ जाने",
+                "परिवार के अनुकूल",
+                "family के friendly"
             ],
             "family trip": "family trip",
             "girlfriend": "girlfriend",
             "couples": [
                 "Couples"
             ],
-            "दोस्तों के साथ घूमने के लिए": [
-                "friends के घूमने के लिए",
-                "friends के साथ घूमने के लिए",
-                "friends के लिए outing",
-                "दोस्तों के लिए",
-                "friends के लिए",
-                "दोस्तों के साथ बाहर घूमने"
-            ],
-            "where my friends and I could have some fun": "where my friends and I could have some fun",
             "boyfriend": "boyfriend",
             "partner": "partner",
-            "friends के साथ fun करने के लिए एक good place खोजने में help कर सकते हैं ": "friends के साथ fun करने के लिए एक good place खोजने में help कर सकते हैं ",
-            "friends के साथ": "friends के साथ",
-            "friends group के लिए": "friends group के लिए",
             "family": [
                 "परिवार"
-            ],
-            "Friends के साथ travel": "Friends के साथ travel",
-            "दोस्तों के साथ जाने": [
-                "दोस्तों के साथ",
-                "friends के साथ जा सकूँ",
-                "friends के साथ जा",
-                "दोस्तों के साथ जा"
-            ],
-            "बच्चों के साथ जाने": [
-                "मैं बच्चों के साथ जा सकूँ",
-                "बच्चो के साथ जाने"
             ],
             "dating": "dating",
             "traveling with family": "traveling with family",
@@ -1606,10 +1598,11 @@
         },
         "name": {
             "Humble Administrator's Garden": [
-                "हम्बल एडमिनिस्ट्रेटर्स गार्डन"
+                "हम्बल एडमिनिस्ट्रेटर्स गार्डन",
+                "Humble Administrator का Garden"
             ],
             "The Humble Administrator's Garden": [
-                "Humble Administrator का Garden"
+                "The Humble Administrator's Garden"
             ],
             "Tianping Mountain Scenic Area": [
                 "तियानपिंग माउंटेन सीनिक एरिया"
@@ -1623,32 +1616,38 @@
                 "Master of the Nets Garden"
             ],
             "Suzhou Amusement Land Forest and Water World": "Suzhou Amusement Land Forest and Water World",
-            "Xi'an Jiaotong-Liverpool University": "Xi'an Jiaotong-Liverpool University",
-            "तोंगली टाउन": "तोंगली टाउन",
+            "Xi'an Jiaotong-Liverpool University": [
+                "शीआन जियाओतोंग-लिवरपूल विश्वविद्यालय",
+                "Xi'an Jiaotong-Liverpool University"
+            ],
+            "तोंगली टाउन": [
+                "टोंगली Ancient शहर",
+                "तोंगली टाउन",
+                "टोंगली प्राचीन City",
+                "Tongli प्राचीन शहर"
+            ],
             "Dushu Lake Church": [
                 "।Dushu Lake Church"
             ],
             "Xishan Island Scenic Area": [
-                "शीशान द्वीप दर्शनीय क्षेत्र",
-                "शिशान द्वीप Scenic Area"
+                "Xishan Island Scenic Area"
             ],
             "Jinji Lake Scenic Area": [
                 "जिंजी Lake का दर्शनीय क्षेत्र",
                 "जिंजी झील दर्शनीय Area",
-                "जिंजी झील दर्शनीय क्षेत्र",
-                "जिंजी झील Scenic Area"
+                "जिंजी झील Scenic Area",
+                "जिंजी झील दर्शनीय क्षेत्र"
             ],
             "Zhouzhuang Town": [
-                "झोउज़ुआंग Town",
-                "झोउज़ुआंग टाउन"
+                "झोउज़ुआंग टाउन",
+                "झोउज़ुआंग Town"
             ],
             "Suzhou Museum": [
+                "सूज़ौ संग्रहालय",
                 "Suzhou संग्रहालय"
             ],
             "the Suzhou Museum": [
-                "Suzhou museum",
-                "सूज़ौ संग्रहालय",
-                "Suzhou Museum"
+                "Suzhou museum"
             ],
             "Suzhou Center": [
                 "Suzhou केंद्र"
@@ -1656,26 +1655,25 @@
             "Huayi Brothers Movie World": [
                 "हुआई ब्रदर्स मूवी वर्ल्ड"
             ],
-            "Changshu के Shajiabang Scenic Spot": "Changshu के Shajiabang Scenic Spot",
             "Stone Lake": [
                 "Stone लेक"
             ],
             "the Gate of the Orient": [
-                "गेट ऑफ द Orient",
                 "Gate of the Orient",
-                "गेट ऑफ द ओरिएंट"
+                "गेट ऑफ द ओरिएंट",
+                "गेट ऑफ द Orient"
             ],
             "The Gate of the Orient": [
-                "गेट ऑफ द ओरिएंट",
-                "Gate of the Orient"
+                "The Gate of the Orient"
             ],
             "Taihu Lake Wetland Park": [
-                "Taihu Lake Wetland"
+                "Taihu Lake Wetland Park"
             ],
             "Suzhou Taihu Lake Wetland Park": [
                 "Suzhou Taihu Lake आर्द्रभूमि Park",
-                "Suzhou Taihu Lake आर्द्रभूमि पार्क",
-                "Suzhou ताइहू Lake वेटलैंड पार्क"
+                "Taihu Lake Wetland",
+                "Suzhou ताइहू Lake वेटलैंड पार्क",
+                "Suzhou Taihu Lake आर्द्रभूमि पार्क"
             ],
             "Baimajian Ecological Park": "Baimajian Ecological Park",
             "Shantang Street": [
@@ -1683,14 +1681,13 @@
                 "Shantang स्ट्रीट।"
             ],
             "Qiandeng Town": [
-                "Qiandeng टाउन",
-                "कियांडेंग टाउन"
+                "कियांडेंग टाउन",
+                "Qiandeng टाउन"
             ],
             "Eslite Bookstore": [
                 "एस्लाइट बुकस्टोर"
             ],
             "Xi’an Jiaotong-Liverpool University": [
-                "शीआन जियाओतोंग-लिवरपूल विश्वविद्यालय",
                 "शियान जियाओतोंग-लिवरपूल विश्वविद्यालय"
             ],
             "Guanqian Street": [
@@ -1701,24 +1698,23 @@
                 "हार्मनी टाइम्स स्क्वायर"
             ],
             "Stone Road Pedestrian Street": [
-                "Stone Stone Road Pedestrian स्ट्रीट",
-                "स्टोन रोड पैदल यात्री स्ट्रीट"
+                "Stone Road Pedestrian Street"
             ],
             "the Humble Administrator's Garden": [
                 "Humble Administrator के Garden",
-                "Humble अड्मिनिस्टटर के Garden",
-                "Humble Administrator's Garden"
+                "Humble अड्मिनिस्टटर के Garden"
             ],
             "Qionglong Mountain Scenic Area": [
-                "Qionglong माउंटेन दर्शनीय क्षेत्र",
-                "Qionglong Scenic Scenic Area"
+                "Qionglong Scenic Scenic Area",
+                "Qionglong माउंटेन दर्शनीय क्षेत्र"
             ],
             "Soochow University": [
                 "सूचो विश्वविद्यालय"
             ],
             "Shajiabang Scenic Spot": [
                 "Shajiabang दर्शनीय स्थल",
-                "शाजियाबांग दर्शनीय स्थल"
+                "शाजियाबांग दर्शनीय स्थल",
+                "Changshu के Shajiabang Scenic Spot"
             ],
             "Huqiu Scenic Area": "Huqiu Scenic Area",
             "Lion Forest Garden": "Lion Forest Garden",
@@ -1732,10 +1728,7 @@
             ],
             "Luzhi Ancient Town": "Luzhi Ancient Town",
             "Tongli Ancient Town": [
-                "टोंगली प्राचीन City",
-                "टोंगली Ancient शहर",
-                "Tongli Ancient शहर",
-                "Tongli प्राचीन शहर"
+                "Tongli Ancient शहर"
             ],
             "Canglang Pavilion": [
                 "कैंगलांग मंडप"
@@ -1749,23 +1742,28 @@
             "Suzhou Aquarium": "Suzhou Aquarium",
             "Lingyan Mountain Scenic Area": "Lingyan Mountain Scenic Area",
             "Shilu Pedestrian Street": [
-                "शिलू पैदल मार्ग"
+                "शिलू पैदल मार्ग",
+                "स्टोन रोड पैदल यात्री स्ट्रीट",
+                "Stone Stone Road Pedestrian स्ट्रीट"
             ],
             "Shajiabang Scenic Area": "Shajiabang Scenic Area",
             "Impression City Shopping Center": "Impression City Shopping Center",
             "Lingering Garden": "Lingering Garden",
             "The Master of the Nets Garden": "The Master of the Nets Garden",
             "Pingjiang Road": "Pingjiang Road",
-            "Xishan Mountain": "Xishan Mountain"
+            "Xishan Mountain": [
+                "शिशान द्वीप Scenic Area",
+                "Xishan Mountain",
+                "शीशान द्वीप दर्शनीय क्षेत्र"
+            ]
         },
         "type": {
             "Suzhou-style garden": [
-                "Suzhou style के garden",
-                "Suzhou शैली बगीचे"
+                "Suzhou शैली बगीचे",
+                "Suzhou style के garden"
             ],
             "landscape scenic spots": [
-                "landscape दर्शनीय स्थलों",
-                "परिदृश्य scenic spots"
+                "landscape scenic spots"
             ],
             "Suzhou-style gardens": [
                 "Suzhou शैली के बगीचे"
@@ -1780,20 +1778,27 @@
                 "जल शहर।",
                 "water शह र।"
             ],
-            "historic site in Gusu District": "historic site in Gusu District",
+            "historic site in Gusu District": [
+                "Gusu District के कुछ historic sites",
+                "historic site in Gusu District",
+                "Suzhou में कोई historic site",
+                "Gusu District में कुछ historical sites",
+                "Suzhou historical site"
+            ],
             "commercial center": "commercial center",
             "historic sites in Gusu District": [
-                "Gusu District के कुछ historic sites"
+                "historic sites in Gusu District"
             ],
             "landscape scenic spot": [
+                "परिदृश्य scenic spots",
                 "लोकप्रिय परिदृश्य दर्शनीय स्थान",
-                "landscape scenic"
+                "landscape scenic",
+                "landscape दर्शनीय स्थलों"
             ],
             "water towns": "water towns",
             "business center": "business center",
             "school campus": "school campus",
             "university": "university",
-            "Gusu District में कुछ historical sites": "Gusu District में कुछ historical sites",
             "Suzhou-styled garden": "Suzhou-styled garden",
             "university campus": "university campus",
             "commercial centers": [
@@ -1802,8 +1807,7 @@
             ],
             "campus": "campus",
             "historic site in Suzhou": [
-                "Suzhou historical site",
-                "Suzhou में कोई historic site"
+                "historic site in Suzhou"
             ],
             "garden": "garden",
             "Suzhou garden": "Suzhou garden",
@@ -2000,11 +2004,11 @@
             "08:30-17:00": "08:30-17:00",
             "07:30 से 17:30": "07:30 से 17:30",
             "all day": [
-                "पूरा दिन",
+                "All day",
                 "पूरे दिन",
-                "पूरे day",
                 "सारा दिन",
-                "All day"
+                "पूरे day",
+                "पूरा दिन"
             ],
             "09:00–16:30": [
                 "09:00-16:30",
@@ -2205,7 +2209,10 @@
             "there is": [
                 "वहाँ है"
             ],
-            "नहीं है": "नहीं है"
+            "नहीं है": "नहीं है",
+            "false": [
+                "इसके लिए कोई direct subway lines नहीं है"
+            ]
         }
     },
     "restaurant": {
@@ -2221,10 +2228,7 @@
             "cheaper": [
                 "सस्ता"
             ],
-            "cheap": [
-                "सस्ते",
-                "सस्ता"
-            ],
+            "cheap": [],
             "थोड़े अधिक expensive": "थोड़े अधिक expensive",
             "mid-price": "mid-price",
             "slightly more expensive": [
@@ -2273,26 +2277,28 @@
             ],
             "Seoul South Korean Cuisine": "Seoul South Korean Cuisine",
             "Xibei Restaurant": [
-                "ज़िबेई रेस्टोरेंट",
                 "ज़िबेई रेस्तरां",
+                "ज़िबेई रेस्टोरेंट",
                 "ज़िबेई restaurant"
             ],
             "Niutanjia Ben'Ge Charcoal Barbecue": [
                 "Niutanjia Ben n' Ge Charcoal Barbecue"
             ],
             "QingHeGu": "QingHeGu",
-            "चोंगकिंग De ज़ुआंग हॉट pot": "चोंगकिंग De ज़ुआंग हॉट pot",
-            "यंगगुआंगुरन रेस्तरां": "यंगगुआंगुरन रेस्तरां",
+            "चोंगकिंग De ज़ुआंग हॉट pot": [
+                "Chongqing Dezhuang Hot Pot के directly operated restaurant",
+                "Chongqing Dezhuang Hot Pot का directly operated restaurant",
+                "चोंगकिंग De ज़ुआंग हॉट pot",
+                "Chongqing Dezhuang हॉट पॉट के सीधे संचालित restaurant"
+            ],
             "Dream of Taoyuan": [
                 "Dream of ताओयुआन"
             ],
             "Beijiang Restaurant": [
-                "बेजियांग restaurant",
-                "Beijiang restaurant"
+                "Beijiang restaurant",
+                "बेजियांग restaurant"
             ],
-            "LELECHA": [
-                "लेलेचा"
-            ],
+            "LELECHA": [],
             "One Plus Conveyor Belt Sushi": [
                 "वन प्लस कन्वेयर Belt सुशी"
             ],
@@ -2300,19 +2306,19 @@
                 "गुडमैन लोक स्नैक्स",
                 "गुडमैन फोक स्नैक्स"
             ],
-            "एल'एरोम": "एल'एरोम",
             "Yamazaki Bakery": [
-                "Yamazaki बेकरी",
-                "यामाजाकी बेकरी"
+                "यामाजाकी बेकरी",
+                "Yamazaki बेकरी"
             ],
             "Nongleyuan Charcoal Fire Barbecue": [
-                "Nongleyuan चारकोल Fire बारबेक्यू",
                 "Nongleyuan चारकोल Fire Barbecue",
-                "नोंगलेयुआन चारकोल फायर बारबेक्यू"
+                "नोंगलेयुआन चारकोल फायर बारबेक्यू",
+                "Nongleyuan चारकोल Fire बारबेक्यू"
             ],
             "L'Arôme": [
-                "L'Arome",
-                "एल'अरोम"
+                "एल'एरोम",
+                "एल'अरोम",
+                "L'Arome"
             ],
             "Palsaik Korean BBQ": [
                 "पलसिक कोरियाई बारबेक्यू"
@@ -2325,14 +2331,10 @@
                 "ओबेनियन हॉट Pot"
             ],
             "Zhen Pin Yue Teahouse": [
-                "Zhen Pin Yue Teahouse।",
-                "झेन पिन यू टीहाउस"
+                "झेन पिन यू टीहाउस",
+                "Zhen Pin Yue Teahouse।"
             ],
             "जेन पिन यू टीहाउस का": "जेन पिन यू टीहाउस का",
-            "Chongqing Dezhuang Hot Pot के directly operated restaurant": [
-                "Chongqing Dezhuang Hot Pot का directly operated restaurant",
-                "Chongqing Dezhuang हॉट पॉट के सीधे संचालित restaurant"
-            ],
             "Songhelou Restaurant": [
                 "सोंघेलो restaurant"
             ],
@@ -2369,11 +2371,13 @@
                 "डोंगवु नूडल House।"
             ],
             "Guimijia": "Guimijia",
-            "Fox House Yoghurt": "Fox House Yoghurt",
             "Wanyuting·hejiariben Cuisine Teppanyaki": "Wanyuting·hejiariben Cuisine Teppanyaki",
             "Grandma's Home के": "Grandma's Home के",
             "Yang's Dumpling": "Yang's Dumpling",
-            "Fox's Home Yogurt": "Fox's Home Yogurt",
+            "Fox's Home Yogurt": [
+                "Fox's Home Yogurt",
+                "Fox House Yoghurt"
+            ],
             "डेयूलू": [
                 "देयूलू"
             ],
@@ -2384,7 +2388,10 @@
             "Northeast Restaurant": "Northeast Restaurant",
             "Li Li Xiao Chao": "Li Li Xiao Chao",
             "Cai Zhi Zhai": "Cai Zhi Zhai",
-            "Yang Guan Gu Ren": "Yang Guan Gu Ren",
+            "Yang Guan Gu Ren": [
+                "Yang Guan Gu Ren",
+                "यंगगुआंगुरन रेस्तरां"
+            ],
             "Qing He Gu": "Qing He Gu",
             "Guan Zhi North": "Guan Zhi North",
             "Tangpalace Seafood Restaurant": "Tangpalace Seafood Restaurant",
@@ -2413,7 +2420,7 @@
             ],
             "Northwestern cuisine": "Northwestern cuisine",
             "Northwest cuisine": [
-                "उत्तर पश्चिमी व्यंजन"
+                "Northwest cuisine"
             ],
             "Zhejiang cuisine": "Zhejiang cuisine",
             "bread and desserts": [
@@ -2421,32 +2428,33 @@
                 "रोटी और डेसर्ट"
             ],
             "fast food and quick meals": [
-                "फास्ट फूड and quick meals",
-                "fast food और quick meals",
-                "हॉट पॉट",
-                "फास्ट फूड और quick meals",
-                "फ़ास्ट फ़ूड और quick meals"
+                "हॉट पॉट"
             ],
             "Jiangsu Zhejiang cuisine": [
                 "जियांग्सू झेजियांग cuisine",
                 "जियांगसू Zhejiang cuisine",
                 "Jiangsu Zhejiang cuisine परोसता"
             ],
-            "Sichuan": [
-                "सिचुआन"
-            ],
+            "Sichuan": [],
             "western": "western",
-            "Northwestern": "Northwestern",
+            "Northwestern": [
+                "Northwestern",
+                "उत्तर पश्चिमी व्यंजन"
+            ],
             "Korean foods": "Korean foods",
             "Japanese restaurant": [
-                "Japanese retaurant"
+                "Japanese restaurant"
             ],
             "bread and dessert": "bread and dessert",
             "Cantonese food": "Cantonese food",
             "Wanyuting·hejiariben Cuisine": "Wanyuting·hejiariben Cuisine",
             "Sichuan cuisine": "Sichuan cuisine",
             "fast food": [
-                "Fast food"
+                "फ़ास्ट फ़ूड और quick meals",
+                "Fast food",
+                "fast food और quick meals",
+                "फास्ट फूड और quick meals",
+                "फास्ट फूड and quick meals"
             ],
             "Korean food": [
                 "Korean खाना"
@@ -2464,9 +2472,12 @@
             "Jiangsu and Zhejiang cuisine": "Jiangsu and Zhejiang cuisine",
             "South Korean cuisine": "South Korean cuisine",
             "Cantonese cuisine": [
-                "कैंटोनीज़ cuisine"
+                "Cantonese cuisine"
             ],
-            "bread": "bread"
+            "bread": "bread",
+            "Japanese": [],
+            "Cantonese": [],
+            "Korean": []
         },
         "address": {
             "No. 3, Chuanfang Alley, North of Pingjiang Road": [
@@ -2677,9 +2688,9 @@
         },
         "area": {
             "Suzhou Industrial Park": [
+                "Suzhou इंडस्ट्रियल पार्क",
                 "सूज़ौ औद्योगिक पार्क",
-                "Suzhou औद्योगिक Park",
-                "Suzhou इंडस्ट्रियल पार्क"
+                "Suzhou औद्योगिक Park"
             ],
             "Wuzhong District": [
                 "Wuzhong जिले",
@@ -2691,8 +2702,8 @@
                 "Suzhou न्यू डिस्ट्रिक्ट"
             ],
             "Gusu District": [
-                "गुसू जिले",
-                "Gusu district"
+                "Gusu district",
+                "गुसू जिले"
             ],
             "Wujiang": [
                 "वुजियांग"
@@ -2949,15 +2960,11 @@
     "car": {
         "classification": {
             "SUV": [
-                "एसयूवी",
                 "SUV।"
             ],
-            "notchback": [
-                "नॉचबैक"
-            ],
+            "notchback": [],
             "MPV": [
-                "MPVs",
-                "एमपीवी"
+                "MPVs"
             ],
             "hatchback": "hatchback"
         },
@@ -2977,27 +2984,29 @@
                 "300,000 युआन से अधिक",
                 "over 300 , 000 युआन"
             ],
-            "150,000 से 200,000 yuan": [
-                "150 , 000 से 200 , 000 yuan",
-                "150 , 000 से 200,000 युआन",
-                "180,900 युआन"
-            ],
             "180,900 युआन": "180,900 युआन",
-            "200,000 और 300,000 के बीच": [
-                "200 , 000 and 300 , 000 के between",
-                "135 , 000"
-            ],
             "135 , 000": "135 , 000",
             "300 , 000 yuan से अधिक": [
                 "अधिक than 300 , 000 yuan ",
                 "अधिक than 300 , 000 yuan"
             ],
             "150,000 युआन से कम": "150,000 युआन से कम",
-            "150 , 000 और 200 , 000 yuan के बीच": "150 , 000 और 200 , 000 yuan के बीच",
             "more than 300,000": "more than 300,000",
             "359,900": "359,900",
-            "150,000-200,000": "150,000-200,000",
-            "200, 000-300, 000": "200, 000-300, 000",
+            "150,000-200,000": [
+                "150,000 से 200,000 yuan",
+                "150 , 000 और 200 , 000 yuan के बीच",
+                "150,000-200,000",
+                "150 , 000 से 200 , 000 yuan",
+                "180,900 युआन",
+                "150 , 000 से 200,000 युआन"
+            ],
+            "200, 000-300, 000": [
+                "135 , 000",
+                "200,000 और 300,000 के बीच",
+                "200 , 000 and 300 , 000 के between",
+                "200, 000-300, 000"
+            ],
             "less than 300000": "less than 300000"
         },
         "name": {
@@ -3111,8 +3120,8 @@
         },
         "series": {
             "Volkswagen T-Cross": [
-                "Volkswagen T - Cross",
-                "वोक्सवैगन टी-क्रॉस"
+                "वोक्सवैगन टी-क्रॉस",
+                "Volkswagen T - Cross"
             ],
             "Tiguan-L": [
                 "Tiguan - L",
@@ -3122,29 +3131,23 @@
             "Volkswagen Touran L": "Volkswagen Touran L",
             "वोक्सवैगन गोल्फ": "वोक्सवैगन गोल्फ",
             "FAW-Volkswagen Magotan": [
-                "FAW-वोक्सवैगन मैगोटन",
-                "FAW - Volkswagen Magotan",
                 "एफएडब्ल्यू-वोक्सवैगन मैगोटन",
+                "FAW - Volkswagen Magotan",
+                "FAW-वोक्सवैगन मैगोटन",
+                "मैगोटन",
                 "FAW-Volkswagen मैगोटन"
             ],
-            "Lamando": [
-                "लैमांडो",
-                "लमंडो"
-            ],
+            "Lamando": [],
             "T-ROC": [
                 "टी-आरओसी"
             ],
-            "Passat": [
-                "पसाट"
-            ],
-            "Bora": [
-                "बोरा"
-            ],
+            "Passat": [],
+            "Bora": [],
             "Lavida": "Lavida",
             "FAW-Volkswagen CC": [
                 "एफएडब्ल्यू-वोक्सवैगन सीसी",
-                "एफएडब्ल्यू-फॉक्सवैगन सीसी",
-                "FAW - Volkswagen CC "
+                "FAW - Volkswagen CC ",
+                "एफएडब्ल्यू-फॉक्सवैगन सीसी"
             ],
             "FAW-Volkswagen TACQUA": [
                 "एफएडब्ल्यू-वोक्सवैगन टीएसीक्वा",
@@ -3156,19 +3159,14 @@
                 "टेरामोंट एक्स"
             ],
             "Phideon": "Phideon",
-            "Tayron": [
-                "टैरॉन"
-            ],
+            "Tayron": [],
             "Volkswagen Golf Variant": "Volkswagen Golf Variant",
             "C-TREK Weiling": "C-TREK Weiling",
             "Volkswagen Multivan": "Volkswagen Multivan",
-            "मैगोटन": "मैगोटन",
             "Sagitar": [
-                "सगिटार",
                 "सगितार"
             ],
             "Santana": [
-                "सैन्टाना",
                 "।Santana"
             ],
             "Tharu": [
@@ -3382,8 +3380,8 @@
             ],
             "two-wheel": [
                 "दो-पहिया",
-                "दो पहिया",
                 "टू-व्हील",
+                "दो पहिया",
                 "two wheel"
             ]
         },
@@ -3393,9 +3391,9 @@
                 "मध्यम-size"
             ],
             "small- or mid-size": [
-                "small या mid-size mid-size",
+                "small या mid-size",
                 "छोटे या मध्यम आकार",
-                "small या mid-size"
+                "small या mid-size mid-size"
             ],
             "mid- or full-size": [
                 "mid- या full size"
@@ -3452,8 +3450,6 @@
                 "थोड़ा ज़्यादा expensive"
             ],
             "cheap": [
-                "सस्ते",
-                "सस्ता",
                 "सस्ती"
             ],
             "थोड़ा और expensive": [
@@ -3485,51 +3481,31 @@
                 "standard कमरों"
             ],
             "king-size room": [
-                "king - size room",
                 "king-size कमरा",
-                "बड़े आकर के कमरे",
-                "king size का room",
-                "king size room",
-                "king के size का room",
-                "King-size कमरे",
-                "किंग साइज रूम",
-                "king के आकार का room",
-                "किंग-साइज कमरा",
-                "King-size room",
-                "बड़े आकार के कमरे",
                 "king-size कमरे",
+                "king के size का room",
+                "king size room",
+                "king - size room",
+                "किंग साइज रूम",
+                "King-size room",
                 "राजा के आकार का कमरा",
-                "king - size",
+                "king size का room",
+                "बड़े आकर के कमरे",
+                "king के आकार का room",
                 "king - size room ",
-                "एक राजा के आकार room"
-            ],
-            "a standard room": [
-                "एक standard कमरे",
-                "एक standard रूम",
-                "मानक कमरा",
-                "standard room",
-                "एक standard कमरा",
-                "एक standard room",
-                "standard कमरा",
-                "a standard कमरा",
-                "a  standard कमरा",
-                "एक मानक कमरे"
+                "बड़े आकार के कमरे",
+                "एक राजा के आकार room",
+                "किंग-साइज कमरा",
+                "king - size",
+                "King-size कमरे"
             ],
             "king-size rooms": [
                 "king size के rooms",
                 "बड़े आकर के कमरों",
                 "king size के कमरे",
-                "king size room",
                 "king - size rooms",
                 "किंग size के कमरे",
-                "king-size कमरे",
                 "king-size के रूम"
-            ],
-            "standard room": [
-                "standard कमरे",
-                "standard कमरा",
-                "मानक कमरे",
-                "Standard कमरे"
             ]
         },
         "name": {
@@ -3542,7 +3518,6 @@
                 "New City ग्रैंड रेज़ेन होटल",
                 "न्यू सिटी ग्रैंड रेज़ेन होटल"
             ],
-            "चांगजियांग रोड में Atour होटल": "चांगजियांग रोड में Atour होटल",
             "Shui'an Hanshe Boutique": "Shui'an Hanshe Boutique",
             "Jinling Nanlin Hotel": [
                 "जिनलिंग नानलिन होटल"
@@ -3557,26 +3532,23 @@
             ],
             "Jinji Lake शिला होटल": "Jinji Lake शिला होटल",
             "Genting Star Chain Hotel": [
-                "जेंटिंग Star Chain होटल",
-                "जेंटिंग स्टार चेन होटल"
+                "जेंटिंग स्टार चेन होटल",
+                "जेंटिंग Star Chain होटल"
             ],
             "Pan Pacific Suzhou": [
-                "Pan पैसिफिक Suzhou",
-                "पैन पैसिफिक Suzhou",
                 "पैन पैसिफिक सूज़ौ",
+                "Pan पैसिफिक Suzhou",
                 "पैन पैसिफिक सूज़ौ।",
-                "पैन Pacific Suzhou"
+                "पैन Pacific Suzhou",
+                "पैन पैसिफिक Suzhou"
             ],
             "Pod Inn": "Pod Inn",
             "Shui'an Hanshe Boutique Hotel": [
-                "Shui'an Hanshe बुटीक hotel",
-                "शुआन हंसे Boutique Hotel",
                 "शुआन हंसे बुटीक होटल"
             ],
             "Meijin All Suites Hotel": [
                 "मीजिन ऑल सुइट्स होटल"
             ],
-            "जिंजी झील Suzhou Suisse प्लेस लिगोंगडी Apartment hotel": "जिंजी झील Suzhou Suisse प्लेस लिगोंगडी Apartment hotel",
             "Suzhou Yongshun Express Hotel": [
                 "Suzhou Yongshun Express hotel"
             ],
@@ -3590,8 +3562,9 @@
                 "यिनजियांगनान Xujia Hostel"
             ],
             "Suzhou Jinji Lake Suisse Place Ligongdi Apartment Hotel": [
-                "Suzhou Jinji Lake सुइस प्लेस लिगोंगडी Apartment होटल",
-                "Suzhou Jinji Lake सुइस प्लेस लिगोंगडी Apartment hotel को recommend"
+                "Suzhou Jinji Lake सुइस प्लेस लिगोंगडी Apartment hotel को recommend",
+                "जिंजी झील Suzhou Suisse प्लेस लिगोंगडी Apartment hotel",
+                "Suzhou Jinji Lake सुइस प्लेस लिगोंगडी Apartment होटल"
             ],
             "Suzhou Shui'an Hanshe Hotel": [
                 "Suzhou शुआन Hanshe hotel"
@@ -3605,9 +3578,10 @@
                 "Suzhou मिंग्यू एक्सप्रेस hotel"
             ],
             "Atour Hotel in Changjiang Road, Changshu": [
-                "चांगजियांग Road , चांग्शू में अतोर hotel",
+                "चांगजियांग रोड में Atour होटल",
                 "Changjiang Road , Changshu में Atour Hotel",
-                "Changjiang Road, Changshu में Atour Hotel"
+                "Changjiang Road, Changshu में Atour Hotel",
+                "चांगजियांग Road , चांग्शू में अतोर hotel"
             ],
             "Suzhou New City Grand Rezen Hotel": [
                 "Suzhou न्यू City ग्रैंड Rezen Hotel",
@@ -3619,15 +3593,18 @@
             "City Comfort Inn": "City Comfort Inn",
             "Kunshan Yundu Business Hotel": "Kunshan Yundu Business Hotel",
             "Super 8 Hotel": [
+                "सुपर 8 Hotel",
                 "Super 8",
-                "Super 8 hotel",
-                "सुपर 8 Hotel"
+                "Super 8 hotel"
             ],
             "Warmly Hotel": [
                 "Warmly होटल"
             ],
             "Manxin Hotel": "Manxin Hotel",
-            "Changshu Yiwenge Hotel": "Changshu Yiwenge Hotel",
+            "Changshu Yiwenge Hotel": [
+                "Changshu में Yiwenge Hotel",
+                "Changshu Yiwenge Hotel"
+            ],
             "Dova Riverside Inn": [
                 "डोवा Riverside Inn",
                 "Dova Riverside Inn।"
@@ -3640,10 +3617,14 @@
             "Similan Hotel": "Similan Hotel",
             "सिमिलन hotel के": "सिमिलन hotel के",
             "Yiwenge Hotel in Changshu": [
-                "Changshu में Yiwenge Hotel"
+                "Yiwenge Hotel in Changshu"
             ],
             "Tonino Lamborghini Hotel Kunshan": "Tonino Lamborghini Hotel Kunshan",
-            "Suzhou Shui'an Hanshe Boutique Hotel": "Suzhou Shui'an Hanshe Boutique Hotel",
+            "Suzhou Shui'an Hanshe Boutique Hotel": [
+                "शुआन हंसे Boutique Hotel",
+                "Shui'an Hanshe बुटीक hotel",
+                "Suzhou Shui'an Hanshe Boutique Hotel"
+            ],
             "Warmly Boutique Hotel": "Warmly Boutique Hotel",
             "Hotel City Comfort Inn": "Hotel City Comfort Inn",
             "Changshu OYO Interesting Chain Hotel": "Changshu OYO Interesting Chain Hotel",
@@ -3716,9 +3697,10 @@
                 "वुझोंग जिला"
             ],
             "Suzhou Industrial Park": [
+                "Suzhou इंडस्ट्रियल पार्क",
+                "इंडस्ट्रियल पार्क",
                 "सूज़ौ इंडस्ट्रियल पार्क",
-                "सूज़ौ औद्योगिक पार्क",
-                "Suzhou इंडस्ट्रियल पार्क"
+                "सूज़ौ औद्योगिक पार्क"
             ],
             "Suzhou": "Suzhou",
             "Kunshan": [
@@ -3728,14 +3710,14 @@
                 "वुजियांग"
             ],
             "Gusu District": [
-                "गुसू जिला",
                 "गुसु जिला ",
-                "गुसु जिले",
+                "गुसू जिला",
                 "Gusu district",
+                "गुसु जिले",
                 "गुसु जिला"
             ],
             "Industrial Park": [
-                "इंडस्ट्रियल पार्क"
+                "Industrial Park"
             ]
         },
         "room charge": {
@@ -3933,14 +3915,8 @@
                 "resort hotels"
             ],
             "business hotel": "business hotel",
-            "business": [
-                "व्यावसायिक",
-                "बिजनेस"
-            ],
-            "resort": [
-                "रिसॉर्ट",
-                "रिज़ॉर्ट"
-            ]
+            "business": [],
+            "resort": []
         },
         "address": {
             "No. 20, Gunxiufang, Shiquan Street, Gusu District, Suzhou": [
@@ -4050,10 +4026,10 @@
             "general hospital": "general hospital",
             "specialized hospital": [
                 "specialized hopital",
-                "Specialized hospitals",
-                "specialised hospital",
                 "specialized hospitals",
-                "Specialized hospital"
+                "specialised hospital",
+                "Specialized hospital",
+                "Specialized hospitals"
             ],
             "general hospital की": "general hospital की"
         },
@@ -4136,9 +4112,9 @@
             "Suzhou Xiangcheng People's Hospital": "Suzhou Xiangcheng People's Hospital",
             "The Fifth People's Hospital of Suzhou": "The Fifth People's Hospital of Suzhou",
             "Suzhou Integrated Traditional Chinese And Western Medicine Hospital": [
-                "Suzhou Integrated Traditional Chinese And Western Medicine अस्पताल",
+                "Suzhou Integrated Traditional Chinese अौर Western Medicine Hospital",
                 "Suzhou Integrated Traditional Chinese And Western Medicine",
-                "Suzhou Integrated Traditional Chinese अौर Western Medicine Hospital"
+                "Suzhou Integrated Traditional Chinese And Western Medicine अस्पताल"
             ],
             "The People's Hospital of SND": [
                 "एसएनडी the People अस्पताल Hospital"
@@ -4149,9 +4125,7 @@
                 "सूज़ौ Wuzhong पीपुल्स अस्पताल",
                 "Suzhou Wuzhong People 's Hospital"
             ],
-            "the Children's Hospital of Soochow University": [
-                "The Children's Hospital of Soochow University"
-            ],
+            "the Children's Hospital of Soochow University": [],
             "सूज़ौ म्यूनिसिपल अस्पताल मुख्यालय ": [
                 "सूज़ौ Municipal अस्पताल मुख्यालय",
                 "सूज़ौ म्यूनिसिपल अस्पताल मुख्यालय"
@@ -4472,41 +4446,26 @@
     "weather": {
         "city": {
             "Xiamen": [
-                "शियामेन",
-                "ज़ियामेन"
+                "शियामेन"
             ],
             "Shenzhen": [
                 "शेन्ज़ेन",
                 "शेन्झेन",
-                "शेनझेन",
                 "shenzhen"
             ],
-            "Beijing": [
-                "बीजिंग",
-                "beijing"
-            ],
-            "Chengdu": [
-                "चेंगदू"
-            ],
+            "Beijing": [],
+            "Chengdu": [],
             "Guangzhou": [
-                "ग्वांगझोउ",
-                "हांग्जो",
-                "ग्वांगझू",
-                "गुआंगज़ौ"
+                "ग्वांगझू"
             ],
             "Shanghai": [
-                "शंघाई",
                 "sanghai"
             ],
             "Nanjing": [
-                "नानजिंग",
                 "nanjing"
             ],
-            "Wuhan": [
-                "वुहान"
-            ],
+            "Wuhan": [],
             "Hangzhou": [
-                "हांग्जो",
                 "हांगझोउ",
                 "हांगझू"
             ],
@@ -4536,40 +4495,40 @@
             "next Sunday": "next Sunday",
             "next Thursday": "next Thursday",
             "next Friday ": [
-                "next Friday को कब रवाना होंगे",
-                "next शुक्रवार",
-                "अगले Friday",
-                "next Friday के",
+                "अगले शुक्रवार",
                 "next Friday",
-                "अगले शुक्रवार"
+                "next शुक्रवार",
+                "next Friday को कब रवाना होंगे",
+                "अगले Friday",
+                "next Friday के"
             ],
-            "next Wednesday": "next Wednesday",
+            "next Wednesday": [
+                "next Wednesday",
+                "अगले बुधवार को ",
+                "Next Wednesday",
+                "अगले बुधवार को ।"
+            ],
             "next Saturday": [
-                "अगले Saturday",
                 ".next Saturday",
-                "next शनिवार",
-                "अगले शनिवार"
+                "अगले Saturday",
+                "अगले शनिवार",
+                "next शनिवार"
             ],
             "next Tuesday": [
-                "अगले Tuesday",
                 "next मंगलवार",
+                "अगले मंगलवार",
                 "next tuesday",
-                "अगले मंगलवार"
+                "अगले Tuesday"
             ],
             "next Monday": [
                 "next Monday ",
-                "अगले सोमवार",
-                "next सोमवार"
+                "next सोमवार",
+                "अगले सोमवार"
             ],
             "Next Friday": [
-                "अगले Friday"
-            ],
-            "Next Wednesday": [
-                "अगले बुधवार को ",
-                "अगले बुधवार को ।"
+                "Next Friday"
             ],
             "next Monday का": "next Monday का",
-            "next Friday": "next Friday",
             "Next Tuesday": "Next Tuesday",
             "Next Thursday": [
                 "अगले Thursday",
@@ -5021,28 +4980,17 @@
     },
     "flight": {
         "departure": {
-            "Hangzhou": [
-                "हांग्जो"
-            ],
+            "Hangzhou": [],
             "Xiamen": [
-                "xiamen",
-                "ज़ियामेन"
+                "xiamen"
             ],
-            "Guangzhou": [
-                "गुआंगज़ौ",
-                "ग्वांगझू"
-            ],
-            "Beijing": [
-                "बीजिंग"
-            ],
+            "Guangzhou": [],
+            "Beijing": [],
             "Shenzhen": [
                 "शेनझेन",
                 "शेन्ज़ेन"
             ],
-            "Shanghai": [
-                "शंघाई",
-                "शंघाई ।"
-            ],
+            "Shanghai": [],
             "Chengdu": [
                 "ग्वांगझू",
                 "चेंगदू"
@@ -5055,35 +5003,20 @@
         },
         "destination": {
             "Shenzhen": [
-                "शेनझेन",
-                "शेन्झेन",
-                "शेन्ज़ेन"
+                "शेन्झेन"
             ],
-            "Beijing": [
-                "बीजिंग"
-            ],
-            "Xiamen": [
-                "ज़ियामेन"
-            ],
+            "Beijing": [],
+            "Xiamen": [],
             "Chengdu": [
-                "ग्वांगझू",
-                "चेंगदू"
+                "ग्वांगझू"
             ],
-            "Hangzhou": [
-                "हांग्जो"
-            ],
-            "Shanghai": [
-                "शंघाई",
-                "sanghai"
-            ],
-            "Nanjing": [
-                "नानजिंग"
-            ],
+            "Hangzhou": [],
+            "Shanghai": [],
+            "Nanjing": [],
             "Guangzhou": [
                 "ग्वांगझोउ",
                 "ग्वांगझू",
-                "गुआंगझोउ",
-                "गुआंगज़ौ"
+                "गुआंगझोउ"
             ],
             "शुआंगलियू अंतर्राष्ट्रीय हवाई अड्डे के टर्मिनल 1": "शुआंगलियू अंतर्राष्ट्रीय हवाई अड्डे के टर्मिनल 1"
         },
@@ -5092,76 +5025,82 @@
                 "अगले शुक्रवार",
                 "अगले Friday"
             ],
-            "next Saturday": "next Saturday",
+            "next Saturday": [
+                "next Saturday",
+                "Next Saturday"
+            ],
             "next Tuesday": [
-                "अगले Tuesday ",
-                "अगले Tuesday",
                 "next मंगलवार",
-                "अगले मंगलवार"
+                "अगले Tuesday ",
+                "अगले मंगलवार",
+                "अगले Tuesday"
             ],
             "next Thursday": [
-                "अगले गुरुवार",
+                "अगले गुरुवार ",
                 "अगले Thursday",
-                "next thursday"
+                "next thursday",
+                "अगले गुरुवार"
             ],
             "next Monday": [
                 "अगले सोमवार",
+                "अगले Monday",
                 "next सोमवार",
-                "next monday",
-                "अगले Monday"
+                "next monday"
             ],
             "next Sunday": [
-                "next Sunda",
                 "अगले रविवार",
+                "अगले Sunday",
                 "next रविवार",
                 "next sunday",
-                "अगले Sunday"
+                "next Sunda"
             ],
-            "next sunday": "next sunday",
             "next Wednesday": [
-                "अगले बुधवार",
                 "next wednesday",
                 "next बुधवार",
-                "अगले Wednesday",
-                "अगले wednesday"
+                "अगले बुधवार",
+                "अगले wednesday",
+                "अगले Wednesday"
             ],
             "Next Wednesday": "Next Wednesday",
             "Tuesday": "Tuesday",
-            "Next Saturday": "Next Saturday",
             "Next Monday": "Next Monday",
             "Next Tuesday": "Next Tuesday",
             "Wednesday": "Wednesday",
             "next Monday's": "next Monday's",
             "Next Thursday": [
-                "अगले Thursday",
-                "अगले गुरुवार "
+                "Next Thursday"
             ],
             "Next Friday": "Next Friday"
         },
         "class cabin": {
             "economy class": [
-                "इकोनॉमी क्लास",
                 "economy क्लास",
+                "इकोनॉमी क्लास",
                 "इकोनॉमी class"
             ],
             "first class": [
-                "प्रथम श्रेणी",
-                "फर्स्ट class"
+                "फर्स्ट class",
+                "प्रथम श्रेणी"
             ],
             "business class": [
+                "Business class",
                 "बिजनेस टिकट",
                 "बिज़नेस क्लास",
-                "बिजनेस क्लास",
-                "Business class",
-                "बिजनेस class"
-            ],
-            "Economy class": [
-                "इकोनॉमी क्लास"
-            ],
-            "Business class": [
+                "A बिजनेस टिकट",
+                "।A business class",
+                "एक बिजनेस क्लास",
+                "एक बिजनेस क्लास का टिकट",
                 "बिजनेस class",
                 "बिजनेस क्लास",
-                "business class"
+                "A बिजनेस class",
+                "बिजनेस क्लास के टिकट",
+                "business class का ticket"
+            ],
+            "Economy class": [
+                "Economy class"
+            ],
+            "Business class": [
+                "Business class"
             ],
             "economy": [
                 "Economy",
@@ -5173,23 +5112,13 @@
                 "बिजनेस business",
                 "a business class",
                 "एक बिजनेस class",
-                "बिजनेस क्लास",
                 "बिजनेस क्लास का",
-                "बिजनेस class",
-                "एक business class ticket",
-                "business class"
+                "एक business class ticket"
             ],
             "A business class": [
-                "एक बिजनेस क्लास का टिकट",
                 "एक business class",
-                "A बिजनेस टिकट",
-                "business class का ticket",
-                "एक बिजनेस class",
-                "एक बिजनेस क्लास",
-                "।A business class",
-                "A बिजनेस class"
-            ],
-            "बिजनेस क्लास के टिकट": "बिजनेस क्लास के टिकट"
+                "एक बिजनेस class"
+            ]
         },
         "flight information": {
             "हांग्जो अंतरराष्ट्रीय Airport अड्डे के Terminal 3 से हैनान अंतरराष्ट्रीय Airport तक हैनान Airlines के flight HU7394": "हांग्जो अंतरराष्ट्रीय Airport अड्डे के Terminal 3 से हैनान अंतरराष्ट्रीय Airport तक हैनान Airlines के flight HU7394",
@@ -5887,24 +5816,19 @@
                 "lightweight लैपटॉप"
             ],
             "Lenovo": [
-                "।Lenovo",
-                "लेनोवो"
+                "।Lenovo"
             ],
             "Dell": [
-                "dell",
-                "डेल"
+                "dell"
             ],
             "Acer": [
                 "एसर",
-                "acer",
                 "एसर  "
             ],
             "HP": [
                 "एचपी"
             ],
-            "Mi": [
-                "एमआई"
-            ],
+            "Mi": [],
             "Lenovo's": [
                 "Lenovo के"
             ],
@@ -5939,8 +5863,8 @@
         "memory capacity": {
             "8GB": [
                 "8 GB",
-                "8 जीबी",
-                "।8 GB"
+                "।8 GB",
+                "8 जीबी"
             ],
             "16GB": [
                 "16 जीबी"
@@ -5948,19 +5872,18 @@
         },
         "screen size": {
             "14-inch": [
+                "14 . 0 इंच  ",
+                "14 . 0 इंच",
                 "14-इंच"
             ],
             "15.6 inches": [
-                "15 . 6 इंच",
-                "15 . 6 inches "
+                "15.6 inches"
             ],
             "15.6-inch": [
-                "15 . 6 इंच",
+                "15 . 6 inches ",
+                "15.6 inch",
                 "15 . 6-inch",
-                "15.6 inch"
-            ],
-            "14 . 0 इंच": [
-                "14 . 0 इंच  "
+                "15 . 6 इंच"
             ]
         },
         "product name": {
@@ -6182,17 +6105,12 @@
         },
         "computer type": {
             "laptop": [
-                "laptops",
-                "लैपटॉप",
-                "Laptop"
+                "laptops"
             ],
             "desktops": [
                 "डेस्कटॉप"
             ],
-            "desktop": [
-                "डेस्कटॉप।",
-                "डेस्कटॉप"
-            ],
+            "desktop": [],
             "laptops": [
                 "लैपटॉप"
             ],
@@ -6200,15 +6118,15 @@
         },
         "cpu": {
             "Intel Core i7": [
-                "इंटेल Core i7"
+                "इंटेल Core i7",
+                "i7"
             ],
             "Intel Core i5": [
-                "Intel कोर i5",
-                ".इंटेल कोर i5",
                 "intel core i5",
+                ".इंटेल कोर i5",
+                "Intel कोर i5",
                 "इंटेल कोर आई 5"
             ],
-            "i7": "i7",
             "Intel Core i9": "Intel Core i9",
             "Intel Core i3": "Intel Core i3",
             "Inter Core i5": "Inter Core i5",
@@ -6216,12 +6134,6 @@
             "इंटेल Core i5i5-8250U": "इंटेल Core i5i5-8250U"
         },
         "pricerange": {
-            "5,000 से 10,000": [
-                "5 , 000 से 10 , 000",
-                "5,000 से 10,000 yuan",
-                "5 , 000 to 10 , 000",
-                "5 , 000 to 10 , 000 "
-            ],
             "5,000-10,000 yuan": [
                 "5 , 000-10 , 000 yuan"
             ],
@@ -6241,11 +6153,6 @@
             ],
             "5 , 000 and 10 , 000": "5 , 000 and 10 , 000",
             "5,000 yuan से कम": "5,000 yuan से कम",
-            "5,000-10,000": [
-                "5 , 000 - 10 , 000",
-                "5 , 000-10 , 000",
-                "5,000 - 10,000"
-            ],
             "10 , 000 से 15 , 000": "10 , 000 से 15 , 000",
             "less than 5,000 yuan": [
                 "5,000 yuan से कम है।"
@@ -6453,30 +6360,14 @@
     "train": {
         "classification": {
             "high-speed trains": [
-                "high - speed trains",
-                "high-speed ट्रेन",
                 "हाई-स्पीड ट्रेनों",
-                "high speed ट्रेनों",
                 "high-speed रेलगाड़ियां",
-                "तेज रफ्तार trains",
-                "high speed वाली trains",
-                "तेज रफ्तार वाली रेलगाड़िया",
-                "हाई-स्पीड ट्रेन",
                 "High-speed trains",
                 "तेज-speed trains",
                 "speed trains",
-                "तेज गति वाली ट्रेन",
-                "high speed train",
-                "high speed trains"
+                "तेज गति वाली ट्रेन"
             ],
             "high-speed train": [
-                "high-speed ट्रेन",
-                "high speed वाली train",
-                "high speed train",
-                "हाई-स्पीड train",
-                "high रफ्तार वाली train",
-                "हाई-स्पीड ट्रेन",
-                "high - speed train",
                 "तेज गति वाली train",
                 "तेज गति वाली ट्रेन",
                 "High-speed train",
@@ -6485,25 +6376,36 @@
             "bullet trains": [
                 "बुलेट ट्रेन",
                 "बुलेट ट्रेनों",
-                "bullet train",
                 "bullet ट्रेन"
             ],
             "bullet train": [
-                "Xiamen",
-                "बुलेट train",
-                "बुलेट ट्रेन",
                 "Bullet train",
+                "बुलेट train",
+                "Xiamen",
                 "Bullet Train"
             ],
             "train": [
                 "ट्रेन"
             ],
             "high-speed": [
-                "High-speed",
-                "हाई-स्पीड",
                 "high speed",
                 "high -speed",
-                "high - speed"
+                "high - speed train",
+                "high speed train",
+                "high रफ्तार वाली train",
+                "high-speed ट्रेन",
+                "high - speed",
+                "हाई-स्पीड",
+                "high - speed trains",
+                "हाई-स्पीड train",
+                "high speed trains",
+                "तेज रफ्तार trains",
+                "तेज रफ्तार वाली रेलगाड़िया",
+                "High-speed",
+                "high speed वाली train",
+                "high speed ट्रेनों",
+                "high speed वाली trains",
+                "हाई-स्पीड ट्रेन"
             ],
             "trains": [
                 "ट्रेन",
@@ -6512,8 +6414,7 @@
         },
         "destination": {
             "Xiamen": [
-                "Shanghai",
-                "ज़ियामेन"
+                "Shanghai"
             ],
             "Xiamenbei": [
                 "ज़ियामेनबेई",
@@ -6529,7 +6430,6 @@
                 "Shenzhenbe"
             ],
             "Hangzhou": [
-                "हांग्जो",
                 "हांगझू"
             ],
             "Hangzhoudong": [
@@ -6547,9 +6447,7 @@
                 "नानजिंगनान",
                 "नानजिंगन"
             ],
-            "Chengdu": [
-                "चेंगदू"
-            ],
+            "Chengdu": [],
             "Chengdudong": [
                 "चेंगडुडोंग",
                 "चेंगदूडोंग",
@@ -6565,9 +6463,7 @@
                 "ग्वांगझोनान",
                 "गुआंगज़ौनान"
             ],
-            "Beijing": [
-                "बीजिंग"
-            ],
+            "Beijing": [],
             "Beijingnan": [
                 "बीजिंगनन",
                 "Beijingna",
@@ -6584,7 +6480,6 @@
         },
         "departure": {
             "Shanghai": [
-                "शंघाई",
                 "shanghai"
             ],
             "Beijing": [
@@ -6605,8 +6500,7 @@
                 "शेन्ज़ेनबेई"
             ],
             "Xiamen": [
-                "Shanghai",
-                "ज़ियामेन"
+                "Shanghai"
             ],
             "Beijingnan": [
                 "बीजिंगनन",
@@ -6622,7 +6516,6 @@
                 "ग्वांगझू"
             ],
             "Nanjing": [
-                "नानजिंग",
                 "Nanjingसे"
             ],
             "Nanjingnan": [
@@ -6653,30 +6546,31 @@
         },
         "date": {
             "next Wednesday morning": [
+                "next Wednesday सुबह",
                 "अगली Wednesday morning",
-                "next Wednesday की morning",
-                "next Wednesday सुबह"
+                "next Wednesday की morning"
             ],
             "next Thursday morning": [
-                "next Thursday की morning",
-                "अगले Thursday morning"
+                "अगले गुरुवार की सुबह",
+                "अगले Thursday morning",
+                "next Thursday की morning"
             ],
             "next Tuesday morning": [
-                "अगले tuesday morning",
-                "next मंगलवार सुबह",
-                "अगले मंगलवार सुबह",
-                "next Tuesday की सुबह",
                 "next Tuesday सुबह",
+                "अगले मंगलवार सुबह",
+                "अगले tuesday morning",
+                "next Tuesday की सुबह",
+                "next मंगलवार सुबह",
                 "अगले Tuesday morning"
             ],
             "अगले Thursday": "अगले Thursday",
             "next Tuesday afternoon": [
-                "अगली Tuesday afternoon",
-                "अगले Tuesday afternoon",
-                "next tuesday दोपहर",
-                "अगले मंगलवार दोपहर",
                 "next tuesday afternoon",
-                "next Tuesday दोपहर"
+                "अगले मंगलवार दोपहर",
+                "next tuesday दोपहर",
+                "next Tuesday दोपहर",
+                "अगले Tuesday afternoon",
+                "अगली Tuesday afternoon"
             ],
             "next Monday afternoon": [
                 "next monday दोपहर",
@@ -6685,61 +6579,61 @@
                 "अगले सोमवार दोपहर"
             ],
             "next Friday morning": [
-                "next Friday की morning",
+                "अगले शुक्रवार की सुबह",
                 "अगले Friday morning",
-                "अगले शुक्रवार की सुबह"
+                "next Friday की morning"
             ],
             "next Saturday afternoon": [
                 "next saturday afternoon",
-                "next Saturday दोपहर",
                 "अगले Saturday afternoon",
+                "next Saturday दोपहर",
                 "अगली Saturday afternoon"
             ],
             "next Sunday afternoon": [
+                "अगली Sunday afternoon",
+                "अगले Sunday",
                 "अगले Sunday afternoon",
                 "अगले रविवार दोपहर",
-                "next sunday दोपहर",
-                "अगले Sunday",
-                "अगली Sunday afternoon"
+                "next sunday दोपहर"
             ],
             "next Sunday morning": [
-                "next Sunday की morning",
-                "अगले Sunday सुबह",
-                "अगले Sunday morning",
                 "next Sunday की सुबह",
-                "अगली Sunday morning"
+                "अगली Sunday morning",
+                "अगले Sunday सुबह",
+                "next Sunday की morning",
+                "अगले Sunday morning"
             ],
             "next Thursday afternoon": [
-                "next गुरुवार दोपहर",
-                "अगले thursday दोपहर",
-                "अगले गुरुवार दोपहर",
-                "next Thursday afternoon ",
+                "next Thursday दोपहर",
                 "next Thursday aftrnoon",
-                "next afternoon दोपहर",
+                "next Thursday afternoon ",
+                "अगले गुरुवार दोपहर",
+                "next गुरुवार दोपहर",
                 "अगले Thursday afternoon",
-                "next Thursday दोपहर"
+                "next afternoon दोपहर",
+                "अगले thursday दोपहर"
             ],
             "next Saturday morning": [
+                "अगली शनिवार सुबह",
                 "अगले शनिवार सुबह",
                 "अगली Saturday morning",
-                "next Saturday की morning",
-                "अगली शनिवार सुबह"
+                "next Saturday की morning"
             ],
             "Thursday morning": "Thursday morning",
             "next Wednesday afternoon": [
-                "अगले Wednesday दोपहर",
-                "अगले Wednesday afternoon",
-                "next Wednesday",
                 "अगले बुधवार दोपहर",
-                "next बुधवार afternoon"
+                "next बुधवार afternoon",
+                "next Wednesday",
+                "अगले Wednesday दोपहर",
+                "अगले Wednesday afternoon"
             ],
             "next Monday morning": [
                 "next Monday की morning",
-                "next monday की morining",
-                "अगले सोमवार की सुबह",
                 "अगले Monday morning",
+                "अगले सोमवार की सुबह",
                 "अगली Monday morning",
-                "अगले Monday की सुबह"
+                "अगले Monday की सुबह",
+                "next monday की morining"
             ],
             "Next Sunday afternoon": "Next Sunday afternoon",
             "अगले शनिवार दोपहर": "अगले शनिवार दोपहर",
@@ -6750,10 +6644,6 @@
             "अगले गुरुवार दोपहर।": "अगले गुरुवार दोपहर।",
             "Next Wednesday morning": "Next Wednesday morning",
             "Next Friday afternoon": "Next Friday afternoon",
-            "अगली Sunday morning": "अगली Sunday morning",
-            "अगले Thursday morning": [
-                "अगले गुरुवार की सुबह"
-            ],
             "next Wednesday": "next Wednesday",
             "morning": "morning",
             "afternoon": [
@@ -6762,104 +6652,91 @@
         },
         "seat type": {
             "first class": [
-                "First class",
-                "फर्स्ट क्लास",
-                "फर्स्ट class",
                 "प्रथम class",
-                "first क्लास"
+                "first क्लास",
+                "फर्स्ट क्लास",
+                "A प्रथम टिकट",
+                "प्रथम श्रेणी seat",
+                "first-class ticket",
+                "A फर्स्ट class टिकट",
+                "फर्स्ट class",
+                "First class",
+                "A फर्स्ट टिकट",
+                "First श्रेणी",
+                "कितने का है",
+                "first class का ticket",
+                "।A first class",
+                "A फर्स्ट class"
             ],
             "second class": [
-                "द्वितीय श्रेणी",
+                "second श्रेणी की सीट",
+                "द्वितीय class का टिकट",
                 "सेकंड क्लास",
-                "second-class",
-                "second श्रेणी",
-                "Second class",
-                "द्वितीय class"
-            ],
-            "sleeper in first class": [
-                "First class में एक sleeper",
-                "first class में sleeper",
-                "first class में एक स्लीपर",
-                "first class में एक sleeper"
-            ],
-            "sleeper in second class": [
-                "second classमें एक स्लीपर",
-                "second class  में एक sleeper",
-                "second class में स्लीपर",
-                "Second class में एक sleeper",
-                "second class में एक स्लीपर",
-                "Second class में एक स्लीपर",
-                "सेकेंड क्लास में स्लीपर"
-            ],
-            "second class ticket": [
-                "second क्लास टिकट",
-                "second class टिकट",
-                "द्वितीय श्रेणी",
-                "second class के टिकट",
+                "द्वितीय class",
                 "second class का ticket",
                 "सेकंड class ticket",
-                "सेकेंड क्लास टिकट",
-                "second class का टिकट",
-                "द्वितीय class का टिकट",
-                "द्वितीय श्रेणी का टिकट",
-                "सेकंड class टिकट",
-                "second class tickets",
+                "द्वितीय श्रेणी",
+                "द्वितीय class टिकट",
                 "second class की ticket",
+                "Second class",
+                "सेकंड class टिकट",
+                "second class के टिकट",
+                "second class टिकट",
+                "second क्लास टिकट",
+                "second-class",
+                "second class का टिकट",
+                "second class",
+                "द्वितीय श्रेणी का टिकट",
                 "द्वितीय class ticket",
-                "द्वितीय class टिकट"
+                "second श्रेणी",
+                "second क्लास seat"
             ],
-            "First class": [
-                "First श्रेणी",
-                "फर्स्ट class"
+            "sleeper in first class": [
+                "first class में एक स्लीपर",
+                "first class में sleepers",
+                "first class में एक sleeper",
+                "First class में एक sleeper",
+                "प्रथम श्रेणी मे sleepers",
+                "first class में sleeper"
             ],
-            "Second class": [
-                "second class"
+            "sleeper in second class": [
+                "Second class में एक स्लीपर",
+                "second class में एक स्लीपर",
+                "second class में स्लीपर",
+                "second class  में एक sleeper",
+                "सेकेंड क्लास में स्लीपर",
+                "second classमें एक स्लीपर",
+                "Second class में एक sleeper"
+            ],
+            "second class ticket": [
+                "सेकेंड क्लास टिकट",
+                "second class tickets"
             ],
             "एक first-class": [
                 "एक first class",
-                "First class",
                 "first class ticket",
                 "a प्रथम class",
-                "फर्स्ट class",
                 "first श्रेणी",
                 "प्रथम श्रेणी",
-                "प्रथम class",
                 "a first class",
                 "a फर्स्ट class",
-                "a फर्स्ट क्लास ticket",
-                "first class"
+                "a फर्स्ट क्लास ticket"
             ],
             "A first class": [
-                "A फर्स्ट टिकट",
-                "A फर्स्ट class",
-                "A प्रथम टिकट",
-                "A फर्स्ट class टिकट",
                 ".प्रथम श्रेणी का",
                 "एक first class",
-                "फर्स्ट class",
-                "।A first class",
-                "प्रथम श्रेणी",
-                "प्रथम class",
-                "first class"
+                "प्रथम श्रेणी"
             ],
             "first-class seat": [
-                "प्रथम श्रेणी seat"
+                "first-class seat"
             ],
             "second-class seat": [
-                "second श्रेणी की सीट",
-                "second क्लास seat"
-            ],
-            "first class में sleepers": [
-                "प्रथम श्रेणी मे sleepers"
+                "second-class seat"
             ],
             "sleeper": [
                 "second class ticket"
             ],
-            "second-class ticket": "second-class ticket",
-            "first-class ticket": [
-                "कितने का है",
-                "first class का ticket"
-            ]
+            "second-class ticket": "second-class ticket"
         },
         "train number": {
             "G1653, Shanghai Hongqiao से Xiamenbei तक": [
@@ -7640,46 +7517,39 @@
     "class": {
         "grade": {
             "sixth grade": [
-                "छठी कक्षा।",
                 "Sixth grade",
-                "sixth class",
+                "छठी कक्षा",
                 "sixth कक्षा",
-                "छठी कक्षा"
+                "छठी कक्षा।",
+                "sixth class"
             ],
             "fifth grade": [
                 "Fifth grade",
                 "पांचवीं कक्षा",
-                "पांचवीं grade",
                 "firth grade",
                 "पाँचवीं कक्षा",
+                "पांचवीं grade",
                 "fifth class"
             ],
             "fourth grade": [
+                "fourth class",
+                "Fourth कक्षा",
+                "चौथी कक्षा",
                 "Fourth grade",
                 "fourth कक्षा",
-                "चौथी grade",
-                "चौथी कक्षा",
-                "fourth class",
-                "Fourth कक्षा"
+                "चौथी grade"
             ]
         },
         "subject": {
-            "English": [
-                "अंग्रेजी"
-            ],
+            "English": [],
             "math": [
-                "गणित",
                 "Math"
             ],
-            "Chinese": [
-                "चीनी",
-                "chinese"
-            ]
+            "Chinese": []
         },
         "day": {
             "Saturday": [
                 "saturday",
-                "शनिवार",
                 "Saturdays",
                 "Satruday"
             ],
@@ -7693,21 +7563,11 @@
             "Friday": "Friday"
         },
         "time": {
-            "afternoon": [
-                "दोपहर"
-            ],
-            "morning": [
-                "सुबह"
-            ],
+            "morning": [],
             "evening": "evening",
             "mornings": [
                 "सुबह",
                 "mornings "
-            ],
-            "afternoons": [
-                "दोपहर",
-                "afternoons.I",
-                "दोपह रI"
             ],
             "सुबह या दोपहर": "सुबह या दोपहर",
             "evenings": "evenings",
@@ -7719,7 +7579,10 @@
                 "mornings या afternoons"
             ],
             "mornings or evenings": "mornings or evenings",
-            "evenings or mornings": "evenings or mornings"
+            "evenings or mornings": "evenings or mornings",
+            "afternoon": [
+                "सुबह या दोपहर"
+            ]
         },
         "class number": {
             "PE6T48010": [
@@ -7983,16 +7846,16 @@
         },
         "area": {
             "Suzhou New District": [
-                "सूज़ौ न्यू डिस्ट्रिक्ट",
-                "सूज़ौ न्यू District"
+                "सूज़ौ न्यू District",
+                "सूज़ौ न्यू डिस्ट्रिक्ट"
             ],
             "Suzhou New District or Gusu District": [
                 "Suzhou New District या फिर Gusu District",
                 "Suzhou न्यू डिस्ट्रिक्ट or गुसु जिले"
             ],
             "Suzhou Industrial Park": [
-                "Suzhou औद्योगिक पार्क",
-                "सूज़ौ औद्योगिक पार्क"
+                "सूज़ौ औद्योगिक पार्क",
+                "Suzhou औद्योगिक पार्क"
             ],
             "Suzhou Industrial Park or Wuzhong District": [
                 "Suzhou Industrial Park या Wuzhong District"
@@ -8049,11 +7912,11 @@
                 "advanced grade"
             ],
             "upgrading class": [
-                "अपग्रेडिंग क्लास",
-                "उन्नयन वर्ग",
                 "upgrading grade",
                 "अपग्रेड class",
-                "Upgrading class"
+                "अपग्रेडिंग क्लास",
+                "Upgrading class",
+                "उन्नयन वर्ग"
             ],
             "advanced classes": "advanced classes",
             "advanced": "advanced"
