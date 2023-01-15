@@ -1444,7 +1444,7 @@ class WOZDataset(Dataset):
             with open(path_train[0]) as file:
                 dials = json.load(file)
 
-            if data_fewshot is not None and args.data_fewshot != 0:
+            if data_fewshot is not None and args.fewshot_percent != 0:
                 raise ValueError('You cannot pass fewshot data and also extract some from training!')
 
             if args.sampling == "sequential":
