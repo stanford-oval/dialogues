@@ -16,6 +16,7 @@ class BitodMapping(object):
 
         # TODO: missing
         self.DOMAIN_SLOT_MAP = {}
+        self.en2canonical = {}
 
         self.zh2en_DOMAIN_MAP = {
             # currently untranslated

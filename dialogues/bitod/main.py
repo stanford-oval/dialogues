@@ -21,6 +21,7 @@ class Bitod(WOZDataset):
         database = client["bilingual_tod"]
 
         db = {"null": None}
+        self.skipped_entities = set()
 
         for domain in ['restaurants', 'hotels']:
             for lang in ['en_US', 'zh_CN']:
