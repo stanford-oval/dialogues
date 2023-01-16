@@ -34,7 +34,7 @@ class Risawoz(WOZDataset):
         dial_id=None,
         turn_id=None,
     ):
-        src_lang = src_lang[:2]
+        src_lang = src_lang.split('_', 1)[0]
         constraints = {}
         for api_name in dialogue_state.keys():
             constraints[api_name] = self.state2constraints(dialogue_state[api_name])

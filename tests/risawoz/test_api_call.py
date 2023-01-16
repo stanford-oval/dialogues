@@ -138,6 +138,45 @@ elif args.setting == 'en':
             "available_options": 1,
         },
     }
+elif args.setting == 'enhi':
+    dialogue_state = {
+        "hotel": {
+            'pricerange': {'relation': 'equal_to', 'value': ['slightly expensive']},
+            'area': {'relation': 'equal_to', 'value': ['वुजियांग जिले']},
+        },
+        "attraction": {"name": {'relation': 'equal_to', 'value': ['Jinji Lake Scenic Area']}},
+    }
+    gold_knowledge = {
+        'hotel': {
+            "name": "Suzhou Shui'an Hanshe Boutique Hotel",
+            "area": "वुजियांग जिले",
+            "star": "5",
+            "pricerange": "slightly expensive",
+            "hotel_type": "business",
+            "room_type": "king-size room",
+            "parking": "free",
+            "room_charge": "629 yuan",
+            "address": "No. 5-9, Nanxin Street, Lili Town, Wujiang District, Suzhou",
+            "phone_number": "180-5181-5602",
+            "score": "4.6",
+            "available_options": 4,
+        },
+        'attraction': {
+            "name": "Jinji Lake Scenic Area",
+            "area": "Suzhou Industrial Park",
+            "type": "landscape scenic spot",
+            "the_most_suitable_people": "dating",
+            "consumption": "slightly expensive",
+            "metro_station": "true",
+            "ticket_price": "free",
+            "phone_number": "400-7558558",
+            "address": "जिंगगैंग स्ट्रीट , सूज़ौ इंडस्ट्रियल पार्क , सूज़ौ सिटी",
+            "score": "4.5",
+            "opening_hours": "all day",
+            "features": "get a good view of tall buildings like the Gate of the Orient, ride the Ferris wheel, take a night cruise, and feel the modern side of Suzhou.",
+            "available_options": 1,
+        },
+    }
 elif args.setting == 'hi':
     dialogue_state = {
         "hotel": {
