@@ -35,7 +35,7 @@ class Dataset(object):
         self.db = None
 
         self.FAST_EVAL = False
-        self.DEBUG = True
+        self.DEBUG = False
 
         # regex to extract belief state span from input
         self.state_re = re.compile('')
@@ -51,11 +51,6 @@ class Dataset(object):
 
         self.system_token = ''
         self.user_token = ''
-
-        if self.DEBUG:
-            self.out_ser = open('out_ser.tsv', 'w')
-            self.out_dst = open('out_dst.tsv', 'w')
-            self.out_da = open('out_da.tsv', 'w')
 
     def domain2api_name(self, domain):
         """
@@ -229,7 +224,6 @@ class WOZDataset(Dataset):
         :param reference_path: path to file containing gold values to compare predictions against
         :return: a dictionary with metric names as keys and their computed values (in percentage)
         """
-
         reference_data = {}
         for reference_file_path in reference_path.split("__"):
             with open(reference_file_path) as f:
@@ -699,33 +693,63 @@ class WOZDataset(Dataset):
                 ref = self.clean_value(ref)
                 ref_dict = self.span2action(ref)
 
-                if pred_dict == ref_dict:
+                # pop general domain
+                pred_dict.pop('general', -1)
+                ref_dict.pop('general', -1)
+
+                # skip bye and greeting acts
+                ref_dict_new = {}
+                for domain, items in ref_dict.items():
+                    new_items = []
+                    for item in items:
+                        if item['act'] in ['bye', 'greeting', 'null', 'general']:
+                            continue
+                        new_items.append(item)
+                    if new_items:
+                        ref_dict_new[domain] = new_items
+
+                # skip bye and greeting acts
+                pred_dict_new = {}
+                for domain, items in pred_dict.items():
+                    new_items = []
+                    for item in items:
+                        if item['act'] in ['bye', 'greeting', 'null', 'general']:
+                            continue
+                        new_items.append(item)
+                    if new_items:
+                        pred_dict_new[domain] = new_items
+
+                if pred_dict_new == ref_dict_new:
                     da += 1
                 else:
                     if self.DEBUG:
-                        self.out_da.write(str(pred) + '\t' + str(ref) + '\t' + str(list(dictdiffer.diff(pred, ref))) + '\n')
+                        self.out_da.write(
+                            str(pred) + '\t' + str(ref) + '\t' + str(list(dictdiffer.diff(pred_dict_new, ref_dict_new))) + '\n'
+                        )
 
         return da / len(preds) * 100
 
     def compute_ser(self, preds, act_values):
         ser = 0.0
         for pred, values in zip(preds, act_values):
+
             # remove emtpy slot values
             missing = False
             if len(values):
                 for val in values:
-                    if val in ['null', 'yes', 'no', 'true', 'false', '否', '是']:
+                    if val in self.skipped_entities:
                         continue
                     if str(val) not in pred:
                         missing = True
             if missing:
                 ser += 1.0
                 if self.DEBUG:
-                    self.out_ser.write('\t'.join([pred, *values]) + '\n')
+                    self.out_ser.write(' ; '.join([pred, *values]) + '\n')
         return ser / len(preds) * 100
 
     def compute_dst_em(self, preds, golds):
         hit = 0
+        not_hit = 0
         for pred, gold in zip(preds, golds):
             pred_sets = self.convert_lists_to_set(pred)
             gold_sets = self.convert_lists_to_set(gold)
@@ -733,6 +757,7 @@ class WOZDataset(Dataset):
             if pred_sets == gold_sets:
                 hit += 1
             else:
+                not_hit += 1
                 if self.DEBUG:
                     self.out_dst.write(
                         str(pred_sets) + '\t' + str(gold_sets) + '\t' + str(list(dictdiffer.diff(pred_sets, gold_sets))) + '\n'
@@ -756,9 +781,6 @@ class WOZDataset(Dataset):
         correct_api_call = 0
         task_info = {}
 
-        out_api = open('out_api.tsv', 'w')
-        out_success = open('out_success.tsv', 'w')
-
         for dial_id in references:
             responses = ""
             total_dial += 1
@@ -773,8 +795,8 @@ class WOZDataset(Dataset):
 
                 if pred_sets == constraints_sets:
                     correct_api_call += 1
-                else:
-                    out_api.write(
+                elif self.DEBUG:
+                    self.out_api.write(
                         dial_id
                         + '\t'
                         + str(pred_sets)
@@ -804,7 +826,7 @@ class WOZDataset(Dataset):
                     references[dial_id]["tasks"][intent]["inform+offer"] + references[dial_id]["tasks"][intent]["confirmation"]
                 ):
                     entity = self.clean_value(entity)
-                    if entity in ['null', 'yes', 'no', 'true', 'false', '否', '是']:
+                    if entity in self.skipped_entities:
                         continue
                     if str(entity) not in responses:
                         out += str(entity) + ' ; '
@@ -818,8 +840,9 @@ class WOZDataset(Dataset):
             if dial_success_flag:
                 success_dial += 1
 
-            if out.split(';;;', 1)[1] != '\t':
-                out_success.write(out + '\n')
+            if self.DEBUG:
+                if out.split(';;;', 1)[1] != '\t':
+                    self.out_success.write(out + '\n')
 
         total_tasks = 0
         success_tasks = 0
@@ -832,6 +855,7 @@ class WOZDataset(Dataset):
         return success_rate, api_acc, task_info
 
     def clean_value(self, v, do_int=False):
+        # below was good practice for regex!
         v = str(v)
         v = v.lower()
         v = v.strip()
@@ -841,6 +865,7 @@ class WOZDataset(Dataset):
 
         v = v.replace('；', ';')
         v = v.replace('。', '')
+        v = v.replace('–', '-')
 
         # am, pm
         v = re.sub('(\d+)(?:[\.:](\d+))?\s?(?:pm )?(afternoon|in the afternoon|pm in the afternoon)', r'\1:\2 pm', v)
@@ -868,6 +893,7 @@ class WOZDataset(Dataset):
 
         # remove extra dot in the end
         v = re.sub('(\d+)\.$', r'\1', v)
+        v = re.sub('(\d+\.?\d+?) 元', r'\1 yuan', v)
         v = re.sub('(\w+)\.$', r'\1', v)
 
         v = re.sub('(\w+)[。！？]$', r'\1', v)
@@ -875,12 +901,85 @@ class WOZDataset(Dataset):
         # 3rd of january --> januray 3
         v = re.sub('(\d+)(?:th|rd|st|nd) of (\w+)', r'\2 \1', v)
 
+        # synonyms
+        # v = re.sub('(mid-priced?|moderate-priced?|moderate-range|moderated|moderately|fair|mid)', 'moderate', v)
+        # v = re.sub('(bit more expensive|slightly more expensive)', 'more expensive', v)
+        # v = re.sub('wujiang district', 'wujiang', v)
+        # v = re.sub('jinji lake shilla hotel suzhou', 'jinji lake shilla hotel', v)
+        #
+        # v = re.sub('suzhou-style garden', 'suzhou-styled garden', v)
+        # v = re.sub('resort hotel', 'resort', v)
+        # v = re.sub('business computer', 'business', v)
+        #
+        # v = re.sub('high speed train', 'high speed', v)
+        # v = re.sub('trains', 'train', v)
+        v = re.sub('(second|business) ticket', r'\1', v)
+        #
+        # v = re.sub('(south|north) korean', r'korean', v)
+        # v = re.sub('hong kongs', r'hong kong', v)
+        # v = re.sub('indian', r'india', v)
+
+        # remove ending s
+        v = re.sub(' (center|room|garden|evening|morning|afternoon|laptop)s', r' \1', v)
+
+        v = re.sub('(\d)+ 到 (\d)+', r'\1 to \2', v)
+        v = re.sub('(\d+\.?\d+?) 英寸', r'\1 inches', v)
+
+        # v = re.sub('(.*) (?:department|hospital|school|hotel|tv show)', r'\1', v)
+        # v = re.sub('american', r'america', v)
+        # v = re.sub('taiwan, china', r'taiwan', v)
+        #
+        v = re.sub('(\d+) 年代', r'\1s', v)
+        #
+        v = re.sub('19(\d+)s', r'\1s', v)
+        # v = re.sub('(.*?) movie', r'\1', v)
+        # v = re.sub('(.*?) class', r'\1', v)
+
+        v = re.sub('general surgery', 'general hospital', v)
+        v = re.sub('suzhou science & technology town hospital', 'suzhou science & technology town', v)
+
+        v = re.sub('shajiabang scenic spot of changshu', 'shajiabang scenic spot', v)
+
+        v = re.sub(
+            '(go with my friends|travel with friends|for friends to have an outing|friends to have an outing|for friends to have some fun|for friends)',
+            'friends',
+            v,
+        )
+
+        # v = re.sub('hot pot', 'hotpot', v)
+        v = re.sub('(cheaper|bit cheap|a bit cheap)', 'cheap', v)
+        # v = re.sub('family-friendly', 'family', v)
+        # v = re.sub('second class ticket', 'second class', v)
+        #
+        # v = re.sub('landscape scenic spots', 'landscape scenic spot', v)
+
+        # remove a from "a sth" or the from "the sth"
+        v = re.sub('^(?:a|the) (.*)', r'\1', v)
+
+        v = re.sub('(\d+)-star', r'\1', v)
+        v = re.sub('1st', r'first', v)
+        v = re.sub('2nd', r'second', v)
+        v = re.sub('3rd', r'third', v)
+        v = re.sub('4th', r'fourth', v)
+        # v = re.sub('laptops', 'laptop', v)
+        # v = re.sub('lightweight laptop|newly released laptop', 'laptop', v)
+        # v = re.sub('5,000 to 10,000 yuan', '5,000 to 10,000', v)
+        # v = re.sub('pay', 'paid', v)
+        #
+        v = re.sub('(\d+),(\d+)', r'\1\2', v)
+        v = re.sub('(\d) to (\d)', r'\1\-\2', v)
+        v = re.sub('(0\d+)\-(\d+)', r'\1\\2', v)
+
         # time consuming but needed step
         if not self.FAST_EVAL:
             for key, val in self.value_mapping.entity_map.items():
                 key, val = str(key), str(val)
                 if key in v:
                     v = v.replace(key, val)
+
+        v = self.value_mapping.en2canonical.get(v, v)
+
+        # v = re.sub('(.*?)(direct subway|directly by subway|subway there|by subway directly)(.*)', r'\1 subway \2', v)
 
         if do_int:
             v = convert_to_int(v, word2number=True)
@@ -893,10 +992,15 @@ class WOZDataset(Dataset):
         for i in state:
             for j in state[i]:
                 for m, v in state[i][j].items():
+                    if m == 'relation':
+                        continue
                     if isinstance(v, list):
                         v = [self.clean_value(val, do_int=True) for val in v]
+                        v = [val for val in v if val not in self.skipped_entities]
                         new_state[i][j][m] = set(v)
                     else:
+                        if self.clean_value(v, do_int=True) in self.skipped_entities:
+                            continue
                         new_state[i][j][m] = self.clean_value(v, do_int=True)
         return new_state
 
@@ -908,8 +1012,11 @@ class WOZDataset(Dataset):
                     for i, j in v.items():
                         if isinstance(j, list):
                             j = [self.clean_value(val, do_int=True) for val in j]
+                            j = [val for val in j if val not in self.skipped_entities]
                             new_constraints[k][i] = set(j)
                         else:
+                            if self.clean_value(v, do_int=True) in self.skipped_entities:
+                                continue
                             new_constraints[k][i] = self.clean_value(j, do_int=True)
                 else:
                     new_constraints[k] = self.clean_value(v, do_int=True)
@@ -918,6 +1025,13 @@ class WOZDataset(Dataset):
         return new_constraints
 
     def compute_result(self, predictions, reference_data):
+        if self.DEBUG:
+            self.out_ser = open('out_ser.tsv', 'w')
+            self.out_dst = open('out_dst.tsv', 'w')
+            self.out_da = open('out_da.tsv', 'w')
+            self.out_api = open('out_api.tsv', 'w')
+            self.out_success = open('out_success.tsv', 'w')
+
         preds = []
         golds = []
         for dial_id in reference_data:

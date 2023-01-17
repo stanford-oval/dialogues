@@ -33,8 +33,8 @@ results = dataset.compute_metrics(args, args.prediction_file_path, args.referenc
 
 gold_results = OrderedDict(
     [
-        ('bleu', 41.038),
-        ('ser', 12.666817462112645),
+        ('bleu', 41.0578),
+        ('ser', 12.644198145216015),
         ('success_rate', 48.41628959276018),
         ('api_acc', 78.1303602058319),
         ('da_acc', 62.72336575435422),

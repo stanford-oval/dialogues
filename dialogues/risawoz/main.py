@@ -19,6 +19,32 @@ class Risawoz(WOZDataset):
         self.db = client["risawoz"]
 
         self.value_mapping = RisawozMapping(src=src, tgt=tgt)
+        self.skipped_entities = {
+            'null',
+            'yes',
+            'no',
+            'true',
+            'false',
+            '否',
+            '是',
+            'has',
+            'can',
+            'can\'t',
+            'could',
+            'yes',
+            'be',
+            'do',
+            'have',
+            'does not have',
+            'available',
+            'can get there directly',
+            'can\'t get there directly',
+            'can\'t get there directly by subway',
+            'no subway stations',
+            'get there directly by subway',
+            'no direct subway',
+            'ye',
+        }
 
         self._warnings = set()
 
