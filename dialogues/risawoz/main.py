@@ -18,6 +18,14 @@ class Risawoz(WOZDataset):
 
         self.db = client["risawoz"]
 
+        tgt = tgt.split('_', 1)[0]
+        src = src.split('_', 1)[0]
+
+        if tgt == 'en':
+            src = 'zh'
+        elif tgt in ['fr', 'hi', 'enhi', 'ko']:
+            src = 'en'
+
         self.value_mapping = RisawozMapping(src=src, tgt=tgt)
         self.skipped_entities = {
             'null',
@@ -41,9 +49,11 @@ class Risawoz(WOZDataset):
             'can\'t get there directly',
             'can\'t get there directly by subway',
             'no subway stations',
-            'get there directly by subway',
+            'yes, you can' 'get there directly by subway',
             'no direct subway',
             'ye',
+            'non',
+            'oui',
         }
 
         self._warnings = set()
