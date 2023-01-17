@@ -954,7 +954,14 @@ class WOZDataset(Dataset):
         # v = re.sub('landscape scenic spots', 'landscape scenic spot', v)
 
         # remove a from "a sth" or the from "the sth"
-        v = re.sub('^(?:a|the) (.*)', r'\1', v)
+        v = re.sub('^(?:a|the|le|la|une|un|très|l\') (.*)', r'\1', v)
+        v = re.sub('^(?:l\')(. *)', r'\1', v)
+
+        v = re.sub('cuisine (.*)', r'\1', v)
+
+        # chambres
+        v = re.sub('(.*)s', r'\1', v)
+        v = re.sub('fox\'s house yoghurt', 'fox\'s house', v)
 
         v = re.sub('(\d+)-star', r'\1', v)
         v = re.sub('1st', r'first', v)
