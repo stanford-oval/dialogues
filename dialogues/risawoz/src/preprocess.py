@@ -2,9 +2,8 @@ import argparse
 import json
 import os
 
-from utils import get_commit
-
 from dialogues.risawoz.main import Risawoz
+from dialogues.utils import get_commit
 
 
 def main():
@@ -38,26 +37,15 @@ def main():
 
     dataset = Risawoz()
 
-    if args.setting in ["en", "zh2en"]:
-        path_train = ["data/en_train.json"]
-        path_fewshot = ["data/en_fewshot.json"]
-        path_dev = ["data/en_valid.json"]
-        path_test = ["data/en_test.json"]
-    elif args.setting in ["zh", "en2zh"]:
-        path_train = ["data/zh_train.json"]
-        path_fewshot = ["data/zh_fewshot.json"]
-        path_dev = ["data/zh_valid.json"]
-        path_test = ["data/zh_test.json"]
-    elif args.setting in ["fr"]:
-        path_train = ["data/fr_train.json"]
-        path_fewshot = ["data/fr_fewshot.json"]
-        path_dev = ["data/fr_valid.json"]
-        path_test = ["data/fr_test.json"]
-    else:
-        path_train = ["data/zh_train.json", "data/en_train.json"]
-        path_fewshot = ["data/zh_fewshot.json", "data/en_fewshot.json"]
-        path_dev = ["data/zh_valid.json", "data/en_valid.json"]
-        path_test = ["data/zh_test.json", "data/en_test.json"]
+    path_train = [f"data/{args.setting}_train.json"]
+    path_fewshot = [f"data/{args.setting}_fewshot.json"]
+    path_dev = [f"data/{args.setting}_valid.json"]
+    path_test = [f"data/{args.setting}_test.json"]
+
+    # path_train = ["data/zh_train.json", "data/en_train.json"]
+    # path_fewshot = ["data/zh_fewshot.json", "data/en_fewshot.json"]
+    # path_dev = ["data/zh_valid.json", "data/en_valid.json"]
+    # path_test = ["data/zh_test.json", "data/en_test.json"]
 
     path_train = [os.path.join(args.root, p) for p in path_train]
     path_fewshot = [os.path.join(args.root, p) for p in path_fewshot]

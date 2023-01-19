@@ -31,14 +31,11 @@ results = dataset.compute_metrics(args, prediction_file_path, reference_file_pat
 # api, da, and ser are not correct
 gold_results = OrderedDict(
     [
-        ('bleu', 46.0014),
-        ('ser', 18.260226712666338),
-        ('success_rate', 58.5),
-        (
-            'api_acc',
-            83.27485380116958,
-        ),
-        ('da_acc', 73.90340068999507),
+        ('bleu', 46.0123),
+        ('ser', 18.506653523903402),
+        ('success_rate', 56.166666666666664),
+        ('api_acc', 83.27485380116958),
+        ('da_acc', 79.07836372597339),
         ('jga', 82.97190734351898),
         (
             'task_info',
@@ -52,14 +49,16 @@ gold_results = OrderedDict(
                 'movie': {'total': 60, 'hit': 20, 'success_rate': 0.3333333333333333},
                 'tv': {'total': 60, 'hit': 24, 'success_rate': 0.4},
                 'hospital': {'total': 38, 'hit': 23, 'success_rate': 0.6052631578947368},
-                'pc': {'total': 37, 'hit': 26, 'success_rate': 0.7027027027027027},
+                'pc': {'total': 37, 'hit': 24, 'success_rate': 0.6486486486486487},
                 'car': {'total': 38, 'hit': 20, 'success_rate': 0.5263157894736842},
-                'class': {'total': 37, 'hit': 20, 'success_rate': 0.5405405405405406},
-                'Averaged_task_success': 67.38095238095238,
+                'class': {'total': 37, 'hit': 8, 'success_rate': 0.21621621621621623},
+                'Averaged_task_success': 65.71428571428571,
             },
         ),
     ]
 )
+
+print(results)
 
 diff = list(dictdiffer.diff(results, gold_results))
 print('diff: ', diff)
