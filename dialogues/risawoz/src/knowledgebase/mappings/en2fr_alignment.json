@@ -6,13 +6,20 @@
             "America": "Amérique",
             "Chinese mainland": "Chine continentale",
             "Korea": "Corée",
-            "Hong Kong": "Hong Kong"
+            "Hong Kong": "Hong Kong",
+            "Chinese TV show": "Chine continentale",
+            "Korean": "Corée",
+            "Chinese mainland TV show": "Chine continentale",
+            "American TV show": "Amérique",
+            "TV show in America": "Amérique",
+            "Japanese TV show": "Japon"
         },
         "decade": {
             "2010s": "années 2010",
             "2000s": "années 2000",
             "1990s": "années 1990",
-            "1980s": "années 1980"
+            "1980s": "années 1980",
+            "2010": "années 2010"
         },
         "type": {
             "suspenseful": "polar",
@@ -21,15 +28,22 @@
             "feature": "série",
             "crime": "série policière",
             "action": "d'action",
-            "romantic": "romantique"
+            "romantic": "romantique",
+            "feature drama": "série",
+            "science fiction TV show": "science-fiction",
+            "romantic TV show": "romantique",
+            "crime drama": "série policière",
+            "suspense drama": "polar",
+            "sci-fi show": "science-fiction",
+            "action TV show": "d'action",
+            "suspense": "polar",
+            "feature TV show": "série"
         },
         "title": {
-            "Quartet": "Quartet",
             "On Children": "On Children",
             "Westworld Season 1": "saison 1 de Westworld",
             "Journey to the West": "Journey to the West",
             "Legal High": "Legal High",
-            "Unnatural": "Unnatural",
             "Hell Is Other People": "Hell Is Other People",
             "My Own Swordsman": "My Own Swordsman",
             "the Heaven Sword and Dragon Saber": "l'épée du ciel et le sabre du dragon",
@@ -47,7 +61,6 @@
             "the Teenage Psychic": "le médium pour adolescents",
             "The World Between Us": "The World Between Us",
             "Season 1 of Friends": "saison 1 de Friends",
-            "Signal": "Signal",
             "Secret Garden": "Secret Garden",
             "Monkey King": "Monkey King",
             "Band of Brothers": "Band of Brothers",
@@ -62,7 +75,6 @@
             "Lucky Seven": "Lucky Seven",
             "Liar Game": "Liar Game",
             "the Mad Monk": "le moine fou",
-            "Lurk": "Lurk",
             "Fist of Fury": "Fist of Fury",
             "Long Vacation": "Long Vacation",
             "My Love From The Star": "My Love From The Star",
@@ -70,7 +82,6 @@
             "Witness to a Prosecution 2": "Witness to a Prosecution 2",
             "A Dream in Red Mansions": "A Dream in Red Mansions",
             "Season 1 of The Big Bang Theory": "saison 1 de The Big Bang Theory",
-            "Narcos": "Narcos",
             "My Lovely Sam Soon": "My Lovely Sam Soon",
             "Hannibal Season 1": "Hannibal Saison 1",
             "Meteor Garden": "Meteor Garden",
@@ -84,20 +95,17 @@
             "Young Justice Bao": "Young Justice Bao",
             "Someday Or One Day": "Someday Or One Day",
             "Fall in Love at First Kiss": "Fall in Love at First Kiss",
-            "Iljimae": "Iljimae",
             "City Hunter": "City Hunter",
             "Tokyo Love Story": "Tokyo Love Story",
             "Lurk, My Own Swordsman, Demi-Gods and Semi-Devils, Romance in the Rain, Happy Star, Young Justice Bao, and The Diary of Death": "Lurk, My Own Swordsman, Demi-Gods and Semi-Devils, Romance in the Rain, Happy Star, Young Justice Bao et The Diary of Death",
             "The Bund": "The Bund",
             "A Step into the Past": "A Step into the Past",
             "Ultraman Nexus": "Ultraman Nexus",
-            "Erased": "Erased",
             "Ten Shimoyama": "Ten Shimoyama",
             "Day and Night": "Day and Night",
             "The Final Conflict of Su Yanwen": "The Final Conflict fde Su Yanwen",
             "Forensic Heroes": "Forensic Heroes",
             "Black & White": "Black & White",
-            "Jin": "Jin",
             "Season 1 of Lost": "saison 1 de Lost",
             "Star in My Heart": "Star in My Heart",
             "In the Name of the People": "In the Name of the People",
@@ -105,7 +113,6 @@
             "The Vigilantes in Masks": "The Vigilantes in Masks",
             "Dae Jang Geum": "Dae Jang Geum",
             "B-Robo Kabutack": "B-Robo Kabutack",
-            "Puppets": "Puppets",
             "Romance in the Rain": "Romance sous la pluie",
             "Desperate Housewives Season 1": "Desperate Housewives Saison 1",
             "Project Runway": "Projet Runway",
@@ -119,7 +126,6 @@
             "Legends of the Condor Heroes": "Légendes des héros du Condor",
             "Black Heart White Soul": "Black Heart White Soul",
             "The Complete Sherlock Holmes": "L'intégrale de Sherlock Holmes",
-            "Galileo": "Galileo",
             "Hate the Sin, Love the Sinner": "Haïr le péché, aimer le pécheur",
             "The Deer and the Cauldron": "Le cerf et le chaudron",
             "House Of Spirits": "Maison des esprits",
@@ -695,7 +701,8 @@
             "2000s": "années 2000",
             "1990s": "années 1990",
             "1980s": "années 1980",
-            "1970s": "années 1970"
+            "1970s": "années 1970",
+            "2000": "années 2000"
         },
         "douban score": {
             "9.1": "9,1",
@@ -741,7 +748,9 @@
             "America": "l'Amérique",
             "Chinese mainland": "Chine continentale",
             "Korea": "Corée",
-            "Hong Kong": "Hong Kong"
+            "Hong Kong": "Hong Kong",
+            "Korean": "Corée",
+            "Taiwan": "Taïwan, Chine"
         },
         "star": {
             "Shatrughan Sinha": "Shatrughan Sinha",
@@ -818,13 +827,11 @@
         },
         "title": {
             "Khoon Bhari Maang": "Khoon Bhari Maang",
-            "Secret": "Secret",
             "The Bride": "The Bride",
             "You Are the Apple of My Eye": "You Are the Apple of My Eye",
             "Dying to Survive": "Dying to Survive",
             "Pirates of the Caribbean": "Pirates des Caraïbes",
             "Bajrangi Bhaijaan": "Bajrangi Bhaijaan",
-            "Inception": "Inception",
             "Double Vision": "Double vision",
             "Train To Busan": "Train To Busan",
             "Better Days": "\"Better Days\"",
@@ -834,37 +841,28 @@
             "Pulp Fiction": "Pulp Fiction",
             "Rigor Mortis": "Rigor Mortis",
             "Flipped": "Un coeur à l'envers",
-            "Avatar": "Avatar",
             "All in the Dim Cold Night": "All in the Dim Cold Night",
             "Exorcist Master": "Exorcist Master",
-            "Missing": "Missing",
             "Chasing the Dragon": "Chasing the Dragon",
             "The Curious Case of Benjamin Button": "L'Étrange Histoire de Benjamin Button",
             "A Chinese Ghost Story": "Histoire de fantômes chinois",
             "Green Book": "Green Book",
             "A Better Tomorrow": "A Better Tomorrow",
             "3 Idiots, Ghajini, Devdas, and Krrish": "3 Idiots, Ghajini, Devdas et Krrish",
-            "Krrish": "Krrish",
             "The Conjuring": "The Conjuring",
             "Mr. India": "Mr. India",
             "Love in A Puff": "Love in A Puff",
-            "Control": "Control",
             "YiP Man": "YiP Man",
             "Red Sorghum": "Sorgho rouge",
             "Mr. Vampire": "Mr. Vampire",
-            "Catch": "Catch",
             "Kung Fu Kids": "Kung Fu Kids",
             "The Legend of the Six Dynasty,": "La légende de la Sixième Dynastie,",
             "The Shanghai Thirteen": "Les Treize de Shanghaï",
             "Once Upon a Time in China 3": "Once Upon a Time in China 3",
             "The Rooftop": "The Rooftop",
-            "Scream": "Scream",
-            "Titanic": "Titanic",
             "James Cameron": "James Cameron",
-            "Silk": "Silk",
             "Meteor Garden": "Meteor Garden",
             "The Shining": "The Shining",
-            "Saw": "Saw",
             "Crazy Alien": "Crazy Alien",
             "The Dream Factory": "The Dream Factory",
             "The Terminator": "Terminator",
@@ -873,10 +871,7 @@
             "King of Comedy": "King of Comedy",
             "God of Gamblers": "God of Gamblers",
             "My Name Is Khan": "My Name Is Khan",
-            "Alien": "Alien",
-            "Ghajini": "Ghajini",
             "Star War": "Star Wars",
-            "Monga": "Monga",
             "Love in A Puff, La Comédie humaine, Rigor Mortis, Chasing the Dragon, and Control": "Love in A Puff, La Comédie humaine, Rigor Mortis, Chasing the Dragon et Control",
             "3 Idiots": "3 Idiots",
             "The Ultimate Vampire": "The Ultimate Vampire",
@@ -885,7 +880,6 @@
             "Farewell My Concubine": "Adieu ma concubine",
             "Four Moods": "Four Moods",
             "The House That Never Dies": "The House That Never Dies",
-            "Iljimae": "Iljimae",
             "City Hunter": "City Hunter",
             "Wolf Warrior 2": "Wolf Warrior 2",
             "Kung Fu Dunk": "Kung Fu Dunk",
@@ -897,21 +891,16 @@
             "Kung Fu Hustle": "Kung Fu Hustle",
             "Ashes of Time": "Ashes of Time",
             "Silent Code": "Silent Code",
-            "Endhiran": "Endhiran",
-            "Duplicate": "Duplicate",
             "Inner Senses": "Inner Senses",
             "King Of Beggars": "King Of Beggars",
-            "Koyla": "Koyla",
             "Blade Runner": "Blade Runner",
             "Shaolin Soccer": "Shaolin Soccer",
             "The Way of the Dragon": "The Way of the Dragon",
             "CJ7": "CJ7",
             "a Comédie humaine": "a Comédie humaine",
-            "Devdas": "Devdas",
             "P.K.（Peekay)": "P.K.（Peekay)",
             "In the Mood for Love": "In the Mood for Love",
             "Fist of Fury": "Fist of Fury",
-            "Rocky": "Rocky",
             "Mission: Impossible": "Mission : Impossible",
             "The Marigolds": "Les soucis",
             "Top Gun": "Top Gun",
@@ -1152,7 +1141,11 @@
             "sci-fi": "science-fiction",
             "comedy": "comédie",
             "action": "d'action",
-            "horror": "d'horreur"
+            "horror": "d'horreur",
+            "horror movie": "d'horreur",
+            "comedic": "comédie",
+            "romantic movie": "romantique",
+            "science fiction movie": "science-fiction"
         },
         "name list": {
             "Jay Chou, Gwei Lun-mei, Anthony Wong Chau Sang and Su Mingming.": "Jay Chou, Gwei Lun-mei, Anthony Wong Chau Sang et Su Mingming.",
@@ -1372,23 +1365,24 @@
         "area": {
             "Gusu District": "District de Gusu",
             "Suzhou Industrial Park": "Parc industriel de Suzhou",
-            "Suzhou": "Suzhou",
             "Suzhou New District": "Nouveau district de Suzhou",
-            "Changshu": "Changshu",
             "Wujiang District": "District de Wujiang",
-            "Wuzhong District": "District de Wuzhong",
-            "Kunshan": "Kunshan"
+            "Wuzhong District": "District de Wuzhong"
         },
         "consumption": {
             "moderate": "modérée",
             "slightly expensive": "un peu cher",
-            "cheap": "bon marché"
+            "cheap": "bon marché",
+            "fair": "modérée",
+            "mid": "modérée"
         },
         "the most suitable people": {
             "friends": "amis",
             "dating": "rencontres",
             "family-friendly": "adaptés aux familles",
-            "kids": "enfants"
+            "kids": "enfants",
+            "date": "rencontres",
+            "friend": "amis"
         },
         "name": {
             "Humble Administrator's Garden": "Jardin du modeste administrateur",
@@ -1397,18 +1391,17 @@
             "Master of the Nets Garden": "Jardin du maître des filets",
             "Suzhou Amusement Land Forest and Water World": "parc d'attraction aquatique Terre-Forêt de Suzhou",
             "Xi'an Jiaotong-Liverpool University": "Université de Xi'an Jiaotong-Liverpool",
-            "Tongli Town": "Ville de Tongli",
+            "Tongli Ancient Town": "Ville de Tongli",
             "Dushu Lake Church": "L'église du lac Dushu",
             "Xishan Mountain": "la montagne Xishan",
-            "Jinji Lake Scenic Area": "la zone pittoresque du lac de Jinji",
+            "Jinji Lake Scenic Area": "zone pittoresque du lac de Jinji",
             "Zhouzhuang Town": "village de Zhouzhuang",
-            "Suzhou Museum": "Musée de Suzhou",
+            "the Suzhou Museum": "Musée de Suzhou",
             "Suzhou Center": "Centre de Suzhou",
             "Huayi Brothers Movie World": "Huayi Brothers Movie World",
             "Shajiabang Scenic Spot": "site panoramique de Shajiabang",
             "Stone Lake": "Lac de pierre",
             "the Gate of the Orient": "La Porte de l'Orient",
-            "Suzhou Taihu Lake Wetland Park": "parc des zones humides du lac de Taihu Suzhou",
             "Baimajian Ecological Park": "Parc écologique de Baimajian",
             "Shantang Street": "rue Shantang",
             "Qiandeng Town": "Ville de Qiandeng",
@@ -1430,7 +1423,8 @@
             "Impression City Shopping Center": "centre commercial Impression City",
             "Lingering Garden": "Jardin Pérsistant",
             "Pingjiang Road": "Pingjiang Road",
-            "Panmen Scenic Area": "Zone pittoresque de Panmen"
+            "Panmen Scenic Area": "Zone pittoresque de Panmen",
+            "Suzhou Taihu Lake Wetland Park": "parc de la zone humide du lac de Taihu à Suzhou"
         },
         "type": {
             "Suzhou-style garden": "jardins de style Suzhou",
@@ -1439,7 +1433,9 @@
             "water town": "ville d'eau",
             "historic site in Gusu District": "site historique du district de Gusu",
             "commercial center": "centre commercial",
-            "campus": "campus"
+            "historic site in Suzhou": "site historique du district de Gusu",
+            "Suzhou garden": "jardins de style Suzhou",
+            "Suzhou-styled garden": "jardins de style Suzhou"
         },
         "address": {
             "No. 178, Dongbei Street, Gusu District, Suzhou City": "n° 178 de la rue Dongbei, dans le district de Gusu, à Suzhou",
@@ -1495,10 +1491,7 @@
             "3.5": "3,5",
             "4.8": "4,8"
         },
-        "metro station": {
-            "false": "false",
-            "true": "true"
-        },
+        "metro station": {},
         "ticket price": {
             "free": "gratuit",
             "30 yuan": "30 yuans",
@@ -1647,7 +1640,6 @@
             "Chongqing De Zhuang Hot Pot": "fondue chinoise de Chongqing De Zhuang",
             "Yang Guan Gu Ren": "Yang Guan Gu Ren",
             "Dream of Taoyuan": "Rêve de Taoyuan",
-            "LELECHA": "LELECHA",
             "One Plus Conveyor Belt Sushi": "One Plus Conveyor Belt Sushi",
             "Goodman Folk Snacks": "Goodman Folk Snacks",
             "Pan Pacific Suzhou": "Pan Pacific Suzhou",
@@ -1656,29 +1648,24 @@
             "Nongleyuan Charcoal Fire Barbecue": "barbecue au charbon de bois Nongleyuan",
             "Palsaik Korean +Q": "Palsaik Coréen +Q",
             "Spicy Memory": "Spicy Memory",
-            "Wufangzhai": "Wufangzhai",
             "Aobanian Hot Pot": "fondue chinoise Aobanian",
             "Zhen Pin Yue Teahouse": "Salon de thé Zhen Pin Yue",
             "Songhelou Restaurant": "restaurant Songhelou",
             "DuoDuo Wang Hong Kong Style Tea Restaurant": "salon de thé de style hongkongais DuoDuo Wang",
             "Miss Fu in Chengdu": "Miss Fu à Chengdu",
             "Riverside Grilled Fish": "Riverside Grilled Fish",
-            "Nailaoshiguang": "Nailaoshiguang",
             "Wang Steak": "Wang Steak",
             "Grandma's Home": "Grandma's Home",
             "Beijiang Restaurant": "Restaurant Beijiang",
             "Tongli Hometown": "Tongli Hometown",
             "Zhiwei Japanese Restaurant": "restaurant japonais Zhiwei",
             "Master Yan": "Master Yan",
-            "Laofengting": "Laofengting",
             "Zhou Zhuang Hua Jian Tang Jie Geng Restaurant": "Restaurant Zhou Zhuang Hua Jian Tang Jie Geng",
             "Xin Hua Xi Beef Rice Noodle": "nouilles de riz au boeuf de Xin Hua Xi",
             "Dongwu Noodle House": "Dongwu Noodle House",
-            "Guimijia": "Guimijia",
             "Fox's Home Yogurt": "Yaourt Maison Fox",
             "Wanyuting·hejiariben Cuisine Teppanyaki": "Wanyuting-hejiariben Cuisine Teppanyaki",
             "Yang's Dumpling": "Raviolis Chinois de Yang",
-            "Deyuelou": "Deyuelou",
             "Le Blé d'Or Brewery Restaurant": "Restaurant de la brasserie Le Blé d'Or",
             "HOU GA FEI": "HOU GA FEI",
             "Xiewang Restaurant": "restaurant Xiewang",
@@ -1692,15 +1679,15 @@
             "Gusu District": "District de Gusu",
             "Suzhou Industrial Park": "Parc industriel de Suzhou",
             "Suzhou New District": "Nouveau district de Suzhou",
-            "Changshu": "Changshu",
             "Wujiang District": "District de Wujiang",
-            "Wuzhong District": "District de Wuzhong",
-            "Kunshan": "Kunshan"
+            "Wuzhong District": "District de Wuzhong"
         },
         "pricerange": {
             "moderate": "modérée",
             "slightly expensive": "un peu cher",
-            "cheap": "bon marché"
+            "cheap": "bon marché",
+            "mid": "modérée",
+            "medium": "modérée"
         },
         "score": {
             "4.5": "4,5",
@@ -1721,11 +1708,14 @@
             "Northwestern": "du Nord-Ouest",
             "bread and desserts": "du pain et des desserts",
             "fast food": "restauration rapide",
-            "Sichuan": "Sichuan",
             "western": "occidentale",
             "Cantonese": "Cantonais",
             "Sushi": "sushis",
-            "Northeastern Chinese cuisine": "Cuisine chinoise du nord-est"
+            "Northeastern Chinese cuisine": "Cuisine chinoise du nord-est",
+            "riben Cuisine": "japonaise",
+            "bread and dessert": "du pain et des desserts",
+            "Jiangsu Zhejiang dishes": "Jiangsu-Zhejiang",
+            "bread": "du pain et des desserts"
         },
         "address": {
             "No. 3, Chuanfang Alley, North of Pingjiang Road": "n°3 de l'allée Chuanfang, au nord de la route Pingjiang",
@@ -1832,10 +1822,7 @@
             "0512-66655909": "0512-66655909",
             "0512-63339777": "0512-63339777"
         },
-        "metro station": {
-            "false": "false",
-            "true": "true"
-        },
+        "metro station": {},
         "business hours": {
             "09:00-07:00, Monday to Sunday": "de 09 h 00 à 07 h 00, du lundi au dimanche",
             "10:30-21:30, Monday to Sunday": "10 h 30 - 21 h 30, du lundi au dimanche",
@@ -1913,7 +1900,6 @@
             "Egg and Meat Mooncake": "gâteau de lune à l'œuf et à la viande",
             "Grandma's Red Braised Pork Belly": "Poitrine de porc braisée rouge de grand-mère",
             "Braised Crab with Tofu": "crabe braisé au tofu",
-            "pizzas": "pizzas",
             "salmon": "saumon",
             "Hairy Crab": "crabe poilu",
             "homemade yogurt": "yaourt fait maison",
@@ -1984,9 +1970,7 @@
     },
     "other": {
         "localized": {
-            "Suzhou": "Suzhou",
             "Peking opera": "l'opéra de Pékin",
-            "Meituan": "Meituan",
             "Chongqing flavor": "Saveur de Chongqing"
         },
         "数据库": {
@@ -1997,17 +1981,17 @@
         "area": {
             "Gusu District": "District de Gusu",
             "Suzhou Industrial Park": "Parc industriel de Suzhou",
-            "Suzhou": "Suzhou",
             "Suzhou New District": "Nouveau district de Suzhou",
-            "Changshu": "Changshu",
             "Wujiang District": "District de Wujiang",
-            "Wuzhong District": "District de Wuzhong",
-            "Kunshan": "Kunshan"
+            "Wuzhong District": "District de Wuzhong"
         },
         "pricerange": {
             "moderate": "modérée",
             "slightly expensive": "un peu cher",
-            "cheap": "bon marché"
+            "cheap": "bon marché",
+            "slightly more expensive": "un peu cher",
+            "mid": "modérée",
+            "a slightly more expensive": "un peu cher"
         },
         "score": {
             "4.5": "4,5",
@@ -2023,11 +2007,12 @@
         "parking": {
             "N/A": "N/A",
             "free": "gratuit",
-            "paid": "payant"
+            "paid": "payant",
+            "charge": "payant"
         },
         "room type": {
             "standard room": "chambre standard",
-            "king-size room": "grande chambre"
+            "king-size room": "très grande chambre"
         },
         "name": {
             "Womu Boutique Hotel": "petit hôtel de luxe Womu",
@@ -2046,7 +2031,6 @@
             "Suzhou Jinji Lake Suisse Place Ligongdi Apartment Hotel": "l'appartement-hôtel Suzhou lac de Jinji Suisse Place Ligongd",
             "Suzhou Yongshun Express Hotel": "Suzhou Yongshun Express Hotel",
             "Home Inn": "Home Inn",
-            "Element Suzhou Science and Technology Town": "Le village des sciences et de la technologie Élément",
             "Yinjiangnan Xujia Hostel": "l'auberge Yinjiangnan Xujia",
             "Suzhou Shui'an Hanshe Hotel": "l'hôtel Suzhou Shui'an Hanshe",
             "Suzhou Mingyue Express Hotel": "l'hôtel Suzhou Mingyue Express",
@@ -2065,7 +2049,10 @@
             "Changshu OYO Interesting Chain Hotel": "l'hôtel de chaîne Changshu OYO Interesting",
             "South Lake Retreat Holiday Courtyard": "cour de vacances Retreat Lac du Sud",
             "Suzhou Pan Pacific Hotel": "Suzhou Pan Pacific Hotel",
-            "Suzhou Tule Hotel Apartment": "L'appartement-hôtel Suzhou Tule"
+            "Suzhou Tule Hotel Apartment": "L'appartement-hôtel Suzhou Tule",
+            "Element Suzhou Science and Technology Town": "Le village des sciences et de la technologie Élément",
+            "Shui'an Hanshe Boutique Hotel": "le petit hôtel de luxe Suzhou Shui'an Hanshe",
+            "New City Grand Rezen Hotel": "L'hôtel Grand Rezen dans la nouvelle ville de Suzhou"
         },
         "room charge": {
             "919 yuan": "919 yuans",
@@ -2211,7 +2198,8 @@
         },
         "hotel type": {
             "resort": "villégiature",
-            "business": "d'affaires"
+            "business": "d'affaires",
+            "resort hotel": "villégiature"
         }
     },
     "hospital": {
@@ -2222,22 +2210,10 @@
             "Wuzhong District": "District de Wuzhong",
             "Xiangcheng District": "District de Xiangcheng"
         },
-        "ct": {
-            "true": "true",
-            "false": "false"
-        },
-        "dsa": {
-            "true": "true",
-            "false": "false"
-        },
-        "3.0t mri": {
-            "true": "true",
-            "false": "false"
-        },
-        "metro station": {
-            "false": "false",
-            "true": "true"
-        },
+        "ct": {},
+        "dsa": {},
+        "3.0t mri": {},
+        "metro station": {},
         "key departments": {
             "pediatric": "pédiatrique",
             "respiratory": "respiratoire",
@@ -2257,7 +2233,9 @@
             "cardiovascular": "cardiovasculaire",
             "gastroenterology": "gastro-entérologie",
             "stomatology": "stomatologie",
-            "orthopedics": "orthopédie"
+            "orthopedics": "orthopédie",
+            "urology surgery department": "urologie",
+            "pediatric clinic": "pédiatrique"
         },
         "general or specialized": {
             "specialized hospital": "hôpital spécialisé",
@@ -2266,7 +2244,6 @@
         "name": {
             "Suzhou Kowloon Hospital": "hôpital Suzhou Kowloon",
             "the First Affiliated Hospital of Soochow University": "le premier hôpital affilié de l'université de Soochow",
-            "the Second Affiliated Hospital of Soochow University": "le Second Hôpital Affilié de l'Université de Soochow",
             "the Fifth People's Hospital of Suzhou": "Le cinquième hôpital populaire de la ville de Suzhou",
             "Suzhou Guangji Hospital": "l'hôpital Suzhou Guangji",
             "Suzhou Hospital of Traditional Chinese Medicine": "L'hôpital de médecine traditionnelle chinoise de Suzhou",
@@ -2280,7 +2257,8 @@
             "Suzhou Dental Hospital": "l'hôpital dentaire de Suzhou",
             "Suzhou Wuzhong People's Hospital": "l'hôpital populaire de Suzhou Wuzhong",
             "Suzhou Municipal Hospital (headquarters)": "Hôpital municipal de Suzhou (siège)",
-            "Suzhou Municipal Hospital (North Branch)": "Hôpital municipal de Suzhou (branche nord)"
+            "Suzhou Municipal Hospital (North Branch)": "Hôpital municipal de Suzhou (branche nord)",
+            "the Second Affiliated Hospital of Soochow University": "le Second Hôpital Affilié de l'Université de Soochow"
         },
         "phone": {
             "62629999": "62629999",
@@ -2337,7 +2315,9 @@
             "No. 111, No. 209, No. 219, No. 528, No. 27, No. 100, No. 116, or No. 168": "n° 111, n° 209, n° 219, n° 528, n° 27, n° 100, n° 116, ou n° 168",
             "No. 2 (Tour), No. 40, No. 50, No. 204, No. 309, or No. 501": "No. 2 (Tour), No. 40, No. 50, No. 204, No. 309, ou No. 501",
             "No. 38, No. 40, No. 200, No. 308, No. 501, No. 511, or No. 931": "n° 38, n° 40, n° 200, n° 308, n° 501, n° 511, ou n° 931",
-            "No. 7, No. 34, No. 44, No. 64, No. 85, No. 304, No. 315, No. 317, No. 318, No. 406, No. 415, No. 442, No. 522, No. 816, No. 921, or No. 949": "n° 7, n° 34, n° 44, n° 64, n° 85, n° 304, n° 315, n° 317, n° 318, n° 406, n° 415, n° 442, n° 522, n° 816, n° 921 ou n° 949."
+            "No. 7, No. 34, No. 44, No. 64, No. 85, No. 304, No. 315, No. 317, No. 318, No. 406, No. 415, No. 442, No. 522, No. 816, No. 921, or No. 949": "n° 7, n° 34, n° 44, n° 64, n° 85, n° 304, n° 315, n° 317, n° 318, n° 406, n° 415, n° 442, n° 522, n° 816, n° 921 ou n° 949.",
+            "No. 852, No. 441, No. 363, No. 336, No. 330, and No. 63": "N° 852, N° 441, N° 363, N° 336, N° 330, ou N° 63",
+            "No. 111, No. 209, No. 219, No. 528, No. 27, No. 100, No. 116, and No. 168": "n° 111, n° 209, n° 219, n° 528, n° 27, n° 100, n° 116, ou n° 168"
         },
         "service time": {
             "7:45-11:30, 13:00-16:30": "7 h 45 à 11 h 30 et de 13 h 00 à 16 h 30",
@@ -2374,7 +2354,6 @@
             "7:45-11:00,13:00-16:30": "7:45-11:00,13:00-16:30"
         },
         "public or private": {
-            "public": "public",
             "private": "privé"
         },
         "level": {
@@ -2384,16 +2363,10 @@
     },
     "weather": {
         "city": {
-            "Suzhou": "Suzhou",
-            "Xiamen": "Xiamen",
-            "Hangzhou": "Hangzhou",
-            "Shenzhen": "Shenzhen",
             "Beijing": "Pékin",
             "Shanghai": "Shanghaï",
             "Canton": "Guangzhou",
-            "Chengdu": "Chengdu",
-            "Nanjing": "Nankin",
-            "Wuhan": "Wuhan"
+            "Nanjing": "Nankin"
         },
         "uv intensity": {
             "moderate": "modérée",
@@ -2411,7 +2384,8 @@
             "next Tuesday": "mardi prochain",
             "next Monday": "lundi prochain",
             "that day": "ce jour-là",
-            "the next day": "le jour suivant"
+            "the next day": "le jour suivant",
+            "Next Thursday": "jeudi prochain"
         },
         "wind": {
             "northeast force 2": "force 2 nord-est",
@@ -2514,7 +2488,41 @@
             "4 degrees Celsius": "4 degrés Celsius",
             "The maximum temperature will be 17 degrees Celsius, and the minimum temperature will be 8 degrees Celsius.": "La température maximale sera de 17 degrés Celsius, et la température minimale de 8 degrés Celsius.",
             "The maximum temperature will be 16 degrees Celsius, and the minimum temperature will be 6 degrees Celsius.": "La température maximale sera de 16 degrés Celsius, et la température minimale de 6 degrés Celsius.",
-            "The maximum temperature will be 15 degrees Celsius, and the minimum temperature will be 4 degrees Celsius.": "La température maximale sera de 15 degrés Celsius, et la température minimale de 4 degrés Celsius."
+            "The maximum temperature will be 15 degrees Celsius, and the minimum temperature will be 4 degrees Celsius.": "La température maximale sera de 15 degrés Celsius, et la température minimale de 4 degrés Celsius.",
+            "The maximum temperature will be 18 degrees Celsius and the minimum temperature will be 5 degrees Celsius.": "La température maximale sera de 18 degrés Celsius, et la température minimale de 5 degrés Celsius.",
+            "The maximum temperature will be 14 degrees Celsius and the minimum temperature will be 7 degrees Celsius": "La température maximale sera de 14 degrés Celsius, et la température minimale de 7 degrés Celsius",
+            "The maximum temperature will be 16 degrees Celsius and the minimum temperature will be 9 degrees Celsius": "La température maximale sera de 16 degrés Celsius, et la température minimale de 9 degrés Celsius.",
+            "the maximum temperature will be 10 degrees Celsius and the minimum temperature will be 1 degrees Celsius": "La température maximale sera de 10 degrés Celsius, et la température minimale de 1 degré Celsius.",
+            "The maximum temperature will be 14 degrees Celsius, and the minimum temperature will be 8 degrees Celsius": "La température maximale sera de 14 degrés Celsius et la température minimale de 8 degrés Celsius.",
+            "The maximum temperature will be 11 degrees Celsius, and the minimum temperature will be 4 degrees Celsius": "La température maximale sera de 11 degrés Celsius et la température minimale de 4 degrés Celsius.",
+            "The maximum temperature will be 15 degrees Celsius, and the minimum temperature will be 7 degrees Celsius": "La température maximale sera de 15 degrés Celsius, et la température minimale de 7 degrés Celsius.",
+            "The maximum temperature will be 9 degrees Celsius, and the minimum temperature will be -1 degree Celsius": "La température maximale sera de 9 degrés Celsius, et la température minimale de -1 degré Celsius.",
+            "The maximum temperature will be 9 degrees Celsius, and the minimum temperature will be 0 degrees Celsius": "La température maximale prévue est de 9 degrés Celsius, tandis que la température minimale sera de 0 degré Celsius",
+            "The maximum temperature will be 9 degrees Celsius, and the minimum temperature will be -3 degrees Celsius": "La température maximale sera de 9 degrés Celsius et la température minimale de -3 degrés Celsius.",
+            "The maximum temperature will be 11 degrees Celsius, and the minimum temperature will be 5 degrees Celsius": "La température maximale sera de 11 degrés Celsius, et la température minimale de 5 degrés Celsius.",
+            "the maximum temperature in Hangzhou will be 16 degrees Celsius, and the minimum temperature will be 5 degrees Celsius": "La température maximale sera de 16 degrés Celsius, et la température minimale de 5 degrés Celsius.",
+            "The maximum temperature will be 14 degrees Celsius, and the minimum temperature will be 1 degree Celsius": "La température maximale sera de 14 degrés Celsius, et la température minimale de 1 degré Celsius.",
+            "The maximum temperature will be 11 degrees Celsius, and the minimum temperature will be 0 degrees Celsius": "La température maximale sera de 11 degrés Celsius, et la température minimale de 0 degré Celsius.",
+            "The maximum temperature will be 16 degrees Celsius, and the minimum temperature will be 5 degrees Celsius": "La température maximale sera de 16 degrés Celsius, et la température minimale de 5 degrés Celsius.",
+            "the maximum temperature will be 17 degrees Celsius, and the minimum temperature will be 6 degrees Celsius": "La température maximale sera de 17 degrés Celsius et la température minimale de 6 degrés Celsius.",
+            "The maximum temperature will be 15 degrees Celsius, and the minimum temperature will be 1 degrees Celsius": "La température maximale sera de 15 degrés Celsius, et la température minimale de 1 degré Celsius.",
+            "The maximum temperature will be 11 degrees Celsius, and the minimum temperature will be -1 degrees Celsius": "La température maximale sera de 11 degrés Celsius, et la température minimale de -1 degré Celsius.",
+            "The maximum temperature will be 17 degrees Celsius, and the minimum temperature will be 7 degrees Celsius": "La température maximale sera de 17 degrés Celsius, et la température minimale de 7 degrés Celsius.",
+            "The maximum temperature will be 18 degrees Celsius, and the minimum temperature will be 7 degrees Celsius": "La température maximale sera de 18 degrés Celsius, et la température minimale de 7 degrés Celsius.",
+            "The maximum will be 10 degrees and the minimum will be 2 degrees.": "La température maximale sera de 10 degrés Celsius, et la température minimale de 2 degrés Celsius",
+            "The maximum will be 9 degrees and the minimum will be -3 degrees": "La température maximale sera de 9 degrés Celsius et la température minimale de -3 degrés Celsius.",
+            "The maximum will be 14 degrees and the minimum will be 8 degrees": "La température maximale sera de 14 degrés Celsius et la température minimale de 8 degrés Celsius.",
+            "The maximum temperature will be 8 degrees Celsius, and the minimum temperature will be -3 degrees Celsius": "La température maximale sera de 8 degrés Celsius et la température minimale de -3 degrés Celsius",
+            "The maximum temperature will be 10 degrees Celsius, and the minimum temperature will be 1 degrees Celsius": "La température maximale sera de 10 degrés Celsius, et la température minimale de 1 degré Celsius.",
+            "The temperature will reach 16 degrees Celsius and will drop to 9 degrees Celsius at night": "La température maximale sera de 16 degrés Celsius, et la température minimale de 9 degrés Celsius.",
+            "The maximum temperature is forecast as 9 degrees Celsius, dropping to -2 degrees Celsius at night": "La température maximale sera de 9 degrés Celsius, et la température minimale de -2 degrés Celsius",
+            "highs of 21 degrees Celsius, and lows of 13 degrees Celsius": "La température maximale sera de 21 degrés Celsius, et la température minimale de 13 degrés Celsius.",
+            "11 degrees Celsius in the day and will drop to -1 degrees Celsius at night": "La température maximale sera de 11 degrés Celsius, et la température minimale de -1 degré Celsius.",
+            "a warm 17 degrees Celsius, with lows of 7 degrees Celsius": "La température maximale sera de 17 degrés Celsius, et la température minimale de 7 degrés Celsius.",
+            "The maximum temperature is 20 degrees Celsius, and the minimum is 10 degrees Celsius": "La température maximale sera de 20 degrés Celsius, et la température minimale de 10 degrés Celsius",
+            "The forecast says it will reach 18 degrees Celsius, and will be 11 degrees Celsius at its lowest point": "La température maximale sera de 18 degrés Celsius, et la température minimale de 11 degrés Celsius",
+            "It will reach 23 degrees Celsius with lows of 14": "La température maximale sera de 23 degrés Celsius, et la température minimale de 14 degrés Celsius",
+            "According to the forecast, it will be 17 degrees Celsius and drop to 9 degrees at night": "La température maximale sera de 17 degrés Celsius, et la température minimale de 9 degrés Celsius"
         }
     },
     "class": {
@@ -2696,7 +2704,8 @@
             "1620": "1620",
             "1080": "1080",
             "1140": "1140",
-            "1900": "1900"
+            "1900": "1900",
+            "1,600": "1600"
         },
         "end date": {
             "June 21, 2020": "21 juin 2020",
@@ -2893,10 +2902,10 @@
     },
     "car": {
         "classification": {
-            "SUV": "SUV",
             "notchback": "hayon",
             "MPV": "monospace",
-            "hatchback": "à hayon"
+            "hatchback": "hayon",
+            "SUV": "SUV"
         },
         "hybrid": {
             "gas": "gaz",
@@ -2910,8 +2919,7 @@
             "<300,000": "<300,000"
         },
         "fuel consumption": {
-            "fuel-efficient": "économe en carburant",
-            "normal": "normal"
+            "fuel-efficient": "économe en carburant"
         },
         "name": {
             "Volkswagen T-Cross with a 1.5 L petrol engine": "Volkswagen T-Cross avec un moteur à essence de 1,5 L",
@@ -2983,44 +2991,19 @@
             "Volkswagen Touran L": "Volkswagen Touran L",
             "Volkswagen Golf": "Volkswagen Golf",
             "FAW-Volkswagen Magotan": "FAW-Volkswagen Magotan",
-            "Lamando": "Lamando",
             "T-ROC": "T-ROC",
-            "Passat": "Passat",
-            "Bora": "Bora",
-            "Lavida": "Lavida",
             "FAW-Volkswagen CC": "FAW-Volkswagen CC",
-            "Teramont": "Teramont",
             "Teramont X": "Teramont X",
-            "Phideon": "Phideon",
-            "Tayron": "Tayron",
             "Volkswagen Golf Variant": "Volkswagen Golf Variant",
             "C-TREK Weiling": "C-TREK Weiling",
             "Volkswagen Multivan": "Volkswagen Multivan",
-            "Sagitar": "Sagitar",
-            "Santana": "Santana",
-            "Tharu": "Tharu",
-            "Sharan": "Sharan",
-            "Caravelle": "Caravelle",
-            "Touareg": "Touareg",
-            "POLO": "POLO",
-            "Volkswagen Beetle": "Coccinelle de Volkswagen"
+            "Volkswagen Beetle": "Coccinelle de Volkswagen",
+            "Magotan": "FAW-Volkswagen Magotan"
         },
-        "cruise control system": {
-            "true": "true",
-            "false": "false"
-        },
-        "parking assist system": {
-            "true": "true",
-            "false": "false"
-        },
-        "ventilated seats": {
-            "true": "true",
-            "false": "false"
-        },
-        "heated seats": {
-            "true": "true",
-            "false": "false"
-        },
+        "cruise control system": {},
+        "parking assist system": {},
+        "ventilated seats": {},
+        "heated seats": {},
         "number of seats": {
             "4": "4",
             "3": "3",
@@ -3097,19 +3080,14 @@
             "small-size": "petite taille"
         },
         "power level": {
-            "normal": "normal",
             "relatively strong": "moteur relativement puissant"
         }
     },
     "flight": {
         "departure": {
-            "Xiamen": "Xiamen",
-            "Hangzhou": "Hangzhou",
-            "Shenzhen": "Shenzhen",
             "Beijing": "Pékin",
             "Shanghai": "Shanghaï",
             "Canton": "Guangzhou",
-            "Chengdu": "Chengdu",
             "Nanjing": "Nankin",
             "Terminal 2 of Baiyun International Airport": "Terminal 2 de l'aéroport international de Baiyun",
             "Terminal 3 of Xiaoshan International Airport": "Terminal 3 de l'aéroport international de Xiaoshan",
@@ -3122,13 +3100,9 @@
             "Shuangliu International Airport": "l'aéroport international de Shuangliu"
         },
         "destination": {
-            "Xiamen": "Xiamen",
-            "Hangzhou": "Hangzhou",
-            "Shenzhen": "Shenzhen",
             "Beijing": "Pékin",
             "Shanghai": "Shanghaï",
             "Canton": "Guangzhou",
-            "Chengdu": "Chengdu",
             "Nanjing": "Nankin",
             "Terminal 1 of Shuangliu International Airport": "Terminal 1 de l'aéroport international de Shuangliu",
             "Terminal 2 of Beijing Capital International Airport": "Terminal 2 de l'aéroport international de Pékin-Capitale",
@@ -3151,7 +3125,8 @@
         "class cabin": {
             "economy class": "classe économique",
             "first class": "première",
-            "business class": "classe affaires"
+            "business class": "classe affaires",
+            "A business class": "classe affaires"
         },
         "flight information": {
             "HU7394 of Hainan Airlines, from Terminal 3 of Hangzhou International Airport to Terminal 3 of Bao'an International Airport": "HU7394 de la compagnie aérienne Hainan, du Terminal 3 de l'aéroport international de Hangzhou au Terminal 3 de l'aéroport international de Bao'an",
@@ -3225,7 +3200,8 @@
             "The Sichuan Airlines 3U8556 departs from T2 of Baiyun International Airport and flies to T1 of Shuangliu International Airport": "Le vol de la compagnie aérienne Sichuan 3U8556 part du T2 de l'aéroport international de Baiyun et arrive au T1 de l'aéroport international de Shuangliu",
             "from Terminal 1 of Hangzhou International Airport to Terminal 1 of Baiyun International Airport": "du Terminal 1 de l'aéroport international de Hangzhou au Terminal 1 de l'aéroport international de Baiyun",
             "CA4325 of Air China, from Terminal 2 of Shuangliu International Airport to Terminal 3 of Bao'an International Airport": "CA4325 d'Air China, du terminal 2 de l'aéroport international de Shuangliu au terminal 3 de l'aéroport international de Bao'an",
-            "MU5391 of China Eastern Airlines, from Terminal 1 of Beijing Capital International Airport to Terminal 3 of Bao'an International Airport": "MU5391 de China Eastern Airlines, du Terminal 1 de l'aéroport international de la capitale de Pékin au Terminal 3 de l'aéroport international de Bao'an"
+            "MU5391 of China Eastern Airlines, from Terminal 1 of Beijing Capital International Airport to Terminal 3 of Bao'an International Airport": "MU5391 de China Eastern Airlines, du Terminal 1 de l'aéroport international de la capitale de Pékin au Terminal 3 de l'aéroport international de Bao'an",
+            "CZ5036 of China Southern Airlines, from Terminal 3 of Gaoqi International Airport to Terminal 2 of Beijing Capital International Airpor": "CZ5036 de la compagnie aérienne China Southern, du Terminal 3 de l'aéroport international de Gaoqi au Terminal 2 de l'aéroport international de Pékin"
         },
         "punctuality rate": {
             "91.29%": "91,29 %",
@@ -3408,32 +3384,27 @@
     },
     "train": {
         "destination": {
-            "Xiamen": "Xiamen",
-            "Hangzhou": "Hangzhou",
-            "Shenzhen": "Shenzhen",
             "Beijing": "Pékin",
             "Shanghai": "Shanghaï",
             "Canton": "Guangzhou",
-            "Chengdu": "Chengdu",
             "Nanjing": "Nankin",
             "Beijingnan": "Pékin-Sud",
             "Changlong, Guangzhou": "Chimelong à Canton",
-            "Shanghai Hongqiao": "Shanghaï Hongqiao"
+            "Shanghai Hongqiao": "Shanghaï Hongqiao",
+            "Hangzhou": "Hangzhou",
+            "Shenzhen": "Shenzhen"
         },
         "classification": {
             "high-speed": "grande vitesse",
-            "bullet train": "train à grande vitesse"
+            "bullet train": "train à grande vitesse",
+            "high-speed trains": "grande vitesse",
+            "high-speed train": "grande vitesse"
         },
         "departure": {
-            "Xiamen": "Xiamen",
-            "Hangzhou": "Hangzhou",
-            "Shenzhen": "Shenzhen",
             "Beijing": "Pékin",
             "Shanghai": "Shanghaï",
             "Canton": "Guangzhou",
-            "Chengdu": "Chengdu",
             "Nanjing": "Nankin",
-            "Futian": "Futian",
             "Hangzhoudong": "Hangzhou-Est"
         },
         "date": {
@@ -3464,7 +3435,9 @@
             "second class": "seconde classe",
             "sleeper in first class": "couchette en première classe",
             "sleeper in second class": "couchette en deuxième classe",
-            "sleeper": "couchette"
+            "sleeper": "couchette",
+            "A first class": "première",
+            "second class ticket": "seconde classe"
         },
         "train number": {
             "G1653, from Shanghai Hongqiao to Xiamenbei": "G1653, de Shanghaï Hongqiao à la gare de Xiamen-Nord",
@@ -3630,7 +3603,9 @@
             "G66, from Guangzhounan to Beijingxi": "G66, de Canton-Sud à Pékin-Ouest",
             "G1976, from Chengdudong to Nanjingnan": "G1976, de Chengdu-Est à Nankin-Sud.",
             "G3007, from Xiamen to Shenzhenbei": "G3007, de Xiamen à Shenzhen-Nord",
-            "D2285, from Shanghai Hongqiao to Hangzhoudong": "D2285, de Shanghaï Hongqiao à Hangzhou-Est"
+            "D2285, from Shanghai Hongqiao to Hangzhoudong": "D2285, de Shanghaï Hongqiao à Hangzhou-Est",
+            "G1656 from Xiamenbei to Hangzhoudon": "G1656 de Xiamen-Nord à Hangzhou-Est",
+            "D1859 from Chengdudong to Guangzhou": "D1859, de Chengdu-Est à Guangzhou"
         },
         "departure time": {
             "08:15 that day": "08 h 15 ce jour-là",
@@ -4188,19 +4163,15 @@
         }
     },
     "pc": {
-        "brand": {
-            "Lenovo": "Lenovo",
-            "Dell": "Dell",
-            "Acer": "Acer",
-            "HP": "HP",
-            "Mi": "Mi",
-            "Apple": "Apple"
-        },
+        "brand": {},
         "usage": {
             "lightweight": "léger",
             "gaming": "jeu",
             "business": "d'affaires",
-            "regular": "régulier"
+            "regular": "régulier",
+            "regular laptop": "régulier",
+            "lightweight laptop": "léger",
+            "business computer": "d'affaires"
         },
         "memory capacity": {
             "8GB": "8 Go",
@@ -4289,12 +4260,13 @@
         },
         "game performance": {
             "entry-level": "entrée de gamme",
-            "enthusiast": "enthousiaste"
+            "enthusiast": "enthousiaste",
+            "made for enthusiast": "enthousiaste"
         },
         "computer type": {
             "laptop": "ordinateur portable",
-            "desktop": "ordinateur de bureau",
-            "All-in-One PC": "PC tout-en-un"
+            "All-in-One PC": "PC tout-en-un",
+            "desktop": "ordinateur de bureau"
         },
         "cpu": {
             "Intel Core i3": "Intel Core i3",
@@ -4323,14 +4295,15 @@
             "Intel Core i5-7400": "Intel Core i5-7400",
             "Intel Core i7-10510u": "Intel Core i7-10510u",
             "Intel Core i9-9980HK": "Intel Core i9-9980HK",
-            "Intel Core i9-9900K": "Intel Core i9-9900K"
+            "Intel Core i9-9900K": "Intel Core i9-9900K",
+            "i7-9700F": "Intel Core i7-9700F"
         },
         "pricerange": {
-            "5,000-10,000": "5,000 à 10,000",
             "<5,000": "<5,000",
             "10,000-15,000": "10,000-15,000",
             ">20,000": ">20,000",
-            "15,000-20,000": "15,000-20,000"
+            "15,000-20,000": "15,000-20,000",
+            "5,000-10,000": "5,000 à 10,000"
         },
         "colour": {
             "mainly silvery": "surtout argenté",
@@ -4442,7 +4415,7 @@
             "Lenovo Y series": "Série Y de Lenovo",
             "Acer Yiwu Series": "Série Acer Yiwu",
             "HP Slimline series": "Série HP Slimline",
-            "Dell G Series": "Série G de Dell",
+            "Dell G Series": "série G de Dell",
             "Xiaomi Laptop Series": "Série d'ordinateurs portables Xiaomi",
             "Lenovo Legion Series": "Lenovo Legion Series",
             "HP Zhan Series": "Série HP Zhan",
