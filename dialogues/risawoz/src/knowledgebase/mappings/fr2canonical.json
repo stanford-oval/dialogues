@@ -1646,7 +1646,8 @@
             ],
             "Parc industriel de Suzhou": [
                 "Parc industriel",
-                "Parc industriel de Suzhou"
+                "Parc industriel de Suzhou",
+                "le parc industriel de Suzhou"
             ],
             "Suzhou": "Suzhou",
             "Changshu": "Changshu",
@@ -1947,7 +1948,7 @@
             "numéro 188 de l'avenue Yangchenghu, dans le parc industriel de Suzhou, à Suzhou": [
                 "n° 188, avenue de Yangchenghu parc industriel de la ville de Suzhou"
             ],
-            "village de Shajiabang, Changshu, dans la ville de Suzhou": [
+            "village de Shajiabang, Changdshu, dans la ville de Suzhou": [
                 "Shajiabang Town, Changshu City, Suzhou City."
             ],
             "No. 333, Youxin Road, Wuzhong District, Suzhou City.": "No. 333, Youxin Road, Wuzhong District, Suzhou City.",
@@ -2357,7 +2358,8 @@
             ],
             "Parc industriel de Suzhou": [
                 "parc industriel de Suzhou",
-                "Parc industriel de Suzhou"
+                "Parc industriel de Suzhou",
+                "le parc industriel de Suzhou"
             ],
             "Nouveau district de Suzhou": [
                 "Nouveau district de Suzhou",
@@ -2833,9 +2835,7 @@
                 "District de Gusu",
                 "quartier Gusu"
             ],
-            "Parc industriel de Suzhou": [
-                "parc industriel de Suzhou"
-            ],
+            "Parc industriel de Suzhou": ["parc industriel de Suzhou", "le parc industriel de Suzhou"],
             "Suzhou": "Suzhou",
             "Nouveau district de Suzhou": [
                 "nouveau district de Suzhou"
@@ -3296,7 +3296,7 @@
                 "nouveau district de Suzhou ou le district de Gusu",
                 "District de Gusu"
             ],
-            "Parc industriel de Suzhou": "Parc industriel de Suzhou",
+            "Parc industriel de Suzhou": ["Parc industriel de Suzhou", "le parc industriel de Suzhou"],
             "Nouveau district de Suzhou": [
                 "nouveau district de Suzhou",
                 "Nouveau District de Suzhou"
@@ -3938,7 +3938,9 @@
             "Parc industriel de Suzhou": [
                 "le parc industriel de Suzhou ou dans le district de Wuzhong",
                 "Parc industriel de Suzhou",
-                "Parc Industriel de Suzhou"
+                "Parc Industriel de Suzhou",
+                "le parc industriel de Suzhou ou dans le district de Wuzhong",
+                "le parc industriel de Suzhou"
             ],
             "Nouveau district de Suzhou": [
                 "Nouveau district de Suzhou",
