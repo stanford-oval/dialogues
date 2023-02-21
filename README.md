@@ -1,33 +1,80 @@
+[![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-green)](https://github.com/stanford-oval/dialogues/blob/master/LICENSE)
+
 # Dialogues
-This codebase provides a unified interface to several dialogue datasets.
-
-# Available datasets:
-- BiToD
-- RiSAWOZ
+This codebase provides a unified interface to dialogue datasets.\
+It also contains the code implementation for:\
+[_Zero and Few-Shot Localization of Task-Oriented Dialogue Agents with a Distilled Representation_](https://arxiv.org/abs/2302.09424) <br/> Mehrad Moradshahi, Sina J. Semnani, Monica S. Lam <br/>
 
 
-# Data
-Adding a new language:
-- Look at `risawoz/data/original/en_{split}.json` to understand how the dataset is formatted.
-- "user_utterance" and "system_utterance" contain the following: 1) utterance in natural language 2) entities and their word-spans in the utterance
-- "db_results" contain the retrieved entries from database when agent makes an api call
-- For a new language, the following needs to be done:
-- Data Translation:
-  - "user_utterance" and "system_utterance" should be translated to the target language. We let translators use their best judgment on how each entity should be translated given the context.
-  - Translators need to annotate span of entities in the translated sentences which would be used to create a mapping between source entities and target entities. We have a UI tool that aids translators in doing so.
-  - This results in a one-to-many mapping as each source entity may have multiple translations. For reasons mentioned later, we need to choose one of the translations as the canonical one and create a second mapping to map all possible translations to the canonical one (en2canonical.json).
-- Database Translation:
-  - The entity values in English database needs to be translated to the target langauge according to the alignment information. You can use the second mapping to do this.
-  - Similarly, you can use this mapping to translate "db_results" in the dataset.
+### Abstract
 
-# Validating your work:
-- Once you've created the dataset in the target language, put the content in the following file `risawoz/data/original/{language}_{split}.json`
-- Add the new database files under `risawoz/database/db_{lang}/`. Follow the same formatting as English. The slot names don't need to be translated, only slot values.
-- Run `python3 dialogues/risawoz/src/convert.py --setting {language} --splits {split}` to convert your data into a format suitable for preprocessing.
-- You'll likely see the following in your output logs "API call likely failed for...". This could mean many things ranging from wrong alignment during translation, mismatch between entities in the translated sentence and database values, etc. To have a more accurate check, we restore the API calls from the existing search results. You should also try your best to solve the failed API calls by correcting belief states annotations and the two mappings. Our script will show some clues for you to solve these issues (e.g., the mismatches between the belief states and ground-truth search results which make an API call fail). If you get only a few of these errors, it means that the translated dataset is already of relatively high quality.
-- If conversions is successful, you will see the converted file: `risawoz/data/{language}_{split}.json`. You can check the file to make sure it looks good.
-- Run `python3 dialogues/risawoz/src/preprocess.py --max_history 2 --last_two_agent_turns --gen_full_state --only_user_rg --sampling balanced --setting {lang} --fewshot_percent 0 --version 1 --splits {split}` to preprocess the data for training.
-- If preprocessing is successful, you will see the resulting file: `risawoz/data/preprocessed/{language}_{split}.json`.
-- Run `python3 dialogues/risawoz/scripts/check_entity.py --directory dialogues/risawoz/data/preprocessed/ --version 1 --splits {split}` to sanity check the data. This script ensures that entities in the output are present in the input. This is necessary since our models are trained to copy entities from the input. This script will create a file `dialogues/risawoz/data/preprocessed/{split}_entity_check_1.tsv` including erroneous turns.
-- To fix erroneous turns, you need to backtrack and sanity check every step of the data processing until you find the bug.
-- If everything passes without errors, congrats! We will soon have a dialogue agent that can speak your language!
+Task-oriented Dialogue (ToD) agents are mostly limited to a few widely-spoken languages, mainly due to the high cost of acquiring training data for each language.
+We propose automatic methods that use ToD training data in a source language to build a high-quality functioning dialogue agent in another target language that has no training data (i.e. zero-shot) or a small training set (i.e. few-shot).
+Unlike most prior work in cross-lingual ToD that only focuses on Dialogue State Tracking (DST), we build an end-to-end agent.
+
+We show that our approach closes the accuracy gap between few-shot and existing full-shot methods for ToD agents.
+We achieve this by (1) improving the dialogue data representation, (2) improving entity-aware machine translation, and (3) automatic filtering of noisy translations.
+
+We evaluate our approach on the recent bilingual dialogue dataset BiToD. In Chinese to English transfer, in the few-shot setting, we improve the state-of-the-art by 15.2\% and 14.0\%, coming within 5\% of full-shot training.
+
+
+## Quickstart
+
+
+1. Clone current repository into your desired folder:
+```bash
+cd ${SRC_DIR}
+git clone https://github.com/stanford-oval/dialogues.git
+```
+
+2. Install the required packages:
+```bash
+pip3 install -e .
+```
+
+\
+Make sure you run the following commands from directory root (i.e. within ${SRC_DIR}).
+3. Process and prepare the dataset for training/ translation (Chinese and English are chosen as the source and target language respectively in this guide).
+```bash
+python3 dialogues/bitod/src/preprocess.py --max_history 2 --last_two_agent_turns --gen_full_state --only_user_rg --sampling balanced --fewshot_percent 0 --setting zh --version 1 --splits valid
+```
+
+Make sure you run the following commands within makefiles directory.
+4. Switch to makefiles directory, and prepare the dataset for translation:
+```bash
+cd makefiles
+make -B all_names=valid experiment=bitod source=zh_v1 src_lang=zh tgt_lang=en process_data
+```
+
+4. Translate the dataset:
+```bash
+ make -B all_names=valid experiment=bitod source=zh_v1 src_lang=zh tgt_lang=en translate_data
+```
+
+4. Construct the final translated dataset:
+```bash
+ make -B all_names=valid experiment=bitod source=zh_v1 src_lang=zh tgt_lang=en skip_translation=true  postprocess_data
+```
+
+The final dataset will be in `bitod/zh_v1/marian/en/final` directory.
+
+
+## Pretrained models and datasets
+
+Stay tuned!
+Please refer to our [paper](https://arxiv.org/pdf/2302.09424.pdf) for more details on the dataset and experiments.
+
+
+## Citation
+If you use the software in this repository, please cite:
+
+```
+@misc{moradshahi2023zero,
+      title={Zero and Few-Shot Localization of Task-Oriented Dialogue Agents with a Distilled Representation},
+      author={Mehrad Moradshahi and Sina J. Semnani and Monica S. Lam},
+      year={2023},
+      eprint={2302.09424},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+```

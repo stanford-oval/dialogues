@@ -1,9 +1,0 @@
-datasets
-dictdiffer
-networkx
-pydot
-pymongo
-requests
-tqdm
-ujson
-word2number
