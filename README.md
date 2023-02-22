@@ -33,13 +33,13 @@ pip3 install -e .
 ```
 
 \
-Make sure you run the following commands from directory root (i.e. within ${SRC_DIR}).
+Make sure you run the following commands from directory root (i.e. ${SRC_DIR}).\
 3. Process and prepare the dataset for training/ translation (Chinese and English are chosen as the source and target language respectively in this guide).
 ```bash
 python3 dialogues/bitod/src/preprocess.py --max_history 2 --last_two_agent_turns --gen_full_state --only_user_rg --sampling balanced --fewshot_percent 0 --setting zh --version 1 --splits valid
 ```
 
-Make sure you run the following commands within makefiles directory.
+Make sure you run the following commands within makefiles directory.\
 4. Switch to makefiles directory, and prepare the dataset for translation:
 ```bash
 cd makefiles
