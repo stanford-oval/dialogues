@@ -32,7 +32,6 @@
 import argparse
 import json
 import os
-import re
 import unicodedata
 from collections import defaultdict
 

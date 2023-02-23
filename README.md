@@ -1,4 +1,6 @@
 [![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-green)](https://github.com/stanford-oval/dialogues/blob/master/LICENSE)
+<a href="https://app.travis-ci.com/github/stanford-oval/dialogues"><img src="https://travis-ci.com/stanford-oval/dialogues.svg?branch=main" alt="Build Status"></a>
+<a href="https://pypi.org/project/dialogues/"><img src="https://img.shields.io/pypi/dm/dialogues" alt="PyPI Downloads"></a>
 
 # Dialogues
 This codebase provides a unified interface to dialogue datasets.\
@@ -29,11 +31,12 @@ git clone https://github.com/stanford-oval/dialogues.git
 
 2. Install the required packages:
 ```bash
+cd dialogues
 pip3 install -e .
 ```
 
 \
-Make sure you run the following commands from directory root (i.e. ${SRC_DIR}).\
+Make sure you run the following commands from dialogues library root folder. \
 3. Process and prepare the dataset for training/ translation (Chinese and English are chosen as the source and target language respectively in this guide).
 ```bash
 python3 dialogues/bitod/src/preprocess.py --max_history 2 --last_two_agent_turns --gen_full_state --only_user_rg --sampling balanced --fewshot_percent 0 --setting zh --version 1 --splits valid
@@ -48,7 +51,7 @@ make -B all_names=valid experiment=bitod source=zh_v1 src_lang=zh tgt_lang=en pr
 
 4. Translate the dataset:
 ```bash
- make -B all_names=valid experiment=bitod source=zh_v1 src_lang=zh tgt_lang=en translate_data
+ make -B all_names=valid experiment=bitod source=zh_v1 src_lang=zh tgt_lang=en nmt_model=marian translate_data
 ```
 
 4. Construct the final translated dataset:
