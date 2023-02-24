@@ -81,7 +81,7 @@ $(experiment)/$(source)/$(nmt_model)/$(tgt_lang)/translated-qpis:
 			paste <(cat ./$(experiment)/$(source)/input-nmt-user/$$f.tsv) <(awk "{for(i=0;i<$$data_size;i++)print}" <(echo ".")) > $@-user/$$f.tsv ; \
 		done ; \
 	else \
-		make input_folder="./$(experiment)/$(source)/input-nmt-user/" output_folder="$@-user" do_translate ; \
+		make input_folder="./$(experiment)/$(source)/input-nmt-user" output_folder="$@-user" do_translate ; \
 	fi
 
 	if $(skip_agent) ; then \
@@ -89,7 +89,7 @@ $(experiment)/$(source)/$(nmt_model)/$(tgt_lang)/translated-qpis:
 			cp $@-user/$$f.tsv $@-agent/$$f.tsv ; \
 		done ; \
 	else \
-		make input_folder="./$(experiment)/$(source)/input-nmt-agent/" output_folder="$@-agent" do_translate ; \
+		make input_folder="./$(experiment)/$(source)/input-nmt-agent" output_folder="$@-agent" do_translate ; \
 	fi ; \
 
 
