@@ -217,6 +217,33 @@ elif args.setting == 'hi':
         },
     }
 
+elif args.setting == 'kr':
+    dialogue_state = {
+        "hotel": {
+            'pricerange': {'relation': 'equal_to', 'value': ['저렴한']},
+            'area': {'relation': 'equal_to', 'value': ['우장구']},
+        },
+        # "attraction": {"name": {'relation': 'equal_to', 'value': ['Jinji Lake Scenic Area']}},
+    }
+    gold_knowledge = {
+        'hotel': {
+            "name": "쑤저우 밍유에 익스프레스 호텔",
+            "area": "우장구",
+            "star": "1성급",
+            "pricerange": "저렴한",
+            "hotel_type": "비즈니스",
+            "room_type": "킹사이즈 객실",
+            "parking": "무료",
+            "room_charge": "155위안",
+            "address": "쑤저우시 우장구 루씨앙남로 2487호",
+            "phone_number": "0512-63000168",
+            "score": "4.5점"
+        },
+        # 'attraction': {
+
+        # },
+    }
+
 
 knowledge = defaultdict(dict)
 
