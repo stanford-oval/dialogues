@@ -17,9 +17,7 @@
         "hours": "20",
         "classroom": "우중 맨션 학습센터 317호",
         "teacher": "천 멍슈에",
-        "price": [
-            "1600"
-        ]
+        "price": "1600"
     },
     {
         "class_number": "PC4J36008A",
@@ -39,14 +37,10 @@
         "hours": "20",
         "classroom": "싱하이 학습 광장 센터 202호",
         "teacher": "리 윤지에",
-        "price": [
-            "1600"
-        ]
+        "price": "1600"
     },
     {
-        "class_number": [
-            "PC4J44010A"
-        ],
+        "class_number": "PC4J44010A",
         "level": "심화반",
         "subject": "중국어",
         "grade": "4학년",
@@ -63,14 +57,10 @@
         "hours": "20",
         "classroom": "진허 국제 빌딩 202호",
         "teacher": "동 신지에",
-        "price": [
-            "1600"
-        ]
+        "price": "1600"
     },
     {
-        "class_number": [
-            "PC4P01046"
-        ],
+        "class_number": "PC4P01046",
         "level": "보충 수업",
         "subject": "중국어",
         "grade": "4학년",
@@ -83,9 +73,7 @@
         "start_time": "오후 1시",
         "end_time": "오후 3시",
         "time": "오후",
-        "times": [
-            "6"
-        ],
+        "times": "6",
         "hours": "12",
         "classroom": "러치아오 학습센터 417호",
         "teacher": "시에 징지아후이",
@@ -109,9 +97,7 @@
         "hours": "20",
         "classroom": "로하스 마을 학습 센터 317호",
         "teacher": "후 민",
-        "price": [
-            "1600"
-        ]
+        "price": "1600"
     },
     {
         "class_number": "PC4P31026",
@@ -127,18 +113,14 @@
         "start_time": "오전 10시 20분",
         "end_time": "12시 20분",
         "time": "아침",
-        "times": [
-            "6"
-        ],
+        "times": "6",
         "hours": "12",
         "classroom": "더블 레이크 플라자 학습 센터 309호",
         "teacher": "수 종",
         "price": "960"
     },
     {
-        "class_number": [
-            "PC4P44041A"
-        ],
+        "class_number": "PC4P44041A",
         "level": "보충 수업",
         "subject": "중국어",
         "grade": "4학년",
@@ -155,9 +137,7 @@
         "hours": "20",
         "classroom": "진허 국제 빌딩 203호",
         "teacher": "동 신지에",
-        "price": [
-            "1600"
-        ]
+        "price": "1600"
     },
     {
         "class_number": "PE4J05066",
@@ -173,15 +153,11 @@
         "start_time": "오전 10시 20분",
         "end_time": "12시 20분",
         "time": "아침",
-        "times": [
-            "6"
-        ],
+        "times": "6",
         "hours": "12",
         "classroom": "우중 멘션 학습 센터 302호",
         "teacher": "쉬 팅후이",
-        "price": [
-            "1140"
-        ]
+        "price": "1140"
     },
     {
         "class_number": "PE4J15028A",
@@ -201,14 +177,10 @@
         "hours": "20",
         "classroom": "로하스 마을 학습 센터 317호",
         "teacher": "천팡",
-        "price": [
-            "1900"
-        ]
+        "price": "1900"
     },
     {
-        "class_number": [
-            "PE4J44004A"
-        ],
+        "class_number": "PE4J44004A",
         "level": "심화반",
         "subject": "영어",
         "grade": "4학년",
@@ -225,9 +197,7 @@
         "hours": "20",
         "classroom": "진허 국제 빌딩 231호",
         "teacher": "시아 진",
-        "price": [
-            "1900"
-        ]
+        "price": "1900"
     },
     {
         "class_number": "PE4P01074A",
@@ -247,14 +217,10 @@
         "hours": "20",
         "classroom": "러치아오 학습 센터 310호",
         "teacher": "허 춘룽",
-        "price": [
-            "1600"
-        ]
+        "price": "1600"
     },
     {
-        "class_number": [
-            "PE4P05066A"
-        ],
+        "class_number": "PE4P05066A",
         "level": "보충 수업",
         "subject": "영어",
         "grade": "4학년",
@@ -271,9 +237,7 @@
         "hours": "20",
         "classroom": "우중 ㅐ맨션 학습 센터 323호",
         "teacher": "리 젠지",
-        "price": [
-            "1600"
-        ]
+        "price": "1600"
     },
     {
         "class_number": "PE4P23037",
@@ -289,18 +253,14 @@
         "start_time": "오후 4시 25분",
         "end_time": "오후 6시 25분",
         "time": "오후",
-        "times": [
-            "6"
-        ],
+        "times": "6",
         "hours": "12",
         "classroom": "하버드 중앙 풍경 도시",
         "teacher": "루 멍샤",
         "price": "960"
     },
     {
-        "class_number": [
-            "PE4P44082A"
-        ],
+        "class_number": "PE4P44082A",
         "level": "보충 수업",
         "subject": "영어",
         "grade": "4학년",
@@ -317,9 +277,7 @@
         "hours": "20",
         "classroom": "진허 국제 빌딩 214호",
         "teacher": "양 루지아",
-        "price": [
-            "1600"
-        ]
+        "price": "1600"
     },
     {
         "class_number": "PE4T01024",
@@ -335,9 +293,7 @@
         "start_time": "오전 8시",
         "end_time": "10시",
         "time": "아침",
-        "times": [
-            "6"
-        ],
+        "times": "6",
         "hours": "12",
         "classroom": "러치아오 학습 센터 303호",
         "teacher": "마 샤오칭",
@@ -361,14 +317,10 @@
         "hours": "20",
         "classroom": "우중 맨션 학습 센터 320호",
         "teacher": "장 리핑",
-        "price": [
-            "1600"
-        ]
+        "price": "1600"
     },
     {
-        "class_number": [
-            "PE4T15020"
-        ],
+        "class_number": "PE4T15020",
         "level": "초급반",
         "subject": "영어",
         "grade": "4학년",
@@ -381,18 +333,14 @@
         "start_time": "오후 1시 20분",
         "end_time": "오후 3시 20분",
         "time": "오후",
-        "times": [
-            "6"
-        ],
+        "times": "6",
         "hours": "12",
         "classroom": "로하스 마을 학습  센터 301호",
         "teacher": "양 리우",
         "price": "960"
     },
     {
-        "class_number": [
-            "PE4T44042"
-        ],
+        "class_number": "PE4T44042",
         "level": "초급반",
         "subject": "영어",
         "grade": "4학년",
@@ -405,9 +353,7 @@
         "start_time": "오후 6시 30분",
         "end_time": "오후 8시 30분",
         "time": "저녁",
-        "times": [
-            "6"
-        ],
+        "times": "6",
         "hours": "12",
         "classroom": "진허 국제 빌딩 207호",
         "teacher": "판 쉬슈",
@@ -427,9 +373,7 @@
         "start_time": "오후 3시 30분",
         "end_time": "오후 5시 30분",
         "time": "오후",
-        "times": [
-            "6"
-        ],
+        "times": "6",
         "hours": "12",
         "classroom": "우중 맨션 학습 센터 402호",
         "teacher": "송 리",
@@ -453,14 +397,10 @@
         "hours": "20",
         "classroom": "팡저우 학습 센터 313호",
         "teacher": "장 샤",
-        "price": [
-            "1600"
-        ]
+        "price": "1600"
     },
     {
-        "class_number": [
-            "PM4J44007"
-        ],
+        "class_number": "PM4J44007",
         "level": "심화반",
         "subject": "수학",
         "grade": "4학년",
@@ -473,18 +413,14 @@
         "start_time": "오후 3시 50분",
         "end_time": "오후 5시 50분",
         "time": "오후",
-        "times": [
-            "6"
-        ],
+        "times": "6",
         "hours": "12",
         "classroom": "진허 국제 빌딩 207호",
         "teacher": "원 시",
         "price": "960"
     },
     {
-        "class_number": [
-            "PM4P05048A"
-        ],
+        "class_number": "PM4P05048A",
         "level": "보충 수업",
         "subject": "수학",
         "grade": "4학년",
@@ -501,9 +437,7 @@
         "hours": "20",
         "classroom": "우중 맨션 학습 센터 308호",
         "teacher": "얀 펑페이",
-        "price": [
-            "1600"
-        ]
+        "price": "1600"
     },
     {
         "class_number": "PM4P24022A",
@@ -523,9 +457,7 @@
         "hours": "20",
         "classroom": "핑장 뉴타운 학습 센터 310호",
         "teacher": "우 진",
-        "price": [
-            "1600"
-        ]
+        "price": "1600"
     },
     {
         "class_number": "PM4P28036A",
@@ -545,9 +477,7 @@
         "hours": "20",
         "classroom": "팡저우 학습 센터 314호",
         "teacher": "마 루야오",
-        "price": [
-            "1600"
-        ]
+        "price": "1600"
     },
     {
         "class_number": "PM4P44031A",
@@ -567,14 +497,10 @@
         "hours": "20",
         "classroom": "진허 국제 빌딩 207호",
         "teacher": "원 시",
-        "price": [
-            "1600"
-        ]
+        "price": "1600"
     },
     {
-        "class_number": [
-            "PM4T28029A"
-        ],
+        "class_number": "PM4T28029A",
         "level": "초급반",
         "subject": "수학",
         "grade": "4학년",
@@ -591,14 +517,10 @@
         "hours": "20",
         "classroom": "팡저우 학습 센터 314호",
         "teacher": "장 샤",
-        "price": [
-            "1600"
-        ]
+        "price": "1600"
     },
     {
-        "class_number": [
-            "PM4T31014"
-        ],
+        "class_number": "PM4T31014",
         "level": "초급반",
         "subject": "수학",
         "grade": "4학년",
@@ -611,9 +533,7 @@
         "start_time": "오전 8시",
         "end_time": "10시",
         "time": "아침",
-        "times": [
-            "6"
-        ],
+        "times": "6",
         "hours": "12",
         "classroom": "더블 레이크 플라자 학습 센터 311호",
         "teacher": "허 야오린",
@@ -633,18 +553,14 @@
         "start_time": "오전 8시",
         "end_time": "10시",
         "time": "아침",
-        "times": [
-            "6"
-        ],
+        "times": "6",
         "hours": "12",
         "classroom": "시진 상업 광장 학습 센터 117호",
         "teacher": "추이 샤오한",
         "price": "960"
     },
     {
-        "class_number": [
-            "PC5J05009A"
-        ],
+        "class_number": "PC5J05009A",
         "level": "심화반",
         "subject": "중국어",
         "grade": "5학년",
@@ -661,9 +577,7 @@
         "hours": "20",
         "classroom": "우중 맨션 학습 센터 321호",
         "teacher": "루 이팡",
-        "price": [
-            "1600"
-        ]
+        "price": "1600"
     },
     {
         "class_number": "PC5J44013A",
@@ -683,14 +597,10 @@
         "hours": "20",
         "classroom": "진허 국제 빌딩 227호",
         "teacher": "리우 신",
-        "price": [
-            "1600"
-        ]
+        "price": "1600"
     },
     {
-        "class_number": [
-            "PC5P01047"
-        ],
+        "class_number": "PC5P01047",
         "level": "보충 수업",
         "subject": "중국어",
         "grade": "5학년",
@@ -703,9 +613,7 @@
         "start_time": "오전 8시",
         "end_time": "10시",
         "time": "아침",
-        "times": [
-            "6"
-        ],
+        "times": "6",
         "hours": "12",
         "classroom": "러치아오 학습 센터 309호",
         "teacher": "시 징",
@@ -725,9 +633,7 @@
         "start_time": "오후 1시 20분",
         "end_time": "오후 3시 20분",
         "time": "오후",
-        "times": [
-            "6"
-        ],
+        "times": "6",
         "hours": "12",
         "classroom": "우중 맨션 학습 센터 304호",
         "teacher": "리 완리",
@@ -747,9 +653,7 @@
         "start_time": "오후 1시 20분",
         "end_time": "오후 3시 20분",
         "time": "오후",
-        "times": [
-            "6"
-        ],
+        "times": "6",
         "hours": "12",
         "classroom": "팡저우 학습 센터 307호",
         "teacher": "야오 유에",
@@ -773,9 +677,7 @@
         "hours": "20",
         "classroom": "진허 국제 빌딩 202호",
         "teacher": "자오 홍메이",
-        "price": [
-            "1600"
-        ]
+        "price": "1600"
     },
     {
         "class_number": "PE5J05065",
@@ -791,9 +693,7 @@
         "start_time": "오후 6시",
         "end_time": "오후 8시",
         "time": "저녁",
-        "times": [
-            "6"
-        ],
+        "times": "6",
         "hours": "12",
         "classroom": "우중 맨션 학습 센터 318호",
         "teacher": "리 지아이",
@@ -817,14 +717,10 @@
         "hours": "20",
         "classroom": "싱하이 광장 학습 센터 212호",
         "teacher": "류 전롱",
-        "price": [
-            "1600"
-        ]
+        "price": "1600"
     },
     {
-        "class_number": [
-            "PE5J48003"
-        ],
+        "class_number": "PE5J48003",
         "level": "심화반",
         "subject": "영어",
         "grade": "5학년",
@@ -837,9 +733,7 @@
         "start_time": "오후 3시 40분",
         "end_time": "오후 5시 40분",
         "time": "오후",
-        "times": [
-            "6"
-        ],
+        "times": "6",
         "hours": "12",
         "classroom": "시진 상업 광장 학습 센터 105호",
         "teacher": "관 유지아",
@@ -859,18 +753,14 @@
         "start_time": "오후 4시",
         "end_time": "오후 6시",
         "time": "오후",
-        "times": [
-            "6"
-        ],
+        "times": "6",
         "hours": "12",
         "classroom": "러치아오 학습 센터 314호",
         "teacher": "마 샤오칭",
         "price": "960"
     },
     {
-        "class_number": [
-            "PE5P05116A"
-        ],
+        "class_number": "PE5P05116A",
         "level": "보충 수업",
         "subject": "영어",
         "grade": "5학년",
@@ -887,9 +777,7 @@
         "hours": "20",
         "classroom": "우중 맨션 학습 센터 322호",
         "teacher": "판 윤",
-        "price": [
-            "1600"
-        ]
+        "price": "1600"
     },
     {
         "class_number": "PE5P36112A",
@@ -909,9 +797,7 @@
         "hours": "20",
         "classroom": "싱하이 광장 학습 센터 221호",
         "teacher": "옌 페이린",
-        "price": [
-            "1600"
-        ]
+        "price": "1600"
     },
     {
         "class_number": "PE5P44094A",
@@ -931,14 +817,10 @@
         "hours": "20",
         "classroom": "진허 국제 빌딩 205호",
         "teacher": "쉬 에루빙",
-        "price": [
-            "1600"
-        ]
+        "price": "1600"
     },
     {
-        "class_number": [
-            "PE5T01041"
-        ],
+        "class_number": "PE5T01041",
         "level": "초급반",
         "subject": "영어",
         "grade": "5학년",
@@ -951,9 +833,7 @@
         "start_time": "오전 8시",
         "end_time": "10시",
         "time": "아침",
-        "times": [
-            "6"
-        ],
+        "times": "6",
         "hours": "12",
         "classroom": "러치아오 학습 센터 310호",
         "teacher": "류 팡팡",
@@ -977,14 +857,10 @@
         "hours": "20",
         "classroom": "우중 멘션 학습 센터 302호",
         "teacher": "천 징",
-        "price": [
-            "1600"
-        ]
+        "price": "1600"
     },
     {
-        "class_number": [
-            "PE5T28041A"
-        ],
+        "class_number": "PE5T28041A",
         "level": "초급반",
         "subject": "영어",
         "grade": "5학년",
@@ -1001,9 +877,7 @@
         "hours": "20",
         "classroom": "팡저우 학습 센터 316호",
         "teacher": "장 이치",
-        "price": [
-            "1600"
-        ]
+        "price": "1600"
     },
     {
         "class_number": "PE5T44034A",
@@ -1023,9 +897,7 @@
         "hours": "20",
         "classroom": "진허 국제 빌딩 220호",
         "teacher": "쉬 칭칭",
-        "price": [
-            "1600"
-        ]
+        "price": "1600"
     },
     {
         "class_number": "PM5J44004A",
@@ -1045,9 +917,7 @@
         "hours": "20",
         "classroom": "진허 국제빌딩 206호",
         "teacher": "수 샤오윈",
-        "price": [
-            "1600"
-        ]
+        "price": "1600"
     },
     {
         "class_number": "PM5P15017A",
@@ -1067,9 +937,7 @@
         "hours": "20",
         "classroom": "로하스 마을 학습 센터 311호",
         "teacher": "저우 신",
-        "price": [
-            "1600"
-        ]
+        "price": "1600"
     },
     {
         "class_number": "PM5P24018A",
@@ -1089,9 +957,7 @@
         "hours": "20",
         "classroom": "핑장 뉴타운 학습 센터 307호",
         "teacher": "펭 슈에얀",
-        "price": [
-            "1600"
-        ]
+        "price": "1600"
     },
     {
         "class_number": "PM5P31014A",
@@ -1111,14 +977,10 @@
         "hours": "20",
         "classroom": "더블 레이크 플라자 학습 센터 311호",
         "teacher": "허 야오린",
-        "price": [
-            "1600"
-        ]
+        "price": "1600"
     },
     {
-        "class_number": [
-            "PM5P44032"
-        ],
+        "class_number": "PM5P44032",
         "level": "보충 수업",
         "subject": "수학",
         "grade": "5학년",
@@ -1131,9 +993,7 @@
         "start_time": "오후 1시 20분",
         "end_time": "오후 3시 20분",
         "time": "오후",
-        "times": [
-            "6"
-        ],
+        "times": "6",
         "hours": "12",
         "classroom": "진허 국제 빌딩 217호",
         "teacher": "쉬 리단",
@@ -1153,9 +1013,7 @@
         "start_time": "오후 1시 20분",
         "end_time": "오후 3시 20분",
         "time": "오후",
-        "times": [
-            "6"
-        ],
+        "times": "6",
         "hours": "12",
         "classroom": "우중 맨션 학습 센터 305호",
         "teacher": "저우 원후이",
@@ -1179,14 +1037,10 @@
         "hours": "20",
         "classroom": "로하스 마을 학습 센터 311호",
         "teacher": "저우 신",
-        "price": [
-            "1600"
-        ]
+        "price": "1600"
     },
     {
-        "class_number": [
-            "PM5T24013"
-        ],
+        "class_number": "PM5T24013",
         "level": "초급반",
         "subject": "수학",
         "grade": "5학년",
@@ -1199,18 +1053,14 @@
         "start_time": " 3시 20분",
         "end_time": "오후 5시 20분",
         "time": "오후",
-        "times": [
-            "6"
-        ],
+        "times": "6",
         "hours": "12",
         "classroom": "핑장 뉴타운 학습 센터 305호",
         "teacher": "우 진",
         "price": "960"
     },
     {
-        "class_number": [
-            "PM5T44026"
-        ],
+        "class_number": "PM5T44026",
         "level": "초급반",
         "subject": "수학",
         "grade": "5학년",
@@ -1223,9 +1073,7 @@
         "start_time": "오전 8시",
         "end_time": "10시",
         "time": "아침",
-        "times": [
-            "6"
-        ],
+        "times": "6",
         "hours": "12",
         "classroom": " 국제 빌딩 222호",
         "teacher": "황 젠화",
@@ -1249,9 +1097,7 @@
         "hours": "18시간",
         "classroom": "러치아오 학습 센터 312호",
         "teacher": "시에 징지아후이",
-        "price": [
-            "1620"
-        ]
+        "price": "1620"
     },
     {
         "class_number": "ZMCPC5J36004A",
@@ -1271,9 +1117,7 @@
         "hours": "18시간",
         "classroom": "싱하이 광장 학습 센터 220호",
         "teacher": "류 샤오링",
-        "price": [
-            "1620"
-        ]
+        "price": "1620"
     },
     {
         "class_number": "ZMCPE5J01010A",
@@ -1293,9 +1137,7 @@
         "hours": "18시간",
         "classroom": "러치아오 학습 센터 309호",
         "teacher": "징 팬",
-        "price": [
-            "1620"
-        ]
+        "price": "1620"
     },
     {
         "class_number": "ZMCPM5J01004A",
@@ -1315,9 +1157,7 @@
         "hours": "18시간",
         "classroom": "러치아오 학습 센터 312호",
         "teacher": "장 잉",
-        "price": [
-            "1620"
-        ]
+        "price": "1620"
     },
     {
         "class_number": "ZMCPM5J05004",
@@ -1333,20 +1173,14 @@
         "start_time": "오전 10시 20분",
         "end_time": "12시 20분",
         "time": "아침",
-        "times": [
-            "6"
-        ],
+        "times": "6",
         "hours": "12",
         "classroom": "우중 맨션 학습 센터 316호",
         "teacher": "구 얀",
-        "price": [
-            "1080"
-        ]
+        "price": "1080"
     },
     {
-        "class_number": [
-            "ZMCPM5J36004A"
-        ],
+        "class_number": "ZMCPM5J36004A",
         "level": "심화반",
         "subject": "수학",
         "grade": "5학년",
@@ -1363,14 +1197,10 @@
         "hours": "18시간",
         "classroom": "싱하이 광장 학습 센터 220호",
         "teacher": "쉬 치하오",
-        "price": [
-            "1620"
-        ]
+        "price": "1620"
     },
     {
-        "class_number": [
-            "PC6J32011A"
-        ],
+        "class_number": "PC6J32011A",
         "level": "심화반",
         "subject": "중국어",
         "grade": "6학년",
@@ -1387,9 +1217,7 @@
         "hours": "20",
         "classroom": "시마오 플라자 304호",
         "teacher": "천 첸",
-        "price": [
-            "1600"
-        ]
+        "price": "1600"
     },
     {
         "class_number": "PC6J36010A",
@@ -1409,14 +1237,10 @@
         "hours": "20",
         "classroom": "싱하이 광장 학습 센터 220호",
         "teacher": "리 윤지에",
-        "price": [
-            "1600"
-        ]
+        "price": "1600"
     },
     {
-        "class_number": [
-            "PC6J44012A"
-        ],
+        "class_number": "PC6J44012A",
         "level": "심화반",
         "subject": "중국어",
         "grade": "6학년",
@@ -1433,14 +1257,10 @@
         "hours": "20",
         "classroom": "진허 국제 빌딩 209호",
         "teacher": "리우 신",
-        "price": [
-            "1600"
-        ]
+        "price": "1600"
     },
     {
-        "class_number": [
-            "PC6P15036"
-        ],
+        "class_number": "PC6P15036",
         "level": "보충 수업",
         "subject": "중국어",
         "grade": "6학년",
@@ -1453,9 +1273,7 @@
         "start_time": "오후 3시 50분",
         "end_time": "오후 5시 50분",
         "time": "오후",
-        "times": [
-            "6"
-        ],
+        "times": "6",
         "hours": "12",
         "classroom": "로하스 마을 학습 센터 304호",
         "teacher": "후 민",
@@ -1479,14 +1297,10 @@
         "hours": "20",
         "classroom": "핑장 뉴타운 학습 센터 301호",
         "teacher": "주 얀징",
-        "price": [
-            "1600"
-        ]
+        "price": "1600"
     },
     {
-        "class_number": [
-            "PC6P44061"
-        ],
+        "class_number": "PC6P44061",
         "level": "보충 수업",
         "subject": "중국어",
         "grade": "6학년",
@@ -1499,18 +1313,14 @@
         "start_time": "오전 8시",
         "end_time": "10시",
         "time": "아침",
-        "times": [
-            "6"
-        ],
+        "times": "6",
         "hours": "12",
         "classroom": "진허 국제 빌딩 237호",
         "teacher": "천 진화",
         "price": "960"
     },
     {
-        "class_number": [
-            "PE6P24044A"
-        ],
+        "class_number": "PE6P24044A",
         "level": "보충 수업",
         "subject": "영어",
         "grade": "6학년",
@@ -1527,9 +1337,7 @@
         "hours": "20",
         "classroom": "핑장 뉴타운 학습 센터 309호",
         "teacher": "궈 링게",
-        "price": [
-            "1600"
-        ]
+        "price": "1600"
     },
     {
         "class_number": "PE6P32071A",
@@ -1549,9 +1357,7 @@
         "hours": "20",
         "classroom": "시마오 플라자 302호",
         "teacher": "왕 샤오위",
-        "price": [
-            "1600"
-        ]
+        "price": "1600"
     },
     {
         "class_number": "PE6P36108A",
@@ -1571,14 +1377,10 @@
         "hours": "20",
         "classroom": "싱하이 광장 학습 센터 103호",
         "teacher": "정 지민",
-        "price": [
-            "1600"
-        ]
+        "price": "1600"
     },
     {
-        "class_number": [
-            "PE6P48018A"
-        ],
+        "class_number": "PE6P48018A",
         "level": "보충 수업",
         "subject": "영어",
         "grade": "6학년",
@@ -1595,14 +1397,10 @@
         "hours": "20",
         "classroom": "시진 상업 광장 학습 센터 105호",
         "teacher": "관 유지아",
-        "price": [
-            "1600"
-        ]
+        "price": "1600"
     },
     {
-        "class_number": [
-            "PE6T01052"
-        ],
+        "class_number": "PE6T01052",
         "level": "초급반",
         "subject": "영어",
         "grade": "6학년",
@@ -1615,9 +1413,7 @@
         "start_time": "오후 1시",
         "end_time": "오후 3시",
         "time": "오후",
-        "times": [
-            "6"
-        ],
+        "times": "6",
         "hours": "12",
         "classroom": "러치아오 학습 센터 307호",
         "teacher": "루 샹",
@@ -1637,18 +1433,14 @@
         "start_time": "오후 3시 50분",
         "end_time": "오후 5시 50분",
         "time": "오후",
-        "times": [
-            "6"
-        ],
+        "times": "6",
         "hours": "12",
         "classroom": "팡저우 학습 센터 307호",
         "teacher": "저우 양롱",
         "price": "960"
     },
     {
-        "class_number": [
-            "PE6T38019"
-        ],
+        "class_number": "PE6T38019",
         "level": "초급반",
         "subject": "영어",
         "grade": "6학년",
@@ -1661,9 +1453,7 @@
         "start_time": "오후 6시 30분",
         "end_time": "오후 8시 30분",
         "time": "저녁",
-        "times": [
-            "6"
-        ],
+        "times": "6",
         "hours": "12",
         "classroom": "웨시 201호",
         "teacher": "왕 하이샤",
@@ -1683,9 +1473,7 @@
         "start_time": "오후 3시 40분",
         "end_time": "오후 5시 40분",
         "time": "오후",
-        "times": [
-            "6"
-        ],
+        "times": "6",
         "hours": "12",
         "classroom": "시진 상업 광장 학습 센터 103호",
         "teacher": "천 판팅",
@@ -1709,9 +1497,7 @@
         "hours": "20",
         "classroom": "핑장 뉴타운 학습 센터 307호",
         "teacher": "샤 정둥",
-        "price": [
-            "1600"
-        ]
+        "price": "1600"
     },
     {
         "class_number": "PM6J44008A",
@@ -1731,9 +1517,7 @@
         "hours": "20",
         "classroom": "진허 국제 빌딩 204호",
         "teacher": "장 빈쑤아이",
-        "price": [
-            "1600"
-        ]
+        "price": "1600"
     },
     {
         "class_number": "PM6P13033",
@@ -1749,9 +1533,7 @@
         "start_time": "오전 10시 20분",
         "end_time": "12시 20분",
         "time": "아침",
-        "times": [
-            "6"
-        ],
+        "times": "6",
         "hours": "12",
         "classroom": "우중 맨션 학습 센터 401호",
         "teacher": "송 리",
@@ -1775,9 +1557,7 @@
         "hours": "20",
         "classroom": "싱하이 광장 학습 센터 201호",
         "teacher": "민 리",
-        "price": [
-            "1600"
-        ]
+        "price": "1600"
     },
     {
         "class_number": "PM6P39023",
@@ -1793,9 +1573,7 @@
         "start_time": "10시 10분",
         "end_time": "12시 10분",
         "time": "아침",
-        "times": [
-            "6"
-        ],
+        "times": "6",
         "hours": "12",
         "classroom": "선 광장 학습 센터 308호",
         "teacher": "왕 판판",
@@ -1819,9 +1597,7 @@
         "hours": "20",
         "classroom": "시진 상업 광장 학습 센터 118호",
         "teacher": "왕 지주안",
-        "price": [
-            "1600"
-        ]
+        "price": "1600"
     },
     {
         "class_number": "PM6T24023",
@@ -1837,9 +1613,7 @@
         "start_time": " 3시 20분",
         "end_time": "오후 5시 20분",
         "time": "오후",
-        "times": [
-            "6"
-        ],
+        "times": "6",
         "hours": "12",
         "classroom": "핑장 뉴타운 학습센터 302호",
         "teacher": "펭 슈에얀",
@@ -1859,9 +1633,7 @@
         "start_time": "오후 1시",
         "end_time": "오후 3시",
         "time": "오후",
-        "times": [
-            "6"
-        ],
+        "times": "6",
         "hours": "12",
         "classroom": "더블 레이크 플라자 학습 센터 311호",
         "teacher": "허 야오린",
@@ -1881,18 +1653,14 @@
         "start_time": "오전 8시",
         "end_time": "10시",
         "time": "아침",
-        "times": [
-            "6"
-        ],
+        "times": "6",
         "hours": "12",
         "classroom": "싱하이 광장 학습 센터 208호",
         "teacher": "쉬 치하오",
         "price": "960"
     },
     {
-        "class_number": [
-            "PM6T44035"
-        ],
+        "class_number": "PM6T44035",
         "level": "초급반",
         "subject": "수학",
         "grade": "6학년",
@@ -1905,18 +1673,14 @@
         "start_time": "오전 8시",
         "end_time": "10시",
         "time": "아침",
-        "times": [
-            "6"
-        ],
+        "times": "6",
         "hours": "12",
         "classroom": "진허 국제빌딩 206호",
         "teacher": "수 샤오윈",
         "price": "960"
     },
     {
-        "class_number": [
-            "ZMCPC6J01012A"
-        ],
+        "class_number": "ZMCPC6J01012A",
         "level": "심화반",
         "subject": "중국어",
         "grade": "6학년",
@@ -1933,14 +1697,10 @@
         "hours": "18시간",
         "classroom": "러치아오 학습 센터 309호",
         "teacher": "시에 징지아후이",
-        "price": [
-            "1620"
-        ]
+        "price": "1620"
     },
     {
-        "class_number": [
-            "ZMCPE6J0519A"
-        ],
+        "class_number": "ZMCPE6J0519A",
         "level": "심화반",
         "subject": "영어",
         "grade": "6학년",
@@ -1957,14 +1717,10 @@
         "hours": "18시간",
         "classroom": "우중 맨션 학습 센터 318호",
         "teacher": "리 지아이",
-        "price": [
-            "1620"
-        ]
+        "price": "1620"
     },
     {
-        "class_number": [
-            "ZMCPE6J15007A"
-        ],
+        "class_number": "ZMCPE6J15007A",
         "level": "심화반",
         "subject": "영어",
         "grade": "6학년",
@@ -1981,14 +1737,10 @@
         "hours": "18시간",
         "classroom": "로하스 마을 학습 센터 311호",
         "teacher": "천팡",
-        "price": [
-            "1620"
-        ]
+        "price": "1620"
     },
     {
-        "class_number": [
-            "ZMCPE6J39007A"
-        ],
+        "class_number": "ZMCPE6J39007A",
         "level": "심화반",
         "subject": "영어",
         "grade": "6학년",
@@ -2005,14 +1757,10 @@
         "hours": "18시간",
         "classroom": "선 광장 학습 센터 307호",
         "teacher": "진 춘팡",
-        "price": [
-            "1620"
-        ]
+        "price": "1620"
     },
     {
-        "class_number": [
-            "ZMCPM6J05015A"
-        ],
+        "class_number": "ZMCPM6J05015A",
         "level": "심화반",
         "subject": "수학",
         "grade": "6학년",
@@ -2029,9 +1777,7 @@
         "hours": "18시간",
         "classroom": "우중 맨션 학습 센터 319호",
         "teacher": "시 이징",
-        "price": [
-            "1620"
-        ]
+        "price": "1620"
     },
     {
         "class_number": "ZMCPM6J36008A",
@@ -2051,8 +1797,6 @@
         "hours": "18시간",
         "classroom": "싱하이 광장 학습 센터 218호",
         "teacher": "쉬 치하오",
-        "price": [
-            "1620"
-        ]
+        "price": "1620"
     }
 ]

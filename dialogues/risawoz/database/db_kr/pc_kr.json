@@ -39,9 +39,7 @@
         "gpu_model": "기타",
         "features": "PCIe SSD, 이중 하드 드라이브, 급속 충전 그리고 C타입 포트",
         "colour": "주로 파란색",
-        "standby_time": [
-            "9시간 이상"
-        ],
+        "standby_time": "9시간 이상",
         "hard_disk_capacity": "256GB SSD",
         "price": "4,999위안"
     },
@@ -63,13 +61,9 @@
         "gpu_model": "GTX1650",
         "features": "백라이트 키보드와 베젤리스 스크린",
         "colour": "주로 검정색",
-        "standby_time": [
-            "5시간 미만"
-        ],
+        "standby_time": "5시간 미만",
         "hard_disk_capacity": "256GB SSD",
-        "price": [
-            "6,449위안"
-        ]
+        "price": "6,449위안"
     },
     {
         "brand": "레노버",
@@ -90,9 +84,7 @@
         "features": "백라이트 키보드, 지문 인식, PCIe SSD, 급속 충전 및 C타입 포트",
         "colour": "주로 회색",
         "standby_time": "7-9시간",
-        "hard_disk_capacity": [
-            "1T SSD"
-        ],
+        "hard_disk_capacity": "1T SSD",
         "price": "7,999위안"
     },
     {
@@ -114,21 +106,15 @@
         "features": "백라이트 키보드와 PCIe SSD",
         "colour": "주로 회색",
         "standby_time": "7-9시간",
-        "hard_disk_capacity": [
-            "1T SSD"
-        ],
-        "price": [
-            "8,699위안"
-        ]
+        "hard_disk_capacity": "1T SSD",
+        "price": "8,699위안"
     },
     {
         "brand": "레노버",
         "computer_type": "데스크톱",
         "usage": "사무용",
         "memory_capacity": "8GB",
-        "screen_size": [
-            "23-25인치"
-        ],
+        "screen_size": "23-25인치",
         "cpu": "인텔 코어 i5",
         "pricerange": "5,000에서 10,000",
         "series": "레노버 티안",
@@ -141,9 +127,7 @@
         "gpu_model": "GT730",
         "features": "해당사항 없음",
         "colour": "해당사항 없음",
-        "standby_time": [
-            "N/A"
-        ],
+        "standby_time": "N/A",
         "hard_disk_capacity": "256GB SSD + 1TB HDD",
         "price": "4,889위안"
     },
@@ -152,9 +136,7 @@
         "computer_type": "데스크톱",
         "usage": "사무용",
         "memory_capacity": "8GB",
-        "screen_size": [
-            "21.5인치"
-        ],
+        "screen_size": "21.5인치",
         "cpu": "인텔 코어 i7",
         "pricerange": "5,000에서 10,000",
         "series": "레노버 양티안 시리즈",
@@ -162,16 +144,12 @@
         "operating_system": "윈도우 10",
         "game_performance": "보급형",
         "cpu_model": "인텔 코어 i7-8700",
-        "weight": [
-            "9.27kg"
-        ],
+        "weight": "9.27kg",
         "gpu_category": "개별 그래픽 카드",
         "gpu_model": "GT730",
         "features": "해당사항 없음",
         "colour": "해당사항 없음",
-        "standby_time": [
-            "N/A"
-        ],
+        "standby_time": "N/A",
         "hard_disk_capacity": "1TB HDD",
         "price": "6,088위안"
     },
@@ -180,9 +158,7 @@
         "computer_type": "데스크톱",
         "usage": "게이밍",
         "memory_capacity": "16GB",
-        "screen_size": [
-            "N/A"
-        ],
+        "screen_size": "N/A",
         "cpu": "인텔 코어 i9",
         "pricerange": "5,000에서 10,000",
         "series": "레노버 Y 시리즈",
@@ -190,16 +166,12 @@
         "operating_system": "윈도우 10",
         "game_performance": "열성적인",
         "cpu_model": "인텔 코어 i9-9900",
-        "weight": [
-            "12.0kg"
-        ],
+        "weight": "12.0kg",
         "gpu_category": "개별 그래픽 카드",
         "gpu_model": "RTX2060",
         "features": "해당사항 없음",
         "colour": "해당사항 없음",
-        "standby_time": [
-            "N/A"
-        ],
+        "standby_time": "N/A",
         "hard_disk_capacity": "512GB SSD",
         "price": "7,999위안"
     },
@@ -208,9 +180,7 @@
         "computer_type": "데스크톱",
         "usage": "게이밍",
         "memory_capacity": "16GB",
-        "screen_size": [
-            "N/A"
-        ],
+        "screen_size": "N/A",
         "cpu": "인텔 코어 i7",
         "pricerange": "5,000에서 10,000",
         "series": "레노버 긱프로 시리즈",
@@ -218,16 +188,12 @@
         "operating_system": "윈도우 10",
         "game_performance": "열성적인",
         "cpu_model": "인텔 코어 i7-9700F",
-        "weight": [
-            "6.85kg"
-        ],
+        "weight": "6.85kg",
         "gpu_category": "개별 그래픽 카드",
         "gpu_model": "GTX1650",
         "features": "해당사항 없음",
         "colour": "해당사항 없음",
-        "standby_time": [
-            "N/A"
-        ],
+        "standby_time": "N/A",
         "hard_disk_capacity": "256GB SSD + 1TB HDD",
         "price": "5,989위안"
     },
@@ -236,9 +202,7 @@
         "computer_type": "데스크톱",
         "usage": "사무용",
         "memory_capacity": "8GB",
-        "screen_size": [
-            "20-21.5인치"
-        ],
+        "screen_size": "20-21.5인치",
         "cpu": "인텔 코어 i3",
         "pricerange": "5,000 미만",
         "series": "레노버 티안",
@@ -246,16 +210,12 @@
         "operating_system": "윈도우 10",
         "game_performance": "보급형",
         "cpu_model": "인텔 코어 i3-9100",
-        "weight": [
-            "5.875kg"
-        ],
+        "weight": "5.875kg",
         "gpu_category": "내장 그래픽 카드",
         "gpu_model": "기타",
         "features": "해당사항 없음",
         "colour": "해당사항 없음",
-        "standby_time": [
-            "N/A"
-        ],
+        "standby_time": "N/A",
         "hard_disk_capacity": "1TB HDD",
         "price": "2,889위안"
     },
@@ -277,9 +237,7 @@
         "gpu_model": "GTX1660ti MQ6G",
         "features": "백라이트 키보드와 PCIe SSD",
         "colour": "주로 파란색",
-        "standby_time": [
-            "5시간 미만"
-        ],
+        "standby_time": "5시간 미만",
         "hard_disk_capacity": "512GB SSD + 1TB HDD",
         "price": "8,599위안"
     },
@@ -287,9 +245,7 @@
         "brand": "델",
         "computer_type": "노트북",
         "usage": "경량",
-        "memory_capacity": [
-            "64GB"
-        ],
+        "memory_capacity": "64GB",
         "screen_size": "15.6인치",
         "cpu": "인텔 코어 i9",
         "pricerange": "20,000 초과",
@@ -303,13 +259,9 @@
         "gpu_model": "GTX1650",
         "features": "터치스크린, 백라이트 키보드, PCIE SSD",
         "colour": "주로 은색",
-        "standby_time": [
-            "5시간 미만"
-        ],
+        "standby_time": "5시간 미만",
         "hard_disk_capacity": "512GB SSD",
-        "price": [
-            "26,999위안"
-        ]
+        "price": "26,999위안"
     },
     {
         "brand": "델",
@@ -329,9 +281,7 @@
         "gpu_model": "MX150",
         "features": "백라이트 키보드, PCIE SSD, 그리고 이중 하드 드라이브",
         "colour": "주로 은색",
-        "standby_time": [
-            "5시간 미만"
-        ],
+        "standby_time": "5시간 미만",
         "hard_disk_capacity": "512GB SSD + 1TB HDD",
         "price": "5,899위안"
     },
@@ -353,13 +303,9 @@
         "gpu_model": "MX250",
         "features": "백라이트 키보드와 PCIe SSD",
         "colour": "주로 은색",
-        "standby_time": [
-            "5시간 미만"
-        ],
+        "standby_time": "5시간 미만",
         "hard_disk_capacity": "512GB SSD + 1TB HDD",
-        "price": [
-            "6,999위안"
-        ]
+        "price": "6,999위안"
     },
     {
         "brand": "델",
@@ -379,22 +325,16 @@
         "gpu_model": "MX250",
         "features": "백라이트 키보드, 지문 인식, PCIe SSD, 급속 충전 및 C타입 포트",
         "colour": "주로 은색",
-        "standby_time": [
-            "9시간 이상"
-        ],
+        "standby_time": "9시간 이상",
         "hard_disk_capacity": "256GB SSD",
-        "price": [
-            "5,499위안"
-        ]
+        "price": "5,499위안"
     },
     {
         "brand": "델",
         "computer_type": "데스크톱",
         "usage": "사무용",
         "memory_capacity": "8GB",
-        "screen_size": [
-            "20-21.5인치"
-        ],
+        "screen_size": "20-21.5인치",
         "cpu": "인텔 코어 i3",
         "pricerange": "5,000 미만",
         "series": "델 보스트로 시리즈",
@@ -407,22 +347,16 @@
         "gpu_model": "기타",
         "features": "해당사항 없음",
         "colour": "해당사항 없음",
-        "standby_time": [
-            "N/A"
-        ],
+        "standby_time": "N/A",
         "hard_disk_capacity": "1TB HDD",
-        "price": [
-            "2,899위안"
-        ]
+        "price": "2,899위안"
     },
     {
         "brand": "델",
         "computer_type": "데스크톱",
         "usage": "사무용",
         "memory_capacity": "8GB",
-        "screen_size": [
-            "23.6인치"
-        ],
+        "screen_size": "23.6인치",
         "cpu": "인텔 코어 i5",
         "pricerange": "5,000 미만",
         "series": "델 인스피론 시리즈",
@@ -435,22 +369,16 @@
         "gpu_model": "기타",
         "features": "해당사항 없음",
         "colour": "해당사항 없음",
-        "standby_time": [
-            "N/A"
-        ],
+        "standby_time": "N/A",
         "hard_disk_capacity": "256GB SSD + 1TB HDD",
-        "price": [
-            "4,899위안"
-        ]
+        "price": "4,899위안"
     },
     {
         "brand": "델",
         "computer_type": "데스크톱",
         "usage": "사무용",
         "memory_capacity": "16GB",
-        "screen_size": [
-            "N/A"
-        ],
+        "screen_size": "N/A",
         "cpu": "인텔 코어 i7",
         "pricerange": "10,000에서 15,000",
         "series": "델 XPS 시리즈",
@@ -458,16 +386,12 @@
         "operating_system": "윈도우 10",
         "game_performance": "열성적인",
         "cpu_model": "인텔 코어 i7-9700",
-        "weight": [
-            "12.17kg"
-        ],
+        "weight": "12.17kg",
         "gpu_category": "개별 그래픽 카드",
         "gpu_model": "RTX2060",
         "features": "해당사항 없음",
         "colour": "해당사항 없음",
-        "standby_time": [
-            "N/A"
-        ],
+        "standby_time": "N/A",
         "hard_disk_capacity": "512GB SSD + 2TB HDD",
         "price": "12,499위안"
     },
@@ -476,9 +400,7 @@
         "computer_type": "데스크톱",
         "usage": "사무용",
         "memory_capacity": "16GB",
-        "screen_size": [
-            "N/A"
-        ],
+        "screen_size": "N/A",
         "cpu": "인텔 코어 i7",
         "pricerange": "5,000에서 10,000",
         "series": "델옵티플렉스",
@@ -491,9 +413,7 @@
         "gpu_model": "Leadtek P2000",
         "features": "해당사항 없음",
         "colour": "해당사항 없음",
-        "standby_time": [
-            "N/A"
-        ],
+        "standby_time": "N/A",
         "hard_disk_capacity": "256GB SSD + 1TB HDD",
         "price": "6,399위안"
     },
@@ -502,9 +422,7 @@
         "computer_type": "데스크톱",
         "usage": "게이밍",
         "memory_capacity": "16GB",
-        "screen_size": [
-            "N/A"
-        ],
+        "screen_size": "N/A",
         "cpu": "인텔 코어 i7",
         "pricerange": "5,000에서 10,000",
         "series": "델 인스피론 시리즈",
@@ -512,16 +430,12 @@
         "operating_system": "윈도우 10",
         "game_performance": "열성적인",
         "cpu_model": "인텔 코어 i7-9700",
-        "weight": [
-            "7.92kg"
-        ],
+        "weight": "7.92kg",
         "gpu_category": "개별 그래픽 카드",
         "gpu_model": "GTX1660Ti",
         "features": "해당사항 없음",
         "colour": "해당사항 없음",
-        "standby_time": [
-            "N/A"
-        ],
+        "standby_time": "N/A",
         "hard_disk_capacity": "512GB SSD",
         "price": "7,999위안"
     },
@@ -543,13 +457,9 @@
         "gpu_model": "GTX1650",
         "features": "백라이트 키보드",
         "colour": "주로 검정색",
-        "standby_time": [
-            "5시간 미만"
-        ],
+        "standby_time": "5시간 미만",
         "hard_disk_capacity": "512GB SSD",
-        "price": [
-            "6,999위안"
-        ]
+        "price": "6,999위안"
     },
     {
         "brand": "HP",
@@ -569,13 +479,9 @@
         "gpu_model": "RTX2060",
         "features": "백라이트 키보드, PCIE SSD, 그리고 이중 하드 드라이브",
         "colour": "주로 검정색",
-        "standby_time": [
-            "5시간 미만"
-        ],
+        "standby_time": "5시간 미만",
         "hard_disk_capacity": "512GB SSD",
-        "price": [
-            "18,099위안"
-        ]
+        "price": "18,099위안"
     },
     {
         "brand": "HP",
@@ -595,22 +501,16 @@
         "gpu_model": "R530",
         "features": "급속 충전",
         "colour": "주로 은색",
-        "standby_time": [
-            "8시간 이상"
-        ],
+        "standby_time": "8시간 이상",
         "hard_disk_capacity": "512GB SSD",
-        "price": [
-            "4,599위안"
-        ]
+        "price": "4,599위안"
     },
     {
         "brand": "HP",
         "computer_type": "노트북",
         "usage": "경량",
         "memory_capacity": "8GB",
-        "screen_size": [
-            "13.3인치"
-        ],
+        "screen_size": "13.3인치",
         "cpu": "인텔 코어 i5",
         "pricerange": "5,000에서 10,000",
         "series": "HP 엔비 시리즈",
@@ -623,9 +523,7 @@
         "gpu_model": "MX250",
         "features": "지문 인식, 급속 충, 전체 두께가 20mm 이하",
         "colour": "주로 은색",
-        "standby_time": [
-            "8시간 이상"
-        ],
+        "standby_time": "8시간 이상",
         "hard_disk_capacity": "512GB SSD",
         "price": "6,699위안"
     },
@@ -647,9 +545,7 @@
         "gpu_model": "MX250",
         "features": "지문 인식, PCIe SSD, 그리고 사용 수명이 긴 배터리",
         "colour": "주로 은색",
-        "standby_time": [
-            "8시간 이상"
-        ],
+        "standby_time": "8시간 이상",
         "hard_disk_capacity": "512GB SSD",
         "price": "5,699위안"
     },
@@ -658,9 +554,7 @@
         "computer_type": "데스크톱",
         "usage": "사무용",
         "memory_capacity": "8GB",
-        "screen_size": [
-            "23-25인치"
-        ],
+        "screen_size": "23-25인치",
         "cpu": "인텔 코어 i5",
         "pricerange": "5,000에서 10,000",
         "series": "HP 잔 시리즈",
@@ -668,29 +562,21 @@
         "operating_system": "윈도우 10",
         "game_performance": "보급형",
         "cpu_model": "인텔 코어 i5-9500",
-        "weight": [
-            "7.51kg"
-        ],
+        "weight": "7.51kg",
         "gpu_category": "개별 그래픽 카드",
         "gpu_model": "AMD Radeon R7 430 2G",
         "features": "해당사항 없음",
         "colour": "해당사항 없음",
-        "standby_time": [
-            "N/A"
-        ],
+        "standby_time": "N/A",
         "hard_disk_capacity": "256GB SSD + 1TB HDD",
-        "price": [
-            "5,499위안"
-        ]
+        "price": "5,499위안"
     },
     {
         "brand": "HP",
         "computer_type": "데스크톱",
         "usage": "게이밍",
         "memory_capacity": "8GB",
-        "screen_size": [
-            "N/A"
-        ],
+        "screen_size": "N/A",
         "cpu": "인텔 코어 i7",
         "pricerange": "5,000에서 10,000",
         "series": "HP 오멘 시리즈",
@@ -698,29 +584,21 @@
         "operating_system": "윈도우 10",
         "game_performance": "열성적인",
         "cpu_model": "인텔 코어 i7-9700",
-        "weight": [
-            "7.38kg"
-        ],
+        "weight": "7.38kg",
         "gpu_category": "개별 그래픽 카드",
         "gpu_model": "GTX1660",
         "features": "해당사항 없음",
         "colour": "해당사항 없음",
-        "standby_time": [
-            "N/A"
-        ],
+        "standby_time": "N/A",
         "hard_disk_capacity": "256GB SSD + 1TB HDD",
-        "price": [
-            "6,199위안"
-        ]
+        "price": "6,199위안"
     },
     {
         "brand": "HP",
         "computer_type": "데스크톱",
         "usage": "사무용",
         "memory_capacity": "8GB",
-        "screen_size": [
-            "20-21.5인치"
-        ],
+        "screen_size": "20-21.5인치",
         "cpu": "인텔 코어 i3",
         "pricerange": "5,000 미만",
         "series": "HP 슬림라인",
@@ -733,22 +611,16 @@
         "gpu_model": "기타",
         "features": "해당사항 없음",
         "colour": "해당사항 없음",
-        "standby_time": [
-            "N/A"
-        ],
+        "standby_time": "N/A",
         "hard_disk_capacity": "512GB SSD",
-        "price": [
-            "3,599위안"
-        ]
+        "price": "3,599위안"
     },
     {
         "brand": "HP",
         "computer_type": "데스크톱",
         "usage": "사무용",
         "memory_capacity": "8GB",
-        "screen_size": [
-            "20-21.5인치"
-        ],
+        "screen_size": "20-21.5인치",
         "cpu": "인텔 코어 i3",
         "pricerange": "5,000 미만",
         "series": "HP 잔 시리즈",
@@ -756,29 +628,21 @@
         "operating_system": "윈도우 10",
         "game_performance": "보급형",
         "cpu_model": "인텔 코어 i3-9100",
-        "weight": [
-            "6.06kg"
-        ],
+        "weight": "6.06kg",
         "gpu_category": "내장 그래픽 카드",
         "gpu_model": "기타",
         "features": "해당사항 없음",
         "colour": "해당사항 없음",
-        "standby_time": [
-            "N/A"
-        ],
+        "standby_time": "N/A",
         "hard_disk_capacity": "1TB HDD",
-        "price": [
-            "3,499위안"
-        ]
+        "price": "3,499위안"
     },
     {
         "brand": "HP",
         "computer_type": "데스크톱",
         "usage": "게이밍",
         "memory_capacity": "16GB",
-        "screen_size": [
-            "N/A"
-        ],
+        "screen_size": "N/A",
         "cpu": "인텔 코어 i9",
         "pricerange": "15,000 에서 20,000",
         "series": "HP 오멘 시리즈",
@@ -786,20 +650,14 @@
         "operating_system": "윈도우 10",
         "game_performance": "열성적인",
         "cpu_model": "인텔 코어 i9-9900K",
-        "weight": [
-            "13.67kg"
-        ],
+        "weight": "13.67kg",
         "gpu_category": "개별 그래픽 카드",
         "gpu_model": "RTX2080Ti",
         "features": "수냉, HyperX Fury 메모리",
         "colour": "해당사항 없음",
-        "standby_time": [
-            "N/A"
-        ],
+        "standby_time": "N/A",
         "hard_disk_capacity": "512GB SSD + 2TB HDD",
-        "price": [
-            "19,999위안"
-        ]
+        "price": "19,999위안"
     },
     {
         "brand": "에이서",
@@ -819,13 +677,9 @@
         "gpu_model": "MX250",
         "features": "PCIe SSD",
         "colour": "주로 은색",
-        "standby_time": [
-            "9시간 이상"
-        ],
+        "standby_time": "9시간 이상",
         "hard_disk_capacity": "512GB SSD",
-        "price": [
-            "4,088위안"
-        ]
+        "price": "4,088위안"
     },
     {
         "brand": "에이서",
@@ -891,9 +745,7 @@
         "colour": "주로 검정색",
         "standby_time": "5-8시간",
         "hard_disk_capacity": "512GB SSD",
-        "price": [
-            "5,949위안"
-        ]
+        "price": "5,949위안"
     },
     {
         "brand": "에이서",
@@ -922,9 +774,7 @@
         "computer_type": "데스크톱",
         "usage": "사무용",
         "memory_capacity": "8GB",
-        "screen_size": [
-            "21.5인치"
-        ],
+        "screen_size": "21.5인치",
         "cpu": "인텔 코어 i5",
         "pricerange": "5,000 미만",
         "series": "에이서 베리톤 시리즈",
@@ -932,29 +782,21 @@
         "operating_system": "윈도우 10",
         "game_performance": "보급형",
         "cpu_model": "인텔 코어 i5-9400",
-        "weight": [
-            "6.62kg"
-        ],
+        "weight": "6.62kg",
         "gpu_category": "내장 그래픽 카드",
         "gpu_model": "기타",
         "features": "해당사항 없음",
         "colour": "해당사항 없음",
-        "standby_time": [
-            "N/A"
-        ],
+        "standby_time": "N/A",
         "hard_disk_capacity": "1TB HDD",
-        "price": [
-            "3,499위안"
-        ]
+        "price": "3,499위안"
     },
     {
         "brand": "에이서",
         "computer_type": "데스크톱",
         "usage": "게이밍",
         "memory_capacity": "8GB",
-        "screen_size": [
-            "N/A"
-        ],
+        "screen_size": "N/A",
         "cpu": "인텔 코어 i7",
         "pricerange": "5,000에서 10,000",
         "series": "에이서 섀도우 나이트 시리즈",
@@ -962,16 +804,12 @@
         "operating_system": "윈도우 10",
         "game_performance": "열성적인",
         "cpu_model": "인텔 코어 i7-9700",
-        "weight": [
-            "7.98kg"
-        ],
+        "weight": "7.98kg",
         "gpu_category": "개별 그래픽 카드",
         "gpu_model": "GTX1660Ti",
         "features": "해당사항 없음",
         "colour": "해당사항 없음",
-        "standby_time": [
-            "N/A"
-        ],
+        "standby_time": "N/A",
         "hard_disk_capacity": "256GB SSD + 1TB HDD",
         "price": "6,086위안"
     },
@@ -980,9 +818,7 @@
         "computer_type": "데스크톱",
         "usage": "게이밍",
         "memory_capacity": "16GB",
-        "screen_size": [
-            "N/A"
-        ],
+        "screen_size": "N/A",
         "cpu": "인텔 코어 i7",
         "pricerange": "15,000 에서 20,000",
         "series": "에이서 프레데터 시리즈",
@@ -990,29 +826,21 @@
         "operating_system": "윈도우 10",
         "game_performance": "열성적인",
         "cpu_model": "인텔 코어 i7-9700K",
-        "weight": [
-            "27.2kg"
-        ],
+        "weight": "27.2kg",
         "gpu_category": "개별 그래픽 카드",
         "gpu_model": "RTX2080",
         "features": "해당사항 없음",
         "colour": "해당사항 없음",
-        "standby_time": [
-            "N/A"
-        ],
+        "standby_time": "N/A",
         "hard_disk_capacity": "512GB SSD + 2TB HDD",
-        "price": [
-            "19,999위안"
-        ]
+        "price": "19,999위안"
     },
     {
         "brand": "에이서",
         "computer_type": "데스크톱",
         "usage": "사무용",
         "memory_capacity": "8GB",
-        "screen_size": [
-            "20-21.5인치"
-        ],
+        "screen_size": "20-21.5인치",
         "cpu": "인텔 코어 i5",
         "pricerange": "5,000 미만",
         "series": "에이서 베리톤 시리즈",
@@ -1020,31 +848,21 @@
         "operating_system": "윈도우 10",
         "game_performance": "보급형",
         "cpu_model": "인텔 코어 i5-9400",
-        "weight": [
-            "6.74kg"
-        ],
+        "weight": "6.74kg",
         "gpu_category": "개별 그래픽 카드",
         "gpu_model": "GT730",
         "features": "해당사항 없음",
         "colour": "해당사항 없음",
-        "standby_time": [
-            "N/A"
-        ],
+        "standby_time": "N/A",
         "hard_disk_capacity": "256GB SSD + 1TB HDD",
-        "price": [
-            "4,499위안"
-        ]
+        "price": "4,499위안"
     },
     {
         "brand": "에이서",
         "computer_type": "데스크톱",
         "usage": "사무용",
-        "memory_capacity": [
-            "4GB"
-        ],
-        "screen_size": [
-            "N/A"
-        ],
+        "memory_capacity": "4GB",
+        "screen_size": "N/A",
         "cpu": "인텔 코어 i5",
         "pricerange": "5,000 미만",
         "series": "에이서 베리톤 B 시리즈",
@@ -1052,31 +870,21 @@
         "operating_system": "윈도우 10",
         "game_performance": "보급형",
         "cpu_model": "인텔 코어 i5-7400",
-        "weight": [
-            "6.56kg"
-        ],
+        "weight": "6.56kg",
         "gpu_category": "내장 그래픽 카드",
         "gpu_model": "기타",
         "features": "해당사항 없음",
         "colour": "해당사항 없음",
-        "standby_time": [
-            "N/A"
-        ],
-        "hard_disk_capacity": [
-            "128GB SSD + 1TB HDD"
-        ],
-        "price": [
-            "3,899위안"
-        ]
+        "standby_time": "N/A",
+        "hard_disk_capacity": "128GB SSD + 1TB HDD",
+        "price": "3,899위안"
     },
     {
         "brand": "애플",
         "computer_type": "노트북",
         "usage": "경량",
         "memory_capacity": "8GB",
-        "screen_size": [
-            "13.3인치"
-        ],
+        "screen_size": "13.3인치",
         "cpu": "인텔 코어 i5",
         "pricerange": "10,000에서 15,000",
         "series": "맥북 프로 시리즈",
@@ -1089,22 +897,16 @@
         "gpu_model": "기타",
         "features": "백라이트 키보드",
         "colour": "주로 회색",
-        "standby_time": [
-            "9시간 이상"
-        ],
+        "standby_time": "9시간 이상",
         "hard_disk_capacity": "256GB SSD",
-        "price": [
-            "10,688위안"
-        ]
+        "price": "10,688위안"
     },
     {
         "brand": "애플",
         "computer_type": "노트북",
         "usage": "경량",
         "memory_capacity": "8GB",
-        "screen_size": [
-            "13.3인치"
-        ],
+        "screen_size": "13.3인치",
         "cpu": "인텔 코어 i5",
         "pricerange": "5,000에서 10,000",
         "series": "맥북 에어",
@@ -1117,24 +919,16 @@
         "gpu_model": "기타",
         "features": "백라이트 키보드",
         "colour": "주로 은색",
-        "standby_time": [
-            "9시간 이상"
-        ],
-        "hard_disk_capacity": [
-            "128GB SSD"
-        ],
-        "price": [
-            "8,278위안"
-        ]
+        "standby_time": "9시간 이상",
+        "hard_disk_capacity": "128GB SSD",
+        "price": "8,278위안"
     },
     {
         "brand": "애플",
         "computer_type": "노트북",
         "usage": "일반",
         "memory_capacity": "16GB",
-        "screen_size": [
-            "16인치"
-        ],
+        "screen_size": "16인치",
         "cpu": "인텔 코어 i9",
         "pricerange": "20,000 초과",
         "series": "맥북 프로 시리즈",
@@ -1142,31 +936,21 @@
         "operating_system": "맥 OS",
         "game_performance": "보급형",
         "cpu_model": "인텔 코어 i9",
-        "weight": [
-            "2kg"
-        ],
+        "weight": "2kg",
         "gpu_category": "내장 그래픽 카드",
         "gpu_model": "기타",
         "features": "지문 인식",
         "colour": "주로 은색",
-        "standby_time": [
-            "9시간 이상"
-        ],
-        "hard_disk_capacity": [
-            "1TB SSD"
-        ],
-        "price": [
-            "20,688위안"
-        ]
+        "standby_time": "9시간 이상",
+        "hard_disk_capacity": "1TB SSD",
+        "price": "20,688위안"
     },
     {
         "brand": "애플",
         "computer_type": "올인원 PC",
         "usage": "사무용",
         "memory_capacity": "8GB",
-        "screen_size": [
-            "20-21.5인치"
-        ],
+        "screen_size": "20-21.5인치",
         "cpu": "인텔 코어 i5",
         "pricerange": "10,000에서 15,000",
         "series": "애플 아이맥 시리즈",
@@ -1174,31 +958,21 @@
         "operating_system": "맥 OS",
         "game_performance": "보급형",
         "cpu_model": "인텔 코어 i5",
-        "weight": [
-            "6.5kg"
-        ],
+        "weight": "6.5kg",
         "gpu_category": "내장 그래픽 카드",
         "gpu_model": "기타",
         "features": "해당사항 없음",
         "colour": "주로 은색",
-        "standby_time": [
-            "N/A"
-        ],
-        "hard_disk_capacity": [
-            "1TB SSD"
-        ],
-        "price": [
-            "10,288위안"
-        ]
+        "standby_time": "N/A",
+        "hard_disk_capacity": "1TB SSD",
+        "price": "10,288위안"
     },
     {
         "brand": "애플",
         "computer_type": "올인원 PC",
         "usage": "사무용",
         "memory_capacity": "8GB",
-        "screen_size": [
-            "27인치"
-        ],
+        "screen_size": "27인치",
         "cpu": "인텔 코어 i5",
         "pricerange": "10,000에서 15,000",
         "series": "애플 아이맥 시리즈",
@@ -1206,22 +980,14 @@
         "operating_system": "맥 OS",
         "game_performance": "보급형",
         "cpu_model": "인텔 코어 i5",
-        "weight": [
-            "9.44kg"
-        ],
+        "weight": "9.44kg",
         "gpu_category": "내장 그래픽 카드",
         "gpu_model": "기타",
         "features": "해당사항 없음",
         "colour": "주로 은색",
-        "standby_time": [
-            "N/A"
-        ],
-        "hard_disk_capacity": [
-            "2TB SSD"
-        ],
-        "price": [
-            "13,688위안"
-        ]
+        "standby_time": "N/A",
+        "hard_disk_capacity": "2TB SSD",
+        "price": "13,688위안"
     },
     {
         "brand": "미",
@@ -1243,9 +1009,7 @@
         "colour": "주로 회색",
         "standby_time": "7-9시간",
         "hard_disk_capacity": "512GB SSD",
-        "price": [
-            "5,129위안"
-        ]
+        "price": "5,129위안"
     },
     {
         "brand": "미",
@@ -1260,20 +1024,14 @@
         "operating_system": "윈도우 10",
         "game_performance": "열성적인",
         "cpu_model": "인텔 코어 i7-9750H",
-        "weight": [
-            "3.5kg"
-        ],
+        "weight": "3.5kg",
         "gpu_category": "개별 그래픽 카드",
         "gpu_model": "RTX2060",
         "features": "백라이트 키보드",
         "colour": "주로 검정색",
-        "standby_time": [
-            "2-5시간"
-        ],
+        "standby_time": "2-5시간",
         "hard_disk_capacity": "512GB SSD",
-        "price": [
-            "10,299위안"
-        ]
+        "price": "10,299위안"
     },
     {
         "brand": "미",
@@ -1324,9 +1082,7 @@
         "computer_type": "노트북",
         "usage": "경량",
         "memory_capacity": "8GB",
-        "screen_size": [
-            "13.3인치"
-        ],
+        "screen_size": "13.3인치",
         "cpu": "인텔 코어 i5",
         "pricerange": "5,000에서 10,000",
         "series": "샤오미 에어 시리즈",
@@ -1339,9 +1095,7 @@
         "gpu_model": "MX250",
         "features": "백라이트 키보드, 급속 충전,  그리고 C타입 포트",
         "colour": "주로 은색",
-        "standby_time": [
-            "9시간 이상"
-        ],
+        "standby_time": "9시간 이상",
         "hard_disk_capacity": "512GB SSD",
         "price": "5,699위안"
     }

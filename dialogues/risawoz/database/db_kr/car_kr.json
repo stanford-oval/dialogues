@@ -3,15 +3,11 @@
         "name": "폴로 오토매틱 파노라마 버전",
         "classification": "해치백",
         "size": "소형",
-        "number_of_seats": [
-            "5"
-        ],
+        "number_of_seats": "5",
         "brand": "상하이 폭스바겐",
         "hybrid": "가솔린",
         "4wd": "이륜",
-        "price": [
-            "109,900"
-        ],
+        "price": "109,900",
         "series": "폴로",
         "power_level": "평범한",
         "parking_assist_system": "없음",
@@ -24,15 +20,11 @@
         "name": "산타나 1.5L 자동 컴포트 버전",
         "classification": "노치백",
         "size": "소형 또는 중형",
-        "number_of_seats": [
-            "5"
-        ],
+        "number_of_seats": "5",
         "brand": "상하이 폭스바겐",
         "hybrid": "가솔린",
         "4wd": "이륜",
-        "price": [
-            "111,800"
-        ],
+        "price": "111,800",
         "series": "산타나",
         "power_level": "평범한",
         "parking_assist_system": "없음",
@@ -45,15 +37,11 @@
         "name": "1.5L 가솔린 엔진이 탑재된 폭스바겐 T-크로스",
         "classification": "SUV",
         "size": "소형",
-        "number_of_seats": [
-            "5"
-        ],
+        "number_of_seats": "5",
         "brand": "상하이 폭스바겐",
         "hybrid": "가솔린",
         "4wd": "이륜",
-        "price": [
-            "127,900"
-        ],
+        "price": "127,900",
         "series": "폭스바겐 T-크로스",
         "power_level": "평범한",
         "parking_assist_system": "없음",
@@ -66,9 +54,7 @@
         "name": "보라 1.5L 자동 컴포트 에디션",
         "classification": "노치백",
         "size": "소형 또는 중형",
-        "number_of_seats": [
-            "5"
-        ],
+        "number_of_seats": "5",
         "brand": "FAW-폭스바겐",
         "hybrid": "가솔린",
         "4wd": "이륜",
@@ -85,15 +71,11 @@
         "name": "C-트랙 웨일링 1.5L 자동 컴포트 타입",
         "classification": "MPV",
         "size": "소형 또는 중형",
-        "number_of_seats": [
-            "5"
-        ],
+        "number_of_seats": "5",
         "brand": "FAW-폭스바겐",
         "hybrid": "가솔린",
         "4wd": "이륜",
-        "price": [
-            "135,700"
-        ],
+        "price": "135,700",
         "series": "C-트랙 웨일링",
         "power_level": "평범한",
         "parking_assist_system": "있음",
@@ -106,9 +88,7 @@
         "name": "FAW-폭스바겐 타쿠아 DSG 유에",
         "classification": "SUV",
         "size": "소형",
-        "number_of_seats": [
-            "5"
-        ],
+        "number_of_seats": "5",
         "brand": "FAW-폭스바겐",
         "hybrid": "가솔린",
         "4wd": "이륜",
@@ -125,9 +105,7 @@
         "name": "라비다 280TSI DSG 컴포트 에디션",
         "classification": "노치백",
         "size": "소형 또는 중형",
-        "number_of_seats": [
-            "5"
-        ],
+        "number_of_seats": "5",
         "brand": "상하이 폭스바겐",
         "hybrid": "가솔린",
         "4wd": "이륜",
@@ -144,15 +122,11 @@
         "name": "골프 200TSI DSG 컴포터블 버전",
         "classification": "해치백",
         "size": "소형 또는 중형",
-        "number_of_seats": [
-            "5"
-        ],
+        "number_of_seats": "5",
         "brand": "FAW-폭스바겐",
         "hybrid": "가솔린",
         "4wd": "이륜",
-        "price": [
-            "147,200"
-        ],
+        "price": "147,200",
         "series": "폭스바겐 골프",
         "power_level": "평범한",
         "parking_assist_system": "없음",
@@ -165,9 +139,7 @@
         "name": "폭스바겐 T-크로스 280TSI DSG 컴포트 에디션",
         "classification": "SUV",
         "size": "소형",
-        "number_of_seats": [
-            "5"
-        ],
+        "number_of_seats": "5",
         "brand": "상하이 폭스바겐",
         "hybrid": "가솔린",
         "4wd": "이륜",
@@ -184,15 +156,11 @@
         "name": "보라 280TSI DSG 엘리트 에디션",
         "classification": "노치백",
         "size": "소형 또는 중형",
-        "number_of_seats": [
-            "5"
-        ],
+        "number_of_seats": "5",
         "brand": "FAW-폭스바겐",
         "hybrid": "가솔린",
         "4wd": "이륜",
-        "price": [
-            "149,000"
-        ],
+        "price": "149,000",
         "series": "보라",
         "power_level": "비교적 강한",
         "parking_assist_system": "없음",
@@ -205,15 +173,11 @@
         "name": "사지타 200TSI DSG 컴포트 에디션",
         "classification": "노치백",
         "size": "소형 또는 중형",
-        "number_of_seats": [
-            "5"
-        ],
+        "number_of_seats": "5",
         "brand": "FAW-폭스바겐",
         "hybrid": "가솔린",
         "4wd": "이륜",
-        "price": [
-            "149,900"
-        ],
+        "price": "149,900",
         "series": "사지타",
         "power_level": "평범한",
         "parking_assist_system": "없음",
@@ -226,9 +190,7 @@
         "name": "FAW-폭스바겐 타쿠아 280TSI DSG R라인",
         "classification": "SUV",
         "size": "소형",
-        "number_of_seats": [
-            "5"
-        ],
+        "number_of_seats": "5",
         "brand": "FAW-폭스바겐",
         "hybrid": "가솔린",
         "4wd": "이륜",
@@ -245,9 +207,7 @@
         "name": "티록 230TSI DSG 어그레시브 에디션 이륜구동",
         "classification": "SUV",
         "size": "소형 또는 중형",
-        "number_of_seats": [
-            "5"
-        ],
+        "number_of_seats": "5",
         "brand": "FAW-폭스바겐",
         "hybrid": "가솔린",
         "4wd": "이륜",
@@ -264,9 +224,7 @@
         "name": "라만도 230TSI DSG 패션 에디션",
         "classification": "노치백",
         "size": "소형 또는 중형",
-        "number_of_seats": [
-            "5"
-        ],
+        "number_of_seats": "5",
         "brand": "상하이 폭스바겐",
         "hybrid": "가솔린",
         "4wd": "이륜",
@@ -283,15 +241,11 @@
         "name": "폭스바겐 골프 280TSI DSG 럭셔리 에디션",
         "classification": "해치백",
         "size": "소형 또는 중형",
-        "number_of_seats": [
-            "5"
-        ],
+        "number_of_seats": "5",
         "brand": "FAW-폭스바겐",
         "hybrid": "가솔린",
         "4wd": "이륜",
-        "price": [
-            "165,200"
-        ],
+        "price": "165,200",
         "series": "폭스바겐 골프",
         "power_level": "비교적 강한",
         "parking_assist_system": "없음",
@@ -304,15 +258,11 @@
         "name": "사지타 280TSI DSG 럭셔리 에디션",
         "classification": "노치백",
         "size": "소형 또는 중형",
-        "number_of_seats": [
-            "5"
-        ],
+        "number_of_seats": "5",
         "brand": "FAW-폭스바겐",
         "hybrid": "가솔린",
         "4wd": "이륜",
-        "price": [
-            "175,900"
-        ],
+        "price": "175,900",
         "series": "사지타",
         "power_level": "비교적 강한",
         "parking_assist_system": "있음",
@@ -325,15 +275,11 @@
         "name": "폭스바겐 투란 L 280TSI 6인승",
         "classification": "MPV",
         "size": "소형 또는 중형",
-        "number_of_seats": [
-            "7"
-        ],
+        "number_of_seats": "7",
         "brand": "상하이 폭스바겐",
         "hybrid": "가솔린",
         "4wd": "이륜",
-        "price": [
-            "177,800"
-        ],
+        "price": "177,800",
         "series": "폭스바겐 투란 L",
         "power_level": "비교적 강한",
         "parking_assist_system": "있음",
@@ -350,9 +296,7 @@
         "brand": "수입 폭스바겐",
         "hybrid": "가솔린",
         "4wd": "이륜",
-        "price": [
-            "178,800"
-        ],
+        "price": "178,800",
         "series": "폭스바겐 비틀",
         "power_level": "평범한",
         "parking_assist_system": "없음",
@@ -365,9 +309,7 @@
         "name": "라만도 280TSI DSG 컴포트 에디션",
         "classification": "노치백",
         "size": "소형 또는 중형",
-        "number_of_seats": [
-            "5"
-        ],
+        "number_of_seats": "5",
         "brand": "상하이 폭스바겐",
         "hybrid": "가솔린",
         "4wd": "이륜",
@@ -384,15 +326,11 @@
         "name": "타루 280TSI 컴포트 에디션 이륜구동",
         "classification": "SUV",
         "size": "소형 또는 중형",
-        "number_of_seats": [
-            "5"
-        ],
+        "number_of_seats": "5",
         "brand": "상하이 폭스바겐",
         "hybrid": "가솔린",
         "4wd": "이륜",
-        "price": [
-            "182,800"
-        ],
+        "price": "182,800",
         "series": "타루",
         "power_level": "평범한",
         "parking_assist_system": "있음",
@@ -405,9 +343,7 @@
         "name": "파사트 280TSI 비즈니스 라인",
         "classification": "노치백",
         "size": "중형",
-        "number_of_seats": [
-            "5"
-        ],
+        "number_of_seats": "5",
         "brand": "상하이 폭스바겐",
         "hybrid": "가솔린",
         "4wd": "이륜",
@@ -424,15 +360,11 @@
         "name": "FAW-폭스바겐 마고탄 280TSI DSG 컴포터 버전",
         "classification": "노치백",
         "size": "중형",
-        "number_of_seats": [
-            "5"
-        ],
+        "number_of_seats": "5",
         "brand": "FAW-폭스바겐",
         "hybrid": "가솔린",
         "4wd": "이륜",
-        "price": [
-            "186,900"
-        ],
+        "price": "186,900",
         "series": "FAW-폭스바겐 마고탄",
         "power_level": "평범한",
         "parking_assist_system": "있음",
@@ -445,9 +377,7 @@
         "name": "테이론 330TSI 컴포트 이륜구동",
         "classification": "SUV",
         "size": "중형",
-        "number_of_seats": [
-            "5"
-        ],
+        "number_of_seats": "5",
         "brand": "FAW-폭스바겐",
         "hybrid": "가솔린",
         "4wd": "이륜",
@@ -464,9 +394,7 @@
         "name": "티록 280TSI DSG 럭셔리 사륜구동",
         "classification": "SUV",
         "size": "소형 또는 중형",
-        "number_of_seats": [
-            "5"
-        ],
+        "number_of_seats": "5",
         "brand": "FAW-폭스바겐",
         "hybrid": "가솔린",
         "4wd": "사륜",
@@ -483,15 +411,11 @@
         "name": "타루 330TSI 사륜 럭셔리 버전",
         "classification": "SUV",
         "size": "소형 또는 중형",
-        "number_of_seats": [
-            "5"
-        ],
+        "number_of_seats": "5",
         "brand": "상하이 폭스바겐",
         "hybrid": "가솔린",
         "4wd": "사륜",
-        "price": [
-            "208,800"
-        ],
+        "price": "208,800",
         "series": "타루",
         "power_level": "비교적 강한",
         "parking_assist_system": "있음",
@@ -504,15 +428,11 @@
         "name": "골프 1.8TSI 트래블 버전",
         "classification": "MPV",
         "size": "소형 또는 중형",
-        "number_of_seats": [
-            "5"
-        ],
+        "number_of_seats": "5",
         "brand": "수입 폭스바겐",
         "hybrid": "가솔린",
         "4wd": "이륜",
-        "price": [
-            "209,800"
-        ],
+        "price": "209,800",
         "series": "폭스바겐 골프",
         "power_level": "비교적 강한",
         "parking_assist_system": "있음",
@@ -529,9 +449,7 @@
         "brand": "수입 폭스바겐",
         "hybrid": "가솔린",
         "4wd": "이륜",
-        "price": [
-            "221,800"
-        ],
+        "price": "221,800",
         "series": "폭스바겐 비틀",
         "power_level": "비교적 강한",
         "parking_assist_system": "있음",
@@ -544,15 +462,11 @@
         "name": "티구안-L 280TSI 자동 이륜 파라노믹 컴포터블 버전",
         "classification": "SUV",
         "size": "중형",
-        "number_of_seats": [
-            "5"
-        ],
+        "number_of_seats": "5",
         "brand": "상하이 폭스바겐",
         "hybrid": "가솔린",
         "4wd": "이륜",
-        "price": [
-            "221,800"
-        ],
+        "price": "221,800",
         "series": "티구안-L",
         "power_level": "평범한",
         "parking_assist_system": "있음",
@@ -565,15 +479,11 @@
         "name": "FAW-복스바겐 마고탄 330TSI DSG 럭셔리 버전",
         "classification": "노치백",
         "size": "중형",
-        "number_of_seats": [
-            "5"
-        ],
+        "number_of_seats": "5",
         "brand": "FAW-폭스바겐",
         "hybrid": "가솔린",
         "4wd": "이륜",
-        "price": [
-            "233,900"
-        ],
+        "price": "233,900",
         "series": "FAW-폭스바겐 마고탄",
         "power_level": "비교적 강한",
         "parking_assist_system": "있음",
@@ -586,15 +496,11 @@
         "name": "SAIC 폭스바겐 파사트 330TSI 럭셔리 버전",
         "classification": "노치백",
         "size": "중형",
-        "number_of_seats": [
-            "5"
-        ],
+        "number_of_seats": "5",
         "brand": "상하이 폭스바겐",
         "hybrid": "가솔린",
         "4wd": "이륜",
-        "price": [
-            "237,900"
-        ],
+        "price": "237,900",
         "series": "파사트",
         "power_level": "비교적 강한",
         "parking_assist_system": "있음",
@@ -607,15 +513,11 @@
         "name": "폭스바겐 골프 바리안트 280TSI 컴포트 이륜구동",
         "classification": "MPV",
         "size": "중형",
-        "number_of_seats": [
-            "5"
-        ],
+        "number_of_seats": "5",
         "brand": "수입 폭스바겐",
         "hybrid": "가솔린",
         "4wd": "이륜",
-        "price": [
-            "243,800"
-        ],
+        "price": "243,800",
         "series": "폭스바겐 골프 바리안트",
         "power_level": "평범한",
         "parking_assist_system": "없음",
@@ -628,9 +530,7 @@
         "name": "상하이 폭스바겐 파사트 430PHEV 하이브리드 럭셔리 버전",
         "classification": "노치백",
         "size": "중형",
-        "number_of_seats": [
-            "5"
-        ],
+        "number_of_seats": "5",
         "brand": "상하이 폭스바겐",
         "hybrid": "PHEV",
         "4wd": "이륜",
@@ -647,15 +547,11 @@
         "name": "티구안-L 330 TSI 자동 이륜 인텔리전트 럭셔리 버전",
         "classification": "SUV",
         "size": "중형",
-        "number_of_seats": [
-            "5"
-        ],
+        "number_of_seats": "5",
         "brand": "상하이 폭스바겐",
         "hybrid": "가솔린",
         "4wd": "이륜",
-        "price": [
-            "253,800"
-        ],
+        "price": "253,800",
         "series": "티구안-L",
         "power_level": "비교적 강한",
         "parking_assist_system": "있음",
@@ -668,15 +564,11 @@
         "name": "FAW-폭스바겐 CC 330TSI 메이 얀 에디션",
         "classification": "노치백",
         "size": "중형",
-        "number_of_seats": [
-            "5"
-        ],
+        "number_of_seats": "5",
         "brand": "FAW-폭스바겐",
         "hybrid": "가솔린",
         "4wd": "이륜",
-        "price": [
-            "262,800"
-        ],
+        "price": "262,800",
         "series": "FAW-폭스바겐 CC",
         "power_level": "평범한",
         "parking_assist_system": "있음",
@@ -689,9 +581,7 @@
         "name": "마고탄 GTE 럭셔리 에디션",
         "classification": "노치백",
         "size": "중형",
-        "number_of_seats": [
-            "5"
-        ],
+        "number_of_seats": "5",
         "brand": "FAW-폭스바겐",
         "hybrid": "PHEV",
         "4wd": "이륜",
@@ -708,9 +598,7 @@
         "name": "FAW-폭스바겐 마고탄 380TSI DSG 럭셔리 에디션",
         "classification": "노치백",
         "size": "중형",
-        "number_of_seats": [
-            "5"
-        ],
+        "number_of_seats": "5",
         "brand": "FAW-폭스바겐",
         "hybrid": "가솔린",
         "4wd": "이륜",
@@ -727,15 +615,11 @@
         "name": "샤란 380TSI 컴포트",
         "classification": "MPV",
         "size": "중형 또는 대형",
-        "number_of_seats": [
-            "7"
-        ],
+        "number_of_seats": "7",
         "brand": "수입 폭스바겐",
         "hybrid": "가솔린",
         "4wd": "이륜",
-        "price": [
-            "274,800"
-        ],
+        "price": "274,800",
         "series": "샤란",
         "power_level": "평범한",
         "parking_assist_system": "있음",
@@ -748,9 +632,7 @@
         "name": "테이론 380TSI 사륜구동 럭셔리 버전",
         "classification": "SUV",
         "size": "중형",
-        "number_of_seats": [
-            "5"
-        ],
+        "number_of_seats": "5",
         "brand": "FAW-폭스바겐",
         "hybrid": "가솔린",
         "4wd": "사륜",
@@ -767,15 +649,11 @@
         "name": "테라몬트 330TSI 컴포트 에디션 이륜구동",
         "classification": "SUV",
         "size": "중형 또는 대형",
-        "number_of_seats": [
-            "7"
-        ],
+        "number_of_seats": "7",
         "brand": "상하이 폭스바겐",
         "hybrid": "가솔린",
         "4wd": "이륜",
-        "price": [
-            "300,900"
-        ],
+        "price": "300,900",
         "series": "테라몬트",
         "power_level": "평범한",
         "parking_assist_system": "있음",
@@ -788,9 +666,7 @@
         "name": "폭스바겐 골프 바리안트 GTE",
         "classification": "MPV",
         "size": "중형",
-        "number_of_seats": [
-            "5"
-        ],
+        "number_of_seats": "5",
         "brand": "수입 폭스바겐",
         "hybrid": "PHEV",
         "4wd": "이륜",
@@ -807,9 +683,7 @@
         "name": "FAW-폭스바겐 CC 380TSI 야오얀 에디션",
         "classification": "노치백",
         "size": "중형",
-        "number_of_seats": [
-            "5"
-        ],
+        "number_of_seats": "5",
         "brand": "FAW-폭스바겐",
         "hybrid": "가솔린",
         "4wd": "이륜",
@@ -826,9 +700,7 @@
         "name": "티구안-L 380TSI R라인 사륜구동 얼티밋 에디션",
         "classification": "SUV",
         "size": "중형",
-        "number_of_seats": [
-            "7"
-        ],
+        "number_of_seats": "7",
         "brand": "상하이 폭스바겐",
         "hybrid": "가솔린",
         "4wd": "사륜",
@@ -845,9 +717,7 @@
         "name": "티구안-L 430PHEV 하이브리드 파워 럭셔리 버전",
         "classification": "SUV",
         "size": "중형",
-        "number_of_seats": [
-            "5"
-        ],
+        "number_of_seats": "5",
         "brand": "상하이 폭스바겐",
         "hybrid": "PHEV",
         "4wd": "이륜",
@@ -864,9 +734,7 @@
         "name": "테라몬트 X 380TSI 사륜 럭셔리",
         "classification": "SUV",
         "size": "중형 또는 대형",
-        "number_of_seats": [
-            "5"
-        ],
+        "number_of_seats": "5",
         "brand": "상하이 폭스바겐",
         "hybrid": "가솔린",
         "4wd": "사륜",
@@ -883,15 +751,11 @@
         "name": "테라몬트 380TSI 사륜 럭셔리",
         "classification": "SUV",
         "size": "중형 또는 대형",
-        "number_of_seats": [
-            "7"
-        ],
+        "number_of_seats": "7",
         "brand": "상하이 폭스바겐",
         "hybrid": "가솔린",
         "4wd": "사륜",
-        "price": [
-            "359,900"
-        ],
+        "price": "359,900",
         "series": "테라몬트",
         "power_level": "비교적 강한",
         "parking_assist_system": "있음",
@@ -904,9 +768,7 @@
         "name": "카라벨 2.0TSI 컴포트라인 사륜구동",
         "classification": "MPV",
         "size": "중형 또는 대형",
-        "number_of_seats": [
-            "7"
-        ],
+        "number_of_seats": "7",
         "brand": "수입 폭스바겐",
         "hybrid": "가솔린",
         "4wd": "사륜",
@@ -923,15 +785,11 @@
         "name": "폭스바겐 골프 파리안트 380TSI 사륜 버전",
         "classification": "MPV",
         "size": "중형",
-        "number_of_seats": [
-            "5"
-        ],
+        "number_of_seats": "5",
         "brand": "수입 폭스바겐",
         "hybrid": "가솔린",
         "4wd": "사륜",
-        "price": [
-            "392,800"
-        ],
+        "price": "392,800",
         "series": "폭스바겐 골프 바리안트",
         "power_level": "비교적 강한",
         "parking_assist_system": "있음",
@@ -944,15 +802,11 @@
         "name": "이륜구동 피데온 380TSI 럭셔리",
         "classification": "노치백",
         "size": "중형 또는 대형",
-        "number_of_seats": [
-            "5"
-        ],
+        "number_of_seats": "5",
         "brand": "상하이 폭스바겐",
         "hybrid": "가솔린",
         "4wd": "이륜",
-        "price": [
-            "399,000"
-        ],
+        "price": "399,000",
         "series": "피데온",
         "power_level": "비교적 강한",
         "parking_assist_system": "있음",
@@ -965,15 +819,11 @@
         "name": "폭스바겐 멀티밴 2.0TSI 이륜 럭셔리",
         "classification": "MPV",
         "size": "중형 또는 대형",
-        "number_of_seats": [
-            "7"
-        ],
+        "number_of_seats": "7",
         "brand": "수입 폭스바겐",
         "hybrid": "가솔린",
         "4wd": "이륜",
-        "price": [
-            "428,000"
-        ],
+        "price": "428,000",
         "series": "폭스바겐 멀티밴",
         "power_level": "평범한",
         "parking_assist_system": "있음",
@@ -986,15 +836,11 @@
         "name": "테라몬트 X 530 V6 사륜 디럭스 버전",
         "classification": "SUV",
         "size": "중형 또는 대형",
-        "number_of_seats": [
-            "5"
-        ],
+        "number_of_seats": "5",
         "brand": "상하이 폭스바겐",
         "hybrid": "가솔린",
         "4wd": "사륜",
-        "price": [
-            "428,900"
-        ],
+        "price": "428,900",
         "series": "테라몬트 X",
         "power_level": "비교적 강한",
         "parking_assist_system": "있음",
@@ -1007,9 +853,7 @@
         "name": "투아렉 2.0TSI 뤼이 버전",
         "classification": "SUV",
         "size": "중형 또는 대형",
-        "number_of_seats": [
-            "5"
-        ],
+        "number_of_seats": "5",
         "brand": "수입 폭스바겐",
         "hybrid": "가솔린",
         "4wd": "사륜",
@@ -1026,15 +870,11 @@
         "name": "투아렉 3.0TSI 버전",
         "classification": "SUV",
         "size": "중형 또는 대형",
-        "number_of_seats": [
-            "5"
-        ],
+        "number_of_seats": "5",
         "brand": "수입 폭스바겐",
         "hybrid": "가솔린",
         "4wd": "사륜",
-        "price": [
-            "709,800"
-        ],
+        "price": "709,800",
         "series": "투아렉",
         "power_level": "비교적 강한",
         "parking_assist_system": "있음",

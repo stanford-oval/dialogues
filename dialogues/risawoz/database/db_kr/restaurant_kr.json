@@ -20,12 +20,8 @@
         "metro_station": "없음",
         "per_capita_consumption": "58위안",
         "address": "남부 상업가, 시후 풍경구, 시후 웨스트 로드",
-        "phone_number": [
-            "0512-68210779"
-        ],
-        "score": [
-            "4.8"
-        ],
+        "phone_number": "0512-68210779",
+        "score": "4.8",
         "business_hours": "월요일부터 일요일까지 오전 9시 반부터 오후 11시까지",
         "dishes": "초콜릿 머핀"
     },
@@ -48,13 +44,9 @@
         "cuisine": "빵과 디저트",
         "pricerange": "저렴한",
         "metro_station": "있음",
-        "per_capita_consumption": [
-            "38위안"
-        ],
+        "per_capita_consumption": "38위안",
         "address": "쑤저우시 구수구 관천가 9호",
-        "phone_number": [
-            "0512-67274512"
-        ],
+        "phone_number": "0512-67274512",
         "score": "4.3점",
         "business_hours": "월요일부터 일요일까지 오전 8시 반부터 오후 9시 반까지",
         "dishes": "발효 찹쌀로 만든 스콘"
@@ -91,14 +83,10 @@
         "cuisine": "빵과 디저트",
         "pricerange": "저렴한",
         "metro_station": "없음",
-        "per_capita_consumption": [
-            "23위안"
-        ],
+        "per_capita_consumption": "23위안",
         "address": "서탄허로 3호",
         "phone_number": "0512-63336664",
-        "score": [
-            "4.8"
-        ],
+        "score": "4.8",
         "business_hours": "월요일부터 일요일까지 오터 오후 9시 반까지",
         "dishes": "달걀과 고기가 들어간 월병"
     },
@@ -188,9 +176,7 @@
         "metro_station": "있음",
         "per_capita_consumption": "67위안",
         "address": "동간장로 428호",
-        "phone_number": [
-            "0512-67557020"
-        ],
+        "phone_number": "0512-67557020",
         "score": "4.4점",
         "business_hours": "월요일부터 일요일까지 오전 10시부터 오후 10시까지",
         "dishes": "신장 다판지"
@@ -201,13 +187,9 @@
         "cuisine": "북동부 중국요리",
         "pricerange": "저렴한",
         "metro_station": "없음",
-        "per_capita_consumption": [
-            "29위안"
-        ],
+        "per_capita_consumption": "29위안",
         "address": "쑤저우 대학교 서문 스즈가 1호",
-        "phone_number": [
-            "180-1350-3488"
-        ],
+        "phone_number": "180-1350-3488",
         "score": "4.5점",
         "business_hours": "월요일부터 일요일까지 오전 8시부터 오후 9시까지",
         "dishes": "회과육"
@@ -231,9 +213,7 @@
         "cuisine": "장쑤성-저장성",
         "pricerange": "조금 비싼",
         "metro_station": "없음",
-        "per_capita_consumption": [
-            "176위안"
-        ],
+        "per_capita_consumption": "176위안",
         "address": "리공 코즈웨이 로드 22호",
         "phone_number": "0512-62656999",
         "score": "4.3점",
@@ -288,9 +268,7 @@
         "per_capita_consumption": "127위안",
         "address": "슈야로 318호 세이지 디지털 플라자 4층에 있습니다.",
         "phone_number": "0512-67603337",
-        "score": [
-            "4.8"
-        ],
+        "score": "4.8",
         "business_hours": "월요일부터 일요일까지 오전 9시부터 오전 7시까지",
         "dishes": "토마토탕을 드셔보는 것을 추천드립니다"
     },
@@ -339,14 +317,10 @@
         "cuisine": "한국",
         "pricerange": "조금 비싼",
         "metro_station": "없음",
-        "per_capita_consumption": [
-            "154위안"
-        ],
+        "per_capita_consumption": "154위안",
         "address": "리공디 3기 21호 빌딩",
         "phone_number": "0512-67635689",
-        "score": [
-            "4.8"
-        ],
+        "score": "4.8",
         "business_hours": "월요일부터 일요일까지 오전 11시 반부터 오후 9시까지",
         "dishes": "김치 파이"
     },
@@ -356,9 +330,7 @@
         "cuisine": "패스트푸드",
         "pricerange": "저렴한",
         "metro_station": "없음",
-        "per_capita_consumption": [
-            "24위안"
-        ],
+        "per_capita_consumption": "24위안",
         "address": "호우다이가 9호 쑤저우 스테이지 2층",
         "phone_number": "0512-62811808",
         "score": "4.6점",
@@ -373,9 +345,7 @@
         "metro_station": "있음",
         "per_capita_consumption": "42위안",
         "address": "진산로 47-1호 (무두톈훙몰 B1층 B1001-2호)",
-        "phone_number": [
-            "0512-83989318"
-        ],
+        "phone_number": "0512-83989318",
         "score": "4.5점",
         "business_hours": "월요일부터 일요일까지 오전 10시부터 오후 8시 반까지",
         "dishes": "절인 배추와 고추를 곁들인 삶은 순살 생선"
@@ -386,13 +356,9 @@
         "cuisine": "장쑤성-저장성",
         "pricerange": "적당한",
         "metro_station": "없음",
-        "per_capita_consumption": [
-            "94위안"
-        ],
+        "per_capita_consumption": "94위안",
         "address": "무두 린티안로 55호 파타야 레저 엔터테인먼트 플라자 5번 빌딩",
-        "phone_number": [
-            "0512-66277557"
-        ],
+        "phone_number": "0512-66277557",
         "score": "4.6점",
         "business_hours": "월요일부터 일요일까지 오전 11시부터 오후 1시 반 그리고 오후 5시부터 8시 반까지",
         "dishes": "새콤달콤한 만다린 생선"
@@ -403,16 +369,10 @@
         "cuisine": "북서부",
         "pricerange": "적당한",
         "metro_station": "없음",
-        "per_capita_consumption": [
-            "87위안"
-        ],
+        "per_capita_consumption": "87위안",
         "address": "지우화로 128호 CR 뱅가드 엘리베이터 바로 옆 3층",
-        "phone_number": [
-            "0512-65074650"
-        ],
-        "score": [
-            "4.8"
-        ],
+        "phone_number": "0512-65074650",
+        "score": "4.8",
         "business_hours": "월요일부터 일요일까지 오전 10시부터 오후 10시까지",
         "dishes": "샬롯을 곁들인 양고기 튀김"
     },
@@ -476,9 +436,7 @@
         "metro_station": "없음",
         "per_capita_consumption": "49위안",
         "address": "쉬시 거리와 중시 거리의 교차점 근처",
-        "phone_number": [
-            "0512-66310773"
-        ],
+        "phone_number": "0512-66310773",
         "score": "4.3점",
         "business_hours": "월요일부터 일요일까지 오전 10시 반부터 오후 9시까지",
         "dishes": "익힌 돼지고기 슬라이스"
@@ -515,9 +473,7 @@
         "cuisine": "장쑤성-저장성",
         "pricerange": "저렴한",
         "metro_station": "있음",
-        "per_capita_consumption": [
-            "31위안"
-        ],
+        "per_capita_consumption": "31위안",
         "address": "창장로 211호 이즈미야 백화점 지하 1층",
         "phone_number": "0512-68207978",
         "score": "4.5점",
@@ -530,13 +486,9 @@
         "cuisine": "서양",
         "pricerange": "조금 비싼",
         "metro_station": "없음",
-        "per_capita_consumption": [
-            "179위안"
-        ],
+        "per_capita_consumption": "179위안",
         "address": "시산로 35호 진허국제빌딩 4층",
-        "phone_number": [
-            "0512-66655909"
-        ],
+        "phone_number": "0512-66655909",
         "score": "4.6점",
         "business_hours": "월요일부터 일요일까지 오전 11시부터 자정까지",
         "dishes": "피자"
@@ -562,9 +514,7 @@
         "metro_station": "없음",
         "per_capita_consumption": "65위안",
         "address": "시샨로 215호 우공리두 상업가 1층",
-        "phone_number": [
-            "0512-68788933"
-        ],
+        "phone_number": "0512-68788933",
         "score": "4.4점",
         "business_hours": "월요일부터 일요일까지 오전 9시 반부터 새벽 2시까지",
         "dishes": "해물죽"
@@ -603,9 +553,7 @@
         "metro_station": "없음",
         "per_capita_consumption": "58위안",
         "address": "시외로 19호 이온몰 2층",
-        "phone_number": [
-            "0512-62917283"
-        ],
+        "phone_number": "0512-62917283",
         "score": "4.3점",
         "business_hours": "월요일부터 일요일까지 오전 10시 반부터 오후 10시까지",
         "dishes": "뼈 국물"
@@ -655,13 +603,9 @@
         "cuisine": "장쑤성-저장성",
         "pricerange": "적당한",
         "metro_station": "없음",
-        "per_capita_consumption": [
-            "87위안"
-        ],
+        "per_capita_consumption": "87위안",
         "address": "퉁리 타운 환후서로 318호",
-        "phone_number": [
-            "0512-63339777"
-        ],
+        "phone_number": "0512-63339777",
         "score": "4.5점",
         "business_hours": "월요일부터 일요일까지 오전 10시부터 오후 10시까지",
         "dishes": "타이후 호수의 흰 물고기, 은어와 흰 새우"
@@ -674,9 +618,7 @@
         "metro_station": "없음",
         "per_capita_consumption": "90위안",
         "address": "펜후 경제 개발구 루셴가 1066호",
-        "phone_number": [
-            "0512-63263679"
-        ],
+        "phone_number": "0512-63263679",
         "score": "4.6점",
         "business_hours": "월요일부터 일요일까지 오전 11시부터 오후 10시까지",
         "dishes": "연어 초밥"
@@ -687,9 +629,7 @@
         "cuisine": "장쑤성-저장성",
         "pricerange": "적당한",
         "metro_station": "없음",
-        "per_capita_consumption": [
-            "98위안"
-        ],
+        "per_capita_consumption": "98위안",
         "address": "저우좡 마을 종시가 110호 명승지에서 북쪽으로 10미터 떨어진 곳",
         "phone_number": "138-1289-9961",
         "score": "4.5점",
@@ -702,16 +642,10 @@
         "cuisine": "장쑤성-저장성",
         "pricerange": "저렴한",
         "metro_station": "없음",
-        "per_capita_consumption": [
-            "60위안"
-        ],
+        "per_capita_consumption": "60위안",
         "address": "루웨이당로 명승지 주차장 근처",
-        "phone_number": [
-            "0512-52507977"
-        ],
-        "score": [
-            "4.8"
-        ],
+        "phone_number": "0512-52507977",
+        "score": "4.8",
         "business_hours": "월요일부터 일요일까지 오전 8시부터 오후 8시까지",
         "dishes": "털게"
     }
