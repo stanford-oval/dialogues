@@ -217,6 +217,44 @@ elif args.setting == 'hi':
         },
     }
 
+elif args.setting == 'kr':
+    dialogue_state = {
+        "hotel": {
+            'pricerange': {'relation': 'equal_to', 'value': ['저렴한']},
+            'area': {'relation': 'equal_to', 'value': ['우장구']},
+        },
+        "attraction": {"name": {'relation': 'equal_to', 'value': ['진지 호수 풍경구']}},
+    }
+    gold_knowledge = {
+        'hotel': {
+            "name": "쑤저우 밍유에 익스프레스 호텔",
+            "area": "우장구",
+            "star": "1성급",
+            "pricerange": "저렴한",
+            "hotel_type": "비즈니스",
+            "room_type": "킹사이즈 객실",
+            "parking": "무료",
+            "room_charge": "155위안",
+            "address": "쑤저우시 우장구 루씨앙남로 2487호",
+            "phone_number": "0512-63000168",
+            "score": "4.5점"
+        },
+        'attraction': {
+            "name": "진지 호수 풍경구",
+            "area": "쑤저우 공업원구",
+            "type": "풍경이 좋은 곳",
+            "the_most_suitable_people": "데이트",
+            "consumption": "조금 비싼",
+            "metro_station": "있음",
+            "ticket_price": "무료",
+            "phone_number": "400-7558558",
+            "address": "쑤저우시 쑤저우 공업원구 신강가 158호",
+            "score": "4.5점",
+            "opening_hours": "하루 종일",
+            "features": "동방지문과 같은 높은 건물들의 아름다운 전경을 보거나, 관람차나 야간 유람선을 타면서 쑤저우의 현대적인 면을 느낄 수 있습니다."
+        },
+    }
+
 
 knowledge = defaultdict(dict)
 

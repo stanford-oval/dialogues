@@ -1,0 +1,562 @@
+[
+    {
+        "city": "베이징",
+        "date": "다음 주 월요일",
+        "weather_condition": "화창한",
+        "temperature": "최고 기온은 섭씨 8도 그리고 최저 기온은 섭씨 영하 6도입니다.",
+        "wind": "강도 3-4의 남서풍",
+        "uv_intensity": "강한"
+    },
+    {
+        "city": "베이징",
+        "date": "다음 주 화요일",
+        "weather_condition": "화창한",
+        "temperature": "최고 기온은 섭씨 10도 그리고 최저 기온은 섭씨 영하 5도",
+        "wind": "강도 2의 남서풍",
+        "uv_intensity": "강한"
+    },
+    {
+        "city": "베이징",
+        "date": "다음 주 수요일",
+        "weather_condition": "맑은 후 흐려지겠습니다",
+        "temperature": "최고 기온은 섭씨 8도 그리고 최저 기온은 섭씨 영하 5도입니다.",
+        "wind": "강도 2의 남동풍",
+        "uv_intensity": "강한"
+    },
+    {
+        "city": "베이징",
+        "date": "다음 주 목요일",
+        "weather_condition": "구름만 많겠습니다",
+        "temperature": "최고 기온은 섭씨 4도 그리고 최저 기온은 섭씨 영하 4도입니다",
+        "wind": "강도 1의 남동풍",
+        "uv_intensity": "강한"
+    },
+    {
+        "city": "베이징",
+        "date": "다음 주 금요일",
+        "weather_condition": "흐린 후 화창",
+        "temperature": "최고 기온은 섭씨 8도, 최저 기온은 섭씨 영하 3도입니다",
+        "wind": "강도 3-4의 북서풍",
+        "uv_intensity": "강한"
+    },
+    {
+        "city": "베이징",
+        "date": "다음 주 토요일",
+        "weather_condition": "화창한",
+        "temperature": "최고 기온은 섭씨 9도 그리고 최저 기온은 섭씨 영하 3도입니다.",
+        "wind": "강도 3의 북풍",
+        "uv_intensity": "강한"
+    },
+    {
+        "city": "베이징",
+        "date": "다음 주 일요일",
+        "weather_condition": "화창한",
+        "temperature": "최고 기온은 섭씨 9도 그리고 최저 기온은 섭씨 영하 2도가 될 거예요",
+        "wind": "강도 3-4의 북풍",
+        "uv_intensity": "강한"
+    },
+    {
+        "city": "상하이",
+        "date": "다음 주 월요일",
+        "weather_condition": "화창한",
+        "temperature": "최고 기온은 섭씨 10도 그리고 최저 기온은 섭씨 1도입니다",
+        "wind": "강도 3-4의 북서풍",
+        "uv_intensity": "강한"
+    },
+    {
+        "city": "상하이",
+        "date": "다음 주 화요일",
+        "weather_condition": "맑은 후 흐려지겠습니다",
+        "temperature": "최고 기온은 섭씨 10도 그리고 최저 기온은 섭씨 2도입니다",
+        "wind": "강도 2의 남동풍",
+        "uv_intensity": "강한"
+    },
+    {
+        "city": "상하이",
+        "date": "다음 주 수요일",
+        "weather_condition": "흐린 후 화창",
+        "temperature": "최고 기온은 섭씨 11도 그리고 최저 기온은 섭씨 5도가 될 거예요.",
+        "wind": "강도 3-4의 북서풍",
+        "uv_intensity": "약한"
+    },
+    {
+        "city": "상하이",
+        "date": "다음 주 목요일",
+        "weather_condition": "화창한",
+        "temperature": "최고 기온은 섭씨 15도 그리고 최저 기온은 섭씨 8도입니다.",
+        "wind": "강도 2의 북서풍",
+        "uv_intensity": "강한"
+    },
+    {
+        "city": "상하이",
+        "date": "다음 주 금요일",
+        "weather_condition": "약한 비",
+        "temperature": "최고 기온은 섭씨 16도, 최저 기온은 섭씨 9도입니다.",
+        "wind": "강도 2의 북풍",
+        "uv_intensity": "가장 낮은"
+    },
+    {
+        "city": "상하이",
+        "date": "다음 주 토요일",
+        "weather_condition": "맑은 후 흐려지겠습니다",
+        "temperature": "최고 기온은 섭씨 17도, 최저 기온은 섭씨 9도가 될 것입니다",
+        "wind": "강도 1의 남풍",
+        "uv_intensity": "강한"
+    },
+    {
+        "city": "상하이",
+        "date": "다음 주 일요일",
+        "weather_condition": "맑은 후 흐려지겠습니다",
+        "temperature": "최고 기온은 섭씨 18도 그리고 최저 기온은 섭씨 11입니다",
+        "wind": "강도 2의 남풍",
+        "uv_intensity": "강한"
+    },
+    {
+        "city": "광저우",
+        "date": "다음 주 월요일",
+        "weather_condition": "화창한",
+        "temperature": "최고 기온은 섭씨 18도 그리고 최저 기온은 섭씨 5도입니다.",
+        "wind": "강도 1의 북동풍",
+        "uv_intensity": "매우 강합니다"
+    },
+    {
+        "city": "광저우",
+        "date": "다음 주 화요일",
+        "weather_condition": "맑은 후 흐려지겠습니다",
+        "temperature": "최고 기온은 섭씨 18도 그리고 최저 기온은 섭씨 5도입니다.",
+        "wind": "풍향이 없는 산들바람",
+        "uv_intensity": "매우 강합니다"
+    },
+    {
+        "city": "광저우",
+        "date": "다음 주 수요일",
+        "weather_condition": "구름만 많겠습니다",
+        "temperature": "최고 기온은 섭씨 19도 그리고 최저 기온은 섭씨 7도가 예상됩니다",
+        "wind": "풍향이 없는 산들바람",
+        "uv_intensity": "보통"
+    },
+    {
+        "city": "광저우",
+        "date": "다음 주 목요일",
+        "weather_condition": "구름만 많겠습니다",
+        "temperature": "최고 기온은 섭씨 20도 그리고 최저 기온은 섭씨 10도입니다",
+        "wind": "풍향이 없는 산들바람",
+        "uv_intensity": "약한"
+    },
+    {
+        "city": "광저우",
+        "date": "다음 주 금요일",
+        "weather_condition": "구름만 많겠습니다",
+        "temperature": "최고 기온은 섭씨 22도 그리고 최저 기온은 섭씨 13도입니다",
+        "wind": "강도 1의 북동풍",
+        "uv_intensity": "보통"
+    },
+    {
+        "city": "광저우",
+        "date": "다음 주 토요일",
+        "weather_condition": "구름만 많겠습니다",
+        "temperature": "최고 기온은 섭씨 23도 그리고 최저 기온은 섭씨 14도입니다",
+        "wind": "강도 2의 북동풍",
+        "uv_intensity": "매우 강합니다"
+    },
+    {
+        "city": "광저우",
+        "date": "다음 주 일요일",
+        "weather_condition": "구름만 많겠습니다",
+        "temperature": "최고 기온은 섭씨 24도 그리고 최저 기온은 섭씨 14도가 될 거예요",
+        "wind": "풍향이 없는 산들바람",
+        "uv_intensity": "보통"
+    },
+    {
+        "city": "선전",
+        "date": "다음 주 월요일",
+        "weather_condition": "화창한",
+        "temperature": "최고 기온은 섭씨 17도 그리고 최저 기온은 섭씨 7도예요.",
+        "wind": "강도 2의 북동풍",
+        "uv_intensity": "매우 강합니다"
+    },
+    {
+        "city": "선전",
+        "date": "다음 주 화요일",
+        "weather_condition": "화창한",
+        "temperature": "최고 기온은 섭씨 17도 그리고 최저 기온은 섭씨 7도예요.",
+        "wind": "풍향이 없는 산들바람",
+        "uv_intensity": "매우 강합니다"
+    },
+    {
+        "city": "선전",
+        "date": "다음 주 수요일",
+        "weather_condition": "맑은 후 흐려지겠습니다",
+        "temperature": "최고 기온은 섭씨 18도 그리고 최저 기온은 섭씨 11입니다",
+        "wind": "강도 3-4의 동풍",
+        "uv_intensity": "매우 강합니다"
+    },
+    {
+        "city": "선전",
+        "date": "다음 주 목요일",
+        "weather_condition": "구름만 많겠습니다",
+        "temperature": "최고 기온은 섭씨 20도 그리고 최저 기온은 섭씨 14도입니다.",
+        "wind": "강도 3-4의 동풍",
+        "uv_intensity": "약한"
+    },
+    {
+        "city": "선전",
+        "date": "다음 주 금요일",
+        "weather_condition": "구름만 많겠습니다",
+        "temperature": "최고 기온은 섭씨 21도 그리고 최저 기온은 섭씨 15도입니다",
+        "wind": "강도 2의 동풍",
+        "uv_intensity": "보통"
+    },
+    {
+        "city": "선전",
+        "date": "다음 주 토요일",
+        "weather_condition": "구름만 많겠습니다",
+        "temperature": "최고 기온은 섭씨 23도 그리고 최저 기온은 섭씨 16도입니다.",
+        "wind": "풍향이 없는 산들바람",
+        "uv_intensity": "강한"
+    },
+    {
+        "city": "선전",
+        "date": "다음 주 일요일",
+        "weather_condition": "구름만 많겠습니다",
+        "temperature": "최고 기온은 섭씨 22도 그리고 최저 기온은 섭씨 16도입니다.",
+        "wind": "강도 1의 북동풍",
+        "uv_intensity": "약한"
+    },
+    {
+        "city": "항저우",
+        "date": "다음 주 월요일",
+        "weather_condition": "화창한",
+        "temperature": "최고 기온은 섭씨 11도 그리고 최저 기온은 섭씨 영하 1도입니다",
+        "wind": "강도 2의 북풍",
+        "uv_intensity": "강한"
+    },
+    {
+        "city": "항저우",
+        "date": "다음 주 화요일",
+        "weather_condition": "화창한",
+        "temperature": "최고 기온은 섭씨 11도 그리고 최저 기온은 섭씨 0도가 될 거예요.",
+        "wind": "강도 1의 북풍",
+        "uv_intensity": "강한"
+    },
+    {
+        "city": "항저우",
+        "date": "다음 주 수요일",
+        "weather_condition": "구름만 많겠습니다",
+        "temperature": "최고 기온은 섭씨 14도 그리고 최저 기온은 섭씨 1도입니다",
+        "wind": "강도 1의 남동풍",
+        "uv_intensity": "약한"
+    },
+    {
+        "city": "항저우",
+        "date": "다음 주 목요일",
+        "weather_condition": "맑은 후 흐려지겠습니다",
+        "temperature": "최고 기온은 섭씨 16도 그리고 최저 기온은 섭씨 5도입니다.",
+        "wind": "강도 3-4의 동풍",
+        "uv_intensity": "강한"
+    },
+    {
+        "city": "항저우",
+        "date": "다음 주 금요일",
+        "weather_condition": "매우 흐린 후 약하게 비가 내릴",
+        "temperature": "최고 기온은 섭씨 18도, 최저 기온은 섭씨 7도가 될 것입니다.",
+        "wind": "강도 3-4의 북풍",
+        "uv_intensity": "가장 낮은"
+    },
+    {
+        "city": "항저우",
+        "date": "다음 주 토요일",
+        "weather_condition": "화창한",
+        "temperature": "최고 기온은 섭씨 17도 그리고 최저 기온은 섭씨 7도예요.",
+        "wind": "강도 1의 남동풍",
+        "uv_intensity": "강한"
+    },
+    {
+        "city": "항저우",
+        "date": "다음 주 일요일",
+        "weather_condition": "구름이 많아서 흐려지겠습니다",
+        "temperature": "최고 기온은 섭씨 21도 그리고 최저 기온은 섭씨 9도가 될 거예요",
+        "wind": "강도 3-4의 남동풍",
+        "uv_intensity": "강한"
+    },
+    {
+        "city": "난징",
+        "date": "다음 주 월요일",
+        "weather_condition": "화창한",
+        "temperature": "최고 기온은 섭씨 9도 그리고 최저 기온은 섭씨 영하 2도가 될 거예요",
+        "wind": "강도 4-5의 북서풍",
+        "uv_intensity": "강한"
+    },
+    {
+        "city": "난징",
+        "date": "다음 주 화요일",
+        "weather_condition": "맑은 후 흐려지겠습니다",
+        "temperature": "최고 기온은 섭씨 9도로 예상되며 최저 기온은 섭씨 0도가 되겠습니다",
+        "wind": "강도 3-4의 남풍",
+        "uv_intensity": "강한"
+    },
+    {
+        "city": "난징",
+        "date": "다음 주 수요일",
+        "weather_condition": "구름만 많겠습니다",
+        "temperature": "최고 기온은 섭씨 10도 그리고 최저 기온은 섭씨 2도입니다",
+        "wind": "강도 3-4의 남동풍",
+        "uv_intensity": "약한"
+    },
+    {
+        "city": "난징",
+        "date": "다음 주 목요일",
+        "weather_condition": "구름만 많겠습니다",
+        "temperature": "최고 기온은 섭씨 14도 그리고 최저 기온은 섭씨 5도입니다",
+        "wind": "강도 2의 남동풍",
+        "uv_intensity": "보통"
+    },
+    {
+        "city": "난징",
+        "date": "다음 주 금요일",
+        "weather_condition": "구름만 많겠습니다",
+        "temperature": "최고 기온은 섭씨 11도 그리고 최저 기온은 섭씨 5도가 될 거예요.",
+        "wind": "강도 2의 서풍",
+        "uv_intensity": "약한"
+    },
+    {
+        "city": "난징",
+        "date": "다음 주 토요일",
+        "weather_condition": "구름만 많겠습니다",
+        "temperature": "최고 기온은 섭씨 17도 그리고 최저 기온은 섭씨 6도입니다",
+        "wind": "강도 2의 북서풍",
+        "uv_intensity": "강한"
+    },
+    {
+        "city": "난징",
+        "date": "다음 주 일요일",
+        "weather_condition": "구름만 많겠습니다",
+        "temperature": "최고 기온은 섭씨 18도, 최저 기온은 섭씨 7도가 될 것입니다.",
+        "wind": "강도 2의 남동풍",
+        "uv_intensity": "보통"
+    },
+    {
+        "city": "샤먼",
+        "date": "다음 주 월요일",
+        "weather_condition": "화창한",
+        "temperature": "최고 기온은 섭씨 14도 그리고 최저 기온은 섭씨 8도입니다",
+        "wind": "강도 3-4의 북동풍",
+        "uv_intensity": "매우 강합니다"
+    },
+    {
+        "city": "샤먼",
+        "date": "다음 주 화요일",
+        "weather_condition": "화창한",
+        "temperature": "최고 기온은 섭씨 14도, 최저 기온은 섭씨 7도가 될 것입니다",
+        "wind": "강도 4-5의 북동풍",
+        "uv_intensity": "매우 강합니다"
+    },
+    {
+        "city": "샤먼",
+        "date": "다음 주 수요일",
+        "weather_condition": "화창한",
+        "temperature": "최고 기온은 섭씨 17도, 최저 기온은 섭씨 9도가 될 것입니다",
+        "wind": "강도 2의 동풍",
+        "uv_intensity": "매우 강합니다"
+    },
+    {
+        "city": "샤먼",
+        "date": "다음 주 목요일",
+        "weather_condition": "화창한",
+        "temperature": "최고 기온은 섭씨 20도 그리고 최저 기온은 섭씨 12도입니다",
+        "wind": "강도 4-5의 북동풍",
+        "uv_intensity": "매우 강합니다"
+    },
+    {
+        "city": "샤먼",
+        "date": "다음 주 금요일",
+        "weather_condition": "화창한",
+        "temperature": "최고 기온은 섭씨 21도 그리고 최저 기온은 섭씨 13도입니다.",
+        "wind": "강도 3-4의 남동풍",
+        "uv_intensity": "매우 강합니다"
+    },
+    {
+        "city": "샤먼",
+        "date": "다음 주 토요일",
+        "weather_condition": "화창한",
+        "temperature": "최고 기온은 섭씨 23도 그리고 최저 기온은 섭씨 14도입니다",
+        "wind": "강도 3-4의 북동풍",
+        "uv_intensity": "매우 강합니다"
+    },
+    {
+        "city": "샤먼",
+        "date": "다음 주 일요일",
+        "weather_condition": "화창한",
+        "temperature": "최고 기온은 섭씨 22도 그리고 최저 기온은 섭씨 14도가 될 거예요",
+        "wind": "강도 2의 북동풍",
+        "uv_intensity": "매우 강합니다"
+    },
+    {
+        "city": "청두",
+        "date": "다음 주 월요일",
+        "weather_condition": "구름만 많겠습니다",
+        "temperature": "최고 기온은 섭씨 11도 그리고 최저 기온은 섭씨 4도에요.",
+        "wind": "강도 1의 남동풍",
+        "uv_intensity": "약한"
+    },
+    {
+        "city": "청두",
+        "date": "다음 주 화요일",
+        "weather_condition": "매우 흐린 후 약하게 비가 내릴",
+        "temperature": "최고 기온은 섭씨 11도 그리고 최저 기온은 섭씨 4도에요.",
+        "wind": "풍향이 없는 산들바람",
+        "uv_intensity": "가장 낮은"
+    },
+    {
+        "city": "청두",
+        "date": "다음 주 수요일",
+        "weather_condition": "구름이 많아서 흐려지겠습니다",
+        "temperature": "최고 기온은 섭씨 13도 그리고 최저 기온은 섭씨 4도입니다.",
+        "wind": "풍향이 없는 산들바람",
+        "uv_intensity": "강한"
+    },
+    {
+        "city": "청두",
+        "date": "다음 주 목요일",
+        "weather_condition": "매우 흐리다가 소나기",
+        "temperature": "최고 기온은 섭씨 11도 그리고 최저 기온은 섭씨 7도입니다.",
+        "wind": "풍향이 없는 산들바람",
+        "uv_intensity": "가장 낮은"
+    },
+    {
+        "city": "청두",
+        "date": "다음 주 금요일",
+        "weather_condition": "구름만 많겠습니다",
+        "temperature": "최고 기온은 섭씨 15도 그리고 최저 기온은 섭씨 7도입니다.",
+        "wind": "풍향이 없는 산들바람",
+        "uv_intensity": "보통"
+    },
+    {
+        "city": "청두",
+        "date": "다음 주 토요일",
+        "weather_condition": "구름이 많아서 흐려지겠습니다",
+        "temperature": "최고 기온은 섭씨 15도 그리고 최저 기온은 섭씨 7도입니다.",
+        "wind": "풍향이 없는 산들바람",
+        "uv_intensity": "보통"
+    },
+    {
+        "city": "청두",
+        "date": "다음 주 일요일",
+        "weather_condition": "구름만 많겠습니다",
+        "temperature": "최고 기온은 섭씨 16도, 최저 기온은 섭씨 9도입니다.",
+        "wind": "풍향이 없는 산들바람",
+        "uv_intensity": "약한"
+    },
+    {
+        "city": "우한",
+        "date": "다음 주 월요일",
+        "weather_condition": "구름만 많겠습니다",
+        "temperature": "최고 기온은 섭씨 13도 그리고 최저 기온은 섭씨 영하 1도입니다",
+        "wind": "강도 2의 동풍",
+        "uv_intensity": "보통"
+    },
+    {
+        "city": "우한",
+        "date": "다음 주 화요일",
+        "weather_condition": "맑은 후 흐려지겠습니다",
+        "temperature": "최고 기온은 섭씨 13도 그리고 최저 기온은 섭씨 0도입니다",
+        "wind": "강도 2의 남동풍",
+        "uv_intensity": "강한"
+    },
+    {
+        "city": "우한",
+        "date": "다음 주 수요일",
+        "weather_condition": "흐린 후 화창",
+        "temperature": "최고 기온은 섭씨 11도 그리고 최저 기온은 섭씨 0도가 될 거예요.",
+        "wind": "강도 2의 남풍",
+        "uv_intensity": "보통"
+    },
+    {
+        "city": "우한",
+        "date": "다음 주 목요일",
+        "weather_condition": "맑은 후 흐려지겠습니다",
+        "temperature": "최고 기온은 섭씨 15도 그리고 최저 기온은 섭씨 1도가 될 거예요.",
+        "wind": "강도 1의 동풍",
+        "uv_intensity": "강한"
+    },
+    {
+        "city": "우한",
+        "date": "다음 주 금요일",
+        "weather_condition": "약한 비가 내리다가 흐림",
+        "temperature": "최고 기온은 섭씨 12도 그리고 최저 기온은 섭씨 3도입니다",
+        "wind": "강도 2의 북서풍",
+        "uv_intensity": "가장 낮은"
+    },
+    {
+        "city": "우한",
+        "date": "다음 주 토요일",
+        "weather_condition": "흐린 후 화창",
+        "temperature": "최고 기온은 섭씨 15도 그리고 최저 기온은 섭씨 4도입니다",
+        "wind": "강도 2의 남동풍",
+        "uv_intensity": "강한"
+    },
+    {
+        "city": "우한",
+        "date": "다음 주 일요일",
+        "weather_condition": "흐린 후 화창",
+        "temperature": "최고 기온은 섭씨 19도 그리고 최저 기온은 섭씨 8도가 될 거예요.",
+        "wind": "강도 2의 남동풍",
+        "uv_intensity": "보통"
+    },
+    {
+        "city": "쑤저우",
+        "date": "다음 주 월요일",
+        "weather_condition": "화창한",
+        "temperature": "최고 기온은 섭씨 9도 그리고 최저 기온은 섭씨 영하 1도입니다.",
+        "wind": "강도 2의 북서풍",
+        "uv_intensity": "강한"
+    },
+    {
+        "city": "쑤저우",
+        "date": "다음 주 화요일",
+        "weather_condition": "맑은 후 흐려지겠습니다",
+        "temperature": "최고 기온은 섭씨 9도 그리고 최저 기온은 섭씨 1도입니다",
+        "wind": "강도 2의 북서풍",
+        "uv_intensity": "강한"
+    },
+    {
+        "city": "쑤저우",
+        "date": "다음 주 수요일",
+        "weather_condition": "매우 흐릴",
+        "temperature": "최고 기온은 섭씨 11도 그리고 최저 기온은 섭씨 4도에요.",
+        "wind": "강도 2의 남동풍",
+        "uv_intensity": "가장 낮은"
+    },
+    {
+        "city": "쑤저우",
+        "date": "다음 주 목요일",
+        "weather_condition": "구름만 많겠습니다",
+        "temperature": "최고 기온은 섭씨 16도 그리고 최저 기온은 섭씨 6도입니다",
+        "wind": "강도 2의 남동풍",
+        "uv_intensity": "강한"
+    },
+    {
+        "city": "쑤저우",
+        "date": "다음 주 금요일",
+        "weather_condition": "매우 흐린 후 약하게 비가 내릴",
+        "temperature": "최고 기온은 섭씨 15도 그리고 최저 기온은 섭씨 8도입니다.",
+        "wind": "강도 2의 서풍",
+        "uv_intensity": "가장 낮은"
+    },
+    {
+        "city": "쑤저우",
+        "date": "다음 주 토요일",
+        "weather_condition": "흐린 후 화창",
+        "temperature": "최고 기온은 섭씨 16도 그리고 최저 기온은 섭씨 6도입니다",
+        "wind": "강도 2의 남서풍",
+        "uv_intensity": "강한"
+    },
+    {
+        "city": "쑤저우",
+        "date": "다음 주 일요일",
+        "weather_condition": "구름만 많겠습니다",
+        "temperature": "최고 기온은 섭씨 17도 그리고 최저 기온은 섭씨 8도입니다",
+        "wind": "강도 2의 남서풍",
+        "uv_intensity": "강한"
+    }
+]
