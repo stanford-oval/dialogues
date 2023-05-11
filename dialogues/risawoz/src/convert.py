@@ -103,6 +103,7 @@ def build_user_event(turn, setting, value_mapping):
         d = value_mapping.zh2en_DOMAIN_MAP.get(d, d).lower()
         s = value_mapping.zh2en_SLOT_MAP.get(s, s).replace(' ', '_')
         event["state"][d][s] = {"relation": "equal_to", "value": [process_string(v, setting)]}
+
     event["state"] = dict(event["state"])
     event["Text"] = process_string(turn["user_utterance"], setting)
     if isinstance(event["Text"], list):
@@ -255,6 +256,8 @@ def build_dataset(original_data_path, db, setting, value_mapping, debug=False, m
         events = []
         turn_id = 0
         for turn in dialogue["dialogue"]:
+            if "inform slot-values" not in turn["belief_state"]:
+                turn["belief_state"]["inform slot-values"] = {}
             user_turn_event = build_user_event(turn, setting, value_mapping)
             if "db_results" in turn and turn["db_results"]:
                 wizard_query_event = build_wizard_event(turn, setting, value_mapping, mode="query")
@@ -267,6 +270,8 @@ def build_dataset(original_data_path, db, setting, value_mapping, debug=False, m
                         actions[domain][slot] = value
                 if setting == 'zh':
                     expected_num_results = int(turn["db_results"][0][len('数据库检索结果：成功匹配个数为') :])
+                elif setting == 'kr':
+                    expected_num_results = int(turn["db_results"][0][len('데이터베이스 검색 결과: 성공적으로 일치한 항목 수는') :])
                 else:
                     expected_num_results = int(
                         turn["db_results"][0][len('Database search results: the number of successful matches is ') :]
