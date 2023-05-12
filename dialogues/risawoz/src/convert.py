@@ -268,9 +268,7 @@ def build_dataset(original_data_path, db, setting, value_mapping, debug=False, m
                 if setting == 'zh':
                     expected_num_results = int(turn["db_results"][0][len('数据库检索结果：成功匹配个数为') :])
                 else:
-                    expected_num_results = int(
-                        turn["db_results"][0][len('Database search results: the number of successful matches is ') :]
-                    )
+                    expected_num_results = int(turn["db_results"][0].split(" ")[-1])
 
                 if debug:
                     kb_event = build_kb_event(
