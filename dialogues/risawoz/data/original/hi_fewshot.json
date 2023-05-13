@@ -5551,7 +5551,7 @@
                         "city": "ज़ियामेन",
                         "date": "अगले रविवार",
                         "weather_condition": "धूप",
-                        "tamperature": "अधिकतम तापमान 22 डिग्री सेल्सियस और न्यूनतम तापमान 14 डिग्री सेल्सियस रहने का अनुमान है",
+                        "temperature": "अधिकतम तापमान 22 डिग्री सेल्सियस और न्यूनतम तापमान 14 डिग्री सेल्सियस रहने का अनुमान है",
                         "wind": "और पूर्वोत्तर बल 2",
                         "uv_intensity": "बहुत मजबूत"
                     }
@@ -5624,7 +5624,7 @@
                         "city": "ज़ियामेन",
                         "date": "अगले रविवार",
                         "weather_condition": "धूप",
-                        "tamperature": "अधिकतम तापमान 22 डिग्री सेल्सियस और न्यूनतम तापमान 14 डिग्री सेल्सियस रहने का अनुमान है",
+                        "temperature": "अधिकतम तापमान 22 डिग्री सेल्सियस और न्यूनतम तापमान 14 डिग्री सेल्सियस रहने का अनुमान है",
                         "wind": "और पूर्वोत्तर बल 2",
                         "uv_intensity": "बहुत मजबूत"
                     }
@@ -5642,7 +5642,7 @@
                 "system_utterance": [
                     "यह हल्का होगा। अधिकतम तापमान 22 डिग्री सेल्सियस और न्यूनतम तापमान 14 डिग्री सेल्सियस रहने का अनुमान है",
                     {
-                        "Weather-tamperature": {
+                        "Weather-temperature": {
                             "अधिकतम तापमान 22 डिग्री सेल्सियस और न्यूनतम तापमान 14 डिग्री सेल्सियस रहने का अनुमान है": [
                                 [
                                     3,
@@ -5658,7 +5658,7 @@
                         "Weather-city": "ज़ियामेन"
                     },
                     "turn request": [
-                        "tamperature"
+                        "temperature"
                     ],
                     "turn_inform": {}
                 },
@@ -5666,7 +5666,7 @@
                     [
                         "Request",
                         "Weather",
-                        "tamperature",
+                        "temperature",
                         ""
                     ]
                 ],
@@ -5674,7 +5674,7 @@
                     [
                         "Inform",
                         "Weather",
-                        "tamperature",
+                        "temperature",
                         "अधिकतम तापमान 22 डिग्री सेल्सियस और न्यूनतम तापमान 14 डिग्री सेल्सियस रहने का अनुमान है"
                     ]
                 ],
@@ -5687,7 +5687,7 @@
                         "city": "ज़ियामेन",
                         "date": "अगले रविवार",
                         "weather_condition": "धूप",
-                        "tamperature": "अधिकतम तापमान 22 डिग्री सेल्सियस और न्यूनतम तापमान 14 डिग्री सेल्सियस रहने का अनुमान है",
+                        "temperature": "अधिकतम तापमान 22 डिग्री सेल्सियस और न्यूनतम तापमान 14 डिग्री सेल्सियस रहने का अनुमान है",
                         "wind": "और पूर्वोत्तर बल 2",
                         "uv_intensity": "बहुत मजबूत"
                     }
@@ -5793,7 +5793,7 @@
                         "city": "ज़ियामेन",
                         "date": "अगले गुरुवार को",
                         "weather_condition": "धूप",
-                        "tamperature": "अधिकतम तापमान 20 डिग्री सेल्सियस और न्यूनतम तापमान 12 डिग्री सेल्सियस रहने का अनुमान है",
+                        "temperature": "अधिकतम तापमान 20 डिग्री सेल्सियस और न्यूनतम तापमान 12 डिग्री सेल्सियस रहने का अनुमान है",
                         "wind": "पूर्वोत्तर बल 4-5",
                         "uv_intensity": "बहुत मजबूत"
                     }
@@ -5820,7 +5820,7 @@
                 "system_utterance": [
                     "लगभग। अधिकतम तापमान 20 डिग्री सेल्सियस और न्यूनतम तापमान 12 डिग्री सेल्सियस रहेगा",
                     {
-                        "Weather-tamperature": {
+                        "Weather-temperature": {
                             "अधिकतम तापमान 20 डिग्री सेल्सियस और न्यूनतम तापमान 12 डिग्री सेल्सियस रहेगा": [
                                 [
                                     1,
@@ -5836,7 +5836,7 @@
                         "Weather-city": "ज़ियामेन"
                     },
                     "turn request": [
-                        "tamperature"
+                        "temperature"
                     ],
                     "turn_inform": {}
                 },
@@ -5844,7 +5844,7 @@
                     [
                         "Request",
                         "Weather",
-                        "tamperature",
+                        "temperature",
                         ""
                     ]
                 ],
@@ -5852,7 +5852,7 @@
                     [
                         "Inform",
                         "Weather",
-                        "tamperature",
+                        "temperature",
                         "अधिकतम तापमान 20 डिग्री सेल्सियस और न्यूनतम तापमान 12 डिग्री सेल्सियस रहेगा"
                     ]
                 ],
@@ -5866,7 +5866,7 @@
                         "city": "ज़ियामेन",
                         "date": "अगले गुरुवार को",
                         "weather_condition": "धूप",
-                        "tamperature": "अधिकतम तापमान 20 डिग्री सेल्सियस और न्यूनतम तापमान 12 डिग्री सेल्सियस रहने का अनुमान है",
+                        "temperature": "अधिकतम तापमान 20 डिग्री सेल्सियस और न्यूनतम तापमान 12 डिग्री सेल्सियस रहने का अनुमान है",
                         "wind": "पूर्वोत्तर बल 4-5",
                         "uv_intensity": "बहुत मजबूत"
                     }
@@ -9650,7 +9650,7 @@
                         "city": "शेन्ज़ेन",
                         "date": "अगले शुक्रवार",
                         "weather_condition": "बादल छाए",
-                        "tamperature": "अधिकतम तापमान 21 डिग्री सेल्सियस और न्यूनतम तापमान 15 डिग्री सेल्सियस रहेगा",
+                        "temperature": "अधिकतम तापमान 21 डिग्री सेल्सियस और न्यूनतम तापमान 15 डिग्री सेल्सियस रहेगा",
                         "wind": "ईस्ट फोर्स 2",
                         "uv_intensity": "मध्यम"
                     }
@@ -9716,7 +9716,7 @@
                         "city": "शेन्ज़ेन",
                         "date": "अगले शुक्रवार",
                         "weather_condition": "बादल छाए",
-                        "tamperature": "अधिकतम तापमान 21 डिग्री सेल्सियस और न्यूनतम तापमान 15 डिग्री सेल्सियस रहेगा",
+                        "temperature": "अधिकतम तापमान 21 डिग्री सेल्सियस और न्यूनतम तापमान 15 डिग्री सेल्सियस रहेगा",
                         "wind": "ईस्ट फोर्स 2",
                         "uv_intensity": "मध्यम"
                     }
@@ -9734,7 +9734,7 @@
                 "system_utterance": [
                     "अधिकतम तापमान 21 डिग्री सेल्सियस और न्यूनतम तापमान 15 डिग्री सेल्सियस रहेगा",
                     {
-                        "Weather-tamperature": {
+                        "Weather-temperature": {
                             "अधिकतम तापमान 21 डिग्री सेल्सियस और न्यूनतम तापमान 15 डिग्री सेल्सियस रहेगा": [
                                 [
                                     0,
@@ -9753,7 +9753,7 @@
                         "Weather-date": "अगले शुक्रवार"
                     },
                     "turn request": [
-                        "tamperature"
+                        "temperature"
                     ],
                     "turn_inform": {}
                 },
@@ -9761,7 +9761,7 @@
                     [
                         "Request",
                         "Weather",
-                        "tamperature",
+                        "temperature",
                         ""
                     ]
                 ],
@@ -9769,7 +9769,7 @@
                     [
                         "Inform",
                         "Weather",
-                        "tamperature",
+                        "temperature",
                         "अधिकतम तापमान 21 डिग्री सेल्सियस और न्यूनतम तापमान 15 डिग्री सेल्सियस रहेगा"
                     ]
                 ],
@@ -9782,7 +9782,7 @@
                         "city": "शेन्ज़ेन",
                         "date": "अगले शुक्रवार",
                         "weather_condition": "बादल छाए",
-                        "tamperature": "अधिकतम तापमान 21 डिग्री सेल्सियस और न्यूनतम तापमान 15 डिग्री सेल्सियस रहेगा",
+                        "temperature": "अधिकतम तापमान 21 डिग्री सेल्सियस और न्यूनतम तापमान 15 डिग्री सेल्सियस रहेगा",
                         "wind": "ईस्ट फोर्स 2",
                         "uv_intensity": "मध्यम"
                     }
@@ -10997,7 +10997,7 @@
                         "city": "बीजिंग",
                         "date": "अगले सोमवार",
                         "weather_condition": "धूप",
-                        "tamperature": "The maximum temperature will be 8 degrees Celsius, and the minimum temperature will be -6 degrees Celsius.",
+                        "temperature": "The maximum temperature will be 8 degrees Celsius, and the minimum temperature will be -6 degrees Celsius.",
                         "wind": "southwest force 3-4.",
                         "uv_intensity": "मजबूत"
                     },
@@ -11005,7 +11005,7 @@
                         "city": "बीजिंग",
                         "date": "अगले मंगलवार",
                         "weather_condition": "धूप",
-                        "tamperature": "अधिकतम तापमान 10 डिग्री सेल्सियस और न्यूनतम तापमान -5 डिग्री सेल्सियस रहेगा",
+                        "temperature": "अधिकतम तापमान 10 डिग्री सेल्सियस और न्यूनतम तापमान -5 डिग्री सेल्सियस रहेगा",
                         "wind": "दक्षिण-पश्चिम बल 2",
                         "uv_intensity": "मजबूत"
                     },
@@ -11013,7 +11013,7 @@
                         "city": "बीजिंग",
                         "date": "अगले बुधवार",
                         "weather_condition": "धूप से लेकर बादल छाए रहेंगे",
-                        "tamperature": "The maximum temperature will be 8 degrees Celsius, and the minimum temperature will be −5 degrees Celsius.",
+                        "temperature": "The maximum temperature will be 8 degrees Celsius, and the minimum temperature will be −5 degrees Celsius.",
                         "wind": "दक्षिण-पूर्व बल 2",
                         "uv_intensity": "मजबूत"
                     },
@@ -11021,7 +11021,7 @@
                         "city": "बीजिंग",
                         "date": "अगले गुरुवार को",
                         "weather_condition": "बादल छाए",
-                        "tamperature": "अधिकतम तापमान 4 डिग्री सेल्सियस और न्यूनतम तापमान -4 डिग्री सेल्सियस रहने का अनुमान है",
+                        "temperature": "अधिकतम तापमान 4 डिग्री सेल्सियस और न्यूनतम तापमान -4 डिग्री सेल्सियस रहने का अनुमान है",
                         "wind": "दक्षिण-पूर्व बल 1",
                         "uv_intensity": "मजबूत"
                     },
@@ -11029,7 +11029,7 @@
                         "city": "बीजिंग",
                         "date": "अगले शुक्रवार",
                         "weather_condition": "बादल छाए रहेंगे और बाद में धूप खिली रहेगी",
-                        "tamperature": "अधिकतम तापमान 8 डिग्री सेल्सियस और न्यूनतम तापमान -3 डिग्री सेल्सियस रहेगा",
+                        "temperature": "अधिकतम तापमान 8 डिग्री सेल्सियस और न्यूनतम तापमान -3 डिग्री सेल्सियस रहेगा",
                         "wind": "उत्तर-पश्चिम बल 3-4",
                         "uv_intensity": "मजबूत"
                     },
@@ -11037,7 +11037,7 @@
                         "city": "बीजिंग",
                         "date": "अगले शनिवार",
                         "weather_condition": "धूप",
-                        "tamperature": "The maximum temperature will be 9 degrees Celsius and the minimum temperature will be −3 degrees Celsius.",
+                        "temperature": "The maximum temperature will be 9 degrees Celsius and the minimum temperature will be −3 degrees Celsius.",
                         "wind": "उत्तरी बल 3",
                         "uv_intensity": "मजबूत"
                     },
@@ -11045,7 +11045,7 @@
                         "city": "बीजिंग",
                         "date": "अगले रविवार",
                         "weather_condition": "धूप",
-                        "tamperature": "अधिकतम तापमान 9 डिग्री सेल्सियस और न्यूनतम तापमान -2 डिग्री सेल्सियस रहने का अनुमान है",
+                        "temperature": "अधिकतम तापमान 9 डिग्री सेल्सियस और न्यूनतम तापमान -2 डिग्री सेल्सियस रहने का अनुमान है",
                         "wind": "north force 3-4",
                         "uv_intensity": "मजबूत"
                     }
@@ -11137,7 +11137,7 @@
                         "city": "बीजिंग",
                         "date": "अगले शुक्रवार",
                         "weather_condition": "बादल छाए रहेंगे और बाद में धूप खिली रहेगी",
-                        "tamperature": "अधिकतम तापमान 8 डिग्री सेल्सियस और न्यूनतम तापमान -3 डिग्री सेल्सियस रहेगा",
+                        "temperature": "अधिकतम तापमान 8 डिग्री सेल्सियस और न्यूनतम तापमान -3 डिग्री सेल्सियस रहेगा",
                         "wind": "उत्तर-पश्चिम बल 3-4",
                         "uv_intensity": "मजबूत"
                     }
@@ -11191,7 +11191,7 @@
                         "city": "बीजिंग",
                         "date": "अगले शुक्रवार",
                         "weather_condition": "बादल छाए रहेंगे और बाद में धूप खिली रहेगी",
-                        "tamperature": "अधिकतम तापमान 8 डिग्री सेल्सियस और न्यूनतम तापमान -3 डिग्री सेल्सियस रहेगा",
+                        "temperature": "अधिकतम तापमान 8 डिग्री सेल्सियस और न्यूनतम तापमान -3 डिग्री सेल्सियस रहेगा",
                         "wind": "उत्तर-पश्चिम बल 3-4",
                         "uv_intensity": "मजबूत"
                     }
@@ -11254,7 +11254,7 @@
                         "city": "बीजिंग",
                         "date": "अगले शुक्रवार",
                         "weather_condition": "बादल छाए रहेंगे और बाद में धूप खिली रहेगी",
-                        "tamperature": "अधिकतम तापमान 8 डिग्री सेल्सियस और न्यूनतम तापमान -3 डिग्री सेल्सियस रहेगा",
+                        "temperature": "अधिकतम तापमान 8 डिग्री सेल्सियस और न्यूनतम तापमान -3 डिग्री सेल्सियस रहेगा",
                         "wind": "उत्तर-पश्चिम बल 3-4",
                         "uv_intensity": "मजबूत"
                     }
@@ -11346,7 +11346,7 @@
                         "city": "बीजिंग",
                         "date": "अगले बुधवार",
                         "weather_condition": "धूप से लेकर बादल छाए रहेंगे",
-                        "tamperature": "The maximum temperature will be 8 degrees Celsius, and the minimum temperature will be −5 degrees Celsius.",
+                        "temperature": "The maximum temperature will be 8 degrees Celsius, and the minimum temperature will be −5 degrees Celsius.",
                         "wind": "दक्षिण-पूर्व बल 2",
                         "uv_intensity": "मजबूत"
                     }
@@ -11371,7 +11371,7 @@
                         "Weather-city": "बीजिंग"
                     },
                     "turn request": [
-                        "tamperature"
+                        "temperature"
                     ],
                     "turn_inform": {}
                 },
@@ -11379,7 +11379,7 @@
                     [
                         "Request",
                         "Weather",
-                        "tamperature",
+                        "temperature",
                         ""
                     ]
                 ],
@@ -11387,7 +11387,7 @@
                     [
                         "Inform",
                         "Weather",
-                        "tamperature",
+                        "temperature",
                         "The maximum temperature will be 8 degrees Celsius, and the minimum temperature will be −5 degrees Celsius."
                     ]
                 ],
@@ -11400,7 +11400,7 @@
                         "city": "बीजिंग",
                         "date": "अगले बुधवार",
                         "weather_condition": "धूप से लेकर बादल छाए रहेंगे",
-                        "tamperature": "The maximum temperature will be 8 degrees Celsius, and the minimum temperature will be −5 degrees Celsius.",
+                        "temperature": "The maximum temperature will be 8 degrees Celsius, and the minimum temperature will be −5 degrees Celsius.",
                         "wind": "दक्षिण-पूर्व बल 2",
                         "uv_intensity": "मजबूत"
                     }
@@ -21238,7 +21238,7 @@
                         "city": "ज़ियामेन",
                         "date": "अगले बुधवार",
                         "weather_condition": "धूप",
-                        "tamperature": "अधिकतम तापमान 17 डिग्री सेल्सियस और न्यूनतम तापमान 9 डिग्री सेल्सियस",
+                        "temperature": "अधिकतम तापमान 17 डिग्री सेल्सियस और न्यूनतम तापमान 9 डिग्री सेल्सियस",
                         "wind": "ईस्ट फोर्स 2",
                         "uv_intensity": "बहुत मजबूत"
                     }
@@ -21256,7 +21256,7 @@
                 "system_utterance": [
                     "अधिकतम तापमान 17 डिग्री सेल्सियस और न्यूनतम तापमान 9 डिग्री सेल्सियस रहने का अनुमान है। काफी गर्म",
                     {
-                        "Weather-tamperature": {
+                        "Weather-temperature": {
                             "अधिकतम तापमान 17 डिग्री सेल्सियस और न्यूनतम तापमान 9 डिग्री सेल्सियस रहने का अनुमान है": [
                                 [
                                     0,
@@ -21277,7 +21277,7 @@
                         "Weather-city": "ज़ियामेन"
                     },
                     "turn request": [
-                        "tamperature"
+                        "temperature"
                     ],
                     "turn_inform": {}
                 },
@@ -21285,7 +21285,7 @@
                     [
                         "Request",
                         "Weather",
-                        "tamperature",
+                        "temperature",
                         ""
                     ]
                 ],
@@ -21293,7 +21293,7 @@
                     [
                         "Request",
                         "Weather",
-                        "tamperature",
+                        "temperature",
                         ""
                     ]
                 ],
@@ -21306,7 +21306,7 @@
                         "city": "ज़ियामेन",
                         "date": "अगले बुधवार",
                         "weather_condition": "धूप",
-                        "tamperature": "अधिकतम तापमान 17 डिग्री सेल्सियस और न्यूनतम तापमान 9 डिग्री सेल्सियस",
+                        "temperature": "अधिकतम तापमान 17 डिग्री सेल्सियस और न्यूनतम तापमान 9 डिग्री सेल्सियस",
                         "wind": "ईस्ट फोर्स 2",
                         "uv_intensity": "बहुत मजबूत"
                     }
@@ -22351,7 +22351,7 @@
                         "city": "बीजिंग",
                         "date": "अगले शनिवार",
                         "weather_condition": "धूप",
-                        "tamperature": "The maximum temperature will be 9 degrees Celsius and the minimum temperature will be −3 degrees Celsius.",
+                        "temperature": "The maximum temperature will be 9 degrees Celsius and the minimum temperature will be −3 degrees Celsius.",
                         "wind": "उत्तरी बल 3",
                         "uv_intensity": "मजबूत"
                     }
@@ -22418,7 +22418,7 @@
                         "city": "बीजिंग",
                         "date": "अगले शनिवार",
                         "weather_condition": "धूप",
-                        "tamperature": "The maximum temperature will be 9 degrees Celsius and the minimum temperature will be −3 degrees Celsius.",
+                        "temperature": "The maximum temperature will be 9 degrees Celsius and the minimum temperature will be −3 degrees Celsius.",
                         "wind": "उत्तरी बल 3",
                         "uv_intensity": "मजबूत"
                     }
@@ -22485,7 +22485,7 @@
                         "city": "बीजिंग",
                         "date": "अगले शनिवार",
                         "weather_condition": "धूप",
-                        "tamperature": "The maximum temperature will be 9 degrees Celsius and the minimum temperature will be −3 degrees Celsius.",
+                        "temperature": "The maximum temperature will be 9 degrees Celsius and the minimum temperature will be −3 degrees Celsius.",
                         "wind": "उत्तरी बल 3",
                         "uv_intensity": "मजबूत"
                     }
@@ -36509,7 +36509,7 @@
                         "city": "चेंगदू",
                         "date": "अगले मंगलवार",
                         "weather_condition": "overcast to light rain",
-                        "tamperature": "The maximum temperature will be 11 degrees Celsius and the minimum temperature will be 4 degrees Celsius.",
+                        "temperature": "The maximum temperature will be 11 degrees Celsius and the minimum temperature will be 4 degrees Celsius.",
                         "wind": "बिना निरंतर दिशा के हवा चलेगी",
                         "uv_intensity": "सबसे कमजोर"
                     }
@@ -36534,7 +36534,7 @@
                         "Weather-city": "चेंगदू"
                     },
                     "turn request": [
-                        "tamperature"
+                        "temperature"
                     ],
                     "turn_inform": {}
                 },
@@ -36542,7 +36542,7 @@
                     [
                         "Request",
                         "Weather",
-                        "tamperature",
+                        "temperature",
                         ""
                     ]
                 ],
@@ -36550,7 +36550,7 @@
                     [
                         "Inform",
                         "Weather",
-                        "tamperature",
+                        "temperature",
                         "The maximum temperature will be 11 degrees Celsius and the minimum temperature will be 4 degrees Celsius."
                     ]
                 ],
@@ -36563,7 +36563,7 @@
                         "city": "चेंगदू",
                         "date": "अगले मंगलवार",
                         "weather_condition": "overcast to light rain",
-                        "tamperature": "The maximum temperature will be 11 degrees Celsius and the minimum temperature will be 4 degrees Celsius.",
+                        "temperature": "The maximum temperature will be 11 degrees Celsius and the minimum temperature will be 4 degrees Celsius.",
                         "wind": "बिना निरंतर दिशा के हवा चलेगी",
                         "uv_intensity": "सबसे कमजोर"
                     }
@@ -36644,7 +36644,7 @@
                         "city": "गुआंगज़ौ",
                         "date": "अगले मंगलवार",
                         "weather_condition": "धूप से लेकर बादल छाए रहेंगे",
-                        "tamperature": "The maximum temperature will be 18 degrees Celsius, and the minimum temperature will be 5 degrees Celsius.",
+                        "temperature": "The maximum temperature will be 18 degrees Celsius, and the minimum temperature will be 5 degrees Celsius.",
                         "wind": "बिना निरंतर दिशा के हवा चलेगी",
                         "uv_intensity": "बहुत मजबूत"
                     }
@@ -36669,7 +36669,7 @@
                         "Weather-date": "अगले मंगलवार"
                     },
                     "turn request": [
-                        "tamperature"
+                        "temperature"
                     ],
                     "turn_inform": {}
                 },
@@ -36677,7 +36677,7 @@
                     [
                         "Request",
                         "Weather",
-                        "tamperature",
+                        "temperature",
                         ""
                     ]
                 ],
@@ -36685,7 +36685,7 @@
                     [
                         "Inform",
                         "Weather",
-                        "tamperature",
+                        "temperature",
                         "The maximum temperature will be 18 degrees Celsius and the minimum temperature will be 5 degrees Celsius."
                     ]
                 ],
@@ -36698,7 +36698,7 @@
                         "city": "गुआंगज़ौ",
                         "date": "अगले मंगलवार",
                         "weather_condition": "धूप से लेकर बादल छाए रहेंगे",
-                        "tamperature": "The maximum temperature will be 18 degrees Celsius, and the minimum temperature will be 5 degrees Celsius.",
+                        "temperature": "The maximum temperature will be 18 degrees Celsius, and the minimum temperature will be 5 degrees Celsius.",
                         "wind": "बिना निरंतर दिशा के हवा चलेगी",
                         "uv_intensity": "बहुत मजबूत"
                     }
@@ -38051,7 +38051,7 @@
                         "city": "ज़ियामेन",
                         "date": "अगले सोमवार",
                         "weather_condition": "धूप",
-                        "tamperature": "The maximum temperature will be 14 degrees Celsius and the minimum temperature will be 8 degrees Celsius.",
+                        "temperature": "The maximum temperature will be 14 degrees Celsius and the minimum temperature will be 8 degrees Celsius.",
                         "wind": "पूर्वोत्तर बल 3-4",
                         "uv_intensity": "बहुत मजबूत"
                     }
@@ -38118,7 +38118,7 @@
                         "city": "ज़ियामेन",
                         "date": "अगले सोमवार",
                         "weather_condition": "धूप",
-                        "tamperature": "The maximum temperature will be 14 degrees Celsius and the minimum temperature will be 8 degrees Celsius.",
+                        "temperature": "The maximum temperature will be 14 degrees Celsius and the minimum temperature will be 8 degrees Celsius.",
                         "wind": "पूर्वोत्तर बल 3-4",
                         "uv_intensity": "बहुत मजबूत"
                     }
@@ -38147,7 +38147,7 @@
                         "Weather-date": "अगले सोमवार"
                     },
                     "turn request": [
-                        "tamperature"
+                        "temperature"
                     ],
                     "turn_inform": {}
                 },
@@ -38155,7 +38155,7 @@
                     [
                         "Request",
                         "Weather",
-                        "tamperature",
+                        "temperature",
                         ""
                     ],
                     [
@@ -38169,7 +38169,7 @@
                     [
                         "Inform",
                         "Weather",
-                        "tamperature",
+                        "temperature",
                         "The maximum temperature will be 14 degrees Celsius and the minimum temperature will be 8 degrees Celsius."
                     ]
                 ],
@@ -38182,7 +38182,7 @@
                         "city": "ज़ियामेन",
                         "date": "अगले सोमवार",
                         "weather_condition": "धूप",
-                        "tamperature": "The maximum temperature will be 14 degrees Celsius and the minimum temperature will be 8 degrees Celsius.",
+                        "temperature": "The maximum temperature will be 14 degrees Celsius and the minimum temperature will be 8 degrees Celsius.",
                         "wind": "पूर्वोत्तर बल 3-4",
                         "uv_intensity": "बहुत मजबूत"
                     }
@@ -38363,7 +38363,7 @@
                         "city": "चेंगदू",
                         "date": "अगले शनिवार",
                         "weather_condition": "cloudy to overcast",
-                        "tamperature": "The maximum temperature will be 15 degrees Celsius, and the minimum temperature will be 7 degrees Celsius.",
+                        "temperature": "The maximum temperature will be 15 degrees Celsius, and the minimum temperature will be 7 degrees Celsius.",
                         "wind": "बिना निरंतर दिशा के हवा चलेगी",
                         "uv_intensity": "मध्यम"
                     }
@@ -38388,7 +38388,7 @@
                         "Weather-city": "चेंगदू"
                     },
                     "turn request": [
-                        "tamperature"
+                        "temperature"
                     ],
                     "turn_inform": {}
                 },
@@ -38396,7 +38396,7 @@
                     [
                         "Request",
                         "Weather",
-                        "tamperature",
+                        "temperature",
                         ""
                     ]
                 ],
@@ -38404,7 +38404,7 @@
                     [
                         "Inform",
                         "Weather",
-                        "tamperature",
+                        "temperature",
                         "The maximum temperature will be 15 degrees Celsius, and the minimum temperature will be 7 degrees Celsius."
                     ]
                 ],
@@ -38417,7 +38417,7 @@
                         "city": "चेंगदू",
                         "date": "अगले शनिवार",
                         "weather_condition": "cloudy to overcast",
-                        "tamperature": "The maximum temperature will be 15 degrees Celsius, and the minimum temperature will be 7 degrees Celsius.",
+                        "temperature": "The maximum temperature will be 15 degrees Celsius, and the minimum temperature will be 7 degrees Celsius.",
                         "wind": "बिना निरंतर दिशा के हवा चलेगी",
                         "uv_intensity": "मध्यम"
                     }
@@ -38480,7 +38480,7 @@
                         "city": "चेंगदू",
                         "date": "अगले शनिवार",
                         "weather_condition": "cloudy to overcast",
-                        "tamperature": "The maximum temperature will be 15 degrees Celsius, and the minimum temperature will be 7 degrees Celsius.",
+                        "temperature": "The maximum temperature will be 15 degrees Celsius, and the minimum temperature will be 7 degrees Celsius.",
                         "wind": "बिना निरंतर दिशा के हवा चलेगी",
                         "uv_intensity": "मध्यम"
                     }
@@ -38563,7 +38563,7 @@
                         "city": "चेंगदू",
                         "date": "अगले शुक्रवार",
                         "weather_condition": "बादल छाए",
-                        "tamperature": "The maximum temperature will be 15 degrees Celsius, and the minimum temperature will be 7 degrees Celsius.",
+                        "temperature": "The maximum temperature will be 15 degrees Celsius, and the minimum temperature will be 7 degrees Celsius.",
                         "wind": "बिना निरंतर दिशा के हवा चलेगी",
                         "uv_intensity": "मध्यम"
                     }
@@ -38588,7 +38588,7 @@
                         "Weather-city": "चेंगदू"
                     },
                     "turn request": [
-                        "tamperature"
+                        "temperature"
                     ],
                     "turn_inform": {}
                 },
@@ -38596,7 +38596,7 @@
                     [
                         "Request",
                         "Weather",
-                        "tamperature",
+                        "temperature",
                         ""
                     ]
                 ],
@@ -38604,7 +38604,7 @@
                     [
                         "Inform",
                         "Weather",
-                        "tamperature",
+                        "temperature",
                         "The maximum temperature will be 15 degrees Celsius, and the minimum temperature will be 7 degrees Celsius."
                     ]
                 ],
@@ -38617,7 +38617,7 @@
                         "city": "चेंगदू",
                         "date": "अगले शुक्रवार",
                         "weather_condition": "बादल छाए",
-                        "tamperature": "The maximum temperature will be 15 degrees Celsius, and the minimum temperature will be 7 degrees Celsius.",
+                        "temperature": "The maximum temperature will be 15 degrees Celsius, and the minimum temperature will be 7 degrees Celsius.",
                         "wind": "बिना निरंतर दिशा के हवा चलेगी",
                         "uv_intensity": "मध्यम"
                     }
@@ -48706,7 +48706,7 @@
                         "city": "ज़ियामेन",
                         "date": "अगले मंगलवार",
                         "weather_condition": "धूप",
-                        "tamperature": "अधिकतम तापमान 14 डिग्री सेल्सियस और न्यूनतम तापमान 7 डिग्री सेल्सियस रहेगा",
+                        "temperature": "अधिकतम तापमान 14 डिग्री सेल्सियस और न्यूनतम तापमान 7 डिग्री सेल्सियस रहेगा",
                         "wind": "पूर्वोत्तर बल 4-5",
                         "uv_intensity": "बहुत मजबूत"
                     }
@@ -48724,7 +48724,7 @@
                 "system_utterance": [
                     "उस दिन अधिकतम तापमान 14 डिग्री सेल्सियस और न्यूनतम तापमान 7 डिग्री सेल्सियस रहने का अनुमान है",
                     {
-                        "Weather-tamperature": {
+                        "Weather-temperature": {
                             "अधिकतम तापमान 14 डिग्री सेल्सियस और न्यूनतम तापमान 7 डिग्री सेल्सियस रहने का अनुमान है": [
                                 [
                                     2,
@@ -48744,7 +48744,7 @@
                         "Weather-date": "अगले मंगलवार"
                     },
                     "turn request": [
-                        "tamperature"
+                        "temperature"
                     ],
                     "turn_inform": {}
                 },
@@ -48752,7 +48752,7 @@
                     [
                         "Request",
                         "Weather",
-                        "tamperature",
+                        "temperature",
                         ""
                     ]
                 ],
@@ -48760,7 +48760,7 @@
                     [
                         "Inform",
                         "Weather",
-                        "tamperature",
+                        "temperature",
                         "अधिकतम तापमान 14 डिग्री सेल्सियस और न्यूनतम तापमान 7 डिग्री सेल्सियस रहने का अनुमान है"
                     ]
                 ],
@@ -48773,7 +48773,7 @@
                         "city": "ज़ियामेन",
                         "date": "अगले मंगलवार",
                         "weather_condition": "धूप",
-                        "tamperature": "अधिकतम तापमान 14 डिग्री सेल्सियस और न्यूनतम तापमान 7 डिग्री सेल्सियस रहेगा",
+                        "temperature": "अधिकतम तापमान 14 डिग्री सेल्सियस और न्यूनतम तापमान 7 डिग्री सेल्सियस रहेगा",
                         "wind": "पूर्वोत्तर बल 4-5",
                         "uv_intensity": "बहुत मजबूत"
                     }
@@ -48840,7 +48840,7 @@
                         "city": "ज़ियामेन",
                         "date": "अगले मंगलवार",
                         "weather_condition": "धूप",
-                        "tamperature": "अधिकतम तापमान 14 डिग्री सेल्सियस और न्यूनतम तापमान 7 डिग्री सेल्सियस रहेगा",
+                        "temperature": "अधिकतम तापमान 14 डिग्री सेल्सियस और न्यूनतम तापमान 7 डिग्री सेल्सियस रहेगा",
                         "wind": "पूर्वोत्तर बल 4-5",
                         "uv_intensity": "बहुत मजबूत"
                     }
@@ -48974,7 +48974,7 @@
                         "city": "बीजिंग",
                         "date": "अगले सोमवार",
                         "weather_condition": "धूप",
-                        "tamperature": "The maximum temperature will be 8 degrees Celsius, and the minimum temperature will be -6 degrees Celsius.",
+                        "temperature": "The maximum temperature will be 8 degrees Celsius, and the minimum temperature will be -6 degrees Celsius.",
                         "wind": "southwest force 3-4.",
                         "uv_intensity": "मजबूत"
                     },
@@ -48982,7 +48982,7 @@
                         "city": "बीजिंग",
                         "date": "अगले मंगलवार",
                         "weather_condition": "धूप",
-                        "tamperature": "अधिकतम तापमान 10 डिग्री सेल्सियस और न्यूनतम तापमान -5 डिग्री सेल्सियस रहेगा",
+                        "temperature": "अधिकतम तापमान 10 डिग्री सेल्सियस और न्यूनतम तापमान -5 डिग्री सेल्सियस रहेगा",
                         "wind": "दक्षिण-पश्चिम बल 2",
                         "uv_intensity": "मजबूत"
                     },
@@ -48990,7 +48990,7 @@
                         "city": "बीजिंग",
                         "date": "अगले बुधवार",
                         "weather_condition": "धूप से लेकर बादल छाए रहेंगे",
-                        "tamperature": "The maximum temperature will be 8 degrees Celsius, and the minimum temperature will be −5 degrees Celsius.",
+                        "temperature": "The maximum temperature will be 8 degrees Celsius, and the minimum temperature will be −5 degrees Celsius.",
                         "wind": "दक्षिण-पूर्व बल 2",
                         "uv_intensity": "मजबूत"
                     },
@@ -48998,7 +48998,7 @@
                         "city": "बीजिंग",
                         "date": "अगले गुरुवार को",
                         "weather_condition": "बादल छाए",
-                        "tamperature": "अधिकतम तापमान 4 डिग्री सेल्सियस और न्यूनतम तापमान -4 डिग्री सेल्सियस रहने का अनुमान है",
+                        "temperature": "अधिकतम तापमान 4 डिग्री सेल्सियस और न्यूनतम तापमान -4 डिग्री सेल्सियस रहने का अनुमान है",
                         "wind": "दक्षिण-पूर्व बल 1",
                         "uv_intensity": "मजबूत"
                     },
@@ -49006,7 +49006,7 @@
                         "city": "बीजिंग",
                         "date": "अगले शुक्रवार",
                         "weather_condition": "बादल छाए रहेंगे और बाद में धूप खिली रहेगी",
-                        "tamperature": "अधिकतम तापमान 8 डिग्री सेल्सियस और न्यूनतम तापमान -3 डिग्री सेल्सियस रहेगा",
+                        "temperature": "अधिकतम तापमान 8 डिग्री सेल्सियस और न्यूनतम तापमान -3 डिग्री सेल्सियस रहेगा",
                         "wind": "उत्तर-पश्चिम बल 3-4",
                         "uv_intensity": "मजबूत"
                     },
@@ -49014,7 +49014,7 @@
                         "city": "बीजिंग",
                         "date": "अगले शनिवार",
                         "weather_condition": "धूप",
-                        "tamperature": "The maximum temperature will be 9 degrees Celsius and the minimum temperature will be −3 degrees Celsius.",
+                        "temperature": "The maximum temperature will be 9 degrees Celsius and the minimum temperature will be −3 degrees Celsius.",
                         "wind": "उत्तरी बल 3",
                         "uv_intensity": "मजबूत"
                     },
@@ -49022,7 +49022,7 @@
                         "city": "बीजिंग",
                         "date": "अगले रविवार",
                         "weather_condition": "धूप",
-                        "tamperature": "अधिकतम तापमान 9 डिग्री सेल्सियस और न्यूनतम तापमान -2 डिग्री सेल्सियस रहने का अनुमान है",
+                        "temperature": "अधिकतम तापमान 9 डिग्री सेल्सियस और न्यूनतम तापमान -2 डिग्री सेल्सियस रहने का अनुमान है",
                         "wind": "north force 3-4",
                         "uv_intensity": "मजबूत"
                     }
@@ -49111,7 +49111,7 @@
                         "city": "बीजिंग",
                         "date": "अगले शुक्रवार",
                         "weather_condition": "बादल छाए रहेंगे और बाद में धूप खिली रहेगी",
-                        "tamperature": "अधिकतम तापमान 8 डिग्री सेल्सियस और न्यूनतम तापमान -3 डिग्री सेल्सियस रहेगा",
+                        "temperature": "अधिकतम तापमान 8 डिग्री सेल्सियस और न्यूनतम तापमान -3 डिग्री सेल्सियस रहेगा",
                         "wind": "उत्तर-पश्चिम बल 3-4",
                         "uv_intensity": "मजबूत"
                     }
@@ -49174,7 +49174,7 @@
                         "city": "बीजिंग",
                         "date": "अगले शुक्रवार",
                         "weather_condition": "बादल छाए रहेंगे और बाद में धूप खिली रहेगी",
-                        "tamperature": "अधिकतम तापमान 8 डिग्री सेल्सियस और न्यूनतम तापमान -3 डिग्री सेल्सियस रहेगा",
+                        "temperature": "अधिकतम तापमान 8 डिग्री सेल्सियस और न्यूनतम तापमान -3 डिग्री सेल्सियस रहेगा",
                         "wind": "उत्तर-पश्चिम बल 3-4",
                         "uv_intensity": "मजबूत"
                     }
@@ -49237,7 +49237,7 @@
                         "city": "बीजिंग",
                         "date": "अगले शुक्रवार",
                         "weather_condition": "बादल छाए रहेंगे और बाद में धूप खिली रहेगी",
-                        "tamperature": "अधिकतम तापमान 8 डिग्री सेल्सियस और न्यूनतम तापमान -3 डिग्री सेल्सियस रहेगा",
+                        "temperature": "अधिकतम तापमान 8 डिग्री सेल्सियस और न्यूनतम तापमान -3 डिग्री सेल्सियस रहेगा",
                         "wind": "उत्तर-पश्चिम बल 3-4",
                         "uv_intensity": "मजबूत"
                     }
@@ -49326,7 +49326,7 @@
                         "city": "बीजिंग",
                         "date": "अगले शनिवार",
                         "weather_condition": "धूप",
-                        "tamperature": "The maximum temperature will be 9 degrees Celsius and the minimum temperature will be −3 degrees Celsius.",
+                        "temperature": "The maximum temperature will be 9 degrees Celsius and the minimum temperature will be −3 degrees Celsius.",
                         "wind": "उत्तरी बल 3",
                         "uv_intensity": "मजबूत"
                     }
@@ -49351,7 +49351,7 @@
                         "Weather-city": "बीजिंग"
                     },
                     "turn request": [
-                        "tamperature"
+                        "temperature"
                     ],
                     "turn_inform": {}
                 },
@@ -49359,7 +49359,7 @@
                     [
                         "Request",
                         "Weather",
-                        "tamperature",
+                        "temperature",
                         ""
                     ]
                 ],
@@ -49367,7 +49367,7 @@
                     [
                         "Inform",
                         "Weather",
-                        "tamperature",
+                        "temperature",
                         "The maximum temperature will be 9 degrees Celsius and the minimum temperature will be −3 degrees Celsius."
                     ]
                 ],
@@ -49380,7 +49380,7 @@
                         "city": "बीजिंग",
                         "date": "अगले शनिवार",
                         "weather_condition": "धूप",
-                        "tamperature": "The maximum temperature will be 9 degrees Celsius and the minimum temperature will be −3 degrees Celsius.",
+                        "temperature": "The maximum temperature will be 9 degrees Celsius and the minimum temperature will be −3 degrees Celsius.",
                         "wind": "उत्तरी बल 3",
                         "uv_intensity": "मजबूत"
                     }
@@ -51619,7 +51619,7 @@
                         "city": "ज़ियामेन",
                         "date": "अगले सोमवार",
                         "weather_condition": "धूप",
-                        "tamperature": "The maximum temperature will be 14 degrees Celsius and the minimum temperature will be 8 degrees Celsius.",
+                        "temperature": "The maximum temperature will be 14 degrees Celsius and the minimum temperature will be 8 degrees Celsius.",
                         "wind": "पूर्वोत्तर बल 3-4",
                         "uv_intensity": "बहुत मजबूत"
                     }
@@ -51644,7 +51644,7 @@
                         "Weather-city": "ज़ियामेन"
                     },
                     "turn request": [
-                        "tamperature"
+                        "temperature"
                     ],
                     "turn_inform": {}
                 },
@@ -51652,7 +51652,7 @@
                     [
                         "Request",
                         "Weather",
-                        "tamperature",
+                        "temperature",
                         ""
                     ]
                 ],
@@ -51660,7 +51660,7 @@
                     [
                         "Inform",
                         "Weather",
-                        "tamperature",
+                        "temperature",
                         "The maximum temperature will be 14 degrees Celsius and the minimum temperature will be 8 degrees Celsius."
                     ]
                 ],
@@ -51673,7 +51673,7 @@
                         "city": "ज़ियामेन",
                         "date": "अगले सोमवार",
                         "weather_condition": "धूप",
-                        "tamperature": "The maximum temperature will be 14 degrees Celsius and the minimum temperature will be 8 degrees Celsius.",
+                        "temperature": "The maximum temperature will be 14 degrees Celsius and the minimum temperature will be 8 degrees Celsius.",
                         "wind": "पूर्वोत्तर बल 3-4",
                         "uv_intensity": "बहुत मजबूत"
                     }
@@ -51736,7 +51736,7 @@
                         "city": "ज़ियामेन",
                         "date": "अगले सोमवार",
                         "weather_condition": "धूप",
-                        "tamperature": "The maximum temperature will be 14 degrees Celsius and the minimum temperature will be 8 degrees Celsius.",
+                        "temperature": "The maximum temperature will be 14 degrees Celsius and the minimum temperature will be 8 degrees Celsius.",
                         "wind": "पूर्वोत्तर बल 3-4",
                         "uv_intensity": "बहुत मजबूत"
                     }
@@ -51809,7 +51809,7 @@
                         "city": "ज़ियामेन",
                         "date": "अगले सोमवार",
                         "weather_condition": "धूप",
-                        "tamperature": "The maximum temperature will be 14 degrees Celsius and the minimum temperature will be 8 degrees Celsius.",
+                        "temperature": "The maximum temperature will be 14 degrees Celsius and the minimum temperature will be 8 degrees Celsius.",
                         "wind": "पूर्वोत्तर बल 3-4",
                         "uv_intensity": "बहुत मजबूत"
                     }
@@ -57294,7 +57294,7 @@
                                 ]
                             ]
                         },
-                        "Weather-tamperature": {
+                        "Weather-temperature": {
                             "अधिकतम तापमान 16 डिग्री सेल्सियस और न्यूनतम तापमान 9 डिग्री सेल्सियस रहेगा": [
                                 [
                                     4,
@@ -57319,7 +57319,7 @@
                         "Weather-city": "शंघाई"
                     },
                     "turn request": [
-                        "tamperature"
+                        "temperature"
                     ]
                 },
                 "user_actions": [
@@ -57338,7 +57338,7 @@
                     [
                         "Request",
                         "Weather",
-                        "tamperature",
+                        "temperature",
                         ""
                     ]
                 ],
@@ -57346,7 +57346,7 @@
                     [
                         "Inform",
                         "Weather",
-                        "tamperature",
+                        "temperature",
                         "अधिकतम तापमान 16 डिग्री सेल्सियस और न्यूनतम तापमान 9 डिग्री सेल्सियस रहेगा"
                     ]
                 ],
@@ -57361,7 +57361,7 @@
                         "city": "शंघाई",
                         "date": "अगले शुक्रवार",
                         "weather_condition": "हल्की बारिश",
-                        "tamperature": "The maximum temperature will be 16 degrees Celsius, and the minimum temperature will be 9 degrees Celsius.",
+                        "temperature": "The maximum temperature will be 16 degrees Celsius, and the minimum temperature will be 9 degrees Celsius.",
                         "wind": "north force 2",
                         "uv_intensity": "सबसे कमजोर"
                     }
@@ -57429,7 +57429,7 @@
                         "city": "शंघाई",
                         "date": "अगले शुक्रवार",
                         "weather_condition": "हल्की बारिश",
-                        "tamperature": "The maximum temperature will be 16 degrees Celsius, and the minimum temperature will be 9 degrees Celsius.",
+                        "temperature": "The maximum temperature will be 16 degrees Celsius, and the minimum temperature will be 9 degrees Celsius.",
                         "wind": "north force 2",
                         "uv_intensity": "सबसे कमजोर"
                     }
@@ -57769,7 +57769,7 @@
                         "city": "शंघाई",
                         "date": "अगले मंगलवार",
                         "weather_condition": "धूप से लेकर बादल छाए रहेंगे",
-                        "tamperature": "अधिकतम तापमान 10 डिग्री सेल्सियस और न्यूनतम तापमान 2 डिग्री सेल्सियस रहने का अनुमान है",
+                        "temperature": "अधिकतम तापमान 10 डिग्री सेल्सियस और न्यूनतम तापमान 2 डिग्री सेल्सियस रहने का अनुमान है",
                         "wind": "दक्षिण-पूर्व बल 2",
                         "uv_intensity": "मजबूत"
                     }
@@ -58335,7 +58335,7 @@
                         "city": "नानजिंग",
                         "date": "अगले शनिवार",
                         "weather_condition": "बादल छाए",
-                        "tamperature": "The maximum temperature will be 17 degrees Celsius and the minimum temperature will be 6 degrees Celsius.",
+                        "temperature": "The maximum temperature will be 17 degrees Celsius and the minimum temperature will be 6 degrees Celsius.",
                         "wind": "उत्तर-पश्चिम बल 2",
                         "uv_intensity": "मजबूत"
                     }
@@ -58365,7 +58365,7 @@
                         "Weather-city": "नानजिंग"
                     },
                     "turn request": [
-                        "tamperature"
+                        "temperature"
                     ],
                     "turn_inform": {}
                 },
@@ -58373,7 +58373,7 @@
                     [
                         "Request",
                         "Weather",
-                        "tamperature",
+                        "temperature",
                         ""
                     ]
                 ],
@@ -58381,7 +58381,7 @@
                     [
                         "Inform",
                         "Weather",
-                        "tamperature",
+                        "temperature",
                         "The maximum temperature will be 17 degrees Celsius and the minimum temperature will be 6 degrees Celsius."
                     ]
                 ],
@@ -58394,7 +58394,7 @@
                         "city": "नानजिंग",
                         "date": "अगले शनिवार",
                         "weather_condition": "बादल छाए",
-                        "tamperature": "The maximum temperature will be 17 degrees Celsius and the minimum temperature will be 6 degrees Celsius.",
+                        "temperature": "The maximum temperature will be 17 degrees Celsius and the minimum temperature will be 6 degrees Celsius.",
                         "wind": "उत्तर-पश्चिम बल 2",
                         "uv_intensity": "मजबूत"
                     }
@@ -62186,7 +62186,7 @@
                                 ]
                             ]
                         },
-                        "Weather-tamperature": {
+                        "Weather-temperature": {
                             "सोमवार को अधिकतम तापमान 10 डिग्री सेल्सियस और न्यूनतम तापमान 1 डिग्री सेल्सियस रहेगा": [
                                 [
                                     5,
@@ -62206,7 +62206,7 @@
                         "Weather-city": "शंघाई"
                     },
                     "turn request": [
-                        "tamperature"
+                        "temperature"
                     ]
                 },
                 "user_actions": [
@@ -62225,7 +62225,7 @@
                     [
                         "Request",
                         "Weather",
-                        "tamperature",
+                        "temperature",
                         ""
                     ],
                     [
@@ -62239,7 +62239,7 @@
                     [
                         "Inform",
                         "Weather",
-                        "tamperature",
+                        "temperature",
                         "सोमवार को अधिकतम तापमान 10 डिग्री सेल्सियस और न्यूनतम तापमान 1 डिग्री सेल्सियस रहेगा"
                     ]
                 ],
@@ -62254,7 +62254,7 @@
                         "city": "शंघाई",
                         "date": "अगले सोमवार",
                         "weather_condition": "धूप",
-                        "tamperature": "The maximum temperature will be 10 degrees Celsius, and the minimum temperature will be 1 degree Celsius.",
+                        "temperature": "The maximum temperature will be 10 degrees Celsius, and the minimum temperature will be 1 degree Celsius.",
                         "wind": "उत्तर-पश्चिम बल 3-4",
                         "uv_intensity": "मजबूत"
                     }
@@ -62317,7 +62317,7 @@
                         "city": "शंघाई",
                         "date": "अगले सोमवार",
                         "weather_condition": "धूप",
-                        "tamperature": "The maximum temperature will be 10 degrees Celsius, and the minimum temperature will be 1 degree Celsius.",
+                        "temperature": "The maximum temperature will be 10 degrees Celsius, and the minimum temperature will be 1 degree Celsius.",
                         "wind": "उत्तर-पश्चिम बल 3-4",
                         "uv_intensity": "मजबूत"
                     }
@@ -62380,7 +62380,7 @@
                         "city": "शंघाई",
                         "date": "अगले सोमवार",
                         "weather_condition": "धूप",
-                        "tamperature": "The maximum temperature will be 10 degrees Celsius, and the minimum temperature will be 1 degree Celsius.",
+                        "temperature": "The maximum temperature will be 10 degrees Celsius, and the minimum temperature will be 1 degree Celsius.",
                         "wind": "उत्तर-पश्चिम बल 3-4",
                         "uv_intensity": "मजबूत"
                     }
@@ -66268,7 +66268,7 @@
                     },
                     "turn request": [
                         "weather condition",
-                        "tamperature"
+                        "temperature"
                     ]
                 },
                 "user_actions": [
@@ -66293,7 +66293,7 @@
                     [
                         "Request",
                         "Weather",
-                        "tamperature",
+                        "temperature",
                         ""
                     ],
                     [
@@ -66313,7 +66313,7 @@
                     [
                         "Inform",
                         "Weather",
-                        "tamperature",
+                        "temperature",
                         "The maximum temperature will be 8 degrees Celsius, and the minimum temperature will be -6 degrees Celsius."
                     ]
                 ],
@@ -66329,7 +66329,7 @@
                         "city": "बीजिंग",
                         "date": "अगले सोमवार",
                         "weather_condition": "धूप",
-                        "tamperature": "The maximum temperature will be 8 degrees Celsius, and the minimum temperature will be -6 degrees Celsius.",
+                        "temperature": "The maximum temperature will be 8 degrees Celsius, and the minimum temperature will be -6 degrees Celsius.",
                         "wind": "southwest force 3-4.",
                         "uv_intensity": "मजबूत"
                     }
@@ -66383,7 +66383,7 @@
                         "city": "बीजिंग",
                         "date": "अगले सोमवार",
                         "weather_condition": "धूप",
-                        "tamperature": "The maximum temperature will be 8 degrees Celsius, and the minimum temperature will be -6 degrees Celsius.",
+                        "temperature": "The maximum temperature will be 8 degrees Celsius, and the minimum temperature will be -6 degrees Celsius.",
                         "wind": "southwest force 3-4.",
                         "uv_intensity": "मजबूत"
                     }
@@ -66446,7 +66446,7 @@
                                 ]
                             ]
                         },
-                        "Weather-tamperature": {
+                        "Weather-temperature": {
                             "अधिकतम तापमान 9 डिग्री सेल्सियस और न्यूनतम तापमान -2 डिग्री सेल्सियस रहने का अनुमान है": [
                                 [
                                     8,
@@ -66466,7 +66466,7 @@
                     },
                     "turn request": [
                         "weather condition",
-                        "tamperature"
+                        "temperature"
                     ]
                 },
                 "user_actions": [
@@ -66485,7 +66485,7 @@
                     [
                         "Request",
                         "Weather",
-                        "tamperature",
+                        "temperature",
                         ""
                     ]
                 ],
@@ -66499,7 +66499,7 @@
                     [
                         "Inform",
                         "Weather",
-                        "tamperature",
+                        "temperature",
                         "अधिकतम तापमान 9 डिग्री सेल्सियस और न्यूनतम तापमान -2 डिग्री सेल्सियस रहने का अनुमान है"
                     ]
                 ],
@@ -66515,7 +66515,7 @@
                         "city": "नानजिंग",
                         "date": "अगले सोमवार",
                         "weather_condition": "धूप",
-                        "tamperature": "अधिकतम तापमान 9 डिग्री सेल्सियस और न्यूनतम तापमान -2 डिग्री सेल्सियस रहने का अनुमान है",
+                        "temperature": "अधिकतम तापमान 9 डिग्री सेल्सियस और न्यूनतम तापमान -2 डिग्री सेल्सियस रहने का अनुमान है",
                         "wind": "उत्तर-पश्चिम बल 4-5",
                         "uv_intensity": "मजबूत"
                     }
@@ -66588,7 +66588,7 @@
                         "city": "नानजिंग",
                         "date": "अगले सोमवार",
                         "weather_condition": "धूप",
-                        "tamperature": "अधिकतम तापमान 9 डिग्री सेल्सियस और न्यूनतम तापमान -2 डिग्री सेल्सियस रहने का अनुमान है",
+                        "temperature": "अधिकतम तापमान 9 डिग्री सेल्सियस और न्यूनतम तापमान -2 डिग्री सेल्सियस रहने का अनुमान है",
                         "wind": "उत्तर-पश्चिम बल 4-5",
                         "uv_intensity": "मजबूत"
                     }

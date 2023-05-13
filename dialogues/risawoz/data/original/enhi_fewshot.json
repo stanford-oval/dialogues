@@ -5576,7 +5576,7 @@
                         "city": "Xiamen",
                         "date": "next Sunday",
                         "weather_condition": "sunny",
-                        "tamperature": "The maximum temperature will be 22 degrees Celsius , and the minimum temperature will be 14 degrees Celsius",
+                        "temperature": "The maximum temperature will be 22 degrees Celsius , and the minimum temperature will be 14 degrees Celsius",
                         "wind": "northeast force 2",
                         "uv_intensity": "very strong"
                     }
@@ -5648,7 +5648,7 @@
                         "city": "Xiamen",
                         "date": "next Sunday",
                         "weather_condition": "sunny",
-                        "tamperature": "The maximum temperature will be 22 degrees Celsius , and the minimum temperature will be 14 degrees Celsius",
+                        "temperature": "The maximum temperature will be 22 degrees Celsius , and the minimum temperature will be 14 degrees Celsius",
                         "wind": "northeast force 2",
                         "uv_intensity": "very strong"
                     }
@@ -5666,7 +5666,7 @@
                 "system_utterance": [
                     "यह mild होगा । The maximum temperature will be 22 degrees Celsius , and the minimum temperature will be 14 degrees Celsius .",
                     {
-                        "Weather-tamperature": {
+                        "Weather-temperature": {
                             "The maximum temperature will be 22 degrees Celsius , and the minimum temperature will be 14 degrees Celsius": [
                                 [
                                     4,
@@ -5681,7 +5681,7 @@
                         "Weather-date": "next Sunday"
                     },
                     "turn request": [
-                        "tamperature"
+                        "temperature"
                     ],
                     "turn_inform": {}
                 },
@@ -5689,7 +5689,7 @@
                     [
                         "Request",
                         "Weather",
-                        "tamperature",
+                        "temperature",
                         ""
                     ]
                 ],
@@ -5697,7 +5697,7 @@
                     [
                         "Inform",
                         "Weather",
-                        "tamperature",
+                        "temperature",
                         "The maximum temperature will be 22 degrees Celsius , and the minimum temperature will be 14 degrees Celsius"
                     ]
                 ],
@@ -5710,7 +5710,7 @@
                         "city": "Xiamen",
                         "date": "next Sunday",
                         "weather_condition": "sunny",
-                        "tamperature": "The maximum temperature will be 22 degrees Celsius , and the minimum temperature will be 14 degrees Celsius",
+                        "temperature": "The maximum temperature will be 22 degrees Celsius , and the minimum temperature will be 14 degrees Celsius",
                         "wind": "northeast force 2",
                         "uv_intensity": "very strong"
                     }
@@ -5815,7 +5815,7 @@
                         "city": "Xiamen",
                         "date": "next Thursday",
                         "weather_condition": "sunny",
-                        "tamperature": "maximum temperature 20 degrees Celsius और minimum temperature 12 degrees Celsius",
+                        "temperature": "maximum temperature 20 degrees Celsius और minimum temperature 12 degrees Celsius",
                         "wind": "northeast force 4-5",
                         "uv_intensity": "very strong"
                     }
@@ -5842,7 +5842,7 @@
                 "system_utterance": [
                     "लगभग। maximum temperature 20 degrees Celsius और minimum temperature 12 degrees Celsius रहेगा",
                     {
-                        "Weather-tamperature": {
+                        "Weather-temperature": {
                             "maximum temperature 20 degrees Celsius और minimum temperature 12 degrees Celsius रहेगा": [
                                 [
                                     1,
@@ -5857,7 +5857,7 @@
                         "Weather-date": "next Sunday"
                     },
                     "turn request": [
-                        "tamperature"
+                        "temperature"
                     ],
                     "turn_inform": {}
                 },
@@ -5865,7 +5865,7 @@
                     [
                         "Request",
                         "Weather",
-                        "tamperature",
+                        "temperature",
                         ""
                     ]
                 ],
@@ -5873,7 +5873,7 @@
                     [
                         "Inform",
                         "Weather",
-                        "tamperature",
+                        "temperature",
                         "maximum temperature 20 degrees Celsius और minimum temperature 12 degrees Celsius रहेगा"
                     ]
                 ],
@@ -5887,7 +5887,7 @@
                         "city": "Xiamen",
                         "date": "next Thursday",
                         "weather_condition": "sunny",
-                        "tamperature": "maximum temperature 20 degrees Celsius और minimum temperature 12 degrees Celsius",
+                        "temperature": "maximum temperature 20 degrees Celsius और minimum temperature 12 degrees Celsius",
                         "wind": "northeast force 4-5",
                         "uv_intensity": "very strong"
                     }
@@ -9697,7 +9697,7 @@
                         "city": "Shenzhen",
                         "date": "next Friday ",
                         "weather_condition": "cloudy",
-                        "tamperature": "अधिकतम तापमान 21 degrees सेल्सियस और न्यूनतम तापमान 15 degrees सेल्सियस होगा",
+                        "temperature": "अधिकतम तापमान 21 degrees सेल्सियस और न्यूनतम तापमान 15 degrees सेल्सियस होगा",
                         "wind": "east force 2",
                         "uv_intensity": "moderate"
                     }
@@ -9761,7 +9761,7 @@
                         "city": "Shenzhen",
                         "date": "next Friday ",
                         "weather_condition": "cloudy",
-                        "tamperature": "अधिकतम तापमान 21 degrees सेल्सियस और न्यूनतम तापमान 15 degrees सेल्सियस होगा",
+                        "temperature": "अधिकतम तापमान 21 degrees सेल्सियस और न्यूनतम तापमान 15 degrees सेल्सियस होगा",
                         "wind": "east force 2",
                         "uv_intensity": "moderate"
                     }
@@ -9779,7 +9779,7 @@
                 "system_utterance": [
                     "अधिकतम तापमान 21 degrees सेल्सियस और न्यूनतम तापमान 15 degrees सेल्सियस होगा ",
                     {
-                        "Weather-tamperature": {
+                        "Weather-temperature": {
                             "अधिकतम तापमान 21 degrees सेल्सियस और न्यूनतम तापमान 15 degrees सेल्सियस होगा": [
                                 [
                                     0,
@@ -9796,7 +9796,7 @@
                         "Weather-date": "next Friday "
                     },
                     "turn request": [
-                        "tamperature"
+                        "temperature"
                     ],
                     "turn_inform": {}
                 },
@@ -9804,7 +9804,7 @@
                     [
                         "Request",
                         "Weather",
-                        "tamperature",
+                        "temperature",
                         ""
                     ]
                 ],
@@ -9812,7 +9812,7 @@
                     [
                         "Inform",
                         "Weather",
-                        "tamperature",
+                        "temperature",
                         "अधिकतम तापमान 21 degrees सेल्सियस और न्यूनतम तापमान 15 degrees सेल्सियस होगा"
                     ]
                 ],
@@ -9825,7 +9825,7 @@
                         "city": "Shenzhen",
                         "date": "next Friday ",
                         "weather_condition": "cloudy",
-                        "tamperature": "अधिकतम तापमान 21 degrees सेल्सियस और न्यूनतम तापमान 15 degrees सेल्सियस होगा",
+                        "temperature": "अधिकतम तापमान 21 degrees सेल्सियस और न्यूनतम तापमान 15 degrees सेल्सियस होगा",
                         "wind": "east force 2",
                         "uv_intensity": "moderate"
                     }
@@ -11046,7 +11046,7 @@
                         "city": "Beijing",
                         "date": "next Monday",
                         "weather_condition": "sunny",
-                        "tamperature": "The maximum temperature will be 8 degrees Celsius, and the minimum temperature will be -6 degrees Celsius.",
+                        "temperature": "The maximum temperature will be 8 degrees Celsius, and the minimum temperature will be -6 degrees Celsius.",
                         "wind": "southwest force 3-4.",
                         "uv_intensity": "strong"
                     },
@@ -11054,7 +11054,7 @@
                         "city": "Beijing",
                         "date": "next Tuesday",
                         "weather_condition": "sunny",
-                        "tamperature": "maximum temperature 10 डिग्री सेल्सियस और minimum temperature -5 डिग्री सेल्सियस रहेगा",
+                        "temperature": "maximum temperature 10 डिग्री सेल्सियस और minimum temperature -5 डिग्री सेल्सियस रहेगा",
                         "wind": "southwest force 2",
                         "uv_intensity": "strong"
                     },
@@ -11062,7 +11062,7 @@
                         "city": "Beijing",
                         "date": "next Wednesday",
                         "weather_condition": "sunny से बादल छाए रहेंगे।",
-                        "tamperature": "The maximum temperature will be 8 degrees Celsius, and the minimum temperature will be −5 degrees Celsius.",
+                        "temperature": "The maximum temperature will be 8 degrees Celsius, and the minimum temperature will be −5 degrees Celsius.",
                         "wind": "southeast force 2",
                         "uv_intensity": "strong"
                     },
@@ -11070,7 +11070,7 @@
                         "city": "Beijing",
                         "date": "next Thursday",
                         "weather_condition": "cloudy",
-                        "tamperature": "maximum temperature 4 डिग्री सेल्सियस और minimum temperature -4 डिग्री सेल्सियस रहेगा।",
+                        "temperature": "maximum temperature 4 डिग्री सेल्सियस और minimum temperature -4 डिग्री सेल्सियस रहेगा।",
                         "wind": "southeast force 1",
                         "uv_intensity": "strong"
                     },
@@ -11078,7 +11078,7 @@
                         "city": "Beijing",
                         "date": "next Friday ",
                         "weather_condition": "cloudy and later sunny",
-                        "tamperature": "maximum temperature 8 डिग्री सेल्सियस और minimum temperature -3 डिग्री सेल्सियस रहेगा।",
+                        "temperature": "maximum temperature 8 डिग्री सेल्सियस और minimum temperature -3 डिग्री सेल्सियस रहेगा।",
                         "wind": "northwest force 3-4",
                         "uv_intensity": "strong"
                     },
@@ -11086,7 +11086,7 @@
                         "city": "Beijing",
                         "date": "next Saturday",
                         "weather_condition": "sunny",
-                        "tamperature": "The maximum temperature will be 9 degrees Celsius and the minimum temperature will be −3 degrees Celsius.",
+                        "temperature": "The maximum temperature will be 9 degrees Celsius and the minimum temperature will be −3 degrees Celsius.",
                         "wind": "north force 3",
                         "uv_intensity": "strong"
                     },
@@ -11094,7 +11094,7 @@
                         "city": "Beijing",
                         "date": "next Sunday",
                         "weather_condition": "sunny",
-                        "tamperature": "maximum temperature 9 डिग्री सेल्सियस और minimum temperature -2 डिग्री सेल्सियस रहेगा।",
+                        "temperature": "maximum temperature 9 डिग्री सेल्सियस और minimum temperature -2 डिग्री सेल्सियस रहेगा।",
                         "wind": "north force 3-4",
                         "uv_intensity": "strong"
                     }
@@ -11185,7 +11185,7 @@
                         "city": "Beijing",
                         "date": "next Friday ",
                         "weather_condition": "cloudy and later sunny",
-                        "tamperature": "maximum temperature 8 डिग्री सेल्सियस और minimum temperature -3 डिग्री सेल्सियस रहेगा।",
+                        "temperature": "maximum temperature 8 डिग्री सेल्सियस और minimum temperature -3 डिग्री सेल्सियस रहेगा।",
                         "wind": "northwest force 3-4",
                         "uv_intensity": "strong"
                     }
@@ -11247,7 +11247,7 @@
                         "city": "Beijing",
                         "date": "next Friday ",
                         "weather_condition": "cloudy and later sunny",
-                        "tamperature": "maximum temperature 8 डिग्री सेल्सियस और minimum temperature -3 डिग्री सेल्सियस रहेगा।",
+                        "temperature": "maximum temperature 8 डिग्री सेल्सियस और minimum temperature -3 डिग्री सेल्सियस रहेगा।",
                         "wind": "northwest force 3-4",
                         "uv_intensity": "strong"
                     }
@@ -11309,7 +11309,7 @@
                         "city": "Beijing",
                         "date": "next Friday ",
                         "weather_condition": "cloudy and later sunny",
-                        "tamperature": "maximum temperature 8 डिग्री सेल्सियस और minimum temperature -3 डिग्री सेल्सियस रहेगा।",
+                        "temperature": "maximum temperature 8 डिग्री सेल्सियस और minimum temperature -3 डिग्री सेल्सियस रहेगा।",
                         "wind": "northwest force 3-4",
                         "uv_intensity": "strong"
                     }
@@ -11400,7 +11400,7 @@
                         "city": "Beijing",
                         "date": "next Wednesday",
                         "weather_condition": "sunny से बादल छाए रहेंगे।",
-                        "tamperature": "The maximum temperature will be 8 degrees Celsius, and the minimum temperature will be −5 degrees Celsius.",
+                        "temperature": "The maximum temperature will be 8 degrees Celsius, and the minimum temperature will be −5 degrees Celsius.",
                         "wind": "southeast force 2",
                         "uv_intensity": "strong"
                     }
@@ -11418,7 +11418,7 @@
                 "system_utterance": [
                     "maximum temperature 8 degrees Celsius और minimum temperature -5 degrees Celsius रहने का अनुमान है। cold रहेगी , इसलिए कृपया खुद को warm रखें ।",
                     {
-                        "Weather-tamperature": {
+                        "Weather-temperature": {
                             "maximum temperature 8 degrees Celsius और minimum temperature -5 degrees Celsius रहने का अनुमान है।": [
                                 [
                                     0,
@@ -11433,7 +11433,7 @@
                         "Weather-date": "next Wednesday"
                     },
                     "turn request": [
-                        "tamperature"
+                        "temperature"
                     ],
                     "turn_inform": {}
                 },
@@ -11441,7 +11441,7 @@
                     [
                         "Request",
                         "Weather",
-                        "tamperature",
+                        "temperature",
                         ""
                     ]
                 ],
@@ -11449,7 +11449,7 @@
                     [
                         "Inform",
                         "Weather",
-                        "tamperature",
+                        "temperature",
                         "The maximum temperature will be 8 degrees Celsius, and the minimum temperature will be −5 degrees Celsius."
                     ]
                 ],
@@ -11462,7 +11462,7 @@
                         "city": "Beijing",
                         "date": "next Wednesday",
                         "weather_condition": "sunny से बादल छाए रहेंगे।",
-                        "tamperature": "The maximum temperature will be 8 degrees Celsius, and the minimum temperature will be −5 degrees Celsius.",
+                        "temperature": "The maximum temperature will be 8 degrees Celsius, and the minimum temperature will be −5 degrees Celsius.",
                         "wind": "southeast force 2",
                         "uv_intensity": "strong"
                     }
@@ -21300,7 +21300,7 @@
                         "city": "Xiamen",
                         "date": "next Wednesday",
                         "weather_condition": "sunny",
-                        "tamperature": "maximum temperature will be 17 degrees Celsius , and the minimum temperature will be 9 degrees Celsius",
+                        "temperature": "maximum temperature will be 17 degrees Celsius , and the minimum temperature will be 9 degrees Celsius",
                         "wind": "east force 2",
                         "uv_intensity": "very strong"
                     }
@@ -21318,7 +21318,7 @@
                 "system_utterance": [
                     "अधिकतम तापमान 17 डिग्री सेल्सियस और न्यूनतम तापमान 9 डिग्री सेल्सियस रहने का अनुमान है ।Quite hot .",
                     {
-                        "Weather-tamperature": {
+                        "Weather-temperature": {
                             "अधिकतम तापमान 17 डिग्री सेल्सियस और न्यूनतम तापमान 9 डिग्री सेल्सियस रहने का अनुमान": [
                                 [
                                     0,
@@ -21336,7 +21336,7 @@
                         "Train-seat type": "first class"
                     },
                     "turn request": [
-                        "tamperature"
+                        "temperature"
                     ],
                     "turn_inform": {}
                 },
@@ -21344,7 +21344,7 @@
                     [
                         "Request",
                         "Weather",
-                        "tamperature",
+                        "temperature",
                         ""
                     ]
                 ],
@@ -21352,7 +21352,7 @@
                     [
                         "Request",
                         "Weather",
-                        "tamperature",
+                        "temperature",
                         ""
                     ]
                 ],
@@ -21365,7 +21365,7 @@
                         "city": "Xiamen",
                         "date": "next Wednesday",
                         "weather_condition": "sunny",
-                        "tamperature": "maximum temperature will be 17 degrees Celsius , and the minimum temperature will be 9 degrees Celsius",
+                        "temperature": "maximum temperature will be 17 degrees Celsius , and the minimum temperature will be 9 degrees Celsius",
                         "wind": "east force 2",
                         "uv_intensity": "very strong"
                     }
@@ -22386,7 +22386,7 @@
                         "city": "Beijing",
                         "date": "next Saturday",
                         "weather_condition": "sunny",
-                        "tamperature": "The maximum temperature will be 9 degrees Celsius and the minimum temperature will be −3 degrees Celsius.",
+                        "temperature": "The maximum temperature will be 9 degrees Celsius and the minimum temperature will be −3 degrees Celsius.",
                         "wind": "north force 3",
                         "uv_intensity": "strong"
                     }
@@ -22450,7 +22450,7 @@
                         "city": "Beijing",
                         "date": "next Saturday",
                         "weather_condition": "sunny",
-                        "tamperature": "The maximum temperature will be 9 degrees Celsius and the minimum temperature will be −3 degrees Celsius.",
+                        "temperature": "The maximum temperature will be 9 degrees Celsius and the minimum temperature will be −3 degrees Celsius.",
                         "wind": "north force 3",
                         "uv_intensity": "strong"
                     }
@@ -22514,7 +22514,7 @@
                         "city": "Beijing",
                         "date": "next Saturday",
                         "weather_condition": "sunny",
-                        "tamperature": "The maximum temperature will be 9 degrees Celsius and the minimum temperature will be −3 degrees Celsius.",
+                        "temperature": "The maximum temperature will be 9 degrees Celsius and the minimum temperature will be −3 degrees Celsius.",
                         "wind": "north force 3",
                         "uv_intensity": "strong"
                     }
@@ -36485,7 +36485,7 @@
                         "city": "Chengdu",
                         "date": "next Tuesday",
                         "weather_condition": "overcast to light rain",
-                        "tamperature": "The maximum temperature will be 11 degrees Celsius and the minimum temperature will be 4 degrees Celsius.",
+                        "temperature": "The maximum temperature will be 11 degrees Celsius and the minimum temperature will be 4 degrees Celsius.",
                         "wind": "a breeze without continuous direction",
                         "uv_intensity": "weakest"
                     }
@@ -36503,7 +36503,7 @@
                 "system_utterance": [
                     "maximum temperature 11 degrees Celsius और minimum temperature 4 degrees Celsius रहने का अनुमान है । यह bad नहीं है ।",
                     {
-                        "Weather-tamperature": {
+                        "Weather-temperature": {
                             "maximum temperature 11 degrees Celsius और minimum temperature 4 degrees Celsius": [
                                 [
                                     0,
@@ -36518,7 +36518,7 @@
                         "Weather-date": "next Tuesday"
                     },
                     "turn request": [
-                        "tamperature"
+                        "temperature"
                     ],
                     "turn_inform": {}
                 },
@@ -36526,7 +36526,7 @@
                     [
                         "Request",
                         "Weather",
-                        "tamperature",
+                        "temperature",
                         ""
                     ]
                 ],
@@ -36534,7 +36534,7 @@
                     [
                         "Inform",
                         "Weather",
-                        "tamperature",
+                        "temperature",
                         "The maximum temperature will be 11 degrees Celsius and the minimum temperature will be 4 degrees Celsius."
                     ]
                 ],
@@ -36547,7 +36547,7 @@
                         "city": "Chengdu",
                         "date": "next Tuesday",
                         "weather_condition": "overcast to light rain",
-                        "tamperature": "The maximum temperature will be 11 degrees Celsius and the minimum temperature will be 4 degrees Celsius.",
+                        "temperature": "The maximum temperature will be 11 degrees Celsius and the minimum temperature will be 4 degrees Celsius.",
                         "wind": "a breeze without continuous direction",
                         "uv_intensity": "weakest"
                     }
@@ -36628,7 +36628,7 @@
                         "city": "Guangzhou",
                         "date": "next Tuesday",
                         "weather_condition": "sunny से बादल छाए रहेंगे।",
-                        "tamperature": "The maximum temperature will be 18 degrees Celsius, and the minimum temperature will be 5 degrees Celsius.",
+                        "temperature": "The maximum temperature will be 18 degrees Celsius, and the minimum temperature will be 5 degrees Celsius.",
                         "wind": "a breeze without continuous direction",
                         "uv_intensity": "very strong"
                     }
@@ -36646,7 +36646,7 @@
                 "system_utterance": [
                     "अधिकतम temperature 18 डिग्री सेल्सियस और न्यूनतम तापमान  5 degree Celsius",
                     {
-                        "Weather-tamperature": {
+                        "Weather-temperature": {
                             "अधिकतम temperature 18 डिग्री सेल्सियस और न्यूनतम तापमान  5 degree Celsius": [
                                 [
                                     0,
@@ -36662,7 +36662,7 @@
                         "Weather-date": "next Tuesday"
                     },
                     "turn request": [
-                        "tamperature"
+                        "temperature"
                     ],
                     "turn_inform": {}
                 },
@@ -36670,7 +36670,7 @@
                     [
                         "Request",
                         "Weather",
-                        "tamperature",
+                        "temperature",
                         ""
                     ]
                 ],
@@ -36678,7 +36678,7 @@
                     [
                         "Inform",
                         "Weather",
-                        "tamperature",
+                        "temperature",
                         "The maximum temperature will be 18 degrees Celsius and the minimum temperature will be 5 degrees Celsius."
                     ]
                 ],
@@ -36691,7 +36691,7 @@
                         "city": "Guangzhou",
                         "date": "next Tuesday",
                         "weather_condition": "sunny से बादल छाए रहेंगे।",
-                        "tamperature": "The maximum temperature will be 18 degrees Celsius, and the minimum temperature will be 5 degrees Celsius.",
+                        "temperature": "The maximum temperature will be 18 degrees Celsius, and the minimum temperature will be 5 degrees Celsius.",
                         "wind": "a breeze without continuous direction",
                         "uv_intensity": "very strong"
                     }
@@ -38016,7 +38016,7 @@
                         "city": "Xiamen",
                         "date": "next Monday",
                         "weather_condition": "sunny",
-                        "tamperature": "The maximum temperature will be 14 degrees Celsius and the minimum temperature will be 8 degrees Celsius.",
+                        "temperature": "The maximum temperature will be 14 degrees Celsius and the minimum temperature will be 8 degrees Celsius.",
                         "wind": "northeast force 3-4",
                         "uv_intensity": "very strong"
                     }
@@ -38080,7 +38080,7 @@
                         "city": "Xiamen",
                         "date": "next Monday",
                         "weather_condition": "sunny",
-                        "tamperature": "The maximum temperature will be 14 degrees Celsius and the minimum temperature will be 8 degrees Celsius.",
+                        "temperature": "The maximum temperature will be 14 degrees Celsius and the minimum temperature will be 8 degrees Celsius.",
                         "wind": "northeast force 3-4",
                         "uv_intensity": "very strong"
                     }
@@ -38098,7 +38098,7 @@
                 "system_utterance": [
                     "अधिकतम temperature 14 degrees सेल्सियस और और न्यूनतम तापमान 8 degree Celsius होगा  ",
                     {
-                        "Weather-tamperature": {
+                        "Weather-temperature": {
                             "अधिकतम temperature 14 degrees सेल्सियस और और न्यूनतम तापमान 8 degree Celsius होगा": [
                                 [
                                     0,
@@ -38115,7 +38115,7 @@
                         "Weather-date": "next Monday"
                     },
                     "turn request": [
-                        "tamperature"
+                        "temperature"
                     ],
                     "turn_inform": {}
                 },
@@ -38123,7 +38123,7 @@
                     [
                         "Request",
                         "Weather",
-                        "tamperature",
+                        "temperature",
                         ""
                     ],
                     [
@@ -38137,7 +38137,7 @@
                     [
                         "Inform",
                         "Weather",
-                        "tamperature",
+                        "temperature",
                         "The maximum temperature will be 14 degrees Celsius and the minimum temperature will be 8 degrees Celsius."
                     ]
                 ],
@@ -38150,7 +38150,7 @@
                         "city": "Xiamen",
                         "date": "next Monday",
                         "weather_condition": "sunny",
-                        "tamperature": "The maximum temperature will be 14 degrees Celsius and the minimum temperature will be 8 degrees Celsius.",
+                        "temperature": "The maximum temperature will be 14 degrees Celsius and the minimum temperature will be 8 degrees Celsius.",
                         "wind": "northeast force 3-4",
                         "uv_intensity": "very strong"
                     }
@@ -38326,7 +38326,7 @@
                         "city": "Chengdu",
                         "date": "next Saturday",
                         "weather_condition": "cloudy to overcast",
-                        "tamperature": "The maximum temperature will be 15 degrees Celsius, and the minimum temperature will be 7 degrees Celsius.",
+                        "temperature": "The maximum temperature will be 15 degrees Celsius, and the minimum temperature will be 7 degrees Celsius.",
                         "wind": "a breeze without continuous direction",
                         "uv_intensity": "moderate"
                     }
@@ -38344,7 +38344,7 @@
                 "system_utterance": [
                     "अधिकतम तापमान 15 degrees सेल्सियस और न्यूनतम तापमान 7 degree Celsius होगा ",
                     {
-                        "Weather-tamperature": {
+                        "Weather-temperature": {
                             "अधिकतम तापमान 15 degrees सेल्सियस और न्यूनतम तापमान 7 degree Celsius होगा": [
                                 [
                                     0,
@@ -38359,7 +38359,7 @@
                         "Weather-date": "next Saturday"
                     },
                     "turn request": [
-                        "tamperature"
+                        "temperature"
                     ],
                     "turn_inform": {}
                 },
@@ -38367,7 +38367,7 @@
                     [
                         "Request",
                         "Weather",
-                        "tamperature",
+                        "temperature",
                         ""
                     ]
                 ],
@@ -38375,7 +38375,7 @@
                     [
                         "Inform",
                         "Weather",
-                        "tamperature",
+                        "temperature",
                         "The maximum temperature will be 15 degrees Celsius, and the minimum temperature will be 7 degrees Celsius."
                     ]
                 ],
@@ -38388,7 +38388,7 @@
                         "city": "Chengdu",
                         "date": "next Saturday",
                         "weather_condition": "cloudy to overcast",
-                        "tamperature": "The maximum temperature will be 15 degrees Celsius, and the minimum temperature will be 7 degrees Celsius.",
+                        "temperature": "The maximum temperature will be 15 degrees Celsius, and the minimum temperature will be 7 degrees Celsius.",
                         "wind": "a breeze without continuous direction",
                         "uv_intensity": "moderate"
                     }
@@ -38450,7 +38450,7 @@
                         "city": "Chengdu",
                         "date": "next Saturday",
                         "weather_condition": "cloudy to overcast",
-                        "tamperature": "The maximum temperature will be 15 degrees Celsius, and the minimum temperature will be 7 degrees Celsius.",
+                        "temperature": "The maximum temperature will be 15 degrees Celsius, and the minimum temperature will be 7 degrees Celsius.",
                         "wind": "a breeze without continuous direction",
                         "uv_intensity": "moderate"
                     }
@@ -38532,7 +38532,7 @@
                         "city": "Chengdu",
                         "date": "next Friday ",
                         "weather_condition": "cloudy",
-                        "tamperature": "The maximum temperature will be 15 degrees Celsius, and the minimum temperature will be 7 degrees Celsius.",
+                        "temperature": "The maximum temperature will be 15 degrees Celsius, and the minimum temperature will be 7 degrees Celsius.",
                         "wind": "a breeze without continuous direction",
                         "uv_intensity": "moderate"
                     }
@@ -38550,7 +38550,7 @@
                 "system_utterance": [
                     "अधिकतम तापमान 15 degrees सेल्सियस और न्यूनतम तापमान 7 degree Celsius होगा ",
                     {
-                        "Weather-tamperature": {
+                        "Weather-temperature": {
                             "अधिकतम तापमान 15 degrees सेल्सियस और न्यूनतम तापमान 7 degree Celsius होगा": [
                                 [
                                     0,
@@ -38565,7 +38565,7 @@
                         "Weather-date": "next Friday "
                     },
                     "turn request": [
-                        "tamperature"
+                        "temperature"
                     ],
                     "turn_inform": {}
                 },
@@ -38573,7 +38573,7 @@
                     [
                         "Request",
                         "Weather",
-                        "tamperature",
+                        "temperature",
                         ""
                     ]
                 ],
@@ -38581,7 +38581,7 @@
                     [
                         "Inform",
                         "Weather",
-                        "tamperature",
+                        "temperature",
                         "The maximum temperature will be 15 degrees Celsius, and the minimum temperature will be 7 degrees Celsius."
                     ]
                 ],
@@ -38594,7 +38594,7 @@
                         "city": "Chengdu",
                         "date": "next Friday ",
                         "weather_condition": "cloudy",
-                        "tamperature": "The maximum temperature will be 15 degrees Celsius, and the minimum temperature will be 7 degrees Celsius.",
+                        "temperature": "The maximum temperature will be 15 degrees Celsius, and the minimum temperature will be 7 degrees Celsius.",
                         "wind": "a breeze without continuous direction",
                         "uv_intensity": "moderate"
                     }
@@ -48624,7 +48624,7 @@
                         "city": "Xiamen",
                         "date": "next Tuesday",
                         "weather_condition": "sunny",
-                        "tamperature": "The maximum temperature 14 degrees Celsius होगा , and the minimum temperature 7 degrees Celsius होगा",
+                        "temperature": "The maximum temperature 14 degrees Celsius होगा , and the minimum temperature 7 degrees Celsius होगा",
                         "wind": "northeast force 4-5",
                         "uv_intensity": "very strong"
                     }
@@ -48642,7 +48642,7 @@
                 "system_utterance": [
                     "उस दिन maximum temperature 14 degrees सेल्सियस and न्यूनतम तापमान 7 डिग्री Celsius रहने का अनुमान है",
                     {
-                        "Weather-tamperature": {
+                        "Weather-temperature": {
                             "maximum temperature 14 degrees सेल्सियस and न्यूनतम तापमान 7 डिग्री Celsius रहने का अनुमान": [
                                 [
                                     2,
@@ -48659,7 +48659,7 @@
                         "Weather-date": "next Tuesday"
                     },
                     "turn request": [
-                        "tamperature"
+                        "temperature"
                     ],
                     "turn_inform": {}
                 },
@@ -48667,7 +48667,7 @@
                     [
                         "Request",
                         "Weather",
-                        "tamperature",
+                        "temperature",
                         ""
                     ]
                 ],
@@ -48675,7 +48675,7 @@
                     [
                         "Inform",
                         "Weather",
-                        "tamperature",
+                        "temperature",
                         "maximum temperature 14 degrees सेल्सियस and न्यूनतम तापमान 7 डिग्री Celsius रहने का अनुमान"
                     ]
                 ],
@@ -48688,7 +48688,7 @@
                         "city": "Xiamen",
                         "date": "next Tuesday",
                         "weather_condition": "sunny",
-                        "tamperature": "The maximum temperature 14 degrees Celsius होगा , and the minimum temperature 7 degrees Celsius होगा",
+                        "temperature": "The maximum temperature 14 degrees Celsius होगा , and the minimum temperature 7 degrees Celsius होगा",
                         "wind": "northeast force 4-5",
                         "uv_intensity": "very strong"
                     }
@@ -48752,7 +48752,7 @@
                         "city": "Xiamen",
                         "date": "next Tuesday",
                         "weather_condition": "sunny",
-                        "tamperature": "The maximum temperature 14 degrees Celsius होगा , and the minimum temperature 7 degrees Celsius होगा",
+                        "temperature": "The maximum temperature 14 degrees Celsius होगा , and the minimum temperature 7 degrees Celsius होगा",
                         "wind": "northeast force 4-5",
                         "uv_intensity": "very strong"
                     }
@@ -48883,7 +48883,7 @@
                         "city": "Beijing",
                         "date": "next Monday",
                         "weather_condition": "sunny",
-                        "tamperature": "The maximum temperature will be 8 degrees Celsius, and the minimum temperature will be -6 degrees Celsius.",
+                        "temperature": "The maximum temperature will be 8 degrees Celsius, and the minimum temperature will be -6 degrees Celsius.",
                         "wind": "southwest force 3-4.",
                         "uv_intensity": "strong"
                     },
@@ -48891,7 +48891,7 @@
                         "city": "Beijing",
                         "date": "next Tuesday",
                         "weather_condition": "sunny",
-                        "tamperature": "maximum temperature 10 डिग्री सेल्सियस और minimum temperature -5 डिग्री सेल्सियस रहेगा",
+                        "temperature": "maximum temperature 10 डिग्री सेल्सियस और minimum temperature -5 डिग्री सेल्सियस रहेगा",
                         "wind": "southwest force 2",
                         "uv_intensity": "strong"
                     },
@@ -48899,7 +48899,7 @@
                         "city": "Beijing",
                         "date": "next Wednesday",
                         "weather_condition": "sunny से बादल छाए रहेंगे।",
-                        "tamperature": "The maximum temperature will be 8 degrees Celsius, and the minimum temperature will be −5 degrees Celsius.",
+                        "temperature": "The maximum temperature will be 8 degrees Celsius, and the minimum temperature will be −5 degrees Celsius.",
                         "wind": "southeast force 2",
                         "uv_intensity": "strong"
                     },
@@ -48907,7 +48907,7 @@
                         "city": "Beijing",
                         "date": "next Thursday",
                         "weather_condition": "cloudy",
-                        "tamperature": "maximum temperature 4 डिग्री सेल्सियस और minimum temperature -4 डिग्री सेल्सियस रहेगा।",
+                        "temperature": "maximum temperature 4 डिग्री सेल्सियस और minimum temperature -4 डिग्री सेल्सियस रहेगा।",
                         "wind": "southeast force 1",
                         "uv_intensity": "strong"
                     },
@@ -48915,7 +48915,7 @@
                         "city": "Beijing",
                         "date": "next Friday ",
                         "weather_condition": "cloudy and later sunny",
-                        "tamperature": "maximum temperature 8 डिग्री सेल्सियस और minimum temperature -3 डिग्री सेल्सियस रहेगा।",
+                        "temperature": "maximum temperature 8 डिग्री सेल्सियस और minimum temperature -3 डिग्री सेल्सियस रहेगा।",
                         "wind": "northwest force 3-4",
                         "uv_intensity": "strong"
                     },
@@ -48923,7 +48923,7 @@
                         "city": "Beijing",
                         "date": "next Saturday",
                         "weather_condition": "sunny",
-                        "tamperature": "The maximum temperature will be 9 degrees Celsius and the minimum temperature will be −3 degrees Celsius.",
+                        "temperature": "The maximum temperature will be 9 degrees Celsius and the minimum temperature will be −3 degrees Celsius.",
                         "wind": "north force 3",
                         "uv_intensity": "strong"
                     },
@@ -48931,7 +48931,7 @@
                         "city": "Beijing",
                         "date": "next Sunday",
                         "weather_condition": "sunny",
-                        "tamperature": "maximum temperature 9 डिग्री सेल्सियस और minimum temperature -2 डिग्री सेल्सियस रहेगा।",
+                        "temperature": "maximum temperature 9 डिग्री सेल्सियस और minimum temperature -2 डिग्री सेल्सियस रहेगा।",
                         "wind": "north force 3-4",
                         "uv_intensity": "strong"
                     }
@@ -49020,7 +49020,7 @@
                         "city": "Beijing",
                         "date": "next Friday ",
                         "weather_condition": "cloudy and later sunny",
-                        "tamperature": "maximum temperature 8 डिग्री सेल्सियस और minimum temperature -3 डिग्री सेल्सियस रहेगा।",
+                        "temperature": "maximum temperature 8 डिग्री सेल्सियस और minimum temperature -3 डिग्री सेल्सियस रहेगा।",
                         "wind": "northwest force 3-4",
                         "uv_intensity": "strong"
                     }
@@ -49082,7 +49082,7 @@
                         "city": "Beijing",
                         "date": "next Friday ",
                         "weather_condition": "cloudy and later sunny",
-                        "tamperature": "maximum temperature 8 डिग्री सेल्सियस और minimum temperature -3 डिग्री सेल्सियस रहेगा।",
+                        "temperature": "maximum temperature 8 डिग्री सेल्सियस और minimum temperature -3 डिग्री सेल्सियस रहेगा।",
                         "wind": "northwest force 3-4",
                         "uv_intensity": "strong"
                     }
@@ -49144,7 +49144,7 @@
                         "city": "Beijing",
                         "date": "next Friday ",
                         "weather_condition": "cloudy and later sunny",
-                        "tamperature": "maximum temperature 8 डिग्री सेल्सियस और minimum temperature -3 डिग्री सेल्सियस रहेगा।",
+                        "temperature": "maximum temperature 8 डिग्री सेल्सियस और minimum temperature -3 डिग्री सेल्सियस रहेगा।",
                         "wind": "northwest force 3-4",
                         "uv_intensity": "strong"
                     }
@@ -49232,7 +49232,7 @@
                         "city": "Beijing",
                         "date": "next Saturday",
                         "weather_condition": "sunny",
-                        "tamperature": "The maximum temperature will be 9 degrees Celsius and the minimum temperature will be −3 degrees Celsius.",
+                        "temperature": "The maximum temperature will be 9 degrees Celsius and the minimum temperature will be −3 degrees Celsius.",
                         "wind": "north force 3",
                         "uv_intensity": "strong"
                     }
@@ -49250,7 +49250,7 @@
                 "system_utterance": [
                     "अधिकतम तापमान 9 डिग्री सेल्सियस और न्यूनतम तापमान -3 डिग्री सेल्सियस रहेगा ।It is not good enough for going out for it's a little cold outside .",
                     {
-                        "Weather-tamperature": {
+                        "Weather-temperature": {
                             "अधिकतम तापमान 9 डिग्री सेल्सियस और न्यूनतम तापमान -3 डिग्री सेल्सियस रहेगा": [
                                 [
                                     0,
@@ -49265,7 +49265,7 @@
                         "Weather-date": "next Saturday"
                     },
                     "turn request": [
-                        "tamperature"
+                        "temperature"
                     ],
                     "turn_inform": {}
                 },
@@ -49273,7 +49273,7 @@
                     [
                         "Request",
                         "Weather",
-                        "tamperature",
+                        "temperature",
                         ""
                     ]
                 ],
@@ -49281,7 +49281,7 @@
                     [
                         "Inform",
                         "Weather",
-                        "tamperature",
+                        "temperature",
                         "The maximum temperature will be 9 degrees Celsius and the minimum temperature will be −3 degrees Celsius."
                     ]
                 ],
@@ -49294,7 +49294,7 @@
                         "city": "Beijing",
                         "date": "next Saturday",
                         "weather_condition": "sunny",
-                        "tamperature": "The maximum temperature will be 9 degrees Celsius and the minimum temperature will be −3 degrees Celsius.",
+                        "temperature": "The maximum temperature will be 9 degrees Celsius and the minimum temperature will be −3 degrees Celsius.",
                         "wind": "north force 3",
                         "uv_intensity": "strong"
                     }
@@ -51528,7 +51528,7 @@
                         "city": "Xiamen",
                         "date": "next Monday",
                         "weather_condition": "sunny",
-                        "tamperature": "The maximum temperature will be 14 degrees Celsius and the minimum temperature will be 8 degrees Celsius.",
+                        "temperature": "The maximum temperature will be 14 degrees Celsius and the minimum temperature will be 8 degrees Celsius.",
                         "wind": "northeast force 3-4",
                         "uv_intensity": "very strong"
                     }
@@ -51546,7 +51546,7 @@
                 "system_utterance": [
                     "maximum temperature 14 डिग्री Celsius और minimum तापमान 8 degrees सेल्सियस होगा ",
                     {
-                        "Weather-tamperature": {
+                        "Weather-temperature": {
                             "maximum temperature 14 डिग्री Celsius और minimum तापमान 8 degrees सेल्सियस होगा": [
                                 [
                                     0,
@@ -51561,7 +51561,7 @@
                         "Weather-date": "next Monday"
                     },
                     "turn request": [
-                        "tamperature"
+                        "temperature"
                     ],
                     "turn_inform": {}
                 },
@@ -51569,7 +51569,7 @@
                     [
                         "Request",
                         "Weather",
-                        "tamperature",
+                        "temperature",
                         ""
                     ]
                 ],
@@ -51577,7 +51577,7 @@
                     [
                         "Inform",
                         "Weather",
-                        "tamperature",
+                        "temperature",
                         "The maximum temperature will be 14 degrees Celsius and the minimum temperature will be 8 degrees Celsius."
                     ]
                 ],
@@ -51590,7 +51590,7 @@
                         "city": "Xiamen",
                         "date": "next Monday",
                         "weather_condition": "sunny",
-                        "tamperature": "The maximum temperature will be 14 degrees Celsius and the minimum temperature will be 8 degrees Celsius.",
+                        "temperature": "The maximum temperature will be 14 degrees Celsius and the minimum temperature will be 8 degrees Celsius.",
                         "wind": "northeast force 3-4",
                         "uv_intensity": "very strong"
                     }
@@ -51652,7 +51652,7 @@
                         "city": "Xiamen",
                         "date": "next Monday",
                         "weather_condition": "sunny",
-                        "tamperature": "The maximum temperature will be 14 degrees Celsius and the minimum temperature will be 8 degrees Celsius.",
+                        "temperature": "The maximum temperature will be 14 degrees Celsius and the minimum temperature will be 8 degrees Celsius.",
                         "wind": "northeast force 3-4",
                         "uv_intensity": "very strong"
                     }
@@ -51724,7 +51724,7 @@
                         "city": "Xiamen",
                         "date": "next Monday",
                         "weather_condition": "sunny",
-                        "tamperature": "The maximum temperature will be 14 degrees Celsius and the minimum temperature will be 8 degrees Celsius.",
+                        "temperature": "The maximum temperature will be 14 degrees Celsius and the minimum temperature will be 8 degrees Celsius.",
                         "wind": "northeast force 3-4",
                         "uv_intensity": "very strong"
                     }
@@ -57184,7 +57184,7 @@
                                 ]
                             ]
                         },
-                        "Weather-tamperature": {
+                        "Weather-temperature": {
                             "अधिकतम तापमान 16 डिग्री सेल्सियस and minimum तापमान 9 degree Celsius होगा": [
                                 [
                                     4,
@@ -57205,7 +57205,7 @@
                         "Weather-date": "next Friday "
                     },
                     "turn request": [
-                        "tamperature"
+                        "temperature"
                     ]
                 },
                 "user_actions": [
@@ -57224,7 +57224,7 @@
                     [
                         "Request",
                         "Weather",
-                        "tamperature",
+                        "temperature",
                         ""
                     ]
                 ],
@@ -57232,7 +57232,7 @@
                     [
                         "Inform",
                         "Weather",
-                        "tamperature",
+                        "temperature",
                         "अधिकतम तापमान 16 डिग्री सेल्सियस and minimum तापमान 9 degree Celsius होगा"
                     ]
                 ],
@@ -57247,7 +57247,7 @@
                         "city": "Shanghai",
                         "date": "next Friday ",
                         "weather_condition": "light rain",
-                        "tamperature": "The maximum temperature will be 16 degrees Celsius, and the minimum temperature will be 9 degrees Celsius.",
+                        "temperature": "The maximum temperature will be 16 degrees Celsius, and the minimum temperature will be 9 degrees Celsius.",
                         "wind": "north force 2",
                         "uv_intensity": "weakest"
                     }
@@ -57312,7 +57312,7 @@
                         "city": "Shanghai",
                         "date": "next Friday ",
                         "weather_condition": "light rain",
-                        "tamperature": "The maximum temperature will be 16 degrees Celsius, and the minimum temperature will be 9 degrees Celsius.",
+                        "temperature": "The maximum temperature will be 16 degrees Celsius, and the minimum temperature will be 9 degrees Celsius.",
                         "wind": "north force 2",
                         "uv_intensity": "weakest"
                     }
@@ -57633,7 +57633,7 @@
                         "city": "Shanghai",
                         "date": "next Tuesday",
                         "weather_condition": "sunny से बादल छाए रहेंगे।",
-                        "tamperature": "maximum temperature 10 degrees Celsius और minimum temperature 2 degrees Celsius रहेगा",
+                        "temperature": "maximum temperature 10 degrees Celsius और minimum temperature 2 degrees Celsius रहेगा",
                         "wind": "southeast force 2",
                         "uv_intensity": "strong"
                     }
@@ -58182,7 +58182,7 @@
                         "city": "Nanjing",
                         "date": "next Saturday",
                         "weather_condition": "cloudy",
-                        "tamperature": "The maximum temperature will be 17 degrees Celsius and the minimum temperature will be 6 degrees Celsius.",
+                        "temperature": "The maximum temperature will be 17 degrees Celsius and the minimum temperature will be 6 degrees Celsius.",
                         "wind": "northwest force 2",
                         "uv_intensity": "strong"
                     }
@@ -58200,7 +58200,7 @@
                 "system_utterance": [
                     "अधिकतम तापमान 17 डिग्री Celsius and न्यूनतम तापमान 6 डिग्री सेल्सियस be",
                     {
-                        "Weather-tamperature": {
+                        "Weather-temperature": {
                             "अधिकतम तापमान 17 डिग्री Celsius and न्यूनतम तापमान 6 डिग्री सेल्सियस be": [
                                 [
                                     0,
@@ -58218,7 +58218,7 @@
                         "Train-seat type": "first class"
                     },
                     "turn request": [
-                        "tamperature"
+                        "temperature"
                     ],
                     "turn_inform": {}
                 },
@@ -58226,7 +58226,7 @@
                     [
                         "Request",
                         "Weather",
-                        "tamperature",
+                        "temperature",
                         ""
                     ]
                 ],
@@ -58234,7 +58234,7 @@
                     [
                         "Inform",
                         "Weather",
-                        "tamperature",
+                        "temperature",
                         "The maximum temperature will be 17 degrees Celsius and the minimum temperature will be 6 degrees Celsius."
                     ]
                 ],
@@ -58247,7 +58247,7 @@
                         "city": "Nanjing",
                         "date": "next Saturday",
                         "weather_condition": "cloudy",
-                        "tamperature": "The maximum temperature will be 17 degrees Celsius and the minimum temperature will be 6 degrees Celsius.",
+                        "temperature": "The maximum temperature will be 17 degrees Celsius and the minimum temperature will be 6 degrees Celsius.",
                         "wind": "northwest force 2",
                         "uv_intensity": "strong"
                     }
@@ -62036,7 +62036,7 @@
                                 ]
                             ]
                         },
-                        "Weather-tamperature": {
+                        "Weather-temperature": {
                             "अधिकतम temperature 10 डिग्री सेल्सियस और minimum temperature 1 डिग्री सेल्सियस रहेगा": [
                                 [
                                     8,
@@ -62054,7 +62054,7 @@
                         "Weather-date": "next Monday"
                     },
                     "turn request": [
-                        "tamperature"
+                        "temperature"
                     ]
                 },
                 "user_actions": [
@@ -62073,7 +62073,7 @@
                     [
                         "Request",
                         "Weather",
-                        "tamperature",
+                        "temperature",
                         ""
                     ],
                     [
@@ -62087,7 +62087,7 @@
                     [
                         "Inform",
                         "Weather",
-                        "tamperature",
+                        "temperature",
                         "अधिकतम temperature 10 डिग्री सेल्सियस और minimum temperature 1 डिग्री सेल्सियस रहेगा"
                     ]
                 ],
@@ -62102,7 +62102,7 @@
                         "city": "Shanghai",
                         "date": "next Monday",
                         "weather_condition": "sunny",
-                        "tamperature": "The maximum temperature will be 10 degrees Celsius, and the minimum temperature will be 1 degree Celsius.",
+                        "temperature": "The maximum temperature will be 10 degrees Celsius, and the minimum temperature will be 1 degree Celsius.",
                         "wind": "northwest force 3-4",
                         "uv_intensity": "strong"
                     }
@@ -62164,7 +62164,7 @@
                         "city": "Shanghai",
                         "date": "next Monday",
                         "weather_condition": "sunny",
-                        "tamperature": "The maximum temperature will be 10 degrees Celsius, and the minimum temperature will be 1 degree Celsius.",
+                        "temperature": "The maximum temperature will be 10 degrees Celsius, and the minimum temperature will be 1 degree Celsius.",
                         "wind": "northwest force 3-4",
                         "uv_intensity": "strong"
                     }
@@ -62226,7 +62226,7 @@
                         "city": "Shanghai",
                         "date": "next Monday",
                         "weather_condition": "sunny",
-                        "tamperature": "The maximum temperature will be 10 degrees Celsius, and the minimum temperature will be 1 degree Celsius.",
+                        "temperature": "The maximum temperature will be 10 degrees Celsius, and the minimum temperature will be 1 degree Celsius.",
                         "wind": "northwest force 3-4",
                         "uv_intensity": "strong"
                     }
@@ -66066,7 +66066,7 @@
                                 ]
                             ]
                         },
-                        "Weather-tamperature": {
+                        "Weather-temperature": {
                             "The maximum temperature will be 8 degrees Celsius , and the minimum temperature will be - 6 degrees Celsius": [
                                 [
                                     10,
@@ -66085,7 +66085,7 @@
                     },
                     "turn request": [
                         "weather condition",
-                        "tamperature"
+                        "temperature"
                     ]
                 },
                 "user_actions": [
@@ -66110,7 +66110,7 @@
                     [
                         "Request",
                         "Weather",
-                        "tamperature",
+                        "temperature",
                         ""
                     ],
                     [
@@ -66130,7 +66130,7 @@
                     [
                         "Inform",
                         "Weather",
-                        "tamperature",
+                        "temperature",
                         "The maximum temperature will be 8 degrees Celsius, and the minimum temperature will be -6 degrees Celsius."
                     ]
                 ],
@@ -66146,7 +66146,7 @@
                         "city": "Beijing",
                         "date": "next Monday",
                         "weather_condition": "sunny",
-                        "tamperature": "The maximum temperature will be 8 degrees Celsius, and the minimum temperature will be -6 degrees Celsius.",
+                        "temperature": "The maximum temperature will be 8 degrees Celsius, and the minimum temperature will be -6 degrees Celsius.",
                         "wind": "southwest force 3-4.",
                         "uv_intensity": "strong"
                     }
@@ -66208,7 +66208,7 @@
                         "city": "Beijing",
                         "date": "next Monday",
                         "weather_condition": "sunny",
-                        "tamperature": "The maximum temperature will be 8 degrees Celsius, and the minimum temperature will be -6 degrees Celsius.",
+                        "temperature": "The maximum temperature will be 8 degrees Celsius, and the minimum temperature will be -6 degrees Celsius.",
                         "wind": "southwest force 3-4.",
                         "uv_intensity": "strong"
                     }
@@ -66271,7 +66271,7 @@
                                 ]
                             ]
                         },
-                        "Weather-tamperature": {
+                        "Weather-temperature": {
                             "। maximum temperature 9 degrees Celsius और minimum temperature -2 degrees Celsius रहने का अनुमान है ।": [
                                 [
                                     9,
@@ -66291,7 +66291,7 @@
                     },
                     "turn request": [
                         "weather condition",
-                        "tamperature"
+                        "temperature"
                     ]
                 },
                 "user_actions": [
@@ -66310,7 +66310,7 @@
                     [
                         "Request",
                         "Weather",
-                        "tamperature",
+                        "temperature",
                         ""
                     ]
                 ],
@@ -66324,7 +66324,7 @@
                     [
                         "Inform",
                         "Weather",
-                        "tamperature",
+                        "temperature",
                         "। maximum temperature 9 degrees Celsius और minimum temperature -2 degrees Celsius रहने का अनुमान है ।"
                     ]
                 ],
@@ -66340,7 +66340,7 @@
                         "city": "Nanjing",
                         "date": "next Monday",
                         "weather_condition": "sunny",
-                        "tamperature": "maximum temperature 9 डिग्री सेल्सियस और minimum temperature -2 डिग्री सेल्सियस रहेगा।",
+                        "temperature": "maximum temperature 9 डिग्री सेल्सियस और minimum temperature -2 डिग्री सेल्सियस रहेगा।",
                         "wind": "northwest force 4-5",
                         "uv_intensity": "strong"
                     }
@@ -66413,7 +66413,7 @@
                         "city": "Nanjing",
                         "date": "next Monday",
                         "weather_condition": "sunny",
-                        "tamperature": "maximum temperature 9 डिग्री सेल्सियस और minimum temperature -2 डिग्री सेल्सियस रहेगा।",
+                        "temperature": "maximum temperature 9 डिग्री सेल्सियस और minimum temperature -2 डिग्री सेल्सियस रहेगा।",
                         "wind": "northwest force 4-5",
                         "uv_intensity": "strong"
                     }

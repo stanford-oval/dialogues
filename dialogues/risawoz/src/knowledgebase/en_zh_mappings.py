@@ -220,7 +220,7 @@ class RisawozMapping(object):
                     'general_or_specialized',
                     'address',
                 ],
-                'weather': ['tamperature', 'destination', 'date', 'city', 'wind', 'weather_condition', 'UV_intensity'],
+                'weather': ['temperature', 'destination', 'date', 'city', 'wind', 'weather_condition', 'UV_intensity'],
                 'attraction': [
                     'ticket_price',
                     'phone_number',
@@ -359,7 +359,7 @@ class RisawozMapping(object):
                 'flight': [
                     'departure_time',
                     'ticket_price',
-                    'tamperature',
+                    'temperature',
                     'destination',
                     'departure_time',
                     'class_cabin',
@@ -447,7 +447,7 @@ class RisawozMapping(object):
             '性质': 'public_or_private',
             '类别': 'general_or_specialized',
             '地址': 'address',
-            '温度': 'tamperature',
+            '温度': 'temperature',
             '目的地': 'destination',
             '日期': 'date',
             '城市': 'city',

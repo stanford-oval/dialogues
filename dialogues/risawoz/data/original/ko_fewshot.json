@@ -5666,7 +5666,7 @@
                 "system_utterance": [
                     "온화할 거에요. 최고 기온은 섭씨 22도 그리고 최저 기온은 섭씨 14도가 될 거예요.",
                     {
-                        "Weather-tamperature": {
+                        "Weather-temperature": {
                             "최고 기온은 섭씨 22도 그리고 최저 기온은 섭씨 14도가 될 거예요": [
                                 [
                                     9,
@@ -5678,7 +5678,7 @@
                 ],
                 "belief_state": {
                     "turn request": [
-                        "tamperature"
+                        "temperature"
                     ],
                     "turn_inform": {},
                     "inform slot-values": {
@@ -5690,7 +5690,7 @@
                     [
                         "Request",
                         "Weather",
-                        "tamperature",
+                        "temperature",
                         ""
                     ]
                 ],
@@ -5698,7 +5698,7 @@
                     [
                         "Inform",
                         "Weather",
-                        "tamperature",
+                        "temperature",
                         "최고 기온은 섭씨 22도 그리고 최저 기온은 섭씨 14도가 될 거예요"
                     ]
                 ],
@@ -5844,7 +5844,7 @@
                 "system_utterance": [
                     "거의요. 최고 기온은 섭씨 20도 그리고 최저 기온은 섭씨 12도입니다.",
                     {
-                        "Weather-tamperature": {
+                        "Weather-temperature": {
                             "최고 기온은 섭씨 20도 그리고 최저 기온은 섭씨 12도입니다": [
                                 [
                                     5,
@@ -5860,7 +5860,7 @@
                         "Weather-city": "샤먼"
                     },
                     "turn request": [
-                        "tamperature"
+                        "temperature"
                     ],
                     "turn_inform": {}
                 },
@@ -5868,7 +5868,7 @@
                     [
                         "Request",
                         "Weather",
-                        "tamperature",
+                        "temperature",
                         ""
                     ]
                 ],
@@ -5876,7 +5876,7 @@
                     [
                         "Inform",
                         "Weather",
-                        "tamperature",
+                        "temperature",
                         "최고 기온은 섭씨 20도 그리고 최저 기온은 섭씨 12도입니다"
                     ]
                 ],
@@ -9773,7 +9773,7 @@
                 "system_utterance": [
                     "최고 기온은 섭씨 21도 그리고 최저 기온은 섭씨 15도입니다.",
                     {
-                        "Weather-tamperature": {
+                        "Weather-temperature": {
                             "최고 기온은 섭씨 21도 그리고 최저 기온은 섭씨 15도입니다": [
                                 [
                                     0,
@@ -9785,7 +9785,7 @@
                 ],
                 "belief_state": {
                     "turn request": [
-                        "tamperature"
+                        "temperature"
                     ],
                     "turn_inform": {},
                     "inform slot-values": {
@@ -9800,7 +9800,7 @@
                     [
                         "Request",
                         "Weather",
-                        "tamperature",
+                        "temperature",
                         ""
                     ]
                 ],
@@ -9808,7 +9808,7 @@
                     [
                         "Inform",
                         "Weather",
-                        "tamperature",
+                        "temperature",
                         "최고 기온은 섭씨 21도 그리고 최저 기온은 섭씨 15도입니다"
                     ]
                 ],
@@ -11406,7 +11406,7 @@
                 ],
                 "belief_state": {
                     "turn request": [
-                        "tamperature"
+                        "temperature"
                     ],
                     "turn_inform": {},
                     "inform slot-values": {
@@ -11418,7 +11418,7 @@
                     [
                         "Request",
                         "Weather",
-                        "tamperature",
+                        "temperature",
                         ""
                     ]
                 ],
@@ -11426,7 +11426,7 @@
                     [
                         "Inform",
                         "Weather",
-                        "tamperature",
+                        "temperature",
                         "The maximum temperature will be 8 degrees Celsius, and the minimum temperature will be −5 degrees Celsius."
                     ]
                 ],
@@ -21313,7 +21313,7 @@
                 "system_utterance": [
                     "최고 기온은 섭씨 17도 그리고 최저 기온은 섭씨 9도가 될 거예요. 꽤 덥네요.",
                     {
-                        "Weather-tamperature": {
+                        "Weather-temperature": {
                             "최고 기온은 섭씨 17도 그리고 최저 기온은 섭씨 9도가 될 거예요": [
                                 [
                                     0,
@@ -21325,7 +21325,7 @@
                 ],
                 "belief_state": {
                     "turn request": [
-                        "tamperature"
+                        "temperature"
                     ],
                     "turn_inform": {},
                     "inform slot-values": {
@@ -21342,7 +21342,7 @@
                     [
                         "Request",
                         "Weather",
-                        "tamperature",
+                        "temperature",
                         ""
                     ]
                 ],
@@ -21350,7 +21350,7 @@
                     [
                         "Request",
                         "Weather",
-                        "tamperature",
+                        "temperature",
                         ""
                     ]
                 ],
@@ -36562,7 +36562,7 @@
                 ],
                 "belief_state": {
                     "turn request": [
-                        "tamperature"
+                        "temperature"
                     ],
                     "turn_inform": {},
                     "inform slot-values": {
@@ -36574,7 +36574,7 @@
                     [
                         "Request",
                         "Weather",
-                        "tamperature",
+                        "temperature",
                         ""
                     ]
                 ],
@@ -36582,7 +36582,7 @@
                     [
                         "Inform",
                         "Weather",
-                        "tamperature",
+                        "temperature",
                         "The maximum temperature will be 11 degrees Celsius and the minimum temperature will be 4 degrees Celsius."
                     ]
                 ],
@@ -36697,7 +36697,7 @@
                 ],
                 "belief_state": {
                     "turn request": [
-                        "tamperature"
+                        "temperature"
                     ],
                     "turn_inform": {},
                     "inform slot-values": {
@@ -36709,7 +36709,7 @@
                     [
                         "Request",
                         "Weather",
-                        "tamperature",
+                        "temperature",
                         ""
                     ]
                 ],
@@ -36717,7 +36717,7 @@
                     [
                         "Inform",
                         "Weather",
-                        "tamperature",
+                        "temperature",
                         "The maximum temperature will be 18 degrees Celsius and the minimum temperature will be 5 degrees Celsius."
                     ]
                 ],
@@ -38171,7 +38171,7 @@
                 ],
                 "belief_state": {
                     "turn request": [
-                        "tamperature"
+                        "temperature"
                     ],
                     "turn_inform": {},
                     "inform slot-values": {
@@ -38187,7 +38187,7 @@
                     [
                         "Request",
                         "Weather",
-                        "tamperature",
+                        "temperature",
                         ""
                     ],
                     [
@@ -38201,7 +38201,7 @@
                     [
                         "Inform",
                         "Weather",
-                        "tamperature",
+                        "temperature",
                         "The maximum temperature will be 14 degrees Celsius and the minimum temperature will be 8 degrees Celsius."
                     ]
                 ],
@@ -38416,7 +38416,7 @@
                 ],
                 "belief_state": {
                     "turn request": [
-                        "tamperature"
+                        "temperature"
                     ],
                     "turn_inform": {},
                     "inform slot-values": {
@@ -38428,7 +38428,7 @@
                     [
                         "Request",
                         "Weather",
-                        "tamperature",
+                        "temperature",
                         ""
                     ]
                 ],
@@ -38436,7 +38436,7 @@
                     [
                         "Inform",
                         "Weather",
-                        "tamperature",
+                        "temperature",
                         "The maximum temperature will be 15 degrees Celsius, and the minimum temperature will be 7 degrees Celsius."
                     ]
                 ],
@@ -38616,7 +38616,7 @@
                 ],
                 "belief_state": {
                     "turn request": [
-                        "tamperature"
+                        "temperature"
                     ],
                     "turn_inform": {},
                     "inform slot-values": {
@@ -38628,7 +38628,7 @@
                     [
                         "Request",
                         "Weather",
-                        "tamperature",
+                        "temperature",
                         ""
                     ]
                 ],
@@ -38636,7 +38636,7 @@
                     [
                         "Inform",
                         "Weather",
-                        "tamperature",
+                        "temperature",
                         "The maximum temperature will be 15 degrees Celsius, and the minimum temperature will be 7 degrees Celsius."
                     ]
                 ],
@@ -48781,7 +48781,7 @@
                 "system_utterance": [
                     "그날 최고 기온은 섭씨 14도 그리고 최저 기온은 섭씨 7도일 예정입니다.",
                     {
-                        "Weather-tamperature": {
+                        "Weather-temperature": {
                             "최고 기온은 섭씨 14도 그리고 최저 기온은 섭씨 7도일 예정입니다": [
                                 [
                                     3,
@@ -48793,7 +48793,7 @@
                 ],
                 "belief_state": {
                     "turn request": [
-                        "tamperature"
+                        "temperature"
                     ],
                     "turn_inform": {},
                     "inform slot-values": {
@@ -48809,7 +48809,7 @@
                     [
                         "Request",
                         "Weather",
-                        "tamperature",
+                        "temperature",
                         ""
                     ]
                 ],
@@ -48817,7 +48817,7 @@
                     [
                         "Inform",
                         "Weather",
-                        "tamperature",
+                        "temperature",
                         "최고 기온은 섭씨 14도 그리고 최저 기온은 섭씨 7도일 예정입니다"
                     ]
                 ],
@@ -49407,7 +49407,7 @@
                 ],
                 "belief_state": {
                     "turn request": [
-                        "tamperature"
+                        "temperature"
                     ],
                     "turn_inform": {},
                     "inform slot-values": {
@@ -49419,7 +49419,7 @@
                     [
                         "Request",
                         "Weather",
-                        "tamperature",
+                        "temperature",
                         ""
                     ]
                 ],
@@ -49427,7 +49427,7 @@
                     [
                         "Inform",
                         "Weather",
-                        "tamperature",
+                        "temperature",
                         "The maximum temperature will be 9 degrees Celsius and the minimum temperature will be −3 degrees Celsius."
                     ]
                 ],
@@ -51707,7 +51707,7 @@
                 ],
                 "belief_state": {
                     "turn request": [
-                        "tamperature"
+                        "temperature"
                     ],
                     "turn_inform": {},
                     "inform slot-values": {
@@ -51719,7 +51719,7 @@
                     [
                         "Request",
                         "Weather",
-                        "tamperature",
+                        "temperature",
                         ""
                     ]
                 ],
@@ -51727,7 +51727,7 @@
                     [
                         "Inform",
                         "Weather",
-                        "tamperature",
+                        "temperature",
                         "The maximum temperature will be 14 degrees Celsius and the minimum temperature will be 8 degrees Celsius."
                     ]
                 ],
@@ -57353,7 +57353,7 @@
                                 ]
                             ]
                         },
-                        "Weather-tamperature": {
+                        "Weather-temperature": {
                             "최고 기온은 섭씨 16도 그리고 최저 기온은 섭씨 9도입니다": [
                                 [
                                     8,
@@ -57378,7 +57378,7 @@
                         "Weather-city": "상하이"
                     },
                     "turn request": [
-                        "tamperature"
+                        "temperature"
                     ]
                 },
                 "user_actions": [
@@ -57397,7 +57397,7 @@
                     [
                         "Request",
                         "Weather",
-                        "tamperature",
+                        "temperature",
                         ""
                     ]
                 ],
@@ -57405,7 +57405,7 @@
                     [
                         "Inform",
                         "Weather",
-                        "tamperature",
+                        "temperature",
                         "최고 기온은 섭씨 16도 그리고 최저 기온은 섭씨 9도입니다"
                     ]
                 ],
@@ -58409,7 +58409,7 @@
                 ],
                 "belief_state": {
                     "turn request": [
-                        "tamperature"
+                        "temperature"
                     ],
                     "turn_inform": {},
                     "inform slot-values": {
@@ -58426,7 +58426,7 @@
                     [
                         "Request",
                         "Weather",
-                        "tamperature",
+                        "temperature",
                         ""
                     ]
                 ],
@@ -58434,7 +58434,7 @@
                     [
                         "Inform",
                         "Weather",
-                        "tamperature",
+                        "temperature",
                         "The maximum temperature will be 17 degrees Celsius and the minimum temperature will be 6 degrees Celsius."
                     ]
                 ],
@@ -62245,7 +62245,7 @@
                                 ]
                             ]
                         },
-                        "Weather-tamperature": {
+                        "Weather-temperature": {
                             "최고 기온은 섭씨 10도 그리고 최저 기온은 섭씨 1도입니다": [
                                 [
                                     17,
@@ -62265,7 +62265,7 @@
                         "Weather-city": "상하이"
                     },
                     "turn request": [
-                        "tamperature"
+                        "temperature"
                     ]
                 },
                 "user_actions": [
@@ -62284,7 +62284,7 @@
                     [
                         "Request",
                         "Weather",
-                        "tamperature",
+                        "temperature",
                         ""
                     ],
                     [
@@ -62298,7 +62298,7 @@
                     [
                         "Inform",
                         "Weather",
-                        "tamperature",
+                        "temperature",
                         "최고 기온은 섭씨 10도 그리고 최저 기온은 섭씨 1도입니다"
                     ]
                 ],
@@ -66318,7 +66318,7 @@
                     },
                     "turn request": [
                         "weather condition",
-                        "tamperature"
+                        "temperature"
                     ]
                 },
                 "user_actions": [
@@ -66343,7 +66343,7 @@
                     [
                         "Request",
                         "Weather",
-                        "tamperature",
+                        "temperature",
                         ""
                     ],
                     [
@@ -66363,7 +66363,7 @@
                     [
                         "Inform",
                         "Weather",
-                        "tamperature",
+                        "temperature",
                         "The maximum temperature will be 8 degrees Celsius, and the minimum temperature will be -6 degrees Celsius."
                     ]
                 ],
@@ -66496,7 +66496,7 @@
                                 ]
                             ]
                         },
-                        "Weather-tamperature": {
+                        "Weather-temperature": {
                             "최고 기온은 섭씨 9도 그리고 최저 기온은 섭씨 영하 2도입니다": [
                                 [
                                     20,
@@ -66516,7 +66516,7 @@
                     },
                     "turn request": [
                         "weather condition",
-                        "tamperature"
+                        "temperature"
                     ]
                 },
                 "user_actions": [
@@ -66535,7 +66535,7 @@
                     [
                         "Request",
                         "Weather",
-                        "tamperature",
+                        "temperature",
                         ""
                     ]
                 ],
@@ -66549,7 +66549,7 @@
                     [
                         "Inform",
                         "Weather",
-                        "tamperature",
+                        "temperature",
                         "최고 기온은 섭씨 9도 그리고 최저 기온은 섭씨 영하 2도입니다"
                     ]
                 ],
