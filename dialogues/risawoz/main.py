@@ -23,7 +23,7 @@ class Risawoz(WOZDataset):
 
         if tgt == 'en':
             src = 'zh'
-        elif tgt in ['fr', 'hi', 'enhi', 'ko']:
+        else: # ['fr', 'hi', 'enhi', 'ko']
             src = 'en'
 
         self.value_mapping = RisawozMapping(src=src, tgt=tgt)
