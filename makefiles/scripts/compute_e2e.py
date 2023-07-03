@@ -1,10 +1,11 @@
 import argparse
 import os
-from pprint import pprint
 
 import ujson
+from pprint import pprint
 
 from dialogues import Bitod, Risawoz
+
 
 parser = argparse.ArgumentParser()
 parser.add_argument("--reference_file_path", type=str, default="data/test.json", help="path of reference")
@@ -52,20 +53,9 @@ with open(os.path.join(pred_dir, "e2e_dialogue_results.json"), "w") as f:
             "API_Acc": results['api_acc'],
             "DA_Acc": results['da_acc'],
             "BLEU": results['bleu'],
-            "SER": results['ser'],
-        },
-        f,
-        indent=2,
-        ensure_ascii=False,
-    )
+            "SER": results['ser']
+         },
+        f, indent=2, ensure_ascii=False)
 
 pprint(results)
-print(
-    results['jga'],
-    results['task_info'].get('Averaged_task_success', 0.0),
-    results['success_rate'],
-    results['api_acc'],
-    results['da_acc'],
-    results['bleu'],
-    results['ser'],
-)
+print(results['jga'], results['task_info'].get('Averaged_task_success', 0.0), results['success_rate'], results['api_acc'], results['da_acc'], results['bleu'], results['ser'])

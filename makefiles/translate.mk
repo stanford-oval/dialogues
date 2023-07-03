@@ -2,8 +2,8 @@
 ##### translate dialogs using open-source NMT models ###############################################################
 ####################################################################################################################
 
-model_name_or_path=Helsinki-NLP/opus-mt-$(src_lang)-$(tgt_lang)
 #model_name_or_path=facebook/mbart-large-50-many-to-many-mmt
+model_name_or_path=Helsinki-NLP/opus-mt-$(src_lang)-$(tgt_lang)
 # model_name_or_path=facebook/m2m100_418M
 # model_name_or_path=facebook/nllb-200-distilled-600M
 
@@ -81,7 +81,7 @@ $(experiment)/$(source)/$(nmt_model)/$(tgt_lang)/translated-qpis:
 			paste <(cat ./$(experiment)/$(source)/input-nmt-user/$$f.tsv) <(awk "{for(i=0;i<$$data_size;i++)print}" <(echo ".")) > $@-user/$$f.tsv ; \
 		done ; \
 	else \
-		make input_folder="./$(experiment)/$(source)/input-nmt-user" output_folder="$@-user" do_translate ; \
+		make input_folder="./$(experiment)/$(source)/input-nmt-user/" output_folder="$@-user" do_translate ; \
 	fi
 
 	if $(skip_agent) ; then \
@@ -89,7 +89,7 @@ $(experiment)/$(source)/$(nmt_model)/$(tgt_lang)/translated-qpis:
 			cp $@-user/$$f.tsv $@-agent/$$f.tsv ; \
 		done ; \
 	else \
-		make input_folder="./$(experiment)/$(source)/input-nmt-agent" output_folder="$@-agent" do_translate ; \
+		make input_folder="./$(experiment)/$(source)/input-nmt-agent/" output_folder="$@-agent" do_translate ; \
 	fi ; \
 
 
@@ -113,7 +113,7 @@ $(experiment)/$(source)/$(nmt_model)/$(tgt_lang)/refined-qpis: $(experiment)/$(s
 
 	# refine sentence
 	for f in $(all_names) ; do \
-		python3 $(ml_scripts)/text_edit.py --no_lower_case --e2e --refine_sentence --post_process_translation --experiment $(experiment) --param_language $(src_lang) --num_columns $(num_columns) --input_file $@/$$f.tmp.tsv --output_file $@/$$f.tsv ; \
+		python3 ../spl/scripts/text_edit.py --no_lower_case --e2e --refine_sentence --post_process_translation --experiment $(experiment) --param_language $(src_lang) --num_columns $(num_columns) --input_file $@/$$f.tmp.tsv --output_file $@/$$f.tsv ; \
 	done
 
 	rm -rf $@/*.tmp*
@@ -126,7 +126,7 @@ $(experiment)/$(source)/$(nmt_model)/$(tgt_lang)/cleaned-qpis: $(experiment)/$(s
 		if $(is_user_acts) ; then \
 			cp $</$$f.tsv $@/$$f.tsv ; \
 		else \
-			python3 $(ml_scripts)/text_edit.py --experiment $(experiment) --no_lower_case --e2e --insert_space_quotes --num_columns $(num_columns) --input_file $</$$f.tsv --output_file $@/$$f.tsv ; \
+			python3 ../spl/scripts/text_edit.py --experiment $(experiment) --no_lower_case --e2e --insert_space_quotes --num_columns $(num_columns) --input_file $</$$f.tsv --output_file $@/$$f.tsv ; \
 		fi ; \
 	done
 
@@ -135,7 +135,7 @@ $(experiment)/$(source)/$(nmt_model)/$(tgt_lang)/cleaned: $(experiment)/$(source
 	mkdir -p $@
 	# remove quotation marks in the sentence
 	for f in $(all_names) ; do \
-		python3 $(ml_scripts)/text_edit.py --experiment $(experiment) --no_lower_case --e2e --remove_qpis `if $(is_user_acts) ; then echo "--is_user_acts" ; fi` --num_columns $(num_columns) --input_file $</$$f.tsv  --output_file $@/$$f.tsv ; \
+		python3 ../spl/scripts/text_edit.py --experiment $(experiment) --no_lower_case --e2e --remove_qpis `if $(is_user_acts) ; then echo "--is_user_acts" ; fi` --num_columns $(num_columns) --input_file $</$$f.tsv  --output_file $@/$$f.tsv ; \
 	done
 
 
@@ -158,8 +158,8 @@ $(experiment)/$(source)/$(nmt_model)/$(tgt_lang)/augmented: $(experiment)/$(sour
 $(experiment)/$(source)/$(nmt_model)/$(tgt_lang)/final: $(experiment)/$(source)/$(nmt_model)/$(tgt_lang)/augmented
 	mkdir -p $@
 	# remove cjk spaces
-	for f in $(all_names) ; do python3 $(ml_scripts)/text_edit.py --no_lower_case --e2e --fix_spaces_cjk --experiment $(experiment) --param_language $(tgt_lang) --num_columns $(num_columns) --input_file $</$$f.tsv  --output_file $@/$$f.tsv  ; done
-	for f in $(all_names) ; do python3 $(ml_scripts)/convert_to_json.py --input_file $@/$$f.tsv --output_file $@/$$f.json ; done
+	for f in $(all_names) ; do python3 ../spl/scripts/text_edit.py --no_lower_case --e2e --fix_spaces_cjk --experiment $(experiment) --param_language $(tgt_lang) --num_columns $(num_columns) --input_file $</$$f.tsv  --output_file $@/$$f.tsv  ; done
+	for f in $(all_names) ; do python3 ./scripts/convert_to_json.py --input_file $@/$$f.tsv --output_file $@/$$f.json ; done
 
 postprocess_data: $(experiment)/$(source)/$(nmt_model)/$(tgt_lang)/final
 	# done!

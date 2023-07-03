@@ -1,6 +1,8 @@
 import argparse
 import re
+import sys
 
+sys.path.append('../')
 from dialogues import WOZDataset
 
 parser = argparse.ArgumentParser('BiTOD parser')
@@ -25,7 +27,6 @@ with open(args.translated_file_agent) as fin:
         sent = line.strip('\n').split('\t')[1]
         translated_agent.append(sent)
 
-
 def replace_match(input, re_pattern, replacement):
     whole_match = re_pattern.search(input).group(0).strip()
     match = re_pattern.search(input).group(1).strip()
@@ -40,13 +41,15 @@ with open(args.ref_file) as fin, open(args.output_file, 'w') as fout:
         if i % 4 == 0 and i != 0:
             trans_idx += 1
         id_, input, output = line.strip('\n').split('\t')
-
+        
         # replace user utterance in history
         new_input = replace_match(input, dataset.user_re, translated_user[trans_idx])
         new_output = output
-
+        
         # replace agent response for RG
         if i % 4 == 3 and i != 0:
             new_output = translated_agent[trans_idx]
-
+        
         fout.write('\t'.join([id_, new_input, new_output]) + '\n')
+        
+        

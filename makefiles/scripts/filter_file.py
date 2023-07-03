@@ -1,6 +1,5 @@
 import argparse
 import re
-
 from dialogues import Bitod, Risawoz
 
 QUOTED_MATCH_REGEX = re.compile(' " (.*?) " ')
@@ -25,7 +24,7 @@ with open(args.input_file) as fin, open(args.output_file, 'w') as fout:
     for line in fin:
         id_, pred, gold, input = line.strip('\n').split('\t')
         total += 1
-
+        
         if id_.endswith('/dst'):
             if dataset.compute_dst_em([dataset.span2state(pred)], [dataset.span2state(gold)]) == 100:
                 fout.write(line)
@@ -35,12 +34,12 @@ with open(args.input_file) as fin, open(args.output_file, 'w') as fout:
             if pred == gold:
                 fout.write(line)
                 api += 1
-
+                
         elif id_.endswith('/da'):
             if dataset.compute_da([pred], [gold]) == 100:
                 fout.write(line)
                 da += 1
-
+                
         elif id_.endswith('/rg'):
             act_values = []
             act_values.append(QUOTED_MATCH_REGEX.findall(input))

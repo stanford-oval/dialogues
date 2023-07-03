@@ -4,14 +4,15 @@ import json
 import os.path
 import random
 import re
+
 import sys
 
+from dialogues.utils import ENGLISH_MONTH_MAPPING, zh2en_DAY_MAP, en2zh_DAY_MAP, MONTH_MAPPING_EN, MONTH_MAPPING_ZH
+from dialogues.bitod.src.knowledgebase.hk_mtr import name_to_zh, rev_name_to_zh
+from dialogues.risawoz.src.knowledgebase.api import process_string
 from tqdm import tqdm
 
 from dialogues import Bitod, Risawoz
-from dialogues.bitod.src.knowledgebase.hk_mtr import name_to_zh, rev_name_to_zh
-from dialogues.risawoz.src.knowledgebase.api import process_string
-from dialogues.utils import ENGLISH_MONTH_MAPPING, MONTH_MAPPING_EN, MONTH_MAPPING_ZH, en2zh_DAY_MAP, zh2en_DAY_MAP
 
 sys.path.append('../')
 
@@ -21,7 +22,6 @@ NULL = 'null'
 
 global_count = 0
 dataset = None
-
 
 def fresh_placeholder(value=None):
     global global_count
@@ -37,7 +37,7 @@ class TrieNode(object):
     def __init__(self):
         self.key = ''
         self.children = {}
-
+    
     def insert(self, word, key, index=0):
         if index >= len(word):
             if self.key == '':
@@ -46,7 +46,7 @@ class TrieNode(object):
         if word[index] not in self.children:
             self.children[word[index]] = TrieNode()
         return self.children[word[index]].insert(word, key, index + 1)
-
+    
     def print(self, s=''):
         print('%s  key %s' % (s, self.key))
         for k in self.children:
@@ -62,13 +62,12 @@ def process_line(line):
 
     input = arr[1].strip('\n')
     output = arr[2].strip('\n')
-
+    
     return ids[0], ids[1], ids[2], input, output
-
 
 def update_entities(trie_root, text, train_target, side):
     new_text_dict = {}
-
+    
     if side == 'output':
         if train_target == 'dst':
             text_dict = dataset.span2state(text)
@@ -77,7 +76,7 @@ def update_entities(trie_root, text, train_target, side):
                 for slot, rvs in slot_dicts.items():
                     key = f"{intent} {slot} {rvs['relation']}"
                     new_text_dict[key] = ' | '.join(map(str, rvs['value']))
-
+            
         elif train_target == 'da':
             text_dict = dataset.span2action(text)
             new_text_dict = {}
@@ -85,7 +84,7 @@ def update_entities(trie_root, text, train_target, side):
                 for item in asrvs:
                     key = f"{intent} {item['slot']} {item['relation']}"
                     new_text_dict[key] = ' | '.join(map(str, item['value']))
-
+                    
     else:
         # state = state_re.findall(text)
         knowledge = dataset.knowledge_re.findall(text)
@@ -99,7 +98,7 @@ def update_entities(trie_root, text, train_target, side):
 
     # sort by entity length
     new_text_dict = dict(sorted(new_text_dict.items(), key=lambda item: len(item[1]), reverse=True))
-
+    
     for key, val in new_text_dict.items():
         values = val.split(' | ')
         for val in values:
@@ -132,24 +131,15 @@ def replace(utterance, entities):
         match = matches.popleft()
         if match[1].key != '':
             confirmed.append((match[0], match[1].key, i))
-
+    
     # Check overlaps
     fully_confirmed = []
     for i in range(len(confirmed)):
-        if (
-            utterance[confirmed[i][0] : confirmed[i][2]] == 'one'
-            and utterance[confirmed[i][0] - 2 : confirmed[i][0] + 10] == 'phone_number'
-        ):
+        if utterance[confirmed[i][0]:confirmed[i][2]] == 'one' and utterance[confirmed[i][0]-2:confirmed[i][0]+10] == 'phone_number':
             continue
-        if (
-            utterance[confirmed[i][0] : confirmed[i][2]] == '一'
-            and utterance[confirmed[i][0] - 3 : confirmed[i][0] + 1] == '其中之一'
-        ):
+        if utterance[confirmed[i][0]:confirmed[i][2]] == '一' and utterance[confirmed[i][0]-3:confirmed[i][0]+1] == '其中之一':
             continue
-        if (
-            utterance[confirmed[i][0] : confirmed[i][2]] in ['香港', '香港地']
-            and utterance[confirmed[i][0] : confirmed[i][0] + 4] == '香港地铁'
-        ):
+        if utterance[confirmed[i][0]:confirmed[i][2]] in ['香港', '香港地'] and utterance[confirmed[i][0]:confirmed[i][0]+4] == '香港地铁':
             continue
         keep = True
         for j in range(len(confirmed)):
@@ -160,13 +150,13 @@ def replace(utterance, entities):
                 keep = False
         if keep:
             fully_confirmed.append(confirmed[i])
-
+    
     # Replace
     if fully_confirmed == []:
         return utterance
     cursor = 0
     new_utterance = ''
-    for start_ind, replace, end_ind in fully_confirmed:
+    for (start_ind, replace, end_ind) in fully_confirmed:
         new_utterance += utterance[cursor:start_ind]
         if mode == 'qpis' and not new_utterance.endswith(('" ', '| ')):
             replace = ' ## ' + replace + ' ## '
@@ -177,50 +167,37 @@ def replace(utterance, entities):
         new_utterance += utterance[cursor:]
     new_utterance = new_utterance.replace('##', '"')
 
+
     return new_utterance
 
 
 sets = set()
 file = open('out.tsv', 'w')
 
-
 def sample_value(value):
     # don't touch numbers (dates, currency value, confirmation #, etc.)
     value = value.strip('@')
-    if (
-        re.match('^[0-9]+$', value)
-        or value in ["don't care", "不在乎"]
-        or re.match('\+?[0-9- ]+', value)
-        or value.startswith('http://')
-    ):
+    if re.match('^[0-9]+$', value) or value in ["don't care", "不在乎"] or re.match('\+?[0-9- ]+', value) or value.startswith('http://'):
         return value
-
+    
     # qpis
     if mode == 'qpis':
         return value
-
+    
     # Requote
     elif mode == 'requote':
         return fresh_placeholder(value)
-
+    
     # Augment
     elif mode == 'augment':
+        
         if args.aug_mode == 'dictionary':
             value = value.strip('@')
-            possible_transformations = [
-                value,
-                process_string(value, setting=args.src_lang),
-                value.lower(),
-                value.replace('／', '/'),
-                value.replace('/', '／'),
-            ]
+            possible_transformations = [value, process_string(value, setting=args.src_lang), value.lower(), value.replace('／', '/'), value.replace('/', '／')]
 
             if args.tgt_lang == 'en':
                 MONTH_MAPPING = MONTH_MAPPING_EN
-                if hasattr(dataset.value_mapping, 'rev_en2canonical'):
-                    rev_canonical_map = dataset.value_mapping.rev_en2canonical
-                else:
-                    rev_canonical_map = {}
+                rev_canonical_map = dataset.value_mapping.rev_en2canonical
                 value_map = dataset.value_mapping.zh2en_VALUE_MAP
                 day_map = zh2en_DAY_MAP
                 mtr_map = rev_name_to_zh
@@ -230,13 +207,10 @@ def sample_value(value):
                 MONTH_MAPPING = MONTH_MAPPING_ZH
                 day_map = en2zh_DAY_MAP
                 mtr_map = name_to_zh
-                if hasattr(dataset.value_mapping, 'rev_en2canonical'):
-                    rev_canonical_map = dataset.value_mapping.rev_en2canonical
-                else:
-                    rev_canonical_map = {}
+                rev_canonical_map = dataset.value_mapping.rev_en2canonical
                 missing_map = eval(f'dataset.value_mapping.zh2{args.tgt_lang}_missing_MAP')
                 value_map = dataset.value_mapping.zh2en_VALUE_MAP
-                missing_map = {}
+                # missing_map = {}
 
             def find_val(val):
                 trans_val = value_map[val]
@@ -248,7 +222,7 @@ def sample_value(value):
                     return val_options[index]
                 else:
                     return trans_val
-
+            
             for val in possible_transformations:
                 if val in value_map:
                     return find_val(val)
@@ -256,31 +230,29 @@ def sample_value(value):
             all_replacements = {}
             if args.src_lang == 'en' and args.tgt_lang == 'zh':
                 english_months = '|'.join(ENGLISH_MONTH_MAPPING.values())
-
+    
                 all_replacements.update({'([\d\.]+) HKD': r'\1港币', '([\d\.]+) mins': r'\1分钟'})
-
+    
                 all_replacements.update({f'((?:{english_months})) (\d+)': r'\1月\2日'})
 
-                all_replacements.update(
-                    {'([\d\:]+) (?:afternoon|in the afternoon)': r'下午\1', '([\d\:]+) (?:morning|in the morning)': r'上午\1'}
-                )
+                all_replacements.update({'([\d\:]+) (?:afternoon|in the afternoon)': r'下午\1', '([\d\:]+) (?:morning|in the morning)': r'上午\1'})
 
                 all_replacements.update({'(\d+):(\d+) am': r'早上\1点\2分', '(\d+):(\d+) pm': r'(?:晚上|下午)\1点\2分'})
 
                 all_replacements.update({r'You will depart from (.+?) and arrive at (.+?).': r'你将从\1出发,抵达\2。'})
-
+            
             elif args.src_lang == 'zh' and args.tgt_lang == 'en':
                 all_replacements.update({'([\d\.]+)港币': r'\1 HKD', '([\d\.]+)分钟': r'\1 mins'})
-
+    
                 all_replacements.update({'下午([\d\:]+)': r'\1 afternoon', '上午([\d\:]+)': r'\1 morning'})
-
+    
                 all_replacements.update({'(?:晚上|下午)(\d+)点(\d+)分': r'\1:\2 pm'})
                 all_replacements.update({'早上(\d+)点(\d+)分': r'\1:\2 am'})
-
+    
                 all_replacements.update({'(\d+)月(\d+)日': r'\1 month \2'})
-
+    
                 all_replacements.update({'你将从(.+?)出发[,，]抵达(.+?)。': r'You will depart from \1 and arrive at \2.'})
-
+            
             def find_new(value):
                 for in_pattern, out_pattern in all_replacements.items():
                     if re.fullmatch(in_pattern, value):
@@ -290,17 +262,11 @@ def sample_value(value):
                                 new_value = new_value.replace(k, v)
                                 break
                         return new_value
-
+            
                 return None
-
-            expanded_values = [
-                value,
-                value.strip('[]').strip("'"),
-                value + '。',
-                value.strip('。'),
-                dataset.value_mapping.entity_map.get(value, None),
-                dataset.value_mapping.reverse_entity_map.get(value, None),
-            ]
+             
+            
+            expanded_values = [value, value.strip('[]').strip("'"), value + '。', value.strip('。'), dataset.value_mapping.entity_map.get(value, None), dataset.value_mapping.reverse_entity_map.get(value, None)]
             for val in expanded_values:
                 if not val:
                     continue
@@ -318,14 +284,14 @@ def sample_value(value):
                     return value
                 if new_val:
                     return new_val
-
+                
             if value in missing_map:
                 return missing_map[value]
-
+        
             # reservation confirmation number
             if re.fullmatch('[A-Z\d]+', value):
                 return value
-
+        
         if value not in sets:
             sets.add(value)
             if not value.startswith('Take the'):
@@ -334,7 +300,6 @@ def sample_value(value):
 
         return value
 
-
 def format_line(line_id, turn, train_target, input, output):
     out_str = line_id + '/' + turn + '/' + train_target + DELIM + input + DELIM + output
     return out_str + "\n"
@@ -342,7 +307,7 @@ def format_line(line_id, turn, train_target, input, output):
 
 def main(args):
     print('Writing to file %s\n' % (args.output_path))
-
+    
     curr_id = ''
     entities = TrieNode()
 
@@ -350,11 +315,11 @@ def main(args):
     with open(args.input_path, 'r') as data:
         for _ in data:
             num_lines += 1
-
+    
     with open(args.input_path, 'r') as data, open(args.output_path, 'w') as out:
         for line in tqdm(data, total=num_lines):
             line_id, turn, train_target, input, output = process_line(line)
-
+            
             if train_target == '/rg':
                 input, output = output, input
 
@@ -364,20 +329,20 @@ def main(args):
 
             update_entities(entities, output, train_target, 'output')
             update_entities(entities, input, train_target, 'input')
-
+            
             new_input = replace(input, entities)
             new_output = replace(output, entities)
-
+            
             if train_target == '/rg':
                 new_input, new_output = new_output, new_input
-
+            
             if args.tgt_lang == 'en':
                 new_input = new_input.replace('HKMTR zh', 'HKMTR en')
                 new_output = new_output.replace('HKMTR zh', 'HKMTR en')
             else:
                 new_input = new_input.replace('HKMTR en', 'HKMTR zh')
                 new_output = new_output.replace('HKMTR en', 'HKMTR zh')
-
+            
             out.write(format_line(line_id, turn, train_target, new_input, new_output))
 
 
@@ -396,14 +361,14 @@ if __name__ == "__main__":
     parser.add_argument('--aug_mode', default='random', choices=['random', 'dictionary'])
 
     args = parser.parse_args()
-
+    
     random.seed(args.seed)
 
     mode = args.mode
-
+    
     if args.ontology and os.path.exists(args.ontology):
         ontology = json.load(open(args.ontology))
-
+    
     if 'risawoz' in args.experiment:
         dataset = Risawoz(src=args.src_lang, tgt=args.tgt_lang)
         # dataset = Risawoz()

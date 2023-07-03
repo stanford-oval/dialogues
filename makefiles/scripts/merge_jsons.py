@@ -1,5 +1,5 @@
-import argparse
 import json
+import argparse
 
 parser = argparse.ArgumentParser()
 
