@@ -66,5 +66,6 @@ setuptools.setup(
         'networkx==2.5',
         'sacrebleu>=1,<3',
         'datasets~=2.1',
+        'urllib3==1.26.6'
     ],
 )
