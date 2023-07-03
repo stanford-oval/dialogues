@@ -6,7 +6,7 @@
 This codebase provides a unified interface to dialogue datasets.
 
 It also hosts the implementation for the following paper which is published in ACL 2023.\
-[_X-RiSAWOZ: High-Quality End-to-End Multilingual Dialogue Datasets and Few-shot Agents_](https://arxiv.org/abs/2302.09424) <br/> Mehrad Moradshahi, Tianhao Shen, Kalika Bali, Monojit Choudhury, Gael de Chalendar, Anmol Goel, Sungkyun Kim, Prashant Kodali, Ponnurangam Kumaraguru, Nasredine Semmar, Sina Semnani, Jiwon Seo, Vivek Seshadri, Manish Shrivastava, Michael Sun, Aditya Yadavalli, Chaobin You, Deyi Xiong, Monica Lam <br/>
+[_X-RiSAWOZ: High-Quality End-to-End Multilingual Dialogue Datasets and Few-shot Agents_](https://arxiv.org/abs/2306.17674) <br/> Mehrad Moradshahi, Tianhao Shen, Kalika Bali, Monojit Choudhury, Gael de Chalendar, Anmol Goel, Sungkyun Kim, Prashant Kodali, Ponnurangam Kumaraguru, Nasredine Semmar, Sina Semnani, Jiwon Seo, Vivek Seshadri, Manish Shrivastava, Michael Sun, Aditya Yadavalli, Chaobin You, Deyi Xiong, Monica Lam <br/>
 
 
 ## Abstract
@@ -18,6 +18,16 @@ Hindi, Korean; and a code-mixed English-Hindi language. X-RiSAWOZ has more than 
 The many difficulties we encountered in creating X-RiSAWOZ led us to develop a toolset to accelerate the post-editing of a new language dataset after translation. This toolset improves machine translation with a hybrid entity alignment technique that combines neural with dictionary-based methods, along with many automated and semi-automated validation checks.
 
 We establish strong baselines for X-RiSAWOZ by training dialogue agents in the zero- and few-shot settings where limited gold data is available in the target language. Our results suggest that our translation and post-editing methodology and toolset can be used to create new high-quality multilingual dialogue agents cost-effectively. Our dataset, code, and toolkit are released open-source.
+
+
+## Dataset
+
+You can access the fewshot, validation, and test data splits in the original format [here](https://github.com/stanford-oval/dialogues/tree/camera-ready-acl2023/dialogues/risawoz/data/original). 
+
+We also provide the preprocessed version for all those splits and automatically translated training data [here](https://drive.google.com/file/d/1y-wLUmKGX2js2_7XwOfIERr1UdvBkUuc/view).
+
+Please refer to our [paper](https://arxiv.org/abs/2306.17674) for more details on the dataset and experiments.
+
 
 ## Quickstart
 
@@ -157,25 +167,14 @@ We have prepared a comprehensive step-by-step guide accessible [here](https://do
 
 
 
-## Pretrained models and datasets
-
-[//]: # (You can download our datasets and pretrained models from [link]&#40;https://drive.google.com/drive/folders/1tbJPbp9D1-YvrwA2lyYrDwA6kOBumLWs?usp=sharing&#41;.)
-
-[//]: # (Please refer to our [paper]&#40;https://arxiv.org/pdf/2302.09424.pdf&#41; for more details on the dataset and experiments.)
-
-
 ## Citation
 If you use our data or the software in this repository, please cite:
 
 ```
-
-@inproceedings{moradshahi2023zero,
+@inproceedings{moradshahi2023x,
     title = "X-RiSAWOZ: High-Quality End-to-End Multilingual Dialogue Datasets and Few-shot Agents",
     author = "Mehrad Moradshahi, Tianhao Shen, Kalika Bali, Monojit Choudhury, Gael de Chalendar, Anmol Goel, Sungkyun Kim, Prashant Kodali, Ponnurangam Kumaraguru, Nasredine Semmar, Sina Semnani, Jiwon Seo, Vivek Seshadri, Manish Shrivastava, Michael Sun, Aditya Yadavalli, Chaobin You, Deyi Xiong, Monica Lam",
     booktitle = "Findings of the 2023 Conference of the Association for Computational Linguistics (ACL)",
     publisher = "Association for Computational Linguistics",
-
 }
-
-
 ```
