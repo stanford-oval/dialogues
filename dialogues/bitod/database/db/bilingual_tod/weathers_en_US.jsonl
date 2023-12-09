@@ -1,0 +1,288 @@
+{"_id":"Hong Kong_today","max_temp":26,"min_temp":3,"day":"today","city":"Hong Kong","weather":"rain"}
+{"_id":"Beijing_today","max_temp":26,"min_temp":3,"day":"today","city":"Beijing","weather":"sunny"}
+{"_id":"Denpasar_today","max_temp":26,"min_temp":4,"day":"today","city":"Denpasar","weather":"clouds"}
+{"_id":"Singapore_today","max_temp":26,"min_temp":3,"day":"today","city":"Singapore","weather":"clouds"}
+{"_id":"Tokyo_today","max_temp":25,"min_temp":4,"day":"today","city":"Tokyo","weather":"clouds"}
+{"_id":"Jakarta_today","max_temp":26,"min_temp":3,"day":"today","city":"Jakarta","weather":"clouds"}
+{"_id":"Kyoto_today","max_temp":26,"min_temp":3,"day":"today","city":"Kyoto","weather":"sunny"}
+{"_id":"Osaka_today","max_temp":25,"min_temp":4,"day":"today","city":"Osaka","weather":"sunny"}
+{"_id":"Seoul_today","max_temp":26,"min_temp":4,"day":"today","city":"Seoul","weather":"clouds"}
+{"_id":"Dubai_today","max_temp":26,"min_temp":3,"day":"today","city":"Dubai","weather":"sunny"}
+{"_id":"Abu Dhabi_today","max_temp":25,"min_temp":3,"day":"today","city":"Abu Dhabi","weather":"rain"}
+{"_id":"New York_today","max_temp":25,"min_temp":-15,"day":"today","city":"New York","weather":"clouds"}
+{"_id":"San Francisco_today","max_temp":25,"min_temp":-15,"day":"today","city":"San Francisco","weather":"sunny"}
+{"_id":"Seattle_today","max_temp":26,"min_temp":-15,"day":"today","city":"Seattle","weather":"sunny"}
+{"_id":"Los Angeles_today","max_temp":25,"min_temp":-15,"day":"today","city":"Los Angeles","weather":"rain"}
+{"_id":"Chicago_today","max_temp":26,"min_temp":-16,"day":"today","city":"Chicago","weather":"snow"}
+{"_id":"Washington_today","max_temp":26,"min_temp":-16,"day":"today","city":"Washington","weather":"clouds"}
+{"_id":"Las Vegas_today","max_temp":26,"min_temp":-16,"day":"today","city":"Las Vegas","weather":"clouds"}
+{"_id":"Paris_today","max_temp":25,"min_temp":-11,"day":"today","city":"Paris","weather":"clouds"}
+{"_id":"Muchen_today","max_temp":25,"min_temp":-11,"day":"today","city":"Muchen","weather":"clouds"}
+{"_id":"Barcelona_today","max_temp":25,"min_temp":-11,"day":"today","city":"Barcelona","weather":"clouds"}
+{"_id":"Florence_today","max_temp":26,"min_temp":-10,"day":"today","city":"Florence","weather":"sunny"}
+{"_id":"Rome_today","max_temp":26,"min_temp":-11,"day":"today","city":"Rome","weather":"sunny"}
+{"_id":"Moscow_today","max_temp":25,"min_temp":-11,"day":"today","city":"Moscow","weather":"rain"}
+{"_id":"Madrid_today","max_temp":25,"min_temp":-10,"day":"today","city":"Madrid","weather":"clouds"}
+{"_id":"Amsterdam_today","max_temp":26,"min_temp":-10,"day":"today","city":"Amsterdam","weather":"clouds"}
+{"_id":"Berlin_today","max_temp":26,"min_temp":-10,"day":"today","city":"Berlin","weather":"snow"}
+{"_id":"Prague_today","max_temp":26,"min_temp":-10,"day":"today","city":"Prague","weather":"clouds"}
+{"_id":"Toronto_today","max_temp":25,"min_temp":-16,"day":"today","city":"Toronto","weather":"clouds"}
+{"_id":"Waterloo_today","max_temp":25,"min_temp":-16,"day":"today","city":"Waterloo","weather":"rain"}
+{"_id":"Melbourne_today","max_temp":25,"min_temp":18,"day":"today","city":"Melbourne","weather":"clouds"}
+{"_id":"Canberra_today","max_temp":26,"min_temp":19,"day":"today","city":"Canberra","weather":"clouds"}
+{"_id":"Hong Kong_tomorrow","max_temp":29,"min_temp":8,"day":"tomorrow","city":"Hong Kong","weather":"clouds"}
+{"_id":"Beijing_tomorrow","max_temp":29,"min_temp":9,"day":"tomorrow","city":"Beijing","weather":"clouds"}
+{"_id":"Denpasar_tomorrow","max_temp":29,"min_temp":8,"day":"tomorrow","city":"Denpasar","weather":"rain"}
+{"_id":"Singapore_tomorrow","max_temp":29,"min_temp":9,"day":"tomorrow","city":"Singapore","weather":"clouds"}
+{"_id":"Tokyo_tomorrow","max_temp":29,"min_temp":8,"day":"tomorrow","city":"Tokyo","weather":"clouds"}
+{"_id":"Jakarta_tomorrow","max_temp":28,"min_temp":9,"day":"tomorrow","city":"Jakarta","weather":"rain"}
+{"_id":"Kyoto_tomorrow","max_temp":28,"min_temp":9,"day":"tomorrow","city":"Kyoto","weather":"sunny"}
+{"_id":"Osaka_tomorrow","max_temp":28,"min_temp":9,"day":"tomorrow","city":"Osaka","weather":"sunny"}
+{"_id":"Seoul_tomorrow","max_temp":28,"min_temp":8,"day":"tomorrow","city":"Seoul","weather":"rain"}
+{"_id":"Dubai_tomorrow","max_temp":29,"min_temp":9,"day":"tomorrow","city":"Dubai","weather":"sunny"}
+{"_id":"Abu Dhabi_tomorrow","max_temp":29,"min_temp":8,"day":"tomorrow","city":"Abu Dhabi","weather":"rain"}
+{"_id":"New York_tomorrow","max_temp":29,"min_temp":-10,"day":"tomorrow","city":"New York","weather":"sunny"}
+{"_id":"San Francisco_tomorrow","max_temp":29,"min_temp":-10,"day":"tomorrow","city":"San Francisco","weather":"snow"}
+{"_id":"Seattle_tomorrow","max_temp":28,"min_temp":-11,"day":"tomorrow","city":"Seattle","weather":"clouds"}
+{"_id":"Los Angeles_tomorrow","max_temp":29,"min_temp":-11,"day":"tomorrow","city":"Los Angeles","weather":"sunny"}
+{"_id":"Chicago_tomorrow","max_temp":28,"min_temp":-11,"day":"tomorrow","city":"Chicago","weather":"snow"}
+{"_id":"Washington_tomorrow","max_temp":29,"min_temp":-11,"day":"tomorrow","city":"Washington","weather":"sunny"}
+{"_id":"Las Vegas_tomorrow","max_temp":29,"min_temp":-10,"day":"tomorrow","city":"Las Vegas","weather":"sunny"}
+{"_id":"Paris_tomorrow","max_temp":29,"min_temp":-10,"day":"tomorrow","city":"Paris","weather":"sunny"}
+{"_id":"Muchen_tomorrow","max_temp":29,"min_temp":-10,"day":"tomorrow","city":"Muchen","weather":"sunny"}
+{"_id":"Barcelona_tomorrow","max_temp":29,"min_temp":-11,"day":"tomorrow","city":"Barcelona","weather":"sunny"}
+{"_id":"Florence_tomorrow","max_temp":28,"min_temp":-11,"day":"tomorrow","city":"Florence","weather":"rain"}
+{"_id":"Rome_tomorrow","max_temp":28,"min_temp":-11,"day":"tomorrow","city":"Rome","weather":"clouds"}
+{"_id":"Moscow_tomorrow","max_temp":29,"min_temp":-11,"day":"tomorrow","city":"Moscow","weather":"rain"}
+{"_id":"Madrid_tomorrow","max_temp":29,"min_temp":-10,"day":"tomorrow","city":"Madrid","weather":"rain"}
+{"_id":"Amsterdam_tomorrow","max_temp":29,"min_temp":-11,"day":"tomorrow","city":"Amsterdam","weather":"sunny"}
+{"_id":"Berlin_tomorrow","max_temp":28,"min_temp":-10,"day":"tomorrow","city":"Berlin","weather":"sunny"}
+{"_id":"Prague_tomorrow","max_temp":29,"min_temp":-11,"day":"tomorrow","city":"Prague","weather":"sunny"}
+{"_id":"Toronto_tomorrow","max_temp":28,"min_temp":-11,"day":"tomorrow","city":"Toronto","weather":"clouds"}
+{"_id":"Waterloo_tomorrow","max_temp":28,"min_temp":-11,"day":"tomorrow","city":"Waterloo","weather":"clouds"}
+{"_id":"Melbourne_tomorrow","max_temp":39,"min_temp":18,"day":"tomorrow","city":"Melbourne","weather":"sunny"}
+{"_id":"Canberra_tomorrow","max_temp":39,"min_temp":19,"day":"tomorrow","city":"Canberra","weather":"sunny"}
+{"_id":"Hong Kong_sunday","max_temp":30,"min_temp":14,"day":"sunday","city":"Hong Kong","weather":"rain"}
+{"_id":"Beijing_sunday","max_temp":31,"min_temp":14,"day":"sunday","city":"Beijing","weather":"rain"}
+{"_id":"Denpasar_sunday","max_temp":31,"min_temp":14,"day":"sunday","city":"Denpasar","weather":"clouds"}
+{"_id":"Singapore_sunday","max_temp":31,"min_temp":13,"day":"sunday","city":"Singapore","weather":"sunny"}
+{"_id":"Tokyo_sunday","max_temp":31,"min_temp":13,"day":"sunday","city":"Tokyo","weather":"rain"}
+{"_id":"Jakarta_sunday","max_temp":31,"min_temp":14,"day":"sunday","city":"Jakarta","weather":"clouds"}
+{"_id":"Kyoto_sunday","max_temp":30,"min_temp":13,"day":"sunday","city":"Kyoto","weather":"clouds"}
+{"_id":"Osaka_sunday","max_temp":31,"min_temp":14,"day":"sunday","city":"Osaka","weather":"clouds"}
+{"_id":"Seoul_sunday","max_temp":31,"min_temp":14,"day":"sunday","city":"Seoul","weather":"sunny"}
+{"_id":"Dubai_sunday","max_temp":30,"min_temp":14,"day":"sunday","city":"Dubai","weather":"sunny"}
+{"_id":"Abu Dhabi_sunday","max_temp":30,"min_temp":14,"day":"sunday","city":"Abu Dhabi","weather":"clouds"}
+{"_id":"New York_sunday","max_temp":30,"min_temp":-6,"day":"sunday","city":"New York","weather":"clouds"}
+{"_id":"San Francisco_sunday","max_temp":31,"min_temp":-6,"day":"sunday","city":"San Francisco","weather":"sunny"}
+{"_id":"Seattle_sunday","max_temp":31,"min_temp":-5,"day":"sunday","city":"Seattle","weather":"rain"}
+{"_id":"Los Angeles_sunday","max_temp":31,"min_temp":-6,"day":"sunday","city":"Los Angeles","weather":"sunny"}
+{"_id":"Chicago_sunday","max_temp":31,"min_temp":-5,"day":"sunday","city":"Chicago","weather":"rain"}
+{"_id":"Washington_sunday","max_temp":30,"min_temp":-6,"day":"sunday","city":"Washington","weather":"clouds"}
+{"_id":"Las Vegas_sunday","max_temp":30,"min_temp":-6,"day":"sunday","city":"Las Vegas","weather":"rain"}
+{"_id":"Paris_sunday","max_temp":30,"min_temp":-5,"day":"sunday","city":"Paris","weather":"snow"}
+{"_id":"Muchen_sunday","max_temp":30,"min_temp":-6,"day":"sunday","city":"Muchen","weather":"clouds"}
+{"_id":"Barcelona_sunday","max_temp":31,"min_temp":-5,"day":"sunday","city":"Barcelona","weather":"snow"}
+{"_id":"Florence_sunday","max_temp":30,"min_temp":-6,"day":"sunday","city":"Florence","weather":"sunny"}
+{"_id":"Rome_sunday","max_temp":30,"min_temp":-6,"day":"sunday","city":"Rome","weather":"clouds"}
+{"_id":"Moscow_sunday","max_temp":31,"min_temp":-6,"day":"sunday","city":"Moscow","weather":"sunny"}
+{"_id":"Madrid_sunday","max_temp":30,"min_temp":-5,"day":"sunday","city":"Madrid","weather":"rain"}
+{"_id":"Amsterdam_sunday","max_temp":30,"min_temp":-6,"day":"sunday","city":"Amsterdam","weather":"sunny"}
+{"_id":"Berlin_sunday","max_temp":31,"min_temp":-6,"day":"sunday","city":"Berlin","weather":"sunny"}
+{"_id":"Prague_sunday","max_temp":31,"min_temp":-5,"day":"sunday","city":"Prague","weather":"sunny"}
+{"_id":"Toronto_sunday","max_temp":31,"min_temp":-6,"day":"sunday","city":"Toronto","weather":"snow"}
+{"_id":"Waterloo_sunday","max_temp":31,"min_temp":-6,"day":"sunday","city":"Waterloo","weather":"snow"}
+{"_id":"Melbourne_sunday","max_temp":31,"min_temp":14,"day":"sunday","city":"Melbourne","weather":"sunny"}
+{"_id":"Canberra_sunday","max_temp":31,"min_temp":13,"day":"sunday","city":"Canberra","weather":"clouds"}
+{"_id":"Hong Kong_monday","max_temp":30,"min_temp":19,"day":"monday","city":"Hong Kong","weather":"clouds"}
+{"_id":"Beijing_monday","max_temp":31,"min_temp":19,"day":"monday","city":"Beijing","weather":"sunny"}
+{"_id":"Denpasar_monday","max_temp":30,"min_temp":18,"day":"monday","city":"Denpasar","weather":"sunny"}
+{"_id":"Singapore_monday","max_temp":31,"min_temp":18,"day":"monday","city":"Singapore","weather":"sunny"}
+{"_id":"Tokyo_monday","max_temp":31,"min_temp":18,"day":"monday","city":"Tokyo","weather":"sunny"}
+{"_id":"Jakarta_monday","max_temp":31,"min_temp":18,"day":"monday","city":"Jakarta","weather":"rain"}
+{"_id":"Kyoto_monday","max_temp":30,"min_temp":19,"day":"monday","city":"Kyoto","weather":"clouds"}
+{"_id":"Osaka_monday","max_temp":30,"min_temp":19,"day":"monday","city":"Osaka","weather":"clouds"}
+{"_id":"Seoul_monday","max_temp":30,"min_temp":18,"day":"monday","city":"Seoul","weather":"rain"}
+{"_id":"Dubai_monday","max_temp":30,"min_temp":19,"day":"monday","city":"Dubai","weather":"rain"}
+{"_id":"Abu Dhabi_monday","max_temp":31,"min_temp":18,"day":"monday","city":"Abu Dhabi","weather":"rain"}
+{"_id":"New York_monday","max_temp":30,"min_temp":-11,"day":"monday","city":"New York","weather":"sunny"}
+{"_id":"San Francisco_monday","max_temp":31,"min_temp":-11,"day":"monday","city":"San Francisco","weather":"sunny"}
+{"_id":"Seattle_monday","max_temp":31,"min_temp":-11,"day":"monday","city":"Seattle","weather":"clouds"}
+{"_id":"Los Angeles_monday","max_temp":30,"min_temp":-10,"day":"monday","city":"Los Angeles","weather":"sunny"}
+{"_id":"Chicago_monday","max_temp":31,"min_temp":-11,"day":"monday","city":"Chicago","weather":"snow"}
+{"_id":"Washington_monday","max_temp":30,"min_temp":-11,"day":"monday","city":"Washington","weather":"rain"}
+{"_id":"Las Vegas_monday","max_temp":30,"min_temp":-10,"day":"monday","city":"Las Vegas","weather":"sunny"}
+{"_id":"Paris_monday","max_temp":30,"min_temp":-11,"day":"monday","city":"Paris","weather":"clouds"}
+{"_id":"Muchen_monday","max_temp":30,"min_temp":-11,"day":"monday","city":"Muchen","weather":"sunny"}
+{"_id":"Barcelona_monday","max_temp":30,"min_temp":-11,"day":"monday","city":"Barcelona","weather":"rain"}
+{"_id":"Florence_monday","max_temp":30,"min_temp":-10,"day":"monday","city":"Florence","weather":"rain"}
+{"_id":"Rome_monday","max_temp":30,"min_temp":-11,"day":"monday","city":"Rome","weather":"sunny"}
+{"_id":"Moscow_monday","max_temp":30,"min_temp":-10,"day":"monday","city":"Moscow","weather":"clouds"}
+{"_id":"Madrid_monday","max_temp":31,"min_temp":-11,"day":"monday","city":"Madrid","weather":"clouds"}
+{"_id":"Amsterdam_monday","max_temp":30,"min_temp":-11,"day":"monday","city":"Amsterdam","weather":"clouds"}
+{"_id":"Berlin_monday","max_temp":30,"min_temp":-11,"day":"monday","city":"Berlin","weather":"sunny"}
+{"_id":"Prague_monday","max_temp":31,"min_temp":-11,"day":"monday","city":"Prague","weather":"clouds"}
+{"_id":"Toronto_monday","max_temp":30,"min_temp":-11,"day":"monday","city":"Toronto","weather":"clouds"}
+{"_id":"Waterloo_monday","max_temp":30,"min_temp":-10,"day":"monday","city":"Waterloo","weather":"rain"}
+{"_id":"Melbourne_monday","max_temp":21,"min_temp":13,"day":"monday","city":"Melbourne","weather":"rain"}
+{"_id":"Canberra_monday","max_temp":20,"min_temp":14,"day":"monday","city":"Canberra","weather":"rain"}
+{"_id":"Hong Kong_tuesday","max_temp":30,"min_temp":18,"day":"tuesday","city":"Hong Kong","weather":"rain"}
+{"_id":"Beijing_tuesday","max_temp":31,"min_temp":19,"day":"tuesday","city":"Beijing","weather":"rain"}
+{"_id":"Denpasar_tuesday","max_temp":30,"min_temp":18,"day":"tuesday","city":"Denpasar","weather":"clouds"}
+{"_id":"Singapore_tuesday","max_temp":30,"min_temp":19,"day":"tuesday","city":"Singapore","weather":"rain"}
+{"_id":"Tokyo_tuesday","max_temp":30,"min_temp":18,"day":"tuesday","city":"Tokyo","weather":"sunny"}
+{"_id":"Jakarta_tuesday","max_temp":31,"min_temp":19,"day":"tuesday","city":"Jakarta","weather":"sunny"}
+{"_id":"Kyoto_tuesday","max_temp":31,"min_temp":19,"day":"tuesday","city":"Kyoto","weather":"rain"}
+{"_id":"Osaka_tuesday","max_temp":30,"min_temp":19,"day":"tuesday","city":"Osaka","weather":"clouds"}
+{"_id":"Seoul_tuesday","max_temp":30,"min_temp":19,"day":"tuesday","city":"Seoul","weather":"rain"}
+{"_id":"Dubai_tuesday","max_temp":30,"min_temp":19,"day":"tuesday","city":"Dubai","weather":"sunny"}
+{"_id":"Abu Dhabi_tuesday","max_temp":30,"min_temp":18,"day":"tuesday","city":"Abu Dhabi","weather":"clouds"}
+{"_id":"New York_tuesday","max_temp":31,"min_temp":3,"day":"tuesday","city":"New York","weather":"clouds"}
+{"_id":"San Francisco_tuesday","max_temp":31,"min_temp":3,"day":"tuesday","city":"San Francisco","weather":"rain"}
+{"_id":"Seattle_tuesday","max_temp":30,"min_temp":4,"day":"tuesday","city":"Seattle","weather":"clouds"}
+{"_id":"Los Angeles_tuesday","max_temp":31,"min_temp":4,"day":"tuesday","city":"Los Angeles","weather":"sunny"}
+{"_id":"Chicago_tuesday","max_temp":31,"min_temp":3,"day":"tuesday","city":"Chicago","weather":"clouds"}
+{"_id":"Washington_tuesday","max_temp":31,"min_temp":4,"day":"tuesday","city":"Washington","weather":"clouds"}
+{"_id":"Las Vegas_tuesday","max_temp":30,"min_temp":4,"day":"tuesday","city":"Las Vegas","weather":"clouds"}
+{"_id":"Paris_tuesday","max_temp":31,"min_temp":4,"day":"tuesday","city":"Paris","weather":"rain"}
+{"_id":"Muchen_tuesday","max_temp":30,"min_temp":3,"day":"tuesday","city":"Muchen","weather":"clouds"}
+{"_id":"Barcelona_tuesday","max_temp":30,"min_temp":3,"day":"tuesday","city":"Barcelona","weather":"clouds"}
+{"_id":"Florence_tuesday","max_temp":31,"min_temp":4,"day":"tuesday","city":"Florence","weather":"rain"}
+{"_id":"Rome_tuesday","max_temp":31,"min_temp":3,"day":"tuesday","city":"Rome","weather":"rain"}
+{"_id":"Moscow_tuesday","max_temp":31,"min_temp":4,"day":"tuesday","city":"Moscow","weather":"clouds"}
+{"_id":"Madrid_tuesday","max_temp":30,"min_temp":4,"day":"tuesday","city":"Madrid","weather":"clouds"}
+{"_id":"Amsterdam_tuesday","max_temp":31,"min_temp":4,"day":"tuesday","city":"Amsterdam","weather":"rain"}
+{"_id":"Berlin_tuesday","max_temp":30,"min_temp":4,"day":"tuesday","city":"Berlin","weather":"rain"}
+{"_id":"Prague_tuesday","max_temp":31,"min_temp":3,"day":"tuesday","city":"Prague","weather":"clouds"}
+{"_id":"Toronto_tuesday","max_temp":30,"min_temp":3,"day":"tuesday","city":"Toronto","weather":"sunny"}
+{"_id":"Waterloo_tuesday","max_temp":30,"min_temp":4,"day":"tuesday","city":"Waterloo","weather":"rain"}
+{"_id":"Melbourne_tuesday","max_temp":15,"min_temp":9,"day":"tuesday","city":"Melbourne","weather":"rain"}
+{"_id":"Canberra_tuesday","max_temp":15,"min_temp":8,"day":"tuesday","city":"Canberra","weather":"sunny"}
+{"_id":"Hong Kong_wednesday","max_temp":35,"min_temp":19,"day":"wednesday","city":"Hong Kong","weather":"sunny"}
+{"_id":"Beijing_wednesday","max_temp":35,"min_temp":18,"day":"wednesday","city":"Beijing","weather":"clouds"}
+{"_id":"Denpasar_wednesday","max_temp":35,"min_temp":18,"day":"wednesday","city":"Denpasar","weather":"sunny"}
+{"_id":"Singapore_wednesday","max_temp":35,"min_temp":18,"day":"wednesday","city":"Singapore","weather":"rain"}
+{"_id":"Tokyo_wednesday","max_temp":36,"min_temp":19,"day":"wednesday","city":"Tokyo","weather":"rain"}
+{"_id":"Jakarta_wednesday","max_temp":36,"min_temp":19,"day":"wednesday","city":"Jakarta","weather":"sunny"}
+{"_id":"Kyoto_wednesday","max_temp":35,"min_temp":19,"day":"wednesday","city":"Kyoto","weather":"clouds"}
+{"_id":"Osaka_wednesday","max_temp":36,"min_temp":19,"day":"wednesday","city":"Osaka","weather":"rain"}
+{"_id":"Seoul_wednesday","max_temp":36,"min_temp":18,"day":"wednesday","city":"Seoul","weather":"rain"}
+{"_id":"Dubai_wednesday","max_temp":35,"min_temp":19,"day":"wednesday","city":"Dubai","weather":"rain"}
+{"_id":"Abu Dhabi_wednesday","max_temp":36,"min_temp":19,"day":"wednesday","city":"Abu Dhabi","weather":"rain"}
+{"_id":"New York_wednesday","max_temp":35,"min_temp":8,"day":"wednesday","city":"New York","weather":"rain"}
+{"_id":"San Francisco_wednesday","max_temp":35,"min_temp":9,"day":"wednesday","city":"San Francisco","weather":"clouds"}
+{"_id":"Seattle_wednesday","max_temp":36,"min_temp":9,"day":"wednesday","city":"Seattle","weather":"clouds"}
+{"_id":"Los Angeles_wednesday","max_temp":36,"min_temp":9,"day":"wednesday","city":"Los Angeles","weather":"rain"}
+{"_id":"Chicago_wednesday","max_temp":36,"min_temp":8,"day":"wednesday","city":"Chicago","weather":"clouds"}
+{"_id":"Washington_wednesday","max_temp":36,"min_temp":8,"day":"wednesday","city":"Washington","weather":"clouds"}
+{"_id":"Las Vegas_wednesday","max_temp":35,"min_temp":8,"day":"wednesday","city":"Las Vegas","weather":"rain"}
+{"_id":"Paris_wednesday","max_temp":36,"min_temp":8,"day":"wednesday","city":"Paris","weather":"clouds"}
+{"_id":"Muchen_wednesday","max_temp":36,"min_temp":8,"day":"wednesday","city":"Muchen","weather":"sunny"}
+{"_id":"Barcelona_wednesday","max_temp":36,"min_temp":9,"day":"wednesday","city":"Barcelona","weather":"rain"}
+{"_id":"Florence_wednesday","max_temp":35,"min_temp":9,"day":"wednesday","city":"Florence","weather":"clouds"}
+{"_id":"Rome_wednesday","max_temp":36,"min_temp":8,"day":"wednesday","city":"Rome","weather":"clouds"}
+{"_id":"Moscow_wednesday","max_temp":36,"min_temp":8,"day":"wednesday","city":"Moscow","weather":"clouds"}
+{"_id":"Madrid_wednesday","max_temp":35,"min_temp":9,"day":"wednesday","city":"Madrid","weather":"sunny"}
+{"_id":"Amsterdam_wednesday","max_temp":35,"min_temp":9,"day":"wednesday","city":"Amsterdam","weather":"clouds"}
+{"_id":"Berlin_wednesday","max_temp":35,"min_temp":9,"day":"wednesday","city":"Berlin","weather":"rain"}
+{"_id":"Prague_wednesday","max_temp":35,"min_temp":9,"day":"wednesday","city":"Prague","weather":"clouds"}
+{"_id":"Toronto_wednesday","max_temp":36,"min_temp":8,"day":"wednesday","city":"Toronto","weather":"sunny"}
+{"_id":"Waterloo_wednesday","max_temp":36,"min_temp":9,"day":"wednesday","city":"Waterloo","weather":"sunny"}
+{"_id":"Melbourne_wednesday","max_temp":6,"min_temp":-5,"day":"wednesday","city":"Melbourne","weather":"rain"}
+{"_id":"Canberra_wednesday","max_temp":5,"min_temp":-5,"day":"wednesday","city":"Canberra","weather":"sunny"}
+{"_id":"Hong Kong_thursday","max_temp":35,"min_temp":23,"day":"thursday","city":"Hong Kong","weather":"clouds"}
+{"_id":"Beijing_thursday","max_temp":36,"min_temp":24,"day":"thursday","city":"Beijing","weather":"sunny"}
+{"_id":"Denpasar_thursday","max_temp":35,"min_temp":23,"day":"thursday","city":"Denpasar","weather":"rain"}
+{"_id":"Singapore_thursday","max_temp":36,"min_temp":24,"day":"thursday","city":"Singapore","weather":"rain"}
+{"_id":"Tokyo_thursday","max_temp":36,"min_temp":23,"day":"thursday","city":"Tokyo","weather":"rain"}
+{"_id":"Jakarta_thursday","max_temp":35,"min_temp":24,"day":"thursday","city":"Jakarta","weather":"rain"}
+{"_id":"Kyoto_thursday","max_temp":36,"min_temp":23,"day":"thursday","city":"Kyoto","weather":"rain"}
+{"_id":"Osaka_thursday","max_temp":36,"min_temp":24,"day":"thursday","city":"Osaka","weather":"clouds"}
+{"_id":"Seoul_thursday","max_temp":36,"min_temp":23,"day":"thursday","city":"Seoul","weather":"clouds"}
+{"_id":"Dubai_thursday","max_temp":35,"min_temp":24,"day":"thursday","city":"Dubai","weather":"clouds"}
+{"_id":"Abu Dhabi_thursday","max_temp":36,"min_temp":24,"day":"thursday","city":"Abu Dhabi","weather":"clouds"}
+{"_id":"New York_thursday","max_temp":35,"min_temp":14,"day":"thursday","city":"New York","weather":"clouds"}
+{"_id":"San Francisco_thursday","max_temp":35,"min_temp":14,"day":"thursday","city":"San Francisco","weather":"sunny"}
+{"_id":"Seattle_thursday","max_temp":35,"min_temp":14,"day":"thursday","city":"Seattle","weather":"clouds"}
+{"_id":"Los Angeles_thursday","max_temp":36,"min_temp":13,"day":"thursday","city":"Los Angeles","weather":"rain"}
+{"_id":"Chicago_thursday","max_temp":36,"min_temp":14,"day":"thursday","city":"Chicago","weather":"sunny"}
+{"_id":"Washington_thursday","max_temp":36,"min_temp":13,"day":"thursday","city":"Washington","weather":"sunny"}
+{"_id":"Las Vegas_thursday","max_temp":35,"min_temp":13,"day":"thursday","city":"Las Vegas","weather":"sunny"}
+{"_id":"Paris_thursday","max_temp":36,"min_temp":14,"day":"thursday","city":"Paris","weather":"clouds"}
+{"_id":"Muchen_thursday","max_temp":36,"min_temp":14,"day":"thursday","city":"Muchen","weather":"clouds"}
+{"_id":"Barcelona_thursday","max_temp":35,"min_temp":14,"day":"thursday","city":"Barcelona","weather":"clouds"}
+{"_id":"Florence_thursday","max_temp":36,"min_temp":14,"day":"thursday","city":"Florence","weather":"sunny"}
+{"_id":"Rome_thursday","max_temp":36,"min_temp":14,"day":"thursday","city":"Rome","weather":"clouds"}
+{"_id":"Moscow_thursday","max_temp":36,"min_temp":14,"day":"thursday","city":"Moscow","weather":"sunny"}
+{"_id":"Madrid_thursday","max_temp":35,"min_temp":13,"day":"thursday","city":"Madrid","weather":"sunny"}
+{"_id":"Amsterdam_thursday","max_temp":36,"min_temp":14,"day":"thursday","city":"Amsterdam","weather":"clouds"}
+{"_id":"Berlin_thursday","max_temp":36,"min_temp":14,"day":"thursday","city":"Berlin","weather":"sunny"}
+{"_id":"Prague_thursday","max_temp":36,"min_temp":13,"day":"thursday","city":"Prague","weather":"clouds"}
+{"_id":"Toronto_thursday","max_temp":35,"min_temp":13,"day":"thursday","city":"Toronto","weather":"rain"}
+{"_id":"Waterloo_thursday","max_temp":35,"min_temp":14,"day":"thursday","city":"Waterloo","weather":"sunny"}
+{"_id":"Melbourne_thursday","max_temp":6,"min_temp":-10,"day":"thursday","city":"Melbourne","weather":"sunny"}
+{"_id":"Canberra_thursday","max_temp":5,"min_temp":-11,"day":"thursday","city":"Canberra","weather":"clouds"}
+{"_id":"Hong Kong_friday","max_temp":25,"min_temp":24,"day":"friday","city":"Hong Kong","weather":"clouds"}
+{"_id":"Beijing_friday","max_temp":25,"min_temp":24,"day":"friday","city":"Beijing","weather":"clouds"}
+{"_id":"Denpasar_friday","max_temp":26,"min_temp":24,"day":"friday","city":"Denpasar","weather":"clouds"}
+{"_id":"Singapore_friday","max_temp":26,"min_temp":24,"day":"friday","city":"Singapore","weather":"rain"}
+{"_id":"Tokyo_friday","max_temp":25,"min_temp":23,"day":"friday","city":"Tokyo","weather":"sunny"}
+{"_id":"Jakarta_friday","max_temp":26,"min_temp":24,"day":"friday","city":"Jakarta","weather":"sunny"}
+{"_id":"Kyoto_friday","max_temp":26,"min_temp":23,"day":"friday","city":"Kyoto","weather":"rain"}
+{"_id":"Osaka_friday","max_temp":25,"min_temp":23,"day":"friday","city":"Osaka","weather":"sunny"}
+{"_id":"Seoul_friday","max_temp":26,"min_temp":24,"day":"friday","city":"Seoul","weather":"clouds"}
+{"_id":"Dubai_friday","max_temp":25,"min_temp":24,"day":"friday","city":"Dubai","weather":"clouds"}
+{"_id":"Abu Dhabi_friday","max_temp":26,"min_temp":24,"day":"friday","city":"Abu Dhabi","weather":"rain"}
+{"_id":"New York_friday","max_temp":26,"min_temp":14,"day":"friday","city":"New York","weather":"sunny"}
+{"_id":"San Francisco_friday","max_temp":25,"min_temp":14,"day":"friday","city":"San Francisco","weather":"sunny"}
+{"_id":"Seattle_friday","max_temp":25,"min_temp":13,"day":"friday","city":"Seattle","weather":"clouds"}
+{"_id":"Los Angeles_friday","max_temp":25,"min_temp":14,"day":"friday","city":"Los Angeles","weather":"rain"}
+{"_id":"Chicago_friday","max_temp":25,"min_temp":14,"day":"friday","city":"Chicago","weather":"sunny"}
+{"_id":"Washington_friday","max_temp":26,"min_temp":14,"day":"friday","city":"Washington","weather":"clouds"}
+{"_id":"Las Vegas_friday","max_temp":25,"min_temp":13,"day":"friday","city":"Las Vegas","weather":"sunny"}
+{"_id":"Paris_friday","max_temp":26,"min_temp":13,"day":"friday","city":"Paris","weather":"rain"}
+{"_id":"Muchen_friday","max_temp":25,"min_temp":14,"day":"friday","city":"Muchen","weather":"sunny"}
+{"_id":"Barcelona_friday","max_temp":25,"min_temp":13,"day":"friday","city":"Barcelona","weather":"rain"}
+{"_id":"Florence_friday","max_temp":26,"min_temp":13,"day":"friday","city":"Florence","weather":"sunny"}
+{"_id":"Rome_friday","max_temp":25,"min_temp":13,"day":"friday","city":"Rome","weather":"clouds"}
+{"_id":"Moscow_friday","max_temp":25,"min_temp":13,"day":"friday","city":"Moscow","weather":"rain"}
+{"_id":"Madrid_friday","max_temp":26,"min_temp":13,"day":"friday","city":"Madrid","weather":"clouds"}
+{"_id":"Amsterdam_friday","max_temp":25,"min_temp":13,"day":"friday","city":"Amsterdam","weather":"rain"}
+{"_id":"Berlin_friday","max_temp":26,"min_temp":13,"day":"friday","city":"Berlin","weather":"sunny"}
+{"_id":"Prague_friday","max_temp":25,"min_temp":13,"day":"friday","city":"Prague","weather":"clouds"}
+{"_id":"Toronto_friday","max_temp":25,"min_temp":13,"day":"friday","city":"Toronto","weather":"sunny"}
+{"_id":"Waterloo_friday","max_temp":26,"min_temp":14,"day":"friday","city":"Waterloo","weather":"sunny"}
+{"_id":"Melbourne_friday","max_temp":16,"min_temp":-5,"day":"friday","city":"Melbourne","weather":"sunny"}
+{"_id":"Canberra_friday","max_temp":15,"min_temp":-5,"day":"friday","city":"Canberra","weather":"clouds"}
+{"_id":"Hong Kong_saturday","max_temp":21,"min_temp":13,"day":"saturday","city":"Hong Kong","weather":"rain"}
+{"_id":"Beijing_saturday","max_temp":20,"min_temp":13,"day":"saturday","city":"Beijing","weather":"rain"}
+{"_id":"Denpasar_saturday","max_temp":20,"min_temp":14,"day":"saturday","city":"Denpasar","weather":"clouds"}
+{"_id":"Singapore_saturday","max_temp":20,"min_temp":14,"day":"saturday","city":"Singapore","weather":"rain"}
+{"_id":"Tokyo_saturday","max_temp":20,"min_temp":14,"day":"saturday","city":"Tokyo","weather":"clouds"}
+{"_id":"Jakarta_saturday","max_temp":21,"min_temp":13,"day":"saturday","city":"Jakarta","weather":"clouds"}
+{"_id":"Kyoto_saturday","max_temp":21,"min_temp":13,"day":"saturday","city":"Kyoto","weather":"sunny"}
+{"_id":"Osaka_saturday","max_temp":21,"min_temp":13,"day":"saturday","city":"Osaka","weather":"clouds"}
+{"_id":"Seoul_saturday","max_temp":20,"min_temp":13,"day":"saturday","city":"Seoul","weather":"rain"}
+{"_id":"Dubai_saturday","max_temp":21,"min_temp":14,"day":"saturday","city":"Dubai","weather":"sunny"}
+{"_id":"Abu Dhabi_saturday","max_temp":20,"min_temp":13,"day":"saturday","city":"Abu Dhabi","weather":"clouds"}
+{"_id":"New York_saturday","max_temp":20,"min_temp":13,"day":"saturday","city":"New York","weather":"rain"}
+{"_id":"San Francisco_saturday","max_temp":21,"min_temp":13,"day":"saturday","city":"San Francisco","weather":"rain"}
+{"_id":"Seattle_saturday","max_temp":21,"min_temp":13,"day":"saturday","city":"Seattle","weather":"sunny"}
+{"_id":"Los Angeles_saturday","max_temp":20,"min_temp":13,"day":"saturday","city":"Los Angeles","weather":"rain"}
+{"_id":"Chicago_saturday","max_temp":20,"min_temp":14,"day":"saturday","city":"Chicago","weather":"sunny"}
+{"_id":"Washington_saturday","max_temp":21,"min_temp":14,"day":"saturday","city":"Washington","weather":"rain"}
+{"_id":"Las Vegas_saturday","max_temp":20,"min_temp":13,"day":"saturday","city":"Las Vegas","weather":"rain"}
+{"_id":"Paris_saturday","max_temp":21,"min_temp":14,"day":"saturday","city":"Paris","weather":"sunny"}
+{"_id":"Muchen_saturday","max_temp":21,"min_temp":13,"day":"saturday","city":"Muchen","weather":"clouds"}
+{"_id":"Barcelona_saturday","max_temp":20,"min_temp":14,"day":"saturday","city":"Barcelona","weather":"rain"}
+{"_id":"Florence_saturday","max_temp":20,"min_temp":13,"day":"saturday","city":"Florence","weather":"clouds"}
+{"_id":"Rome_saturday","max_temp":21,"min_temp":14,"day":"saturday","city":"Rome","weather":"clouds"}
+{"_id":"Moscow_saturday","max_temp":20,"min_temp":14,"day":"saturday","city":"Moscow","weather":"sunny"}
+{"_id":"Madrid_saturday","max_temp":20,"min_temp":13,"day":"saturday","city":"Madrid","weather":"sunny"}
+{"_id":"Amsterdam_saturday","max_temp":20,"min_temp":14,"day":"saturday","city":"Amsterdam","weather":"rain"}
+{"_id":"Berlin_saturday","max_temp":20,"min_temp":13,"day":"saturday","city":"Berlin","weather":"rain"}
+{"_id":"Prague_saturday","max_temp":21,"min_temp":13,"day":"saturday","city":"Prague","weather":"clouds"}
+{"_id":"Toronto_saturday","max_temp":21,"min_temp":14,"day":"saturday","city":"Toronto","weather":"rain"}
+{"_id":"Waterloo_saturday","max_temp":21,"min_temp":13,"day":"saturday","city":"Waterloo","weather":"clouds"}
+{"_id":"Melbourne_saturday","max_temp":11,"min_temp":-6,"day":"saturday","city":"Melbourne","weather":"clouds"}
+{"_id":"Canberra_saturday","max_temp":11,"min_temp":-5,"day":"saturday","city":"Canberra","weather":"rain"}

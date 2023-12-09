@@ -1,6 +1,9 @@
+import json
 import os
 import re
 import subprocess
+from contextlib import ExitStack
+from pathlib import Path
 
 from word2number import w2n
 
@@ -179,3 +182,26 @@ def constraint_list_to_dict(constraints):
             else:
                 result[name] = constraint_and(result[name], constraint_function)
     return result
+
+
+def read_json_files_in_folder(path):
+    json_filename = [path + '/' + filename for filename in os.listdir(path) if '.json' in filename]
+    with ExitStack() as stack:
+        files = [stack.enter_context(open(fname)) for fname in json_filename]
+        data = {}
+        for i in range(len(files)):
+            data[Path(json_filename[i]).stem] = json.load(files[i])
+    return data
+
+def read_jsonl_files_in_folder(path):
+    json_filename = [path + '/' + filename for filename in os.listdir(path) if '.jsonl' in filename]
+    with ExitStack() as stack:
+        files = [stack.enter_context(open(fname)) for fname in json_filename]
+        data = {}
+        for i in range(len(files)):
+            json_list = list(files[i])
+            result = []
+            for json_str in json_list:
+                result.append(json.loads(json_str))
+            data[Path(json_filename[i]).stem] = result
+    return data

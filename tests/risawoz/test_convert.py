@@ -31,7 +31,6 @@ risawoz_db = build_db(
     db_json_path=os.path.join(*[args.root, f'database/db_{args.setting}']),
     api_map=None,
     setting=args.setting,
-    value_mapping=dataset.value_mapping,
     mongodb_host=mongodb_host,
 )
 

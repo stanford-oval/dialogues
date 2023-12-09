@@ -1,4 +1,5 @@
 import logging
+import os
 import re
 
 from pymongo import MongoClient
@@ -6,8 +7,35 @@ from pymongo import MongoClient
 from ..main import WOZDataset
 from .src.knowledgebase import api
 from .src.knowledgebase.en_zh_mappings import BitodMapping
+from ..utils import read_jsonl_files_in_folder
 
 logger = logging.getLogger(__name__)
+
+
+def build_bitod_db(db_json_path, api_map, mongodb_host=""):
+    if mongodb_host:
+        db_client = MongoClient(mongodb_host)
+    else:
+        db_client = MongoClient()
+    bitod_db = db_client["bilingual_tod"]
+    for db in bitod_db.list_collection_names():
+        bitod_db[db].drop()
+
+    raw_db = read_jsonl_files_in_folder(db_json_path)
+    for domain in raw_db.keys():
+        if api_map is None:
+            col = bitod_db[domain]
+        else:
+            col = bitod_db[api_map[domain]]
+        for i in range(len(raw_db[domain])):
+            slot_list = list(raw_db[domain][i].keys())
+            for s in slot_list:
+                if "." in s:
+                    # escape dot cause mongodb doesn't like '.' and '$' in key names
+                    raw_db[domain][i][s.replace(".", "\uFF0E")] = raw_db[domain][i].pop(s)
+        col.insert_many(raw_db[domain], ordered=True)
+    return bitod_db
+
 
 
 class Bitod(WOZDataset):
@@ -15,22 +43,26 @@ class Bitod(WOZDataset):
         super().__init__(name)
 
         self.value_mapping = BitodMapping()
-
-        mongodb_host = 'mongodb+srv://bitod:plGYPp44hASzGbmm@cluster0.vo7pq.mongodb.net/bilingual_tod?retryWrites=true&w=majority&ssl=true&ssl_cert_reqs=CERT_NONE'
-        client = MongoClient(mongodb_host, authSource='admin')
-        database = client["bilingual_tod"]
+        
+        cur_dir = os.path.dirname(os.path.abspath(__file__))
+        mongodb_host = "mongodb://localhost:27017/"
+        bitod_db = build_bitod_db(
+            db_json_path=os.path.join(*[cur_dir, f'database/db/bilingual_tod']),
+            api_map=None,
+            mongodb_host=mongodb_host,
+        )
 
         db = {"null": None}
         self.skipped_entities = set()
 
         for domain in ['restaurants', 'hotels']:
             for lang in ['en_US', 'zh_CN']:
-                db[f"{domain}_{lang}_booking"] = database[f"{domain}_{lang}"]
-                db[f"{domain}_{lang}_search"] = database[f"{domain}_{lang}"]
+                db[f"{domain}_{lang}_booking"] = bitod_db[f"{domain}_{lang}"]
+                db[f"{domain}_{lang}_search"] = bitod_db[f"{domain}_{lang}"]
 
         for domain in ['attractions', 'weathers']:
             for lang in ['en_US', 'zh_CN']:
-                db[f"{domain}_{lang}_search"] = database[f"{domain}_{lang}"]
+                db[f"{domain}_{lang}_search"] = bitod_db[f"{domain}_{lang}"]
 
         self.db = db
 
