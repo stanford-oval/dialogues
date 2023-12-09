@@ -3,8 +3,6 @@ import itertools
 import json
 import os
 from collections import defaultdict
-from contextlib import ExitStack
-from pathlib import Path
 
 import pymongo
 import requests
@@ -12,19 +10,10 @@ from tqdm.autonotebook import tqdm
 
 from dialogues.risawoz.main import Risawoz
 from dialogues.risawoz.src.knowledgebase.api import call_api, process_string
+from dialogues.utils import read_json_files_in_folder
 
 
-def read_json_files_in_folder(path):
-    json_filename = [path + '/' + filename for filename in os.listdir(path) if '.json' in filename]
-    with ExitStack() as stack:
-        files = [stack.enter_context(open(fname)) for fname in json_filename]
-        data = {}
-        for i in range(len(files)):
-            data[Path(json_filename[i]).stem] = json.load(files[i])
-    return data
-
-
-def build_db(db_json_path, api_map, setting, value_mapping, mongodb_host=""):
+def build_db(db_json_path, api_map, setting, mongodb_host=""):
     raw_db = read_json_files_in_folder(db_json_path)
     if mongodb_host:
         db_client = pymongo.MongoClient(mongodb_host)
@@ -327,10 +316,8 @@ if __name__ == "__main__":
         db_json_path=os.path.join(*[args.root, f'database/db_{args.setting}']),
         api_map=None,
         setting=args.setting,
-        value_mapping=dataset.value_mapping,
         mongodb_host=mongodb_host,
     )
-    db_client = pymongo.MongoClient(mongodb_host)
 
     # download original RiSAWOZ dataset
     original_data_path = os.path.join(*[args.root, args.data_dir])

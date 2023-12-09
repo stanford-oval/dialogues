@@ -1,22 +1,55 @@
 import logging
+import os
 
 from pymongo import MongoClient
 
 from ..main import WOZDataset
 from .src.knowledgebase import api
 from .src.knowledgebase.en_zh_mappings import RisawozMapping
+from ..utils import read_json_files_in_folder
 
 logger = logging.getLogger(__name__)
+
+
+def build_risawoz_db(db_json_path, api_map, mongodb_host=""):
+    if mongodb_host:
+        db_client = MongoClient(mongodb_host)
+    else:
+        db_client = MongoClient()
+    risawoz_db = db_client["risawoz"]
+    for db in risawoz_db.list_collection_names():
+        risawoz_db[db].drop()
+
+    for lang in ['en', 'fr', 'hi', 'ko', 'zh', 'enhi']:
+        folder = f'db_{lang}'
+        raw_db = read_json_files_in_folder(os.path.join(db_json_path, folder))
+        for domain in raw_db.keys():
+            if api_map is None:
+                col = risawoz_db[domain]
+            else:
+                col = risawoz_db[api_map[domain]]
+            for i in range(len(raw_db[domain])):
+                slot_list = list(raw_db[domain][i].keys())
+                for s in slot_list:
+                    if "." in s:
+                        # escape dot cause mongodb doesn't like '.' and '$' in key names
+                        raw_db[domain][i][s.replace(".", "\uFF0E")] = raw_db[domain][i].pop(s)
+            col.insert_many(raw_db[domain], ordered=True)
+    return risawoz_db
 
 
 class Risawoz(WOZDataset):
     def __init__(self, name='risawoz', src='zh', tgt='en', mongodb_host=None):
         super().__init__(name)
-        if mongodb_host is None:
-            mongodb_host = 'mongodb+srv://bitod:plGYPp44hASzGbmm@cluster0.vo7pq.mongodb.net/risawoz?retryWrites=true&w=majority&ssl=true&ssl_cert_reqs=CERT_NONE'
-        client = MongoClient(mongodb_host, authSource='admin')
 
-        self.db = client["risawoz"]
+        cur_dir = os.path.dirname(os.path.abspath(__file__))
+        mongodb_host = "mongodb://localhost:27017/"
+        risawoz_db = build_risawoz_db(
+            db_json_path=os.path.join(*[cur_dir, f'database/']),
+            api_map=None,
+            mongodb_host=mongodb_host,
+        )
+        self.db = risawoz_db
 
         tgt = tgt.split('_', 1)[0]
         src = src.split('_', 1)[0]
